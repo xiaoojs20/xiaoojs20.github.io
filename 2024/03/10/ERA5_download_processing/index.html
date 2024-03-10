@@ -20,21 +20,21 @@
     var CONFIG = {"hostname":"xiaoojs20.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="第1章 引言传统的经济调度问题是化石燃料发电系统的最低运行成本问题。现在经济调度的目标除了最低运行成本外还要最小化污染排放物和节约能源消耗。">
+  <meta name="description" content="ERA5是由欧洲中期天气预报中心(ECMWF)开发和维护的一种全球范围内的高分辨率大气再分析数据集，提供了多种气象和气候变量的连续、一致和高质量的数据。ERA5基于全球观测数据、数值模型和物理参数化方案，通过数据同化和数值模拟的技术，对过去数十年(1940年至今)的天气状况进行再构建和模拟，从而生成了高时空分辨率的大气和地表变量数据。这些数据以固定的时间间隔(逐小时或逐月)和空间分辨率(从数公里到">
 <meta property="og:type" content="article">
-<meta property="og:title" content="电力系统发电运行与控制">
-<meta property="og:url" content="https://xiaoojs20.github.io/2024/01/19/%E7%94%B5%E5%8A%9B%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%B5%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6/index.html">
+<meta property="og:title" content="ERA5数据下载与处理">
+<meta property="og:url" content="https://xiaoojs20.github.io/2024/03/10/ERA5_download_processing/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="第1章 引言传统的经济调度问题是化石燃料发电系统的最低运行成本问题。现在经济调度的目标除了最低运行成本外还要最小化污染排放物和节约能源消耗。">
+<meta property="og:description" content="ERA5是由欧洲中期天气预报中心(ECMWF)开发和维护的一种全球范围内的高分辨率大气再分析数据集，提供了多种气象和气候变量的连续、一致和高质量的数据。ERA5基于全球观测数据、数值模型和物理参数化方案，通过数据同化和数值模拟的技术，对过去数十年(1940年至今)的天气状况进行再构建和模拟，从而生成了高时空分辨率的大气和地表变量数据。这些数据以固定的时间间隔(逐小时或逐月)和空间分辨率(从数公里到">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-19T10:08:28.347Z">
-<meta property="article:modified_time" content="2024-01-19T10:36:01.623Z">
+<meta property="article:published_time" content="2024-03-10T09:18:37.131Z">
+<meta property="article:modified_time" content="2024-03-10T09:24:39.167Z">
 <meta property="article:author" content="xiaoojs20">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="电力系统">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xiaoojs20.github.io/2024/01/19/%E7%94%B5%E5%8A%9B%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%B5%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6/">
+<link rel="canonical" href="https://xiaoojs20.github.io/2024/03/10/ERA5_download_processing/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>电力系统发电运行与控制 | Blog</title>
+  <title>ERA5数据下载与处理 | Blog</title>
   
 
 
@@ -157,7 +157,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xiaoojs20.github.io/2024/01/19/%E7%94%B5%E5%8A%9B%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%B5%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6/">
+    <link itemprop="mainEntityOfPage" href="https://xiaoojs20.github.io/2024/03/10/ERA5_download_processing/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -170,7 +170,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          电力系统发电运行与控制
+          ERA5数据下载与处理
         </h1>
 
         <div class="post-meta">
@@ -181,7 +181,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-19 18:08:28 / 修改时间：18:36:01" itemprop="dateCreated datePublished" datetime="2024-01-19T18:08:28+08:00">2024-01-19</time>
+              <time title="创建时间：2024-03-10 17:18:37 / 修改时间：17:24:39" itemprop="dateCreated datePublished" datetime="2024-03-10T17:18:37+08:00">2024-03-10</time>
             </span>
 
           
@@ -202,28 +202,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="第1章-引言"><a href="#第1章-引言" class="headerlink" title="第1章 引言"></a>第1章 引言</h2><p>传统的经济调度问题是化石燃料发电系统的最低运行成本问题。现在经济调度的目标除了最低运行成本外还要最小化污染排放物和节约能源消耗。</p>
+        <p>ERA5是由欧洲中期天气预报中心(ECMWF)开发和维护的一种全球范围内的高分辨率大气再分析数据集，提供了多种气象和气候变量的连续、一致和高质量的数据。ERA5基于全球观测数据、数值模型和物理参数化方案，通过数据同化和数值模拟的技术，对过去数十年(1940年至今)的天气状况进行再构建和模拟，从而生成了高时空分辨率的大气和地表变量数据。这些数据以固定的时间间隔(逐小时或逐月)和空间分辨率(从数公里到数十公里)提供，可以用于气候研究、天气分析、气候模型验证、环境监测等众多应用领域。</p>
 <span id="more"></span>
-<p><strong>蒸汽机组</strong></p>
-<ul>
-<li><p>$H$，表示以英热单位计量的机组每小时热量输入</p>
-</li>
-<li><p>$F$，表示机组每小时燃料费用，为燃料成本乘以$H$</p>
-</li>
-</ul>
-<p>燃气轮机的输入输出曲线：横轴为电力输出功率，纵轴为$H$或$F$，基本是一条平滑的略微上翘的凸曲线</p>
-<p>热耗量微增率（边际成本）特性（切线斜率）：纵轴为$\Delta H/\Delta P$或$\Delta F/\Delta P$，略微上翘，说明从$P_{\min}$到$P_{\max}$，新发的单位电更贵！</p>
-<p>平均热耗率（平均总成本）特性（与原点连线斜率）：纵轴为$H/P$，先下降后上升，额定容量时发电平均成本最低。</p>
-<p>加入阀门，比较抽象。</p>
-<p><strong>水电机组</strong></p>
-<p>PQ曲线，功率-进水量曲线，基本是一条直线，超过额定负荷后，机组效率下降，需要的进水量会上升。</p>
-<p>水耗量微增率，先为常量，后上升。</p>
-<p><strong>储能</strong></p>
-<p>超短期-短期-长期-超长期</p>
-<p><strong>风机</strong></p>
-<p>风力、切入风速、切出风速</p>
-<p><strong>光伏</strong></p>
-<h2 id="第2章-电力工业组织结构、管理经济学和金融学"><a href="#第2章-电力工业组织结构、管理经济学和金融学" class="headerlink" title="第2章  电力工业组织结构、管理经济学和金融学"></a>第2章  电力工业组织结构、管理经济学和金融学</h2><h2 id="第3章"><a href="#第3章" class="headerlink" title="第3章"></a>第3章</h2><h2 id="第4章"><a href="#第4章" class="headerlink" title="第4章"></a>第4章</h2>
+<h2 id="Download-ERA5-data"><a href="#Download-ERA5-data" class="headerlink" title="Download ERA5 data"></a>Download ERA5 data</h2><p>前置准备参照该篇<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/544846215/answer/3378852649">知乎帖文</a>，后续在用Python脚本下载的时候，发现一次性下载多年总是出现<code>Request not optimal</code>的错误，最后是通过逐月下载才成功。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cdsapi</span><br><span class="line"><span class="keyword">import</span> calendar</span><br><span class="line"></span><br><span class="line">c = cdsapi.Client()</span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span> = &#123;</span><br><span class="line">    <span class="string">&#x27;product_type&#x27;</span>: <span class="string">&#x27;reanalysis&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;variable&#x27;</span>: [</span><br><span class="line">        <span class="comment"># &#x27;100m_u_component_of_wind&#x27;, &#x27;100m_v_component_of_wind&#x27;, </span></span><br><span class="line">        <span class="string">&#x27;10m_u_component_of_wind&#x27;</span>, <span class="string">&#x27;10m_v_component_of_wind&#x27;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&#x27;year&#x27;</span>: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;month&#x27;</span>: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;day&#x27;</span>: [],</span><br><span class="line">    <span class="string">&#x27;time&#x27;</span>: [</span><br><span class="line">        <span class="string">&#x27;00:00&#x27;</span>, <span class="string">&#x27;01:00&#x27;</span>, <span class="string">&#x27;02:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;03:00&#x27;</span>, <span class="string">&#x27;04:00&#x27;</span>, <span class="string">&#x27;05:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;06:00&#x27;</span>, <span class="string">&#x27;07:00&#x27;</span>, <span class="string">&#x27;08:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;09:00&#x27;</span>, <span class="string">&#x27;10:00&#x27;</span>, <span class="string">&#x27;11:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;12:00&#x27;</span>, <span class="string">&#x27;13:00&#x27;</span>, <span class="string">&#x27;14:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;15:00&#x27;</span>, <span class="string">&#x27;16:00&#x27;</span>, <span class="string">&#x27;17:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;18:00&#x27;</span>, <span class="string">&#x27;19:00&#x27;</span>, <span class="string">&#x27;20:00&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;21:00&#x27;</span>, <span class="string">&#x27;22:00&#x27;</span>, <span class="string">&#x27;23:00&#x27;</span>,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;netcdf&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;area&#x27;</span>: [</span><br><span class="line">        <span class="number">54</span>, <span class="number">73</span>, <span class="number">3</span>, <span class="number">136</span>,</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2019-2021</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2019</span>, <span class="number">2022</span>): </span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">13</span>):  </span><br><span class="line">        day_num = calendar.monthrange(i, j)[<span class="number">1</span>]  <span class="comment"># 根据年月，获取当月日数</span></span><br><span class="line">        <span class="built_in">dict</span>[<span class="string">&#x27;year&#x27;</span>] = <span class="built_in">str</span>(i)</span><br><span class="line">        <span class="built_in">dict</span>[<span class="string">&#x27;month&#x27;</span>] = <span class="built_in">str</span>(j).zfill(<span class="number">2</span>)</span><br><span class="line">        <span class="built_in">dict</span>[<span class="string">&#x27;day&#x27;</span>] = [<span class="built_in">str</span>(d).zfill(<span class="number">2</span>) <span class="keyword">for</span> d <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, day_num + <span class="number">1</span>)]</span><br><span class="line">        filename = <span class="string">&#x27;../../data/ERA5_&#x27;</span> + <span class="built_in">str</span>(i) + <span class="string">&#x27;_&#x27;</span> + <span class="built_in">str</span>(j).zfill(<span class="number">2</span>) + <span class="string">&#x27;_wind.nc&#x27;</span>  <span class="comment"># 文件存储路径</span></span><br><span class="line">        c.retrieve(<span class="string">&#x27;reanalysis-era5-single-levels&#x27;</span>, <span class="built_in">dict</span>, filename)  <span class="comment"># 下载数据</span></span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -238,7 +221,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xiaoojs20.github.io/2024/01/19/%E7%94%B5%E5%8A%9B%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%B5%E8%BF%90%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6/" title="电力系统发电运行与控制">https://xiaoojs20.github.io/2024/01/19/电力系统发电运行与控制/</a>
+    <a href="https://xiaoojs20.github.io/2024/03/10/ERA5_download_processing/" title="ERA5数据下载与处理">https://xiaoojs20.github.io/2024/03/10/ERA5_download_processing/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -259,13 +242,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/01/15/photography/" rel="prev" title="摄影笔记">
-      <i class="fa fa-chevron-left"></i> 摄影笔记
+    <a href="/2024/01/19/Peking/" rel="prev" title="北京欢迎你">
+      <i class="fa fa-chevron-left"></i> 北京欢迎你
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/01/19/Peking/" rel="next" title="北京欢迎你">
-      北京欢迎你 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -328,7 +308,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E5%BC%95%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">第1章 引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC2%E7%AB%A0-%E7%94%B5%E5%8A%9B%E5%B7%A5%E4%B8%9A%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84%E3%80%81%E7%AE%A1%E7%90%86%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%92%8C%E9%87%91%E8%9E%8D%E5%AD%A6"><span class="nav-number">2.</span> <span class="nav-text">第2章  电力工业组织结构、管理经济学和金融学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC3%E7%AB%A0"><span class="nav-number">3.</span> <span class="nav-text">第3章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC4%E7%AB%A0"><span class="nav-number">4.</span> <span class="nav-text">第4章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Download-ERA5-data"><span class="nav-number">1.</span> <span class="nav-text">Download ERA5 data</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
