@@ -1208,6 +1208,34 @@ visits:
         date: "2024-08-03"
         caption: "Dusk over Nalati grasslands"
         captionZh: "那拉提草原暮色"
+      - src: /img/travel/yili/20240731-伊犁-果子沟大桥与云雾_DSC01358.jpg
+        date: "2024-07-31"
+        caption: "Guozigou Bridge in the clouds"
+        captionZh: "果子沟大桥与云雾"
+      - src: /img/travel/yili/20240731-伊犁-果子沟大桥_IMG_20240731_151445.jpg
+        date: "2024-07-31"
+        caption: "Guozigou Bridge"
+        captionZh: "果子沟大桥"
+      - src: /img/travel/yili/20240731-伊犁-果子沟山景_IMG_20240731_151824.jpg
+        date: "2024-07-31"
+        caption: "Mountain view at Guozigou"
+        captionZh: "果子沟山景"
+      - src: /img/travel/yili/20240731-伊犁-果子沟大桥远景_DSC01425.jpg
+        date: "2024-07-31"
+        caption: "Distant view of Guozigou Bridge"
+        captionZh: "果子沟大桥远景"
+      - src: /img/travel/yili/20240731-伊犁-晃晃村_DSC01669.jpg
+        date: "2024-07-31"
+        caption: "Huanghuang Village"
+        captionZh: "晃晃村"
+      - src: /img/travel/yili/20240731-伊犁-晃晃村薰衣草_DSC01694.jpg
+        date: "2024-07-31"
+        caption: "Lavender at Huanghuang Village"
+        captionZh: "晃晃村薰衣草"
+      - src: /img/travel/yili/20240731-伊犁-晃晃村向日葵_DSC01696.jpg
+        date: "2024-07-31"
+        caption: "Sunflowers at Huanghuang Village"
+        captionZh: "晃晃村向日葵"
   - id: jinan
     group: shandong
     geoGroup: china
@@ -1374,6 +1402,58 @@ visits:
         date: "2024-07-09"
         caption: "The University of Hong Kong"
         captionZh: "香港大学"
+      - src: /img/travel/hong-kong/20190110-香港-香港海滨树影_20190110-DSC01235.jpg
+        date: "2019-01-10"
+        caption: "Trees by the Hong Kong waterfront"
+        captionZh: "香港海滨树影"
+      - src: /img/travel/hong-kong/20190111-香港-维多利亚港_20190111-DSC01403.jpg
+        date: "2019-01-11"
+        caption: "Victoria Harbour"
+        captionZh: "维多利亚港"
+      - src: /img/travel/hong-kong/20190111-香港-维多利亚港水岸_20190111-DSC01432.jpg
+        date: "2019-01-11"
+        caption: "Victoria Harbour waterfront"
+        captionZh: "维多利亚港水岸"
+      - src: /img/travel/hong-kong/20190111-香港-香港街边雕塑_20190111-DSC01476.jpg
+        date: "2019-01-11"
+        caption: "Street sculpture in Hong Kong"
+        captionZh: "香港街边雕塑"
+      - src: /img/travel/hong-kong/20190111-香港-太平山远眺_20190111-DSC01572.jpg
+        date: "2019-01-11"
+        caption: "View from Victoria Peak"
+        captionZh: "太平山远眺"
+      - src: /img/travel/hong-kong/20190112-香港-金紫荆雕塑_20190112-DSC01655.jpg
+        date: "2019-01-12"
+        caption: "Golden Bauhinia sculpture"
+        captionZh: "金紫荆雕塑"
+      - src: /img/travel/hong-kong/20190112-香港-香港海港暮色_20190112-DSC01707.jpg
+        date: "2019-01-12"
+        caption: "Hong Kong harbour at dusk"
+        captionZh: "香港海港暮色"
+      - src: /img/travel/hong-kong/20190112-香港-维多利亚港夜色_20190112-DSC01804.jpg
+        date: "2019-01-12"
+        caption: "Victoria Harbour at night"
+        captionZh: "维多利亚港夜色"
+      - src: /img/travel/hong-kong/20190112-香港-香港海湾_20190112-DSC02059.jpg
+        date: "2019-01-12"
+        caption: "Hong Kong bay"
+        captionZh: "香港海湾"
+      - src: /img/travel/hong-kong/20190112-香港-香港山间寺院_20190112-DSC02147.jpg
+        date: "2019-01-12"
+        caption: "Temple in the Hong Kong hills"
+        captionZh: "香港山间寺院"
+      - src: /img/travel/hong-kong/20190113-香港-大屿山天坛大佛_20190113-DSC02268.jpg
+        date: "2019-01-13"
+        caption: "Tian Tan Buddha on Lantau Island"
+        captionZh: "大屿山天坛大佛"
+      - src: /img/travel/hong-kong/20190113-香港-昂坪缆车_20190113-DSC02342.jpg
+        date: "2019-01-13"
+        caption: "Ngong Ping cable car"
+        captionZh: "昂坪缆车"
+      - src: /img/travel/hong-kong/20190114-香港-海边人物_20190114-DSC02549.jpg
+        date: "2019-01-14"
+        caption: "People by the water"
+        captionZh: "海边人物"
   - id: macao
     group: macao
     geoGroup: china
@@ -1859,7 +1939,124 @@ visits:
     regionZh: "内蒙古"
     latitude: 39.46029
     longitude: 108.81343
-    photos: []
+    photos:
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾地貌_20230726-DSC03545.jpg
+        date: "2023-07-26"
+        caption: "Landscape at Xiangshawan"
+        captionZh: "响沙湾地貌"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾山谷_20230726-DSC03519.jpg
+        date: "2023-07-26"
+        caption: "Valley at Xiangshawan"
+        captionZh: "响沙湾山谷"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾旋转飞椅_20230726-DSC03612.jpg
+        date: "2023-07-26"
+        caption: "Swing ride at Xiangshawan"
+        captionZh: "响沙湾旋转飞椅"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾沙丘_20230726-DSC03572.jpg
+        date: "2023-07-26"
+        caption: "Sand dunes at Xiangshawan"
+        captionZh: "响沙湾沙丘"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾沙漠_20230726-DSC03556.jpg
+        date: "2023-07-26"
+        caption: "Xiangshawan desert"
+        captionZh: "响沙湾沙漠"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾游乐设施_20230726-DSC03605.jpg
+        date: "2023-07-26"
+        caption: "Ride at Xiangshawan"
+        captionZh: "响沙湾游乐设施"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾缆车_20230726-DSC03539.jpg
+        date: "2023-07-26"
+        caption: "Cable car at Xiangshawan"
+        captionZh: "响沙湾缆车"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾远景_20230726-DSC03511.jpg
+        date: "2023-07-26"
+        caption: "Distant view at Xiangshawan"
+        captionZh: "响沙湾远景"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾骑骆驼_20230726-DSC03575.jpg
+        date: "2023-07-26"
+        caption: "Camel riding at Xiangshawan"
+        captionZh: "响沙湾骑骆驼"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-沙丘与泳池_20230726-DSC03674.jpg
+        date: "2023-07-26"
+        caption: "Sand dunes and swimming pool"
+        captionZh: "沙丘与泳池"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-沙漠小火车_20230726-DSC03688.jpg
+        date: "2023-07-26"
+        caption: "Desert train"
+        captionZh: "沙漠小火车"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-沙漠建筑_20230726-DSC03597.jpg
+        date: "2023-07-26"
+        caption: "Desert building"
+        captionZh: "沙漠建筑"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-沙漠彩旗_20230726-DSC03601.jpg
+        date: "2023-07-26"
+        caption: "Colourful flags in the desert"
+        captionZh: "沙漠彩旗"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-沙漠泳池_20230726-DSC03654.jpg
+        date: "2023-07-26"
+        caption: "Swimming pool in the desert"
+        captionZh: "沙漠泳池"
+      - src: /img/travel/ordos/20230726-鄂尔多斯-沙漠骆驼队_20230726-DSC03585.jpg
+        date: "2023-07-26"
+        caption: "Camel caravan in the desert"
+        captionZh: "沙漠骆驼队"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-传统服饰体验_20230727-DSC03780.jpg
+        date: "2023-07-27"
+        caption: "Traditional dress experience"
+        captionZh: "传统服饰体验"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕大草原_20230727-DSC03753.jpg
+        date: "2023-07-27"
+        caption: "Subohan Grassland"
+        captionZh: "苏泊罕大草原"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕大草原人像_20230727-DSC03713.jpg
+        date: "2023-07-27"
+        caption: "Portrait at Subohan Grassland"
+        captionZh: "苏泊罕大草原人像"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕大草原标识_20230727-DSC03723.jpg
+        date: "2023-07-27"
+        caption: "Sign at Subohan Grassland"
+        captionZh: "苏泊罕大草原标识"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕大草原雕塑_20230727-DSC03710.jpg
+        date: "2023-07-27"
+        caption: "Sculpture at Subohan Grassland"
+        captionZh: "苏泊罕大草原雕塑"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕草原营地_20230727-DSC03766.jpg
+        date: "2023-07-27"
+        caption: "Camp at Subohan Grassland"
+        captionZh: "苏泊罕草原营地"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原传统服饰_20230727-DSC03776.jpg
+        date: "2023-07-27"
+        caption: "Traditional dress on the grassland"
+        captionZh: "草原传统服饰"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原图腾_20230727-DSC03717.jpg
+        date: "2023-07-27"
+        caption: "Grassland totems"
+        captionZh: "草原图腾"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原小狗_20230727-DSC03762.jpg
+        date: "2023-07-27"
+        caption: "Dog on the grassland"
+        captionZh: "草原小狗"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原小羊_20230727-DSC03720.jpg
+        date: "2023-07-27"
+        caption: "Lamb on the grassland"
+        captionZh: "草原小羊"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原马匹_20230727-DSC03765.jpg
+        date: "2023-07-27"
+        caption: "Horses on the grassland"
+        captionZh: "草原马匹"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原骑手_20230727-DSC03789.jpg
+        date: "2023-07-27"
+        caption: "Riders on the grassland"
+        captionZh: "草原骑手"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原骑马_20230727-DSC03745.jpg
+        date: "2023-07-27"
+        caption: "Horseback riding on the grassland"
+        captionZh: "草原骑马"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-草原骑马体验_20230727-DSC03788.jpg
+        date: "2023-07-27"
+        caption: "Horseback riding experience"
+        captionZh: "草原骑马体验"
+
   - id: qingdao
     group: shandong
     geoGroup: china
@@ -4212,6 +4409,84 @@ visits:
         date: "2024-01-26"
         caption: "Silhouette in a sea cave"
         captionZh: "海蚀洞与剪影"
+
+  - id: sayram-lake
+    group: xinjiang
+    geoGroup: china
+    name: "Sayram Lake"
+    nameZh: "赛里木湖"
+    region: "Bortala, Xinjiang"
+    regionZh: "新疆 · 博尔塔拉"
+    latitude: 44.60
+    longitude: 81.15
+    photos:
+      - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖与群山_DSC01245.jpg
+        date: "2024-07-31"
+        caption: "Sayram Lake and mountains"
+        captionZh: "赛里木湖与群山"
+      - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖湖光_DSC01278.jpg
+        date: "2024-07-31"
+        caption: "View of Sayram Lake"
+        captionZh: "赛里木湖湖光"
+      - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖湖岸_DSC01481.jpg
+        date: "2024-07-31"
+        caption: "Sayram lakeshore"
+        captionZh: "赛里木湖湖岸"
+      - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖水湾_DSC01560.jpg
+        date: "2024-07-31"
+        caption: "Bay at Sayram Lake"
+        captionZh: "赛里木湖水湾"
+      - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖岸草地_DSC01582.jpg
+        date: "2024-07-31"
+        caption: "Meadow by Sayram Lake"
+        captionZh: "赛里木湖岸草地"
+      - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖远景_DSC01594.jpg
+        date: "2024-07-31"
+        caption: "Distant view of Sayram Lake"
+        captionZh: "赛里木湖远景"
+
+  - id: baotou
+    group: inner-mongolia
+    geoGroup: china
+    name: "Baotou"
+    nameZh: "包头"
+    region: "Inner Mongolia"
+    regionZh: "内蒙古"
+    latitude: 40.65
+    longitude: 109.84
+    photos:
+      - src: /img/travel/baotou/20230725-包头-包头市人民政府_20230725-DSC03416.jpg
+        date: "2023-07-25"
+        caption: "Baotou Municipal Government"
+        captionZh: "包头市人民政府"
+      - src: /img/travel/baotou/20230725-包头-草原木栈道_20230725-DSC03473.jpg
+        date: "2023-07-25"
+        caption: "Wooden walkway on the grassland"
+        captionZh: "草原木栈道"
+      - src: /img/travel/baotou/20230725-包头-赛罕塔拉敖包_20230725-DSC03432.jpg
+        date: "2023-07-25"
+        caption: "Ovoo at Saihantala Grassland"
+        captionZh: "赛罕塔拉敖包"
+      - src: /img/travel/baotou/20230725-包头-赛罕塔拉花草_20230725-DSC03434.jpg
+        date: "2023-07-25"
+        caption: "Flowers at Saihantala Grassland"
+        captionZh: "赛罕塔拉花草"
+      - src: /img/travel/baotou/20230725-包头-赛罕塔拉蒙古包_20230725-DSC03442.jpg
+        date: "2023-07-25"
+        caption: "Yurts at Saihantala Grassland"
+        captionZh: "赛罕塔拉蒙古包"
+      - src: /img/travel/baotou/20230725-包头-赛罕塔拉马匹_20230725-DSC03422.jpg
+        date: "2023-07-25"
+        caption: "Horse at Saihantala Grassland"
+        captionZh: "赛罕塔拉马匹"
+      - src: /img/travel/baotou/20230725-包头-赛罕塔拉马群_20230725-DSC03465.jpg
+        date: "2023-07-25"
+        caption: "Horses at Saihantala Grassland"
+        captionZh: "赛罕塔拉马群"
+      - src: /img/travel/baotou/20230725-包头-赛罕塔拉骆驼_20230725-DSC03418.jpg
+        date: "2023-07-25"
+        caption: "Camel at Saihantala Grassland"
+        captionZh: "赛罕塔拉骆驼"
 
 demo:
   id: sample
