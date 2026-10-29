@@ -7,7 +7,7 @@
  
  &lt;li class="about-experience__item"&gt;
  &lt;div class="about-experience__heading"&gt;&lt;h3&gt;清华大学 · 电气工程硕士&lt;/h3&gt;&lt;span class="about-experience__date"&gt;2024.09 — 2027.06&lt;/span&gt;&lt;/div&gt;
- &lt;p&gt;学习和研究新能源与电力系统，也在探索强化学习与智能优化方法。&lt;/p&gt;
+ 
  
  &lt;ul class="about-experience__children" aria-label="硕士期间的实习经历"&gt;
  &lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h4&gt;百度 · 算法实习生&lt;/h4&gt;&lt;span class="about-experience__date"&gt;2026.04 — 2026.10&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h4&gt;Shopee · 算法实习生&lt;/h4&gt;&lt;span class="about-experience__date"&gt;2025.10 — 2026.03&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h4&gt;美团 · 算法实习生&lt;/h4&gt;&lt;span class="about-experience__date"&gt;2025.03 — 2025.07&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
@@ -16,8 +16,8 @@
  &lt;/li&gt;
  
  &lt;li class="about-experience__item"&gt;
- &lt;div class="about-experience__heading"&gt;&lt;h3&gt;清华大学 · 电气工程本科&lt;/h3&gt;&lt;span class="about-experience__date"&gt;2020.09 — 2024.06&lt;/span&gt;&lt;/div&gt;
- &lt;p&gt;主修电气工程及其自动化，辅修软件工程。&lt;/p&gt;
+ &lt;div class="about-experience__heading"&gt;&lt;h3&gt;清华大学 · 电气工程及其自动化本科 · 软件工程辅修&lt;/h3&gt;&lt;span class="about-experience__date"&gt;2020.09 — 2024.06&lt;/span&gt;&lt;/div&gt;
+ 
  
  &lt;/li&gt;
  
