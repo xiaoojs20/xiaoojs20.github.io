@@ -1,5 +1,145 @@
-# 添加真实旅行记录时，在 visits 下按以下格式填写。示例仅用于展示交互，不计入真实记录。
-visits: []
+# 地点为用户提供的真实旅行记录；坐标是城市或地区的近似位置。
+visits:
+  - id: beijing
+    name: "Beijing"
+    nameZh: "北京"
+    region: "Beijing"
+    regionZh: "北京"
+    latitude: 39.90571
+    longitude: 116.39130
+    photos: []
+  - id: datong
+    name: "Datong"
+    nameZh: "大同"
+    region: "Shanxi"
+    regionZh: "山西"
+    latitude: 40.09232
+    longitude: 113.29527
+    photos: []
+  - id: kunming
+    name: "Kunming"
+    nameZh: "昆明"
+    region: "Yunnan"
+    regionZh: "云南"
+    latitude: 25.03994
+    longitude: 102.71691
+    photos: []
+  - id: dali
+    name: "Dali"
+    nameZh: "大理"
+    region: "Dali Bai Autonomous Prefecture, Yunnan"
+    regionZh: "云南 · 大理白族自治州"
+    latitude: 25.60748
+    longitude: 100.26516
+    photos: []
+  - id: lijiang
+    name: "Lijiang"
+    nameZh: "丽江"
+    region: "Yunnan"
+    regionZh: "云南"
+    latitude: 26.85959
+    longitude: 100.22498
+    photos: []
+  - id: shangri-la
+    name: "Shangri-La"
+    nameZh: "香格里拉"
+    region: "Yunnan"
+    regionZh: "云南"
+    latitude: 27.87170
+    longitude: 99.83655
+    photos: []
+  - id: tokyo
+    name: "Tokyo"
+    nameZh: "东京"
+    region: "Japan"
+    regionZh: "日本"
+    latitude: 35.67686
+    longitude: 139.76389
+    photos: []
+  - id: osaka
+    name: "Osaka"
+    nameZh: "大阪"
+    region: "Japan"
+    regionZh: "日本"
+    latitude: 34.69376
+    longitude: 135.50145
+    photos: []
+  - id: kyoto
+    name: "Kyoto"
+    nameZh: "京都"
+    region: "Japan"
+    regionZh: "日本"
+    latitude: 35.01158
+    longitude: 135.76814
+    photos: []
+  - id: jeju
+    name: "Jeju Island"
+    nameZh: "济州岛"
+    region: "South Korea"
+    regionZh: "韩国"
+    latitude: 33.38035
+    longitude: 126.54825
+    photos: []
+  - id: vladivostok
+    name: "Vladivostok"
+    nameZh: "海参崴"
+    region: "Russia"
+    regionZh: "俄罗斯"
+    latitude: 43.11507
+    longitude: 131.88558
+    photos: []
+  - id: yili
+    name: "Yili"
+    nameZh: "伊犁"
+    region: "Xinjiang"
+    regionZh: "新疆"
+    latitude: 43.91381
+    longitude: 81.32719
+    photos: []
+  - id: jinan
+    name: "Jinan"
+    nameZh: "济南"
+    region: "Shandong"
+    regionZh: "山东"
+    latitude: 36.65198
+    longitude: 117.11385
+    photos: []
+  - id: hong-kong
+    name: "Hong Kong"
+    nameZh: "香港"
+    latitude: 22.34924
+    longitude: 114.18578
+    photos: []
+  - id: macao
+    name: "Macao"
+    nameZh: "澳门"
+    latitude: 22.17576
+    longitude: 113.55141
+    photos: []
+  - id: chengde
+    name: "Chengde"
+    nameZh: "承德"
+    region: "Hebei"
+    regionZh: "河北"
+    latitude: 40.95071
+    longitude: 117.95670
+    photos: []
+  - id: harbin
+    name: "Harbin"
+    nameZh: "哈尔滨"
+    region: "Heilongjiang"
+    regionZh: "黑龙江"
+    latitude: 45.75936
+    longitude: 126.62762
+    photos: []
+  - id: nanjing
+    name: "Nanjing"
+    nameZh: "南京"
+    region: "Jiangsu"
+    regionZh: "江苏"
+    latitude: 32.04383
+    longitude: 118.77886
+    photos: []
 demo:
   id: sample
   name: Sample destination
