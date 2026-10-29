@@ -24,9 +24,16 @@
 .travel-place strong { font-size:1.4rem; }.travel-place small { margin-top:4px; font-size:1.15rem; opacity:.7; }
 .travel-group__header:focus-visible,.travel-place:focus-visible,.travel-demo-button:focus-visible,.travel-reset:focus-visible,.travel-photo:focus-visible { outline:3px solid var(--accent-color); outline-offset:3px; }
 .travel-detail-label { display:inline-block; margin:0 0 10px; padding:5px 9px; border-radius:50px; font-size:1.05rem; color:var(--accent-color); background:var(--card-background-selected); }
-.travel-photos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
-.travel-photo { display:block; padding:0; border:0; border-radius:12px; overflow:hidden; cursor:zoom-in; background:var(--card-background-selected); }
-.travel-photo img { display:block; width:100%; aspect-ratio:1.1; object-fit:cover; transition:transform .25s ease; }.travel-photo:hover img { transform:scale(1.06); }
+.travel-photos { columns:2; column-gap:16px; padding:8px 7px 12px; }
+.travel-photo { position:relative; display:inline-block; vertical-align:top; width:100%; box-sizing:border-box; break-inside:avoid; margin:0 0 20px; padding:7px 7px 12px; border:0; border-radius:2px; color:#3f3b36; background:#fff; box-shadow:0 6px 16px #0003; cursor:zoom-in; text-align:left; transform:rotate(-3deg); transition:transform .2s ease,box-shadow .2s ease; }
+.travel-photo:nth-child(4n+2) { transform:rotate(3deg) translateY(8px); }
+.travel-photo:nth-child(4n+3) { transform:rotate(-4deg) translateY(4px); }
+.travel-photo:nth-child(4n) { transform:rotate(2deg) translateY(10px); }
+.travel-photo:hover,.travel-photo:focus-visible { z-index:1; transform:rotate(0) scale(1.035); box-shadow:0 10px 23px #0004; }
+.travel-photo img { display:block; width:100%; height:auto; }
+.travel-photo__caption { display:block; margin:8px 1px 0; color:#46413b; font-size:1.2rem; line-height:1.4; overflow-wrap:anywhere; }
+.travel-photo__date { display:block; margin-top:3px; color:#766f66; font-size:1.05rem; }
+@media(max-width:360px) { .travel-photos { column-gap:12px; padding-inline:5px; }.travel-photo { padding:6px 6px 10px; } }
 .travel-pin { display:grid; place-items:center; border:0; background:transparent; }
 .travel-pin svg { width:12px; height:15px; overflow:visible; filter:drop-shadow(0 1px 2px #0005); }
 .travel-pin path { fill:#d56f58; stroke:#fff; stroke-width:1.5; }

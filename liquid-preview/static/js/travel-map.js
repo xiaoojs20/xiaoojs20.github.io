@@ -34,7 +34,18 @@
     if(descOf(visit))content.append(make('p','',descOf(visit)));
     const photos=Array.isArray(visit.photos)?visit.photos.filter(p=>p && p.src):[];
     if(!photos.length)content.append(make('p','',text('这段旅程的照片还在整理中。','Photos from this journey are coming soon.')));
-    else {const grid=make('div','travel-photos'); photos.forEach(photo=>{const btn=make('button','travel-photo');btn.type='button';const img=make('img');img.src=photo.src;img.loading='lazy';img.alt=(zh && photo.captionZh)||photo.caption||text('旅行照片','Travel photo');btn.append(img);btn.setAttribute('aria-label',text('查看照片：','View photo: ')+img.alt);btn.addEventListener('click',()=>showPhoto(photo));grid.append(btn)});content.append(grid)}
+    else {
+      const grid=make('div','travel-photos');
+      photos.forEach(photo=>{
+        const btn=make('button','travel-photo');btn.type='button';
+        const img=make('img');img.src=photo.src;img.loading='lazy';img.alt=(zh && photo.captionZh)||photo.caption||text('旅行照片','Travel photo');
+        btn.append(img);
+        const caption=make('span','travel-photo__caption',img.alt);
+        if(photo.date){const date=make('time','travel-photo__date',photo.date);date.dateTime=photo.date;caption.append(date)}
+        btn.append(caption);btn.setAttribute('aria-label',text('查看照片：','View photo: ')+[img.alt,photo.date].filter(Boolean).join(' · '));btn.addEventListener('click',()=>showPhoto(photo));grid.append(btn)
+      });content.append(grid)
+    }
+    content.scrollTop=0;
   };
   const onSelect = visit => {showPlace(visit);if(window.matchMedia('(max-width: 850px)').matches)app.querySelector('.travel-panel').scrollIntoView({behavior:'smooth',block:'start'})};
   const fit = scope => {const item=maps[scope];const pts=visits.map(v=>[Number(v.latitude),Number(v.longitude)]);if(pts.length)item.map.fitBounds(L.latLngBounds(pts).pad(.25),{maxZoom:6});else item.map.setView([30,105],3)};
