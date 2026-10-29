@@ -2491,6 +2491,10 @@ visits:
         date: "2022-07-07"
         caption: "Yongqing Fang"
         captionZh: "永庆坊"
+      - src: /img/travel/guangzhou/20240215-广州-广州塔_20240215-DSC07146.jpg
+        date: "2024-02-15"
+        caption: "Canton Tower"
+        captionZh: "广州塔"
   - id: shenzhen
     group: guangdong
     geoGroup: china
