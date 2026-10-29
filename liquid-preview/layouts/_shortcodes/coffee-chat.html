@@ -1,9 +1,8 @@
 {{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
 {{- $lang := cond $zh "zh-CN" "en" -}}
 <section class="about-coffee" aria-labelledby="coffee-chat">
+  <h2 id="coffee-chat" style="scroll-margin-top: 90px">Coffee Chat</h2>
   <div class="about-coffee__intro">
-    <p class="coffee-booking__eyebrow">COFFEE CHAT</p>
-    <h2 id="coffee-chat" style="scroll-margin-top: 90px">{{ cond $zh "聊聊吧" "Let’s chat" }}</h2>
     <p>{{ cond $zh "如果你想和我咨询、交流，或只是聊聊想法，欢迎通过下面的日历预约一次 Coffee Chat。" "If you’d like to ask a question, exchange ideas, or simply have a chat, feel free to book a Coffee Chat using the calendar below." }}</p>
     <a class="coffee-booking__external" href="{{ .Page.Site.Params.coffeeChat.bookingURL }}" target="_blank" rel="noopener noreferrer">{{ cond $zh "在 Google 日历中打开预约页 ↗" "Open the booking page in Google Calendar ↗" }}</a>
   </div>

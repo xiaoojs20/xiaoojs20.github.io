@@ -1,7 +1,7 @@
 {{- $toc := .TableOfContents -}}
 {{- $about := .Site.GetPage "page" "about" -}}
 {{- if and $about (eq .RelPermalink $about.RelPermalink) -}}
-    {{- $label := cond (hasPrefix .Language.Lang "zh") "聊聊吧" "Let’s chat" -}}
+    {{- $label := "Coffee Chat" -}}
     {{- $item := printf "<li><a href=\"#coffee-chat\">%s</a></li></ol></nav>" $label -}}
     {{- $toc = replaceRE `</ol>\s*</nav>\s*$` $item $toc -}}
 {{- end -}}
