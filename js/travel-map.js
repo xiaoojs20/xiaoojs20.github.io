@@ -12,6 +12,7 @@
   const regionOf = v => (zh && v.regionZh) || v.region || '';
   const descOf = v => (zh && v.descriptionZh) || v.description || '';
   const make = (tag, cls, value) => { const e=document.createElement(tag); if(cls)e.className=cls; if(value)e.textContent=value; return e; };
+  const markerIcon = (demo=false) => L.divIcon({className:'travel-pin'+(demo?' travel-pin--demo':''),html:'<svg aria-hidden="true" viewBox="0 0 24 30"><path d="M12 1C6 1 2 5.5 2 11c0 7 10 17 10 17s10-10 10-17C22 5.5 18 1 12 1Z"/><circle cx="12" cy="11" r="3"/></svg>',iconSize:[16,20],iconAnchor:[8,18]});
   const countText = n => text(`${n} 个地点`, `${n} ${n===1?'place':'places'}`);
   app.querySelector('[data-travel-count]').textContent=countText(visits.length);
   const colors = () => document.documentElement.dataset.scheme === 'dark'
@@ -43,8 +44,7 @@
     map.attributionControl.addAttribution('Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a> &amp; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>');
     const markers=L.layerGroup().addTo(map);maps[scope]={map,markers};
     visits.forEach(v=>{
-      const usePin=v.markerStyle==='pin';
-      const icon=L.divIcon(usePin ? {className:'travel-pin travel-pin--place',html:'<svg aria-hidden="true" viewBox="0 0 24 30"><path d="M12 1C6 1 2 5.5 2 11c0 7 10 17 10 17s10-10 10-17C22 5.5 18 1 12 1Z"/><circle cx="12" cy="11" r="3"/></svg>',iconSize:[20,24],iconAnchor:[10,22]} : {className:'travel-pin',html:'<span></span>',iconSize:[16,16],iconAnchor:[8,8]});
+      const icon=markerIcon();
       L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),keyboard:true}).addTo(markers).on('click',()=>onSelect(v));
     });
   });
@@ -66,7 +66,7 @@
     reset.hidden=true;content.replaceChildren();content.append(make('h2','',text('每一段旅程','Every journey')));
     content.append(make('p','',visits.length?text('选择一个地点，翻开沿途的照片。','Choose a place to open its album.'):text('旅行记录还在慢慢整理。','My travel journal is still taking shape.')));
     visits.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));content.append(btn)});
-    if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=L.divIcon({className:'travel-pin travel-pin--demo',html:'<span></span>',iconSize:[16,16],iconAnchor:[8,8]});demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v)}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
+    if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=markerIcon(true);demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v)}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
   };
   reset.addEventListener('click',showList);
   lightbox.querySelector('[data-travel-close]').addEventListener('click',()=>lightbox.close());
