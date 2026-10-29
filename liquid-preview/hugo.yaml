@@ -46,6 +46,9 @@ params:
     x: "https://x.com/redefine1020"
     instagram: "https://www.instagram.com/xiaoo1020/"
     youtube: "https://www.youtube.com/@xiaoojs20"
+  coffeeChat:
+    bookingURL: "https://calendar.app.google/vDyM9zvxDdA1AYRU6"
+    embedURL: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0oz7D_K7Fk1USKkNeNeN410EK2J4wbsTtGONWPe-HYLCqig3z404IOzmSCDTxlcg-ojN9me6G2"
   mainSections: [post]
   favicon: /img/liquid-stack/logo-transparent.png
   dateFormat:
