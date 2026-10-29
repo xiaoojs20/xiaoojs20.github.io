@@ -999,7 +999,215 @@ visits:
     regionZh: "新疆"
     latitude: 43.91381
     longitude: 81.32719
-    photos: []
+    photos:
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路山林_DSC01806.jpg
+        date: "2024-08-01"
+        caption: "Wooded mountains along the Yizhao Highway"
+        captionZh: "伊昭公路山林"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路羊群_DSC01849.jpg
+        date: "2024-08-01"
+        caption: "Sheep along the Yizhao Highway"
+        captionZh: "伊昭公路羊群"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路牧羊人_DSC01852.jpg
+        date: "2024-08-01"
+        caption: "Shepherd on the Yizhao Highway"
+        captionZh: "伊昭公路牧羊人"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路白羊_DSC01853.jpg
+        date: "2024-08-01"
+        caption: "Sheep on the Yizhao Highway"
+        captionZh: "伊昭公路白羊"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路山谷_DSC01865.jpg
+        date: "2024-08-01"
+        caption: "Mountain valley along the Yizhao Highway"
+        captionZh: "伊昭公路山谷"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路草坡_DSC01874.jpg
+        date: "2024-08-01"
+        caption: "Grassy slopes along the Yizhao Highway"
+        captionZh: "伊昭公路草坡"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路远山_IMG_20240801_130400.jpg
+        date: "2024-08-01"
+        caption: "Distant mountains along the Yizhao Highway"
+        captionZh: "伊昭公路远山"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路山坡马群_DSC01898.jpg
+        date: "2024-08-01"
+        caption: "Horses on the hillside"
+        captionZh: "伊昭公路山坡马群"
+      - src: /img/travel/yili/20240801-伊犁-伊昭公路田野_IMG_20240801_143423.jpg
+        date: "2024-08-01"
+        caption: "Fields along the Yizhao Highway"
+        captionZh: "伊昭公路田野"
+      - src: /img/travel/yili/20240801-伊犁-夏塔景区入口_DSC01939.jpg
+        date: "2024-08-01"
+        caption: "Entrance to Xiata Scenic Area"
+        captionZh: "夏塔景区入口"
+      - src: /img/travel/yili/20240801-伊犁-夏塔雪山_DSC01969.jpg
+        date: "2024-08-01"
+        caption: "Snow mountains at Xiata"
+        captionZh: "夏塔雪山"
+      - src: /img/travel/yili/20240801-伊犁-夏塔雪山远景_DSC01989.jpg
+        date: "2024-08-01"
+        caption: "Distant snow mountains at Xiata"
+        captionZh: "夏塔雪山远景"
+      - src: /img/travel/yili/20240801-伊犁-夏塔雪峰_DSC01992.jpg
+        date: "2024-08-01"
+        caption: "Snow peaks at Xiata"
+        captionZh: "夏塔雪峰"
+      - src: /img/travel/yili/20240801-伊犁-夏塔雪山与河谷_DSC02017.jpg
+        date: "2024-08-01"
+        caption: "Snow mountains and valley at Xiata"
+        captionZh: "夏塔雪山与河谷"
+      - src: /img/travel/yili/20240801-伊犁-夏塔林中吊桥_DSC02022.jpg
+        date: "2024-08-01"
+        caption: "Suspension bridge at Xiata"
+        captionZh: "夏塔林中吊桥"
+      - src: /img/travel/yili/20240801-伊犁-夏塔山林雪峰_DSC02037.jpg
+        date: "2024-08-01"
+        caption: "Snow peaks and forest at Xiata"
+        captionZh: "夏塔山林雪峰"
+      - src: /img/travel/yili/20240801-伊犁-玉湖山坡木屋_DSC02061.jpg
+        date: "2024-08-01"
+        caption: "Cabins on a hillside near Yuhu Lake"
+        captionZh: "玉湖山坡木屋"
+      - src: /img/travel/yili/20240801-伊犁-玉湖山羊_DSC02074.jpg
+        date: "2024-08-01"
+        caption: "Goat near Yuhu Lake"
+        captionZh: "玉湖山羊"
+      - src: /img/travel/yili/20240801-伊犁-玉湖与树影_DSC02083.jpg
+        date: "2024-08-01"
+        caption: "Yuhu Lake among trees"
+        captionZh: "玉湖与树影"
+      - src: /img/travel/yili/20240801-伊犁-玉湖观景台_DSC02094.jpg
+        date: "2024-08-01"
+        caption: "Yuhu Lake viewing platform"
+        captionZh: "玉湖观景台"
+      - src: /img/travel/yili/20240801-伊犁-玉湖湖岸_DSC02099.jpg
+        date: "2024-08-01"
+        caption: "Yuhu lakeshore"
+        captionZh: "玉湖湖岸"
+      - src: /img/travel/yili/20240801-伊犁-玉湖游船_DSC02105.jpg
+        date: "2024-08-01"
+        caption: "Boat on Yuhu Lake"
+        captionZh: "玉湖游船"
+      - src: /img/travel/yili/20240801-伊犁-玉湖湖光_DSC02106.jpg
+        date: "2024-08-01"
+        caption: "View of Yuhu Lake"
+        captionZh: "玉湖湖光"
+      - src: /img/travel/yili/20240801-伊犁-玉湖木屋_DSC02116.jpg
+        date: "2024-08-01"
+        caption: "Cabins by Yuhu Lake"
+        captionZh: "玉湖木屋"
+      - src: /img/travel/yili/20240801-伊犁-玉湖与山谷_DSC02118.jpg
+        date: "2024-08-01"
+        caption: "Yuhu Lake and mountains"
+        captionZh: "玉湖与山谷"
+      - src: /img/travel/yili/20240801-伊犁-玉湖牧羊人_DSC02119.jpg
+        date: "2024-08-01"
+        caption: "Shepherd near Yuhu Lake"
+        captionZh: "玉湖牧羊人"
+      - src: /img/travel/yili/20240801-伊犁-草原暮色与马_IMG_20240801_211137.jpg
+        date: "2024-08-01"
+        caption: "Horse at dusk on the grasslands"
+        captionZh: "草原暮色与马"
+      - src: /img/travel/yili/20240801-伊犁-玉湖山羊特写_DSC02127.jpg
+        date: "2024-08-01"
+        caption: "Goat near Yuhu Lake"
+        captionZh: "玉湖山羊特写"
+      - src: /img/travel/yili/20240801-伊犁-玉湖山水_IMG_20240801_212142.jpg
+        date: "2024-08-01"
+        caption: "Mountains and Yuhu Lake"
+        captionZh: "玉湖山水"
+      - src: /img/travel/yili/20240801-伊犁-伊犁夕阳山景_DSC02155.jpg
+        date: "2024-08-01"
+        caption: "Mountain sunset in Yili"
+        captionZh: "伊犁夕阳山景"
+      - src: /img/travel/yili/20240802-伊犁-特克斯八卦城街景_DSC02170.jpg
+        date: "2024-08-02"
+        caption: "Street view of Tekes"
+        captionZh: "特克斯八卦城街景"
+      - src: /img/travel/yili/20240802-伊犁-特克斯八卦城牌楼_DSC02174.jpg
+        date: "2024-08-02"
+        caption: "Gateway in Tekes"
+        captionZh: "特克斯八卦城牌楼"
+      - src: /img/travel/yili/20240802-伊犁-草原上的小羊_DSC02190.jpg
+        date: "2024-08-02"
+        caption: "Lamb on the grasslands"
+        captionZh: "草原上的小羊"
+      - src: /img/travel/yili/20240802-伊犁-恰西山景_DSC02230.jpg
+        date: "2024-08-02"
+        caption: "Mountain view at Qiaxi"
+        captionZh: "恰西山景"
+      - src: /img/travel/yili/20240802-伊犁-恰西河谷_DSC02238.jpg
+        date: "2024-08-02"
+        caption: "River valley at Qiaxi"
+        captionZh: "恰西河谷"
+      - src: /img/travel/yili/20240802-伊犁-恰西山谷与营地_IMG_20240802_181426.jpg
+        date: "2024-08-02"
+        caption: "Valley and campsite at Qiaxi"
+        captionZh: "恰西山谷与营地"
+      - src: /img/travel/yili/20240802-伊犁-恰西骑马_IMG_20240802_181715.jpg
+        date: "2024-08-02"
+        caption: "Horseback riding at Qiaxi"
+        captionZh: "恰西骑马"
+      - src: /img/travel/yili/20240802-伊犁-恰西草原骑马_IMG_20240802_183815.jpg
+        date: "2024-08-02"
+        caption: "Riding across Qiaxi grasslands"
+        captionZh: "恰西草原骑马"
+      - src: /img/travel/yili/20240802-伊犁-恰西草原暮色_IMG_20240802_190153.jpg
+        date: "2024-08-02"
+        caption: "Dusk over Qiaxi grasslands"
+        captionZh: "恰西草原暮色"
+      - src: /img/travel/yili/20240803-伊犁-草原午餐_IMG_20240803_124214.jpg
+        date: "2024-08-03"
+        caption: "Lunch on the grasslands"
+        captionZh: "草原午餐"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原与雪山_DSC02257.jpg
+        date: "2024-08-03"
+        caption: "Nalati grasslands and snow mountains"
+        captionZh: "那拉提草原与雪山"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原山景_DSC02259.jpg
+        date: "2024-08-03"
+        caption: "Mountain view at Nalati grasslands"
+        captionZh: "那拉提草原山景"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原公路_DSC02274.jpg
+        date: "2024-08-03"
+        caption: "Road across Nalati grasslands"
+        captionZh: "那拉提草原公路"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原营地_DSC02277.jpg
+        date: "2024-08-03"
+        caption: "Campsite at Nalati grasslands"
+        captionZh: "那拉提草原营地"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原观景台_DSC02286.jpg
+        date: "2024-08-03"
+        caption: "Viewing platform at Nalati grasslands"
+        captionZh: "那拉提草原观景台"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原树影_DSC02290.jpg
+        date: "2024-08-03"
+        caption: "Trees on Nalati grasslands"
+        captionZh: "那拉提草原树影"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原栈道_DSC02301.jpg
+        date: "2024-08-03"
+        caption: "Walkway at Nalati grasslands"
+        captionZh: "那拉提草原栈道"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原与山谷_DSC02311.jpg
+        date: "2024-08-03"
+        caption: "Valley at Nalati grasslands"
+        captionZh: "那拉提草原与山谷"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原毡房_DSC02332.jpg
+        date: "2024-08-03"
+        caption: "Yurts at Nalati grasslands"
+        captionZh: "那拉提草原毡房"
+      - src: /img/travel/yili/20240803-伊犁-毡房穹顶_IMG_20240803_204458.jpg
+        date: "2024-08-03"
+        caption: "Inside a yurt"
+        captionZh: "毡房穹顶"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原日落_DSC02335.jpg
+        date: "2024-08-03"
+        caption: "Sunset over Nalati grasslands"
+        captionZh: "那拉提草原日落"
+      - src: /img/travel/yili/20240803-伊犁-那拉提草原暮色_DSC02380.jpg
+        date: "2024-08-03"
+        caption: "Dusk over Nalati grasslands"
+        captionZh: "那拉提草原暮色"
   - id: jinan
     group: shandong
     geoGroup: china
@@ -1085,7 +1293,87 @@ visits:
     nameZh: "香港"
     latitude: 22.34924
     longitude: 114.18578
-    photos: []
+    photos:
+      - src: /img/travel/hong-kong/20240708-香港-香港建筑街景_IMG_20240708_093406.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong architecture"
+        captionZh: "香港建筑街景"
+      - src: /img/travel/hong-kong/20240708-香港-香港街道与巴士_IMG_20240708_143101.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong street and buses"
+        captionZh: "香港街道与巴士"
+      - src: /img/travel/hong-kong/20240708-香港-香港街边警署_DSC00497.jpg
+        date: "2024-07-08"
+        caption: "Police station on a Hong Kong street"
+        captionZh: "香港街边警署"
+      - src: /img/travel/hong-kong/20240708-香港-香港街头_IMG_20240708_151327.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong street scene"
+        captionZh: "香港街头"
+      - src: /img/travel/hong-kong/20240708-香港-重庆大厦_DSC00536.jpg
+        date: "2024-07-08"
+        caption: "Chungking Mansions"
+        captionZh: "重庆大厦"
+      - src: /img/travel/hong-kong/20240708-香港-维多利亚港雕塑_DSC00556.jpg
+        date: "2024-07-08"
+        caption: "Sculpture by Victoria Harbour"
+        captionZh: "维多利亚港雕塑"
+      - src: /img/travel/hong-kong/20240708-香港-维多利亚港天际线_DSC00584.jpg
+        date: "2024-07-08"
+        caption: "Victoria Harbour skyline"
+        captionZh: "维多利亚港天际线"
+      - src: /img/travel/hong-kong/20240708-香港-维多利亚港摩天轮_DSC00623.jpg
+        date: "2024-07-08"
+        caption: "Observation wheel by Victoria Harbour"
+        captionZh: "维多利亚港摩天轮"
+      - src: /img/travel/hong-kong/20240708-香港-香港街边牌匾_DSC00633.jpg
+        date: "2024-07-08"
+        caption: "Street sign in Hong Kong"
+        captionZh: "香港街边牌匾"
+      - src: /img/travel/hong-kong/20240708-香港-香港摩天轮_DSC00641.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong Observation Wheel"
+        captionZh: "香港摩天轮"
+      - src: /img/travel/hong-kong/20240708-香港-香港街道与海港_DSC00675.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong street and harbour"
+        captionZh: "香港街道与海港"
+      - src: /img/travel/hong-kong/20240708-香港-香港街头灯牌_DSC00692.jpg
+        date: "2024-07-08"
+        caption: "Illuminated sign in Hong Kong"
+        captionZh: "香港街头灯牌"
+      - src: /img/travel/hong-kong/20240708-香港-香港建筑光影_DSC00694.jpg
+        date: "2024-07-08"
+        caption: "Light on Hong Kong architecture"
+        captionZh: "香港建筑光影"
+      - src: /img/travel/hong-kong/20240708-香港-维多利亚港日落_DSC00708.jpg
+        date: "2024-07-08"
+        caption: "Sunset over Victoria Harbour"
+        captionZh: "维多利亚港日落"
+      - src: /img/travel/hong-kong/20240708-香港-香港天际线夜景_DSC00767.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong skyline at night"
+        captionZh: "香港天际线夜景"
+      - src: /img/travel/hong-kong/20240708-香港-香港街道夜色_DSC00800.jpg
+        date: "2024-07-08"
+        caption: "Hong Kong street at night"
+        captionZh: "香港街道夜色"
+      - src: /img/travel/hong-kong/20240709-香港-山道与行人_DSC00805.jpg
+        date: "2024-07-09"
+        caption: "Pedestrian on a hillside road"
+        captionZh: "山道与行人"
+      - src: /img/travel/hong-kong/20240709-香港-太平山远眺香港_DSC00835.jpg
+        date: "2024-07-09"
+        caption: "Hong Kong view from Victoria Peak"
+        captionZh: "太平山远眺香港"
+      - src: /img/travel/hong-kong/20240709-香港-金紫荆广场_DSC00897.jpg
+        date: "2024-07-09"
+        caption: "Golden Bauhinia Square"
+        captionZh: "金紫荆广场"
+      - src: /img/travel/hong-kong/20240709-香港-香港大学_DSC00906.jpg
+        date: "2024-07-09"
+        caption: "The University of Hong Kong"
+        captionZh: "香港大学"
   - id: macao
     group: macao
     geoGroup: china
@@ -1713,7 +2001,95 @@ visits:
     regionZh: "甘肃"
     latitude: 36.28586
     longitude: 103.63233
-    photos: []
+    photos:
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞景区_DSC00930.jpg
+        date: "2024-07-28"
+        caption: "Lanzhou Ink Danxia scenic area"
+        captionZh: "水墨丹霞景区"
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞街景_DSC00932.jpg
+        date: "2024-07-28"
+        caption: "Street at Lanzhou Ink Danxia"
+        captionZh: "水墨丹霞街景"
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞入口_DSC00940.jpg
+        date: "2024-07-28"
+        caption: "Entrance to Lanzhou Ink Danxia"
+        captionZh: "水墨丹霞入口"
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞标志_DSC00944-2.jpg
+        date: "2024-07-28"
+        caption: "Lanzhou Ink Danxia sign"
+        captionZh: "水墨丹霞标志"
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞地貌_DSC00979.jpg
+        date: "2024-07-28"
+        caption: "Lanzhou Ink Danxia landscape"
+        captionZh: "水墨丹霞地貌"
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞山脉_DSC00996.jpg
+        date: "2024-07-28"
+        caption: "Danxia mountains in Lanzhou"
+        captionZh: "水墨丹霞山脉"
+      - src: /img/travel/lanzhou/20240728-兰州-水墨丹霞栈道_IMG_20240728_142312.jpg
+        date: "2024-07-28"
+        caption: "Walkway at Lanzhou Ink Danxia"
+        captionZh: "水墨丹霞栈道"
+      - src: /img/travel/lanzhou/20240728-兰州-兰州烤串_IMG_20240728_202149.jpg
+        date: "2024-07-28"
+        caption: "Grilled skewers in Lanzhou"
+        captionZh: "兰州烤串"
+      - src: /img/travel/lanzhou/20240728-兰州-黄河之滨夜景_DSC01031.jpg
+        date: "2024-07-28"
+        caption: "Night by the Yellow River"
+        captionZh: "黄河之滨夜景"
+      - src: /img/travel/lanzhou/20240728-兰州-中山桥夜景_DSC01042.jpg
+        date: "2024-07-28"
+        caption: "Zhongshan Bridge at night"
+        captionZh: "中山桥夜景"
+      - src: /img/travel/lanzhou/20240728-兰州-中山桥灯光_DSC01044.jpg
+        date: "2024-07-28"
+        caption: "Zhongshan Bridge illuminated"
+        captionZh: "中山桥灯光"
+      - src: /img/travel/lanzhou/20240728-兰州-中山桥与黄河_DSC01049.jpg
+        date: "2024-07-28"
+        caption: "Zhongshan Bridge over the Yellow River"
+        captionZh: "中山桥与黄河"
+      - src: /img/travel/lanzhou/20240728-兰州-中山桥夜色_DSC01060.jpg
+        date: "2024-07-28"
+        caption: "Zhongshan Bridge after dark"
+        captionZh: "中山桥夜色"
+      - src: /img/travel/lanzhou/20240728-兰州-中山桥灯笼_DSC01067.jpg
+        date: "2024-07-28"
+        caption: "Lanterns on Zhongshan Bridge"
+        captionZh: "中山桥灯笼"
+      - src: /img/travel/lanzhou/20240728-兰州-街巷灯笼_DSC01080.jpg
+        date: "2024-07-28"
+        caption: "Lanterns along the street"
+        captionZh: "街巷灯笼"
+      - src: /img/travel/lanzhou/20240728-兰州-黄河夜景_DSC01094.jpg
+        date: "2024-07-28"
+        caption: "Yellow River at night"
+        captionZh: "黄河夜景"
+      - src: /img/travel/lanzhou/20240728-兰州-中山桥纪念碑_DSC01118.jpg
+        date: "2024-07-28"
+        caption: "Monument by Zhongshan Bridge"
+        captionZh: "中山桥纪念碑"
+      - src: /img/travel/lanzhou/20240729-兰州-黄河母亲雕塑_DSC01130.jpg
+        date: "2024-07-29"
+        caption: "Mother of the Yellow River sculpture"
+        captionZh: "黄河母亲雕塑"
+      - src: /img/travel/lanzhou/20240729-兰州-黄河羊皮筏子_DSC01135.jpg
+        date: "2024-07-29"
+        caption: "Sheepskin raft on the Yellow River"
+        captionZh: "黄河羊皮筏子"
+      - src: /img/travel/lanzhou/20240729-兰州-黄河母亲公园_DSC01143.jpg
+        date: "2024-07-29"
+        caption: "Mother of the Yellow River Park"
+        captionZh: "黄河母亲公园"
+      - src: /img/travel/lanzhou/20240729-兰州-荷花_DSC01149.jpg
+        date: "2024-07-29"
+        caption: "Lotus flowers"
+        captionZh: "荷花"
+      - src: /img/travel/lanzhou/20240729-兰州-兰州牛肉面_IMG_20240729_113435.jpg
+        date: "2024-07-29"
+        caption: "Lanzhou beef noodles"
+        captionZh: "兰州牛肉面"
   - id: urumqi
     group: xinjiang
     geoGroup: china
@@ -1805,7 +2181,87 @@ visits:
     regionZh: "海南"
     latitude: 20.04623
     longitude: 110.19565
-    photos: []
+    photos:
+      - src: /img/travel/haikou/20240706-海口-海口美食_IMG_20240706_102204.jpg
+        date: "2024-07-06"
+        caption: "Food in Haikou"
+        captionZh: "海口美食"
+      - src: /img/travel/haikou/20240706-海口-鱼缸里的金鱼_DSC00109.jpg
+        date: "2024-07-06"
+        caption: "Goldfish in an aquarium"
+        captionZh: "鱼缸里的金鱼"
+      - src: /img/travel/haikou/20240706-海口-海口骑楼老街_DSC00111.jpg
+        date: "2024-07-06"
+        caption: "Haikou Qilou Old Street"
+        captionZh: "海口骑楼老街"
+      - src: /img/travel/haikou/20240706-海口-骑楼老街街景_DSC00119.jpg
+        date: "2024-07-06"
+        caption: "Street view of Qilou Old Street"
+        captionZh: "骑楼老街街景"
+      - src: /img/travel/haikou/20240706-海口-骑楼老街建筑_DSC00132.jpg
+        date: "2024-07-06"
+        caption: "Architecture on Qilou Old Street"
+        captionZh: "骑楼老街建筑"
+      - src: /img/travel/haikou/20240706-海口-骑楼老街旧建筑_DSC00139.jpg
+        date: "2024-07-06"
+        caption: "Historic building on Qilou Old Street"
+        captionZh: "骑楼老街旧建筑"
+      - src: /img/travel/haikou/20240706-海口-老街建筑细节_IMG_20240706_105540.jpg
+        date: "2024-07-06"
+        caption: "Historic architecture detail"
+        captionZh: "老街建筑细节"
+      - src: /img/travel/haikou/20240706-海口-海口钟楼_DSC00155.jpg
+        date: "2024-07-06"
+        caption: "Haikou Clock Tower"
+        captionZh: "海口钟楼"
+      - src: /img/travel/haikou/20240706-海口-树影与蓝天_IMG_20240706_142510.jpg
+        date: "2024-07-06"
+        caption: "Trees under a blue sky"
+        captionZh: "树影与蓝天"
+      - src: /img/travel/haikou/20240706-海口-海口街边店铺_DSC00275.jpg
+        date: "2024-07-06"
+        caption: "Storefront in Haikou"
+        captionZh: "海口街边店铺"
+      - src: /img/travel/haikou/20240706-海口-椰林_DSC00313.jpg
+        date: "2024-07-06"
+        caption: "Coconut palms"
+        captionZh: "椰林"
+      - src: /img/travel/haikou/20240706-海口-海口城市建筑_DSC00364.jpg
+        date: "2024-07-06"
+        caption: "Haikou city architecture"
+        captionZh: "海口城市建筑"
+      - src: /img/travel/haikou/20240706-海口-海边建筑_DSC00378.jpg
+        date: "2024-07-06"
+        caption: "Coastal architecture"
+        captionZh: "海边建筑"
+      - src: /img/travel/haikou/20240706-海口-海边椰树_DSC00402.jpg
+        date: "2024-07-06"
+        caption: "Palm trees by the sea"
+        captionZh: "海边椰树"
+      - src: /img/travel/haikou/20240706-海口-教堂建筑_IMG_20240706_181243.jpg
+        date: "2024-07-06"
+        caption: "Church architecture"
+        captionZh: "教堂建筑"
+      - src: /img/travel/haikou/20240706-海口-海边日落_DSC00421.jpg
+        date: "2024-07-06"
+        caption: "Sunset by the sea"
+        captionZh: "海边日落"
+      - src: /img/travel/haikou/20240707-海口-室内花形灯饰_IMG_20240707_115514.jpg
+        date: "2024-07-07"
+        caption: "Flower-shaped interior lights"
+        captionZh: "室内花形灯饰"
+      - src: /img/travel/haikou/20240707-海口-汉堡与薯条_IMG_20240707_120920.jpg
+        date: "2024-07-07"
+        caption: "Burger and fries"
+        captionZh: "汉堡与薯条"
+      - src: /img/travel/haikou/20240707-海口-海边沙滩_DSC00437.jpg
+        date: "2024-07-07"
+        caption: "Beach by the sea"
+        captionZh: "海边沙滩"
+      - src: /img/travel/haikou/20240707-海口-钟楼与椰树_IMG_20240707_162904.jpg
+        date: "2024-07-07"
+        caption: "Clock tower and palm trees"
+        captionZh: "钟楼与椰树"
   - id: hohhot
     group: inner-mongolia
     geoGroup: china
@@ -1815,7 +2271,75 @@ visits:
     regionZh: "内蒙古"
     latitude: 40.81845
     longitude: 111.66019
-    photos: []
+    photos:
+      - src: /img/travel/hohhot/20240702-呼和浩特-内蒙古博物院牛角展品_DSC09785.jpg
+        date: "2024-07-02"
+        caption: "Horn exhibit at Inner Mongolia Museum"
+        captionZh: "内蒙古博物院牛角展品"
+      - src: /img/travel/hohhot/20240702-呼和浩特-呼和浩特街景_DSC09832.jpg
+        date: "2024-07-02"
+        caption: "Street view in Hohhot"
+        captionZh: "呼和浩特街景"
+      - src: /img/travel/hohhot/20240702-呼和浩特-呼和浩特街头夜景_DSC09839.jpg
+        date: "2024-07-02"
+        caption: "Hohhot street at night"
+        captionZh: "呼和浩特街头夜景"
+      - src: /img/travel/hohhot/20240703-呼和浩特-内蒙古博物院壁画_DSC09853.jpg
+        date: "2024-07-03"
+        caption: "Mural at Inner Mongolia Museum"
+        captionZh: "内蒙古博物院壁画"
+      - src: /img/travel/hohhot/20240703-呼和浩特-内蒙古博物院藏品_DSC09891.jpg
+        date: "2024-07-03"
+        caption: "Object at Inner Mongolia Museum"
+        captionZh: "内蒙古博物院藏品"
+      - src: /img/travel/hohhot/20240703-呼和浩特-内蒙古博物院雕像_DSC09906.jpg
+        date: "2024-07-03"
+        caption: "Figures at Inner Mongolia Museum"
+        captionZh: "内蒙古博物院雕像"
+      - src: /img/travel/hohhot/20240703-呼和浩特-内蒙古博物院展品_DSC09930.jpg
+        date: "2024-07-03"
+        caption: "Exhibit at Inner Mongolia Museum"
+        captionZh: "内蒙古博物院展品"
+      - src: /img/travel/hohhot/20240703-呼和浩特-大召无量寺_DSC09971.jpg
+        date: "2024-07-03"
+        caption: "Dazhao Temple"
+        captionZh: "大召无量寺"
+      - src: /img/travel/hohhot/20240703-呼和浩特-大召寺屋顶_DSC09976.jpg
+        date: "2024-07-03"
+        caption: "Roof of Dazhao Temple"
+        captionZh: "大召寺屋顶"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺石狮_DSC00002.jpg
+        date: "2024-07-03"
+        caption: "Stone lion at Five Pagoda Temple"
+        captionZh: "五塔寺石狮"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺殿宇_DSC00013.jpg
+        date: "2024-07-03"
+        caption: "Hall at Five Pagoda Temple"
+        captionZh: "五塔寺殿宇"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺石雕_DSC00027.jpg
+        date: "2024-07-03"
+        caption: "Stone sculpture at Five Pagoda Temple"
+        captionZh: "五塔寺石雕"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺祈福彩带_DSC00031.jpg
+        date: "2024-07-03"
+        caption: "Prayer ribbons at Five Pagoda Temple"
+        captionZh: "五塔寺祈福彩带"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺屋檐_DSC00040.jpg
+        date: "2024-07-03"
+        caption: "Roof detail at Five Pagoda Temple"
+        captionZh: "五塔寺屋檐"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺白塔_DSC00072.jpg
+        date: "2024-07-03"
+        caption: "White stupas at Five Pagoda Temple"
+        captionZh: "五塔寺白塔"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺金刚座舍利宝塔_DSC00094.jpg
+        date: "2024-07-03"
+        caption: "Vajra Throne Stupa at Five Pagoda Temple"
+        captionZh: "五塔寺金刚座舍利宝塔"
+      - src: /img/travel/hohhot/20240703-呼和浩特-五塔寺浮雕_DSC00099.jpg
+        date: "2024-07-03"
+        caption: "Stone relief at Five Pagoda Temple"
+        captionZh: "五塔寺浮雕"
   - id: ulanqab
     group: inner-mongolia
     geoGroup: china
