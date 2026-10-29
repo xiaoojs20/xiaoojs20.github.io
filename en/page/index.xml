@@ -3,31 +3,45 @@
 &lt;p&gt;I study electrical engineering at Tsinghua University and minored in software engineering during my undergraduate studies. I am also interested in artificial intelligence, search and recommendation systems, and data analysis. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.&lt;/p&gt;
 &lt;p&gt;This is where I share what I learn, the projects I work on, and moments from daily life: sometimes a carefully written note, sometimes a photograph, and sometimes an idea that is still taking shape.&lt;/p&gt;
 &lt;h2 id="experience"&gt;Experience
-&lt;/h2&gt;&lt;ol class="about-experience" aria-label="Experience"&gt;
+&lt;/h2&gt;&lt;div class="about-locations" aria-label="Experience by city"&gt;
+ 
+ &lt;section class="about-location"&gt;
+ &lt;div class="about-location__heading"&gt;&lt;h3&gt;Beijing&lt;/h3&gt;&lt;span&gt;Sep 2020 — Present&lt;/span&gt;&lt;/div&gt;
+ &lt;ol class="about-experience"&gt;
  
  &lt;li class="about-experience__item"&gt;
- &lt;div class="about-experience__heading"&gt;&lt;h3&gt;Tsinghua University · Master of Engineering&lt;/h3&gt;&lt;span class="about-experience__date"&gt;Sep 2024 — Jun 2027&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="about-experience__heading"&gt;&lt;h4&gt;Tsinghua University · Master of Engineering&lt;/h4&gt;&lt;span class="about-experience__date"&gt;Sep 2024 — Jun 2027&lt;/span&gt;&lt;/div&gt;
  &lt;p&gt;Major in Electrical Engineering&lt;/p&gt;
  
  &lt;ul class="about-experience__children" aria-label="Internships during graduate studies"&gt;
- &lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h4&gt;Baidu · Algorithm Intern&lt;/h4&gt;&lt;span class="about-experience__date"&gt;Apr 2026 — Oct 2026&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h4&gt;Shopee · Algorithm Intern&lt;/h4&gt;&lt;span class="about-experience__date"&gt;Oct 2025 — Mar 2026&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h4&gt;Meituan · Algorithm Intern&lt;/h4&gt;&lt;span class="about-experience__date"&gt;Mar 2025 — Jul 2025&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+ &lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h5&gt;Baidu · Algorithm Intern&lt;/h5&gt;&lt;span class="about-experience__date"&gt;Apr 2026 — Oct 2026&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h5&gt;Shopee · Algorithm Intern&lt;/h5&gt;&lt;span class="about-experience__date"&gt;Oct 2025 — Mar 2026&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li class="about-experience__child"&gt;&lt;div class="about-experience__heading"&gt;&lt;h5&gt;Meituan · Algorithm Intern&lt;/h5&gt;&lt;span class="about-experience__date"&gt;Mar 2025 — Jul 2025&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
  &lt;/ul&gt;
  
  &lt;/li&gt;
  
  &lt;li class="about-experience__item"&gt;
- &lt;div class="about-experience__heading"&gt;&lt;h3&gt;Tsinghua University · Bachelor of Engineering&lt;/h3&gt;&lt;span class="about-experience__date"&gt;Sep 2020 — Jun 2024&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="about-experience__heading"&gt;&lt;h4&gt;Tsinghua University · Bachelor of Engineering&lt;/h4&gt;&lt;span class="about-experience__date"&gt;Sep 2020 — Jun 2024&lt;/span&gt;&lt;/div&gt;
  &lt;p&gt;Major in Electrical Engineering and Automation · Minor in Software Engineering&lt;/p&gt;
  
  &lt;/li&gt;
  
+ &lt;/ol&gt;
+ &lt;/section&gt;
+ 
+ &lt;section class="about-location"&gt;
+ &lt;div class="about-location__heading"&gt;&lt;h3&gt;Quanzhou · Jinjiang&lt;/h3&gt;&lt;span&gt;Sep 2017 — Jun 2020&lt;/span&gt;&lt;/div&gt;
+ &lt;ol class="about-experience"&gt;
+ 
  &lt;li class="about-experience__item"&gt;
- &lt;div class="about-experience__heading"&gt;&lt;h3&gt;Jinjiang Yangzheng Middle School, Fujian&lt;/h3&gt;&lt;span class="about-experience__date"&gt;Sep 2017 — Jun 2020&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="about-experience__heading"&gt;&lt;h4&gt;Jinjiang Yangzheng Middle School, Fujian&lt;/h4&gt;&lt;span class="about-experience__date"&gt;Sep 2017 — Jun 2020&lt;/span&gt;&lt;/div&gt;
  
  
  &lt;/li&gt;
  
-&lt;/ol&gt;
+ &lt;/ol&gt;
+ &lt;/section&gt;
+ 
+&lt;/div&gt;
 
 &lt;h2 id="beyond-work"&gt;Beyond work
 &lt;/h2&gt;&lt;p&gt;Outside work and study, I care about fitness and health and enjoy recording photographs and everyday moments. I&amp;rsquo;ve also built a tool for tracking my workouts. I hope this website can be a space that grows gradually over time.&lt;/p&gt;

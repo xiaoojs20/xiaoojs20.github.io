@@ -1,14 +1,21 @@
 {{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
-<ol class="about-experience" aria-label="{{ cond $zh "经历" "Experience" }}">
+<div class="about-locations" aria-label="{{ cond $zh "按城市划分的经历" "Experience by city" }}">
   {{ range hugo.Data.experience }}
-  <li class="about-experience__item">
-    <div class="about-experience__heading"><h3>{{ cond $zh .titleZh .titleEn }}</h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
-    {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . }}</p>{{ end }}
-    {{ with .children }}
-    <ul class="about-experience__children" aria-label="{{ cond $zh "硕士期间的实习经历" "Internships during graduate studies" }}">
-      {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4>{{ cond $zh .titleZh .titleEn }}</h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
-    </ul>
-    {{ end }}
-  </li>
+  <section class="about-location">
+    <div class="about-location__heading"><h3>{{ cond $zh .cityZh .cityEn }}</h3><span>{{ cond $zh .dateZh .dateEn }}</span></div>
+    <ol class="about-experience">
+      {{ range .entries }}
+      <li class="about-experience__item">
+        <div class="about-experience__heading"><h4>{{ cond $zh .titleZh .titleEn }}</h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
+        {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . }}</p>{{ end }}
+        {{ with .children }}
+        <ul class="about-experience__children" aria-label="{{ cond $zh "硕士期间的实习经历" "Internships during graduate studies" }}">
+          {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h5>{{ cond $zh .titleZh .titleEn }}</h5><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
+        </ul>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ol>
+  </section>
   {{ end }}
-</ol>
+</div>
