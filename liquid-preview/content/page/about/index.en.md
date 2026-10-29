@@ -61,7 +61,7 @@ On longer breaks, I like traveling to experience new places, photographing lands
 
 ### Lifestyle
 
-I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcohol.
+I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcohol. And I can’t go a day without coffee. ☕
 
 ### Future and financial plans
 
