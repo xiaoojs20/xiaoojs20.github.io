@@ -1,6 +1,7 @@
 ---
 title: About Me
 slug: about
+aliases: ["/coffee-chat/"]
 description: A little introduction to xiaoojs20.
 comments: false
 license: false
@@ -13,3 +14,6 @@ menu:
 Hello, I'm **xiaoojs20**. Welcome to my personal space.
 
 This is where I'll gradually collect everyday moments, photos and thoughts. More about me will come in time.
+
+
+{{< coffee-chat >}}

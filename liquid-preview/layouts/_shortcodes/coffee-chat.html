@@ -1,0 +1,14 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+{{- $lang := cond $zh "zh-CN" "en" -}}
+<section id="coffee-chat" class="about-coffee" aria-labelledby="coffee-heading">
+  <div class="about-coffee__intro">
+    <p class="coffee-booking__eyebrow">COFFEE CHAT</p>
+    <h2 id="coffee-heading">{{ cond $zh "聊聊吧" "Let’s chat" }}</h2>
+    <p>{{ cond $zh "如果你想和我咨询、交流，或只是聊聊想法，欢迎通过下面的日历预约一次 Coffee Chat。" "If you’d like to ask a question, exchange ideas, or simply have a chat, feel free to book a Coffee Chat using the calendar below." }}</p>
+    <a class="coffee-booking__external" href="{{ .Page.Site.Params.coffeeChat.bookingURL }}" target="_blank" rel="noopener noreferrer">{{ cond $zh "在 Google 日历中打开预约页 ↗" "Open the booking page in Google Calendar ↗" }}</a>
+  </div>
+  <div class="coffee-booking__frame">
+    <iframe src="{{ printf "%s?gv=true&hl=%s" .Page.Site.Params.coffeeChat.embedURL $lang | safeURL }}" title="{{ cond $zh "Google 日历 Coffee Chat 预约" "Google Calendar Coffee Chat booking" }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+  <p class="coffee-booking__help">{{ cond $zh "预约页面由 Google 日历提供。如果无法显示，可以使用上方链接打开。" "Booking is provided by Google Calendar. If it doesn’t load, use the link above." }}</p>
+</section>

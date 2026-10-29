@@ -13,7 +13,6 @@
         {{ end }}{{ end }}
         <div class="home-profile__copy"><p class="home-profile__greeting">{{ cond $isChinese "欢迎来到" "Welcome to" }}</p><h1 id="home-profile-title">{{ .Site.Title }}</h1><p class="home-profile__subtitle">{{ .Site.Params.sidebar.subtitle }}</p></div>
         {{ partial "social/links.html" (dict "Context" . "Prefix" "home") }}
-        <a class="coffee-home-link" href="{{ "coffee-chat/" | relLangURL }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Zm12 1h2a2 2 0 0 1 0 4h-2M3 21h15M8 3v2m4-2v2"/></svg><span>{{ cond $isChinese "预约 Coffee Chat" "Book a Coffee Chat" }}</span><span aria-hidden="true">↗</span></a>
     </section>
     <section class="home-feature-grid" aria-label="{{ cond $isChinese "主页快捷入口" "Explore this site" }}">
         <a href="{{ "about/" | relLangURL }}" class="home-feature-card home-feature-card--resume"><div class="home-feature-card__copy"><p>{{ cond $isChinese "认识我" "Get to know me" }}</p><h2>{{ cond $isChinese "关于我" "About me" }}</h2></div><div class="home-resume-teaser__mark" aria-hidden="true">{{ partial "helper/icon" "user" }}</div></a>

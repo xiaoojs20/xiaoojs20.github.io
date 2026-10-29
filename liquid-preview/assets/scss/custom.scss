@@ -4964,3 +4964,9 @@ button.article-share__button {
 
 #main-menu .menu-bottom-section #i18n-switch { display:block; padding:0; }
 #main-menu .menu-bottom-section #i18n-switch .language-direct { width:100%; box-sizing:border-box; display:grid; grid-template-columns:24px minmax(110px,1fr); align-items:center; column-gap:var(--menu-icon-separation); padding:8px 14px; }
+
+/* The booking section lives inside the About page. */
+.about-coffee { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--card-separator-color); scroll-margin-top: 90px; }
+.about-coffee__intro h2 { margin: 0 0 12px; color: var(--card-text-color-main); }
+.about-coffee__intro > p:not(.coffee-booking__eyebrow) { margin: 0 0 16px; color: var(--card-text-color-secondary); line-height: 1.8; }
+.about-coffee .coffee-booking__frame { margin-top: 20px; }
