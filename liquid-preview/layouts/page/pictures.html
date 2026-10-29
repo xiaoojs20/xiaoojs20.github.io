@@ -55,7 +55,7 @@
         {{ end }}
     {{ end }}
 
-    <article class="main-article pictures-article"><p style="padding: 1rem 1.5rem; color: var(--card-text-color-secondary)">以下是模板示例照片，之后会替换为自己的照片。</p>
+    <article class="main-article pictures-article"><p style="padding: 1rem 1.5rem; color: var(--card-text-color-secondary)">{{ cond $isChinese "以下是模板示例照片，之后会替换为自己的照片。" "These are sample photos and will be replaced with personal photos later." }}</p>
         {{ if gt (len $gallery) 0 }}
             <section class="photo-gallery" data-photo-gallery aria-label="{{ .Title }}">
                 <div class="photo-gallery__backdrop" data-gallery-close hidden></div>

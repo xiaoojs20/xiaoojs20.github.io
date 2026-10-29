@@ -1,0 +1,7 @@
+{{- $englishTarget := "/en/" | relURL -}}
+{{- $chineseTarget := "/" | relURL -}}
+{{- range .AllTranslations -}}
+  {{- if eq .Language.Lang "en" }}{{ $englishTarget = .RelPermalink }}{{ end -}}
+  {{- if eq .Language.Lang "zh" }}{{ $chineseTarget = .RelPermalink }}{{ end -}}
+{{- end -}}
+<script id="site-language-config" type="application/json">{{ dict "currentLanguage" .Language.Lang "englishTarget" $englishTarget "chineseTarget" $chineseTarget "excludePrompt" true | jsonify | safeJS }}</script>
