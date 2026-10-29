@@ -14,7 +14,7 @@ menu:
 
 ## Hi, I'm xiaoojs20
 
-I’m from Jinjiang, Quanzhou, Fujian, China. Welcome to my personal space.
+My name is Jinsong Xiao (肖锦松), and I’m from Jinjiang, Quanzhou, Fujian, China. Welcome to my personal space.
 
 I study electrical engineering at Tsinghua University and minored in software engineering during my undergraduate studies. I am also interested in artificial intelligence, search and recommendation systems, and data analysis. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.
 
