@@ -41,6 +41,11 @@ permalinks:
   page: /:slug/
 params:
   version: "1.2.0"
+  contact:
+    email: "xiaoojs20@gmail.com"
+    x: "https://x.com/redefine1020"
+    instagram: "https://www.instagram.com/xiaoo1020/"
+    youtube: "https://www.youtube.com/@xiaoojs20"
   mainSections: [post]
   favicon: /img/liquid-stack/logo-transparent.png
   dateFormat:

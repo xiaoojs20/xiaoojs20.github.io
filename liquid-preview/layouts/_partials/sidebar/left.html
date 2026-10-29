@@ -35,25 +35,7 @@
         </div>
     </header>
 
-    {{- with .Site.Menus.social -}}
-        <ol class="menu-social">
-            {{ range . }}
-                <li>
-                    <a
-                        href='{{ .URL }}'
-                        {{ if .Params.newTab }}target="_blank"{{ end }}
-                        {{ with .Name }}title="{{ . }}"{{ end }}
-                        rel="me"
-                    >
-                        {{ $icon := default "link" .Params.Icon }}
-                        {{ with $icon }}
-                            {{ partial "helper/icon" . }}
-                        {{ end }}
-                    </a>
-                </li>
-            {{ end }}
-        </ol>
-    {{- end -}}
+    {{ partial "social/links.html" (dict "Context" . "Prefix" "sidebar") }}
 
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}

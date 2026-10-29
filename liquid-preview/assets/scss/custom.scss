@@ -4916,3 +4916,11 @@ button.article-share__button {
 .site-note h2 { margin: 14px 0 12px; color: var(--card-text-color-main); font-size: 2rem; }
 .site-note p { margin: 0; color: var(--card-text-color-secondary); font-size: 1.4rem; line-height: 1.8; }
 .site-note__foot { display: block; margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--card-separator-color); color: var(--card-text-color-secondary); font-size: 1.2rem; }
+
+/* Identical social links in the homepage and sidebar. */
+.left-sidebar > .menu-social.site-social { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; list-style: none; padding: 0; }
+.left-sidebar > .menu-social.site-social li { display: flex; margin: 0; }
+.left-sidebar > .menu-social.site-social :is(a, button) { width: 31px; height: 36px; padding: 0; display: inline-flex; justify-content: center; align-items: center; border: 0; background: transparent; color: var(--body-text-color); cursor: pointer; border-radius: 8px; }
+.left-sidebar > .menu-social.site-social :is(a, button) svg { display: block; width: 21px; height: 21px; flex: none; }
+.left-sidebar > .menu-social.site-social button svg[fill="currentColor"] { stroke: none; }
+.left-sidebar > .menu-social.site-social :is(a, button):focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
