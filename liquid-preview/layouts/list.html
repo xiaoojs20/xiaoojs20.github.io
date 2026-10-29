@@ -1,4 +1,10 @@
 {{ define "main" }}
+    {{- $pages := partial "helper/pages.html" . -}}
+    {{- $pageCount := len .Pages -}}
+    {{- $lifePage := .Site.GetPage "page" "life" -}}
+    {{- if and (eq .Site.Params.showLife false) $lifePage -}}
+        {{- $pageCount = len (where .Pages "RelPermalink" "ne" $lifePage.RelPermalink) -}}
+    {{- end -}}
     <header>
         <h3 class="section-title">
             {{ if eq .Parent (.GetPage "/") }}
@@ -10,7 +16,7 @@
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">{{ T "list.page" (len .Pages) }}</h3>
+                <h3 class="section-count">{{ T "list.page" $pageCount }}</h3>
                 <h1 class="section-term">{{ .Title }}</h1>
                 {{ with .Params.description }}
                     <h2 class="section-description">{{ . }}</h2>
@@ -38,7 +44,6 @@
         </div>
     </header>
 
-    {{- $pages := partial "helper/pages.html" . -}}
     {{- $subsections := .Sections -}}
     
     {{- if and (eq (len $pages) (len $subsections)) (eq $pages $subsections) -}}

@@ -1,8 +1,10 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- $lifePage := .Site.GetPage "page" "life" }}
+  {{- $showLife := ne .Site.Params.showLife false }}
   {{- range where .Pages "Sitemap.Disable" "ne" true }}
-  {{- if .Permalink }}
+  {{- if and .Permalink (or $showLife (not $lifePage) (ne .RelPermalink $lifePage.RelPermalink)) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}

@@ -1,0 +1,21 @@
+{{- $pages := .Pages -}}
+
+{{- if .IsHome -}}
+    {{- $pages = where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+{{- else if or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $subsections := .Sections -}}
+    {{- $pages = .Pages | complement $subsections -}}
+
+    {{- if eq (len $pages) 0 -}}
+        {{- $pages = $subsections -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $lifePage := .Site.GetPage "page" "life" -}}
+{{- if and (eq .Site.Params.showLife false) $lifePage -}}
+    {{- $pages = where $pages "RelPermalink" "ne" $lifePage.RelPermalink -}}
+{{- end -}}
+
+{{- $pages := partial "helper/pages-sort.html" (dict "Pages" $pages "Context" .) -}}
+
+{{- return $pages -}}

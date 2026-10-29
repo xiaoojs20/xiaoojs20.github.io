@@ -40,6 +40,7 @@ permalinks:
   post: /p/:slug/
   page: /:slug/
 params:
+  showLife: false # 隐藏生活记录入口；改为 true 可恢复。
   version: "1.2.0"
   contact:
     email: "xiaoojs20@gmail.com"

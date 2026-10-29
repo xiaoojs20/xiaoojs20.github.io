@@ -5,6 +5,10 @@
     {{- $excludedLayouts := slice "search" "archives" "sitemap" -}}
     {{- $articles := where .Site.RegularPages "Section" "post" -}}
     {{- $standalonePages := where .Site.RegularPages "Section" "page" -}}
+    {{- $lifePage := .Site.GetPage "page" "life" -}}
+    {{- if and (eq .Site.Params.showLife false) $lifePage -}}
+        {{- $standalonePages = where $standalonePages "RelPermalink" "ne" $lifePage.RelPermalink -}}
+    {{- end -}}
 
     <article class="main-article sitemap-article">
         {{ partial "article/components/header" (dict "Page" . "IsList" false) }}
