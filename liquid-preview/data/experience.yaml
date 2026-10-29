@@ -1,9 +1,9 @@
-- titleZh: 清华大学 · 电气工程硕士
-  titleEn: Tsinghua University · M.S. in Electrical Engineering
+- titleZh: 清华大学 · 工学硕士
+  titleEn: Tsinghua University · Master of Engineering
   dateZh: 2024.09 — 2027.06
   dateEn: Sep 2024 — Jun 2027
-  descriptionZh: ""
-  descriptionEn: ""
+  descriptionZh: 专业：电气工程
+  descriptionEn: Major in Electrical Engineering
   children:
     - titleZh: 百度 · 算法实习生
       titleEn: Baidu · Algorithm Intern
@@ -23,12 +23,12 @@
       dateEn: Mar 2025 — Jul 2025
       descriptionZh: ""
       descriptionEn: ""
-- titleZh: 清华大学 · 电气工程及其自动化本科 · 软件工程辅修
-  titleEn: Tsinghua University · B.S. in Electrical Engineering and Automation · Minor in Software Engineering
+- titleZh: 清华大学 · 工学学士
+  titleEn: Tsinghua University · Bachelor of Engineering
   dateZh: 2020.09 — 2024.06
   dateEn: Sep 2020 — Jun 2024
-  descriptionZh: ""
-  descriptionEn: ""
+  descriptionZh: 主修：电气工程及其自动化 · 辅修：软件工程
+  descriptionEn: Major in Electrical Engineering and Automation · Minor in Software Engineering
 - titleZh: 福建省晋江市养正中学
   titleEn: Jinjiang Yangzheng Middle School, Fujian
   dateZh: 2017.09 — 2020.06
