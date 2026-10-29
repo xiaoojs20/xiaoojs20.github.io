@@ -4,6 +4,7 @@ slug: about
 aliases: ["/coffee-chat/"]
 description: 关于 xiaoojs20 的一点介绍。
 comments: false
+share: false
 license: false
 menu:
   main:

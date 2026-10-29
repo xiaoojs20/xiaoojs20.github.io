@@ -4,6 +4,7 @@ slug: about
 aliases: ["/coffee-chat/"]
 description: A little introduction to xiaoojs20.
 comments: false
+share: false
 license: false
 menu:
   main:
