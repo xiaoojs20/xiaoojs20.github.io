@@ -1,0 +1,23 @@
+# 添加真实旅行记录时，在 visits 下按以下格式填写。示例仅用于展示交互，不计入真实记录。
+visits: []
+demo:
+  id: sample
+  name: Sample destination
+  nameZh: 示例地点
+  region: For demonstration only
+  regionZh: 仅用于展示，不代表真实行程
+  latitude: 30
+  longitude: 105
+  date: ""
+  description: Explore how a place and its photo album will look here.
+  descriptionZh: 点击照片，看看未来的旅行相册会是什么样子。
+  photos:
+    - src: /img/gallery/photo-01.jpg
+      caption: Sample photo
+      captionZh: 示例照片
+    - src: /img/gallery/photo-02.jpg
+      caption: Sample photo
+      captionZh: 示例照片
+    - src: /img/gallery/photo-03.jpg
+      caption: Sample photo
+      captionZh: 示例照片

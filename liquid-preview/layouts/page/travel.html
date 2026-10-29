@@ -1,0 +1,31 @@
+{{ define "body-class" }}article-page travel-page{{ end }}
+{{ define "main" }}
+{{ $zh := hasPrefix .Language.Lang "zh" }}
+{{ $travel := hugo.Data.travel }}
+<link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/travel-map.css" | relURL }}">
+<article class="travel-shell" data-travel-app data-language="{{ cond $zh "zh" "en" }}">
+  <header class="travel-intro">
+    <span class="travel-eyebrow">{{ cond $zh "THE PLACES I’VE BEEN" "THE PLACES I’VE BEEN" }}</span>
+    <h1>{{ cond $zh "旅行地图" "A map of my travels" }}</h1>
+    <p>{{ cond $zh "把走过的地方，和沿途的故事慢慢收藏起来。" "A little collection of places, pictures, and stories from along the way." }}</p>
+  </header>
+  <div class="travel-layout">
+    <section class="travel-map-card" aria-label="{{ cond $zh "旅行地图" "Travel map" }}">
+      <div class="travel-map-top"><span>{{ cond $zh "探索地图" "EXPLORE THE MAP" }}</span><span data-travel-count></span></div>
+      <div class="travel-map" data-travel-map role="region" aria-label="{{ cond $zh "可缩放的旅行地点地图" "Interactive map of travel destinations" }}"></div>
+      <p class="travel-map-hint">{{ cond $zh "拖动地图 · 点击地点查看相册" "Drag to explore · Select a place to see its album" }}</p>
+      <p class="travel-map-error" data-travel-error hidden>{{ cond $zh "地图底图暂时无法加载，地点列表仍可使用。" "Map tiles are unavailable right now. You can still use the place list." }}</p>
+    </section>
+    <aside class="travel-panel" aria-live="polite">
+      <div class="travel-panel-top"><span>{{ cond $zh "旅途收藏" "TRAVEL JOURNAL" }}</span><button type="button" class="travel-reset" data-travel-reset hidden>{{ cond $zh "返回列表" "All places" }}</button></div>
+      <div data-travel-content></div>
+    </aside>
+  </div>
+</article>
+<dialog class="travel-lightbox" data-travel-lightbox aria-label="{{ cond $zh "查看照片" "View photo" }}"><button class="travel-lightbox-close" data-travel-close aria-label="{{ cond $zh "关闭照片" "Close photo" }}">×</button><img alt="" data-travel-lightbox-image><p data-travel-lightbox-caption></p></dialog>
+<script id="travel-data" type="application/json">{{ $travel | jsonify | safeJS }}</script>
+<script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script><script src="{{ "js/travel-map.js" | relURL }}" defer></script>
+{{ partial "footer/footer" . }}
+{{ end }}
+{{ define "right-sidebar" }}{{ end }}
