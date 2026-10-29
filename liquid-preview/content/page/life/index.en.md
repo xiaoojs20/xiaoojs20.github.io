@@ -4,6 +4,7 @@ slug: life
 aliases: ["/en/life/"]
 description: A collection of everyday moments.
 comments: false
+share: false
 license: false
 menu:
   main:
