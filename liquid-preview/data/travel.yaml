@@ -1381,7 +1381,235 @@ visits:
     nameZh: "澳门"
     latitude: 22.17576
     longitude: 113.55141
-    photos: []
+    photos:
+      - src: /img/travel/macao/20240213-澳门-大三巴牌坊_20240213-DSC06432.jpg
+        date: "2024-02-13"
+        caption: "Ruins of St. Paul’s"
+        captionZh: "大三巴牌坊"
+      - src: /img/travel/macao/20240213-澳门-澳门街巷_20240213-DSC06448.jpg
+        date: "2024-02-13"
+        caption: "Macao street"
+        captionZh: "澳门街巷"
+      - src: /img/travel/macao/20240213-澳门-澳门街头建筑_20240213-DSC06480.jpg
+        date: "2024-02-13"
+        caption: "Macao street architecture"
+        captionZh: "澳门街头建筑"
+      - src: /img/travel/macao/20240213-澳门-澳门城市街景_20240213-DSC06492.jpg
+        date: "2024-02-13"
+        caption: "Macao city view"
+        captionZh: "澳门城市街景"
+      - src: /img/travel/macao/20240213-澳门-澳门旅游塔_20240213-DSC06494.jpg
+        date: "2024-02-13"
+        caption: "Macau Tower"
+        captionZh: "澳门旅游塔"
+      - src: /img/travel/macao/20240213-澳门-澳门水岸_20240213-DSC06500.jpg
+        date: "2024-02-13"
+        caption: "Macao waterfront"
+        captionZh: "澳门水岸"
+      - src: /img/travel/macao/20240213-澳门-街边商铺_20240213-DSC06524.jpg
+        date: "2024-02-13"
+        caption: "Street storefront"
+        captionZh: "街边商铺"
+      - src: /img/travel/macao/20240213-澳门-澳门街景_20240213-DSC06532.jpg
+        date: "2024-02-13"
+        caption: "Street view in Macao"
+        captionZh: "澳门街景"
+      - src: /img/travel/macao/20240213-澳门-玻璃幕墙_20240213-DSC06533.jpg
+        date: "2024-02-13"
+        caption: "Glass facade"
+        captionZh: "玻璃幕墙"
+      - src: /img/travel/macao/20240213-澳门-澳门轻轨车厂_20240213-DSC06546.jpg
+        date: "2024-02-13"
+        caption: "Macao Light Rapid Transit depot"
+        captionZh: "澳门轻轨车厂"
+      - src: /img/travel/macao/20240213-澳门-澳门科技大学_20240213-DSC06554.jpg
+        date: "2024-02-13"
+        caption: "Macau University of Science and Technology"
+        captionZh: "澳门科技大学"
+      - src: /img/travel/macao/20240213-澳门-澳门科技大学校园_20240213-DSC06556.jpg
+        date: "2024-02-13"
+        caption: "Campus of Macau University of Science and Technology"
+        captionZh: "澳门科技大学校园"
+      - src: /img/travel/macao/20240213-澳门-澳门科技大学校门_20240213-DSC06566.jpg
+        date: "2024-02-13"
+        caption: "Macau University of Science and Technology entrance"
+        captionZh: "澳门科技大学校门"
+      - src: /img/travel/macao/20240213-澳门-澳门科技大学标识_20240213-DSC06575.jpg
+        date: "2024-02-13"
+        caption: "Macau University of Science and Technology sign"
+        captionZh: "澳门科技大学标识"
+      - src: /img/travel/macao/20240213-澳门-校园门牌_20240213-DSC06580.jpg
+        date: "2024-02-13"
+        caption: "Campus sign"
+        captionZh: "校园门牌"
+      - src: /img/travel/macao/20240213-澳门-澳门科技大学建筑_20240213-DSC06583.jpg
+        date: "2024-02-13"
+        caption: "University building in Macao"
+        captionZh: "澳门科技大学建筑"
+      - src: /img/travel/macao/20240213-澳门-澳门科技大学图书馆_20240213-DSC06586.jpg
+        date: "2024-02-13"
+        caption: "Macau University of Science and Technology library"
+        captionZh: "澳门科技大学图书馆"
+      - src: /img/travel/macao/20240213-澳门-校园海报_20240213-DSC06590.jpg
+        date: "2024-02-13"
+        caption: "Campus poster"
+        captionZh: "校园海报"
+      - src: /img/travel/macao/20240213-澳门-小票_IMG_20240213_115635.jpg
+        date: "2024-02-13"
+        caption: "Receipt"
+        captionZh: "小票"
+      - src: /img/travel/macao/20240213-澳门-澳门城市建筑_20240213-DSC06598.jpg
+        date: "2024-02-13"
+        caption: "Macao architecture"
+        captionZh: "澳门城市建筑"
+      - src: /img/travel/macao/20240213-澳门-永利皇宫_20240213-DSC06604.jpg
+        date: "2024-02-13"
+        caption: "Wynn Palace"
+        captionZh: "永利皇宫"
+      - src: /img/travel/macao/20240213-澳门-永利皇宫缆车_20240213-DSC06615.jpg
+        date: "2024-02-13"
+        caption: "Wynn Palace SkyCab"
+        captionZh: "永利皇宫缆车"
+      - src: /img/travel/macao/20240213-澳门-街边小吃_IMG_20240213_123543.jpg
+        date: "2024-02-13"
+        caption: "Street snack"
+        captionZh: "街边小吃"
+      - src: /img/travel/macao/20240213-澳门-永利皇宫缆车与水景_20240213-DSC06627.jpg
+        date: "2024-02-13"
+        caption: "SkyCab and water at Wynn Palace"
+        captionZh: "永利皇宫缆车与水景"
+      - src: /img/travel/macao/20240213-澳门-永利皇宫缆车站_20240213-DSC06657.jpg
+        date: "2024-02-13"
+        caption: "SkyCab station at Wynn Palace"
+        captionZh: "永利皇宫缆车站"
+      - src: /img/travel/macao/20240213-澳门-酒店金色雕塑_20240213-DSC06677.jpg
+        date: "2024-02-13"
+        caption: "Golden hotel sculpture"
+        captionZh: "酒店金色雕塑"
+      - src: /img/travel/macao/20240213-澳门-酒店雕塑_20240213-DSC06680.jpg
+        date: "2024-02-13"
+        caption: "Hotel sculpture"
+        captionZh: "酒店雕塑"
+      - src: /img/travel/macao/20240213-澳门-永利皇宫水景_20240213-DSC06687.jpg
+        date: "2024-02-13"
+        caption: "Wynn Palace water feature"
+        captionZh: "永利皇宫水景"
+      - src: /img/travel/macao/20240213-澳门-酒店金色装饰_20240213-DSC06690.jpg
+        date: "2024-02-13"
+        caption: "Golden hotel decoration"
+        captionZh: "酒店金色装饰"
+      - src: /img/travel/macao/20240213-澳门-室内穹顶_20240213-DSC06697.jpg
+        date: "2024-02-13"
+        caption: "Interior dome"
+        captionZh: "室内穹顶"
+      - src: /img/travel/macao/20240213-澳门-酒店金色穹顶_20240213-DSC06700.jpg
+        date: "2024-02-13"
+        caption: "Golden hotel dome"
+        captionZh: "酒店金色穹顶"
+      - src: /img/travel/macao/20240213-澳门-伦敦人红色电话亭_20240213-DSC06723.jpg
+        date: "2024-02-13"
+        caption: "Red telephone box at The Londoner Macao"
+        captionZh: "伦敦人红色电话亭"
+      - src: /img/travel/macao/20240213-澳门-澳门伦敦人钟楼_20240213-DSC06731.jpg
+        date: "2024-02-13"
+        caption: "Clock tower at The Londoner Macao"
+        captionZh: "澳门伦敦人钟楼"
+      - src: /img/travel/macao/20240213-澳门-伦敦人钟楼细节_20240213-DSC06754.jpg
+        date: "2024-02-13"
+        caption: "Clock tower detail at The Londoner Macao"
+        captionZh: "伦敦人钟楼细节"
+      - src: /img/travel/macao/20240213-澳门-酒店圆顶装饰_20240213-DSC06762.jpg
+        date: "2024-02-13"
+        caption: "Decorative hotel dome"
+        captionZh: "酒店圆顶装饰"
+      - src: /img/travel/macao/20240213-澳门-巴黎人街牌_20240213-DSC06766.jpg
+        date: "2024-02-13"
+        caption: "Street sign at The Parisian Macao"
+        captionZh: "巴黎人街牌"
+      - src: /img/travel/macao/20240213-澳门-酒店楼梯_20240213-DSC06773.jpg
+        date: "2024-02-13"
+        caption: "Hotel stairway"
+        captionZh: "酒店楼梯"
+      - src: /img/travel/macao/20240213-澳门-酒店喷泉_20240213-DSC06779.jpg
+        date: "2024-02-13"
+        caption: "Hotel fountain"
+        captionZh: "酒店喷泉"
+      - src: /img/travel/macao/20240213-澳门-澳门巴黎人埃菲尔铁塔_20240213-DSC06782.jpg
+        date: "2024-02-13"
+        caption: "Eiffel Tower at The Parisian Macao"
+        captionZh: "澳门巴黎人埃菲尔铁塔"
+      - src: /img/travel/macao/20240213-澳门-酒店立面雕塑_20240213-DSC06789.jpg
+        date: "2024-02-13"
+        caption: "Hotel facade sculpture"
+        captionZh: "酒店立面雕塑"
+      - src: /img/travel/macao/20240213-澳门-澳门伦敦人钟楼远景_20240213-DSC06792.jpg
+        date: "2024-02-13"
+        caption: "Clock tower at The Londoner Macao"
+        captionZh: "澳门伦敦人钟楼远景"
+      - src: /img/travel/macao/20240213-澳门-澳门伦敦人建筑_20240213-DSC06797.jpg
+        date: "2024-02-13"
+        caption: "The Londoner Macao architecture"
+        captionZh: "澳门伦敦人建筑"
+      - src: /img/travel/macao/20240213-澳门-伦敦人建筑细节_20240213-DSC06800.jpg
+        date: "2024-02-13"
+        caption: "Architectural detail at The Londoner Macao"
+        captionZh: "伦敦人建筑细节"
+      - src: /img/travel/macao/20240213-澳门-澳门酒店建筑_20240213-DSC06813.jpg
+        date: "2024-02-13"
+        caption: "Hotel building in Macao"
+        captionZh: "澳门酒店建筑"
+      - src: /img/travel/macao/20240213-澳门-澳门老街人群_20240213-IMG_20240213_164832.jpg
+        date: "2024-02-13"
+        caption: "Crowd on a Macao street"
+        captionZh: "澳门老街人群"
+      - src: /img/travel/macao/20240213-澳门-澳门街边店铺_20240213-IMG_20240213_173052.jpg
+        date: "2024-02-13"
+        caption: "Macao storefront"
+        captionZh: "澳门街边店铺"
+      - src: /img/travel/macao/20240213-澳门-澳门威尼斯人_20240213-DSC06827.jpg
+        date: "2024-02-13"
+        caption: "The Venetian Macao"
+        captionZh: "澳门威尼斯人"
+      - src: /img/travel/macao/20240213-澳门-威尼斯人运河_20240213-DSC06845.jpg
+        date: "2024-02-13"
+        caption: "Canal at The Venetian Macao"
+        captionZh: "威尼斯人运河"
+      - src: /img/travel/macao/20240213-澳门-商店陈列_20240213-DSC06846.jpg
+        date: "2024-02-13"
+        caption: "Shop display"
+        captionZh: "商店陈列"
+      - src: /img/travel/macao/20240213-澳门-巴黎人铁塔夜景_20240213-DSC06849.jpg
+        date: "2024-02-13"
+        caption: "Eiffel Tower at The Parisian Macao at night"
+        captionZh: "巴黎人铁塔夜景"
+      - src: /img/travel/macao/20240213-澳门-伦敦人钟楼夜景_20240213-DSC06861.jpg
+        date: "2024-02-13"
+        caption: "Clock tower at The Londoner Macao at night"
+        captionZh: "伦敦人钟楼夜景"
+      - src: /img/travel/macao/20240213-澳门-伦敦人电话亭夜景_20240213-DSC06870.jpg
+        date: "2024-02-13"
+        caption: "Telephone box at The Londoner Macao at night"
+        captionZh: "伦敦人电话亭夜景"
+      - src: /img/travel/macao/20240213-澳门-巴黎人铁塔灯光_20240213-DSC06880.jpg
+        date: "2024-02-13"
+        caption: "Illuminated tower at The Parisian Macao"
+        captionZh: "巴黎人铁塔灯光"
+      - src: /img/travel/macao/20240213-澳门-澳门巴黎人夜景_20240213-DSC06904.jpg
+        date: "2024-02-13"
+        caption: "The Parisian Macao at night"
+        captionZh: "澳门巴黎人夜景"
+      - src: /img/travel/macao/20240213-澳门-酒店金色雕像夜景_20240213-DSC06912.jpg
+        date: "2024-02-13"
+        caption: "Golden statue at night"
+        captionZh: "酒店金色雕像夜景"
+      - src: /img/travel/macao/20240213-澳门-澳门酒店夜景_20240213-DSC06917.jpg
+        date: "2024-02-13"
+        caption: "Macao hotel at night"
+        captionZh: "澳门酒店夜景"
+      - src: /img/travel/macao/20240213-澳门-酒店灯光夜景_20240213-DSC06920.jpg
+        date: "2024-02-13"
+        caption: "Illuminated hotel at night"
+        captionZh: "酒店灯光夜景"
   - id: chengde
     group: hebei
     geoGroup: china
@@ -1983,7 +2211,115 @@ visits:
     regionZh: "广东"
     latitude: 22.54457
     longitude: 114.05454
-    photos: []
+    photos:
+      - src: /img/travel/shenzhen/20230909-深圳-清华大学深圳国际研究生院_20230909-DSC03903.jpg
+        date: "2023-09-09"
+        caption: "Tsinghua Shenzhen International Graduate School"
+        captionZh: "清华大学深圳国际研究生院"
+      - src: /img/travel/shenzhen/20230909-深圳-深研院教学楼_20230909-DSC03906.jpg
+        date: "2023-09-09"
+        caption: "Teaching building at Tsinghua Shenzhen International Graduate School"
+        captionZh: "深研院教学楼"
+      - src: /img/travel/shenzhen/20230909-深圳-深研院校园_20230909-DSC03907.jpg
+        date: "2023-09-09"
+        caption: "Tsinghua Shenzhen International Graduate School campus"
+        captionZh: "深研院校园"
+      - src: /img/travel/shenzhen/20230909-深圳-街边商铺_20230909-DSC03919.jpg
+        date: "2023-09-09"
+        caption: "Street storefront"
+        captionZh: "街边商铺"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳街头旗帜_20230909-DSC03924.jpg
+        date: "2023-09-09"
+        caption: "Flags on a Shenzhen street"
+        captionZh: "深圳街头旗帜"
+      - src: /img/travel/shenzhen/20230909-深圳-街头雕塑_20230909-DSC03927.jpg
+        date: "2023-09-09"
+        caption: "Street sculpture"
+        captionZh: "街头雕塑"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳水岸与远山_20230909-DSC03941.jpg
+        date: "2023-09-09"
+        caption: "Shenzhen waterfront and mountains"
+        captionZh: "深圳水岸与远山"
+      - src: /img/travel/shenzhen/20230909-深圳-云雾山景_20230909-DSC03948.jpg
+        date: "2023-09-09"
+        caption: "Clouds over the mountains"
+        captionZh: "云雾山景"
+      - src: /img/travel/shenzhen/20230909-深圳-城市塔楼_20230909-DSC03959.jpg
+        date: "2023-09-09"
+        caption: "City tower"
+        captionZh: "城市塔楼"
+      - src: /img/travel/shenzhen/20230909-深圳-山雾与城区_20230909-DSC03964.jpg
+        date: "2023-09-09"
+        caption: "Clouds over the city"
+        captionZh: "山雾与城区"
+      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆_20230909-DSC03975.jpg
+        date: "2023-09-09"
+        caption: "Huaqiangbei Museum"
+        captionZh: "华强北博物馆"
+      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆展览_20230909-DSC03981.jpg
+        date: "2023-09-09"
+        caption: "Exhibit at Huaqiangbei Museum"
+        captionZh: "华强北博物馆展览"
+      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆手机展_20230909-DSC03991.jpg
+        date: "2023-09-09"
+        caption: "Mobile phone exhibit at Huaqiangbei Museum"
+        captionZh: "华强北博物馆手机展"
+      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆展厅_20230909-DSC03996.jpg
+        date: "2023-09-09"
+        caption: "Gallery at Huaqiangbei Museum"
+        captionZh: "华强北博物馆展厅"
+      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆霓虹灯_20230909-DSC04003.jpg
+        date: "2023-09-09"
+        caption: "Neon signs at Huaqiangbei Museum"
+        captionZh: "华强北博物馆霓虹灯"
+      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆影像墙_20230909-DSC04009.jpg
+        date: "2023-09-09"
+        caption: "Video wall at Huaqiangbei Museum"
+        captionZh: "华强北博物馆影像墙"
+      - src: /img/travel/shenzhen/20230909-深圳-博物馆互动展览_20230909-DSC04024.jpg
+        date: "2023-09-09"
+        caption: "Interactive museum exhibit"
+        captionZh: "博物馆互动展览"
+      - src: /img/travel/shenzhen/20230909-深圳-博物馆科技展_20230909-DSC04029.jpg
+        date: "2023-09-09"
+        caption: "Technology exhibit"
+        captionZh: "博物馆科技展"
+      - src: /img/travel/shenzhen/20230909-深圳-博物馆电子产品展_20230909-DSC04035.jpg
+        date: "2023-09-09"
+        caption: "Electronics exhibit"
+        captionZh: "博物馆电子产品展"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳城市夜色_20230909-DSC04042.jpg
+        date: "2023-09-09"
+        caption: "Shenzhen at night"
+        captionZh: "深圳城市夜色"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳湾灯光_20230909-DSC04071.jpg
+        date: "2023-09-09"
+        caption: "Lights over Shenzhen Bay"
+        captionZh: "深圳湾灯光"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳街头雕塑_20230909-DSC04084.jpg
+        date: "2023-09-09"
+        caption: "Shenzhen street sculpture"
+        captionZh: "深圳街头雕塑"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳湾夜景_20230909-DSC04093.jpg
+        date: "2023-09-09"
+        caption: "Shenzhen Bay at night"
+        captionZh: "深圳湾夜景"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳湾春笋大厦_20230909-DSC04117.jpg
+        date: "2023-09-09"
+        caption: "China Resources Headquarters in Shenzhen Bay"
+        captionZh: "深圳湾春笋大厦"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳湾城市夜景_20230909-DSC04122.jpg
+        date: "2023-09-09"
+        caption: "City lights over Shenzhen Bay"
+        captionZh: "深圳湾城市夜景"
+      - src: /img/travel/shenzhen/20230909-深圳-深圳湾天际线_20230909-DSC04128.jpg
+        date: "2023-09-09"
+        caption: "Shenzhen Bay skyline"
+        captionZh: "深圳湾天际线"
+      - src: /img/travel/shenzhen/20230909-深圳-建筑灯光与倒影_20230909-DSC04142.jpg
+        date: "2023-09-09"
+        caption: "Building lights and reflections"
+        captionZh: "建筑灯光与倒影"
   - id: zhangzhou
     group: fujian
     geoGroup: china
@@ -2003,7 +2339,67 @@ visits:
     regionZh: "福建"
     latitude: 26.07750
     longitude: 119.29182
-    photos: []
+    photos:
+      - src: /img/travel/fuzhou/20240127-福州-福州街头雕塑_20240127-DSC06156.jpg
+        date: "2024-01-27"
+        caption: "Street sculpture in Fuzhou"
+        captionZh: "福州街头雕塑"
+      - src: /img/travel/fuzhou/20240127-福州-山间岩壁_20240127-DSC06169.jpg
+        date: "2024-01-27"
+        caption: "Rock face in the hills"
+        captionZh: "山间岩壁"
+      - src: /img/travel/fuzhou/20240127-福州-山间水库_20240127-DSC06185.jpg
+        date: "2024-01-27"
+        caption: "Reservoir in the hills"
+        captionZh: "山间水库"
+      - src: /img/travel/fuzhou/20240127-福州-三坊七巷_20240127-DSC06204.jpg
+        date: "2024-01-27"
+        caption: "Sanfang Qixiang historic district"
+        captionZh: "三坊七巷"
+      - src: /img/travel/fuzhou/20240127-福州-三坊七巷建筑_20240127-DSC06209.jpg
+        date: "2024-01-27"
+        caption: "Architecture in Sanfang Qixiang"
+        captionZh: "三坊七巷建筑"
+      - src: /img/travel/fuzhou/20240127-福州-福州历史街区_20240127-DSC06219.jpg
+        date: "2024-01-27"
+        caption: "Historic district in Fuzhou"
+        captionZh: "福州历史街区"
+      - src: /img/travel/fuzhou/20240127-福州-展馆手稿_20240127-DSC06223.jpg
+        date: "2024-01-27"
+        caption: "Manuscript on display"
+        captionZh: "展馆手稿"
+      - src: /img/travel/fuzhou/20240127-福州-福字装饰_20240127-DSC06228.jpg
+        date: "2024-01-27"
+        caption: "Decorative Chinese character for good fortune"
+        captionZh: "福字装饰"
+      - src: /img/travel/fuzhou/20240127-福州-街巷灯笼_20240127-DSC06231.jpg
+        date: "2024-01-27"
+        caption: "Lanterns in a historic street"
+        captionZh: "街巷灯笼"
+      - src: /img/travel/fuzhou/20240127-福州-福字石刻_20240127-DSC06232.jpg
+        date: "2024-01-27"
+        caption: "Stone inscription for good fortune"
+        captionZh: "福字石刻"
+      - src: /img/travel/fuzhou/20240128-福州-连江山间风车_20240128-DSC06251.jpg
+        date: "2024-01-28"
+        caption: "Wind turbines in Lianjiang"
+        captionZh: "连江山间风车"
+      - src: /img/travel/fuzhou/20240128-福州-连江海岸远景_20240128-DSC06272.jpg
+        date: "2024-01-28"
+        caption: "Coastal view in Lianjiang"
+        captionZh: "连江海岸远景"
+      - src: /img/travel/fuzhou/20240128-福州-连江海湾_20240128-DSC06273.jpg
+        date: "2024-01-28"
+        caption: "Lianjiang bay"
+        captionZh: "连江海湾"
+      - src: /img/travel/fuzhou/20240128-福州-连江海岸山景_20240128-DSC06306.jpg
+        date: "2024-01-28"
+        caption: "Mountains by the coast in Lianjiang"
+        captionZh: "连江海岸山景"
+      - src: /img/travel/fuzhou/20240128-福州-连江山顶远眺_20240128-DSC06324.jpg
+        date: "2024-01-28"
+        caption: "View from the hills in Lianjiang"
+        captionZh: "连江山顶远眺"
   - id: shantou
     group: guangdong
     geoGroup: china
@@ -3159,6 +3555,160 @@ visits:
     description: "The pin shows an approximate location for the Changbai Mountain area."
     descriptionZh: "图钉为长白山区域的示意位置。"
     photos: []
+  - id: zhuhai
+    group: guangdong
+    geoGroup: china
+    name: "Zhuhai"
+    nameZh: "珠海"
+    region: "Guangdong"
+    regionZh: "广东"
+    latitude: 22.27
+    longitude: 113.57
+    photos:
+      - src: /img/travel/zhuhai/20240212-珠海-新月夜空_20240212-DSC06344.jpg
+        date: "2024-02-12"
+        caption: "Crescent moon"
+        captionZh: "新月夜空"
+      - src: /img/travel/zhuhai/20240212-珠海-珠海大剧院夜景_20240212-DSC06375.jpg
+        date: "2024-02-12"
+        caption: "Zhuhai Grand Theatre at night"
+        captionZh: "珠海大剧院夜景"
+      - src: /img/travel/zhuhai/20240212-珠海-街头雕塑_20240212-DSC06378.jpg
+        date: "2024-02-12"
+        caption: "Street sculpture"
+        captionZh: "街头雕塑"
+      - src: /img/travel/zhuhai/20240212-珠海-夜间步道_20240212-DSC06396.jpg
+        date: "2024-02-12"
+        caption: "Walkway at night"
+        captionZh: "夜间步道"
+      - src: /img/travel/zhuhai/20240214-珠海-圆明新园_20240214-DSC06948.jpg
+        date: "2024-02-14"
+        caption: "New Yuanming Palace"
+        captionZh: "圆明新园"
+      - src: /img/travel/zhuhai/20240214-珠海-圆明新园石雕_20240214-DSC06957.jpg
+        date: "2024-02-14"
+        caption: "Stone carvings at New Yuanming Palace"
+        captionZh: "圆明新园石雕"
+      - src: /img/travel/zhuhai/20240214-珠海-圆明新园湖景_20240214-DSC06970.jpg
+        date: "2024-02-14"
+        caption: "Lake at New Yuanming Palace"
+        captionZh: "圆明新园湖景"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海海滨驿站_20240214-DSC06983.jpg
+        date: "2024-02-14"
+        caption: "Zhuhai seaside stop"
+        captionZh: "珠海海滨驿站"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海爱情邮局灯塔_20240214-DSC06993.jpg
+        date: "2024-02-14"
+        caption: "Lighthouse at the Love Post Office"
+        captionZh: "珠海爱情邮局灯塔"
+      - src: /img/travel/zhuhai/20240214-珠海-爱情邮局灯塔与海_20240214-DSC07003.jpg
+        date: "2024-02-14"
+        caption: "Lighthouse and sea at the Love Post Office"
+        captionZh: "爱情邮局灯塔与海"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海渔女雕像_20240214-DSC07019.jpg
+        date: "2024-02-14"
+        caption: "Zhuhai Fisher Girl statue"
+        captionZh: "珠海渔女雕像"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海大剧院远景_20240214-DSC07023.jpg
+        date: "2024-02-14"
+        caption: "Distant Zhuhai Grand Theatre"
+        captionZh: "珠海大剧院远景"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海海边标牌_20240214-DSC07028.jpg
+        date: "2024-02-14"
+        caption: "Sign by the Zhuhai coast"
+        captionZh: "珠海海边标牌"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海大剧院_20240214-DSC07040.jpg
+        date: "2024-02-14"
+        caption: "Zhuhai Grand Theatre"
+        captionZh: "珠海大剧院"
+      - src: /img/travel/zhuhai/20240214-珠海-彩灯装饰_20240214-DSC07052.jpg
+        date: "2024-02-14"
+        caption: "Colourful lantern display"
+        captionZh: "彩灯装饰"
+      - src: /img/travel/zhuhai/20240214-珠海-珠海大剧院灯光_20240214-DSC07080.jpg
+        date: "2024-02-14"
+        caption: "Zhuhai Grand Theatre illuminated"
+        captionZh: "珠海大剧院灯光"
+      - src: /img/travel/zhuhai/20240214-珠海-建筑里的光影_20240214-DSC07138.jpg
+        date: "2024-02-14"
+        caption: "Light and shadow in architecture"
+        captionZh: "建筑里的光影"
+
+  - id: pingtan
+    group: fujian
+    geoGroup: china
+    name: "Pingtan"
+    nameZh: "平潭"
+    region: "Fujian"
+    regionZh: "福建"
+    latitude: 25.5
+    longitude: 119.78
+    photos:
+      - src: /img/travel/pingtan/20240126-平潭-平潭海岸标语_20240126-DSC05931.jpg
+        date: "2024-01-26"
+        caption: "Coastal sign on Pingtan Island"
+        captionZh: "平潭海岸标语"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海岸礁石_20240126-DSC05958.jpg
+        date: "2024-01-26"
+        caption: "Coastal rocks on Pingtan Island"
+        captionZh: "平潭海岸礁石"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海湾_20240126-DSC05983.jpg
+        date: "2024-01-26"
+        caption: "Bay on Pingtan Island"
+        captionZh: "平潭海湾"
+      - src: /img/travel/pingtan/20240126-平潭-平潭岛海边相框_20240126-DSC06002-2.jpg
+        date: "2024-01-26"
+        caption: "Seaside frame on Pingtan Island"
+        captionZh: "平潭岛海边相框"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海边相框_20240126-DSC06002.jpg
+        date: "2024-01-26"
+        caption: "Seaside frame and coast"
+        captionZh: "平潭海边相框"
+      - src: /img/travel/pingtan/20240126-平潭-海上礁石_20240126-DSC06016.jpg
+        date: "2024-01-26"
+        caption: "Rocks at sea"
+        captionZh: "海上礁石"
+      - src: /img/travel/pingtan/20240126-平潭-平潭渔港_20240126-DSC06023.jpg
+        date: "2024-01-26"
+        caption: "Fishing harbour on Pingtan Island"
+        captionZh: "平潭渔港"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海边标志_20240126-DSC06031.jpg
+        date: "2024-01-26"
+        caption: "Coastal marker on Pingtan Island"
+        captionZh: "平潭海边标志"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海岸线_20240126-DSC06038.jpg
+        date: "2024-01-26"
+        caption: "Pingtan coastline"
+        captionZh: "平潭海岸线"
+      - src: /img/travel/pingtan/20240126-平潭-海边雕塑_20240126-DSC06042.jpg
+        date: "2024-01-26"
+        caption: "Seaside sculpture"
+        captionZh: "海边雕塑"
+      - src: /img/travel/pingtan/20240126-平潭-海边白色座椅_20240126-DSC06046.jpg
+        date: "2024-01-26"
+        caption: "White chair by the sea"
+        captionZh: "海边白色座椅"
+      - src: /img/travel/pingtan/20240126-平潭-海上船只_20240126-DSC06062.jpg
+        date: "2024-01-26"
+        caption: "Boat at sea"
+        captionZh: "海上船只"
+      - src: /img/travel/pingtan/20240126-平潭-平潭灯塔_20240126-DSC06075.jpg
+        date: "2024-01-26"
+        caption: "Lighthouse on Pingtan Island"
+        captionZh: "平潭灯塔"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海浪_20240126-DSC06086.jpg
+        date: "2024-01-26"
+        caption: "Waves on the Pingtan coast"
+        captionZh: "平潭海浪"
+      - src: /img/travel/pingtan/20240126-平潭-平潭海边风车_20240126-DSC06093.jpg
+        date: "2024-01-26"
+        caption: "Wind turbine on the Pingtan coast"
+        captionZh: "平潭海边风车"
+      - src: /img/travel/pingtan/20240126-平潭-海蚀洞与剪影_20240126-DSC06143.jpg
+        date: "2024-01-26"
+        caption: "Silhouette in a sea cave"
+        captionZh: "海蚀洞与剪影"
+
 demo:
   id: sample
   name: Sample destination
