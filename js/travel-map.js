@@ -43,7 +43,8 @@
     map.attributionControl.addAttribution('Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a> &amp; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>');
     const markers=L.layerGroup().addTo(map);maps[scope]={map,markers};
     visits.forEach(v=>{
-      const icon=L.divIcon({className:'travel-pin',html:'<span></span>',iconSize:[16,16],iconAnchor:[8,8]});
+      const usePin=v.markerStyle==='pin';
+      const icon=L.divIcon(usePin ? {className:'travel-pin travel-pin--place',html:'<svg aria-hidden="true" viewBox="0 0 24 30"><path d="M12 1C6 1 2 5.5 2 11c0 7 10 17 10 17s10-10 10-17C22 5.5 18 1 12 1Z"/><circle cx="12" cy="11" r="3"/></svg>',iconSize:[20,24],iconAnchor:[10,22]} : {className:'travel-pin',html:'<span></span>',iconSize:[16,16],iconAnchor:[8,8]});
       L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),keyboard:true}).addTo(markers).on('click',()=>onSelect(v));
     });
   });

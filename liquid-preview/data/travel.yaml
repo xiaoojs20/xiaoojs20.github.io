@@ -55,6 +55,7 @@ visits:
     longitude: 99.83655
     photos: []
   - id: tokyo
+    markerStyle: pin
     geoGroup: international
     name: "Tokyo"
     nameZh: "东京"
@@ -64,6 +65,7 @@ visits:
     longitude: 139.76389
     photos: []
   - id: osaka
+    markerStyle: pin
     geoGroup: international
     name: "Osaka"
     nameZh: "大阪"
@@ -73,6 +75,7 @@ visits:
     longitude: 135.50145
     photos: []
   - id: kyoto
+    markerStyle: pin
     geoGroup: international
     name: "Kyoto"
     nameZh: "京都"
@@ -80,6 +83,26 @@ visits:
     regionZh: "日本"
     latitude: 35.01158
     longitude: 135.76814
+    photos: []
+  - id: uji
+    geoGroup: international
+    markerStyle: pin
+    name: "Uji"
+    nameZh: "宇治"
+    region: "Japan"
+    regionZh: "日本"
+    latitude: 34.88512
+    longitude: 135.79957
+    photos: []
+  - id: nara
+    geoGroup: international
+    markerStyle: pin
+    name: "Nara"
+    nameZh: "奈良"
+    region: "Japan"
+    regionZh: "日本"
+    latitude: 34.68454
+    longitude: 135.80484
     photos: []
   - id: jeju
     geoGroup: international

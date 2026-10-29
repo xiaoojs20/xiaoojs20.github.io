@@ -29,6 +29,9 @@
 .travel-photo img { display:block; width:100%; aspect-ratio:1.1; object-fit:cover; transition:transform .25s ease; }.travel-photo:hover img { transform:scale(1.06); }
 .travel-pin { display:grid; place-items:center; border:0; background:transparent; }.travel-pin span { display:block; width:10px; height:10px; border:1.5px solid white; border-radius:50%; background:#d56f58; box-shadow:0 2px 7px #0006; }
 .travel-pin--demo span { background:#d7a359; }
+.travel-pin--place svg { width:16px; height:20px; overflow:visible; filter:drop-shadow(0 2px 3px #0005); }
+.travel-pin--place path { fill:#d56f58; stroke:#fff; stroke-width:1.5; }
+.travel-pin--place circle { fill:#fff; }
 .travel-lightbox { position:fixed; max-width:min(92vw,1100px); max-height:92vh; padding:16px; border:0; border-radius:18px; color:var(--card-text-color-main); background:var(--card-background); box-shadow:0 18px 80px #0007; }
 .travel-lightbox::backdrop { background:#111c; }.travel-lightbox img { display:block; max-width:100%; max-height:75vh; margin:auto; object-fit:contain; border-radius:10px; }.travel-lightbox p { margin:10px 4px 0; font-size:1.3rem; }.travel-lightbox-close { position:absolute; right:22px; top:22px; width:36px; height:36px; border:0; border-radius:50%; font-size:2.5rem; line-height:1; color:white; background:#222b; cursor:pointer; }
 html[data-scheme="dark"] .travel-map { background:#34484b; }
