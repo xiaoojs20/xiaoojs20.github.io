@@ -1690,6 +1690,14 @@ visits:
         date: "2024-02-13"
         caption: "Illuminated hotel at night"
         captionZh: "酒店灯光夜景"
+      - src: /img/travel/macao/20190115-澳门-澳门红色电话亭_20190115-DSC02748.jpg
+        date: "2019-01-15"
+        caption: "Red telephone box in Macao"
+        captionZh: "澳门红色电话亭"
+      - src: /img/travel/macao/20190115-澳门-澳门巴黎人埃菲尔铁塔_20190115-DSC02769.jpg
+        date: "2019-01-15"
+        caption: "Eiffel Tower at The Parisian Macao"
+        captionZh: "澳门巴黎人埃菲尔铁塔"
   - id: chengde
     group: hebei
     geoGroup: china
