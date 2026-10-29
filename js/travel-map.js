@@ -23,7 +23,7 @@
     const image=lightbox.querySelector('[data-travel-lightbox-image]');
     const caption=(zh && photo.captionZh)||photo.caption||'';
     image.src=photo.src; image.alt=caption || text('旅行照片','Travel photo');
-    lightbox.querySelector('[data-travel-lightbox-caption]').textContent=caption;
+    lightbox.querySelector('[data-travel-lightbox-caption]').textContent=[caption,photo.date].filter(Boolean).join(' · ');
     if(typeof lightbox.showModal==='function') lightbox.showModal();
   };
   const showPlace = (visit,demo=false) => {
