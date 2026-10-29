@@ -3,7 +3,7 @@
   {{ range hugo.Data.experience }}
   <li class="about-experience__item">
     <div class="about-experience__heading"><h3>{{ cond $zh .titleZh .titleEn }}</h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
-    <p>{{ cond $zh .descriptionZh .descriptionEn }}</p>
+    {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . }}</p>{{ end }}
   </li>
   {{ end }}
 </ol>

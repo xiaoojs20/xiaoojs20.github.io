@@ -15,7 +15,7 @@ menu:
 
 Welcome to my personal space.
 
-I study electrical engineering at Tsinghua University and am also interested in artificial intelligence, search and recommendation systems, and data analysis. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.
+I study electrical engineering at Tsinghua University and minored in software engineering during my undergraduate studies. I am also interested in artificial intelligence, search and recommendation systems, and data analysis. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.
 
 This is where I share what I learn, the projects I work on, and moments from daily life: sometimes a carefully written note, sometimes a photograph, and sometimes an idea that is still taking shape.
 
