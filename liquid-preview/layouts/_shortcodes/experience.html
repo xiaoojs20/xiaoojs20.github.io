@@ -1,0 +1,9 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+<ol class="about-experience" aria-label="{{ cond $zh "经历" "Experience" }}">
+  {{ range hugo.Data.experience }}
+  <li class="about-experience__item">
+    <div class="about-experience__heading"><h3>{{ cond $zh .titleZh .titleEn }}</h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
+    <p>{{ cond $zh .descriptionZh .descriptionEn }}</p>
+  </li>
+  {{ end }}
+</ol>
