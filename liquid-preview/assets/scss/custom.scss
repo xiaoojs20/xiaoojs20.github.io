@@ -4895,3 +4895,24 @@ button.article-share__button {
         }
     }
 }
+
+/* Personal homepage: consistent touch targets for links and QR actions. */
+.home-profile-layout .home-profile__social { gap: 8px; align-items: center; }
+.home-profile-layout .home-profile__social li { display: flex; align-items: center; justify-content: center; }
+.home-profile-layout .home-profile__social a, .home-profile-layout .home-profile__social .social-button { box-sizing: border-box; width: 44px; height: 44px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 50%; color: var(--body-text-color); background: transparent; cursor: pointer; transition: color .2s ease, transform .2s ease; }
+.home-profile-layout .home-profile__social a:hover, .home-profile-layout .home-profile__social .social-button:hover { color: var(--accent-color); transform: translateY(-2px); }
+.home-profile-layout .home-profile__social :is(a,button):focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+.home-profile-layout .home-profile__social :is(a,button) svg { display: block; width: 24px; height: 24px; flex: none; }
+.home-profile-layout .home-profile__social .social-button svg[fill="currentColor"] { stroke: none; }
+.social-dialog { width: unquote("min(360px, 90vw)"); max-height: 88vh; overflow: auto; padding: 22px; border: 1px solid rgba(130,140,160,.2); border-radius: 24px; background: var(--card-background); color: var(--card-text-color-main); box-shadow: 0 20px 70px #0003; }
+.social-dialog::backdrop { background: #1c273880; backdrop-filter: blur(5px); }
+.social-dialog__head { display: flex; align-items: center; justify-content: space-between; }
+.social-dialog__head h2 { margin: 0; }
+.social-dialog__head button { border: 0; background: transparent; color: inherit; font-size: 28px; cursor: pointer; }
+.social-dialog img { display: block; width: 100%; max-height: 65vh; object-fit: contain; height: auto; border-radius: 12px; margin: 12px auto 0; }
+.social-dialog p { text-align: center; margin: 8px 0 0; }
+.site-note { padding: 26px; border: 1px solid var(--card-separator-color); border-radius: 25px; background: var(--card-background); box-shadow: var(--shadow-l1); }
+.site-note__label { color: var(--accent-color); font-size: 1.05rem; font-weight: 700; letter-spacing: .12em; }
+.site-note h2 { margin: 14px 0 12px; color: var(--card-text-color-main); font-size: 2rem; }
+.site-note p { margin: 0; color: var(--card-text-color-secondary); font-size: 1.4rem; line-height: 1.8; }
+.site-note__foot { display: block; margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--card-separator-color); color: var(--card-text-color-secondary); font-size: 1.2rem; }

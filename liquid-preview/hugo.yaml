@@ -92,7 +92,9 @@ params:
 menu:
   social:
     - { identifier: github, name: GitHub, url: https://github.com/xiaoojs20, weight: 1, params: { icon: brand-github, newTab: true } }
-    - { identifier: rss, name: RSS, url: /index.xml, weight: 2, params: { icon: rss, newTab: true } }
+    - { identifier: x, name: X, url: https://x.com/redefine1020, weight: 2, params: { icon: brand-x, newTab: true } }
+    - { identifier: youtube, name: YouTube, url: https://www.youtube.com/@xiaoojs20, weight: 3, params: { icon: social-youtube, newTab: true } }
+    - { identifier: instagram, name: Instagram, url: https://www.instagram.com/xiaoo1020/, weight: 4, params: { icon: social-instagram, newTab: true } }
 related:
   includeNewer: true
   threshold: 60
@@ -103,4 +105,4 @@ markup:
   tableOfContents: { endLevel: 4, ordered: true, startLevel: 2 }
   highlight: { noClasses: false, lineNos: true }
 outputs:
-  home: [HTML, RSS, sitemapflat]
+  home: [HTML, sitemapflat]
