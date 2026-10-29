@@ -13,7 +13,15 @@
   <div class="travel-layout">
     <section class="travel-map-card" aria-label="{{ cond $zh "旅行地图" "Travel map" }}">
       <div class="travel-map-top"><span>{{ cond $zh "探索地图" "EXPLORE THE MAP" }}</span><span data-travel-count></span></div>
-      <div class="travel-map" data-travel-map role="region" aria-label="{{ cond $zh "可缩放的旅行地点地图" "Interactive map of travel destinations" }}"></div>
+      <div class="travel-view-switch" role="group" aria-label="{{ cond $zh "地图布局" "Map layout" }}">
+        <button type="button" data-travel-mode="combined" aria-pressed="true">{{ cond $zh "合并地图" "Combined" }}</button>
+        <button type="button" data-travel-mode="split" aria-pressed="false">{{ cond $zh "分开地图" "Separate maps" }}</button>
+      </div>
+      <div data-travel-layout="combined"><div class="travel-map" data-map="combined" role="region" aria-label="{{ cond $zh "全部旅行地点地图" "Map of all travel destinations" }}"></div></div>
+      <div class="travel-map-split" data-travel-layout="split" hidden>
+        <section><h2>{{ cond $zh "中国足迹" "China" }} <span data-map-count="china"></span></h2><div class="travel-map" data-map="china" role="region" aria-label="{{ cond $zh "中国足迹地图" "Map of places in China" }}"></div></section>
+        <section><h2>{{ cond $zh "海外足迹" "Beyond China" }} <span data-map-count="international"></span></h2><div class="travel-map" data-map="international" role="region" aria-label="{{ cond $zh "海外足迹地图" "Map of places beyond China" }}"></div></section>
+      </div>
       <p class="travel-map-hint">{{ cond $zh "拖动地图 · 点击区域或地点查看相册" "Drag to explore · Select an area or marker to see its album" }}</p>
       <p class="travel-map-error" data-travel-error hidden>{{ cond $zh "地图边界暂时无法加载，地点列表仍可使用。" "Map boundaries are unavailable right now. You can still use the place list." }}</p>
     </section>
