@@ -4,6 +4,11 @@
   <li class="about-experience__item">
     <div class="about-experience__heading"><h3>{{ cond $zh .titleZh .titleEn }}</h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
     {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . }}</p>{{ end }}
+    {{ with .children }}
+    <ul class="about-experience__children" aria-label="{{ cond $zh "硕士期间的实习经历" "Internships during graduate studies" }}">
+      {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4>{{ cond $zh .titleZh .titleEn }}</h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
+    </ul>
+    {{ end }}
   </li>
   {{ end }}
 </ol>

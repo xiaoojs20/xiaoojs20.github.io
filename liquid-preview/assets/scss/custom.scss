@@ -4993,3 +4993,10 @@ button.article-share__button {
 /* Google Calendar does not expose a native dark theme in this embed. */
 html[data-scheme="dark"] .coffee-booking__frame { background:#202124; border-color:rgba(255,255,255,.12); }
 html[data-scheme="dark"] .coffee-booking__frame iframe { filter:invert(.9) hue-rotate(180deg); }
+
+/* Internships grouped under graduate studies. */
+.article-content .about-experience__children { list-style:none; margin:1.1rem 0 0 .2rem; padding:0 0 0 1.5rem; border-left:1px solid var(--card-separator-color); }
+.article-content .about-experience__child { position:relative; padding:.35rem 0 .8rem .4rem; }
+.article-content .about-experience__child:last-child { padding-bottom:0; }
+.article-content .about-experience__child::before { content:""; position:absolute; top:1rem; left:-1.82rem; width:.55rem; height:.55rem; border-radius:50%; background:var(--card-text-color-secondary); box-shadow:0 0 0 3px var(--card-background); }
+.article-content .about-experience__heading h4 { margin:0; padding:0; border:0; color:var(--card-text-color-main); font-size:1.45rem; font-weight:600; line-height:1.5; }
