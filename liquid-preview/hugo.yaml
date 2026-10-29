@@ -3,7 +3,7 @@ canonifyURLs: true
 title: xiaoojs20
 theme: hugo-theme-stack
 copyright: "xiaoojs20"
-defaultContentLanguage: zh
+defaultContentLanguage: en
 hasCJKLanguage: true
 mediaTypes:
   application/yaml:
@@ -23,14 +23,14 @@ languages:
   en:
     label: English
     locale: en-US
-    weight: 2
+    weight: 1
     params:
       sidebar:
         subtitle: Collecting little moments from everyday life.
   zh:
     label: 简体中文
     locale: zh-Hans
-    weight: 1
+    weight: 2
     copyright: "xiaoojs20"
     params:
       sidebar:
@@ -56,7 +56,7 @@ params:
     lastUpdated: 02/Jan/2006 15:04 MST
   sidebar:
     emoji: "😄"
-    subtitle: 记录生活，收藏日常里的点滴。
+    subtitle: Collecting little moments from everyday life.
     avatar: /img/avatar-personal.jpg
   footer:
     since: 2026

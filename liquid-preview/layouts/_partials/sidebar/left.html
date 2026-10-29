@@ -1,6 +1,6 @@
 {{- $isChinese := hasPrefix .Language.Lang "zh" -}}
 {{- $otherLanguage := cond $isChinese "en" "zh" -}}
-{{- $languageTarget := cond $isChinese ("en/" | relURL) ("/" | relURL) -}}
+{{- $languageTarget := cond $isChinese ("/" | relURL) ("zh/" | relURL) -}}
 {{- range .Site.Home.AllTranslations -}}{{ if eq .Language.Lang $otherLanguage }}{{ $languageTarget = .RelPermalink }}{{ end }}{{ end -}}
 {{- range .AllTranslations -}}{{ if eq .Language.Lang $otherLanguage }}{{ $languageTarget = .RelPermalink }}{{ end }}{{ end -}}
 <aside class="sidebar left-sidebar sticky {{ if .Site.Params.sidebar.compact }}compact{{ end }}">

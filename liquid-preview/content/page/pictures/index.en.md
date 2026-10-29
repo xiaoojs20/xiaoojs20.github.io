@@ -2,6 +2,7 @@
 title: Photos
 description: Sample photos for now; personal photos will be added later.
 slug: pictures
+aliases: ["/en/pictures/"]
 layout: pictures
 comments: false
 license: false

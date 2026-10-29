@@ -1,7 +1,7 @@
 ---
 title: About Me
 slug: about
-aliases: ["/coffee-chat/"]
+aliases: ["/coffee-chat/", "/en/coffee-chat/", "/en/about/"]
 description: A little introduction to xiaoojs20.
 comments: false
 share: false

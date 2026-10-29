@@ -80,7 +80,7 @@ const getBrowserLanguageCodes = () => {
     );
 };
 
-const languageFromURL = (url: URL): SiteLanguage => (url.pathname === "/en" || url.pathname.startsWith("/en/") ? "en" : "zh");
+const languageFromURL = (url: URL): SiteLanguage => (url.pathname === "/zh" || url.pathname.startsWith("/zh/") ? "zh" : "en");
 
 const initLocalizedArticleDates = () => {
     try {

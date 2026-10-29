@@ -1,5 +1,5 @@
-{{- $englishTarget := "/en/" | relURL -}}
-{{- $chineseTarget := "/" | relURL -}}
+{{- $englishTarget := "/" | relURL -}}
+{{- $chineseTarget := "/zh/" | relURL -}}
 {{- range .AllTranslations -}}
   {{- if eq .Language.Lang "en" }}{{ $englishTarget = .RelPermalink }}{{ end -}}
   {{- if eq .Language.Lang "zh" }}{{ $chineseTarget = .RelPermalink }}{{ end -}}
