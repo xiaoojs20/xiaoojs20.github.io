@@ -9,7 +9,7 @@
     {{ $products := slice }}{{ with index hugo.Data "product-catalog" }}{{ range . }}{{ $products = $products | append . }}{{ end }}{{ end }}
     <section class="home-profile" aria-labelledby="home-profile-title">
         {{ with .Site.Params.sidebar.avatar }}{{ $avatar := partial "helper/image" (dict "Image" . "Resources" resources "Context" $) }}{{ with $avatar }}
-        <figure class="home-profile__avatar"><img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ cond $isChinese "xiaoojs20 的头像" "xiaoojs20’s avatar" }}"></figure>
+        <figure class="home-profile__avatar"><img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ cond $isChinese "xiaoojs20 的头像" "xiaoojs20’s avatar" }}"><button class="home-profile__emoji home-profile__management-toggle" type="button" aria-expanded="false" aria-controls="home-profile-management-menu" aria-label="{{ cond $isChinese "打开网站管理菜单" "Open site management menu" }}" data-sidebar-management-toggle>{{ $.Site.Params.sidebar.emoji }}</button>{{ partial "sidebar/management-menu.html" (dict "Context" $ "MenuID" "home-profile-management-menu") }}</figure>
         {{ end }}{{ end }}
         <div class="home-profile__copy"><p class="home-profile__greeting">{{ cond $isChinese "欢迎来到" "Welcome to" }}</p><h1 id="home-profile-title">{{ .Site.Title }}</h1><p class="home-profile__subtitle">{{ .Site.Params.sidebar.subtitle }}</p></div>
         {{ partial "social/links.html" (dict "Context" . "Prefix" "home") }}

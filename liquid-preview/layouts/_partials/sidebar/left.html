@@ -31,7 +31,8 @@
                         loading="lazy"
                         alt="Avatar">
                 </a>
-
+                <button class="emoji site-avatar__management-toggle" type="button" aria-expanded="false" aria-controls="sidebar-management-menu" aria-label="{{ cond (hasPrefix $.Language.Lang "zh") "打开网站管理菜单" "Open site management menu" }}" data-sidebar-management-toggle>{{ $.Site.Params.sidebar.emoji }}</button>
+                {{ partial "sidebar/management-menu.html" (dict "Context" $ "MenuID" "sidebar-management-menu") }}
             </figure>
         {{ end }}
 

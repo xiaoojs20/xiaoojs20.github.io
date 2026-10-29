@@ -1631,17 +1631,37 @@ const initSidebarManagementMenu = () => {
         toggle.dataset.managementReady = "true";
         let closeTimer = 0;
 
+        const positionMenu = () => {
+            if (toggle.getAttribute("aria-expanded") !== "true") return;
+            if (window.matchMedia("(max-width: 720px)").matches) {
+                menu.style.removeProperty("left");
+                menu.style.removeProperty("top");
+                return;
+            }
+            const parent = menu.parentElement;
+            if (!parent) return;
+            const bounds = parent.getBoundingClientRect();
+            const left = Math.max(16, Math.min(bounds.right + 18, window.innerWidth - menu.offsetWidth - 16));
+            const top = Math.max(16, Math.min(bounds.top - 8, window.innerHeight - menu.offsetHeight - 16));
+            menu.style.left = `${left - bounds.left}px`;
+            menu.style.top = `${top - bounds.top}px`;
+        };
+
         const openMenu = (focusFirstItem = false) => {
             window.clearTimeout(closeTimer);
             menu.hidden = false;
             toggle.setAttribute("aria-expanded", "true");
             window.requestAnimationFrame(() => {
                 menu.classList.add("is-open");
+                positionMenu();
                 if (focusFirstItem) {
                     menu.querySelector<HTMLAnchorElement>('[role="menuitem"]')?.focus({ preventScroll: true });
                 }
             });
         };
+
+        window.addEventListener("resize", positionMenu);
+        window.addEventListener("scroll", positionMenu, true);
 
         const closeMenu = (restoreFocus = false) => {
             menu.classList.remove("is-open");

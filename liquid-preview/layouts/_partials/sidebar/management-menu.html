@@ -11,7 +11,7 @@
     <div class="sidebar-management-menu__header">
         <div class="sidebar-management-menu__heading">
             <strong>{{ cond (hasPrefix $context.Language.Lang "zh") "网站管理" "Site management" }}</strong>
-            <small>{{ cond (hasPrefix $context.Language.Lang "zh") "仅供网站管理员使用，不对外开放" "For the site administrator only. Not open to the public." }}</small>
+            <small>{{ cond (hasPrefix $context.Language.Lang "zh") "管理快捷入口；修改源码后需重新构建发布。" "Management shortcuts. Rebuild the site after editing source files." }}</small>
         </div>
         <a href="{{ $context.Site.Home.RelPermalink }}">{{ cond (hasPrefix $context.Language.Lang "zh") "返回主页" "Home" }}</a>
     </div>

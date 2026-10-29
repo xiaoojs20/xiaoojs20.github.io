@@ -1,75 +1,44 @@
-- id: content
-  title: Content management
-  titleZh: 内容管理
-  url: /admin/
-  icon: database
-  external: false
-- id: comments
-  title: Comment management
-  titleZh: 评论管理
-  url: https://example.com/comment-moderation
-  icon: messages
+- id: repository
+  title: Website repository
+  titleZh: 网站仓库
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io
+  icon: folder-bookmark
   external: true
-- id: backlink-applications
-  title: Backlink applications
-  titleZh: 友链申请
-  url: https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__bK_KBBUQ0sxMlZYNVA0OTZIQTMySkxLVjdXTVJNNS4u
-  icon: link
+- id: source
+  title: Website source files
+  titleZh: 网站源文件
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io/tree/master/liquid-preview
+  icon: dashboard
   external: true
-- id: github
-  title: Source repository
-  titleZh: 源码仓库
-  url: https://github.com/Jingyuan-Zheng/Liquid-Stack
-  icon: brand-github
+- id: about-zh
+  title: About page source (Chinese)
+  titleZh: 关于我源码（中文）
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io/blob/master/liquid-preview/content/page/about/index.zh.md
+  icon: user
   external: true
   groupStart: true
-- id: cloudflare-pages
-  title: Cloudflare Pages
-  titleZh: Cloudflare Pages
-  url: https://dash.cloudflare.com/
-  icon: brand-cloudflare
+- id: about-en
+  title: About page source (English)
+  titleZh: 关于我源码（英文）
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io/blob/master/liquid-preview/content/page/about/index.en.md
+  icon: user
   external: true
-- id: source-editing
-  title: Source repository
-  titleZh: 源码仓库
-  url: https://github.com/Jingyuan-Zheng/Liquid-Stack
-  icon: code
+- id: photo-data
+  title: Photo wall configuration
+  titleZh: 照片墙配置
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io/tree/master/liquid-preview/data/photo-wall
+  icon: pictures
   external: true
-- id: search-console
-  title: Search Console
-  titleZh: 搜索控制台
-  url: https://search.google.com/search-console
-  icon: brand-google-search-console
-  external: true
-  groupStart: true
-- id: bing-webmasters
-  title: Bing Webmasters
-  titleZh: Bing 网站管理员
-  url: https://www.bing.com/webmasters/
-  icon: brand-bing
-  external: true
-- id: analytics
-  title: Analytics dashboard
-  titleZh: 数据分析面板
-  url: https://analytics.google.com/
-  icon: brand-google-analytics
+- id: builds
+  title: Build and deployment history
+  titleZh: 构建与发布记录
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io/actions
+  icon: calendar
   external: true
   groupStart: true
-- id: cloudflare
-  title: Cloudflare dashboard
-  titleZh: Cloudflare 控制台
-  url: https://dash.cloudflare.com/
-  icon: brand-cloudflare
-  external: true
-- id: deployment
-  title: Deployment dashboard
-  titleZh: 部署控制台
-  url: https://vercel.com/dashboard
-  icon: brand-vercel
-  external: true
-- id: database
-  title: Database console
-  titleZh: 数据库控制台
-  url: https://console.neon.tech/
-  icon: brand-neon
+- id: pages-settings
+  title: GitHub Pages settings
+  titleZh: GitHub Pages 设置
+  url: https://github.com/xiaoojs20/xiaoojs20.github.io/settings/pages
+  icon: dashboard
   external: true

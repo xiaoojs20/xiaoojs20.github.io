@@ -160,7 +160,7 @@
     top: -8px;
     left: calc(100% + 18px);
     width: unquote("min(320px, calc(100vw - 32px))");
-    max-height: none;
+    max-height: calc(100dvh - 32px);
     padding: 10px;
     color: var(--card-text-color-main);
     border: 1px solid color-mix(in srgb, var(--card-separator-color) 78%, transparent);
@@ -170,7 +170,7 @@
     backdrop-filter: saturate(180%) blur(28px);
     -webkit-backdrop-filter: saturate(180%) blur(28px);
     isolation: isolate;
-    overflow: visible;
+    overflow-y: auto;
     opacity: 0;
     transform: translateX(-8px) scale(0.96);
     transform-origin: top left;
@@ -986,8 +986,6 @@ body.is-arriving-from-home:not(.home-profile-layout) {
 
     .home-profile__avatar > .sidebar-management-menu {
         z-index: 10002;
-        max-height: none;
-        overflow: visible;
     }
 
     .home-profile__copy {
@@ -3978,7 +3976,8 @@ html[data-scheme="dark"] .photo-gallery__backdrop {
         z-index: 10001;
     }
 
-    .sidebar-management-menu {
+    .sidebar-management-menu,
+    .home-profile__avatar > .sidebar-management-menu {
         position: fixed;
         z-index: 10000;
         top: 74px;
