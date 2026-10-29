@@ -4984,3 +4984,12 @@ html[data-scheme="dark"] .coffee-booking__frame iframe { filter:invert(.9) hue-r
 .article-content .about-experience__child:last-child { padding-bottom:0; }
 .article-content .about-experience__child::before { content:""; position:absolute; top:1rem; left:-1.82rem; width:.55rem; height:.55rem; border-radius:50%; background:var(--card-text-color-secondary); box-shadow:0 0 0 3px var(--card-background); }
 .article-content .about-experience__heading h4 { margin:0; padding:0; border:0; color:var(--card-text-color-main); font-size:1.45rem; font-weight:600; line-height:1.5; }
+
+/* Notes index: keep the date visible and the original writing easy to find. */
+.article-content .notes-list { display:grid; gap:1rem; }
+.article-content .notes-list__entry { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.6rem 1.5rem; padding:1.7rem 1.8rem; border:1px solid var(--card-separator-color); border-radius:1.6rem; color:var(--card-text-color-main); background:var(--card-background-selected); text-decoration:none; transition:transform .2s ease, border-color .2s ease; }
+.article-content .notes-list__entry:hover { transform:translateY(-2px); border-color:var(--accent-color); }
+.article-content .notes-list__entry:focus-visible { outline:2px solid var(--accent-color); outline-offset:3px; }
+.article-content .notes-list__title { font-size:1.75rem; font-weight:700; line-height:1.5; }
+.article-content .notes-list__meta { grid-column:1; color:var(--card-text-color-secondary); font-size:1.25rem; line-height:1.5; }
+.article-content .notes-list__arrow { grid-column:2; grid-row:1 / 3; align-self:center; color:var(--accent-color); font-size:1.7rem; }

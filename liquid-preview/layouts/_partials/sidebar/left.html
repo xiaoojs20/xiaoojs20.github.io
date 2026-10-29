@@ -3,6 +3,7 @@
 {{- $languageTarget := cond $isChinese ("/" | relURL) ("zh/" | relURL) -}}
 {{- range .Site.Home.AllTranslations -}}{{ if eq .Language.Lang $otherLanguage }}{{ $languageTarget = .RelPermalink }}{{ end }}{{ end -}}
 {{- range .AllTranslations -}}{{ if eq .Language.Lang $otherLanguage }}{{ $languageTarget = .RelPermalink }}{{ end }}{{ end -}}
+{{- if and .Params.note (not .IsTranslated) -}}{{- $languageTarget = cond $isChinese ("notes/" | relURL) ("zh/notes/" | relURL) -}}{{- end -}}
 <aside class="sidebar left-sidebar sticky {{ if .Site.Params.sidebar.compact }}compact{{ end }}">
     <button type="button" id="toggle-menu" aria-label="{{ T `toggleMenu` }}">
         <span class="mobile-menu-icon mobile-menu-icon--menu" aria-hidden="true">{{ partial "helper/icon" "menu" }}</span>

@@ -91,7 +91,7 @@ const initLocalizedArticleDates = () => {
         });
 
         document
-            .querySelectorAll<HTMLTimeElement>("time.article-time--published, .article-list--compact time[datetime]")
+            .querySelectorAll<HTMLTimeElement>("time.article-time--published:not([data-preserve-date]), .article-list--compact time[datetime]:not([data-preserve-date])")
             .forEach((element) => {
                 const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(element.dateTime);
                 if (!match) return;

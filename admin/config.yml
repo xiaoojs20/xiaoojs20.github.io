@@ -31,6 +31,24 @@ public_folder: /img
 
 collections:
 
+  - name: single_language_loader_erhai_reflections
+    label: "Single-language loader: Erhai Reflections"
+    folder: content/post
+    path: erhai-reflections/index.zh
+    extension: md
+    format: yaml-frontmatter
+    i18n: false
+    create: false
+    hide: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: URL slug, name: slug, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Published date, name: date, widget: datetime, required: false }
+      - { label: Cover image, name: image, widget: image, required: false }
+      - { label: Categories, name: categories, widget: list, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Article, name: body, widget: markdown }
 
 
 
@@ -111,6 +129,50 @@ collections:
         widget: markdown
         i18n: true
 
+
+  - name: single_language_posts
+    label: Create or edit single-language posts
+    label_singular: Single-language post
+    i18n: false
+    files:
+      - name: zh_erhai_reflections
+        label: "Erhai Reflections"
+        file: content/post/erhai-reflections/index.zh.md
+        format: yaml-frontmatter
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL slug, name: slug, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Published date, name: date, widget: datetime, required: false }
+          - { label: Cover image, name: image, widget: image, required: false }
+          - label: Categories
+            name: categories
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: categories
+            multiple: true
+            value_field: '{{categories.*.name}}'
+            display_fields: ['{{categories.*.name}}']
+            search_fields: ['{{categories.*.name}}']
+          - label: Tags
+            name: tags
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: tags
+            multiple: true
+            value_field: '{{tags.*.name}}'
+            display_fields: ['{{tags.*.name}}']
+            search_fields: ['{{tags.*.name}}']
+          - label: Writing mode
+            name: writingMode
+            widget: select
+            required: false
+            options:
+              - { label: Written by the author, value: human }
+              - { label: AI-assisted writing, value: aigc-assisted }
+          - { label: Article, name: body, widget: markdown }
 
 
 

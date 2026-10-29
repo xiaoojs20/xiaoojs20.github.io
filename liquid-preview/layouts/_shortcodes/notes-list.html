@@ -1,0 +1,18 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+{{- $sourceSite := index (where hugo.Sites "Language.Lang" "zh") 0 -}}
+{{- $entries := where $sourceSite.RegularPages "Params.note" true -}}
+<div class="notes-list" aria-label="{{ cond $zh "随笔列表" "Notes" }}">
+  {{- range $entries.ByDate.Reverse -}}
+    {{- $entry := . -}}
+    {{- if not $zh -}}
+      {{- range .AllTranslations -}}{{- if eq .Language.Lang "en" -}}{{- $entry = . -}}{{- end -}}{{- end -}}
+    {{- end -}}
+    <a class="notes-list__entry" href="{{ $entry.RelPermalink }}">
+      <span class="notes-list__title">{{ $entry.Title }}</span>
+      <span class="notes-list__meta">{{ with $entry.Params.written }}{{ cond $zh "写于" "Written" }} {{ . }} · {{ end }}{{ cond $zh "发布于" "Published" }} <time datetime="{{ $entry.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $entry.Date.Format "2006-01-02 15:04" }}</time>{{ if and (not $zh) (hasPrefix $entry.Language.Lang "zh") }} · In Chinese{{ end }}</span>
+      <span class="notes-list__arrow" aria-hidden="true">↗</span>
+    </a>
+  {{- else -}}
+    <p>{{ cond $zh "还没有发表随笔。" "No notes have been published yet." }}</p>
+  {{- end -}}
+</div>

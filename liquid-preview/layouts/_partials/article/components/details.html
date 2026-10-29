@@ -24,7 +24,8 @@
     <footer class="article-meta">
         {{ if $showTime }}
         <div class="article-meta__time inline-meta">
-            {{ if $showDate }}{{ partial "helper/icon" "date" }}<time class="article-time--published" datetime='{{ $Page.Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{- $Page.Date | time.Format $Page.Site.Params.dateFormat.published -}}</time>{{ end }}
+            {{ if $showDate }}{{ partial "helper/icon" "date" }}<time class="article-time--published" {{ if $Page.Params.note }}data-preserve-date{{ end }} datetime='{{ $Page.Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{- if $Page.Params.note -}}{{- cond (hasPrefix $Page.Language.Lang "zh") "发布于 " "Published " -}}{{- $Page.Date.Format "2006-01-02 15:04" -}}{{- else -}}{{- $Page.Date | time.Format $Page.Site.Params.dateFormat.published -}}{{- end -}}</time>{{ end }}
+            {{ with $Page.Params.written }}<span class="article-time--written">{{ cond (hasPrefix $Page.Language.Lang "zh") "写于" "Written" }} {{ . }}</span>{{ end }}
             {{ if $showReadingTime }}{{ partial "helper/icon" "clock" }}<time class="article-time--reading">{{ T "article.readingTime" $Page.ReadingTime }}</time>{{ end }}
         </div>
         {{ end }}
