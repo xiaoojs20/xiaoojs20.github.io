@@ -5000,12 +5000,3 @@ html[data-scheme="dark"] .coffee-booking__frame iframe { filter:invert(.9) hue-r
 .article-content .about-experience__child:last-child { padding-bottom:0; }
 .article-content .about-experience__child::before { content:""; position:absolute; top:1rem; left:-1.82rem; width:.55rem; height:.55rem; border-radius:50%; background:var(--card-text-color-secondary); box-shadow:0 0 0 3px var(--card-background); }
 .article-content .about-experience__heading h4 { margin:0; padding:0; border:0; color:var(--card-text-color-main); font-size:1.45rem; font-weight:600; line-height:1.5; }
-
-/* Group the experience timeline by city. */
-.article-content .about-location { margin: 2rem 0 3rem; }
-.article-content .about-location__heading { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:.5rem 2rem; padding-bottom:.8rem; border-bottom:1px solid var(--card-separator-color); }
-.article-content .about-location__heading h3 { margin:0; padding:0; border:0; color:var(--card-text-color-main); font-size:2rem; line-height:1.4; }
-.article-content .about-location__heading span { font-size:1.3rem; color:var(--card-text-color-secondary); white-space:nowrap; }
-.article-content .about-location .about-experience { margin:1.5rem 0 0; }
-.article-content .about-experience__item > .about-experience__heading h4 { margin:0; padding:0; border:0; font-size:1.65rem; line-height:1.5; font-weight:700; }
-.article-content .about-experience__child .about-experience__heading h5 { margin:0; padding:0; border:0; color:var(--card-text-color-main); font-size:1.45rem; font-weight:600; line-height:1.5; }
