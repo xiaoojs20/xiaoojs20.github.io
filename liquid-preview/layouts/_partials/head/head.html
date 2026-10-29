@@ -9,6 +9,7 @@
         const colorSchemeKey = "StackColorScheme";
         if (!localStorage.getItem(colorSchemeKey)) localStorage.setItem(colorSchemeKey, "{{ default "auto" .Site.Params.colorScheme.default }}");
         const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        document.documentElement.dataset.themeMode = ["auto", "light", "dark"].includes(colorSchemeItem) ? colorSchemeItem : "auto";
         const supportDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches === true;
         document.documentElement.dataset.scheme = colorSchemeItem == "dark" || colorSchemeItem === "auto" && supportDarkMode ? "dark" : "light";
     })();

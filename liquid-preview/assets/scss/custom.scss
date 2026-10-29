@@ -450,10 +450,6 @@
                 place-items: center;
             }
 
-            .sidebar-color-icon--dark {
-                display: none;
-            }
-
             > span:last-child {
                 grid-column: 2;
                 grid-row: 1;
@@ -466,13 +462,6 @@
     color: var(--body-text-color);
     font-weight: inherit;
 
-    .sidebar-color-icon--light {
-        display: none;
-    }
-
-    .sidebar-color-icon--dark {
-        display: grid;
-    }
 }
 
 .sidebar-color-icon {
@@ -481,18 +470,6 @@
         width: 20px;
         height: 20px;
         display: block;
-    }
-}
-
-.sidebar-color-icon--dark .lucide-toggle-right {
-    > rect {
-        fill: currentColor;
-        stroke: none;
-    }
-
-    > circle {
-        fill: var(--card-background);
-        stroke: none;
     }
 }
 
@@ -4688,12 +4665,6 @@ button.article-share__button {
         cursor: pointer;
 
         svg, .hm-icon { width: 24px; height: 24px; color: var(--accent-color); stroke-width: 2; }
-        .mobile-profile-control__moon { display: none; }
-    }
-
-    html[data-scheme="dark"] .mobile-profile-control {
-        .mobile-profile-control__sun { display: none; }
-        .mobile-profile-control__moon { display: inline-flex; }
     }
 
     .left-sidebar > header {
@@ -4980,6 +4951,20 @@ button.article-share__button {
 .article-content .about-experience__date { color:var(--accent-color); font-size:1.3rem; font-weight:650; white-space:nowrap; }
 .article-content .about-experience__item p { margin:.4rem 0 0; color:var(--card-text-color-secondary); font-size:1.4rem; line-height:1.7; }
 @media (max-width:760px) { .article-content .about-experience__heading { gap:.2rem 1rem; } }
+
+/* Show the selected mode, including when automatic mode follows a dark system. */
+#main-menu .menu-bottom-section #dark-mode-toggle .theme-mode-icon { display:none; }
+html:not([data-theme-mode]) #main-menu .menu-bottom-section #dark-mode-toggle .theme-mode-icon--auto,
+html[data-theme-mode="auto"] #main-menu .menu-bottom-section #dark-mode-toggle .theme-mode-icon--auto,
+html[data-theme-mode="light"] #main-menu .menu-bottom-section #dark-mode-toggle .theme-mode-icon--light,
+html[data-theme-mode="dark"] #main-menu .menu-bottom-section #dark-mode-toggle .theme-mode-icon--dark { display:grid; }
+@media (max-width:760px) {
+  .mobile-profile-control .theme-mode-icon { display:none; }
+  html:not([data-theme-mode]) .mobile-profile-control .theme-mode-icon--auto,
+  html[data-theme-mode="auto"] .mobile-profile-control .theme-mode-icon--auto,
+  html[data-theme-mode="light"] .mobile-profile-control .theme-mode-icon--light,
+  html[data-theme-mode="dark"] .mobile-profile-control .theme-mode-icon--dark { display:inline-flex; }
+}
 
 /* Cycle through system, light and dark with one click. */
 #dark-mode-toggle { cursor:pointer; }
