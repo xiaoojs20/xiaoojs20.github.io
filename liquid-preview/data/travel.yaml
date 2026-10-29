@@ -2201,7 +2201,91 @@ visits:
     regionZh: "广东"
     latitude: 23.12884
     longitude: 113.25896
-    photos: []
+    photos:
+      - src: /img/travel/guangzhou/20220705-广州-广州花圃_20220705-DSC01522.jpg
+        date: "2022-07-05"
+        caption: "Flowers in Guangzhou"
+        captionZh: "广州花圃"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址陈设_20220705-DSC01568.jpg
+        date: "2022-07-05"
+        caption: "Interior at the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址陈设"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址房间_20220705-DSC01569.jpg
+        date: "2022-07-05"
+        caption: "Room at the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址房间"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址家具_20220705-DSC01570.jpg
+        date: "2022-07-05"
+        caption: "Furniture at the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址家具"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址宿舍_20220705-DSC01580.jpg
+        date: "2022-07-05"
+        caption: "Dormitory at the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址宿舍"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址史料_20220705-DSC01585.jpg
+        date: "2022-07-05"
+        caption: "Historical materials at the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址史料"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址书籍_20220705-DSC01588.jpg
+        date: "2022-07-05"
+        caption: "Book at the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址书籍"
+      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址校门_20220705-DSC01593.jpg
+        date: "2022-07-05"
+        caption: "Entrance to the Whampoa Military Academy site"
+        captionZh: "黄埔军校旧址校门"
+      - src: /img/travel/guangzhou/20220706-广州-沙面建筑_20220706-DSC01616.jpg
+        date: "2022-07-06"
+        caption: "Shamian architecture"
+        captionZh: "沙面建筑"
+      - src: /img/travel/guangzhou/20220706-广州-沙面老建筑_20220706-DSC01634.jpg
+        date: "2022-07-06"
+        caption: "Historic building on Shamian Island"
+        captionZh: "沙面老建筑"
+      - src: /img/travel/guangzhou/20220706-广州-沙面法国邮局旧址_20220706-DSC01643.jpg
+        date: "2022-07-06"
+        caption: "Former French post office on Shamian Island"
+        captionZh: "沙面法国邮局旧址"
+      - src: /img/travel/guangzhou/20220706-广州-沙面教堂_20220706-DSC01654.jpg
+        date: "2022-07-06"
+        caption: "Church on Shamian Island"
+        captionZh: "沙面教堂"
+      - src: /img/travel/guangzhou/20220706-广州-沙面街头雕塑_20220706-DSC01665.jpg
+        date: "2022-07-06"
+        caption: "Street sculpture on Shamian Island"
+        captionZh: "沙面街头雕塑"
+      - src: /img/travel/guangzhou/20220706-广州-沙面建筑外立面_20220706-DSC01667.jpg
+        date: "2022-07-06"
+        caption: "Building facade on Shamian Island"
+        captionZh: "沙面建筑外立面"
+      - src: /img/travel/guangzhou/20220706-广州-沙面街景_20220706-DSC01674.jpg
+        date: "2022-07-06"
+        caption: "Street view on Shamian Island"
+        captionZh: "沙面街景"
+      - src: /img/travel/guangzhou/20220706-广州-沙面老建筑与树影_20220706-DSC01682.jpg
+        date: "2022-07-06"
+        caption: "Historic architecture and trees on Shamian Island"
+        captionZh: "沙面老建筑与树影"
+      - src: /img/travel/guangzhou/20220706-广州-沙面建筑细节_20220706-DSC01685.jpg
+        date: "2022-07-06"
+        caption: "Architecture detail on Shamian Island"
+        captionZh: "沙面建筑细节"
+      - src: /img/travel/guangzhou/20220706-广州-沙面彩色建筑_20220706-DSC01696.jpg
+        date: "2022-07-06"
+        caption: "Colourful architecture on Shamian Island"
+        captionZh: "沙面彩色建筑"
+      - src: /img/travel/guangzhou/20220706-广州-沙面人物雕塑_20220706-DSC01702.jpg
+        date: "2022-07-06"
+        caption: "Figure sculpture on Shamian Island"
+        captionZh: "沙面人物雕塑"
+      - src: /img/travel/guangzhou/20220706-广州-沙面历史建筑_20220706-DSC01716.jpg
+        date: "2022-07-06"
+        caption: "Historic building on Shamian Island"
+        captionZh: "沙面历史建筑"
+      - src: /img/travel/guangzhou/20220707-广州-永庆坊_20220707-DSC01743.jpg
+        date: "2022-07-07"
+        caption: "Yongqing Fang"
+        captionZh: "永庆坊"
   - id: shenzhen
     group: guangdong
     geoGroup: china
@@ -2507,7 +2591,47 @@ visits:
     regionZh: "福建"
     latitude: 24.48011
     longitude: 118.08535
-    photos: []
+    photos:
+      - src: /img/travel/xiamen/20200818-厦门-厦门海滨雕塑_20200818-DSC00121.jpg
+        date: "2020-08-18"
+        caption: "Waterfront sculpture in Xiamen"
+        captionZh: "厦门海滨雕塑"
+      - src: /img/travel/xiamen/20200818-厦门-厦门海上帆船_20200818-DSC00143.jpg
+        date: "2020-08-18"
+        caption: "Sailboat off Xiamen"
+        captionZh: "厦门海上帆船"
+      - src: /img/travel/xiamen/20200818-厦门-厦门街头店铺_20200818-DSC00174.jpg
+        date: "2020-08-18"
+        caption: "Shop in Xiamen"
+        captionZh: "厦门街头店铺"
+      - src: /img/travel/xiamen/20200818-厦门-厦门街头墙绘_20200818-DSC00176.jpg
+        date: "2020-08-18"
+        caption: "Street mural in Xiamen"
+        captionZh: "厦门街头墙绘"
+      - src: /img/travel/xiamen/20200819-厦门-鼓浪屿海岸_20200819-DSC00221.jpg
+        date: "2020-08-19"
+        caption: "Gulangyu waterfront"
+        captionZh: "鼓浪屿海岸"
+      - src: /img/travel/xiamen/20200819-厦门-鼓浪屿老建筑_20200819-DSC00229.jpg
+        date: "2020-08-19"
+        caption: "Historic architecture on Gulangyu"
+        captionZh: "鼓浪屿老建筑"
+      - src: /img/travel/xiamen/20200819-厦门-鼓浪屿海景_20200819-DSC00347.jpg
+        date: "2020-08-19"
+        caption: "Sea view from Gulangyu"
+        captionZh: "鼓浪屿海景"
+      - src: /img/travel/xiamen/20200819-厦门-鼓浪屿与厦门_20200819-DSC00357.jpg
+        date: "2020-08-19"
+        caption: "Gulangyu and Xiamen skyline"
+        captionZh: "鼓浪屿与厦门"
+      - src: /img/travel/xiamen/20200819-厦门-鼓浪屿山顶远眺_20200819-DSC00367.jpg
+        date: "2020-08-19"
+        caption: "View from Gulangyu"
+        captionZh: "鼓浪屿山顶远眺"
+      - src: /img/travel/xiamen/20200819-厦门-厦门海岸与礁石_20200819-DSC00392.jpg
+        date: "2020-08-19"
+        caption: "Rocks along the Xiamen coast"
+        captionZh: "厦门海岸与礁石"
   - id: shanghai
     group: shanghai
     geoGroup: china
@@ -2515,7 +2639,15 @@ visits:
     nameZh: "上海"
     latitude: 31.23127
     longitude: 121.47002
-    photos: []
+    photos:
+      - src: /img/travel/shanghai/20210719-上海-上海建筑室内_20210719-DSC00634.jpg
+        date: "2021-07-19"
+        caption: "Interior architecture in Shanghai"
+        captionZh: "上海建筑室内"
+      - src: /img/travel/shanghai/20210719-上海-上海展馆文字_20210719-DSC00647.jpg
+        date: "2021-07-19"
+        caption: "Lettering at a Shanghai exhibit"
+        captionZh: "上海展馆文字"
   - id: zibo
     group: shandong
     geoGroup: china
@@ -3264,7 +3396,135 @@ visits:
     regionZh: "吉林"
     latitude: 43.10000
     longitude: 129.20000
-    photos: []
+    photos:
+      - src: /img/travel/yanbian/20230429-延边-延吉街景_20230429-DSC02716.jpg
+        date: "2023-04-29"
+        caption: "Street view in Yanji"
+        captionZh: "延吉街景"
+      - src: /img/travel/yanbian/20230429-延边-延吉窗景_20230429-DSC02725.jpg
+        date: "2023-04-29"
+        caption: "Window view in Yanji"
+        captionZh: "延吉窗景"
+      - src: /img/travel/yanbian/20230429-延边-延吉夜间街景_20230429-DSC02749.jpg
+        date: "2023-04-29"
+        caption: "Yanji street at night"
+        captionZh: "延吉夜间街景"
+      - src: /img/travel/yanbian/20230429-延边-延吉人民公园_20230429-DSC02752.jpg
+        date: "2023-04-29"
+        caption: "People’s Park in Yanji"
+        captionZh: "延吉人民公园"
+      - src: /img/travel/yanbian/20230429-延边-延吉街道灯光_20230429-DSC02759.jpg
+        date: "2023-04-29"
+        caption: "Yanji street lights"
+        captionZh: "延吉街道灯光"
+      - src: /img/travel/yanbian/20230430-延边-延边民俗村入口_20230430-DSC02824.jpg
+        date: "2023-04-30"
+        caption: "Entrance to a folk village in Yanbian"
+        captionZh: "延边民俗村入口"
+      - src: /img/travel/yanbian/20230430-延边-延边民俗村_20230430-DSC02826.jpg
+        date: "2023-04-30"
+        caption: "Folk village in Yanbian"
+        captionZh: "延边民俗村"
+      - src: /img/travel/yanbian/20230430-延边-民俗村装饰_20230430-DSC02838.jpg
+        date: "2023-04-30"
+        caption: "Folk village decoration"
+        captionZh: "民俗村装饰"
+      - src: /img/travel/yanbian/20230430-延边-朝鲜族传统民居_20230430-DSC02840.jpg
+        date: "2023-04-30"
+        caption: "Traditional Korean-style house"
+        captionZh: "朝鲜族传统民居"
+      - src: /img/travel/yanbian/20230430-延边-民俗村室内陈设_20230430-DSC02847.jpg
+        date: "2023-04-30"
+        caption: "Folk village interior"
+        captionZh: "民俗村室内陈设"
+      - src: /img/travel/yanbian/20230430-延边-民俗村广场_20230430-DSC02852.jpg
+        date: "2023-04-30"
+        caption: "Folk village square"
+        captionZh: "民俗村广场"
+      - src: /img/travel/yanbian/20230430-延边-树枝花朵_20230430-DSC02854.jpg
+        date: "2023-04-30"
+        caption: "Flowers on a branch"
+        captionZh: "树枝花朵"
+      - src: /img/travel/yanbian/20230430-延边-边境观景台_20230430-DSC02861.jpg
+        date: "2023-04-30"
+        caption: "Border viewing platform"
+        captionZh: "边境观景台"
+      - src: /img/travel/yanbian/20230430-延边-延边山野_20230430-DSC02865.jpg
+        date: "2023-04-30"
+        caption: "Yanbian countryside"
+        captionZh: "延边山野"
+      - src: /img/travel/yanbian/20230430-延边-延边山景_20230430-DSC02874.jpg
+        date: "2023-04-30"
+        caption: "Mountains in Yanbian"
+        captionZh: "延边山景"
+      - src: /img/travel/yanbian/20230430-延边-延边春花_20230430-DSC02877.jpg
+        date: "2023-04-30"
+        caption: "Spring blossoms in Yanbian"
+        captionZh: "延边春花"
+      - src: /img/travel/yanbian/20230430-延边-朝鲜族民居_20230430-DSC02883.jpg
+        date: "2023-04-30"
+        caption: "Traditional Korean-style house"
+        captionZh: "朝鲜族民居"
+      - src: /img/travel/yanbian/20230430-延边-延边传统建筑_20230430-DSC02894.jpg
+        date: "2023-04-30"
+        caption: "Traditional architecture in Yanbian"
+        captionZh: "延边传统建筑"
+      - src: /img/travel/yanbian/20230430-延边-民俗村屋顶_20230430-DSC02899_low.jpg
+        date: "2023-04-30"
+        caption: "Traditional village roof"
+        captionZh: "民俗村屋顶"
+      - src: /img/travel/yanbian/20230430-延边-民居屋檐_20230430-DSC02899.jpg
+        date: "2023-04-30"
+        caption: "Eaves of a traditional house"
+        captionZh: "民居屋檐"
+      - src: /img/travel/yanbian/20230430-延边-延边山谷_20230430-DSC02903.jpg
+        date: "2023-04-30"
+        caption: "Yanbian valley"
+        captionZh: "延边山谷"
+      - src: /img/travel/yanbian/20230430-延边-民俗博物馆_20230430-DSC02909.jpg
+        date: "2023-04-30"
+        caption: "Folk museum"
+        captionZh: "民俗博物馆"
+      - src: /img/travel/yanbian/20230430-延边-边境河畔建筑_20230430-DSC02915.jpg
+        date: "2023-04-30"
+        caption: "Building by the border river"
+        captionZh: "边境河畔建筑"
+      - src: /img/travel/yanbian/20230430-延边-边境口岸标志_20230430-DSC02920.jpg
+        date: "2023-04-30"
+        caption: "Border crossing sign"
+        captionZh: "边境口岸标志"
+      - src: /img/travel/yanbian/20230430-延边-边境建筑与河流_20230430-DSC02926.jpg
+        date: "2023-04-30"
+        caption: "Buildings and river at the border"
+        captionZh: "边境建筑与河流"
+      - src: /img/travel/yanbian/20230430-延边-珲春口岸留影_20230430-微信图片_20230430231111.jpg
+        date: "2023-04-30"
+        caption: "Group photo at a Hunchun border crossing"
+        captionZh: "珲春口岸留影"
+      - src: /img/travel/yanbian/20230430-延边-珲春圈河口岸_20230430-DSC02933.jpg
+        date: "2023-04-30"
+        caption: "Quanhe border crossing in Hunchun"
+        captionZh: "珲春圈河口岸"
+      - src: /img/travel/yanbian/20230430-延边-远处烟囱_20230430-DSC02945.jpg
+        date: "2023-04-30"
+        caption: "Distant chimney"
+        captionZh: "远处烟囱"
+      - src: /img/travel/yanbian/20230430-延边-珲春圈河口岸大楼_20230430-DSC02956.jpg
+        date: "2023-04-30"
+        caption: "Quanhe border crossing building"
+        captionZh: "珲春圈河口岸大楼"
+      - src: /img/travel/yanbian/20230430-延边-边境铁网_20230430-DSC02968.jpg
+        date: "2023-04-30"
+        caption: "Border fence"
+        captionZh: "边境铁网"
+      - src: /img/travel/yanbian/20230430-延边-图们江湿地_20230430-DSC02984.jpg
+        date: "2023-04-30"
+        caption: "Tumen River wetlands"
+        captionZh: "图们江湿地"
+      - src: /img/travel/yanbian/20230430-延边-防川留影_20230430-微信图片_20230430231103.jpg
+        date: "2023-04-30"
+        caption: "Group photo in Fangchuan"
+        captionZh: "防川留影"
   - id: lanzhou
     group: gansu
     geoGroup: china
@@ -3730,7 +3990,75 @@ visits:
     longitude: 128.05640
     description: "The pin shows an approximate location for the Changbai Mountain area."
     descriptionZh: "图钉为长白山区域的示意位置。"
-    photos: []
+    photos:
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪峰_20230502-DSC03010.jpg
+        date: "2023-05-02"
+        caption: "Snow peaks on Changbai Mountain"
+        captionZh: "长白山雪峰"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪山_20230502-DSC03030.jpg
+        date: "2023-05-02"
+        caption: "Snow-covered Changbai Mountain"
+        captionZh: "长白山雪山"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山山脉_20230502-DSC03035.jpg
+        date: "2023-05-02"
+        caption: "Changbai Mountain range"
+        captionZh: "长白山山脉"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山与蓝天_20230502-DSC03041.jpg
+        date: "2023-05-02"
+        caption: "Changbai Mountain under the blue sky"
+        captionZh: "长白山与蓝天"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山标识_20230502-DSC03045.jpg
+        date: "2023-05-02"
+        caption: "Changbai Mountain sign"
+        captionZh: "长白山标识"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山积雪_20230502-DSC03050.jpg
+        date: "2023-05-02"
+        caption: "Snow on Changbai Mountain"
+        captionZh: "长白山积雪"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山温泉_20230502-DSC03052.jpg
+        date: "2023-05-02"
+        caption: "Hot springs on Changbai Mountain"
+        captionZh: "长白山温泉"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪坡_20230502-DSC03062.jpg
+        date: "2023-05-02"
+        caption: "Snowy slope on Changbai Mountain"
+        captionZh: "长白山雪坡"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山冰雪层_20230502-DSC03069.jpg
+        date: "2023-05-02"
+        caption: "Layers of snow and ice"
+        captionZh: "长白山冰雪层"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪谷_20230502-DSC03073.jpg
+        date: "2023-05-02"
+        caption: "Snowy valley on Changbai Mountain"
+        captionZh: "长白山雪谷"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山山谷雪景_20230502-DSC03077.jpg
+        date: "2023-05-02"
+        caption: "Snow-covered Changbai Mountain valley"
+        captionZh: "长白山山谷雪景"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪山远景_20230502-DSC03079.jpg
+        date: "2023-05-02"
+        caption: "Distant snowy Changbai Mountain"
+        captionZh: "长白山雪山远景"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山瀑布_20230502-DSC03097.jpg
+        date: "2023-05-02"
+        caption: "Changbai Mountain waterfall"
+        captionZh: "长白山瀑布"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪地游人_20230502-DSC03103.jpg
+        date: "2023-05-02"
+        caption: "Visitor in the snow on Changbai Mountain"
+        captionZh: "长白山雪地游人"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山林木与积雪_20230502-DSC03113.jpg
+        date: "2023-05-02"
+        caption: "Trees and snow on Changbai Mountain"
+        captionZh: "长白山林木与积雪"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山苔地_20230502-DSC03125.jpg
+        date: "2023-05-02"
+        caption: "Mossy ground on Changbai Mountain"
+        captionZh: "长白山苔地"
+      - src: /img/travel/changbai-mountain/20230502-长白山-长白山林间_20230502-DSC03151.jpg
+        date: "2023-05-02"
+        caption: "Forest on Changbai Mountain"
+        captionZh: "长白山林间"
   - id: zhuhai
     group: guangdong
     geoGroup: china
