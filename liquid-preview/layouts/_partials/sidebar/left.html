@@ -1,16 +1,21 @@
+{{- $isChinese := hasPrefix .Language.Lang "zh" -}}
+{{- $otherLanguage := cond $isChinese "en" "zh" -}}
+{{- $languageTarget := cond $isChinese ("en/" | relURL) ("/" | relURL) -}}
+{{- range .Site.Home.AllTranslations -}}{{ if eq .Language.Lang $otherLanguage }}{{ $languageTarget = .RelPermalink }}{{ end }}{{ end -}}
+{{- range .AllTranslations -}}{{ if eq .Language.Lang $otherLanguage }}{{ $languageTarget = .RelPermalink }}{{ end }}{{ end -}}
 <aside class="sidebar left-sidebar sticky {{ if .Site.Params.sidebar.compact }}compact{{ end }}">
     <button type="button" id="toggle-menu" aria-label="{{ T `toggleMenu` }}">
         <span class="mobile-menu-icon mobile-menu-icon--menu" aria-hidden="true">{{ partial "helper/icon" "menu" }}</span>
     </button>
+
+    {{ if hugo.IsMultilingual }}<a class="mobile-language-direct" href="{{ $languageTarget }}" aria-label="{{ cond $isChinese "切换到英文" "Switch to Chinese" }}">{{ cond $isChinese "English" "中文" }}</a>{{ end }}
 
     <div class="mobile-profile-controls" aria-label="{{ cond (hasPrefix .Language.Lang "zh") "页面设置" "Page settings" }}">
         <button type="button" class="mobile-profile-control" data-mobile-scheme-toggle aria-label="{{ cond (hasPrefix .Language.Lang "zh") "切换深浅色模式" "Toggle dark mode" }}">
             <span class="mobile-profile-control__sun">{{ partial "helper/icon" "sun" }}</span>
             <span class="mobile-profile-control__moon">{{ partial "helper/icon" "moon" }}</span>
         </button>
-        <button type="button" class="mobile-profile-control" data-mobile-language-toggle aria-label="{{ cond (hasPrefix .Language.Lang "zh") "切换语言" "Switch language" }}">
-            {{ partial "helper/icon" "language" }}
-        </button>
+
     </div>
 
     <header>
@@ -52,22 +57,8 @@
         {{ end }}
         <li class="menu-bottom-section">
             <ol class="menu">
-                {{- $currentLanguageCode := .Language.Name -}}
                 {{ if hugo.IsMultilingual }}
-                    <li id="i18n-switch">
-                        {{ partial "helper/icon" "language" }}
-                        <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
-                            {{ range .Site.Home.AllTranslations }}
-                                {{ $target := . }}
-                                {{ range $.AllTranslations }}
-                                    {{ if eq .Language.Name $target.Language.Name }}
-                                        {{ $target = . }}
-                                    {{ end }}
-                                {{ end }}
-                                <option value="{{ $target.RelPermalink }}" {{ if eq $target.Language.Name $currentLanguageCode }}selected{{ end }}>{{ .Language.Label }}</option>
-                            {{ end }}
-                        </select>
-                    </li>
+                    <li id="i18n-switch"><a class="language-direct" href="{{ $languageTarget }}" aria-label="{{ cond $isChinese "切换到英文" "Switch to Chinese" }}">{{ partial "helper/icon" "language" }}<span>{{ cond $isChinese "English" "中文" }}</span></a></li>
                 {{ end }}
 
                 {{ if .Site.Params.colorScheme.toggle }}

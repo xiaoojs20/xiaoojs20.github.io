@@ -1910,12 +1910,6 @@ const initMobileProfileControls = () => {
     document.querySelector<HTMLButtonElement>("[data-mobile-scheme-toggle]")?.addEventListener("click", () => {
         document.getElementById("dark-mode-toggle")?.click();
     });
-    document.querySelector<HTMLButtonElement>("[data-mobile-language-toggle]")?.addEventListener("click", () => {
-        const select = document.querySelector<HTMLSelectElement>("#i18n-switch select");
-        if (!select || select.options.length < 2) return;
-        select.selectedIndex = (select.selectedIndex + 1) % select.options.length;
-        select.dispatchEvent(new Event("change", { bubbles: true }));
-    });
 };
 
 const initCvFloatingNav = () => {
