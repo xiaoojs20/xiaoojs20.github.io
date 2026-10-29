@@ -14,6 +14,7 @@
         <button type="button" class="mobile-profile-control" data-mobile-scheme-toggle aria-label="{{ cond (hasPrefix .Language.Lang "zh") "切换深浅色模式" "Toggle dark mode" }}">
             <span class="mobile-profile-control__sun">{{ partial "helper/icon" "sun" }}</span>
             <span class="mobile-profile-control__moon">{{ partial "helper/icon" "moon" }}</span>
+            <span class="mobile-theme-label" data-theme-mode-label>{{ cond $isChinese "跟随系统" "System" }}</span>
         </button>
 
     </div>
@@ -62,14 +63,14 @@
                 {{ end }}
 
                 {{ if .Site.Params.colorScheme.toggle }}
-                    <li id="dark-mode-toggle">
+                    <li id="dark-mode-toggle" role="button" tabindex="0" aria-label="{{ cond $isChinese "主题：跟随系统，点击切换" "Theme: System, activate to change" }}">
                         <span class="sidebar-color-icon sidebar-color-icon--light">
                             {{ partial "helper/icon" "toggle-left" }}
                         </span>
                         <span class="sidebar-color-icon sidebar-color-icon--dark">
                             {{ partial "helper/icon" "toggle-right" }}
                         </span>
-                        <span>{{ T "darkMode" }}</span>
+                        <span data-theme-mode-label>{{ cond $isChinese "跟随系统" "System" }}</span>
                     </li>
                 {{ end }}
 
