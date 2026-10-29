@@ -127,7 +127,37 @@ visits:
     regionZh: "云南"
     latitude: 25.03994
     longitude: 102.71691
-    photos: []
+    photos:
+      - src: /img/travel/kunming/20261001-昆明-松鼠_DSC09037.jpg
+        caption: "Squirrel"
+        captionZh: "松鼠"
+      - src: /img/travel/kunming/20261001-昆明-城市建筑_DSC09071.jpg
+        caption: "City architecture"
+        captionZh: "城市建筑"
+      - src: /img/travel/kunming/20261001-昆明-花与街道_DSC09163.jpg
+        caption: "Flowers along a street"
+        captionZh: "花与街道"
+      - src: /img/travel/kunming/20261001-昆明-城市雕像_DSC09223.jpg
+        caption: "City statue"
+        captionZh: "城市雕像"
+      - src: /img/travel/kunming/20261001-昆明-建筑与蓝天_DSC09234.jpg
+        caption: "Architecture under blue skies"
+        captionZh: "建筑与蓝天"
+      - src: /img/travel/kunming/20261001-昆明-建筑一角_DSC09240.jpg
+        caption: "A corner of a building"
+        captionZh: "建筑一角"
+      - src: /img/travel/kunming/20261001-昆明-城市纪念碑_DSC09254.jpg
+        caption: "City monument"
+        captionZh: "城市纪念碑"
+      - src: /img/travel/kunming/20261001-昆明-纪念碑细节_DSC09262.jpg
+        caption: "Monument detail"
+        captionZh: "纪念碑细节"
+      - src: /img/travel/kunming/20261002-昆明-湖上小船_DSC09392.jpg
+        caption: "Boats on the lake"
+        captionZh: "湖上小船"
+      - src: /img/travel/kunming/20261002-昆明-湖畔山景_DSC09577.jpg
+        caption: "Mountains by the lake"
+        captionZh: "湖畔山景"
   - id: dali
     group: yunnan
     geoGroup: china
@@ -137,7 +167,37 @@ visits:
     regionZh: "云南 · 大理白族自治州"
     latitude: 25.60748
     longitude: 100.26516
-    photos: []
+    photos:
+      - src: /img/travel/dali/20261003-大理-湖中枯树_DSC09592.jpg
+        caption: "A tree in the lake"
+        captionZh: "湖中枯树"
+      - src: /img/travel/dali/20261003-大理-田野与远山_DSC09690.jpg
+        caption: "Fields and distant mountains"
+        captionZh: "田野与远山"
+      - src: /img/travel/dali/20261003-大理-泳池与湖景_DSC09714.jpg
+        caption: "Pool and lake view"
+        captionZh: "泳池与湖景"
+      - src: /img/travel/dali/20261003-大理-湖畔村落_DSC09756.jpg
+        caption: "Village by the lake"
+        captionZh: "湖畔村落"
+      - src: /img/travel/dali/20261003-大理-窗边湖景_DSC09798.jpg
+        caption: "Lake view through an arched window"
+        captionZh: "窗边湖景"
+      - src: /img/travel/dali/20261003-大理-窗外湖景_DSC09861.jpg
+        caption: "Lake view through a window"
+        captionZh: "窗外湖景"
+      - src: /img/travel/dali/20261003-大理-湖面光影_DSC09934.jpg
+        caption: "Sunlight on the lake"
+        captionZh: "湖面光影"
+      - src: /img/travel/dali/20261003-大理-湖边风景_DSC09968.jpg
+        caption: "Lakeside scenery"
+        captionZh: "湖边风景"
+      - src: /img/travel/dali/20261003-大理-云隙光影_DSC00009.jpg
+        caption: "Sunbeams through clouds"
+        captionZh: "云隙光影"
+      - src: /img/travel/dali/20261003-大理-云与湖面_DSC00023.jpg
+        caption: "Clouds over the lake"
+        captionZh: "云与湖面"
   - id: lijiang
     group: yunnan
     geoGroup: china
@@ -147,7 +207,46 @@ visits:
     regionZh: "云南"
     latitude: 26.85959
     longitude: 100.22498
-    photos: []
+    photos:
+      - src: /img/travel/lijiang/20261006-丽江-山谷与栈道_DSC00750.jpg
+        caption: "Mountain valley and walkway"
+        captionZh: "山谷与栈道"
+      - src: /img/travel/lijiang/20261006-丽江-湖边绿意_DSC00846.jpg
+        caption: "Green lakeshore"
+        captionZh: "湖边绿意"
+      - src: /img/travel/lijiang/20261006-丽江-山林与湖_DSC00887.jpg
+        caption: "Lake surrounded by forest"
+        captionZh: "山林与湖"
+      - src: /img/travel/lijiang/20261006-丽江-湖中树影_DSC00939.jpg
+        caption: "Trees in the lake"
+        captionZh: "湖中树影"
+      - src: /img/travel/lijiang/20261006-丽江-山谷湖景_DSC00957.jpg
+        caption: "Mountain lake"
+        captionZh: "山谷湖景"
+      - src: /img/travel/lijiang/20261006-丽江-水面倒影_DSC01027.jpg
+        caption: "Reflections in the water"
+        captionZh: "水面倒影"
+      - src: /img/travel/lijiang/20261006-丽江-湖水与树枝_DSC01073.jpg
+        caption: "Branches above the lake"
+        captionZh: "湖水与树枝"
+      - src: /img/travel/lijiang/20261006-丽江-湖水云影_DSC01093-2.jpg
+        caption: "Cloud reflected in lake water"
+        captionZh: "湖水云影"
+      - src: /img/travel/lijiang/20261006-丽江-湖面云影_DSC01093.jpg
+        caption: "Clouds reflected in the lake"
+        captionZh: "湖面云影"
+      - src: /img/travel/lijiang/20261006-丽江-湖畔倒影_DSC01108.jpg
+        caption: "Reflections by the lake"
+        captionZh: "湖畔倒影"
+      - src: /img/travel/lijiang/20261006-丽江-水中枯树_DSC01147.jpg
+        caption: "A tree in the water"
+        captionZh: "水中枯树"
+      - src: /img/travel/lijiang/20261006-丽江-树影倒映_DSC01155.jpg
+        caption: "A tree and its reflection"
+        captionZh: "树影倒映"
+      - src: /img/travel/lijiang/20261006-丽江-山顶石碑_DSC01458.jpg
+        caption: "A stone marker on the mountain"
+        captionZh: "山顶石碑"
   - id: shangri-la
     group: yunnan
     geoGroup: china
@@ -157,7 +256,67 @@ visits:
     regionZh: "云南"
     latitude: 27.87170
     longitude: 99.83655
-    photos: []
+    photos:
+      - src: /img/travel/shangri-la/20261005-香格里拉-草地与羊_DSC00045.jpg
+        caption: "Sheep and people on the grassland"
+        captionZh: "草地与羊"
+      - src: /img/travel/shangri-la/20261005-香格里拉-牦牛与人_DSC00060.jpg
+        caption: "A yak and its handler"
+        captionZh: "牦牛与人"
+      - src: /img/travel/shangri-la/20261005-香格里拉-草原牦牛_DSC00067.jpg
+        caption: "Yak on the grassland"
+        captionZh: "草原牦牛"
+      - src: /img/travel/shangri-la/20261005-香格里拉-草原彩绘_DSC00111.jpg
+        caption: "Painted display on the grassland"
+        captionZh: "草原彩绘"
+      - src: /img/travel/shangri-la/20261005-香格里拉-草地小羊_DSC00131.jpg
+        caption: "A lamb on the grass"
+        captionZh: "草地小羊"
+      - src: /img/travel/shangri-la/20261005-香格里拉-草原骑行_DSC00147.jpg
+        caption: "Riders on the grassland"
+        captionZh: "草原骑行"
+      - src: /img/travel/shangri-la/20261005-香格里拉-草原与马队_DSC00152.jpg
+        caption: "Horse riders and mountains"
+        captionZh: "草原与马队"
+      - src: /img/travel/shangri-la/20261005-香格里拉-草原上的马_DSC00195.jpg
+        caption: "Horses on the grassland"
+        captionZh: "草原上的马"
+      - src: /img/travel/shangri-la/20261005-香格里拉-古城牌匾_DSC00216.jpg
+        caption: "An old town sign"
+        captionZh: "古城牌匾"
+      - src: /img/travel/shangri-la/20261005-香格里拉-街道与建筑_DSC00231.jpg
+        caption: "Street and architecture"
+        captionZh: "街道与建筑"
+      - src: /img/travel/shangri-la/20261005-香格里拉-古城建筑_DSC00250.jpg
+        caption: "Old town architecture"
+        captionZh: "古城建筑"
+      - src: /img/travel/shangri-la/20261005-香格里拉-古城屋顶_DSC00284.jpg
+        caption: "Old town rooftops"
+        captionZh: "古城屋顶"
+      - src: /img/travel/shangri-la/20261005-香格里拉-古城全景_DSC00345.jpg
+        caption: "Old town panorama"
+        captionZh: "古城全景"
+      - src: /img/travel/shangri-la/20261005-香格里拉-转经筒_DSC00387.jpg
+        caption: "Prayer wheel"
+        captionZh: "转经筒"
+      - src: /img/travel/shangri-la/20261005-香格里拉-转经筒细节_DSC00422.jpg
+        caption: "Prayer wheel detail"
+        captionZh: "转经筒细节"
+      - src: /img/travel/shangri-la/20261005-香格里拉-白塔与天空_DSC00462.jpg
+        caption: "A white stupa under the sky"
+        captionZh: "白塔与天空"
+      - src: /img/travel/shangri-la/20261005-香格里拉-白塔_DSC00473.jpg
+        caption: "White stupa"
+        captionZh: "白塔"
+      - src: /img/travel/shangri-la/20261005-香格里拉-彩色经幡_DSC00522.jpg
+        caption: "Colorful prayer flags"
+        captionZh: "彩色经幡"
+      - src: /img/travel/shangri-la/20261005-香格里拉-经幡与蓝天_DSC00525.jpg
+        caption: "Prayer flags and blue sky"
+        captionZh: "经幡与蓝天"
+      - src: /img/travel/shangri-la/20261005-香格里拉-峡谷水流_DSC00647.jpg
+        caption: "Water flowing through a gorge"
+        captionZh: "峡谷水流"
   - id: tokyo
     group: japan
     geoGroup: international

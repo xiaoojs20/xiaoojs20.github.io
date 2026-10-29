@@ -340,6 +340,10 @@ asset_collections:
     label: "posts"
     media_folder: /static/img/posts
     public_folder: /img/posts
+  - name: img_travel
+    label: "travel"
+    media_folder: /static/img/travel
+    public_folder: /img/travel
   - name: img_waline_icons
     label: "waline-icons"
     media_folder: /static/img/waline-icons
