@@ -1,0 +1,55 @@
+- id: canvas-flow
+  category: Creative tools
+  categoryZh: 创意工具
+  name: Canvas Flow
+  nameZh: 画布流
+  description: A fictional visual workspace for references, sketches and presentation boards.
+  descriptionZh: 一个用于整理参考资料、草图与演示画板的虚拟视觉工作区。
+  source: website
+  sourceLabel: Website
+  sourceLabelZh: 官网
+  openSource: "no"
+  pricing: freemium
+  icon: palette
+
+- id: pixel-forge
+  category: Creative tools
+  categoryZh: 创意工具
+  name: Pixel Forge
+  nameZh: 像素工坊
+  description: A fictional desktop editor for icons and lightweight image composition.
+  descriptionZh: 一个面向图标与轻量图像合成的虚拟桌面编辑器。
+  source: app-store
+  sourceLabel: App Store
+  sourceLabelZh: App Store
+  openSource: partial
+  pricing: paid
+  icon: image
+
+- id: note-harbor
+  category: Productivity
+  categoryZh: 效率工具
+  name: Note Harbor
+  nameZh: 笔记港
+  description: A fictional knowledge service connecting notes, reading lists and project references.
+  descriptionZh: 一个连接笔记、阅读清单与项目资料的虚拟知识服务。
+  source: website
+  sourceLabel: Website
+  sourceLabelZh: 官网
+  openSource: "no"
+  pricing: freemium
+  icon: notebook
+
+- id: focus-lane
+  category: Productivity
+  categoryZh: 效率工具
+  name: Focus Lane
+  nameZh: 专注路径
+  description: A fictional planning app that turns milestones into a calm daily queue.
+  descriptionZh: 一个将阶段目标整理为每日清单的虚拟计划应用。
+  source: github
+  sourceLabel: GitHub
+  sourceLabelZh: GitHub
+  openSource: "yes"
+  pricing: free
+  icon: list-checks

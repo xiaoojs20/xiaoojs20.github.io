@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "liquid-stack-page-views",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-26",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGIN": "https://example.github.io",
+    "SWITCH_DATE": "2026-07-26"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "liquid-stack-page-views",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

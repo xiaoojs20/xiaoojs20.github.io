@@ -1,0 +1,17 @@
+---
+order: 7
+id: bewlybewly-safari
+name: BewlyBewly for Safari
+nameZh: BewlyBewly Safari 版
+label: BewlyBewly
+labelZh: BewlyBewly
+icon: "/img/launchpad/icon-bewlybewly.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-bilibili-safari.webp"
+screenshotAlt: BewlyBewly interface running in Safari
+screenshotAltZh: Safari 中运行的 BewlyBewly 界面
+closeX: 5.0
+closeY: 6.2
+article: "https://jingyuan-zheng.github.io/zh/p/bewlybewly-safari-revival/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/bewlybewly-safari-revival/"
+repository: https://github.com/Jingyuan-Zheng/BewlyBewly_Safari

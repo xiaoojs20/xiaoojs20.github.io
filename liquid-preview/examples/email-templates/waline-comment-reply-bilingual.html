@@ -1,0 +1,66 @@
+{% set isZh = self.url and '/zh/' in self.url %}
+<!doctype html>
+<html lang="{% if isZh %}zh-CN{% else %}en{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if isZh %}你的评论收到了新回复{% else %}Your comment received a reply{% endif %}</title>
+</head>
+<body style="margin:0; padding:0; background:#f3f6fa; color:#1f2937; font-family:Arial,'Helvetica Neue',sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; background:#f3f6fa;">
+    <tr>
+      <td align="center" style="padding:32px 12px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px; background:#ffffff; border:1px solid #dbe4ef; border-radius:18px;">
+          <tr>
+            <td style="padding:44px 44px 16px;">
+              <div style="font-size:15px; line-height:1.3; font-weight:700; letter-spacing:1.8px; color:#34495e;">[SITE NAME]</div>
+              <h1 style="margin:18px 0 0; font-size:28px; line-height:1.25; color:#111827;">
+                {% if isZh %}你的评论收到了新回复{% else %}Your comment received a reply{% endif %}
+              </h1>
+              <p style="margin:14px 0 0; font-size:17px; line-height:1.6; color:#667085;">
+                {% if isZh %}你好，{{parent.nick | safe}}：{% else %}Hello {{parent.nick | safe}},{% endif %}
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px 44px 0;">
+              <div style="margin-bottom:10px; font-size:15px; line-height:1.4; font-weight:700; color:#667085;">
+                {% if isZh %}你的评论{% else %}Your comment{% endif %}
+              </div>
+              <div style="padding:22px 24px; background:#f4f6f9; border-left:5px solid #a9bad2; border-radius:10px; font-size:16px; line-height:1.7; color:#1f2937; word-break:break-word;">
+                {{parent.comment | safe}}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:26px 44px 0;">
+              <div style="margin-bottom:10px; font-size:15px; line-height:1.4; font-weight:700; color:#34495e;">
+                {% if isZh %}{{self.nick | safe}} 回复{% else %}Reply from {{self.nick | safe}}{% endif %}
+              </div>
+              <div style="padding:22px 24px; background:#edf2f6; border-left:5px solid #34495e; border-radius:10px; font-size:16px; line-height:1.7; color:#1f2937; word-break:break-word;">
+                {{self.comment | safe}}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px 44px 0;">
+              <a href="{{site.postUrl}}" target="_blank" style="display:inline-block; padding:13px 22px; background:#34495e; border-radius:9px; color:#ffffff; font-size:15px; line-height:1.2; font-weight:700; text-decoration:none;">
+                {% if isZh %}查看并回复{% else %}View and reply{% endif %}
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px 44px 42px; font-size:13px; line-height:1.65; color:#94a3b8;">
+              {% if isZh %}
+                你收到此邮件，是因为你在 [站点名称] 的评论区填写了邮箱地址。
+              {% else %}
+                You received this email because you provided an email address with your comment on [Site Name].
+              {% endif %}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+---
+order: 6
+id: gabra
+name: Ġabra Maltese Dictionary
+nameZh: Ġabra 马耳他语词典
+label: Ġabra
+labelZh: Ġabra
+icon: "/img/launchpad/icon-dictionary.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-gabra.webp"
+screenshotAlt: Ġabra Maltese entries in the macOS Dictionary app
+screenshotAltZh: macOS 词典中的 Ġabra 马耳他语词条
+closeX: 8.0
+closeY: 8.2
+article: "https://jingyuan-zheng.github.io/p/introducing-ġabra-a-native-maltese-dictionary-for-macos/"
+articleZh: "https://jingyuan-zheng.github.io/p/introducing-ġabra-a-native-maltese-dictionary-for-macos/"
+repository: https://github.com/Jingyuan-Zheng/gabra-maltese-macos-dictionary

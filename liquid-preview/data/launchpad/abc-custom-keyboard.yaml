@@ -1,0 +1,17 @@
+---
+order: 4
+id: abc-custom-keyboard
+name: ABC Custom Keyboard
+nameZh: ABC 自定义键盘
+label: ABC Custom Keyboard
+labelZh: ABC 自定义键盘
+icon: "/img/launchpad/icon-abc-custom-keyboard.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-abc-custom-keyboard.svg"
+screenshotAlt: ABC Custom Keyboard Option-layer layout
+screenshotAltZh: ABC 自定义键盘的 Option 层布局图
+closeX: 4.0
+closeY: 5.0
+article: "https://jingyuan-zheng.github.io/p/abc-custom-keyboard/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/abc-custom-keyboard/"
+repository: https://github.com/Jingyuan-Zheng/ABC-Custom-Keyboard

@@ -1,0 +1,381 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+  <title id="title">ABC Custom: hold Option</title>
+  <desc id="desc">Hold Option and press a key. Blue keys start a dead-key layer.</desc>
+  <style>
+    .bg { fill: #f6f2ea; }
+    .title { font: 700 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #25231f; }
+    .subtitle { font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #5c574e; }
+    .physical { font: 600 10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .output { font: 650 17px -apple-system, BlinkMacSystemFont, "Segoe UI Symbol", "Apple Symbols", sans-serif; text-anchor: middle; }
+    .combo-text { font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; }
+    .plus { font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #5c574e; }
+    .hint { font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #5c574e; }
+  </style>
+  <rect class="bg" width="1100" height="500"/>
+  <text x="28" y="38" class="title">ABC Custom: hold Option</text>
+  <text x="28" y="62" class="subtitle">Hold Option and press a key. Blue keys start a dead-key layer.</text>
+
+      <g transform="translate(28,78)">
+        <rect width="78" height="38" rx="8" fill="#25231f" stroke="#25231f" stroke-width="1.4"/>
+        <text x="39.0" y="25" class="combo-text" fill="#fffdf7">Option</text>
+      </g>
+      <g transform="translate(28,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">`</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Tilde</text>
+      </g>
+
+      <g transform="translate(95,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">1</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Tone 1</text>
+      </g>
+
+      <g transform="translate(162,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">2</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Acute</text>
+      </g>
+
+      <g transform="translate(229,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">3</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Caron</text>
+      </g>
+
+      <g transform="translate(296,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">4</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Grave</text>
+      </g>
+
+      <g transform="translate(363,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">5</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Umlaut</text>
+      </g>
+
+      <g transform="translate(430,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">6</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Circ</text>
+      </g>
+
+      <g transform="translate(497,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">7</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Ligature</text>
+      </g>
+
+      <g transform="translate(564,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">8</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Dot</text>
+      </g>
+
+      <g transform="translate(631,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">9</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Sub</text>
+      </g>
+
+      <g transform="translate(698,138)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">0</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Degree</text>
+      </g>
+
+      <g transform="translate(765,138)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">-</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">–</text>
+      </g>
+
+      <g transform="translate(832,138)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">=</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">≠</text>
+      </g>
+
+      <g transform="translate(899,138)">
+        <rect width="113" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Delete</text>
+        <text x="56.5" y="38" class="output" fill="#1e1c18">Delete</text>
+      </g>
+
+      <g transform="translate(28,201)">
+        <rect width="90" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Tab</text>
+        <text x="45.0" y="38" class="output" fill="#1e1c18">Tab</text>
+      </g>
+
+      <g transform="translate(125,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Q</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ℚ</text>
+      </g>
+
+      <g transform="translate(192,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">W</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">∑</text>
+      </g>
+
+      <g transform="translate(259,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">E</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">€</text>
+      </g>
+
+      <g transform="translate(326,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">R</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ℝ</text>
+      </g>
+
+      <g transform="translate(393,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">T</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">∴</text>
+      </g>
+
+      <g transform="translate(460,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Y</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">¥</text>
+      </g>
+
+      <g transform="translate(527,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">U</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ü</text>
+      </g>
+
+      <g transform="translate(594,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">I</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ᵢ</text>
+      </g>
+
+      <g transform="translate(661,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">O</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ö</text>
+      </g>
+
+      <g transform="translate(728,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">P</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">π</text>
+      </g>
+
+      <g transform="translate(795,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">[</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">←</text>
+      </g>
+
+      <g transform="translate(862,201)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">]</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">→</text>
+      </g>
+
+      <g transform="translate(929,201)">
+        <rect width="83" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">\</text>
+        <text x="41.5" y="38" class="output" fill="#1e1c18">↑</text>
+      </g>
+
+      <g transform="translate(28,264)">
+        <rect width="110" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Caps</text>
+        <text x="55.0" y="38" class="output" fill="#1e1c18">Caps</text>
+      </g>
+
+      <g transform="translate(145,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">A</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ä</text>
+      </g>
+
+      <g transform="translate(212,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">S</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ß</text>
+      </g>
+
+      <g transform="translate(279,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">D</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">∂</text>
+      </g>
+
+      <g transform="translate(346,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">F</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ƒ</text>
+      </g>
+
+      <g transform="translate(413,264)">
+        <rect width="60" height="56" rx="7" fill="#e9f3ff" stroke="#5d9dc8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#5e7f99">G</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Greek</text>
+      </g>
+
+      <g transform="translate(480,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">H</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">◆</text>
+      </g>
+
+      <g transform="translate(547,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">J</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ⱼ</text>
+      </g>
+
+      <g transform="translate(614,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">K</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">★</text>
+      </g>
+
+      <g transform="translate(681,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">L</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">⤷</text>
+      </g>
+
+      <g transform="translate(748,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">;</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">…</text>
+      </g>
+
+      <g transform="translate(815,264)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">&#x27;</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">′</text>
+      </g>
+
+      <g transform="translate(882,264)">
+        <rect width="137" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Return</text>
+        <text x="68.5" y="38" class="output" fill="#1e1c18">Return</text>
+      </g>
+
+      <g transform="translate(28,327)">
+        <rect width="143" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Shift</text>
+        <text x="71.5" y="38" class="output" fill="#1e1c18">Shift</text>
+      </g>
+
+      <g transform="translate(178,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Z</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ℤ</text>
+      </g>
+
+      <g transform="translate(245,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">X</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">×</text>
+      </g>
+
+      <g transform="translate(312,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">C</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ç</text>
+      </g>
+
+      <g transform="translate(379,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">V</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">√</text>
+      </g>
+
+      <g transform="translate(446,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">B</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">☐</text>
+      </g>
+
+      <g transform="translate(513,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">N</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">ℕ</text>
+      </g>
+
+      <g transform="translate(580,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">M</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">♂</text>
+      </g>
+
+      <g transform="translate(647,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">,</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">≤</text>
+      </g>
+
+      <g transform="translate(714,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">.</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">≥</text>
+      </g>
+
+      <g transform="translate(781,327)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">/</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">÷</text>
+      </g>
+
+      <g transform="translate(848,327)">
+        <rect width="170" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Shift</text>
+        <text x="85.0" y="38" class="output" fill="#1e1c18">Shift</text>
+      </g>
+
+      <g transform="translate(28,390)">
+        <rect width="80" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Control</text>
+        <text x="40.0" y="38" class="output" fill="#1e1c18">Control</text>
+      </g>
+
+      <g transform="translate(115,390)">
+        <rect width="76" height="56" rx="7" fill="#25231f" stroke="#25231f" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#fffdf7">Option</text>
+        <text x="38.0" y="38" class="output" fill="#fffdf7">Option</text>
+      </g>
+
+      <g transform="translate(198,390)">
+        <rect width="90" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Command</text>
+        <text x="45.0" y="38" class="output" fill="#1e1c18">Command</text>
+      </g>
+
+      <g transform="translate(295,390)">
+        <rect width="401" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Space</text>
+        <text x="200.5" y="38" class="output" fill="#1e1c18">NBSP</text>
+      </g>
+
+      <g transform="translate(703,390)">
+        <rect width="90" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Command</text>
+        <text x="45.0" y="38" class="output" fill="#1e1c18">Command</text>
+      </g>
+
+      <g transform="translate(800,390)">
+        <rect width="76" height="56" rx="7" fill="#25231f" stroke="#25231f" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#fffdf7">Option</text>
+        <text x="38.0" y="38" class="output" fill="#fffdf7">Option</text>
+      </g>
+
+      <g transform="translate(883,390)">
+        <rect width="60" height="56" rx="7" fill="#fffdf7" stroke="#c9c4b8" stroke-width="1.4"/>
+        <text x="9" y="16" class="physical" fill="#7c7568">Fn</text>
+        <text x="30.0" y="38" class="output" fill="#1e1c18">Fn</text>
+      </g>
+</svg>

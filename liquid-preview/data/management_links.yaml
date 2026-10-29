@@ -1,0 +1,75 @@
+- id: content
+  title: Content management
+  titleZh: 内容管理
+  url: /admin/
+  icon: database
+  external: false
+- id: comments
+  title: Comment management
+  titleZh: 评论管理
+  url: https://example.com/comment-moderation
+  icon: messages
+  external: true
+- id: backlink-applications
+  title: Backlink applications
+  titleZh: 友链申请
+  url: https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__bK_KBBUQ0sxMlZYNVA0OTZIQTMySkxLVjdXTVJNNS4u
+  icon: link
+  external: true
+- id: github
+  title: Source repository
+  titleZh: 源码仓库
+  url: https://github.com/Jingyuan-Zheng/Liquid-Stack
+  icon: brand-github
+  external: true
+  groupStart: true
+- id: cloudflare-pages
+  title: Cloudflare Pages
+  titleZh: Cloudflare Pages
+  url: https://dash.cloudflare.com/
+  icon: brand-cloudflare
+  external: true
+- id: source-editing
+  title: Source repository
+  titleZh: 源码仓库
+  url: https://github.com/Jingyuan-Zheng/Liquid-Stack
+  icon: code
+  external: true
+- id: search-console
+  title: Search Console
+  titleZh: 搜索控制台
+  url: https://search.google.com/search-console
+  icon: brand-google-search-console
+  external: true
+  groupStart: true
+- id: bing-webmasters
+  title: Bing Webmasters
+  titleZh: Bing 网站管理员
+  url: https://www.bing.com/webmasters/
+  icon: brand-bing
+  external: true
+- id: analytics
+  title: Analytics dashboard
+  titleZh: 数据分析面板
+  url: https://analytics.google.com/
+  icon: brand-google-analytics
+  external: true
+  groupStart: true
+- id: cloudflare
+  title: Cloudflare dashboard
+  titleZh: Cloudflare 控制台
+  url: https://dash.cloudflare.com/
+  icon: brand-cloudflare
+  external: true
+- id: deployment
+  title: Deployment dashboard
+  titleZh: 部署控制台
+  url: https://vercel.com/dashboard
+  icon: brand-vercel
+  external: true
+- id: database
+  title: Database console
+  titleZh: 数据库控制台
+  url: https://console.neon.tech/
+  icon: brand-neon
+  external: true

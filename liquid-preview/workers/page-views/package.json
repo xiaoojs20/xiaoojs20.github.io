@@ -1,0 +1,19 @@
+{
+  "name": "liquid-stack-page-views",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/path.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "migrate:local": "wrangler d1 migrations apply liquid-stack-page-views --local",
+    "migrate:remote": "wrangler d1 migrations apply liquid-stack-page-views --remote"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260726.1",
+    "typescript": "5.9.3",
+    "wrangler": "^4.30.0"
+  }
+}

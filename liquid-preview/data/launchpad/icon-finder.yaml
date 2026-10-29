@@ -1,0 +1,17 @@
+---
+order: 0
+id: icon-finder
+name: Icon Finder
+nameZh: Icon Finder
+label: Icon Finder
+labelZh: Icon Finder
+icon: "/img/launchpad/icon-icon-finder.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-icon-finder-en.png"
+screenshotAlt: Icon Finder browsing macOS system icon directories
+screenshotAltZh: Icon Finder 浏览 macOS 系统图标目录
+closeX: 7.4
+closeY: 7.0
+article: "https://jingyuan-zheng.github.io/p/macos-default-icons-locations-icon-finder/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/macos-default-icons-locations-icon-finder/"
+repository: https://github.com/Jingyuan-Zheng/macos-icon-finder

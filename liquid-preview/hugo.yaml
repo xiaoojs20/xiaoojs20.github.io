@@ -1,0 +1,106 @@
+baseURL: "https://xiaoojs20.github.io/"
+canonifyURLs: true
+title: xiaoojs20
+theme: hugo-theme-stack
+copyright: "xiaoojs20"
+defaultContentLanguage: zh
+hasCJKLanguage: true
+mediaTypes:
+  application/yaml:
+    suffixes: [yml]
+outputFormats:
+  CMSConfig:
+    mediaType: application/yaml
+    baseName: config
+    isPlainText: true
+    notAlternative: true
+  sitemapflat:
+    mediaType: application/xml
+    baseName: sitemap-flat
+    isPlainText: true
+    notAlternative: true
+languages:
+  zh:
+    label: 简体中文
+    locale: zh-Hans
+    weight: 2
+    copyright: "xiaoojs20"
+    params:
+      sidebar:
+        subtitle: 记录生活，收藏日常里的点滴。
+pagination: { pagerSize: 10 }
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+params:
+  version: "1.2.0"
+  mainSections: [post]
+  favicon: /img/liquid-stack/logo-transparent.png
+  dateFormat:
+    published: 02/Jan/2006
+    lastUpdated: 02/Jan/2006 15:04 MST
+  sidebar:
+    emoji: "😄"
+    subtitle: 记录生活，收藏日常里的点滴。
+    avatar: /img/avatar-personal.jpg
+  footer:
+    since: 2026
+    customText: Built with Liquid Stack.
+    demoSiteViews: 2673
+    demoRuntimeDays: 365
+  article:
+    math: true
+    toc: true
+    readingTime: true
+    license: { enabled: true, default: Licensed under CC BY-SA 4.0 }
+  comments:
+    enabled: false
+    provider: waline
+    waline:
+      serverURL: https://example.com/waline
+      demoMode: false
+      secureUploads:
+        enabled: false
+        turnstileSiteKey: ""
+        uploadEndpoint: ""
+        uploadSessionEndpoint: ""
+        commentEndpoint: ""
+        commentContextEndpoint: ""
+      reaction:
+        - "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        - "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        - "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        - "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        - "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+  widgets:
+    homepage:
+      - { type: search }
+      - { type: world-clock }
+      - type: archives
+        params: { limit: 5 }
+      - type: categories
+        params: { limit: 10 }
+      - type: tag-cloud
+        params: { limit: 10 }
+    page: [{ type: toc }]
+  defaultImage:
+    opengraph: { enabled: true, local: true, src: /img/liquid-stack/featured.png }
+  colorScheme: { toggle: true, default: auto }
+  imageProcessing:
+    thumbnail: { enabled: true }
+    content: { enabled: true }
+menu:
+  social:
+    - { identifier: github, name: GitHub, url: https://github.com/xiaoojs20, weight: 1, params: { icon: brand-github, newTab: true } }
+    - { identifier: rss, name: RSS, url: /index.xml, weight: 2, params: { icon: rss, newTab: true } }
+related:
+  includeNewer: true
+  threshold: 60
+  indices: [{ name: tags, weight: 100 }, { name: categories, weight: 200 }]
+markup:
+  goldmark:
+    renderer: { unsafe: true }
+  tableOfContents: { endLevel: 4, ordered: true, startLevel: 2 }
+  highlight: { noClasses: false, lineNos: true }
+outputs:
+  home: [HTML, RSS, sitemapflat]

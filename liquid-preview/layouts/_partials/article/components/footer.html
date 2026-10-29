@@ -1,0 +1,32 @@
+<footer class="article-meta article-footer">
+    {{ partial "article/components/tags" . }}
+
+    {{- with .Params.writingMode -}}
+        {{- $isZh := eq $.Lang "zh" -}}
+        {{- if eq . "human" -}}
+        <section class="article-writing-mode article-writing-mode--human inline-meta">
+            {{ partial "helper/icon" "pencil" }}
+            <span>{{ if $isZh }}本文由作者独立撰写{{ else }}Written by the author{{ end }}</span>
+        </section>
+        {{- else if eq . "aigc-assisted" -}}
+        <section class="article-writing-mode article-writing-mode--aigc inline-meta">
+            {{ partial "helper/icon" "wand-sparkles" }}
+            <span>{{ if $isZh }}本文使用 AIGC 技术辅助写作{{ else }}AI-assisted writing{{ end }}</span>
+        </section>
+        {{- end -}}
+    {{- end -}}
+
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
+    <section class="article-copyright inline-meta">
+        {{ partial "helper/icon" "copyright" }}
+        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+    </section>
+    {{ end }}
+
+    {{- if ne .Lastmod .Date -}}
+    <section class="article-lastmod inline-meta">
+        {{ partial "helper/icon" "clock" }}
+        <span>{{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format .Site.Params.dateFormat.lastUpdated }}</span>
+    </section>
+    {{- end -}}
+</footer>

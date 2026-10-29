@@ -1,0 +1,17 @@
+---
+order: 8
+id: no-new-tab
+name: No New Tab
+nameZh: No New Tab
+label: No New Tab
+labelZh: No New Tab
+icon: "/img/launchpad/icon-no-new-tab.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-bilibili-safari.webp"
+screenshotAlt: No New Tab running on Bilibili in Safari
+screenshotAltZh: No New Tab 在 Safari 哔哩哔哩页面中运行
+closeX: 5.0
+closeY: 6.2
+article: "https://jingyuan-zheng.github.io/zh/p/no-new-tab-browser-efficiency-tool/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/no-new-tab-browser-efficiency-tool/"
+repository: https://github.com/Jingyuan-Zheng/No-New-Tab

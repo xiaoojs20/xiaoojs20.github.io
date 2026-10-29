@@ -1,0 +1,17 @@
+---
+order: 2
+id: mac-lite-translator
+name: Mac Lite Translator for TranslateGemma
+nameZh: Mac Lite Translator
+label: Mac Lite Translator
+labelZh: Mac Lite Translator
+icon: "/img/launchpad/icon-mac-lite-translator.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-mac-lite-translator.webp"
+screenshotAlt: Mac Lite Translator AppKit interface
+screenshotAltZh: Mac Lite Translator 的 AppKit 界面
+closeX: 7.7
+closeY: 6.5
+article: "https://jingyuan-zheng.github.io/p/mac-lite-translator-apple-silicon-mlx/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/mac-lite-translator-local-ai-translation/"
+repository: https://github.com/Jingyuan-Zheng/Mac-Lite-Translator_TranslateGemma

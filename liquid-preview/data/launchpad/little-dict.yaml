@@ -1,0 +1,17 @@
+---
+order: 5
+id: little-dict
+name: The Little Dict for macOS
+nameZh: The Little Dict
+label: The Little Dict
+labelZh: The Little Dict
+icon: "/img/launchpad/icon-dictionary.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-little-dict.webp"
+screenshotAlt: The Little Dict open in the macOS Dictionary app
+screenshotAltZh: 在 macOS 词典中打开的 The Little Dict
+closeX: 8.0
+closeY: 8.2
+article: "https://jingyuan-zheng.github.io/zh/p/the-little-dict-macos/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/the-little-dict-macos/"
+repository: https://github.com/Jingyuan-Zheng/The-Little-Dict-macOS

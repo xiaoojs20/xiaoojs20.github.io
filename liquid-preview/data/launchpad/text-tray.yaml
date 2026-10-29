@@ -1,0 +1,17 @@
+---
+order: 1
+id: text-tray
+name: Text Tray
+nameZh: Text Tray
+label: Text Tray
+labelZh: Text Tray
+icon: "/img/launchpad/icon-text-tray.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-text-tray.webp"
+screenshotAlt: Text Tray window with an editable temporary text workspace
+screenshotAltZh: Text Tray 的临时文本编辑窗口
+closeX: 7.0
+closeY: 7.2
+article: "https://jingyuan-zheng.github.io/p/text-tray-macos-temporary-text-workspace/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/text-tray-macos-temporary-text-workspace/"
+repository: https://github.com/Jingyuan-Zheng/TextTray

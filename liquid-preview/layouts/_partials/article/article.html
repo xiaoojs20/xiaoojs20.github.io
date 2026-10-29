@@ -1,0 +1,36 @@
+{{- $isChinese := hasPrefix .Language.Lang "zh" -}}
+{{- $printAuthor := default "Liquid Stack" .Params.author -}}
+<article class="{{ if .Params.image }}has-image {{ end }}main-article">
+    {{ partial "article/components/header" (dict "Page" . "IsList" false) }}
+
+    {{ partial "article/components/share" . }}
+
+    {{ if .Scratch.Get "TOCEnabled" }}
+    <aside class="article-toc">
+        <details>
+            <summary>
+                <div class="article-toc-title">
+                    {{ partial "helper/icon" "chevron-right" }}
+                    <span>{{ T "article.tableOfContents" }}</span>
+                </div>
+            </summary>
+            <nav class="toc-nav">
+                {{ partial "article/components/toc" . | safeHTML }}
+            </nav>
+        </details>
+    </aside>
+    {{ end }}
+
+    <section class="article-print-attribution" aria-label="{{ cond $isChinese "打印来源信息" "Print attribution" }}">
+        <p><strong>{{ cond $isChinese "作者：" "Author:" }}</strong> {{ $printAuthor }}</p>
+        <p><strong>{{ cond $isChinese "文章来源：" "Source:" }}</strong> <a href="{{ .Permalink }}">{{ .Permalink }}</a></p>
+    </section>
+
+    {{ partial "article/components/content" . }}
+
+    {{ partial "article/components/footer" . }}
+
+    {{ if or .Params.math .Site.Params.article.math }}
+        {{ partialCached "article/components/math.html" . }}
+    {{ end }}
+</article>

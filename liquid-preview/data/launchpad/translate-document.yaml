@@ -1,0 +1,17 @@
+---
+order: 3
+id: translate-document
+name: Translate Document Quick Action
+nameZh: 文档翻译快捷操作
+label: Translate Document
+labelZh: 文档翻译
+icon: "/img/launchpad/icon-translate-document.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-translate-document.webp"
+screenshotAlt: Translate Document native macOS interface
+screenshotAltZh: 文档翻译快捷操作的 macOS 原生界面
+closeX: 7.0
+closeY: 7.5
+article: "https://jingyuan-zheng.github.io/p/translate-document-quick-action/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/translate-document-quick-action/"
+repository: https://github.com/Jingyuan-Zheng/translate-document-quick-action

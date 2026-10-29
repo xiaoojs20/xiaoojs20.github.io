@@ -1,0 +1,1 @@
+{% if self.url and '/zh/' in self.url %}你在「[站点名称]」上的评论收到了回复{% else %}Your comment on [Site Name] received a reply{% endif %}

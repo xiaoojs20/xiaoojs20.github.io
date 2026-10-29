@@ -1,0 +1,99 @@
+{{ define "body-class" }}article-page product-catalog-page{{ end }}
+
+{{ define "main" }}
+    {{ $isChinese := hasPrefix .Language.Lang "zh" }}
+    {{ $records := slice }}{{ with index hugo.Data "product-catalog" }}{{ range . }}{{ $records = $records | append . }}{{ end }}{{ end }}
+    {{ $categories := slice }}{{ range $records }}{{ if not (in $categories .category) }}{{ $categories = $categories | append .category }}{{ end }}{{ end }}
+
+    <article class="main-article product-catalog-article" data-product-catalog>
+        <header class="product-catalog-header">
+            <p class="product-catalog-kicker">{{ cond $isChinese "可选组件" "Optional component" }}</p>
+            <h1>{{ .Title }}</h1>
+            <p>{{ cond $isChinese "这里使用少量虚拟数据演示产品介绍、搜索、排序与筛选。你可以替换数据，或直接删除整个页面。" "A few fictional records demonstrate product descriptions, search, sorting and filters. Replace the data or remove the page entirely." }}</p>
+            <p>{{ cond $isChinese "记录位于 data/product-catalog.yaml；追加一条即可展示。" "Records live in data/product-catalog.yaml; append one item to display it." }}</p>
+        </header>
+
+        <div class="product-catalog-toolbar">
+            <form class="search-form product-catalog-search" data-product-search-form>
+                <p><input type="search" data-product-search aria-label="{{ cond $isChinese "搜索产品" "Search products" }}" placeholder="{{ cond $isChinese "搜索名称或介绍" "Search names or descriptions" }}"></p>
+                <button type="submit" title="{{ cond $isChinese "搜索" "Search" }}">{{ partial "helper/icon" "search" }}</button>
+            </form>
+            <button class="product-catalog-filter-trigger" type="button" data-product-filter-trigger aria-expanded="false" aria-label="{{ cond $isChinese "筛选" "Filter" }}" title="{{ cond $isChinese "筛选" "Filter" }}">
+                {{ partial "helper/icon" "filter" }}
+            </button>
+        </div>
+
+        <section class="product-catalog-filter-panel" data-product-filter-panel hidden aria-label="{{ cond $isChinese "筛选产品" "Filter products" }}">
+            <div class="product-catalog-filter-panel__header">
+                <strong>{{ cond $isChinese "筛选" "Filter" }}</strong>
+                <button type="button" data-product-filter-reset>{{ cond $isChinese "重置" "Reset" }}</button>
+            </div>
+            <div class="product-catalog-filter-groups">
+                <fieldset>
+                    <legend>{{ cond $isChinese "分类" "Category" }}</legend>
+                    <label><input type="radio" name="product-category" value="all" checked>{{ cond $isChinese "全部" "All" }}</label>
+                    {{ range $category := $categories }}
+                        {{ $label := $category }}{{ range first 1 (where $records "category" $category) }}{{ if $isChinese }}{{ $label = default .category .categoryZh }}{{ end }}{{ end }}
+                        <label><input type="radio" name="product-category" value="{{ $category }}">{{ $label }}</label>
+                    {{ end }}
+                </fieldset>
+                <fieldset>
+                    <legend>{{ cond $isChinese "开源" "Open source" }}</legend>
+                    <label><input type="radio" name="product-open-source" value="all" checked>{{ cond $isChinese "全部" "All" }}</label>
+                    <label><input type="radio" name="product-open-source" value="yes">{{ cond $isChinese "完整开源" "Fully open" }}</label>
+                    <label><input type="radio" name="product-open-source" value="partial">{{ cond $isChinese "部分开源" "Partly open" }}</label>
+                    <label><input type="radio" name="product-open-source" value="no">{{ cond $isChinese "闭源" "Closed" }}</label>
+                </fieldset>
+                <fieldset>
+                    <legend>{{ cond $isChinese "价格" "Price" }}</legend>
+                    <label><input type="radio" name="product-pricing" value="all" checked>{{ cond $isChinese "全部" "All" }}</label>
+                    <label><input type="radio" name="product-pricing" value="free">{{ cond $isChinese "免费" "Free" }}</label>
+                    <label><input type="radio" name="product-pricing" value="freemium">{{ cond $isChinese "免费增值" "Freemium" }}</label>
+                    <label><input type="radio" name="product-pricing" value="paid">{{ cond $isChinese "付费" "Paid" }}</label>
+                </fieldset>
+                <fieldset>
+                    <legend>{{ cond $isChinese "来源" "Source" }}</legend>
+                    <label><input type="radio" name="product-source" value="all" checked>{{ cond $isChinese "全部" "All" }}</label>
+                    <label><input type="radio" name="product-source" value="website">{{ cond $isChinese "官网" "Website" }}</label>
+                    <label><input type="radio" name="product-source" value="app-store">App Store</label>
+                    <label><input type="radio" name="product-source" value="github">GitHub</label>
+                </fieldset>
+            </div>
+        </section>
+
+        <div class="product-catalog-groups">
+            {{ range $category := $categories }}
+                {{ $rows := where $records "category" $category }}
+                {{ $categoryLabel := $category }}{{ range first 1 $rows }}{{ if $isChinese }}{{ $categoryLabel = default .category .categoryZh }}{{ end }}{{ end }}
+                <details class="product-catalog-group" open data-product-group>
+                    <summary><span>{{ partial "helper/icon" (cond (eq $category "Creative tools") "palette" "list-checks") }}{{ $categoryLabel }}</span><small data-product-count>{{ len $rows }} {{ cond $isChinese "项" "items" }}</small></summary>
+                    <div class="product-catalog-table-wrap">
+                        <table class="product-catalog-table" data-product-table>
+                            <thead><tr>
+                                <th scope="col" data-product-sort="name">{{ cond $isChinese "产品" "Product" }} {{ partial "helper/icon" "chevron-down" }}</th>
+                                <th scope="col" data-product-sort="openSource">{{ cond $isChinese "开源" "Open" }} {{ partial "helper/icon" "chevron-down" }}</th>
+                                <th scope="col" data-product-sort="pricing">{{ cond $isChinese "价格" "Price" }} {{ partial "helper/icon" "chevron-down" }}</th>
+                            </tr></thead>
+                            <tbody>
+                                {{ range $rows }}
+                                    {{ $name := cond $isChinese (default .name .nameZh) .name }}
+                                    {{ $description := cond $isChinese (default .description .descriptionZh) .description }}
+                                    {{ $sourceLabel := cond $isChinese (default .sourceLabel .sourceLabelZh) .sourceLabel }}
+                                    <tr data-product-row data-search="{{ lower (printf "%s %s %s %s" .name .nameZh .description .descriptionZh) }}" data-category="{{ .category }}" data-open-source="{{ .openSource }}" data-pricing="{{ .pricing }}" data-source="{{ .source }}">
+                                        <td data-sort-value="{{ lower $name }}"><div class="product-catalog-product"><span class="product-catalog-product__icon" aria-hidden="true">{{ partial "helper/icon" .icon }}</span><div><strong>{{ $name }}</strong><small>{{ $sourceLabel }}</small><p>{{ $description }}</p></div></div></td>
+                                        <td data-sort-value="{{ .openSource }}"><span>{{ if eq .openSource "yes" }}🟢{{ else if eq .openSource "partial" }}🟡{{ else }}🔴{{ end }}</span></td>
+                                        <td data-sort-value="{{ .pricing }}"><span>{{ if eq .pricing "free" }}🟢{{ else if eq .pricing "freemium" }}🟡{{ else }}🔴{{ end }}</span></td>
+                                    </tr>
+                                {{ end }}
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+            {{ end }}
+        </div>
+        <p class="product-catalog-empty" data-product-empty hidden>{{ cond $isChinese "没有匹配的产品。" "No matching products." }}</p>
+    </article>
+    {{ partial "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}{{ end }}

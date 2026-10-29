@@ -1,0 +1,25 @@
+{{ define "body-class" }}home-profile-layout{{ end }}
+{{ define "main" }}
+    {{ $isChinese := hasPrefix .Language.Lang "zh" }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $visible := where $pages "Params.hidden" "ne" true }}
+    {{ $pag := .Paginate $visible }}
+    {{ $apps := slice }}{{ with hugo.Data.launchpad }}{{ range . }}{{ $apps = $apps | append . }}{{ end }}{{ end }}{{ $apps = sort $apps "order" }}
+    {{ $pictures := slice }}{{ with index hugo.Data "photo-wall" }}{{ range . }}{{ $pictures = $pictures | append . }}{{ end }}{{ end }}{{ $pictures = sort $pictures "order" }}
+    {{ $products := slice }}{{ with index hugo.Data "product-catalog" }}{{ range . }}{{ $products = $products | append . }}{{ end }}{{ end }}
+    <section class="home-profile" aria-labelledby="home-profile-title">
+        {{ with .Site.Params.sidebar.avatar }}{{ $avatar := partial "helper/image" (dict "Image" . "Resources" resources "Context" $) }}{{ with $avatar }}
+        <figure class="home-profile__avatar"><img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="xiaoojs20 的头像"></figure>
+        {{ end }}{{ end }}
+        <div class="home-profile__copy"><p class="home-profile__greeting">{{ cond $isChinese "欢迎来到" "Welcome to" }}</p><h1 id="home-profile-title">{{ .Site.Title }}</h1><p class="home-profile__subtitle">{{ .Site.Params.sidebar.subtitle }}</p></div>
+        {{ with .Site.Menus.social }}<ol class="home-profile__social" aria-label="Social links">{{ range . }}<li><a href="{{ .URL }}" target="_blank" rel="noopener" title="{{ .Name }}">{{ partial "helper/icon" .Params.icon }}</a></li>{{ end }}</ol>{{ end }}
+    </section>
+    <section class="home-feature-grid" aria-label="主页快捷入口">
+        <a href="{{ "about/" | relLangURL }}" class="home-feature-card home-feature-card--resume"><div class="home-feature-card__copy"><p>认识我</p><h2>关于我</h2></div><div class="home-resume-teaser__mark" aria-hidden="true">{{ partial "helper/icon" "user" }}</div></a>
+        <a href="{{ "life/" | relLangURL }}" class="home-feature-card home-feature-card--dashboard"><div class="home-feature-card__copy"><p>记录日常</p><h2>生活记录</h2></div><div class="home-dashboard-teaser__mark" aria-hidden="true">{{ partial "helper/icon" "home" }}</div></a>
+        <a href="{{ "pictures/" | relLangURL }}" class="home-feature-card home-feature-card--gallery"><div class="home-feature-card__copy"><p>照片墙 · 示例照片</p><h2>收藏生活的画面</h2></div><div class="home-gallery-teaser__stack" aria-hidden="true">{{ range $i, $picture := first 4 $pictures }}<img src="{{ relURL $picture.image }}" alt="" loading="lazy" style="--gallery-teaser-left: {{ mul $i 36 }}px; --gallery-teaser-mobile-left: {{ mul $i 50 }}px; --gallery-teaser-rotate: {{ sub (mul $i 7) 10 }}deg; --gallery-teaser-hover-rotate: {{ sub (mul $i 4) 6 }}deg;">{{ end }}</div></a>
+        <a href="{{ "notes/" | relLangURL }}" class="home-feature-card home-feature-card--dashboard"><div class="home-feature-card__copy"><p>文字与想法</p><h2>随笔</h2></div><div class="home-dashboard-teaser__mark" aria-hidden="true">{{ partial "helper/icon" "archives" }}</div></a>
+    </section>
+    <section class="article-list">{{ range $pag.Pages }}{{ partial "article-list/default" . }}{{ end }}</section>{{ partial "pagination.html" . }}{{ partial "footer/footer" . }}
+{{ end }}
+{{ define "right-sidebar" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}{{ end }}

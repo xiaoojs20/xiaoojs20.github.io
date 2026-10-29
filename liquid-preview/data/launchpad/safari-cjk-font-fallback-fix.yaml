@@ -1,0 +1,18 @@
+---
+order: 9
+id: safari-cjk-font-fallback-fix
+name: Safari CJK Font Fallback Fix
+nameZh: Safari 中文字体修复
+label: Safari CJK Fix
+labelZh: Safari 字体修复
+icon: "/img/launchpad/icon-safari-cjk-font-fallback-fix.png"
+iconMode: app
+screenshot: "/img/launchpad/screen-safari-cjk-font-fallback-fix.webp"
+screenshotAlt: Safari Advanced settings with the custom CJK font fallback style sheet
+  selected
+screenshotAltZh: Safari 高级设置中已选择 CJK 字体修复样式表
+closeX: 6.1
+closeY: 6.4
+article: "https://jingyuan-zheng.github.io/p/safari-chinese-font-songti-fallback-fix/"
+articleZh: "https://jingyuan-zheng.github.io/zh/p/safari-chinese-font-songti-fallback-fix/"
+repository: https://github.com/Jingyuan-Zheng/Safari-CJK-Font-Fallback-Fix

@@ -1,0 +1,10 @@
+{{- /* Cross-browser install icons and basic standalone Web App metadata. */ -}}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+<meta name="msapplication-TileImage" content="{{ "favicon.png" | relURL }}">
+
+{{- /* Add analytics, verification tags, or other site-specific head markup below. */ -}}

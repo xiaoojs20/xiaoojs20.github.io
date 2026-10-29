@@ -1,0 +1,11 @@
+order: 1
+id: example-site
+title: Example Site
+titleZh: 示例网站
+titleEn: Example Site
+description: A generic friend-link entry demonstrating the card layout.
+descriptionZh: 用于展示友链卡片排版的通用示例条目。
+descriptionEn: A generic friend-link entry demonstrating the card layout.
+website: https://example.com/
+image: /img/liquid-stack/logo.png
+rss: https://example.com/index.xml
