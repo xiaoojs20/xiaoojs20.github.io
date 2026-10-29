@@ -334,6 +334,80 @@ visits:
     latitude: 43.10000
     longitude: 129.20000
     photos: []
+  - id: lanzhou
+    geoGroup: china
+    name: "Lanzhou"
+    nameZh: "兰州"
+    region: "Gansu"
+    regionZh: "甘肃"
+    latitude: 36.28586
+    longitude: 103.63233
+    photos: []
+  - id: urumqi
+    geoGroup: china
+    name: "Ürümqi"
+    nameZh: "乌鲁木齐"
+    region: "Xinjiang"
+    regionZh: "新疆"
+    latitude: 43.82441
+    longitude: 87.61390
+    photos: []
+  - id: haikou
+    geoGroup: china
+    name: "Haikou"
+    nameZh: "海口"
+    region: "Hainan"
+    regionZh: "海南"
+    latitude: 20.04623
+    longitude: 110.19565
+    photos: []
+  - id: hohhot
+    geoGroup: china
+    name: "Hohhot"
+    nameZh: "呼和浩特"
+    region: "Inner Mongolia"
+    regionZh: "内蒙古"
+    latitude: 40.81845
+    longitude: 111.66019
+    photos: []
+  - id: ulanqab
+    geoGroup: china
+    name: "Ulanqab"
+    nameZh: "乌兰察布"
+    region: "Inner Mongolia"
+    regionZh: "内蒙古"
+    latitude: 40.99027
+    longitude: 113.13156
+    photos: []
+  - id: chengdu
+    geoGroup: china
+    name: "Chengdu"
+    nameZh: "成都"
+    region: "Sichuan"
+    regionZh: "四川"
+    latitude: 30.65987
+    longitude: 104.06332
+    photos: []
+  - id: dalian
+    geoGroup: china
+    name: "Dalian"
+    nameZh: "大连"
+    region: "Liaoning"
+    regionZh: "辽宁"
+    latitude: 39.74028
+    longitude: 122.25583
+    photos: []
+  - id: changbai-mountain
+    geoGroup: china
+    name: "Changbai Mountain"
+    nameZh: "长白山"
+    region: "Jilin"
+    regionZh: "吉林"
+    latitude: 42.00726
+    longitude: 128.05640
+    description: "The pin shows an approximate location for the Changbai Mountain area."
+    descriptionZh: "图钉为长白山区域的示意位置。"
+    photos: []
 demo:
   id: sample
   name: Sample destination
