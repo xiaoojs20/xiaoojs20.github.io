@@ -26,7 +26,7 @@ This is where I share what I learn, the projects I work on, and moments from dai
 
 I made this website in part to help visitors get to know me and find things we might enjoy talking about. It is also a space for myself: as my understanding evolves, I hope that writing things down and looking back will help me make sense of my ideas, understand myself better, and see how I change over time. 🌱
 
-## Experience {#experience}
+## Personal experience {#experience}
 
 {{< experience >}}
 
@@ -56,6 +56,8 @@ In spare moments, I enjoy technology and investing podcasts and books, interesti
 ### Travel and photography
 
 On longer breaks, I like traveling to experience new places, photographing landscapes, and going cycling with friends. I hope to learn more about the world on my travels, rather than simply come home with photos, and I’m curious about the history, culture, and everyday life of the places I visit. 🌍 Portrait photography is not quite my strong suit yet, but I’m happy to keep learning. 📷
+
+Among the places I’ve visited, Tokyo and Ili stand out as favorites: one for its cityscape, the other for its natural scenery. I also made a [travel map]({{< relref "page/travel" >}}) to gradually collect the places I’ve been and the stories along the way.
 
 ## Life and what’s ahead {#life-and-whats-ahead}
 
