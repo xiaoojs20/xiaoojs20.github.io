@@ -12,4 +12,6 @@ menu:
     params: { icon: home }
 ---
 
-A little space to fill in over time.
+Little things I’m working on, one day at a time.
+
+{{< fitness-calendar >}}

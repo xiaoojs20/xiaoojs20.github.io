@@ -1,0 +1,15 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+<link rel="stylesheet" href="{{ "css/fitness-calendar.css" | relURL }}?v={{ readFile "static/css/fitness-calendar.css" | crypto.SHA256 }}">
+<section class="fitness-calendar" data-fitness-calendar data-language="{{ cond $zh "zh" "en" }}" aria-labelledby="fitness-calendar-title">
+  <div class="fitness-calendar__heading">
+    <div><span class="fitness-calendar__eyebrow">{{ cond $zh "FITNESS JOURNAL" "FITNESS JOURNAL" }}</span><h2 id="fitness-calendar-title">{{ cond $zh "薄肌打卡" "Fitness journal" }}</h2><p>{{ cond $zh "一点一点，记录坚持的日子。" "A little record of showing up." }}</p></div>
+    <span class="fitness-calendar__total" data-fitness-total></span>
+  </div>
+  <div class="fitness-calendar__navigation"><button type="button" data-fitness-prev aria-label="{{ cond $zh "上个月" "Previous month" }}">‹</button><h3 data-fitness-month aria-live="polite"></h3><button type="button" data-fitness-next aria-label="{{ cond $zh "下个月" "Next month" }}">›</button></div>
+  <div class="fitness-calendar__week" aria-hidden="true">{{ range (cond $zh (slice "一" "二" "三" "四" "五" "六" "日") (slice "Mon" "Tue" "Wed" "Thu" "Fri" "Sat" "Sun")) }}<span>{{ . }}</span>{{ end }}</div>
+  <div class="fitness-calendar__grid" data-fitness-grid role="grid" aria-label="{{ cond $zh "打卡日期" "Workout check-in dates" }}"></div>
+  <div class="fitness-calendar__footer"><span><i aria-hidden="true"></i>{{ cond $zh "已打卡" "Checked in" }}</span><span data-fitness-updated></span></div>
+  <noscript>{{ cond $zh "请启用 JavaScript 查看打卡日历。" "Enable JavaScript to view the check-in calendar." }}</noscript>
+</section>
+<script type="application/json" id="fitness-calendar-data">{{ hugo.Data.fitness_checkins | jsonify | safeJS }}</script>
+<script src="{{ "js/fitness-calendar.js" | relURL }}?v={{ readFile "static/js/fitness-calendar.js" | crypto.SHA256 }}" defer></script>

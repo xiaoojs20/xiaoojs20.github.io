@@ -1,0 +1,21 @@
+.article-content .fitness-calendar { margin:2rem 0 0; padding:2.2rem; border:1px solid var(--card-separator-color); border-radius:2rem; background:var(--card-background-selected); }
+.article-content .fitness-calendar__heading { display:flex; justify-content:space-between; gap:1rem; align-items:flex-start; }
+.article-content .fitness-calendar__eyebrow { color:var(--accent-color); font-size:1rem; font-weight:750; letter-spacing:.12em; }
+.article-content .fitness-calendar__heading h2 { margin:.5rem 0 .3rem; padding:0; border:0; color:var(--card-text-color-main); font-size:2rem; }
+.article-content .fitness-calendar__heading p { margin:0; color:var(--card-text-color-secondary); font-size:1.25rem; line-height:1.6; }
+.fitness-calendar__total { flex:none; padding:.7rem 1rem; border-radius:99px; color:var(--accent-color); background:var(--card-background); font-size:1.15rem; font-weight:700; white-space:nowrap; }
+.fitness-calendar__navigation { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin:2rem 0 1rem; }
+.article-content .fitness-calendar__navigation h3 { margin:0; padding:0; border:0; color:var(--card-text-color-main); font-size:1.45rem; }
+.fitness-calendar__navigation button { display:grid; place-items:center; width:3.2rem; height:3.2rem; border:0; border-radius:1rem; color:var(--card-text-color-main); background:var(--card-background); font-size:2.2rem; cursor:pointer; }
+.fitness-calendar__navigation button:disabled { opacity:.35; cursor:default; }
+.fitness-calendar__navigation button:focus-visible { outline:2px solid var(--accent-color); outline-offset:2px; }
+.fitness-calendar__week,.fitness-calendar__row { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; }
+.fitness-calendar__week { color:var(--card-text-color-secondary); text-align:center; font-size:1.1rem; font-weight:600; }
+.fitness-calendar__grid { display:grid; gap:.5rem; margin-top:.7rem; }
+.fitness-calendar__day { display:grid; place-items:center; min-height:3.8rem; border-radius:1rem; color:var(--card-text-color-secondary); background:var(--card-background); font-size:1.25rem; font-weight:600; }
+.fitness-calendar__day.is-empty { background:transparent; }
+.fitness-calendar__day.is-complete { color:#fff; background:#568d78; box-shadow:0 3px 10px #568d782b; }
+.fitness-calendar__footer { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:.8rem; margin-top:1.5rem; color:var(--card-text-color-secondary); font-size:1.1rem; line-height:1.5; }
+.fitness-calendar__footer span:first-child { display:inline-flex; align-items:center; gap:.6rem; }
+.fitness-calendar__footer i { width:.9rem; height:.9rem; border-radius:50%; background:#568d78; }
+@media(max-width:480px) { .article-content .fitness-calendar { padding:1.5rem; } .fitness-calendar__week,.fitness-calendar__row { gap:.3rem; } .fitness-calendar__grid { gap:.3rem; } .fitness-calendar__day { min-height:3.4rem; } }

@@ -11,4 +11,6 @@ menu:
     params: { icon: home }
 ---
 
-这里暂时留白，之后再慢慢补充。
+记录生活里正在坚持的小事。
+
+{{< fitness-calendar >}}
