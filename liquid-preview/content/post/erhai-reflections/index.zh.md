@@ -1,5 +1,5 @@
 ---
-title: "洱海边晒太阳有感"
+title: "洱海边晒太阳有感：个人的明治维新，家庭的改革开放"
 slug: erhai-reflections
 date: "2026-10-29T22:16:48+08:00"
 note: true

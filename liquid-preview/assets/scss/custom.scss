@@ -4874,7 +4874,7 @@ button.article-share__button {
 .home-profile-layout .home-profile__social :is(a,button):focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
 .home-profile-layout .home-profile__social :is(a,button) svg { display: block; width: 24px; height: 24px; flex: none; }
 .home-profile-layout .home-profile__social .social-button svg[fill="currentColor"] { stroke: none; }
-.social-dialog { width: unquote("min(360px, 90vw)"); max-height: 88vh; overflow: auto; padding: 22px; border: 1px solid rgba(130,140,160,.2); border-radius: 24px; background: var(--card-background); color: var(--card-text-color-main); box-shadow: 0 20px 70px #0003; }
+.social-dialog { position: fixed; inset: 0; margin: auto; box-sizing: border-box; width: unquote("min(360px, 90vw)"); max-width: calc(100vw - 24px); max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px); overflow: auto; padding: 22px; border: 1px solid rgba(130,140,160,.2); border-radius: 24px; background: var(--card-background); color: var(--card-text-color-main); box-shadow: 0 20px 70px #0003; }
 .social-dialog::backdrop { background: #1c273880; backdrop-filter: blur(5px); }
 .social-dialog__head { display: flex; align-items: center; justify-content: space-between; }
 .social-dialog__head h2 { margin: 0; }
@@ -4993,3 +4993,10 @@ html[data-scheme="dark"] .coffee-booking__frame iframe { filter:invert(.9) hue-r
 .article-content .notes-list__title { font-size:1.75rem; font-weight:700; line-height:1.5; }
 .article-content .notes-list__meta { grid-column:1; color:var(--card-text-color-secondary); font-size:1.25rem; line-height:1.5; }
 .article-content .notes-list__arrow { grid-column:2; grid-row:1 / 3; align-self:center; color:var(--accent-color); font-size:1.7rem; }
+
+.site-note__updates { display: grid; }
+.site-note__update { display: grid; gap: 6px; padding: 13px 0; border-bottom: 1px solid var(--card-separator-color); text-decoration: none; }
+.site-note__date { color: var(--card-text-color-secondary); font-size: 1.15rem; }
+.site-note__title { color: var(--card-text-color-main); font-size: 1.4rem; line-height: 1.5; overflow-wrap: anywhere; }
+.site-note__update:hover .site-note__title, .site-note__update:focus-visible .site-note__title { color: var(--accent-color); }
+.site-note__foot { color: var(--accent-color); text-decoration: none; }

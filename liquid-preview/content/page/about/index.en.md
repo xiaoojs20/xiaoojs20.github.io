@@ -16,7 +16,9 @@ menu:
 
 My name is Jinsong Xiao (肖锦松), and I’m from Jinjiang, Quanzhou, Fujian, China. Welcome to my personal space.
 
-I study electrical engineering at Tsinghua University and minored in software engineering during my undergraduate studies. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.
+I study electrical engineering at Tsinghua University for both my undergraduate and master’s degrees, and minored in software engineering as an undergraduate. I currently have no plans to pursue a PhD. My work is focused on algorithms in the internet industry. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.
+
+I’m an ISTJ with an easygoing personality. I’d love to meet more people and exchange ideas. 🙂
 
 This is where I share what I learn, the projects I work on, and moments from daily life: sometimes a carefully written note, sometimes a photograph, and sometimes an idea that is still taking shape.
 
@@ -24,10 +26,18 @@ This is where I share what I learn, the projects I work on, and moments from dai
 
 {{< experience >}}
 
-## Things I’m interested in
+## Work and interests
 
-I’m interested in large language models (LLMs), AI applications, search, advertising and recommendation algorithms, and data analysis. I also enjoy investing, travel, photography and fitness. I like capturing everyday moments and places along the way, although photographing people is not quite my strong suit yet.
+I’m interested in large language models (LLMs), AI applications, search, advertising and recommendation algorithms, and data analysis. In spare moments, I enjoy technology and investing podcasts and books, interesting videos, and strength training. I started taking fitness seriously in October 2026, with the goal of building a lean physique, and have also tried making a tool to track my workouts.
 
-In 2025, I began thinking more about investing, financial freedom and exploring the world. In October 2026, I started taking fitness seriously, with the goal of building a lean, muscular physique. I’ve also tried building a tool to track my workouts. I hope this website can be a space that grows gradually over time.
+On longer breaks, I like traveling to experience new places, photographing landscapes, and going cycling with friends. I hope to learn more about the world on my travels, rather than simply come home with photos. Portrait photography is not quite my strong suit yet, but I’m happy to keep learning.
+
+## Life and what’s ahead
+
+I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcohol. I’m usually fairly busy, though I’ve had more free time in recent months and would be glad to chat.
+
+Since 2025, I’ve been thinking more about investing, financial freedom and exploring the world. Looking ahead, I hope to visit more countries, do well with investing in US stocks, and build a healthy, strong body. For now, I don’t plan to buy a home or a car before turning thirty; if I settle in China long term, I’d most likely choose Beijing or Shanghai.
+
+I hope this website can be a space that grows gradually over time, and a way to meet interesting people. 🙂
 
 {{< coffee-chat >}}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on xiaoojs20</title><link>https://xiaoojs20.github.io/page/</link><description>Recent content in Pages on xiaoojs20</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>xiaoojs20</copyright><atom:link href="https://xiaoojs20.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About Me</title><link>https://xiaoojs20.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xiaoojs20.github.io/about/</guid><description>&lt;h2 id="hi-im-xiaoojs20"&gt;Hi, I&amp;rsquo;m xiaoojs20
 &lt;/h2&gt;&lt;p&gt;My name is Jinsong Xiao (肖锦松), and I’m from Jinjiang, Quanzhou, Fujian, China. Welcome to my personal space.&lt;/p&gt;
-&lt;p&gt;I study electrical engineering at Tsinghua University and minored in software engineering during my undergraduate studies. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.&lt;/p&gt;
+&lt;p&gt;I study electrical engineering at Tsinghua University for both my undergraduate and master’s degrees, and minored in software engineering as an undergraduate. I currently have no plans to pursue a PhD. My work is focused on algorithms in the internet industry. I enjoy exploring across fields and turning ideas into things that are useful in everyday life.&lt;/p&gt;
+&lt;p&gt;I’m an ISTJ with an easygoing personality. I’d love to meet more people and exchange ideas. 🙂&lt;/p&gt;
 &lt;p&gt;This is where I share what I learn, the projects I work on, and moments from daily life: sometimes a carefully written note, sometimes a photograph, and sometimes an idea that is still taking shape.&lt;/p&gt;
 &lt;h2 id="experience"&gt;Experience
 &lt;/h2&gt;&lt;ol class="about-experience" aria-label="Experience"&gt;
@@ -29,9 +30,13 @@
  
 &lt;/ol&gt;
 
-&lt;h2 id="things-im-interested-in"&gt;Things I’m interested in
-&lt;/h2&gt;&lt;p&gt;I’m interested in large language models (LLMs), AI applications, search, advertising and recommendation algorithms, and data analysis. I also enjoy investing, travel, photography and fitness. I like capturing everyday moments and places along the way, although photographing people is not quite my strong suit yet.&lt;/p&gt;
-&lt;p&gt;In 2025, I began thinking more about investing, financial freedom and exploring the world. In October 2026, I started taking fitness seriously, with the goal of building a lean, muscular physique. I’ve also tried building a tool to track my workouts. I hope this website can be a space that grows gradually over time.&lt;/p&gt;
+&lt;h2 id="work-and-interests"&gt;Work and interests
+&lt;/h2&gt;&lt;p&gt;I’m interested in large language models (LLMs), AI applications, search, advertising and recommendation algorithms, and data analysis. In spare moments, I enjoy technology and investing podcasts and books, interesting videos, and strength training. I started taking fitness seriously in October 2026, with the goal of building a lean physique, and have also tried making a tool to track my workouts.&lt;/p&gt;
+&lt;p&gt;On longer breaks, I like traveling to experience new places, photographing landscapes, and going cycling with friends. I hope to learn more about the world on my travels, rather than simply come home with photos. Portrait photography is not quite my strong suit yet, but I’m happy to keep learning.&lt;/p&gt;
+&lt;h2 id="life-and-whats-ahead"&gt;Life and what’s ahead
+&lt;/h2&gt;&lt;p&gt;I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcohol. I’m usually fairly busy, though I’ve had more free time in recent months and would be glad to chat.&lt;/p&gt;
+&lt;p&gt;Since 2025, I’ve been thinking more about investing, financial freedom and exploring the world. Looking ahead, I hope to visit more countries, do well with investing in US stocks, and build a healthy, strong body. For now, I don’t plan to buy a home or a car before turning thirty; if I settle in China long term, I’d most likely choose Beijing or Shanghai.&lt;/p&gt;
+&lt;p&gt;I hope this website can be a space that grows gradually over time, and a way to meet interesting people. 🙂&lt;/p&gt;
 &lt;section id="coffee-chat" class="about-coffee" aria-labelledby="coffee-heading"&gt;
  &lt;div class="about-coffee__intro"&gt;
  &lt;p class="coffee-booking__eyebrow"&gt;COFFEE CHAT&lt;/p&gt;
@@ -45,7 +50,7 @@
  &lt;p class="coffee-booking__help"&gt;Booking is provided by Google Calendar. If it doesn’t load, use the link above.&lt;/p&gt;
 &lt;/section&gt;
 </description></item><item><title>Life</title><link>https://xiaoojs20.github.io/life/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xiaoojs20.github.io/life/</guid><description>&lt;p&gt;A little space to fill in over time.&lt;/p&gt;</description></item><item><title>Notes</title><link>https://xiaoojs20.github.io/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xiaoojs20.github.io/notes/</guid><description>&lt;div class="notes-list" aria-label="Notes"&gt;&lt;a class="notes-list__entry" href="https://xiaoojs20.github.io/zh/p/erhai-reflections/"&gt;
- &lt;span class="notes-list__title"&gt;洱海边晒太阳有感&lt;/span&gt;
+ &lt;span class="notes-list__title"&gt;洱海边晒太阳有感：个人的明治维新，家庭的改革开放&lt;/span&gt;
  &lt;span class="notes-list__meta"&gt;Written 2026.10 · Published &lt;time datetime="2026-10-29T22:16:48&amp;#43;08:00"&gt;2026-10-29 22:16&lt;/time&gt; · In Chinese&lt;/span&gt;
  &lt;span class="notes-list__arrow" aria-hidden="true"&gt;↗&lt;/span&gt;
  &lt;/a&gt;&lt;/div&gt;

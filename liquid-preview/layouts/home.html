@@ -23,4 +23,20 @@
     </section>
     {{ if gt (len $visible) 0 }}<section class="article-list">{{ range $pag.Pages }}{{ partial "article-list/default" . }}{{ end }}</section>{{ partial "pagination.html" . }}{{ end }}{{ partial "footer/footer" . }}
 {{ end }}
-{{ define "right-sidebar" }}<aside class="sidebar right-sidebar sticky"><section class="site-note"><span class="site-note__label">ABOUT THIS SPACE</span><h2>{{ cond (hasPrefix .Language.Lang "zh") "小站便笺" "A little note" }}</h2><p>{{ cond (hasPrefix .Language.Lang "zh") "把日常、照片和想法慢慢收集在这里。" "A place for everyday moments, photos, and thoughts." }}</p><span class="site-note__foot">{{ cond (hasPrefix .Language.Lang "zh") "记录生活 · 保持好奇" "Notice the little things · Stay curious" }}</span></section></aside>{{ end }}
+{{ define "right-sidebar" }}
+{{ $zh := hasPrefix .Language.Lang "zh" }}
+{{ $sourceSite := index (where hugo.Sites "Language.Lang" "zh") 0 }}
+{{ $posts := where $sourceSite.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{ $entries := slice }}
+{{ range $posts }}{{ if or .Params.note (ne .Params.hidden true) }}{{ $entries = $entries | append . }}{{ end }}{{ end }}
+<aside class="sidebar right-sidebar sticky"><section class="site-note" aria-labelledby="recent-updates-title">
+    <span class="site-note__label">{{ cond $zh "WHAT’S NEW" "WHAT’S NEW" }}</span>
+    <h2 id="recent-updates-title">{{ cond $zh "最近更新" "Recent updates" }}</h2>
+    <div class="site-note__updates">
+    {{ range first 3 ($entries.ByLastmod.Reverse) }}
+        {{ $entry := . }}{{ if not $zh }}{{ range .AllTranslations }}{{ if eq .Language.Lang "en" }}{{ $entry = . }}{{ end }}{{ end }}{{ end }}
+        <a class="site-note__update" href="{{ $entry.RelPermalink }}"><span class="site-note__date"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006-01-02" }}</time>{{ if .Params.note }} · {{ cond $zh "随笔" "Note" }}{{ end }}{{ if and (not $zh) (hasPrefix $entry.Language.Lang "zh") }} · In Chinese{{ end }}</span><span class="site-note__title">{{ $entry.Title }}</span></a>
+    {{ else }}<p>{{ cond $zh "暂时还没有更新。" "No updates yet." }}</p>{{ end }}
+    </div>
+    <a class="site-note__foot" href="{{ "notes/" | relLangURL }}">{{ cond $zh "查看随笔 →" "View notes →" }}</a>
+</section></aside>{{ end }}
