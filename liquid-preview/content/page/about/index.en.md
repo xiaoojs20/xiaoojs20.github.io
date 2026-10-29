@@ -22,6 +22,8 @@ I’m an ISTJ with an easygoing personality. I’d love to meet more people and 
 
 This is where I share what I learn, the projects I work on, and moments from daily life: sometimes a carefully written note, sometimes a photograph, and sometimes an idea that is still taking shape.
 
+I made this website in part to help visitors get to know me and find things we might enjoy talking about. It is also a space for myself: as my understanding evolves, I hope that writing things down and looking back will help me make sense of my ideas, understand myself better, and see how I change over time.
+
 ## Experience
 
 {{< experience >}}
