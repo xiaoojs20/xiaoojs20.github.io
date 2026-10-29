@@ -47,7 +47,7 @@ I’m learning to make room for more than work and goals: rest, exercise, travel
 
 ### Work and exploration
 
-I’m interested in large language models (LLMs), AI applications, search, ads and recommendation algorithms, and data analysis.
+I’m interested in large language models (LLMs), AI applications, search, ads and recommendation algorithms, and data analysis. I also make extensive use of AI agent tools and keep trying different ways of working; lately, my use has gradually converged on ChatGPT and Codex. 💻
 
 ### Everyday interests
 
