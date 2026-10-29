@@ -39,7 +39,7 @@
   const onSelect = visit => {showPlace(visit);if(window.matchMedia('(max-width: 850px)').matches)app.querySelector('.travel-panel').scrollIntoView({behavior:'smooth',block:'start'})};
   const fit = scope => {const item=maps[scope];const pts=visits.map(v=>[Number(v.latitude),Number(v.longitude)]);if(pts.length)item.map.fitBounds(L.latLngBounds(pts).pad(.25),{maxZoom:6});else item.map.setView([30,105],3)};
   ['combined'].forEach(scope=>{
-    const map=L.map(app.querySelector(`[data-map="${scope}"]`),{scrollWheelZoom:true,worldCopyJump:true,minZoom:2,maxZoom:8}).setView([30,105],3);
+    const map=L.map(app.querySelector(`[data-map="${scope}"]`),{scrollWheelZoom:true,zoomSnap:0.25,zoomDelta:0.5,wheelPxPerZoomLevel:240,worldCopyJump:true,minZoom:2,maxZoom:8}).setView([30,105],3);
     map.attributionControl.setPrefix('<a href="https://leafletjs.com/">Leaflet</a>');
     map.attributionControl.addAttribution('Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a> &amp; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>');
     const markers=L.layerGroup().addTo(map);maps[scope]={map,markers};
