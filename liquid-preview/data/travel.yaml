@@ -117,7 +117,71 @@ visits:
     regionZh: "山西"
     latitude: 40.09232
     longitude: 113.29527
-    photos: []
+    photos:
+      - src: /img/travel/datong/20260627-大同-山峰_DSC08735.jpg
+        date: "2026-06-27"
+        caption: "Mountain peak"
+        captionZh: "山峰"
+      - src: /img/travel/datong/20260627-大同-悬空寺远景_DSC08764.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple from afar"
+        captionZh: "悬空寺远景"
+      - src: /img/travel/datong/20260627-大同-悬空寺与山崖_DSC08778.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple and cliff"
+        captionZh: "悬空寺与山崖"
+      - src: /img/travel/datong/20260627-大同-悬空寺楼阁_DSC08788.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple buildings"
+        captionZh: "悬空寺楼阁"
+      - src: /img/travel/datong/20260627-大同-悬空寺近景_DSC08851.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple close-up"
+        captionZh: "悬空寺近景"
+      - src: /img/travel/datong/20260627-大同-悬空寺山崖_DSC08858.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple cliff"
+        captionZh: "悬空寺山崖"
+      - src: /img/travel/datong/20260627-大同-悬空寺全景_DSC08858-2.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple panorama"
+        captionZh: "悬空寺全景"
+      - src: /img/travel/datong/20260627-大同-悬空寺悬空楼阁_DSC08868.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple elevated buildings"
+        captionZh: "悬空寺悬空楼阁"
+      - src: /img/travel/datong/20260627-大同-悬空寺入口_DSC08912.jpg
+        date: "2026-06-27"
+        caption: "Hanging Temple entrance"
+        captionZh: "悬空寺入口"
+      - src: /img/travel/datong/20260627-大同-古建筑屋檐_DSC08917.jpg
+        date: "2026-06-27"
+        caption: "Traditional roof details"
+        captionZh: "古建筑屋檐"
+      - src: /img/travel/datong/20260627-大同-山石题刻_DSC08938.jpg
+        date: "2026-06-27"
+        caption: "Inscription on a rock"
+        captionZh: "山石题刻"
+      - src: /img/travel/datong/20260627-大同-门廊远眺_DSC08941.jpg
+        date: "2026-06-27"
+        caption: "View through a doorway"
+        captionZh: "门廊远眺"
+      - src: /img/travel/datong/20260627-大同-应县木塔_DSC08965.jpg
+        date: "2026-06-27"
+        caption: "Yingxian Wooden Pagoda"
+        captionZh: "应县木塔"
+      - src: /img/travel/datong/20260627-大同-应县木塔木构_DSC08980.jpg
+        date: "2026-06-27"
+        caption: "Woodwork of Yingxian Wooden Pagoda"
+        captionZh: "应县木塔木构"
+      - src: /img/travel/datong/20260627-大同-应县木塔结构_DSC09002.jpg
+        date: "2026-06-27"
+        caption: "Yingxian Wooden Pagoda detail"
+        captionZh: "应县木塔结构"
+      - src: /img/travel/datong/20260628-大同-应县木塔塔顶_DSC09009.jpg
+        date: "2026-06-28"
+        caption: "Top of Yingxian Wooden Pagoda"
+        captionZh: "应县木塔塔顶"
   - id: kunming
     group: yunnan
     geoGroup: china
@@ -380,34 +444,34 @@ visits:
     latitude: 35.67686
     longitude: 139.76389
     photos:
-      - src: /img/travel/tokyo/20250715-东京-寺院入口_DSC06057.jpg
+      - src: /img/travel/tokyo/20250715-东京-浅草寺雷门_DSC06057.jpg
         date: "2025-07-15"
-        caption: "Temple entrance"
-        captionZh: "寺院入口"
-      - src: /img/travel/tokyo/20250715-东京-寺院楼门_DSC06080.jpg
+        caption: "Kaminarimon Gate, Senso-ji"
+        captionZh: "浅草寺雷门"
+      - src: /img/travel/tokyo/20250715-东京-浅草寺宝藏门_DSC06080.jpg
         date: "2025-07-15"
-        caption: "Temple gate"
-        captionZh: "寺院楼门"
-      - src: /img/travel/tokyo/20250715-东京-寺院塔楼_DSC06085.jpg
+        caption: "Hozomon Gate, Senso-ji"
+        captionZh: "浅草寺宝藏门"
+      - src: /img/travel/tokyo/20250715-东京-浅草寺五重塔_DSC06085.jpg
         date: "2025-07-15"
-        caption: "Temple pagoda"
-        captionZh: "寺院塔楼"
-      - src: /img/travel/tokyo/20250715-东京-城市高塔_DSC06109.jpg
+        caption: "Five-story Pagoda, Senso-ji"
+        captionZh: "浅草寺五重塔"
+      - src: /img/travel/tokyo/20250715-东京-东京晴空塔_DSC06109.jpg
         date: "2025-07-15"
-        caption: "City tower"
-        captionZh: "城市高塔"
-      - src: /img/travel/tokyo/20250715-东京-商店街_DSC06120.jpg
+        caption: "Tokyo Skytree"
+        captionZh: "东京晴空塔"
+      - src: /img/travel/tokyo/20250715-东京-浅草寺仲见世通_DSC06120.jpg
         date: "2025-07-15"
-        caption: "Shopping street"
-        captionZh: "商店街"
+        caption: "Nakamise Shopping Street, Senso-ji"
+        captionZh: "浅草寺仲见世通"
       - src: /img/travel/tokyo/20250715-东京-街道与店铺_DSC06153.jpg
         date: "2025-07-15"
         caption: "Street and shops"
         captionZh: "街道与店铺"
-      - src: /img/travel/tokyo/20250715-东京-街头招牌_DSC06158.jpg
+      - src: /img/travel/tokyo/20250715-东京-秋叶原街景_DSC06158.jpg
         date: "2025-07-15"
-        caption: "Street signs"
-        captionZh: "街头招牌"
+        caption: "Akihabara street"
+        captionZh: "秋叶原街景"
       - src: /img/travel/tokyo/20250715-东京-美术馆画作_DSC06174.jpg
         date: "2025-07-15"
         caption: "Painting in a museum"
@@ -504,14 +568,14 @@ visits:
         date: "2025-07-16"
         caption: "Neon-lit street"
         captionZh: "霓虹街道"
-      - src: /img/travel/tokyo/20250716-东京-街区拱门_DSC06635.jpg
+      - src: /img/travel/tokyo/20250716-东京-歌舞伎町一番街_DSC06635.jpg
         date: "2025-07-16"
-        caption: "Street gateway"
-        captionZh: "街区拱门"
-      - src: /img/travel/tokyo/20250716-东京-街区夜色_DSC06636.jpg
+        caption: "Kabukicho Ichibangai"
+        captionZh: "歌舞伎町一番街"
+      - src: /img/travel/tokyo/20250716-东京-歌舞伎町一番街夜景_DSC06636.jpg
         date: "2025-07-16"
-        caption: "Street at night"
-        captionZh: "街区夜色"
+        caption: "Kabukicho Ichibangai at night"
+        captionZh: "歌舞伎町一番街夜景"
       - src: /img/travel/tokyo/20250717-东京-园林水景_DSC06656.jpg
         date: "2025-07-17"
         caption: "Garden and water"
@@ -532,6 +596,52 @@ visits:
         date: "2025-07-17"
         caption: "Tokyo Tower"
         captionZh: "东京塔"
+  - id: kamakura
+    group: japan
+    geoGroup: international
+    name: "Kamakura"
+    nameZh: "镰仓"
+    region: "Kanagawa, Japan"
+    regionZh: "日本 · 神奈川县"
+    latitude: 35.31917
+    longitude: 139.54694
+    photos:
+      - src: /img/travel/kamakura/20250716-镰仓-海边街景_DSC06475.jpg
+        date: "2025-07-16"
+        caption: "Coastal street view"
+        captionZh: "海边街景"
+      - src: /img/travel/kamakura/20250716-镰仓-海边礁石_DSC06489.jpg
+        date: "2025-07-16"
+        caption: "Coastal rocks"
+        captionZh: "海边礁石"
+      - src: /img/travel/kamakura/20250716-镰仓-海岸与行人_DSC06511.jpg
+        date: "2025-07-16"
+        caption: "Pedestrians by the coast"
+        captionZh: "海岸与行人"
+      - src: /img/travel/kamakura/20250716-镰仓-长谷寺入口_DSC06534.jpg
+        date: "2025-07-16"
+        caption: "Entrance to Hasedera Temple"
+        captionZh: "长谷寺入口"
+      - src: /img/travel/kamakura/20250716-镰仓-长谷寺石像_DSC06545.jpg
+        date: "2025-07-16"
+        caption: "Stone statues at Hasedera Temple"
+        captionZh: "长谷寺石像"
+      - src: /img/travel/kamakura/20250716-镰仓-长谷寺台阶_DSC06546.jpg
+        date: "2025-07-16"
+        caption: "Steps at Hasedera Temple"
+        captionZh: "长谷寺台阶"
+      - src: /img/travel/kamakura/20250716-镰仓-长谷寺地藏像_DSC06555.jpg
+        date: "2025-07-16"
+        caption: "Jizo statues at Hasedera Temple"
+        captionZh: "长谷寺地藏像"
+      - src: /img/travel/kamakura/20250716-镰仓-寺院休憩区_DSC06577.jpg
+        date: "2025-07-16"
+        caption: "Temple rest area"
+        captionZh: "寺院休憩区"
+      - src: /img/travel/kamakura/20250716-镰仓-镰仓大佛_DSC06599.jpg
+        date: "2025-07-16"
+        caption: "Great Buddha of Kamakura"
+        captionZh: "镰仓大佛"
   - id: osaka
     group: japan
     geoGroup: international
@@ -588,10 +698,10 @@ visits:
         date: "2025-07-18"
         caption: "A wind chime under the eaves"
         captionZh: "屋檐风铃"
-      - src: /img/travel/kyoto/20250718-京都-山间寺院_DSC06796.jpg
+      - src: /img/travel/kyoto/20250718-京都-清水寺_DSC06796.jpg
         date: "2025-07-18"
-        caption: "Temple among the hills"
-        captionZh: "山间寺院"
+        caption: "Kiyomizu-dera Temple"
+        captionZh: "清水寺"
       - src: /img/travel/kyoto/20250718-京都-街巷与屋顶_DSC06818.jpg
         date: "2025-07-18"
         caption: "Street and rooftops"
@@ -628,10 +738,10 @@ visits:
         date: "2025-07-19"
         caption: "Shrine plaque"
         captionZh: "神社匾额"
-      - src: /img/travel/kyoto/20250719-京都-红色鸟居_DSC06966.jpg
+      - src: /img/travel/kyoto/20250719-京都-伏见稻荷大社千本鸟居_DSC06966.jpg
         date: "2025-07-19"
-        caption: "Red torii gates"
-        captionZh: "红色鸟居"
+        caption: "Senbon Torii, Fushimi Inari Taisha"
+        captionZh: "伏见稻荷大社千本鸟居"
       - src: /img/travel/kyoto/20250719-京都-林间雕像_DSC06969.jpg
         date: "2025-07-19"
         caption: "A statue among trees"
@@ -899,7 +1009,75 @@ visits:
     regionZh: "山东"
     latitude: 36.65198
     longitude: 117.11385
-    photos: []
+    photos:
+      - src: /img/travel/jinan/20251206-济南-泉水与秋色_DSC07837.jpg
+        date: "2025-12-06"
+        caption: "Spring water and autumn colors"
+        captionZh: "泉水与秋色"
+      - src: /img/travel/jinan/20251206-济南-秋日红叶_DSC07842.jpg
+        date: "2025-12-06"
+        caption: "Autumn leaves"
+        captionZh: "秋日红叶"
+      - src: /img/travel/jinan/20251206-济南-林间流水_DSC07853.jpg
+        date: "2025-12-06"
+        caption: "Water among trees"
+        captionZh: "林间流水"
+      - src: /img/travel/jinan/20251206-济南-泉水石刻_DSC07858.jpg
+        date: "2025-12-06"
+        caption: "Inscription by a spring"
+        captionZh: "泉水石刻"
+      - src: /img/travel/jinan/20251206-济南-趵突泉观澜亭_DSC07865.jpg
+        date: "2025-12-06"
+        caption: "Guanlan Pavilion at Baotu Spring"
+        captionZh: "趵突泉观澜亭"
+      - src: /img/travel/jinan/20251206-济南-趵突泉_DSC07867.jpg
+        date: "2025-12-06"
+        caption: "Baotu Spring"
+        captionZh: "趵突泉"
+      - src: /img/travel/jinan/20251206-济南-趵突泉公园_DSC07877.jpg
+        date: "2025-12-06"
+        caption: "Baotu Spring Park"
+        captionZh: "趵突泉公园"
+      - src: /img/travel/jinan/20251206-济南-水中游鱼_DSC07899.jpg
+        date: "2025-12-06"
+        caption: "Fish in the water"
+        captionZh: "水中游鱼"
+      - src: /img/travel/jinan/20251206-济南-泉水流淌_DSC07907.jpg
+        date: "2025-12-06"
+        caption: "Flowing spring water"
+        captionZh: "泉水流淌"
+      - src: /img/travel/jinan/20251206-济南-城市暮色_DSC07926.jpg
+        date: "2025-12-06"
+        caption: "City at dusk"
+        captionZh: "城市暮色"
+      - src: /img/travel/jinan/20251206-济南-城市天际线_DSC07935.jpg
+        date: "2025-12-06"
+        caption: "City skyline at dusk"
+        captionZh: "城市天际线"
+      - src: /img/travel/jinan/20251206-济南-超然楼夜景_DSC07940.jpg
+        date: "2025-12-06"
+        caption: "Chaoran Tower at night"
+        captionZh: "超然楼夜景"
+      - src: /img/travel/jinan/20251206-济南-夜景倒影_DSC07964.jpg
+        date: "2025-12-06"
+        caption: "Night reflections"
+        captionZh: "夜景倒影"
+      - src: /img/travel/jinan/20251206-济南-戏曲人物_DSC07982.jpg
+        date: "2025-12-06"
+        caption: "Traditional opera figure"
+        captionZh: "戏曲人物"
+      - src: /img/travel/jinan/20251207-济南-佛像与雕刻_DSC08005.jpg
+        date: "2025-12-07"
+        caption: "Buddhist sculptures"
+        captionZh: "佛像与雕刻"
+      - src: /img/travel/jinan/20251207-济南-城市远眺_DSC08022.jpg
+        date: "2025-12-07"
+        caption: "City seen from above"
+        captionZh: "城市远眺"
+      - src: /img/travel/jinan/20251207-济南-城市全景_DSC08027.jpg
+        date: "2025-12-07"
+        caption: "Panoramic city view"
+        captionZh: "城市全景"
   - id: hong-kong
     group: hong-kong
     geoGroup: china
@@ -925,7 +1103,63 @@ visits:
     regionZh: "河北"
     latitude: 40.95071
     longitude: 117.95670
-    photos: []
+    photos:
+      - src: /img/travel/chengde/20251006-承德-避暑山庄树影_DSC07538.jpg
+        date: "2025-10-06"
+        caption: "Trees at the Mountain Resort"
+        captionZh: "避暑山庄树影"
+      - src: /img/travel/chengde/20251006-承德-避暑山庄湖景_DSC07541.jpg
+        date: "2025-10-06"
+        caption: "Lake at the Mountain Resort"
+        captionZh: "避暑山庄湖景"
+      - src: /img/travel/chengde/20251006-承德-花与蓝天_DSC07549.jpg
+        date: "2025-10-06"
+        caption: "Flowers against the sky"
+        captionZh: "花与蓝天"
+      - src: /img/travel/chengde/20251006-承德-花与蝴蝶_DSC07552.jpg
+        date: "2025-10-06"
+        caption: "Flowers and butterfly"
+        captionZh: "花与蝴蝶"
+      - src: /img/travel/chengde/20251006-承德-古塔与蓝天_DSC07558.jpg
+        date: "2025-10-06"
+        caption: "Historic pagoda under the sky"
+        captionZh: "古塔与蓝天"
+      - src: /img/travel/chengde/20251006-承德-磬锤峰_DSC07568.jpg
+        date: "2025-10-06"
+        caption: "Qingchui Peak"
+        captionZh: "磬锤峰"
+      - src: /img/travel/chengde/20251006-承德-普陀宗乘之庙远景_DSC07582.jpg
+        date: "2025-10-06"
+        caption: "Distant view of Putuo Zongcheng Temple"
+        captionZh: "普陀宗乘之庙远景"
+      - src: /img/travel/chengde/20251006-承德-普陀宗乘之庙与山景_DSC07588.jpg
+        date: "2025-10-06"
+        caption: "Putuo Zongcheng Temple and mountains"
+        captionZh: "普陀宗乘之庙与山景"
+      - src: /img/travel/chengde/20251007-承德-寺院与经幡_DSC07599.jpg
+        date: "2025-10-07"
+        caption: "Temple and prayer flags"
+        captionZh: "寺院与经幡"
+      - src: /img/travel/chengde/20251007-承德-寺院建筑细节_DSC07607.jpg
+        date: "2025-10-07"
+        caption: "Temple architecture detail"
+        captionZh: "寺院建筑细节"
+      - src: /img/travel/chengde/20251007-承德-寺院门洞_DSC07610.jpg
+        date: "2025-10-07"
+        caption: "Temple doorway"
+        captionZh: "寺院门洞"
+      - src: /img/travel/chengde/20251007-承德-普陀宗乘之庙红墙_DSC07612.jpg
+        date: "2025-10-07"
+        caption: "Red walls of Putuo Zongcheng Temple"
+        captionZh: "普陀宗乘之庙红墙"
+      - src: /img/travel/chengde/20251007-承德-寺院屋檐_DSC07620.jpg
+        date: "2025-10-07"
+        caption: "Temple roof detail"
+        captionZh: "寺院屋檐"
+      - src: /img/travel/chengde/20251007-承德-寺院檐角_DSC07624.jpg
+        date: "2025-10-07"
+        caption: "Temple eaves"
+        captionZh: "寺院檐角"
   - id: harbin
     group: heilongjiang
     geoGroup: china
@@ -945,7 +1179,131 @@ visits:
     regionZh: "江苏"
     latitude: 32.04383
     longitude: 118.77886
-    photos: []
+    photos:
+      - src: /img/travel/nanjing/20250712-南京-鸡鸣寺入口_DSC05543.jpg
+        date: "2025-07-12"
+        caption: "Entrance to Jiming Temple"
+        captionZh: "鸡鸣寺入口"
+      - src: /img/travel/nanjing/20250712-南京-水中锦鲤_DSC05550.jpg
+        date: "2025-07-12"
+        caption: "Koi in the water"
+        captionZh: "水中锦鲤"
+      - src: /img/travel/nanjing/20250712-南京-荷花_DSC05599.jpg
+        date: "2025-07-12"
+        caption: "Lotus flower"
+        captionZh: "荷花"
+      - src: /img/travel/nanjing/20250712-南京-鸡鸣寺与城市_DSC05607.jpg
+        date: "2025-07-12"
+        caption: "Jiming Temple and city"
+        captionZh: "鸡鸣寺与城市"
+      - src: /img/travel/nanjing/20250712-南京-紫峰大厦_DSC05612.jpg
+        date: "2025-07-12"
+        caption: "Zifeng Tower"
+        captionZh: "紫峰大厦"
+      - src: /img/travel/nanjing/20250712-南京-荷花池_DSC05631.jpg
+        date: "2025-07-12"
+        caption: "Lotus pond"
+        captionZh: "荷花池"
+      - src: /img/travel/nanjing/20250712-南京-建筑与天空_DSC05643.jpg
+        date: "2025-07-12"
+        caption: "Architecture and sky"
+        captionZh: "建筑与天空"
+      - src: /img/travel/nanjing/20250712-南京-南京博物院_DSC05677.jpg
+        date: "2025-07-12"
+        caption: "Nanjing Museum"
+        captionZh: "南京博物院"
+      - src: /img/travel/nanjing/20250712-南京-屋檐装饰_DSC05685.jpg
+        date: "2025-07-12"
+        caption: "Roof ornament"
+        captionZh: "屋檐装饰"
+      - src: /img/travel/nanjing/20250712-南京-展馆文物_DSC05700.jpg
+        date: "2025-07-12"
+        caption: "Museum artifact"
+        captionZh: "展馆文物"
+      - src: /img/travel/nanjing/20250712-南京-展馆藏品_DSC05710.jpg
+        date: "2025-07-12"
+        caption: "Museum object"
+        captionZh: "展馆藏品"
+      - src: /img/travel/nanjing/20250712-南京-展馆雕塑_DSC05716.jpg
+        date: "2025-07-12"
+        caption: "Museum sculpture"
+        captionZh: "展馆雕塑"
+      - src: /img/travel/nanjing/20250712-南京-展馆金饰_DSC05718.jpg
+        date: "2025-07-12"
+        caption: "Museum gold ornament"
+        captionZh: "展馆金饰"
+      - src: /img/travel/nanjing/20250712-南京-博物馆建筑_DSC05740.jpg
+        date: "2025-07-12"
+        caption: "Museum architecture"
+        captionZh: "博物馆建筑"
+      - src: /img/travel/nanjing/20250712-南京-夜间建筑倒影_DSC05748.jpg
+        date: "2025-07-12"
+        caption: "Night reflections of architecture"
+        captionZh: "夜间建筑倒影"
+      - src: /img/travel/nanjing/20250712-南京-秦淮河夜色_DSC05775.jpg
+        date: "2025-07-12"
+        caption: "Qinhuai River at night"
+        captionZh: "秦淮河夜色"
+      - src: /img/travel/nanjing/20250712-南京-秦淮河夜景_DSC05797.jpg
+        date: "2025-07-12"
+        caption: "Qinhuai River night view"
+        captionZh: "秦淮河夜景"
+      - src: /img/travel/nanjing/20250712-南京-夫子庙街区月色_DSC05813.jpg
+        date: "2025-07-12"
+        caption: "Moon over Confucius Temple area"
+        captionZh: "夫子庙街区月色"
+      - src: /img/travel/nanjing/20250712-南京-夫子庙夜景_DSC05815.jpg
+        date: "2025-07-12"
+        caption: "Confucius Temple at night"
+        captionZh: "夫子庙夜景"
+      - src: /img/travel/nanjing/20250712-南京-秦淮河灯饰_DSC05826.jpg
+        date: "2025-07-12"
+        caption: "Illuminations on the Qinhuai River"
+        captionZh: "秦淮河灯饰"
+      - src: /img/travel/nanjing/20250712-南京-夫子庙灯光_DSC05832.jpg
+        date: "2025-07-12"
+        caption: "Lights near Confucius Temple"
+        captionZh: "夫子庙灯光"
+      - src: /img/travel/nanjing/20250713-南京-历史房间陈设_DSC05899.jpg
+        date: "2025-07-13"
+        caption: "Historic room interior"
+        captionZh: "历史房间陈设"
+      - src: /img/travel/nanjing/20250713-南京-林荫步道_DSC05925.jpg
+        date: "2025-07-13"
+        caption: "Tree-lined walkway"
+        captionZh: "林荫步道"
+      - src: /img/travel/nanjing/20250713-南京-林中小鹿_DSC05951.jpg
+        date: "2025-07-13"
+        caption: "Deer among trees"
+        captionZh: "林中小鹿"
+      - src: /img/travel/nanjing/20250713-南京-中山陵碑亭_DSC05977.jpg
+        date: "2025-07-13"
+        caption: "Memorial pavilion at Sun Yat-sen Mausoleum"
+        captionZh: "中山陵碑亭"
+      - src: /img/travel/nanjing/20250713-南京-中山陵入口_DSC06002.jpg
+        date: "2025-07-13"
+        caption: "Sun Yat-sen Mausoleum entrance"
+        captionZh: "中山陵入口"
+      - src: /img/travel/nanjing/20250713-南京-中山陵通道_DSC06009.jpg
+        date: "2025-07-13"
+        caption: "Path to Sun Yat-sen Mausoleum"
+        captionZh: "中山陵通道"
+      - src: /img/travel/nanjing/20250713-南京-中山陵建筑_DSC06011.jpg
+        date: "2025-07-13"
+        caption: "Sun Yat-sen Mausoleum architecture"
+        captionZh: "中山陵建筑"
+      - src: /img/travel/nanjing/20250713-南京-中山陵细节_DSC06014.jpg
+        date: "2025-07-13"
+        caption: "Sun Yat-sen Mausoleum detail"
+        captionZh: "中山陵细节"
+      - src: /img/travel/nanjing/20250713-南京-林中古塔_DSC06032.jpg
+        date: "2025-07-13"
+        caption: "Historic pagoda among trees"
+        captionZh: "林中古塔"
+      - src: /img/travel/nanjing/20250713-南京-先锋书店_DSC06046.jpg
+        date: "2025-07-13"
+        caption: "Librairie Avant-Garde"
+        captionZh: "先锋书店"
   - id: yanan
     group: shaanxi
     geoGroup: china
