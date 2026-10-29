@@ -38,10 +38,10 @@
 &lt;/h2&gt;&lt;p&gt;I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcohol. I’m usually fairly busy, though I’ve had more free time in recent months and would be glad to chat.&lt;/p&gt;
 &lt;p&gt;Since 2025, I’ve been thinking more about investing, financial freedom and exploring the world. Looking ahead, I hope to visit more countries, do well with investing in US stocks, and build a healthy, strong body. For now, I don’t plan to buy a home or a car before turning thirty; if I settle in China long term, I’d most likely choose Beijing or Shanghai.&lt;/p&gt;
 &lt;p&gt;I hope this website can be a space that grows gradually over time, and a way to meet interesting people. 🙂&lt;/p&gt;
-&lt;section id="coffee-chat" class="about-coffee" aria-labelledby="coffee-heading"&gt;
+&lt;section class="about-coffee" aria-labelledby="coffee-chat"&gt;
  &lt;div class="about-coffee__intro"&gt;
  &lt;p class="coffee-booking__eyebrow"&gt;COFFEE CHAT&lt;/p&gt;
- &lt;h2 id="coffee-heading"&gt;Let’s chat&lt;/h2&gt;
+ &lt;h2 id="coffee-chat" style="scroll-margin-top: 90px"&gt;Let’s chat&lt;/h2&gt;
  &lt;p&gt;If you’d like to ask a question, exchange ideas, or simply have a chat, feel free to book a Coffee Chat using the calendar below.&lt;/p&gt;
  &lt;a class="coffee-booking__external" href="https://calendar.app.google/vDyM9zvxDdA1AYRU6" target="_blank" rel="noopener noreferrer"&gt;Open the booking page in Google Calendar ↗&lt;/a&gt;
  &lt;/div&gt;

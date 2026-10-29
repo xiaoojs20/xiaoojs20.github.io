@@ -38,10 +38,10 @@
 &lt;/h2&gt;&lt;p&gt;饮食上我偏清淡，不吃辣，也不抽烟、不喝酒。平时比较忙，不过最近几个月相对闲一些，欢迎找我交流。&lt;/p&gt;
 &lt;p&gt;从 2025 年开始，我慢慢有了关于投资、财富自由和探索世界的想法。接下来希望去更多国家，做好美股投资，也把身体练好。我目前的想法是三十岁前不买房、不买车；如果在国内长期生活，大概率只考虑北京或上海。&lt;/p&gt;
 &lt;p&gt;希望这个网站能成为一个慢慢积累的空间，也期待在这里认识有趣的朋友。🙂&lt;/p&gt;
-&lt;section id="coffee-chat" class="about-coffee" aria-labelledby="coffee-heading"&gt;
+&lt;section class="about-coffee" aria-labelledby="coffee-chat"&gt;
  &lt;div class="about-coffee__intro"&gt;
  &lt;p class="coffee-booking__eyebrow"&gt;COFFEE CHAT&lt;/p&gt;
- &lt;h2 id="coffee-heading"&gt;聊聊吧&lt;/h2&gt;
+ &lt;h2 id="coffee-chat" style="scroll-margin-top: 90px"&gt;聊聊吧&lt;/h2&gt;
  &lt;p&gt;如果你想和我咨询、交流，或只是聊聊想法，欢迎通过下面的日历预约一次 Coffee Chat。&lt;/p&gt;
  &lt;a class="coffee-booking__external" href="https://calendar.app.google/vDyM9zvxDdA1AYRU6" target="_blank" rel="noopener noreferrer"&gt;在 Google 日历中打开预约页 ↗&lt;/a&gt;
  &lt;/div&gt;
