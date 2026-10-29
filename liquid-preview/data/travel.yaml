@@ -1,6 +1,105 @@
+# 旅行收藏分组，顺序决定网页中分组的排列。
+groups:
+  beijing:
+    order: 1
+    name: "Beijing"
+    nameZh: "北京"
+  tianjin:
+    order: 2
+    name: "Tianjin"
+    nameZh: "天津"
+  hebei:
+    order: 3
+    name: "Hebei"
+    nameZh: "河北"
+  shanxi:
+    order: 4
+    name: "Shanxi"
+    nameZh: "山西"
+  shandong:
+    order: 5
+    name: "Shandong"
+    nameZh: "山东"
+  liaoning:
+    order: 6
+    name: "Liaoning"
+    nameZh: "辽宁"
+  jilin:
+    order: 7
+    name: "Jilin"
+    nameZh: "吉林"
+  heilongjiang:
+    order: 8
+    name: "Heilongjiang"
+    nameZh: "黑龙江"
+  inner-mongolia:
+    order: 9
+    name: "Inner Mongolia"
+    nameZh: "内蒙古"
+  shaanxi:
+    order: 10
+    name: "Shaanxi"
+    nameZh: "陕西"
+  gansu:
+    order: 11
+    name: "Gansu"
+    nameZh: "甘肃"
+  xinjiang:
+    order: 12
+    name: "Xinjiang"
+    nameZh: "新疆"
+  sichuan:
+    order: 13
+    name: "Sichuan"
+    nameZh: "四川"
+  yunnan:
+    order: 14
+    name: "Yunnan"
+    nameZh: "云南"
+  jiangsu:
+    order: 15
+    name: "Jiangsu"
+    nameZh: "江苏"
+  shanghai:
+    order: 16
+    name: "Shanghai"
+    nameZh: "上海"
+  fujian:
+    order: 17
+    name: "Fujian"
+    nameZh: "福建"
+  guangdong:
+    order: 18
+    name: "Guangdong"
+    nameZh: "广东"
+  hainan:
+    order: 19
+    name: "Hainan"
+    nameZh: "海南"
+  hong-kong:
+    order: 20
+    name: "Hong Kong"
+    nameZh: "香港"
+  macao:
+    order: 21
+    name: "Macao"
+    nameZh: "澳门"
+  japan:
+    order: 22
+    name: "Japan"
+    nameZh: "日本"
+  south-korea:
+    order: 23
+    name: "South Korea"
+    nameZh: "韩国"
+  russia:
+    order: 24
+    name: "Russia"
+    nameZh: "俄罗斯"
 # 地点为用户提供的真实旅行记录；坐标是城市或地区的近似位置。
 visits:
   - id: beijing
+    group: beijing
     geoGroup: china
     name: "Beijing"
     nameZh: "北京"
@@ -10,6 +109,7 @@ visits:
     longitude: 116.39130
     photos: []
   - id: datong
+    group: shanxi
     geoGroup: china
     name: "Datong"
     nameZh: "大同"
@@ -19,6 +119,7 @@ visits:
     longitude: 113.29527
     photos: []
   - id: kunming
+    group: yunnan
     geoGroup: china
     name: "Kunming"
     nameZh: "昆明"
@@ -28,6 +129,7 @@ visits:
     longitude: 102.71691
     photos: []
   - id: dali
+    group: yunnan
     geoGroup: china
     name: "Dali"
     nameZh: "大理"
@@ -37,6 +139,7 @@ visits:
     longitude: 100.26516
     photos: []
   - id: lijiang
+    group: yunnan
     geoGroup: china
     name: "Lijiang"
     nameZh: "丽江"
@@ -46,6 +149,7 @@ visits:
     longitude: 100.22498
     photos: []
   - id: shangri-la
+    group: yunnan
     geoGroup: china
     name: "Shangri-La"
     nameZh: "香格里拉"
@@ -55,6 +159,7 @@ visits:
     longitude: 99.83655
     photos: []
   - id: tokyo
+    group: japan
     geoGroup: international
     name: "Tokyo"
     nameZh: "东京"
@@ -64,6 +169,7 @@ visits:
     longitude: 139.76389
     photos: []
   - id: osaka
+    group: japan
     geoGroup: international
     name: "Osaka"
     nameZh: "大阪"
@@ -73,6 +179,7 @@ visits:
     longitude: 135.50145
     photos: []
   - id: kyoto
+    group: japan
     geoGroup: international
     name: "Kyoto"
     nameZh: "京都"
@@ -82,6 +189,7 @@ visits:
     longitude: 135.76814
     photos: []
   - id: uji
+    group: japan
     geoGroup: international
     name: "Uji"
     nameZh: "宇治"
@@ -91,6 +199,7 @@ visits:
     longitude: 135.79957
     photos: []
   - id: nara
+    group: japan
     geoGroup: international
     name: "Nara"
     nameZh: "奈良"
@@ -100,6 +209,7 @@ visits:
     longitude: 135.80484
     photos: []
   - id: jeju
+    group: south-korea
     geoGroup: international
     name: "Jeju Island"
     nameZh: "济州岛"
@@ -109,6 +219,7 @@ visits:
     longitude: 126.54825
     photos: []
   - id: vladivostok
+    group: russia
     geoGroup: international
     name: "Vladivostok"
     nameZh: "海参崴"
@@ -118,6 +229,7 @@ visits:
     longitude: 131.88558
     photos: []
   - id: yili
+    group: xinjiang
     geoGroup: china
     name: "Yili"
     nameZh: "伊犁"
@@ -127,6 +239,7 @@ visits:
     longitude: 81.32719
     photos: []
   - id: jinan
+    group: shandong
     geoGroup: china
     name: "Jinan"
     nameZh: "济南"
@@ -136,6 +249,7 @@ visits:
     longitude: 117.11385
     photos: []
   - id: hong-kong
+    group: hong-kong
     geoGroup: china
     name: "Hong Kong"
     nameZh: "香港"
@@ -143,6 +257,7 @@ visits:
     longitude: 114.18578
     photos: []
   - id: macao
+    group: macao
     geoGroup: china
     name: "Macao"
     nameZh: "澳门"
@@ -150,6 +265,7 @@ visits:
     longitude: 113.55141
     photos: []
   - id: chengde
+    group: hebei
     geoGroup: china
     name: "Chengde"
     nameZh: "承德"
@@ -159,6 +275,7 @@ visits:
     longitude: 117.95670
     photos: []
   - id: harbin
+    group: heilongjiang
     geoGroup: china
     name: "Harbin"
     nameZh: "哈尔滨"
@@ -168,6 +285,7 @@ visits:
     longitude: 126.62762
     photos: []
   - id: nanjing
+    group: jiangsu
     geoGroup: china
     name: "Nanjing"
     nameZh: "南京"
@@ -177,6 +295,7 @@ visits:
     longitude: 118.77886
     photos: []
   - id: yanan
+    group: shaanxi
     geoGroup: china
     name: "Yan’an"
     nameZh: "延安"
@@ -186,6 +305,7 @@ visits:
     longitude: 109.48740
     photos: []
   - id: jinjiang
+    group: fujian
     geoGroup: china
     name: "Jinjiang"
     nameZh: "晋江"
@@ -195,6 +315,7 @@ visits:
     longitude: 118.54775
     photos: []
   - id: quanzhou
+    group: fujian
     geoGroup: china
     name: "Quanzhou"
     nameZh: "泉州"
@@ -204,6 +325,7 @@ visits:
     longitude: 118.33872
     photos: []
   - id: ordos
+    group: inner-mongolia
     geoGroup: china
     name: "Ordos"
     nameZh: "鄂尔多斯"
@@ -213,6 +335,7 @@ visits:
     longitude: 108.81343
     photos: []
   - id: qingdao
+    group: shandong
     geoGroup: china
     name: "Qingdao"
     nameZh: "青岛"
@@ -222,6 +345,7 @@ visits:
     longitude: 120.37777
     photos: []
   - id: taian
+    group: shandong
     geoGroup: china
     name: "Tai’an"
     nameZh: "泰安"
@@ -231,6 +355,7 @@ visits:
     longitude: 117.08093
     photos: []
   - id: guangzhou
+    group: guangdong
     geoGroup: china
     name: "Guangzhou"
     nameZh: "广州"
@@ -240,6 +365,7 @@ visits:
     longitude: 113.25896
     photos: []
   - id: shenzhen
+    group: guangdong
     geoGroup: china
     name: "Shenzhen"
     nameZh: "深圳"
@@ -249,6 +375,7 @@ visits:
     longitude: 114.05454
     photos: []
   - id: zhangzhou
+    group: fujian
     geoGroup: china
     name: "Zhangzhou"
     nameZh: "漳州"
@@ -258,6 +385,7 @@ visits:
     longitude: 117.45243
     photos: []
   - id: fuzhou
+    group: fujian
     geoGroup: china
     name: "Fuzhou"
     nameZh: "福州"
@@ -267,6 +395,7 @@ visits:
     longitude: 119.29182
     photos: []
   - id: shantou
+    group: guangdong
     geoGroup: china
     name: "Shantou"
     nameZh: "汕头"
@@ -276,6 +405,7 @@ visits:
     longitude: 116.67759
     photos: []
   - id: xiamen
+    group: fujian
     geoGroup: china
     name: "Xiamen"
     nameZh: "厦门"
@@ -285,6 +415,7 @@ visits:
     longitude: 118.08535
     photos: []
   - id: shanghai
+    group: shanghai
     geoGroup: china
     name: "Shanghai"
     nameZh: "上海"
@@ -292,6 +423,7 @@ visits:
     longitude: 121.47002
     photos: []
   - id: zibo
+    group: shandong
     geoGroup: china
     name: "Zibo"
     nameZh: "淄博"
@@ -301,6 +433,7 @@ visits:
     longitude: 118.04884
     photos: []
   - id: qinhuangdao
+    group: hebei
     geoGroup: china
     name: "Qinhuangdao"
     nameZh: "秦皇岛"
@@ -310,6 +443,7 @@ visits:
     longitude: 119.59422
     photos: []
   - id: tianjin
+    group: tianjin
     geoGroup: china
     name: "Tianjin"
     nameZh: "天津"
@@ -317,6 +451,7 @@ visits:
     longitude: 117.41636
     photos: []
   - id: shenyang
+    group: liaoning
     geoGroup: china
     name: "Shenyang"
     nameZh: "沈阳"
@@ -326,6 +461,7 @@ visits:
     longitude: 123.42791
     photos: []
   - id: yanbian
+    group: jilin
     geoGroup: china
     name: "Yanbian"
     nameZh: "延边"
@@ -335,6 +471,7 @@ visits:
     longitude: 129.20000
     photos: []
   - id: lanzhou
+    group: gansu
     geoGroup: china
     name: "Lanzhou"
     nameZh: "兰州"
@@ -344,6 +481,7 @@ visits:
     longitude: 103.63233
     photos: []
   - id: urumqi
+    group: xinjiang
     geoGroup: china
     name: "Ürümqi"
     nameZh: "乌鲁木齐"
@@ -353,6 +491,7 @@ visits:
     longitude: 87.61390
     photos: []
   - id: haikou
+    group: hainan
     geoGroup: china
     name: "Haikou"
     nameZh: "海口"
@@ -362,6 +501,7 @@ visits:
     longitude: 110.19565
     photos: []
   - id: hohhot
+    group: inner-mongolia
     geoGroup: china
     name: "Hohhot"
     nameZh: "呼和浩特"
@@ -371,6 +511,7 @@ visits:
     longitude: 111.66019
     photos: []
   - id: ulanqab
+    group: inner-mongolia
     geoGroup: china
     name: "Ulanqab"
     nameZh: "乌兰察布"
@@ -380,6 +521,7 @@ visits:
     longitude: 113.13156
     photos: []
   - id: chengdu
+    group: sichuan
     geoGroup: china
     name: "Chengdu"
     nameZh: "成都"
@@ -389,6 +531,7 @@ visits:
     longitude: 104.06332
     photos: []
   - id: dalian
+    group: liaoning
     geoGroup: china
     name: "Dalian"
     nameZh: "大连"
@@ -398,6 +541,7 @@ visits:
     longitude: 122.25583
     photos: []
   - id: changbai-mountain
+    group: jilin
     geoGroup: china
     name: "Changbai Mountain"
     nameZh: "长白山"

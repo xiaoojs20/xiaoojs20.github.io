@@ -61,11 +61,26 @@
   new MutationObserver(()=>{const c=colors();Object.values(maps).forEach(item=>{item.base?.setStyle({color:c.border,fillColor:c.land});item.boundaries?.setStyle({color:c.line});item.areas?.setStyle({color:c.stroke,fillColor:c.visited})})}).observe(document.documentElement,{attributes:true,attributeFilter:['data-scheme']});
   const focusPlace = visit => {const map=maps.combined.map;map.setView([Number(visit.latitude),Number(visit.longitude)],Math.max(map.getZoom(),5));showPlace(visit)};
   let demoMarker;
+  const expandedGroups=new Set();
   const showList = () => {
     if(demoMarker){maps.combined.markers.removeLayer(demoMarker);demoMarker=null}
     reset.hidden=true;content.replaceChildren();content.append(make('h2','',text('每一段旅程','Every journey')));
-    content.append(make('p','',visits.length?text('选择一个地点，翻开沿途的照片。','Choose a place to open its album.'):text('旅行记录还在慢慢整理。','My travel journal is still taking shape.')));
-    visits.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));content.append(btn)});
+    content.append(make('p','',visits.length?text('展开地区，选择一个地点查看照片。','Open a region and choose a place to view its photos.'):text('旅行记录还在慢慢整理。','My travel journal is still taking shape.')));
+    const groups=new Map();
+    visits.forEach(v=>{const id=v.group && data.groups?.[v.group] ? v.group : 'other';if(!groups.has(id))groups.set(id,[]);groups.get(id).push(v)});
+    const configured=Object.keys(data.groups || {}).sort((a,b)=>(data.groups[a].order ?? 9999)-(data.groups[b].order ?? 9999));
+    const order=[...configured.filter(id=>groups.has(id)),...Array.from(groups.keys()).filter(id=>!configured.includes(id))];
+    order.forEach(id=>{
+      const locations=groups.get(id), info=data.groups?.[id] || {}, section=make('details','travel-group');
+      section.dataset.group=id;section.open=expandedGroups.has(id);
+      section.addEventListener('toggle',()=>{if(section.open)expandedGroups.add(id);else expandedGroups.delete(id)});
+      const summary=make('summary','travel-group__header');
+      summary.append(make('strong','',(zh && info.nameZh)||info.name||text('其他地点','Other places')),make('span','travel-group__count',countText(locations.length)),make('span','travel-group__chevron','›'));
+      section.append(summary);
+      const list=make('div','travel-group__places');
+      locations.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));list.append(btn)});
+      section.append(list);content.append(section);
+    });
     if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=markerIcon(true);demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v)}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
   };
   reset.addEventListener('click',showList);

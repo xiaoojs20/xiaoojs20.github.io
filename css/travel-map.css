@@ -22,7 +22,7 @@
 .travel-place { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:14px; margin:8px 0; border-radius:14px; }
 .travel-place strong,.travel-place small { display:block; }
 .travel-place strong { font-size:1.4rem; }.travel-place small { margin-top:4px; font-size:1.15rem; opacity:.7; }
-.travel-place:focus-visible,.travel-demo-button:focus-visible,.travel-reset:focus-visible,.travel-photo:focus-visible { outline:3px solid var(--accent-color); outline-offset:3px; }
+.travel-group__header:focus-visible,.travel-place:focus-visible,.travel-demo-button:focus-visible,.travel-reset:focus-visible,.travel-photo:focus-visible { outline:3px solid var(--accent-color); outline-offset:3px; }
 .travel-detail-label { display:inline-block; margin:0 0 10px; padding:5px 9px; border-radius:50px; font-size:1.05rem; color:var(--accent-color); background:var(--card-background-selected); }
 .travel-photos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
 .travel-photo { display:block; padding:0; border:0; border-radius:12px; overflow:hidden; cursor:zoom-in; background:var(--card-background-selected); }
@@ -38,3 +38,13 @@ html[data-scheme="dark"] .travel-map { background:#34484b; }
 .travel-panel [data-travel-content] { max-height:510px; overflow-y:auto; scrollbar-width:thin; }
 @media(max-width:850px) { .travel-layout { grid-template-columns:1fr; }.travel-map { height:420px; }.travel-panel { min-height:0; } }
 @media(max-width:480px) { .travel-intro { padding-top:2px; }.travel-map-card,.travel-panel { padding:14px; border-radius:21px; }.travel-map { height:340px; }.travel-intro p { font-size:1.35rem; } }
+
+.travel-group { margin:8px 0; border-radius:15px; background:var(--card-background-selected); overflow:hidden; }
+.travel-group__header { display:flex; align-items:center; gap:10px; padding:14px; cursor:pointer; color:var(--card-text-color-main); list-style:none; }
+.travel-group__header::-webkit-details-marker { display:none; }
+.travel-group__header strong { flex:1; font-size:1.4rem; }
+.travel-group__count { color:var(--card-text-color-secondary); font-size:1.15rem; }
+.travel-group__chevron { color:var(--card-text-color-secondary); font-size:2rem; line-height:1; transition:transform .2s ease; }
+.travel-group[open] .travel-group__chevron { transform:rotate(90deg); }
+.travel-group__places { padding:0 8px 8px; }
+.travel-group__places .travel-place { margin:5px 0 0; padding:11px; background:var(--card-background); }
