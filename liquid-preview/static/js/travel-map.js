@@ -51,7 +51,7 @@
     });
   });
   const areaSize = feature => {let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;const scan=x=>{if(Array.isArray(x)&&typeof x[0]==='number'){minX=Math.min(minX,x[0]);maxX=Math.max(maxX,x[0]);minY=Math.min(minY,x[1]);maxY=Math.max(maxY,x[1])}else if(Array.isArray(x))x.forEach(scan)};scan(feature.geometry.coordinates);return (maxX-minX)*(maxY-minY)};
-  Promise.all(['world','admin1-lines','visited-areas'].map(name=>fetch('/data/travel-map/'+name+'.geojson').then(r=>{if(!r.ok)throw Error('Map data unavailable');return r.json()}))).then(([world,lines,areas])=>{
+  Promise.all(['world','admin1-lines','visited-areas'].map(name=>fetch('/data/travel-map/'+name+'.geojson?v='+encodeURIComponent(app.dataset.mapVersion || '')).then(r=>{if(!r.ok)throw Error('Map data unavailable');return r.json()}))).then(([world,lines,areas])=>{
     const byId=new Map(visits.map(v=>[v.id,v]));areas.features.sort((a,b)=>areaSize(b)-areaSize(a));
     Object.entries(maps).forEach(([scope,item])=>{
       const c=colors();

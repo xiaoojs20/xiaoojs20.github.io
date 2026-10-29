@@ -2,9 +2,10 @@
 {{ define "main" }}
 {{ $zh := hasPrefix .Language.Lang "zh" }}
 {{ $travel := hugo.Data.travel }}
+{{ $mapVersion := printf "%s%s%s" (readFile "static/data/travel-map/world.geojson") (readFile "static/data/travel-map/admin1-lines.geojson") (readFile "static/data/travel-map/visited-areas.geojson") | crypto.SHA256 }}
 <link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/travel-map.css" | relURL }}">
-<article class="travel-shell" data-travel-app data-language="{{ cond $zh "zh" "en" }}">
+<link rel="stylesheet" href="{{ "css/travel-map.css" | relURL }}?v={{ readFile "static/css/travel-map.css" | crypto.SHA256 }}">
+<article class="travel-shell" data-travel-app data-language="{{ cond $zh "zh" "en" }}" data-map-version="{{ $mapVersion }}">
   <header class="travel-intro">
     <span class="travel-eyebrow">{{ cond $zh "THE PLACES I’VE BEEN" "THE PLACES I’VE BEEN" }}</span>
     <h1>{{ cond $zh "旅行地图" "A map of my travels" }}</h1>
@@ -33,7 +34,7 @@
 </article>
 <dialog class="travel-lightbox" data-travel-lightbox aria-label="{{ cond $zh "查看照片" "View photo" }}"><button class="travel-lightbox-close" data-travel-close aria-label="{{ cond $zh "关闭照片" "Close photo" }}">×</button><img alt="" data-travel-lightbox-image><p data-travel-lightbox-caption></p></dialog>
 <script id="travel-data" type="application/json">{{ $travel | jsonify | safeJS }}</script>
-<script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script><script src="{{ "js/travel-map.js" | relURL }}" defer></script>
+<script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script><script src="{{ "js/travel-map.js" | relURL }}?v={{ readFile "static/js/travel-map.js" | crypto.SHA256 }}" defer></script>
 {{ partial "footer/footer" . }}
 {{ end }}
 {{ define "right-sidebar" }}{{ end }}
