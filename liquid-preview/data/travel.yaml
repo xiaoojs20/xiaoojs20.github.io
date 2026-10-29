@@ -1413,7 +1413,95 @@ visits:
     regionZh: "广东"
     latitude: 23.35639
     longitude: 116.67759
-    photos: []
+    photos:
+      - src: /img/travel/shantou/20250114-汕头-老街夜色_DSC03582.jpg
+        date: "2025-01-14"
+        caption: "Old street at night"
+        captionZh: "老街夜色"
+      - src: /img/travel/shantou/20250114-汕头-老街灯光_DSC03586.jpg
+        date: "2025-01-14"
+        caption: "Old street lights"
+        captionZh: "老街灯光"
+      - src: /img/travel/shantou/20250114-汕头-老街店铺_DSC03599.jpg
+        date: "2025-01-14"
+        caption: "Old street storefront"
+        captionZh: "老街店铺"
+      - src: /img/travel/shantou/20250114-汕头-汕头站灯牌_DSC03604.jpg
+        date: "2025-01-14"
+        caption: "Shantou Station sign"
+        captionZh: "汕头站灯牌"
+      - src: /img/travel/shantou/20250114-汕头-老街骑楼_DSC03623.jpg
+        date: "2025-01-14"
+        caption: "Historic arcade buildings"
+        captionZh: "老街骑楼"
+      - src: /img/travel/shantou/20250114-汕头-老街灯笼_DSC03637.jpg
+        date: "2025-01-14"
+        caption: "Lanterns on the old street"
+        captionZh: "老街灯笼"
+      - src: /img/travel/shantou/20250116-汕头-南澳岛街景_DSC03702.jpg
+        date: "2025-01-16"
+        caption: "Nan’ao Island street view"
+        captionZh: "南澳岛街景"
+      - src: /img/travel/shantou/20250116-汕头-南澳岛渔港_DSC03708.jpg
+        date: "2025-01-16"
+        caption: "Nan’ao Island fishing harbour"
+        captionZh: "南澳岛渔港"
+      - src: /img/travel/shantou/20250116-汕头-南澳岛渔船_DSC03720.jpg
+        date: "2025-01-16"
+        caption: "Fishing boats on Nan’ao Island"
+        captionZh: "南澳岛渔船"
+      - src: /img/travel/shantou/20250116-汕头-南澳岛海岸_DSC03740.jpg
+        date: "2025-01-16"
+        caption: "Nan’ao Island coastline"
+        captionZh: "南澳岛海岸"
+      - src: /img/travel/shantou/20250116-汕头-南澳岛石狮_DSC03745.jpg
+        date: "2025-01-16"
+        caption: "Stone lion on Nan’ao Island"
+        captionZh: "南澳岛石狮"
+      - src: /img/travel/shantou/20250116-汕头-街边小猫_DSC03769.jpg
+        date: "2025-01-16"
+        caption: "Cat by the street"
+        captionZh: "街边小猫"
+      - src: /img/travel/shantou/20250116-汕头-海岸与渔船_DSC03783.jpg
+        date: "2025-01-16"
+        caption: "Coast and fishing boats"
+        captionZh: "海岸与渔船"
+      - src: /img/travel/shantou/20250116-汕头-海上养殖场_DSC03814.jpg
+        date: "2025-01-16"
+        caption: "Aquaculture at sea"
+        captionZh: "海上养殖场"
+      - src: /img/travel/shantou/20250116-汕头-海边贝壳_DSC03824.jpg
+        date: "2025-01-16"
+        caption: "Shells by the sea"
+        captionZh: "海边贝壳"
+      - src: /img/travel/shantou/20250116-汕头-海上日落_DSC03845.jpg
+        date: "2025-01-16"
+        caption: "Sunset over the sea"
+        captionZh: "海上日落"
+      - src: /img/travel/shantou/20250116-汕头-海岸礁石_DSC03846.jpg
+        date: "2025-01-16"
+        caption: "Coastal rocks"
+        captionZh: "海岸礁石"
+      - src: /img/travel/shantou/20250117-汕头-老街骑楼建筑_DSC03871.jpg
+        date: "2025-01-17"
+        caption: "Historic arcade architecture"
+        captionZh: "老街骑楼建筑"
+      - src: /img/travel/shantou/20250117-汕头-海湾大桥_DSC03905.jpg
+        date: "2025-01-17"
+        caption: "Bridge over the bay"
+        captionZh: "海湾大桥"
+      - src: /img/travel/shantou/20250117-汕头-海湾与城市_DSC03949.jpg
+        date: "2025-01-17"
+        caption: "Bay and city"
+        captionZh: "海湾与城市"
+      - src: /img/travel/shantou/20250117-汕头-汕头渡船_DSC04015.jpg
+        date: "2025-01-17"
+        caption: "Shantou ferry"
+        captionZh: "汕头渡船"
+      - src: /img/travel/shantou/20250117-汕头-大桥日落_DSC04039.jpg
+        date: "2025-01-17"
+        caption: "Sunset by the bridge"
+        captionZh: "大桥日落"
   - id: xiamen
     group: fujian
     geoGroup: china
@@ -1459,7 +1547,27 @@ visits:
     nameZh: "天津"
     latitude: 39.30326
     longitude: 117.41636
-    photos: []
+    photos:
+      - src: /img/travel/tianjin/20250502-天津-古城门_DSC04486.jpg
+        date: "2025-05-02"
+        caption: "Historic city gate"
+        captionZh: "古城门"
+      - src: /img/travel/tianjin/20250502-天津-滨海景色_DSC04527.jpg
+        date: "2025-05-02"
+        caption: "Coastal view"
+        captionZh: "滨海景色"
+      - src: /img/travel/tianjin/20250502-天津-天后宫建筑_DSC04553.jpg
+        date: "2025-05-02"
+        caption: "Tianhou Palace architecture"
+        captionZh: "天后宫建筑"
+      - src: /img/travel/tianjin/20250502-天津-妈祖像_DSC04559.jpg
+        date: "2025-05-02"
+        caption: "Mazu statue"
+        captionZh: "妈祖像"
+      - src: /img/travel/tianjin/20250502-天津-海边室内光影_DSC04585.jpg
+        date: "2025-05-02"
+        caption: "Light in a seaside interior"
+        captionZh: "海边室内光影"
   - id: shenyang
     group: liaoning
     geoGroup: china
@@ -1469,7 +1577,123 @@ visits:
     regionZh: "辽宁"
     latitude: 41.80261
     longitude: 123.42791
-    photos: []
+    photos:
+      - src: /img/travel/shenyang/20241003-沈阳-九一八历史博物馆警世钟_DSC02976.jpg
+        date: "2024-10-03"
+        caption: "Memorial bell at September 18th History Museum"
+        captionZh: "九一八历史博物馆警世钟"
+      - src: /img/travel/shenyang/20241003-沈阳-九一八历史博物馆外景_DSC02978.jpg
+        date: "2024-10-03"
+        caption: "September 18th History Museum exterior"
+        captionZh: "九一八历史博物馆外景"
+      - src: /img/travel/shenyang/20241004-沈阳-建筑与天空_DSC03058.jpg
+        date: "2024-10-04"
+        caption: "Architecture under the sky"
+        captionZh: "建筑与天空"
+      - src: /img/travel/shenyang/20241004-沈阳-沈阳故宫殿宇_DSC03075.jpg
+        date: "2024-10-04"
+        caption: "Palace hall at Shenyang Imperial Palace"
+        captionZh: "沈阳故宫殿宇"
+      - src: /img/travel/shenyang/20241004-沈阳-沈阳故宫大政殿_DSC03082.jpg
+        date: "2024-10-04"
+        caption: "Dazheng Hall at Shenyang Imperial Palace"
+        captionZh: "沈阳故宫大政殿"
+      - src: /img/travel/shenyang/20241004-沈阳-沈阳故宫建筑_DSC03098.jpg
+        date: "2024-10-04"
+        caption: "Shenyang Imperial Palace architecture"
+        captionZh: "沈阳故宫建筑"
+      - src: /img/travel/shenyang/20241004-沈阳-沈阳小南天主教堂_DSC03132.jpg
+        date: "2024-10-04"
+        caption: "Shenyang Xiaonan Catholic Church"
+        captionZh: "沈阳小南天主教堂"
+      - src: /img/travel/shenyang/20241004-沈阳-小南天主教堂细节_DSC03133.jpg
+        date: "2024-10-04"
+        caption: "Xiaonan Catholic Church detail"
+        captionZh: "小南天主教堂细节"
+      - src: /img/travel/shenyang/20241004-沈阳-教堂屋顶雕塑_DSC03152.jpg
+        date: "2024-10-04"
+        caption: "Church rooftop sculpture"
+        captionZh: "教堂屋顶雕塑"
+      - src: /img/travel/shenyang/20241004-沈阳-教堂窗户_DSC03156.jpg
+        date: "2024-10-04"
+        caption: "Church window"
+        captionZh: "教堂窗户"
+      - src: /img/travel/shenyang/20241004-沈阳-小南天主教堂外墙_DSC03161.jpg
+        date: "2024-10-04"
+        caption: "Xiaonan Catholic Church exterior"
+        captionZh: "小南天主教堂外墙"
+      - src: /img/travel/shenyang/20241004-沈阳-街边橱窗_DSC03172.jpg
+        date: "2024-10-04"
+        caption: "Street storefront"
+        captionZh: "街边橱窗"
+      - src: /img/travel/shenyang/20241004-沈阳-书店一角_DSC03174.jpg
+        date: "2024-10-04"
+        caption: "Bookshop corner"
+        captionZh: "书店一角"
+      - src: /img/travel/shenyang/20241004-沈阳-画作与书店_DSC03178.jpg
+        date: "2024-10-04"
+        caption: "Artwork in a bookshop"
+        captionZh: "画作与书店"
+      - src: /img/travel/shenyang/20241004-沈阳-街边小物_DSC03193.jpg
+        date: "2024-10-04"
+        caption: "Small objects on display"
+        captionZh: "街边小物"
+      - src: /img/travel/shenyang/20241004-沈阳-沈阳彩电塔_DSC03194.jpg
+        date: "2024-10-04"
+        caption: "Shenyang TV Tower"
+        captionZh: "沈阳彩电塔"
+      - src: /img/travel/shenyang/20241004-沈阳-沈阳彩电塔夜景_DSC03202.jpg
+        date: "2024-10-04"
+        caption: "Shenyang TV Tower at night"
+        captionZh: "沈阳彩电塔夜景"
+      - src: /img/travel/shenyang/20241004-沈阳-夜市招牌_DSC03205.jpg
+        date: "2024-10-04"
+        caption: "Night market signs"
+        captionZh: "夜市招牌"
+      - src: /img/travel/shenyang/20241005-沈阳-博物馆藏品_DSC03241.jpg
+        date: "2024-10-05"
+        caption: "Museum object"
+        captionZh: "博物馆藏品"
+      - src: /img/travel/shenyang/20241005-沈阳-博物馆器物_DSC03282.jpg
+        date: "2024-10-05"
+        caption: "Museum artifacts"
+        captionZh: "博物馆器物"
+      - src: /img/travel/shenyang/20241005-沈阳-博物馆雕塑_DSC03296.jpg
+        date: "2024-10-05"
+        caption: "Museum sculpture"
+        captionZh: "博物馆雕塑"
+      - src: /img/travel/shenyang/20241005-沈阳-博物馆古籍_DSC03309.jpg
+        date: "2024-10-05"
+        caption: "Historic book on display"
+        captionZh: "博物馆古籍"
+      - src: /img/travel/shenyang/20241005-沈阳-古籍展品_DSC03310.jpg
+        date: "2024-10-05"
+        caption: "Historic book exhibit"
+        captionZh: "古籍展品"
+      - src: /img/travel/shenyang/20241005-沈阳-馆藏书页_DSC03311.jpg
+        date: "2024-10-05"
+        caption: "Pages on display"
+        captionZh: "馆藏书页"
+      - src: /img/travel/shenyang/20241005-沈阳-馆藏雕像_DSC03337.jpg
+        date: "2024-10-05"
+        caption: "Museum statue"
+        captionZh: "馆藏雕像"
+      - src: /img/travel/shenyang/20241005-沈阳-红梅文创园_DSC03340.jpg
+        date: "2024-10-05"
+        caption: "Hongmei Cultural and Creative Park"
+        captionZh: "红梅文创园"
+      - src: /img/travel/shenyang/20241005-沈阳-红梅文创园街景_DSC03356.jpg
+        date: "2024-10-05"
+        caption: "Street at Hongmei Cultural and Creative Park"
+        captionZh: "红梅文创园街景"
+      - src: /img/travel/shenyang/20241005-沈阳-红梅文创园墙绘_DSC03380.jpg
+        date: "2024-10-05"
+        caption: "Mural at Hongmei Cultural and Creative Park"
+        captionZh: "红梅文创园墙绘"
+      - src: /img/travel/shenyang/20241005-沈阳-红梅文创园建筑_DSC03384.jpg
+        date: "2024-10-05"
+        caption: "Building at Hongmei Cultural and Creative Park"
+        captionZh: "红梅文创园建筑"
   - id: yanbian
     group: jilin
     geoGroup: china
@@ -1499,7 +1723,79 @@ visits:
     regionZh: "新疆"
     latitude: 43.82441
     longitude: 87.61390
-    photos: []
+    photos:
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎穹顶_DSC02490.jpg
+        date: "2024-08-05"
+        caption: "Dome at the International Grand Bazaar"
+        captionZh: "国际大巴扎穹顶"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎绿色穹顶_DSC02492.jpg
+        date: "2024-08-05"
+        caption: "Green dome at the International Grand Bazaar"
+        captionZh: "国际大巴扎绿色穹顶"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎建筑_DSC02504.jpg
+        date: "2024-08-05"
+        caption: "International Grand Bazaar architecture"
+        captionZh: "国际大巴扎建筑"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎塔楼_DSC02517.jpg
+        date: "2024-08-05"
+        caption: "Tower at the International Grand Bazaar"
+        captionZh: "国际大巴扎塔楼"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎音乐表演_DSC02522.jpg
+        date: "2024-08-05"
+        caption: "Music performance at the bazaar"
+        captionZh: "大巴扎音乐表演"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎塔楼与穹顶_DSC02524.jpg
+        date: "2024-08-05"
+        caption: "Bazaar towers and domes"
+        captionZh: "大巴扎塔楼与穹顶"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎手鼓_DSC02528.jpg
+        date: "2024-08-05"
+        caption: "Hand drums at the bazaar"
+        captionZh: "大巴扎手鼓"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎手鼓表演_DSC02532.jpg
+        date: "2024-08-05"
+        caption: "Hand drum performance at the bazaar"
+        captionZh: "大巴扎手鼓表演"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎屋顶装饰_DSC02546.jpg
+        date: "2024-08-05"
+        caption: "Rooftop decoration at the bazaar"
+        captionZh: "大巴扎屋顶装饰"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎清真寺_DSC02549.jpg
+        date: "2024-08-05"
+        caption: "Mosque at the International Grand Bazaar"
+        captionZh: "国际大巴扎清真寺"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎观光塔_DSC02556.jpg
+        date: "2024-08-05"
+        caption: "Observation tower at the International Grand Bazaar"
+        captionZh: "国际大巴扎观光塔"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎清真寺与街景_DSC02559.jpg
+        date: "2024-08-05"
+        caption: "Bazaar mosque and street"
+        captionZh: "大巴扎清真寺与街景"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎入口_DSC02560.jpg
+        date: "2024-08-05"
+        caption: "Entrance to the International Grand Bazaar"
+        captionZh: "国际大巴扎入口"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎观光塔细节_DSC02563.jpg
+        date: "2024-08-05"
+        caption: "Bazaar observation tower detail"
+        captionZh: "大巴扎观光塔细节"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎建筑细节_DSC02608.jpg
+        date: "2024-08-05"
+        caption: "Bazaar architecture detail"
+        captionZh: "大巴扎建筑细节"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎夜间表演_DSC02659.jpg
+        date: "2024-08-05"
+        caption: "Night performance at the bazaar"
+        captionZh: "大巴扎夜间表演"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-大巴扎观光塔夜色_DSC02699.jpg
+        date: "2024-08-05"
+        caption: "Bazaar observation tower at night"
+        captionZh: "大巴扎观光塔夜色"
+      - src: /img/travel/urumqi/20240805-乌鲁木齐-街边美食_DSC02705.jpg
+        date: "2024-08-05"
+        caption: "Street food"
+        captionZh: "街边美食"
   - id: haikou
     group: hainan
     geoGroup: china
@@ -1549,7 +1845,83 @@ visits:
     regionZh: "辽宁"
     latitude: 39.74028
     longitude: 122.25583
-    photos: []
+    photos:
+      - src: /img/travel/dalian/20250503-大连-海上日落_DSC04591.jpg
+        date: "2025-05-03"
+        caption: "Sunset at sea"
+        captionZh: "海上日落"
+      - src: /img/travel/dalian/20250503-大连-海浪_DSC04604.jpg
+        date: "2025-05-03"
+        caption: "Ocean waves"
+        captionZh: "海浪"
+      - src: /img/travel/dalian/20250503-大连-船尾浪花_DSC04610.jpg
+        date: "2025-05-03"
+        caption: "Wake behind the boat"
+        captionZh: "船尾浪花"
+      - src: /img/travel/dalian/20250503-大连-航行中的浪花_DSC04613.jpg
+        date: "2025-05-03"
+        caption: "Waves from the boat"
+        captionZh: "航行中的浪花"
+      - src: /img/travel/dalian/20250503-大连-星海湾跨海大桥暮色_DSC04665.jpg
+        date: "2025-05-03"
+        caption: "Xinghai Bay Bridge at dusk"
+        captionZh: "星海湾跨海大桥暮色"
+      - src: /img/travel/dalian/20250503-大连-星海湾跨海大桥夜色_DSC04692.jpg
+        date: "2025-05-03"
+        caption: "Xinghai Bay Bridge at night"
+        captionZh: "星海湾跨海大桥夜色"
+      - src: /img/travel/dalian/20250503-大连-海边建筑灯光_DSC04713.jpg
+        date: "2025-05-03"
+        caption: "Lights on coastal buildings"
+        captionZh: "海边建筑灯光"
+      - src: /img/travel/dalian/20250503-大连-星海湾跨海大桥灯光_DSC04735.jpg
+        date: "2025-05-03"
+        caption: "Xinghai Bay Bridge illuminated"
+        captionZh: "星海湾跨海大桥灯光"
+      - src: /img/travel/dalian/20250503-大连-星海湾跨海大桥夜景_DSC04760.jpg
+        date: "2025-05-03"
+        caption: "Xinghai Bay Bridge night view"
+        captionZh: "星海湾跨海大桥夜景"
+      - src: /img/travel/dalian/20250503-大连-海岸公路夜景_DSC04774.jpg
+        date: "2025-05-03"
+        caption: "Coastal road at night"
+        captionZh: "海岸公路夜景"
+      - src: /img/travel/dalian/20250504-大连-海边礁石与行人_DSC04798.jpg
+        date: "2025-05-04"
+        caption: "Person on coastal rocks"
+        captionZh: "海边礁石与行人"
+      - src: /img/travel/dalian/20250504-大连-海岸与游人_DSC04807.jpg
+        date: "2025-05-04"
+        caption: "Coast and visitors"
+        captionZh: "海岸与游人"
+      - src: /img/travel/dalian/20250504-大连-海岸步道_DSC04832.jpg
+        date: "2025-05-04"
+        caption: "Coastal walkway"
+        captionZh: "海岸步道"
+      - src: /img/travel/dalian/20250504-大连-海边渔船_DSC04843.jpg
+        date: "2025-05-04"
+        caption: "Boats near the shore"
+        captionZh: "海边渔船"
+      - src: /img/travel/dalian/20250504-大连-海岸消波块_DSC04855.jpg
+        date: "2025-05-04"
+        caption: "Coastal breakwater"
+        captionZh: "海岸消波块"
+      - src: /img/travel/dalian/20250504-大连-海上小船_DSC04860.jpg
+        date: "2025-05-04"
+        caption: "Boats at sea"
+        captionZh: "海上小船"
+      - src: /img/travel/dalian/20250504-大连-海岸岩石_DSC04887.jpg
+        date: "2025-05-04"
+        caption: "Coastal rocks"
+        captionZh: "海岸岩石"
+      - src: /img/travel/dalian/20250504-大连-海鸥掠海_DSC04939.jpg
+        date: "2025-05-04"
+        caption: "Seagull over the water"
+        captionZh: "海鸥掠海"
+      - src: /img/travel/dalian/20250504-大连-海湾礁石_DSC04947.jpg
+        date: "2025-05-04"
+        caption: "Rocks by the bay"
+        captionZh: "海湾礁石"
   - id: changbai-mountain
     group: jilin
     geoGroup: china
