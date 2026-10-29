@@ -63,7 +63,7 @@ On longer breaks, I like traveling to experience new places, photographing lands
 
 I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcohol. And I can’t go a day without coffee. ☕
 
-### Future and financial plans
+### Some personal thoughts {#future-and-financial-plans}
 
 Since 2025, I’ve been thinking more about investing, financial freedom and exploring the world. Looking ahead, I hope to visit more countries, do well with investing in US stocks, and build a healthy, strong body. I value steady progress over time and hope that work, learning, and thoughtful planning will give me more choices in life. For now, I don’t plan to buy a home or a car before turning thirty; if I settle in China long term, I’d most likely choose Beijing or Shanghai, with a current preference for Shanghai. I value practical purchases over keeping up appearances, while being happy to spend on travel, experiences, and quality of life.
 
