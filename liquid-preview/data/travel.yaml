@@ -4821,6 +4821,18 @@ visits:
     latitude: 39.30326
     longitude: 117.41636
     photos:
+      - src: /img/travel/tianjin/20250502-天津-鱼尾狮雕像_MVIMG_20250502_135515.jpg
+        date: "2025-05-02"
+        caption: "Merlion statue"
+        captionZh: "鱼尾狮雕像"
+      - src: /img/travel/tianjin/20250502-天津-蓝色灯光下的水母_MVIMG_20250502_174927.jpg
+        date: "2025-05-02"
+        caption: "Jellyfish in blue light"
+        captionZh: "蓝色灯光下的水母"
+      - src: /img/travel/tianjin/20250502-天津-水族箱中的水母_MVIMG_20250502_174942.jpg
+        date: "2025-05-02"
+        caption: "Jellyfish in an aquarium"
+        captionZh: "水族箱中的水母"
       - src: /img/travel/tianjin/20250502-天津-北塘古镇城门_DSC04486.jpg
         date: "2025-05-02"
         caption: "Beitang Ancient Town gate"
@@ -5632,6 +5644,34 @@ visits:
     latitude: 39.74028
     longitude: 122.25583
     photos:
+      - src: /img/travel/dalian/20250503-大连-船尾与海面_MVIMG_20250503_053634.jpg
+        date: "2025-05-03"
+        caption: "Stern of a boat and the sea"
+        captionZh: "船尾与海面"
+      - src: /img/travel/dalian/20250503-大连-海上日出与船尾浪花_MVIMG_20250503_053752.jpg
+        date: "2025-05-03"
+        caption: "Sunrise at sea and the boat’s wake"
+        captionZh: "海上日出与船尾浪花"
+      - src: /img/travel/dalian/20250503-大连-星海湾跨海大桥灯光_MVIMG_20250503_193044.jpg
+        date: "2025-05-03"
+        caption: "Xinghai Bay Bridge illuminated at night"
+        captionZh: "星海湾跨海大桥灯光"
+      - src: /img/travel/dalian/20250504-大连-海边建筑与蓝天_MVIMG_20250504_110319.jpg
+        date: "2025-05-04"
+        caption: "A seaside building beneath blue skies"
+        captionZh: "海边建筑与蓝天"
+      - src: /img/travel/dalian/20250504-大连-冰淇淋店内景_MVIMG_20250504_124022.jpg
+        date: "2025-05-04"
+        caption: "Inside an ice cream shop"
+        captionZh: "冰淇淋店内景"
+      - src: /img/travel/dalian/20250504-大连-海滩上的影子与浪花_MVIMG_20250504_145247.jpg
+        date: "2025-05-04"
+        caption: "Shadows and waves on the beach"
+        captionZh: "海滩上的影子与浪花"
+      - src: /img/travel/dalian/20250504-大连-树间建筑与围栏_MVIMG_20250504_153754.jpg
+        date: "2025-05-04"
+        caption: "Building and fence among the trees"
+        captionZh: "树间建筑与围栏"
       - src: /img/travel/dalian/20250503-大连-海上日落_DSC04591.jpg
         date: "2025-05-03"
         caption: "Sunset at sea"
