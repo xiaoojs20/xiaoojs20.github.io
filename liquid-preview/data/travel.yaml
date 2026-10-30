@@ -3089,46 +3089,120 @@ visits:
     latitude: 24.48011
     longitude: 118.08535
     photos:
+      - src: /img/travel/xiamen/20200819-厦门-沙坡尾夜景_1675616490322.jpg
+        date: "2020-08-19"
+        caption: "Shapowei at night"
+        captionZh: "沙坡尾夜景"
+        album: "2020 trip"
+        albumZh: "2020 年"
+      - src: /img/travel/xiamen/20230204-厦门-爱厦门字牌_IMG_20230204_211106.jpg
+        date: "2023-02-04"
+        caption: "I love Xiamen sign"
+        captionZh: "爱厦门字牌"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230205-厦门-歌曲主题墙面_IMG_20230205_092757.jpg
+        date: "2023-02-05"
+        caption: "Music-themed wall"
+        captionZh: "歌曲主题墙面"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230205-厦门-墙边花草_IMG_20230205_112347.jpg
+        date: "2023-02-05"
+        caption: "Flowers by a wall"
+        captionZh: "墙边花草"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230205-厦门-室内鱼形装饰_IMG_20230205_115507.jpg
+        date: "2023-02-05"
+        caption: "Fish-shaped decoration indoors"
+        captionZh: "室内鱼形装饰"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230205-厦门-雨中海边人物_IMG_20230205_125124.jpg
+        date: "2023-02-05"
+        caption: "People by the sea in the rain"
+        captionZh: "雨中海边人物"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230205-厦门-猫街摆件_IMG_20230205_202948.jpg
+        date: "2023-02-05"
+        caption: "Cat decorations on Cat Street"
+        captionZh: "猫街摆件"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230206-厦门-湖中亭与倒影_IMG_20230206_092514.jpg
+        date: "2023-02-06"
+        caption: "Pavilion and reflection on a lake"
+        captionZh: "湖中亭与倒影"
+        album: "2023 trip"
+        albumZh: "2023 年"
+      - src: /img/travel/xiamen/20230206-厦门-白色花朵_IMG_20230206_100117.jpg
+        date: "2023-02-06"
+        caption: "White flowers"
+        captionZh: "白色花朵"
+        album: "2023 trip"
+        albumZh: "2023 年"
       - src: /img/travel/xiamen/20200818-厦门-厦门海滨雕塑_20200818-DSC00121.jpg
         date: "2020-08-18"
         caption: "Waterfront sculpture in Xiamen"
         captionZh: "厦门海滨雕塑"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200818-厦门-厦门海上帆船_20200818-DSC00143.jpg
         date: "2020-08-18"
         caption: "Sailboat off Xiamen"
         captionZh: "厦门海上帆船"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200818-厦门-厦门街头店铺_20200818-DSC00174.jpg
         date: "2020-08-18"
         caption: "Shop in Xiamen"
         captionZh: "厦门街头店铺"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200818-厦门-厦门街头墙绘_20200818-DSC00176.jpg
         date: "2020-08-18"
         caption: "Street mural in Xiamen"
         captionZh: "厦门街头墙绘"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200819-厦门-鼓浪屿海岸_20200819-DSC00221.jpg
         date: "2020-08-19"
         caption: "Gulangyu waterfront"
         captionZh: "鼓浪屿海岸"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200819-厦门-鼓浪屿老建筑_20200819-DSC00229.jpg
         date: "2020-08-19"
         caption: "Historic architecture on Gulangyu"
         captionZh: "鼓浪屿老建筑"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200819-厦门-鼓浪屿海景_20200819-DSC00347.jpg
         date: "2020-08-19"
         caption: "Sea view from Gulangyu"
         captionZh: "鼓浪屿海景"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200819-厦门-鼓浪屿与厦门_20200819-DSC00357.jpg
         date: "2020-08-19"
         caption: "Gulangyu and Xiamen skyline"
         captionZh: "鼓浪屿与厦门"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200819-厦门-鼓浪屿山顶远眺_20200819-DSC00367.jpg
         date: "2020-08-19"
         caption: "View from Gulangyu"
         captionZh: "鼓浪屿山顶远眺"
+        album: "2020 trip"
+        albumZh: "2020 年"
       - src: /img/travel/xiamen/20200819-厦门-厦门海岸与礁石_20200819-DSC00392.jpg
         date: "2020-08-19"
         caption: "Rocks along the Xiamen coast"
         captionZh: "厦门海岸与礁石"
+        album: "2020 trip"
+        albumZh: "2020 年"
   - id: shanghai
     group: shanghai
     geoGroup: china
