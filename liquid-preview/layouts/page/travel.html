@@ -13,8 +13,22 @@
   </header>
   <div class="travel-layout">
     <section class="travel-map-card" aria-label="{{ cond $zh "旅行地图" "Travel map" }}">
-      <div class="travel-map-top"><div class="travel-map-heading"><span>{{ cond $zh "探索地图" "EXPLORE THE MAP" }}</span><span class="travel-map-flags" role="img" aria-label="{{ cond $zh "去过的国家和地区：中国、香港、澳门、日本、韩国、俄罗斯" "Places visited: China, Hong Kong, Macao, Japan, South Korea, Russia" }}">🇨🇳 🇭🇰 🇲🇴 🇯🇵 🇰🇷 🇷🇺</span></div><span data-travel-count></span></div>
-      <div class="travel-map" data-map="combined" role="region" aria-label="{{ cond $zh "全部旅行地点地图" "Map of all travel destinations" }}"></div>
+      <div class="travel-map-top"><div class="travel-map-heading"><span>{{ cond $zh "探索地图" "EXPLORE THE MAP" }}</span>
+        <div class="travel-map-flags" role="group" aria-label="{{ cond $zh "缩放到国家或地区" "Zoom to a country or region" }}">
+          {{ $destinations := slice
+            (dict "id" "china" "flag" "🇨🇳" "name" "China" "nameZh" "中国")
+            (dict "id" "hong-kong" "flag" "🇭🇰" "name" "Hong Kong" "nameZh" "香港")
+            (dict "id" "macao" "flag" "🇲🇴" "name" "Macao" "nameZh" "澳门")
+            (dict "id" "japan" "flag" "🇯🇵" "name" "Japan" "nameZh" "日本")
+            (dict "id" "south-korea" "flag" "🇰🇷" "name" "South Korea" "nameZh" "韩国")
+            (dict "id" "russia" "flag" "🇷🇺" "name" "Russia" "nameZh" "俄罗斯") }}
+          {{ range $destinations }}
+            {{ $name := cond $zh .nameZh .name }}
+            <button type="button" class="travel-map-flag" data-travel-country="{{ .id }}" aria-controls="travel-map" aria-label="{{ cond $zh (printf "缩放到%s" $name) (printf "Zoom to %s" $name) }}" title="{{ $name }}"><span aria-hidden="true">{{ .flag }}</span></button>
+          {{ end }}
+        </div>
+      </div><span data-travel-count></span></div>
+      <div id="travel-map" class="travel-map" data-map="combined" role="region" aria-label="{{ cond $zh "全部旅行地点地图" "Map of all travel destinations" }}"></div>
       <p class="travel-map-hint">{{ cond $zh "拖动或缩放地图 · 点击区域或地点查看相册" "Drag or zoom to explore · Select an area or marker to see its album" }}</p>
       <p class="travel-map-error" data-travel-error hidden>{{ cond $zh "地图边界暂时无法加载，地点列表仍可使用。" "Map boundaries are unavailable right now. You can still use the place list." }}</p>
     </section>

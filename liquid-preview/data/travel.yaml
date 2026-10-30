@@ -3090,34 +3090,37 @@ visits:
         date: "2024-08-02"
         caption: "A girl and a lamb on the grassland"
         captionZh: "草原上，女孩与小羊相伴"
-      - src: /img/travel/yili/20240802-伊犁-恰西山景_DSC02230.jpg
-        date: "2024-08-02"
-        caption: "Spruce forests and snowy peaks in Qiaxi Valley"
-        captionZh: "恰西山谷，云杉连着雪山"
-      - src: /img/travel/yili/20240802-伊犁-恰西河谷_DSC02238.jpg
-        date: "2024-08-02"
-        caption: "A stone bridge above Qiaxi’s mountain stream"
-        captionZh: "恰西河谷的石桥与急流"
-      - src: /img/travel/yili/20240802-伊犁-恰西山谷与营地_IMG_20240802_181426.jpg
-        date: "2024-08-02"
-        caption: "White tents scattered across Qiaxi’s alpine meadow"
-        captionZh: "恰西草原，白色帐篷散落山间"
-      - src: /img/travel/yili/20240802-伊犁-恰西骑马_IMG_20240802_181715.jpg
-        date: "2024-08-02"
-        caption: "A rider’s view of a Qiaxi trail"
-        captionZh: "马背上的恰西小路"
-      - src: /img/travel/yili/20240802-伊犁-恰西草原骑马_IMG_20240802_183815.jpg
-        date: "2024-08-02"
-        caption: "A horse’s mane above the open grassland"
-        captionZh: "低头看马鬃，抬头是草原"
-      - src: /img/travel/yili/20240802-伊犁-恰西草原暮色_IMG_20240802_190153.jpg
-        date: "2024-08-02"
-        caption: "Riders along a Qiaxi ridge at dusk"
-        captionZh: "恰西暮色，牧人立在山脊上"
+      - src: /img/travel/yili/20240731-伊犁-晃晃村_DSC01669.jpg
+        date: "2024-07-31"
+        caption: "Blue hand-painted lettering in Huanghuang Village"
+        captionZh: "晃晃村墙上的蓝色手写字"
+      - src: /img/travel/yili/20240731-伊犁-晃晃村薰衣草_DSC01694.jpg
+        date: "2024-07-31"
+        caption: "Purple lavender in Huanghuang Village"
+        captionZh: "晃晃村的紫色薰衣草"
+      - src: /img/travel/yili/20240731-伊犁-晃晃村向日葵_DSC01696.jpg
+        date: "2024-07-31"
+        caption: "Sunflowers catching the light in Huanghuang Village"
+        captionZh: "晃晃村，一束向阳的金黄"
+
+  - id: xinyuan
+    group: xinjiang
+    geoGroup: china
+    name: "Xinyuan"
+    nameZh: "新源"
+    region: "Xinjiang · Ili"
+    regionZh: "新疆 · 伊犁"
+    latitude: 43.4325912
+    longitude: 83.227674
+    # 与伊犁条目同属 2024 年 7—8 月的一次连续行程，仅拆分地点。
+    trips:
+      - start: "2024-08"
+        end: "2024-08"
+    photos:
       - src: /img/travel/yili/20240803-伊犁-草原午餐_IMG_20240803_124214.jpg
         date: "2024-08-03"
-        caption: "Lunch laid out inside an Ili yurt"
-        captionZh: "伊犁毡房里的丰盛午餐"
+        caption: "A generous lunch at my undergraduate roommate Xiao Ye’s home"
+        captionZh: "本科舍友小叶家中的丰盛午餐"
       - src: /img/travel/yili/20240803-伊犁-那拉提草原与雪山_DSC02257.jpg
         date: "2024-08-03"
         caption: "Nalati’s highland grassland and snowy peaks"
@@ -3166,18 +3169,46 @@ visits:
         date: "2024-08-03"
         caption: "Nalati’s mountain silhouettes after sunset"
         captionZh: "日落之后，那拉提山影渐深"
-      - src: /img/travel/yili/20240731-伊犁-晃晃村_DSC01669.jpg
-        date: "2024-07-31"
-        caption: "Blue hand-painted lettering in Huanghuang Village"
-        captionZh: "晃晃村墙上的蓝色手写字"
-      - src: /img/travel/yili/20240731-伊犁-晃晃村薰衣草_DSC01694.jpg
-        date: "2024-07-31"
-        caption: "Purple lavender in Huanghuang Village"
-        captionZh: "晃晃村的紫色薰衣草"
-      - src: /img/travel/yili/20240731-伊犁-晃晃村向日葵_DSC01696.jpg
-        date: "2024-07-31"
-        caption: "Sunflowers catching the light in Huanghuang Village"
-        captionZh: "晃晃村，一束向阳的金黄"
+
+  - id: gongliu
+    group: xinjiang
+    geoGroup: china
+    name: "Gongliu"
+    nameZh: "巩留"
+    region: "Xinjiang · Ili"
+    regionZh: "新疆 · 伊犁"
+    latitude: 43.4801666
+    longitude: 82.2289633
+    # 与伊犁条目同属 2024 年 7—8 月的一次连续行程，仅拆分地点。
+    trips:
+      - start: "2024-08"
+        end: "2024-08"
+    photos:
+      - src: /img/travel/yili/20240802-伊犁-恰西山景_DSC02230.jpg
+        date: "2024-08-02"
+        caption: "Spruce forests and snowy peaks in Qiaxi Valley"
+        captionZh: "恰西山谷，云杉连着雪山"
+      - src: /img/travel/yili/20240802-伊犁-恰西河谷_DSC02238.jpg
+        date: "2024-08-02"
+        caption: "A stone bridge above Qiaxi’s mountain stream"
+        captionZh: "恰西河谷的石桥与急流"
+      - src: /img/travel/yili/20240802-伊犁-恰西山谷与营地_IMG_20240802_181426.jpg
+        date: "2024-08-02"
+        caption: "White tents scattered across Qiaxi’s alpine meadow"
+        captionZh: "恰西草原，白色帐篷散落山间"
+      - src: /img/travel/yili/20240802-伊犁-恰西骑马_IMG_20240802_181715.jpg
+        date: "2024-08-02"
+        caption: "A rider’s view of a Qiaxi trail"
+        captionZh: "马背上的恰西小路"
+      - src: /img/travel/yili/20240802-伊犁-恰西草原骑马_IMG_20240802_183815.jpg
+        date: "2024-08-02"
+        caption: "A horse’s mane above the open grassland"
+        captionZh: "低头看马鬃，抬头是草原"
+      - src: /img/travel/yili/20240802-伊犁-恰西草原暮色_IMG_20240802_190153.jpg
+        date: "2024-08-02"
+        caption: "Riders along a Qiaxi ridge at dusk"
+        captionZh: "恰西暮色，牧人立在山脊上"
+
   - id: zhaosu
     group: xinjiang
     geoGroup: china
