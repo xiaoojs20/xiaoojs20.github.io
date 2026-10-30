@@ -138,12 +138,6 @@ visits:
         captionZh: "颐和园湖岸石景"
         album: "Summer Palace"
         albumZh: "颐和园"
-      - src: /img/travel/beijing/20230418-北京-颐和园湖光与远山_DSC02508.jpg
-        date: "2023-04-18"
-        caption: "Lake and distant hills at the Summer Palace"
-        captionZh: "颐和园湖光与远山"
-        album: "Summer Palace"
-        albumZh: "颐和园"
       - src: /img/travel/beijing/20230418-北京-颐和园桥上石狮_DSC02512.jpg
         date: "2023-04-18"
         caption: "Stone lions on a bridge at the Summer Palace"
@@ -196,18 +190,6 @@ visits:
         date: "2023-04-20"
         caption: "Campus building and flowers"
         captionZh: "北大校园建筑与花"
-        album: "Peking University"
-        albumZh: "北京大学"
-      - src: /img/travel/beijing/20230420-北京-北大校园塔楼_DSC02643.jpg
-        date: "2023-04-20"
-        caption: "Tower on the Peking University campus"
-        captionZh: "北大校园塔楼"
-        album: "Peking University"
-        albumZh: "北京大学"
-      - src: /img/travel/beijing/20230420-北京-北大光华管理学院_DSC02648.jpg
-        date: "2023-04-20"
-        caption: "Guanghua School of Management at Peking University"
-        captionZh: "北大光华管理学院"
         album: "Peking University"
         albumZh: "北京大学"
       - src: /img/travel/beijing/20230420-北京-北大校园长廊_DSC02655.jpg
@@ -912,12 +894,6 @@ visits:
         captionZh: "妙应寺白塔"
         album: "Miaoying Temple"
         albumZh: "妙应寺白塔"
-      - src: /img/travel/beijing/20240122-北京-妙应寺白塔_20240122-DSC05824.jpg
-        date: "2024-01-22"
-        caption: "White Pagoda at Miaoying Temple"
-        captionZh: "妙应寺白塔"
-        album: "Miaoying Temple"
-        albumZh: "妙应寺白塔"
       - src: /img/travel/beijing/20240122-北京-妙应寺白塔_20240122-DSC05824-2.jpg
         date: "2024-01-22"
         caption: "White Pagoda at Miaoying Temple"
@@ -942,42 +918,6 @@ visits:
         captionZh: "妙应寺白塔"
         album: "Miaoying Temple"
         albumZh: "妙应寺白塔"
-      - src: /img/travel/beijing/20240122-北京-妙应寺白塔_20240122-DSC05809.jpg
-        date: "2024-01-22"
-        caption: "White Pagoda at Miaoying Temple"
-        captionZh: "妙应寺白塔"
-        album: "Miaoying Temple"
-        albumZh: "妙应寺白塔"
-      - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_185932.jpg
-        date: "2024-01-20"
-        caption: "Peking University"
-        captionZh: "北京大学"
-        album: "Peking University"
-        albumZh: "北京大学"
-      - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_185932-2.jpg
-        date: "2024-01-20"
-        caption: "Peking University"
-        captionZh: "北京大学"
-        album: "Peking University"
-        albumZh: "北京大学"
-      - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_174615.jpg
-        date: "2024-01-20"
-        caption: "Peking University"
-        captionZh: "北京大学"
-        album: "Peking University"
-        albumZh: "北京大学"
-      - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_165728.jpg
-        date: "2024-01-20"
-        caption: "Peking University"
-        captionZh: "北京大学"
-        album: "Peking University"
-        albumZh: "北京大学"
-      - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_165646.jpg
-        date: "2024-01-20"
-        caption: "Peking University"
-        captionZh: "北京大学"
-        album: "Peking University"
-        albumZh: "北京大学"
       - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_165456.jpg
         date: "2024-01-20"
         caption: "Peking University"
@@ -1006,30 +946,6 @@ visits:
         date: "2024-01-16"
         caption: "Zhengyangmen at dusk"
         captionZh: "正阳门夜景"
-        album: "Zhengyangmen and Railway Museum"
-        albumZh: "正阳门与铁道博物馆"
-      - src: /img/travel/beijing/20240116-北京-中国铁道博物馆正阳门馆_20240116-DSC05793.jpg
-        date: "2024-01-16"
-        caption: "China Railway Museum Zhengyangmen branch"
-        captionZh: "中国铁道博物馆正阳门馆"
-        album: "Zhengyangmen and Railway Museum"
-        albumZh: "正阳门与铁道博物馆"
-      - src: /img/travel/beijing/20240116-北京-中国铁道博物馆正阳门馆_20240116-DSC05792.jpg
-        date: "2024-01-16"
-        caption: "China Railway Museum Zhengyangmen branch"
-        captionZh: "中国铁道博物馆正阳门馆"
-        album: "Zhengyangmen and Railway Museum"
-        albumZh: "正阳门与铁道博物馆"
-      - src: /img/travel/beijing/20240116-北京-中国铁道博物馆正阳门馆_20240116-DSC05789.jpg
-        date: "2024-01-16"
-        caption: "China Railway Museum Zhengyangmen branch"
-        captionZh: "中国铁道博物馆正阳门馆"
-        album: "Zhengyangmen and Railway Museum"
-        albumZh: "正阳门与铁道博物馆"
-      - src: /img/travel/beijing/20240116-北京-中国铁道博物馆正阳门馆_20240116-DSC05788.jpg
-        date: "2024-01-16"
-        caption: "China Railway Museum Zhengyangmen branch"
-        captionZh: "中国铁道博物馆正阳门馆"
         album: "Zhengyangmen and Railway Museum"
         albumZh: "正阳门与铁道博物馆"
       - src: /img/travel/beijing/20240116-北京-中国铁道博物馆正阳门馆_20240116-DSC05781.jpg
@@ -1098,12 +1014,6 @@ visits:
         captionZh: "天坛祈年殿"
         album: "Temple of Heaven"
         albumZh: "天坛"
-      - src: /img/travel/beijing/20240116-北京-天坛_20240116-DSC05726.jpg
-        date: "2024-01-16"
-        caption: "Temple of Heaven"
-        captionZh: "天坛"
-        album: "Temple of Heaven"
-        albumZh: "天坛"
       - src: /img/travel/beijing/20240116-北京-天坛祈年殿_20240116-DSC05720.jpg
         date: "2024-01-16"
         caption: "Hall of Prayer for Good Harvests at the Temple of Heaven"
@@ -1141,12 +1051,6 @@ visits:
         album: "Temple of Heaven"
         albumZh: "天坛"
       - src: /img/travel/beijing/20240116-北京-天坛_20240116-DSC05641.jpg
-        date: "2024-01-16"
-        caption: "Temple of Heaven"
-        captionZh: "天坛"
-        album: "Temple of Heaven"
-        albumZh: "天坛"
-      - src: /img/travel/beijing/20240116-北京-天坛_20240116-DSC05641-2.jpg
         date: "2024-01-16"
         caption: "Temple of Heaven"
         captionZh: "天坛"
@@ -1260,12 +1164,6 @@ visits:
         captionZh: "香山公园"
         album: "Fragrant Hills Park"
         albumZh: "香山公园"
-      - src: /img/travel/beijing/20231105-北京-香山公园_20231105-DSC05486.jpg
-        date: "2023-11-05"
-        caption: "Fragrant Hills Park"
-        captionZh: "香山公园"
-        album: "Fragrant Hills Park"
-        albumZh: "香山公园"
       - src: /img/travel/beijing/20231105-北京-香山公园_20231105-DSC05479.jpg
         date: "2023-11-05"
         caption: "Fragrant Hills Park"
@@ -1288,12 +1186,6 @@ visits:
         date: "2023-11-05"
         caption: "Autumn foliage at Fragrant Hills Park"
         captionZh: "香山红叶"
-        album: "Fragrant Hills Park"
-        albumZh: "香山公园"
-      - src: /img/travel/beijing/20231105-北京-香山公园_20231105-DSC05427.jpg
-        date: "2023-11-05"
-        caption: "Fragrant Hills Park"
-        captionZh: "香山公园"
         album: "Fragrant Hills Park"
         albumZh: "香山公园"
       - src: /img/travel/beijing/20231105-北京-香山红叶_20231105-DSC05417.jpg
@@ -1434,12 +1326,6 @@ visits:
         captionZh: "北京外国语大学"
         album: "Beijing Foreign Studies University"
         albumZh: "北京外国语大学"
-      - src: /img/travel/beijing/20230929-北京-北京外国语大学_20230929-DSC05000.jpg
-        date: "2023-09-29"
-        caption: "Beijing Foreign Studies University"
-        captionZh: "北京外国语大学"
-        album: "Beijing Foreign Studies University"
-        albumZh: "北京外国语大学"
       - src: /img/travel/beijing/20230929-北京-北京外国语大学_20230929-DSC04980.jpg
         date: "2023-09-29"
         caption: "Beijing Foreign Studies University"
@@ -1494,12 +1380,6 @@ visits:
         captionZh: "北京外国语大学图书馆"
         album: "Beijing Foreign Studies University"
         albumZh: "北京外国语大学"
-      - src: /img/travel/beijing/20230929-北京-北京外国语大学_20230929-DSC04922.jpg
-        date: "2023-09-29"
-        caption: "Beijing Foreign Studies University"
-        captionZh: "北京外国语大学"
-        album: "Beijing Foreign Studies University"
-        albumZh: "北京外国语大学"
       - src: /img/travel/beijing/20230929-北京-北京外国语大学_20230929-DSC04920.jpg
         date: "2023-09-29"
         caption: "Beijing Foreign Studies University"
@@ -1531,12 +1411,6 @@ visits:
         album: "Beijing Foreign Studies University"
         albumZh: "北京外国语大学"
       - src: /img/travel/beijing/20230929-北京-北京外国语大学_20230929-DSC04891.jpg
-        date: "2023-09-29"
-        caption: "Beijing Foreign Studies University"
-        captionZh: "北京外国语大学"
-        album: "Beijing Foreign Studies University"
-        albumZh: "北京外国语大学"
-      - src: /img/travel/beijing/20230929-北京-北京外国语大学_20230929-DSC04888.jpg
         date: "2023-09-29"
         caption: "Beijing Foreign Studies University"
         captionZh: "北京外国语大学"
@@ -1584,37 +1458,13 @@ visits:
         captionZh: "什刹海"
         album: "Shichahai"
         albumZh: "什刹海"
-      - src: /img/travel/beijing/20230928-北京-什刹海_20230928-DSC04853.jpg
-        date: "2023-09-28"
-        caption: "Shichahai"
-        captionZh: "什刹海"
-        album: "Shichahai"
-        albumZh: "什刹海"
       - src: /img/travel/beijing/20230928-北京-什刹海_20230928-DSC04849.jpg
         date: "2023-09-28"
         caption: "Shichahai"
         captionZh: "什刹海"
         album: "Shichahai"
         albumZh: "什刹海"
-      - src: /img/travel/beijing/20230928-北京-什刹海_20230928-DSC04841.jpg
-        date: "2023-09-28"
-        caption: "Shichahai"
-        captionZh: "什刹海"
-        album: "Shichahai"
-        albumZh: "什刹海"
       - src: /img/travel/beijing/20230928-北京-什刹海_20230928-DSC04814.jpg
-        date: "2023-09-28"
-        caption: "Shichahai"
-        captionZh: "什刹海"
-        album: "Shichahai"
-        albumZh: "什刹海"
-      - src: /img/travel/beijing/20230928-北京-什刹海_20230928-DSC04812.jpg
-        date: "2023-09-28"
-        caption: "Shichahai"
-        captionZh: "什刹海"
-        album: "Shichahai"
-        albumZh: "什刹海"
-      - src: /img/travel/beijing/20230928-北京-什刹海_20230928-DSC04807.jpg
         date: "2023-09-28"
         caption: "Shichahai"
         captionZh: "什刹海"
@@ -1758,25 +1608,7 @@ visits:
         captionZh: "圆明园"
         album: "Old Summer Palace"
         albumZh: "圆明园"
-      - src: /img/travel/beijing/20230722-北京-地球灯光装饰_20230722-DSC03407.jpg
-        date: "2023-07-22"
-        caption: "Illuminated globe"
-        captionZh: "地球灯光装饰"
-        album: "Great Wall"
-        albumZh: "长城"
       - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03405.jpg
-        date: "2023-07-22"
-        caption: "Great Wall"
-        captionZh: "长城"
-        album: "Great Wall"
-        albumZh: "长城"
-      - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03399.jpg
-        date: "2023-07-22"
-        caption: "Great Wall"
-        captionZh: "长城"
-        album: "Great Wall"
-        albumZh: "长城"
-      - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03386.jpg
         date: "2023-07-22"
         caption: "Great Wall"
         captionZh: "长城"
@@ -1788,31 +1620,13 @@ visits:
         captionZh: "长城"
         album: "Great Wall"
         albumZh: "长城"
-      - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03350.jpg
-        date: "2023-07-22"
-        caption: "Great Wall"
-        captionZh: "长城"
-        album: "Great Wall"
-        albumZh: "长城"
       - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03345.jpg
         date: "2023-07-22"
         caption: "Great Wall"
         captionZh: "长城"
         album: "Great Wall"
         albumZh: "长城"
-      - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03331.jpg
-        date: "2023-07-22"
-        caption: "Great Wall"
-        captionZh: "长城"
-        album: "Great Wall"
-        albumZh: "长城"
       - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03318.jpg
-        date: "2023-07-22"
-        caption: "Great Wall"
-        captionZh: "长城"
-        album: "Great Wall"
-        albumZh: "长城"
-      - src: /img/travel/beijing/20230722-北京-长城_20230722-DSC03317.jpg
         date: "2023-07-22"
         caption: "Great Wall"
         captionZh: "长城"
@@ -1830,12 +1644,6 @@ visits:
         captionZh: "颐和园昆明湖十七孔桥"
         album: "Summer Palace"
         albumZh: "颐和园"
-      - src: /img/travel/beijing/20230722-北京-颐和园_20230722-DSC03273.jpg
-        date: "2023-07-22"
-        caption: "Summer Palace"
-        captionZh: "颐和园"
-        album: "Summer Palace"
-        albumZh: "颐和园"
       - src: /img/travel/beijing/20230722-北京-颐和园_20230722-DSC03265.jpg
         date: "2023-07-22"
         caption: "Summer Palace"
@@ -1843,12 +1651,6 @@ visits:
         album: "Summer Palace"
         albumZh: "颐和园"
       - src: /img/travel/beijing/20230722-北京-颐和园_20230722-DSC03250.jpg
-        date: "2023-07-22"
-        caption: "Summer Palace"
-        captionZh: "颐和园"
-        album: "Summer Palace"
-        albumZh: "颐和园"
-      - src: /img/travel/beijing/20230722-北京-颐和园_20230722-DSC03248.jpg
         date: "2023-07-22"
         caption: "Summer Palace"
         captionZh: "颐和园"
@@ -3324,10 +3126,6 @@ visits:
         date: "2024-02-13"
         caption: "Macau Tower"
         captionZh: "澳门旅游塔"
-      - src: /img/travel/macao/20240213-澳门-澳门水岸_20240213-DSC06500.jpg
-        date: "2024-02-13"
-        caption: "Macao waterfront"
-        captionZh: "澳门水岸"
       - src: /img/travel/macao/20240213-澳门-街边商铺_20240213-DSC06524.jpg
         date: "2024-02-13"
         caption: "Street storefront"
@@ -3344,10 +3142,6 @@ visits:
         date: "2024-02-13"
         caption: "Macao Light Rapid Transit depot"
         captionZh: "澳门轻轨车厂"
-      - src: /img/travel/macao/20240213-澳门-澳门科技大学_20240213-DSC06554.jpg
-        date: "2024-02-13"
-        caption: "Macau University of Science and Technology"
-        captionZh: "澳门科技大学"
       - src: /img/travel/macao/20240213-澳门-澳门科技大学校园_20240213-DSC06556.jpg
         date: "2024-02-13"
         caption: "Campus of Macau University of Science and Technology"
@@ -3360,46 +3154,14 @@ visits:
         date: "2024-02-13"
         caption: "Macau University of Science and Technology sign"
         captionZh: "澳门科技大学标识"
-      - src: /img/travel/macao/20240213-澳门-校园门牌_20240213-DSC06580.jpg
-        date: "2024-02-13"
-        caption: "Campus sign"
-        captionZh: "校园门牌"
       - src: /img/travel/macao/20240213-澳门-澳门科技大学建筑_20240213-DSC06583.jpg
         date: "2024-02-13"
         caption: "University building in Macao"
         captionZh: "澳门科技大学建筑"
-      - src: /img/travel/macao/20240213-澳门-澳门科技大学图书馆_20240213-DSC06586.jpg
-        date: "2024-02-13"
-        caption: "Macau University of Science and Technology library"
-        captionZh: "澳门科技大学图书馆"
-      - src: /img/travel/macao/20240213-澳门-校园海报_20240213-DSC06590.jpg
-        date: "2024-02-13"
-        caption: "Campus poster"
-        captionZh: "校园海报"
-      - src: /img/travel/macao/20240213-澳门-小票_IMG_20240213_115635.jpg
-        date: "2024-02-13"
-        caption: "Receipt"
-        captionZh: "小票"
-      - src: /img/travel/macao/20240213-澳门-澳门城市建筑_20240213-DSC06598.jpg
-        date: "2024-02-13"
-        caption: "Macao architecture"
-        captionZh: "澳门城市建筑"
-      - src: /img/travel/macao/20240213-澳门-永利皇宫_20240213-DSC06604.jpg
-        date: "2024-02-13"
-        caption: "Wynn Palace"
-        captionZh: "永利皇宫"
       - src: /img/travel/macao/20240213-澳门-永利皇宫缆车_20240213-DSC06615.jpg
         date: "2024-02-13"
         caption: "Wynn Palace SkyCab"
         captionZh: "永利皇宫缆车"
-      - src: /img/travel/macao/20240213-澳门-街边小吃_IMG_20240213_123543.jpg
-        date: "2024-02-13"
-        caption: "Street snack"
-        captionZh: "街边小吃"
-      - src: /img/travel/macao/20240213-澳门-永利皇宫缆车与水景_20240213-DSC06627.jpg
-        date: "2024-02-13"
-        caption: "SkyCab and water at Wynn Palace"
-        captionZh: "永利皇宫缆车与水景"
       - src: /img/travel/macao/20240213-澳门-永利皇宫缆车站_20240213-DSC06657.jpg
         date: "2024-02-13"
         caption: "SkyCab station at Wynn Palace"
@@ -3408,10 +3170,6 @@ visits:
         date: "2024-02-13"
         caption: "Golden hotel sculpture"
         captionZh: "酒店金色雕塑"
-      - src: /img/travel/macao/20240213-澳门-酒店雕塑_20240213-DSC06680.jpg
-        date: "2024-02-13"
-        caption: "Hotel sculpture"
-        captionZh: "酒店雕塑"
       - src: /img/travel/macao/20240213-澳门-永利皇宫水景_20240213-DSC06687.jpg
         date: "2024-02-13"
         caption: "Wynn Palace water feature"
@@ -3448,10 +3206,6 @@ visits:
         date: "2024-02-13"
         caption: "Street sign at The Parisian Macao"
         captionZh: "巴黎人街牌"
-      - src: /img/travel/macao/20240213-澳门-酒店楼梯_20240213-DSC06773.jpg
-        date: "2024-02-13"
-        caption: "Hotel stairway"
-        captionZh: "酒店楼梯"
       - src: /img/travel/macao/20240213-澳门-酒店喷泉_20240213-DSC06779.jpg
         date: "2024-02-13"
         caption: "Hotel fountain"
@@ -3496,10 +3250,6 @@ visits:
         date: "2024-02-13"
         caption: "Canal at The Venetian Macao"
         captionZh: "威尼斯人运河"
-      - src: /img/travel/macao/20240213-澳门-商店陈列_20240213-DSC06846.jpg
-        date: "2024-02-13"
-        caption: "Shop display"
-        captionZh: "商店陈列"
       - src: /img/travel/macao/20240213-澳门-巴黎人铁塔夜景_20240213-DSC06849.jpg
         date: "2024-02-13"
         caption: "Eiffel Tower at The Parisian Macao at night"
@@ -3520,10 +3270,6 @@ visits:
         date: "2024-02-13"
         caption: "The Parisian Macao at night"
         captionZh: "澳门巴黎人夜景"
-      - src: /img/travel/macao/20240213-澳门-酒店金色雕像夜景_20240213-DSC06912.jpg
-        date: "2024-02-13"
-        caption: "Golden statue at night"
-        captionZh: "酒店金色雕像夜景"
       - src: /img/travel/macao/20240213-澳门-澳门酒店夜景_20240213-DSC06917.jpg
         date: "2024-02-13"
         caption: "Macao hotel at night"
@@ -3974,10 +3720,6 @@ visits:
         date: "2023-07-26"
         caption: "Landscape at Xiangshawan"
         captionZh: "响沙湾地貌"
-      - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾山谷_20230726-DSC03519.jpg
-        date: "2023-07-26"
-        caption: "Valley at Xiangshawan"
-        captionZh: "响沙湾山谷"
       - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾旋转飞椅_20230726-DSC03612.jpg
         date: "2023-07-26"
         caption: "Swing ride at Xiangshawan"
@@ -4042,18 +3784,6 @@ visits:
         date: "2023-07-27"
         caption: "Portrait at Subohan Grassland"
         captionZh: "苏泊罕大草原人像"
-      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕大草原标识_20230727-DSC03723.jpg
-        date: "2023-07-27"
-        caption: "Sign at Subohan Grassland"
-        captionZh: "苏泊罕大草原标识"
-      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕大草原雕塑_20230727-DSC03710.jpg
-        date: "2023-07-27"
-        caption: "Sculpture at Subohan Grassland"
-        captionZh: "苏泊罕大草原雕塑"
-      - src: /img/travel/ordos/20230727-鄂尔多斯-苏泊罕草原营地_20230727-DSC03766.jpg
-        date: "2023-07-27"
-        caption: "Camp at Subohan Grassland"
-        captionZh: "苏泊罕草原营地"
       - src: /img/travel/ordos/20230727-鄂尔多斯-草原传统服饰_20230727-DSC03776.jpg
         date: "2023-07-27"
         caption: "Traditional dress on the grassland"
@@ -4062,10 +3792,6 @@ visits:
         date: "2023-07-27"
         caption: "Grassland totems"
         captionZh: "草原图腾"
-      - src: /img/travel/ordos/20230727-鄂尔多斯-草原小狗_20230727-DSC03762.jpg
-        date: "2023-07-27"
-        caption: "Dog on the grassland"
-        captionZh: "草原小狗"
       - src: /img/travel/ordos/20230727-鄂尔多斯-草原小羊_20230727-DSC03720.jpg
         date: "2023-07-27"
         caption: "Lamb on the grassland"
@@ -4078,10 +3804,6 @@ visits:
         date: "2023-07-27"
         caption: "Riders on the grassland"
         captionZh: "草原骑手"
-      - src: /img/travel/ordos/20230727-鄂尔多斯-草原骑马_20230727-DSC03745.jpg
-        date: "2023-07-27"
-        caption: "Horseback riding on the grassland"
-        captionZh: "草原骑马"
       - src: /img/travel/ordos/20230727-鄂尔多斯-草原骑马体验_20230727-DSC03788.jpg
         date: "2023-07-27"
         caption: "Horseback riding experience"
@@ -4101,10 +3823,6 @@ visits:
         date: "2024-06-24"
         caption: "Traffic on the street"
         captionZh: "街道车流"
-      - src: /img/travel/qingdao/20240624-青岛-青岛灯饰_IMG_20240624_210042.jpg
-        date: "2024-06-24"
-        caption: "Qingdao light display"
-        captionZh: "青岛灯饰"
       - src: /img/travel/qingdao/20240625-青岛-银鱼巷_DSC08706.jpg
         date: "2024-06-25"
         caption: "Yinyu Lane"
@@ -4141,10 +3859,6 @@ visits:
         date: "2024-06-25"
         caption: "Museum poster"
         captionZh: "博物馆海报"
-      - src: /img/travel/qingdao/20240625-青岛-啤酒瓶展品_IMG_20240625_114931.jpg
-        date: "2024-06-25"
-        caption: "Bottles on display"
-        captionZh: "啤酒瓶展品"
       - src: /img/travel/qingdao/20240625-青岛-展馆海报_IMG_20240625_115154.jpg
         date: "2024-06-25"
         caption: "Exhibition poster"
@@ -4173,14 +3887,6 @@ visits:
         date: "2024-06-25"
         caption: "Drink by the street"
         captionZh: "街边饮品"
-      - src: /img/travel/qingdao/20240625-青岛-青岛街头建筑_IMG_20240625_131416.jpg
-        date: "2024-06-25"
-        caption: "Qingdao street architecture"
-        captionZh: "青岛街头建筑"
-      - src: /img/travel/qingdao/20240625-青岛-街边装饰_DSC08726.jpg
-        date: "2024-06-25"
-        caption: "Street decoration"
-        captionZh: "街边装饰"
       - src: /img/travel/qingdao/20240625-青岛-街边阳台_DSC08730.jpg
         date: "2024-06-25"
         caption: "Balconies by the street"
@@ -4201,10 +3907,6 @@ visits:
         date: "2024-06-25"
         caption: "Old town architecture"
         captionZh: "老城建筑"
-      - src: /img/travel/qingdao/20240625-青岛-街边小狗_DSC08772.jpg
-        date: "2024-06-25"
-        caption: "Dog by the street"
-        captionZh: "街边小狗"
       - src: /img/travel/qingdao/20240625-青岛-青岛栈桥回澜阁_DSC08790.jpg
         date: "2024-06-25"
         caption: "Huilan Pavilion on Zhanqiao Pier"
@@ -4221,10 +3923,6 @@ visits:
         date: "2024-06-25"
         caption: "Qingdao waterfront"
         captionZh: "青岛海滨"
-      - src: /img/travel/qingdao/20240625-青岛-海上摩托艇与浪花_DSC08857.jpg
-        date: "2024-06-25"
-        caption: "Jet ski and waves"
-        captionZh: "海上摩托艇与浪花"
       - src: /img/travel/qingdao/20240625-青岛-海上舰船_DSC08866.jpg
         date: "2024-06-25"
         caption: "Ship at sea"
@@ -4241,18 +3939,10 @@ visits:
         date: "2024-06-25"
         caption: "Building under the sky in Qingdao"
         captionZh: "青岛建筑与蓝天"
-      - src: /img/travel/qingdao/20240625-青岛-青岛红瓦城区_DSC08900-2.jpg
-        date: "2024-06-25"
-        caption: "Red rooftops in Qingdao"
-        captionZh: "青岛红瓦城区"
       - src: /img/travel/qingdao/20240625-青岛-青岛老城远景_DSC08900.jpg
         date: "2024-06-25"
         caption: "Distant view of Qingdao old town"
         captionZh: "青岛老城远景"
-      - src: /img/travel/qingdao/20240625-青岛-信号山与城区_DSC08920-2.jpg
-        date: "2024-06-25"
-        caption: "Signal Hill and the city"
-        captionZh: "信号山与城区"
       - src: /img/travel/qingdao/20240625-青岛-信号山远景_DSC08920.jpg
         date: "2024-06-25"
         caption: "Distant view of Signal Hill"
@@ -4293,10 +3983,6 @@ visits:
         date: "2024-06-26"
         caption: "Naval Museum"
         captionZh: "海军博物馆"
-      - src: /img/travel/qingdao/20240626-青岛-海岸岩石与标牌_DSC09058.jpg
-        date: "2024-06-26"
-        caption: "Coastal rocks and signs"
-        captionZh: "海岸岩石与标牌"
       - src: /img/travel/qingdao/20240626-青岛-海上游船_DSC09060.jpg
         date: "2024-06-26"
         caption: "Boat at sea"
@@ -4367,10 +4053,6 @@ visits:
         date: "2024-06-24"
         caption: "Climbing supplies"
         captionZh: "登山补给"
-      - src: /img/travel/taian/20240624-泰安-泰山夜空明月_DSC08596.jpg
-        date: "2024-06-24"
-        caption: "Moon above Mount Tai"
-        captionZh: "泰山夜空明月"
       - src: /img/travel/taian/20240624-泰安-泰山南天门_IMG_20240624_030819.jpg
         date: "2024-06-24"
         caption: "South Heaven Gate on Mount Tai"
@@ -4391,10 +4073,6 @@ visits:
         date: "2024-06-24"
         caption: "Sunrise and mountains at Mount Tai"
         captionZh: "泰山日出与群山"
-      - src: /img/travel/taian/20240624-泰安-泰山晨云_DSC08651.jpg
-        date: "2024-06-24"
-        caption: "Morning clouds at Mount Tai"
-        captionZh: "泰山晨云"
       - src: /img/travel/taian/20240624-泰安-泰山山顶远眺_DSC08655.jpg
         date: "2024-06-24"
         caption: "View from Mount Tai"
@@ -4781,18 +4459,10 @@ visits:
         date: "2025-01-14"
         caption: "Bottles of oil citrus juice"
         captionZh: "油柑汁饮品"
-      - src: /img/travel/shantou/20250114-汕头-汕头造型雪糕_MVIMG_20250114_211658.jpg
-        date: "2025-01-14"
-        caption: "A Shantou-shaped ice cream"
-        captionZh: "汕头造型雪糕"
       - src: /img/travel/shantou/20250114-汕头-汕头饮品与街景_MVIMG_20250114_212203.jpg
         date: "2025-01-14"
         caption: "A drink and street scene in Shantou"
         captionZh: "汕头饮品与街景"
-      - src: /img/travel/shantou/20250114-汕头-大清邮政旧址门前_MVIMG_20250114_213648.jpg
-        date: "2025-01-14"
-        caption: "At the former Qing postal office"
-        captionZh: "大清邮政旧址门前"
   - id: xiamen
     group: fujian
     geoGroup: china
@@ -5213,18 +4883,6 @@ visits:
     latitude: 39.93675
     longitude: 119.59422
     photos:
-      - src: /img/travel/qinhuangdao/20240420-秦皇岛-北戴河站_IMG_20240420_113837.jpg
-        date: "2024-04-20"
-        caption: "Beidaihe Station"
-        captionZh: "北戴河站"
-      - src: /img/travel/qinhuangdao/20240420-秦皇岛-海边零食_IMG_20240420_121915.jpg
-        date: "2024-04-20"
-        caption: "Seaside snacks"
-        captionZh: "海边零食"
-      - src: /img/travel/qinhuangdao/20240420-秦皇岛-北戴河海鸥_DSC07601.jpg
-        date: "2024-04-20"
-        caption: "Seagulls over Beidaihe"
-        captionZh: "北戴河海鸥"
       - src: /img/travel/qinhuangdao/20240420-秦皇岛-北戴河海鸟_DSC07623.jpg
         date: "2024-04-20"
         caption: "Seabird over Beidaihe"
@@ -5233,10 +4891,6 @@ visits:
         date: "2024-04-20"
         caption: "Beidaihe coastline"
         captionZh: "北戴河海岸"
-      - src: /img/travel/qinhuangdao/20240420-秦皇岛-海鸥与天空_DSC07637.jpg
-        date: "2024-04-20"
-        caption: "Seagull against the sky"
-        captionZh: "海鸥与天空"
       - src: /img/travel/qinhuangdao/20240420-秦皇岛-北戴河海滨建筑_DSC07652.jpg
         date: "2024-04-20"
         caption: "Beidaihe waterfront architecture"
@@ -5257,10 +4911,6 @@ visits:
         date: "2024-04-20"
         caption: "Seagull skimming the water"
         captionZh: "海鸥掠水"
-      - src: /img/travel/qinhuangdao/20240420-秦皇岛-海鸥群_DSC07697.jpg
-        date: "2024-04-20"
-        caption: "Flock of seagulls"
-        captionZh: "海鸥群"
       - src: /img/travel/qinhuangdao/20240420-秦皇岛-海岸群鸟_DSC07722.jpg
         date: "2024-04-20"
         caption: "Birds by the shore"
@@ -5293,10 +4943,6 @@ visits:
         date: "2024-04-20"
         caption: "Shell souvenirs"
         captionZh: "贝壳纪念品"
-      - src: /img/travel/qinhuangdao/20240420-秦皇岛-海鲜市场_IMG_20240420_203259.jpg
-        date: "2024-04-20"
-        caption: "Seafood market"
-        captionZh: "海鲜市场"
       - src: /img/travel/qinhuangdao/20240421-秦皇岛-海滨晨曦与人群_DSC07833.jpg
         date: "2024-04-21"
         caption: "People by the sea before sunrise"
@@ -5329,18 +4975,6 @@ visits:
         date: "2024-04-21"
         caption: "Birds on the water"
         captionZh: "水面小鸟"
-      - src: /img/travel/qinhuangdao/20240421-秦皇岛-海鲜摊位_IMG_20240421_121024.jpg
-        date: "2024-04-21"
-        caption: "Seafood stall"
-        captionZh: "海鲜摊位"
-      - src: /img/travel/qinhuangdao/20240421-秦皇岛-海鲜市场水箱_IMG_20240421_121112.jpg
-        date: "2024-04-21"
-        caption: "Seafood tanks"
-        captionZh: "海鲜市场水箱"
-      - src: /img/travel/qinhuangdao/20240421-秦皇岛-海鲜餐食_IMG_20240421_131717.jpg
-        date: "2024-04-21"
-        caption: "Seafood meal"
-        captionZh: "海鲜餐食"
       - src: /img/travel/qinhuangdao/20240421-秦皇岛-海滨建筑_DSC07942.jpg
         date: "2024-04-21"
         caption: "Waterfront architecture"
@@ -5349,10 +4983,6 @@ visits:
         date: "2024-04-21"
         caption: "Street storefront"
         captionZh: "街边店铺"
-      - src: /img/travel/qinhuangdao/20240421-秦皇岛-街边建筑色彩_DSC08034.jpg
-        date: "2024-04-21"
-        caption: "Colourful street architecture"
-        captionZh: "街边建筑色彩"
   - id: tianjin
     group: tianjin
     geoGroup: china
@@ -5746,10 +5376,6 @@ visits:
         date: "2023-04-29"
         caption: "Yanji street at night"
         captionZh: "延吉夜间街景"
-      - src: /img/travel/yanbian/20230429-延边-延吉人民公园_20230429-DSC02752.jpg
-        date: "2023-04-29"
-        caption: "People’s Park in Yanji"
-        captionZh: "延吉人民公园"
       - src: /img/travel/yanbian/20230429-延边-延吉街道灯光_20230429-DSC02759.jpg
         date: "2023-04-29"
         caption: "Yanji street lights"
@@ -5764,14 +5390,6 @@ visits:
     latitude: 42.86260
     longitude: 130.36600
     photos:
-      - src: /img/travel/yanbian/20230430-延边-延边民俗村入口_20230430-DSC02824.jpg
-        date: "2023-04-30"
-        caption: "Entrance to a folk village in Yanbian"
-        captionZh: "延边民俗村入口"
-      - src: /img/travel/yanbian/20230430-延边-延边民俗村_20230430-DSC02826.jpg
-        date: "2023-04-30"
-        caption: "Folk village in Yanbian"
-        captionZh: "延边民俗村"
       - src: /img/travel/yanbian/20230430-延边-民俗村装饰_20230430-DSC02838.jpg
         date: "2023-04-30"
         caption: "Folk village decoration"
@@ -5780,10 +5398,6 @@ visits:
         date: "2023-04-30"
         caption: "Traditional Korean-style house"
         captionZh: "朝鲜族传统民居"
-      - src: /img/travel/yanbian/20230430-延边-民俗村室内陈设_20230430-DSC02847.jpg
-        date: "2023-04-30"
-        caption: "Folk village interior"
-        captionZh: "民俗村室内陈设"
       - src: /img/travel/yanbian/20230430-延边-民俗村广场_20230430-DSC02852.jpg
         date: "2023-04-30"
         caption: "Folk village square"
@@ -5792,10 +5406,6 @@ visits:
         date: "2023-04-30"
         caption: "Flowers on a branch"
         captionZh: "树枝花朵"
-      - src: /img/travel/yanbian/20230430-延边-边境观景台_20230430-DSC02861.jpg
-        date: "2023-04-30"
-        caption: "Border viewing platform"
-        captionZh: "边境观景台"
       - src: /img/travel/yanbian/20230430-延边-延边山野_20230430-DSC02865.jpg
         date: "2023-04-30"
         caption: "Yanbian countryside"
@@ -5828,10 +5438,6 @@ visits:
         date: "2023-04-30"
         caption: "Yanbian valley"
         captionZh: "延边山谷"
-      - src: /img/travel/yanbian/20230430-延边-民俗博物馆_20230430-DSC02909.jpg
-        date: "2023-04-30"
-        caption: "Folk museum"
-        captionZh: "民俗博物馆"
       - src: /img/travel/yanbian/20230430-延边-边境河畔建筑_20230430-DSC02915.jpg
         date: "2023-04-30"
         caption: "Building by the border river"
