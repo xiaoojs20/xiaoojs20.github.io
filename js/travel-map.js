@@ -16,9 +16,17 @@
   const countText = n => text(`${n} 个地点`, `${n} ${n===1?'place':'places'}`);
   app.querySelector('[data-travel-count]').textContent=countText(visits.length);
   const colors = () => document.documentElement.dataset.scheme === 'dark'
-    ? {land:'#53605f', border:'#75817d', line:'#7b8881', visited:'#da9877', stroke:'#f0bc9d'}
-    : {land:'#e9ece7', border:'#cbd3cd', line:'#c8d0c9', visited:'#edab89', stroke:'#bd7558'};
+    ? {land:'#53605f', border:'#75817d', line:'#7b8881', visited:'#da9877', stroke:'#f0bc9d', selected:'#62c9bd', selectedStroke:'#b7eee7'}
+    : {land:'#e9ece7', border:'#cbd3cd', line:'#c8d0c9', visited:'#edab89', stroke:'#bd7558', selected:'#399b91', selectedStroke:'#176d68'};
   const maps={};
+  let selectedId=null;
+  const refreshSelection = () => {
+    const c=colors();
+    Object.values(maps).forEach(item=>{
+      item.areas?.eachLayer(layer=>{const selected=layer.feature.properties.id===selectedId;layer.setStyle({color:selected?c.selectedStroke:c.stroke,fillColor:selected?c.selected:c.visited,weight:selected?2:1.5,fillOpacity:selected?.85:.65})});
+      item.markers.eachLayer(marker=>marker.getElement()?.classList.toggle('travel-pin--selected',marker.options.visitId===selectedId && selectedId!==null));
+    });
+  };
   const showPhoto = photo => {
     const image=lightbox.querySelector('[data-travel-lightbox-image]');
     const caption=(zh && photo.captionZh)||photo.caption||'';
@@ -27,6 +35,7 @@
     if(typeof lightbox.showModal==='function') lightbox.showModal();
   };
   const showPlace = (visit,demo=false) => {
+    selectedId=visit.id; refreshSelection();
     reset.hidden=false; content.replaceChildren();
     if(demo)content.append(make('span','travel-detail-label',text('示例 · 非真实行程','Example · not a real trip')));
     content.append(make('h2','',nameOf(visit)));
@@ -56,7 +65,7 @@
     const markers=L.layerGroup().addTo(map);maps[scope]={map,markers};
     visits.forEach(v=>{
       const icon=markerIcon();
-      L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),keyboard:true}).addTo(markers).on('click',()=>onSelect(v));
+      L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),keyboard:true,visitId:v.id}).addTo(markers).on('click',()=>onSelect(v));
     });
   });
   const areaSize = feature => {let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;const scan=x=>{if(Array.isArray(x)&&typeof x[0]==='number'){minX=Math.min(minX,x[0]);maxX=Math.max(maxX,x[0]);minY=Math.min(minY,x[1]);maxY=Math.max(maxY,x[1])}else if(Array.isArray(x))x.forEach(scan)};scan(feature.geometry.coordinates);return (maxX-minX)*(maxY-minY)};
@@ -68,12 +77,14 @@
       item.boundaries=L.geoJSON(lines,{interactive:false,style:{color:c.line,weight:.65,opacity:.8}}).addTo(item.map);
       item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const visit=byId.get(feature.properties.id);layer.bindTooltip(nameOf(visit));layer.on('click',()=>onSelect(visit))}}).addTo(item.map);
     });
+    refreshSelection();
   }).catch(()=>{app.querySelector('[data-travel-error]').hidden=false});
-  new MutationObserver(()=>{const c=colors();Object.values(maps).forEach(item=>{item.base?.setStyle({color:c.border,fillColor:c.land});item.boundaries?.setStyle({color:c.line});item.areas?.setStyle({color:c.stroke,fillColor:c.visited})})}).observe(document.documentElement,{attributes:true,attributeFilter:['data-scheme']});
+  new MutationObserver(()=>{const c=colors();Object.values(maps).forEach(item=>{item.base?.setStyle({color:c.border,fillColor:c.land});item.boundaries?.setStyle({color:c.line});});refreshSelection()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-scheme']});
   const focusPlace = visit => {const map=maps.combined.map;map.setView([Number(visit.latitude),Number(visit.longitude)],Math.max(map.getZoom(),5));showPlace(visit)};
   let demoMarker;
   const expandedGroups=new Set();
   const showList = () => {
+    selectedId=null; refreshSelection();
     if(demoMarker){maps.combined.markers.removeLayer(demoMarker);demoMarker=null}
     reset.hidden=true;content.replaceChildren();content.append(make('h2','',text('每一段旅程','Every journey')));
     content.append(make('p','',visits.length?text('展开地区，选择一个地点查看照片。','Open a region and choose a place to view its photos.'):text('旅行记录还在慢慢整理。','My travel journal is still taking shape.')));
@@ -92,7 +103,7 @@
       locations.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));list.append(btn)});
       section.append(list);content.append(section);
     });
-    if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=markerIcon(true);demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v)}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
+    if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=markerIcon(true);demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),visitId:v.id}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
   };
   reset.addEventListener('click',showList);
   lightbox.querySelector('[data-travel-close]').addEventListener('click',()=>lightbox.close());
