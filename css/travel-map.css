@@ -7,6 +7,8 @@
 .travel-layout { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(240px,1fr); gap:18px; align-items:start; }
 .travel-map-card,.travel-panel { padding:18px; border-radius:26px; background:var(--card-background); box-shadow:var(--shadow-l1); }
 .travel-map-top,.travel-panel-top { display:flex; justify-content:space-between; align-items:center; gap:8px; margin:2px 3px 14px; }
+.travel-map-heading { display:flex; align-items:center; flex-wrap:wrap; gap:6px 12px; min-width:0; }
+.travel-map-flags { font-size:1.5rem; letter-spacing:0; line-height:1.3; white-space:nowrap; }
 .travel-map-top [data-travel-count] { color:var(--card-text-color-secondary); letter-spacing:0; font-weight:600; }
 .travel-map { height:clamp(380px,52vh,560px); border-radius:17px; overflow:hidden; background:#dce9eb; z-index:0; }
 .travel-map .leaflet-control-attribution { font-size:10px; }

@@ -13,7 +13,7 @@
   </header>
   <div class="travel-layout">
     <section class="travel-map-card" aria-label="{{ cond $zh "旅行地图" "Travel map" }}">
-      <div class="travel-map-top"><span>{{ cond $zh "探索地图" "EXPLORE THE MAP" }}</span><span data-travel-count></span></div>
+      <div class="travel-map-top"><div class="travel-map-heading"><span>{{ cond $zh "探索地图" "EXPLORE THE MAP" }}</span><span class="travel-map-flags" role="img" aria-label="{{ cond $zh "去过的国家和地区：中国、香港、澳门、日本、韩国、俄罗斯" "Places visited: China, Hong Kong, Macao, Japan, South Korea, Russia" }}">🇨🇳 🇭🇰 🇲🇴 🇯🇵 🇰🇷 🇷🇺</span></div><span data-travel-count></span></div>
       <div class="travel-map" data-map="combined" role="region" aria-label="{{ cond $zh "全部旅行地点地图" "Map of all travel destinations" }}"></div>
       <p class="travel-map-hint">{{ cond $zh "拖动或缩放地图 · 点击区域或地点查看相册" "Drag or zoom to explore · Select an area or marker to see its album" }}</p>
       <p class="travel-map-error" data-travel-error hidden>{{ cond $zh "地图边界暂时无法加载，地点列表仍可使用。" "Map boundaries are unavailable right now. You can still use the place list." }}</p>
