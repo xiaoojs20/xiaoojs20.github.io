@@ -53,6 +53,8 @@ I’m interested in large language models (LLMs), AI applications, search, ads a
 
 In spare moments, I enjoy technology and investing podcasts and books, interesting videos, and strength training. I started taking fitness seriously in October 2026, with the goal of building a lean physique, and have also tried making a tool to track my workouts. 💪
 
+My favorite anime are Dragon Ball and KochiKame.
+
 ### Travel and photography
 
 On longer breaks, I like traveling to experience new places, photographing landscapes, and going cycling with friends. I hope to learn more about the world on my travels, rather than simply come home with photos, and I’m curious about the history, culture, and everyday life of the places I visit. 🌍 Portrait photography is not quite my strong suit yet, but I’m happy to keep learning. 📷
