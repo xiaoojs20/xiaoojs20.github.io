@@ -194,25 +194,57 @@
   const focusPlace = visit => {const map=maps.combined.map;map.setView([Number(visit.latitude),Number(visit.longitude)],Math.max(map.getZoom(),5));showPlace(visit)};
   let demoMarker;
   const expandedGroups=new Set();
+  const expandedCountries=new Set();
   const showList = () => {
     selectedId=null; refreshSelection();
     if(demoMarker){maps.combined.markers.removeLayer(demoMarker);demoMarker=null}
     reset.hidden=true;content.replaceChildren();content.append(make('h2','',text('每一段旅程','Every journey')));
-    content.append(make('p','',visits.length?text('展开地区，选择一个地点查看照片。','Open a region and choose a place to view its photos.'):text('旅行记录还在慢慢整理。','My travel journal is still taking shape.')));
-    const groups=new Map();
-    visits.forEach(v=>{const id=v.group && data.groups?.[v.group] ? v.group : 'other';if(!groups.has(id))groups.set(id,[]);groups.get(id).push(v)});
+    content.append(make('p','',visits.length?text('展开国家和地区，选择一个地点查看照片。','Open a country or region and choose a place to view its photos.'):text('旅行记录还在慢慢整理。','My travel journal is still taking shape.')));
+    const countries=new Map();
+    visits.forEach(v=>{
+      const groupId=v.group && data.groups?.[v.group] ? v.group : 'other';
+      const countryId=v.geoGroup==='china' ? 'china' : groupId;
+      if(!countries.has(countryId))countries.set(countryId,new Map());
+      const groups=countries.get(countryId);
+      if(!groups.has(groupId))groups.set(groupId,[]);
+      groups.get(groupId).push(v);
+    });
     const configured=Object.keys(data.groups || {}).sort((a,b)=>(data.groups[a].order ?? 9999)-(data.groups[b].order ?? 9999));
-    const order=[...configured.filter(id=>groups.has(id)),...Array.from(groups.keys()).filter(id=>!configured.includes(id))];
-    order.forEach(id=>{
-      const locations=groups.get(id), info=data.groups?.[id] || {}, section=make('details','travel-group');
-      section.dataset.group=id;section.open=expandedGroups.has(id);
-      section.addEventListener('toggle',()=>{if(section.open)expandedGroups.add(id);else expandedGroups.delete(id)});
+    const countryOrder=['china',...configured.filter(id=>id!=='china'),...Array.from(countries.keys()).filter(id=>id!=='china' && !configured.includes(id))].filter(id=>countries.has(id));
+    const disclosure=(label,count,state,key,cls)=>{
+      const section=make('details',`travel-group ${cls}`);
+      section.open=state.has(key);
+      section.addEventListener('toggle',()=>{if(section.open)state.add(key);else state.delete(key)});
       const summary=make('summary','travel-group__header');
-      summary.append(make('strong','',(zh && info.nameZh)||info.name||text('其他地点','Other places')),make('span','travel-group__count',countText(locations.length)),make('span','travel-group__chevron','›'));
+      summary.append(make('strong','',label),make('span','travel-group__count',countText(count)),make('span','travel-group__chevron','›'));
       section.append(summary);
+      return section;
+    };
+    const placeList=locations=>{
       const list=make('div','travel-group__places');
       locations.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date,photoCountText(photosOf(v).length)].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));list.append(btn)});
-      section.append(list);content.append(section);
+      return list;
+    };
+    countryOrder.forEach(countryId=>{
+      const groups=countries.get(countryId);
+      const locations=Array.from(groups.values()).flat();
+      const info=data.groups?.[countryId] || {};
+      const label=countryId==='china'?text('中国','China'):(zh && info.nameZh)||info.name||text('其他地点','Other places');
+      const country=disclosure(label,locations.length,expandedCountries,countryId,'travel-country');
+      country.dataset.country=countryId;
+      if(groups.size===1 && groups.has(countryId))country.append(placeList(locations));
+      else {
+        const regions=make('div','travel-country__regions');
+        const order=[...configured.filter(id=>groups.has(id)),...Array.from(groups.keys()).filter(id=>!configured.includes(id))];
+        order.forEach(id=>{
+          const info=data.groups?.[id] || {};
+          const region=disclosure((zh && info.nameZh)||info.name||text('其他地点','Other places'),groups.get(id).length,expandedGroups,`${countryId}/${id}`,'travel-region');
+          region.dataset.group=id;
+          region.append(placeList(groups.get(id)));regions.append(region);
+        });
+        country.append(regions);
+      }
+      content.append(country);
     });
     if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=markerIcon(true);demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),visitId:v.id}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
   };

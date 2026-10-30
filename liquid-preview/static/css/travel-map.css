@@ -95,6 +95,11 @@ html[data-scheme="dark"] .travel-map { background:#34484b; }
 .travel-group__header strong { flex:1; font-size:1.4rem; }
 .travel-group__count { color:var(--card-text-color-secondary); font-size:1.15rem; }
 .travel-group__chevron { color:var(--card-text-color-secondary); font-size:2rem; line-height:1; transition:transform .2s ease; }
-.travel-group[open] .travel-group__chevron { transform:rotate(90deg); }
+.travel-group[open] > .travel-group__header > .travel-group__chevron { transform:rotate(90deg); }
 .travel-group__places { padding:0 8px 8px; }
 .travel-group__places .travel-place { margin:5px 0 0; padding:11px; background:var(--card-background); }
+.travel-country > .travel-group__header strong { font-size:1.5rem; }
+.travel-country__regions { padding:0 8px 8px; }
+.travel-country__regions .travel-region { background:var(--card-background); }
+.travel-country__regions .travel-region:last-child { margin-bottom:0; }
+.travel-region .travel-place { background:var(--card-background-selected); }
