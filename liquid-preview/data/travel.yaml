@@ -1716,6 +1716,90 @@ visits:
         captionZh: "冬日晴空下的明陵楼门"
         album: "Ming Tombs"
         albumZh: "明十三陵"
+      - src: /img/travel/beijing/20251019-北京-奥森秋日百日菊.jpg
+        date: "2025-10-19"
+        caption: "Zinnias in full colour under Olympic Forest Park’s autumn sun"
+        captionZh: "奥森秋阳下，百日菊开得正热闹"
+        album: "Olympic Forest Park"
+        albumZh: "奥林匹克森林公园"
+      - src: /img/travel/beijing/20251019-北京-奥森逆光波斯菊.jpg
+        date: "2025-10-19"
+        caption: "Cosmos catching the autumn light in Olympic Forest Park"
+        captionZh: "奥森的波斯菊，迎着秋光轻轻摇晃"
+        album: "Olympic Forest Park"
+        albumZh: "奥林匹克森林公园"
+      - src: /img/travel/beijing/20251019-北京-奥森粉黛花海.jpg
+        date: "2025-10-19"
+        caption: "Pink muhly grass softening autumn in Olympic Forest Park"
+        captionZh: "奥森粉黛，把秋天染成温柔的粉色"
+        album: "Olympic Forest Park"
+        albumZh: "奥林匹克森林公园"
+      - src: /img/travel/beijing/20251019-北京-奥森粉黛间留影.jpg
+        date: "2025-10-19"
+        caption: "A moment among Olympic Forest Park’s pink muhly grass"
+        captionZh: "把这一刻，留在奥森的粉黛之间"
+        album: "Olympic Forest Park"
+        albumZh: "奥林匹克森林公园"
+      - src: /img/travel/beijing/20251019-北京-奥森湖畔秋日留影.jpg
+        date: "2025-10-19"
+        caption: "An autumn portrait beside the lake in Olympic Forest Park"
+        captionZh: "奥森湖畔，树影与秋色相伴"
+        album: "Olympic Forest Park"
+        albumZh: "奥林匹克森林公园"
+      - src: /img/travel/beijing/20251212-北京-清华园新雪足迹.jpg
+        date: "2025-12-12"
+        caption: "Footprints tracing a line through fresh snow at Tsinghua"
+        captionZh: "清华园新雪，脚印写下一行冬天"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251212-北京-清华园雪夜灯影.jpg
+        date: "2025-12-12"
+        caption: "Warm lamplight along a snowy evening path at Tsinghua"
+        captionZh: "清华园雪夜，路灯为归途添一束暖光"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251212-北京-清华园夜色雪人.jpg
+        date: "2025-12-12"
+        caption: "A smiling snowman keeping watch over a winter night at Tsinghua"
+        captionZh: "清华园的雪人，笑着守候冬夜"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251212-北京-清华园雪地小鸭.jpg
+        date: "2025-12-12"
+        caption: "Rows of tiny snow ducks lined up at Tsinghua"
+        captionZh: "清华园雪地里，一排小鸭整装待发"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251213-北京-清华园球场大雪人.jpg
+        date: "2025-12-13"
+        caption: "A giant snowman in the sunshine on Tsinghua’s sports field"
+        captionZh: "清华园球场，阳光下的大雪人"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251213-北京-清华园雪人与童趣.jpg
+        date: "2025-12-13"
+        caption: "Two little figures beside a snowman at Tsinghua"
+        captionZh: "清华园的冬天，雪人身旁的两个小小身影"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251213-北京-清华园尖帽雪人.jpg
+        date: "2025-12-13"
+        caption: "A pointed-hat snowman basking in Tsinghua’s winter sun"
+        captionZh: "清华园雪人，戴上尖帽迎着冬阳"
+        album: "Tsinghua University"
+        albumZh: "清华大学"
+      - src: /img/travel/beijing/20251225-北京-三里屯太古里圣诞灯树.jpg
+        date: "2025-12-25"
+        caption: "Golden ribbons of light at Taikoo Li Sanlitun on Christmas night"
+        captionZh: "三里屯太古里，金色灯带绕出圣诞心情"
+        album: "Sanlitun"
+        albumZh: "三里屯"
+      - src: /img/travel/beijing/20251225-北京-三里屯金色圣诞树.jpg
+        date: "2025-12-25"
+        caption: "Golden ornaments glowing on a Christmas tree in Sanlitun"
+        captionZh: "三里屯的圣诞树，把金色星光挂满枝头"
+        album: "Sanlitun"
+        albumZh: "三里屯"
   - id: datong
     group: shanxi
     geoGroup: china
@@ -2586,6 +2670,82 @@ visits:
         date: "2026-02-09"
         caption: "A speedboat tracing a white curve across the sea"
         captionZh: "快艇在济州海面画出白弧"
+      - src: /img/travel/jeju/20260207-济州岛-道头洞彩虹海岸合影.jpg
+        date: "2026-02-07"
+        caption: "A portrait between sea and sky on Dodu-dong’s Rainbow Coastal Road"
+        captionZh: "道头洞彩虹海岸，把合影留在海天之间"
+      - src: /img/travel/jeju/20260209-济州岛-汉拿山雪林留影.jpg
+        date: "2026-02-09"
+        caption: "A portrait beside snow-covered trees on Hallasan"
+        captionZh: "汉拿山雪林，在一树白雪旁留影"
+      - src: /img/travel/jeju/20260208-济州岛-涯月翰潭雪后海边街巷.jpg
+        date: "2026-02-08"
+        caption: "A snowy lane leading toward the waves at Handam in Aewol"
+        captionZh: "涯月翰潭，沿着薄雪小路走向海浪"
+      - src: /img/travel/jeju/20260208-济州岛-SunsetCliff海边彩窗墙.jpg
+        date: "2026-02-08"
+        caption: "Weathered shutters forming a colourful wall at Sunset Cliff in Aewol"
+        captionZh: "Sunset Cliff，旧窗拼出一面海边的彩色墙"
+      - src: /img/travel/jeju/20260208-济州岛-涯月窗边咖啡与雪海.jpg
+        date: "2026-02-08"
+        caption: "Coffee and cake beside a wintry sea in Aewol"
+        captionZh: "涯月窗边，一杯咖啡与一片冬海"
+      - src: /img/travel/jeju/20260208-济州岛-涯月Avelop咖啡馆.jpg
+        date: "2026-02-08"
+        caption: "Avelop’s little café sign among stone walls and palms in Aewol"
+        captionZh: "涯月 Avelop，石墙与棕榈间的一块小招牌"
+      - src: /img/travel/jeju/20260208-济州岛-翰潭海岸浪花与风机.jpg
+        date: "2026-02-08"
+        caption: "Wind turbines beyond the breaking waves along Handam’s coast"
+        captionZh: "翰潭海岸，风机立在浪线尽头"
+      - src: /img/travel/jeju/20260208-济州岛-翰潭海岸旧屋与海鸟.jpg
+        date: "2026-02-08"
+        caption: "An old coastal building and seabirds facing the sea at Handam"
+        captionZh: "翰潭海岸，旧屋与海鸟望着同一片海"
+      - src: /img/travel/jeju/20260209-济州岛-汉拿山1100高地雪林.jpg
+        date: "2026-02-09"
+        caption: "Snow-laden branches at Hallasan’s 1100 Highland"
+        captionZh: "汉拿山 1100 高地，枝头落满白色冬意"
+      - src: /img/travel/jeju/20260209-济州岛-1100高地雪中石爷爷.jpg
+        date: "2026-02-09"
+        caption: "A dol hareubang stone guardian wrapped in snow at 1100 Highland"
+        captionZh: "1100 高地的石爷爷，披着一身白雪"
+      - src: /img/travel/jeju/20260209-济州岛-1100高地白鹿像.jpg
+        date: "2026-02-09"
+        caption: "The white deer statue reaching toward the sky at 1100 Highland"
+        captionZh: "1100 高地，白鹿昂首望向云天"
+      - src: /img/travel/jeju/20260209-济州岛-大浦柱状节理海湾.jpg
+        date: "2026-02-09"
+        caption: "Pines and basalt framing a bay at Daepo Jusangjeolli"
+        captionZh: "大浦柱状节理，松林与玄武岩环抱海湾"
+      - src: /img/travel/jeju/20260209-济州岛-中门海岸玄武岩柱.jpg
+        date: "2026-02-09"
+        caption: "Basalt columns meeting the blue sea along the Jungmun coast"
+        captionZh: "中门海岸，玄武岩柱与碧海相接"
+      - src: /img/travel/jeju/20260209-济州岛-大浦柱状节理浪花.jpg
+        date: "2026-02-09"
+        caption: "Waves breaking against the angular basalt columns at Daepo Jusangjeolli"
+        captionZh: "大浦柱状节理，浪花拍过岩柱的棱角"
+      - src: /img/travel/jeju/20260207-济州岛-城山日出峰临海峭壁.jpg
+        date: "2026-02-07"
+        caption: "A deep blue cove beneath Seongsan Ilchulbong’s cliffs"
+        captionZh: "城山日出峰，峭壁下是一弯深蓝海湾"
+      - src: /img/travel/jeju/20260207-济州岛-涉地可支海岬步道.jpg
+        date: "2026-02-07"
+        caption: "A coastal path winding toward a break in the clouds at Seopjikoji"
+        captionZh: "涉地可支，海岬步道通向天光"
+      - src: /img/travel/jeju/20260207-济州岛-海景咖啡馆落地窗.jpg
+        date: "2026-02-07"
+        caption: "A wall of windows framing Jeju’s winter sea"
+        captionZh: "窗边的咖啡时光，面前是一整片冬海"
+      - src: /img/travel/jeju/20260208-济州岛-涯月雪后海边小路.jpg
+        date: "2026-02-08"
+        caption: "A snowy lane ending at Aewol’s rolling sea"
+        captionZh: "涯月雪后，小路尽头是翻涌的海"
+      - src: /img/travel/jeju/20260208-济州岛-翰潭海岸碧浪与屋舍.jpg
+        date: "2026-02-08"
+        caption: "Turquoise waves rolling around Handam’s seaside buildings"
+        captionZh: "翰潭海岸，碧浪围着屋舍涌来"
   - id: vladivostok
     group: russia
     geoGroup: international
@@ -3082,6 +3242,30 @@ visits:
         date: "2025-12-07"
         caption: "Jinan’s skyline viewed from the wooded hills"
         captionZh: "从山间远眺泉城天际线"
+      - src: /img/travel/jinan/20251207-济南-老商埠夹心胡同.jpg
+        date: "2025-12-07"
+        caption: "A giant red heart tucked into Jiaxin Hutong in Jinan’s old commercial quarter"
+        captionZh: "老商埠夹心胡同，把一颗红心藏进街巷"
+      - src: /img/travel/jinan/20251206-济南-趵突泉公园清泉倒影.jpg
+        date: "2025-12-06"
+        caption: "Trees reflected in the clear water of Baotu Spring Park"
+        captionZh: "趵突泉公园，清泉收下满树倒影"
+      - src: /img/travel/jinan/20251206-济南-趵突泉公园红叶与垂柳.jpg
+        date: "2025-12-06"
+        caption: "Red leaves and trailing willows beside Jinan’s spring water"
+        captionZh: "泉畔红叶与垂柳，留住济南的晚秋"
+      - src: /img/travel/jinan/20251207-济南-千佛山万佛洞佛像.jpg
+        date: "2025-12-07"
+        caption: "A Buddha head framed by rows of relief carvings in Qianfo Mountain’s Wanfo Cave"
+        captionZh: "千佛山万佛洞，佛首与千佛浮雕相映"
+      - src: /img/travel/jinan/20251207-济南-山东博物馆亚丑钺.jpg
+        date: "2025-12-07"
+        caption: "The expressive face of the Yachou bronze axe at Shandong Museum"
+        captionZh: "山东博物馆，亚丑钺的人面纹穿越岁月"
+      - src: /img/travel/jinan/20251207-济南-山东博物馆吴王夫差剑.jpg
+        date: "2025-12-07"
+        caption: "The bronze patina of King Fuchai’s sword at Shandong Museum"
+        captionZh: "吴王夫差剑，青铜锈色里的一段春秋"
   - id: hong-kong
     group: hong-kong
     geoGroup: china
@@ -3688,6 +3872,34 @@ visits:
         date: "2025-07-13"
         caption: "The yellow Librairie Avant-Garde sign in Nanjing"
         captionZh: "南京先锋书店的黄色标识"
+      - src: /img/travel/nanjing/20250712-南京-古鸡鸣寺黄墙山门.jpg
+        date: "2025-07-12"
+        caption: "Jiming Temple’s yellow entrance framed by summer greenery"
+        captionZh: "古鸡鸣寺，黄墙山门藏在绿荫里"
+      - src: /img/travel/nanjing/20250712-南京-鸡鸣寺外黄墙与树影.jpg
+        date: "2025-07-12"
+        caption: "A leafy tree against the yellow walls outside Jiming Temple"
+        captionZh: "鸡鸣寺外，一树绿荫映黄墙"
+      - src: /img/travel/nanjing/20250713-南京-先锋书店五台山店思想者.jpg
+        date: "2025-07-13"
+        caption: "The Thinker outside Librairie Avant-Garde’s Wutaishan bookshop"
+        captionZh: "先锋书店门前，思想者静坐书香里"
+      - src: /img/travel/nanjing/20250713-南京-先锋书店五台山店十字架.jpg
+        date: "2025-07-13"
+        caption: "Bookshelves leading toward the illuminated cross at Librairie Avant-Garde"
+        captionZh: "先锋书店，沿着书架走向那束光"
+      - src: /img/travel/nanjing/20250713-南京-先锋书店五台山店书海.jpg
+        date: "2025-07-13"
+        caption: "An afternoon among the books at Librairie Avant-Garde in Nanjing"
+        captionZh: "先锋书店，翻开一座城的阅读时光"
+      - src: /img/travel/nanjing/20250713-南京-先锋书店大地上的异乡者.jpg
+        date: "2025-07-13"
+        caption: "A pause among the books beneath Librairie Avant-Garde’s illuminated motto"
+        captionZh: "大地上的异乡者，在书页间短暂停留"
+      - src: /img/travel/nanjing/20250713-南京-南京总统府门楼.jpg
+        date: "2025-07-13"
+        caption: "Blue skies above the stone gateway of Nanjing’s Presidential Palace"
+        captionZh: "南京总统府，石门楼前仰望蓝天"
   - id: yanan
     group: shaanxi
     geoGroup: china
