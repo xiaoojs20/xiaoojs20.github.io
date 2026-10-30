@@ -37,9 +37,11 @@
   const showPlace = (visit,demo=false) => {
     selectedId=visit.id; refreshSelection();
     reset.hidden=false; content.replaceChildren();
-    if(demo)content.append(make('span','travel-detail-label',text('示例 · 非真实行程','Example · not a real trip')));
-    content.append(make('h2','',nameOf(visit)));
-    const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · '); if(meta)content.append(make('p','',meta));
+    const heading=make('div','travel-place-heading');
+    if(demo)heading.append(make('span','travel-detail-label',text('示例 · 非真实行程','Example · not a real trip')));
+    heading.append(make('h2','',nameOf(visit)));
+    const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · '); if(meta)heading.append(make('p','',meta));
+    content.append(heading);
     if(descOf(visit))content.append(make('p','',descOf(visit)));
     const photos=Array.isArray(visit.photos)?visit.photos.filter(p=>p && p.src):[];
     if(!photos.length)content.append(make('p','',text('这段旅程的照片还在整理中。','Photos from this journey are coming soon.')));

@@ -19,7 +19,7 @@
       <p class="travel-map-error" data-travel-error hidden>{{ cond $zh "地图边界暂时无法加载，地点列表仍可使用。" "Map boundaries are unavailable right now. You can still use the place list." }}</p>
     </section>
     <aside class="travel-panel" aria-live="polite">
-      <div class="travel-panel-top"><span>{{ cond $zh "旅途收藏" "TRAVEL JOURNAL" }}</span><button type="button" class="travel-reset" data-travel-reset hidden>{{ cond $zh "返回列表" "All places" }}</button></div>
+      <div class="travel-panel-top"><button type="button" class="travel-reset" data-travel-reset hidden>{{ cond $zh "返回列表" "All places" }}</button></div>
       <div data-travel-content></div>
     </aside>
   </div>
