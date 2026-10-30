@@ -16,8 +16,8 @@
   const countText = n => text(`${n} 个地点`, `${n} ${n===1?'place':'places'}`);
   app.querySelector('[data-travel-count]').textContent=countText(visits.length);
   const colors = () => document.documentElement.dataset.scheme === 'dark'
-    ? {land:'#53605f', border:'#75817d', line:'#7b8881', visited:'#da9877', stroke:'#f0bc9d', selected:'#62c9bd', selectedStroke:'#b7eee7'}
-    : {land:'#e9ece7', border:'#cbd3cd', line:'#c8d0c9', visited:'#edab89', stroke:'#bd7558', selected:'#399b91', selectedStroke:'#176d68'};
+    ? {land:'#53605f', border:'#75817d', line:'#7b8881', visited:'#da9877', stroke:'#f0bc9d', selected:'#83aef0', selectedStroke:'#c7dcff'}
+    : {land:'#e9ece7', border:'#cbd3cd', line:'#c8d0c9', visited:'#edab89', stroke:'#bd7558', selected:'#5687cd', selectedStroke:'#315da0'};
   const maps={};
   let selectedId=null;
   const refreshSelection = () => {
