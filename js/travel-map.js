@@ -46,15 +46,39 @@
     const photos=Array.isArray(visit.photos)?visit.photos.filter(p=>p && p.src):[];
     if(!photos.length)content.append(make('p','',text('这段旅程的照片还在整理中。','Photos from this journey are coming soon.')));
     else {
+      const hasAlbums=photos.some(photo=>photo.album && photo.albumZh);
+      const groupBy=hasAlbums?'album':null;
+      const groups=new Map();
+      if(groupBy)photos.forEach(photo=>{
+        const year=/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'';
+        const key=groupBy==='album' ? (photo.album && photo.albumZh ? photo.album : '__other') : (year || '__other');
+        const label=key==='__other'?text('其他','Other'):groupBy==='album'?(zh?photo.albumZh:photo.album):key;
+        if(!groups.has(key))groups.set(key,{label,photos:[]});
+        groups.get(key).photos.push(photo);
+      });
       const grid=make('div','travel-photos');
-      photos.forEach(photo=>{
+      const renderPhotos=shown=>{
+        grid.replaceChildren();
+        shown.forEach(photo=>{
         const btn=make('button','travel-photo');btn.type='button';
         const img=make('img');img.src=photo.src;img.loading='lazy';img.alt=(zh && photo.captionZh)||photo.caption||text('旅行照片','Travel photo');
         btn.append(img);
         const caption=make('span','travel-photo__caption',img.alt);
         if(photo.date){const date=make('time','travel-photo__date',photo.date);date.dateTime=photo.date;caption.append(date)}
         btn.append(caption);btn.setAttribute('aria-label',text('查看照片：','View photo: ')+[img.alt,photo.date].filter(Boolean).join(' · '));btn.addEventListener('click',()=>showPhoto(photo));grid.append(btn)
-      });content.append(grid)
+        });
+      };
+      if(groups.size>1){
+        const filter=make('div','travel-album-filter');
+        const label=make('label','travel-album-filter__label',groupBy==='album'?text('按地点查看','Browse by place'):text('按年份查看','Browse by year'));
+        const select=make('select','travel-album-filter__select');select.id='travel-album-select';label.htmlFor=select.id;
+        const all=make('option','',text(`全部照片（${photos.length}）`,`All photos (${photos.length})`));all.value='';select.append(all);
+        const entries=groupBy==='year'?[...groups.entries()].sort((a,b)=>a[0]==='__other'?1:b[0]==='__other'?-1:b[0].localeCompare(a[0])):[...groups.entries()];
+        entries.forEach(([key,group])=>{const option=make('option','',`${group.label} (${group.photos.length})`);option.value=key;select.append(option)});
+        select.addEventListener('change',()=>{renderPhotos(select.value?groups.get(select.value).photos:photos);content.scrollTop=0});
+        filter.append(label,select);heading.append(filter);
+      }
+      renderPhotos(photos);content.append(grid)
     }
     content.scrollTop=0;
   };

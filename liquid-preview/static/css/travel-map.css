@@ -26,6 +26,10 @@
 .travel-place strong,.travel-place small { display:block; }
 .travel-place strong { font-size:1.4rem; }.travel-place small { margin-top:4px; font-size:1.15rem; opacity:.7; }
 .travel-group__header:focus-visible,.travel-place:focus-visible,.travel-demo-button:focus-visible,.travel-reset:focus-visible,.travel-photo:focus-visible { outline:3px solid var(--accent-color); outline-offset:3px; }
+.travel-album-filter { display:flex; flex-direction:column; gap:6px; margin:2px 0 12px; }
+.travel-album-filter__label { color:var(--card-text-color-secondary); font-size:1.15rem; font-weight:650; }
+.travel-album-filter__select { width:100%; min-width:0; padding:9px 12px; border:1px solid var(--card-separator-color, #ddd); border-radius:10px; color:var(--card-text-color-main); background:var(--card-background-selected); font:inherit; font-size:1.25rem; cursor:pointer; }
+.travel-album-filter__select:focus-visible { outline:3px solid var(--accent-color); outline-offset:2px; }
 .travel-detail-label { display:inline-block; margin:0 0 10px; padding:5px 9px; border-radius:50px; font-size:1.05rem; color:var(--accent-color); background:var(--card-background-selected); }
 .travel-photos { columns:2; column-gap:16px; padding:8px 7px 12px; }
 .travel-photo { position:relative; display:inline-block; vertical-align:top; width:100%; box-sizing:border-box; break-inside:avoid; margin:0 0 20px; padding:7px 7px 12px; border:0; border-radius:2px; color:#3f3b36; background:#fff; box-shadow:0 6px 16px #0003; cursor:zoom-in; text-align:left; transform:rotate(-3deg); transition:transform .2s ease,box-shadow .2s ease; }
