@@ -1885,7 +1885,55 @@ visits:
     regionZh: "陕西"
     latitude: 36.60280
     longitude: 109.48740
-    photos: []
+    photos:
+      - src: /img/travel/yanan/20261017-延安-苹果树_MVIMG_20261017_091522.jpg
+        date: "2026-10-17"
+        caption: "Apple trees"
+        captionZh: "苹果树"
+      - src: /img/travel/yanan/20261017-延安-手中的苹果_MVIMG_20261017_091618.jpg
+        date: "2026-10-17"
+        caption: "An apple in hand"
+        captionZh: "手中的苹果"
+      - src: /img/travel/yanan/20261017-延安-山顶红色建筑_MVIMG_20261017_140656.jpg
+        date: "2026-10-17"
+        caption: "A red building on a hill"
+        captionZh: "山顶红色建筑"
+      - src: /img/travel/yanan/20261017-延安-展馆建筑_MVIMG_20261017_154303.jpg
+        date: "2026-10-17"
+        caption: "An exhibition hall"
+        captionZh: "展馆建筑"
+      - src: /img/travel/yanan/20261017-延安-展览中的历史照片_MVIMG_20261017_154859.jpg
+        date: "2026-10-17"
+        caption: "A historical photograph on display"
+        captionZh: "展览中的历史照片"
+      - src: /img/travel/yanan/20261017-延安-展览中的人物照片_MVIMG_20261017_154905.jpg
+        date: "2026-10-17"
+        caption: "A portrait on display"
+        captionZh: "展览中的人物照片"
+      - src: /img/travel/yanan/20261017-延安-展览中的合影_MVIMG_20261017_154919.jpg
+        date: "2026-10-17"
+        caption: "A group photograph on display"
+        captionZh: "展览中的合影"
+      - src: /img/travel/yanan/20261017-延安-展览中的苹果园照片_MVIMG_20261017_154940.jpg
+        date: "2026-10-17"
+        caption: "An orchard photograph on display"
+        captionZh: "展览中的苹果园照片"
+      - src: /img/travel/yanan/20261017-延安-展览中的脸谱_MVIMG_20261017_161602.jpg
+        date: "2026-10-17"
+        caption: "A painted mask on display"
+        captionZh: "展览中的脸谱"
+      - src: /img/travel/yanan/20261018-延安-枝头的青番茄_MVIMG_20261018_094509.jpg
+        date: "2026-10-18"
+        caption: "Green tomatoes on the vine"
+        captionZh: "枝头的青番茄"
+      - src: /img/travel/yanan/20261018-延安-广场雕像_MVIMG_20261018_103931.jpg
+        date: "2026-10-18"
+        caption: "A statue in a square"
+        captionZh: "广场雕像"
+      - src: /img/travel/yanan/20261018-延安-山坡上的红色标语_MVIMG_20261018_103942.jpg
+        date: "2026-10-18"
+        caption: "A red slogan on the hillside"
+        captionZh: "山坡上的红色标语"
   - id: jinjiang
     group: fujian
     geoGroup: china
