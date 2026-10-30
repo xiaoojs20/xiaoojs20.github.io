@@ -900,30 +900,12 @@ visits:
         captionZh: "妙应寺白塔"
         album: "Miaoying Temple"
         albumZh: "妙应寺白塔"
-      - src: /img/travel/beijing/20240122-北京-妙应寺白塔_20240122-DSC05820.jpg
-        date: "2024-01-22"
-        caption: "White Pagoda at Miaoying Temple"
-        captionZh: "妙应寺白塔"
-        album: "Miaoying Temple"
-        albumZh: "妙应寺白塔"
-      - src: /img/travel/beijing/20240122-北京-妙应寺白塔_20240122-DSC05812.jpg
-        date: "2024-01-22"
-        caption: "White Pagoda at Miaoying Temple"
-        captionZh: "妙应寺白塔"
-        album: "Miaoying Temple"
-        albumZh: "妙应寺白塔"
       - src: /img/travel/beijing/20240122-北京-妙应寺白塔_20240122-DSC05810.jpg
         date: "2024-01-22"
         caption: "White Pagoda at Miaoying Temple"
         captionZh: "妙应寺白塔"
         album: "Miaoying Temple"
         albumZh: "妙应寺白塔"
-      - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_165456.jpg
-        date: "2024-01-20"
-        caption: "Peking University"
-        captionZh: "北京大学"
-        album: "Peking University"
-        albumZh: "北京大学"
       - src: /img/travel/beijing/20240120-北京-北京大学_20240120-IMG_20240120_165405.jpg
         date: "2024-01-20"
         caption: "Peking University"
@@ -4924,18 +4906,6 @@ visits:
         date: "2024-04-13"
         caption: "Museum vase"
         captionZh: "博物馆花瓶"
-      - src: /img/travel/tianjin/20240413-天津-博物馆书画_20240413-DSC07474.jpg
-        date: "2024-04-13"
-        caption: "Calligraphy on display"
-        captionZh: "博物馆书画"
-      - src: /img/travel/tianjin/20240413-天津-博物馆瓷器_20240413-DSC07496.jpg
-        date: "2024-04-13"
-        caption: "Museum porcelain"
-        captionZh: "博物馆瓷器"
-      - src: /img/travel/tianjin/20240413-天津-馆藏雕刻_20240413-DSC07517.jpg
-        date: "2024-04-13"
-        caption: "Museum carving"
-        captionZh: "馆藏雕刻"
       - src: /img/travel/tianjin/20240413-天津-馆藏服饰_20240413-DSC07520.jpg
         date: "2024-04-13"
         caption: "Historic garment on display"
@@ -4956,26 +4926,10 @@ visits:
         date: "2023-09-12"
         caption: "Tianjin Century Clock"
         captionZh: "天津世纪钟"
-      - src: /img/travel/tianjin/20230912-天津-意式风情区柱顶雕塑_20230912-DSC04169.jpg
-        date: "2023-09-12"
-        caption: "Column sculpture in the Italian Style Town"
-        captionZh: "意式风情区柱顶雕塑"
       - src: /img/travel/tianjin/20230912-天津-意式风情区雕像_20230912-DSC04169-3.jpg
         date: "2023-09-12"
         caption: "Statue in the Italian Style Town"
         captionZh: "意式风情区雕像"
-      - src: /img/travel/tianjin/20230912-天津-意式风情区雕塑_20230912-DSC04169-2.jpg
-        date: "2023-09-12"
-        caption: "Sculpture in the Italian Style Town"
-        captionZh: "意式风情区雕塑"
-      - src: /img/travel/tianjin/20230912-天津-街头石雕_20230912-DSC04186.jpg
-        date: "2023-09-12"
-        caption: "Street stone sculpture"
-        captionZh: "街头石雕"
-      - src: /img/travel/tianjin/20230912-天津-意式风情区_20230912-DSC04188.jpg
-        date: "2023-09-12"
-        caption: "Italian Style Town"
-        captionZh: "意式风情区"
       - src: /img/travel/tianjin/20230912-天津-意式风情区雕塑细节_20230912-DSC04196-2.jpg
         date: "2023-09-12"
         caption: "Sculpture detail in the Italian Style Town"
@@ -5000,22 +4954,10 @@ visits:
         date: "2023-09-12"
         caption: "Street sculpture and architecture"
         captionZh: "街头雕塑与建筑"
-      - src: /img/travel/tianjin/20230912-天津-咖啡_20230912-DSC04246.jpg
-        date: "2023-09-12"
-        caption: "Coffee"
-        captionZh: "咖啡"
-      - src: /img/travel/tianjin/20230912-天津-民园广场_20230912-DSC04256.jpg
-        date: "2023-09-12"
-        caption: "Minyuan Square"
-        captionZh: "民园广场"
       - src: /img/travel/tianjin/20230912-天津-民园广场草坪_20230912-DSC04267.jpg
         date: "2023-09-12"
         caption: "Lawn at Minyuan Square"
         captionZh: "民园广场草坪"
-      - src: /img/travel/tianjin/20230912-天津-天津地铁站_20230912-DSC04273.jpg
-        date: "2023-09-12"
-        caption: "Tianjin metro station"
-        captionZh: "天津地铁站"
       - src: /img/travel/tianjin/20230912-天津-解放桥与建筑_20230912-DSC04282.jpg
         date: "2023-09-12"
         caption: "Jiefang Bridge and buildings"
@@ -5024,10 +4966,6 @@ visits:
         date: "2023-09-12"
         caption: "Jiefang Bridge"
         captionZh: "解放桥"
-      - src: /img/travel/tianjin/20230912-天津-海河城市景观_20230912-DSC04334.jpg
-        date: "2023-09-12"
-        caption: "Hai River cityscape"
-        captionZh: "海河城市景观"
       - src: /img/travel/tianjin/20230912-天津-海河沿岸建筑_20230912-DSC04352.jpg
         date: "2023-09-12"
         caption: "Buildings along the Hai River"
@@ -5048,14 +4986,6 @@ visits:
         date: "2023-09-12"
         caption: "Tianjin Eye detail"
         captionZh: "天津之眼细节"
-      - src: /img/travel/tianjin/20230912-天津-海河夜景_20230912-DSC04501.jpg
-        date: "2023-09-12"
-        caption: "Hai River at night"
-        captionZh: "海河夜景"
-      - src: /img/travel/tianjin/20230912-天津-海河游船夜景_20230912-DSC04524.jpg
-        date: "2023-09-12"
-        caption: "Cruise boat on the Hai River at night"
-        captionZh: "海河游船夜景"
       - src: /img/travel/tianjin/20230912-天津-天津之眼灯光_20230912-DSC04538.jpg
         date: "2023-09-12"
         caption: "Tianjin Eye illuminated"
@@ -5080,18 +5010,6 @@ visits:
         date: "2023-09-12"
         caption: "Bridge over the Hai River at night"
         captionZh: "海河桥梁夜景"
-      - src: /img/travel/tianjin/20230913-天津-天津大学校园_20230913-DSC04641.jpg
-        date: "2023-09-13"
-        caption: "Tianjin University campus"
-        captionZh: "天津大学校园"
-      - src: /img/travel/tianjin/20230913-天津-南开大学校训_20230913-DSC04643.jpg
-        date: "2023-09-13"
-        caption: "Nankai University motto"
-        captionZh: "南开大学校训"
-      - src: /img/travel/tianjin/20230913-天津-南开大学石刻_20230913-DSC04651.jpg
-        date: "2023-09-13"
-        caption: "Stone inscription at Nankai University"
-        captionZh: "南开大学石刻"
       - src: /img/travel/tianjin/20230913-天津-南开大学雕像_20230913-DSC04657.jpg
         date: "2023-09-13"
         caption: "Statue at Nankai University"
@@ -5104,26 +5022,14 @@ visits:
         date: "2023-09-13"
         caption: "Campus lake"
         captionZh: "校园湖景"
-      - src: /img/travel/tianjin/20230913-天津-南开大学校门_20230913-DSC04673.jpg
-        date: "2023-09-13"
-        caption: "Nankai University entrance"
-        captionZh: "南开大学校门"
       - src: /img/travel/tianjin/20230913-天津-天津大学校门_20230913-DSC04678.jpg
         date: "2023-09-13"
         caption: "Tianjin University entrance"
         captionZh: "天津大学校门"
-      - src: /img/travel/tianjin/20230913-天津-天津大学校园街道_20230913-DSC04679.jpg
-        date: "2023-09-13"
-        caption: "Street on Tianjin University campus"
-        captionZh: "天津大学校园街道"
       - src: /img/travel/tianjin/20230913-天津-天津大学北洋纪念亭_20230913-DSC04684.jpg
         date: "2023-09-13"
         caption: "Beiyang Memorial Pavilion at Tianjin University"
         captionZh: "天津大学北洋纪念亭"
-      - src: /img/travel/tianjin/20230913-天津-天津大学建筑_20230913-DSC04696.jpg
-        date: "2023-09-13"
-        caption: "Tianjin University architecture"
-        captionZh: "天津大学建筑"
       - src: /img/travel/tianjin/20230913-天津-天津大学湖景_20230913-DSC04701.jpg
         date: "2023-09-13"
         caption: "Lake at Tianjin University"
@@ -5146,14 +5052,6 @@ visits:
         date: "2024-10-03"
         caption: "September 18th History Museum exterior"
         captionZh: "九一八历史博物馆外景"
-      - src: /img/travel/shenyang/20241004-沈阳-建筑与天空_DSC03058.jpg
-        date: "2024-10-04"
-        caption: "Architecture under the sky"
-        captionZh: "建筑与天空"
-      - src: /img/travel/shenyang/20241004-沈阳-沈阳故宫殿宇_DSC03075.jpg
-        date: "2024-10-04"
-        caption: "Palace hall at Shenyang Imperial Palace"
-        captionZh: "沈阳故宫殿宇"
       - src: /img/travel/shenyang/20241004-沈阳-沈阳故宫大政殿_DSC03082.jpg
         date: "2024-10-04"
         caption: "Dazheng Hall at Shenyang Imperial Palace"
@@ -5166,10 +5064,6 @@ visits:
         date: "2024-10-04"
         caption: "Shenyang Xiaonan Catholic Church"
         captionZh: "沈阳小南天主教堂"
-      - src: /img/travel/shenyang/20241004-沈阳-小南天主教堂细节_DSC03133.jpg
-        date: "2024-10-04"
-        caption: "Xiaonan Catholic Church detail"
-        captionZh: "小南天主教堂细节"
       - src: /img/travel/shenyang/20241004-沈阳-教堂屋顶雕塑_DSC03152.jpg
         date: "2024-10-04"
         caption: "Church rooftop sculpture"
@@ -5210,30 +5104,14 @@ visits:
         date: "2024-10-04"
         caption: "Night market signs"
         captionZh: "夜市招牌"
-      - src: /img/travel/shenyang/20241005-沈阳-博物馆藏品_DSC03241.jpg
-        date: "2024-10-05"
-        caption: "Museum object"
-        captionZh: "博物馆藏品"
       - src: /img/travel/shenyang/20241005-沈阳-博物馆器物_DSC03282.jpg
         date: "2024-10-05"
         caption: "Museum artifacts"
         captionZh: "博物馆器物"
-      - src: /img/travel/shenyang/20241005-沈阳-博物馆雕塑_DSC03296.jpg
-        date: "2024-10-05"
-        caption: "Museum sculpture"
-        captionZh: "博物馆雕塑"
       - src: /img/travel/shenyang/20241005-沈阳-博物馆古籍_DSC03309.jpg
         date: "2024-10-05"
         caption: "Historic book on display"
         captionZh: "博物馆古籍"
-      - src: /img/travel/shenyang/20241005-沈阳-古籍展品_DSC03310.jpg
-        date: "2024-10-05"
-        caption: "Historic book exhibit"
-        captionZh: "古籍展品"
-      - src: /img/travel/shenyang/20241005-沈阳-馆藏书页_DSC03311.jpg
-        date: "2024-10-05"
-        caption: "Pages on display"
-        captionZh: "馆藏书页"
       - src: /img/travel/shenyang/20241005-沈阳-馆藏雕像_DSC03337.jpg
         date: "2024-10-05"
         caption: "Museum statue"
@@ -5416,26 +5294,6 @@ visits:
         date: "2024-07-28"
         caption: "Walkway at Lanzhou Ink Danxia"
         captionZh: "水墨丹霞栈道"
-      - src: /img/travel/lanzhou/20240728-兰州-兰州烤串_IMG_20240728_202149.jpg
-        date: "2024-07-28"
-        caption: "Grilled skewers in Lanzhou"
-        captionZh: "兰州烤串"
-      - src: /img/travel/lanzhou/20240728-兰州-黄河之滨夜景_DSC01031.jpg
-        date: "2024-07-28"
-        caption: "Night by the Yellow River"
-        captionZh: "黄河之滨夜景"
-      - src: /img/travel/lanzhou/20240728-兰州-中山桥夜景_DSC01042.jpg
-        date: "2024-07-28"
-        caption: "Zhongshan Bridge at night"
-        captionZh: "中山桥夜景"
-      - src: /img/travel/lanzhou/20240728-兰州-中山桥灯光_DSC01044.jpg
-        date: "2024-07-28"
-        caption: "Zhongshan Bridge illuminated"
-        captionZh: "中山桥灯光"
-      - src: /img/travel/lanzhou/20240728-兰州-中山桥与黄河_DSC01049.jpg
-        date: "2024-07-28"
-        caption: "Zhongshan Bridge over the Yellow River"
-        captionZh: "中山桥与黄河"
       - src: /img/travel/lanzhou/20240728-兰州-中山桥夜色_DSC01060.jpg
         date: "2024-07-28"
         caption: "Zhongshan Bridge after dark"
@@ -5468,14 +5326,6 @@ visits:
         date: "2024-07-29"
         caption: "Mother of the Yellow River Park"
         captionZh: "黄河母亲公园"
-      - src: /img/travel/lanzhou/20240729-兰州-荷花_DSC01149.jpg
-        date: "2024-07-29"
-        caption: "Lotus flowers"
-        captionZh: "荷花"
-      - src: /img/travel/lanzhou/20240729-兰州-兰州牛肉面_IMG_20240729_113435.jpg
-        date: "2024-07-29"
-        caption: "Lanzhou beef noodles"
-        captionZh: "兰州牛肉面"
   - id: urumqi
     group: xinjiang
     geoGroup: china
