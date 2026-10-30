@@ -107,7 +107,91 @@ visits:
     regionZh: "北京"
     latitude: 39.90571
     longitude: 116.39130
-    photos: []
+    photos:
+      - src: /img/travel/beijing/202105-北京-博物馆展品_IMG_059.jpg
+        date: "2021-05"
+        caption: "Museum exhibit"
+        captionZh: "博物馆展品"
+        album: "National Museum and Forbidden City"
+        albumZh: "国博与故宫"
+      - src: /img/travel/beijing/202105-北京-门洞与宫殿屋顶_IMG_120.jpg
+        date: "2021-05"
+        caption: "Palace roof through an arch"
+        captionZh: "门洞与宫殿屋顶"
+        album: "National Museum and Forbidden City"
+        albumZh: "国博与故宫"
+      - src: /img/travel/beijing/202105-北京-宫殿与树木_IMG_150.jpg
+        date: "2021-05"
+        caption: "Palace building and trees"
+        captionZh: "宫殿与树木"
+        album: "National Museum and Forbidden City"
+        albumZh: "国博与故宫"
+      - src: /img/travel/beijing/202105-北京-华表与天安门_IMG_175.jpg
+        date: "2021-05"
+        caption: "Ornamental column and Tiananmen"
+        captionZh: "华表与天安门"
+        album: "National Museum and Forbidden City"
+        albumZh: "国博与故宫"
+      - src: /img/travel/beijing/202105-北京-天安门与旗帜_IMG_189.jpg
+        date: "2021-05"
+        caption: "Tiananmen and flags"
+        captionZh: "天安门与旗帜"
+        album: "National Museum and Forbidden City"
+        albumZh: "国博与故宫"
+      - src: /img/travel/beijing/202201-北京-书刊封面_IMG_034.jpg
+        date: "2022-01"
+        caption: "Book cover"
+        captionZh: "书刊封面"
+        album: "Nanluoguxiang and Prince Gong Mansion"
+        albumZh: "南锣鼓巷与恭王府"
+      - src: /img/travel/beijing/202201-北京-唱片与封面_IMG_051.jpg
+        date: "2022-01"
+        caption: "Records and covers"
+        captionZh: "唱片与封面"
+        album: "Nanluoguxiang and Prince Gong Mansion"
+        albumZh: "南锣鼓巷与恭王府"
+      - src: /img/travel/beijing/20210314-北京-花枝与树干_DSC00553.jpg
+        date: "2021-03-14"
+        caption: "Blossoms and a tree trunk"
+        captionZh: "花枝与树干"
+        album: "Yuyuantan Park"
+        albumZh: "玉渊潭公园"
+      - src: /img/travel/beijing/20210314-北京-水边树枝与远景_DSC00582.jpg
+        date: "2021-03-14"
+        caption: "Branches by the water"
+        captionZh: "水边树枝与远景"
+        album: "Yuyuantan Park"
+        albumZh: "玉渊潭公园"
+      - src: /img/travel/beijing/20210314-北京-树间远眺电视塔_DSC00600.jpg
+        date: "2021-03-14"
+        caption: "Television tower seen through trees"
+        captionZh: "树间远眺电视塔"
+        album: "Yuyuantan Park"
+        albumZh: "玉渊潭公园"
+      - src: /img/travel/beijing/20220107-北京-园林假山_DSC00992.jpg
+        date: "2022-01-07"
+        caption: "Garden rockery"
+        captionZh: "园林假山"
+        album: "Nanluoguxiang and Prince Gong Mansion"
+        albumZh: "南锣鼓巷与恭王府"
+      - src: /img/travel/beijing/20220107-北京-石墙与门_DSC01013.jpg
+        date: "2022-01-07"
+        caption: "Door in a stone wall"
+        captionZh: "石墙与门"
+        album: "Nanluoguxiang and Prince Gong Mansion"
+        albumZh: "南锣鼓巷与恭王府"
+      - src: /img/travel/beijing/20220107-北京-冬日冰面_DSC01018.jpg
+        date: "2022-01-07"
+        caption: "Ice in winter"
+        captionZh: "冬日冰面"
+        album: "Nanluoguxiang and Prince Gong Mansion"
+        albumZh: "南锣鼓巷与恭王府"
+      - src: /img/travel/beijing/20220107-北京-冬日湖边落日_DSC01036.jpg
+        date: "2022-01-07"
+        caption: "Winter sunset by the water"
+        captionZh: "冬日湖边落日"
+        album: "Nanluoguxiang and Prince Gong Mansion"
+        albumZh: "南锣鼓巷与恭王府"
   - id: datong
     group: shanxi
     geoGroup: china
@@ -2849,6 +2933,58 @@ visits:
     latitude: 31.23127
     longitude: 121.47002
     photos:
+      - src: /img/travel/shanghai/202107-上海-交通工具屏幕地图_IMG_023.jpg
+        date: "2021-07"
+        caption: "Route map on a travel screen"
+        captionZh: "交通工具屏幕地图"
+      - src: /img/travel/shanghai/202107-上海-外滩远眺陆家嘴夜景_IMG_1061.jpg
+        date: "2021-07"
+        caption: "Lujiazui skyline at night"
+        captionZh: "外滩远眺陆家嘴夜景"
+      - src: /img/travel/shanghai/202107-上海-外滩建筑夜景_IMG_1066.jpg
+        date: "2021-07"
+        caption: "Illuminated Bund building"
+        captionZh: "外滩建筑夜景"
+      - src: /img/travel/shanghai/202107-上海-东方明珠与天空_IMG_112.jpg
+        date: "2021-07"
+        caption: "Oriental Pearl Tower and sky"
+        captionZh: "东方明珠与天空"
+      - src: /img/travel/shanghai/202107-上海-江畔远眺陆家嘴_IMG_158.jpg
+        date: "2021-07"
+        caption: "Lujiazui across the river"
+        captionZh: "江畔远眺陆家嘴"
+      - src: /img/travel/shanghai/202107-上海-中共一大会址标识_IMG_252.jpg
+        date: "2021-07"
+        caption: "Site of the First National Congress sign"
+        captionZh: "中共一大会址标识"
+      - src: /img/travel/shanghai/202107-上海-外滩历史建筑夜景_IMG_425.jpg
+        date: "2021-07"
+        caption: "Historic buildings on the Bund at night"
+        captionZh: "外滩历史建筑夜景"
+      - src: /img/travel/shanghai/202107-上海-东方明珠与城市道路_IMG_511.jpg
+        date: "2021-07"
+        caption: "Oriental Pearl Tower and city streets"
+        captionZh: "东方明珠与城市道路"
+      - src: /img/travel/shanghai/202107-上海-展馆玻璃屏幕_IMG_568.jpg
+        date: "2021-07"
+        caption: "Glass display at an exhibition"
+        captionZh: "展馆玻璃屏幕"
+      - src: /img/travel/shanghai/202107-上海-暮色中的建筑_IMG_880.jpg
+        date: "2021-07"
+        caption: "Illuminated building at dusk"
+        captionZh: "暮色中的建筑"
+      - src: /img/travel/shanghai/202107-上海-旧建筑与人群_IMG_888.jpg
+        date: "2021-07"
+        caption: "Old building and visitors"
+        captionZh: "旧建筑与人群"
+      - src: /img/travel/shanghai/202107-上海-东方明珠与街景_IMG_956.jpg
+        date: "2021-07"
+        caption: "Oriental Pearl Tower and street view"
+        captionZh: "东方明珠与街景"
+      - src: /img/travel/shanghai/20210718-上海-街边建筑_DSC00612.jpg
+        date: "2021-07-18"
+        caption: "Building along a street"
+        captionZh: "街边建筑"
       - src: /img/travel/shanghai/20210719-上海-上海建筑室内_20210719-DSC00634.jpg
         date: "2021-07-19"
         caption: "Interior architecture in Shanghai"
