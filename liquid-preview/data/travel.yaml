@@ -2572,10 +2572,6 @@ visits:
         date: "2026-05-04"
         caption: "Sea glass on the shore"
         captionZh: "海滩碎玻璃"
-      - src: /img/travel/vladivostok/20260504-海参崴-海浪与海滩_DSC08493.jpg
-        date: "2026-05-04"
-        caption: "Waves on the shore"
-        captionZh: "海浪与海滩"
       - src: /img/travel/vladivostok/20260504-海参崴-落日海湾_DSC08560.jpg
         date: "2026-05-04"
         caption: "Bay at sunset"
@@ -6084,14 +6080,6 @@ visits:
         date: "2024-02-12"
         caption: "Zhuhai Grand Theatre at night"
         captionZh: "珠海大剧院夜景"
-      - src: /img/travel/zhuhai/20240212-珠海-街头雕塑_20240212-DSC06378.jpg
-        date: "2024-02-12"
-        caption: "Street sculpture"
-        captionZh: "街头雕塑"
-      - src: /img/travel/zhuhai/20240212-珠海-夜间步道_20240212-DSC06396.jpg
-        date: "2024-02-12"
-        caption: "Walkway at night"
-        captionZh: "夜间步道"
       - src: /img/travel/zhuhai/20240214-珠海-圆明新园_20240214-DSC06948.jpg
         date: "2024-02-14"
         caption: "New Yuanming Palace"
@@ -6124,10 +6112,6 @@ visits:
         date: "2024-02-14"
         caption: "Distant Zhuhai Grand Theatre"
         captionZh: "珠海大剧院远景"
-      - src: /img/travel/zhuhai/20240214-珠海-珠海海边标牌_20240214-DSC07028.jpg
-        date: "2024-02-14"
-        caption: "Sign by the Zhuhai coast"
-        captionZh: "珠海海边标牌"
       - src: /img/travel/zhuhai/20240214-珠海-珠海大剧院_20240214-DSC07040.jpg
         date: "2024-02-14"
         caption: "Zhuhai Grand Theatre"
@@ -6140,10 +6124,6 @@ visits:
         date: "2024-02-14"
         caption: "Zhuhai Grand Theatre illuminated"
         captionZh: "珠海大剧院灯光"
-      - src: /img/travel/zhuhai/20240214-珠海-建筑里的光影_20240214-DSC07138.jpg
-        date: "2024-02-14"
-        caption: "Light and shadow in architecture"
-        captionZh: "建筑里的光影"
 
   - id: pingtan
     group: fujian
