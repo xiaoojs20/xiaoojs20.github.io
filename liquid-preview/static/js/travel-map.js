@@ -15,10 +15,17 @@
   const photoMonthsOf = v => [...new Set((Array.isArray(v.photos) ? v.photos : [])
     .map(photo => typeof photo?.date === 'string' && /^\d{4}-(0[1-9]|1[0-2])-\d{2}$/.test(photo.date) ? photo.date.slice(0,7) : '')
     .filter(Boolean))].sort();
-  const photoMonthsText = v => photoMonthsOf(v).map(month => {
-    const [year, number] = month.split('-');
-    return zh ? `${year}年${Number(number)}月` : new Intl.DateTimeFormat('en', {month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(`${month}-01T00:00:00Z`));
-  }).join(zh ? '、' : ', ');
+  const photoMonthsText = v => {
+    if (v.id === 'beijing' || v.id === 'jinjiang') return '';
+    const months = photoMonthsOf(v);
+    if (!months.length) return '';
+    const formatMonth = month => {
+      const [year, number] = month.split('-');
+      return zh ? `${year}年${Number(number)}月` : new Intl.DateTimeFormat('en', {month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(`${month}-01T00:00:00Z`));
+    };
+    const first = months[0], last = months[months.length-1];
+    return first === last ? formatMonth(first) : `${formatMonth(first)} – ${formatMonth(last)}`;
+  };
   const make = (tag, cls, value) => { const e=document.createElement(tag); if(cls)e.className=cls; if(value)e.textContent=value; return e; };
   const markerIcon = (demo=false) => L.divIcon({className:'travel-pin'+(demo?' travel-pin--demo':''),html:'<svg aria-hidden="true" viewBox="0 0 24 30"><path d="M12 1C6 1 2 5.5 2 11c0 7 10 17 10 17s10-10 10-17C22 5.5 18 1 12 1Z"/><circle cx="12" cy="11" r="3"/></svg>',iconSize:[16,20],iconAnchor:[8,18]});
   const countText = n => text(`${n} 个地点`, `${n} ${n===1?'place':'places'}`);
@@ -50,7 +57,7 @@
     const title=make('h2','travel-place-title');
     title.append(make('span','travel-place-title__name',nameOf(visit)));
     const months=demo?'':photoMonthsText(visit);
-    if(months)title.append(make('span','travel-place-title__dates',text('到访时间（照片记录）：','Photo dates: ')+months));
+    if(months)title.append(make('span','travel-place-title__dates',text('照片记录：','Photo dates: ')+months));
     heading.append(title);
     const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · '); if(meta)heading.append(make('p','',meta));
     content.append(heading);
