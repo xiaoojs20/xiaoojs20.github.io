@@ -108,6 +108,72 @@ visits:
     latitude: 39.90571
     longitude: 116.39130
     photos:
+      - src: /img/travel/beijing/20250322-北京-颐和园水岸春色_DSC04078.jpg
+        date: "2025-03-22"
+        caption: "Spring along the water at the Summer Palace"
+        captionZh: "颐和园水岸春色"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园湖畔身影_DSC04082.jpg
+        date: "2025-03-22"
+        caption: "A figure by the lake at the Summer Palace"
+        captionZh: "颐和园湖畔身影"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园湖边身影_DSC04123.jpg
+        date: "2025-03-22"
+        caption: "A figure at the lake at the Summer Palace"
+        captionZh: "颐和园湖边身影"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园花枝与佛香阁_DSC04172.jpg
+        date: "2025-03-22"
+        caption: "Blossoms and the Tower of Buddhist Incense"
+        captionZh: "颐和园花枝与佛香阁"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园树枝与湖景_DSC04254.jpg
+        date: "2025-03-22"
+        caption: "Branches and lake at the Summer Palace"
+        captionZh: "颐和园树枝与湖景"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园湖中水草_DSC04257.jpg
+        date: "2025-03-22"
+        caption: "Plants in the lake at the Summer Palace"
+        captionZh: "颐和园湖中水草"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园春日花枝_DSC04262.jpg
+        date: "2025-03-22"
+        caption: "Spring blossoms at the Summer Palace"
+        captionZh: "颐和园春日花枝"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园粉色花枝_DSC04268.jpg
+        date: "2025-03-22"
+        caption: "Pink blossoms at the Summer Palace"
+        captionZh: "颐和园粉色花枝"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园十七孔桥_DSC04282.jpg
+        date: "2025-03-22"
+        caption: "Seventeen-Arch Bridge at the Summer Palace"
+        captionZh: "颐和园十七孔桥"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园昆明湖与佛香阁_DSC04285.jpg
+        date: "2025-03-22"
+        caption: "Kunming Lake and the Tower of Buddhist Incense"
+        captionZh: "颐和园昆明湖与佛香阁"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20250322-北京-颐和园湖中水鸟_DSC04326.jpg
+        date: "2025-03-22"
+        caption: "Waterbirds on the lake at the Summer Palace"
+        captionZh: "颐和园湖中水鸟"
+        album: "Summer Palace"
+        albumZh: "颐和园"
       - src: /img/travel/beijing/202105-北京-博物馆展品_IMG_059.jpg
         date: "2021-05"
         caption: "Museum exhibit"
@@ -1825,7 +1891,71 @@ visits:
     regionZh: "黑龙江"
     latitude: 45.75936
     longitude: 126.62762
-    photos: []
+    photos:
+      - src: /img/travel/harbin/20250110-哈尔滨-建筑浮雕_MVIMG_20250110_095926.jpg
+        date: "2025-01-10"
+        caption: "Architectural relief"
+        captionZh: "建筑浮雕"
+      - src: /img/travel/harbin/20250110-哈尔滨-街头建筑_MVIMG_20250110_100758.jpg
+        date: "2025-01-10"
+        caption: "Architecture in the city"
+        captionZh: "街头建筑"
+      - src: /img/travel/harbin/20250110-哈尔滨-室内吊灯_MVIMG_20250110_125039.jpg
+        date: "2025-01-10"
+        caption: "Chandelier indoors"
+        captionZh: "室内吊灯"
+      - src: /img/travel/harbin/20250110-哈尔滨-冬日玩偶_MVIMG_20250110_215756.jpg
+        date: "2025-01-10"
+        caption: "Winter plush toys"
+        captionZh: "冬日玩偶"
+      - src: /img/travel/harbin/20250111-哈尔滨-雪中的冰雕_MVIMG_20250111_115444.jpg
+        date: "2025-01-11"
+        caption: "Ice sculpture in snow"
+        captionZh: "雪中的冰雕"
+      - src: /img/travel/harbin/20250111-哈尔滨-雪地游乐_MVIMG_20250111_122400.jpg
+        date: "2025-01-11"
+        caption: "Winter play in the snow"
+        captionZh: "雪地游乐"
+      - src: /img/travel/harbin/20250111-哈尔滨-铁路桥_MVIMG_20250111_124013.jpg
+        date: "2025-01-11"
+        caption: "Railway bridge"
+        captionZh: "铁路桥"
+      - src: /img/travel/harbin/20250112-哈尔滨-窗边花束_MVIMG_20250112_113715.jpg
+        date: "2025-01-12"
+        caption: "Bouquet by the window"
+        captionZh: "窗边花束"
+      - src: /img/travel/harbin/20250112-哈尔滨-室内窗景_MVIMG_20250112_113828.jpg
+        date: "2025-01-12"
+        caption: "Interior by the window"
+        captionZh: "室内窗景"
+      - src: /img/travel/harbin/20250112-哈尔滨-冰雪建筑_MVIMG_20250112_144054.jpg
+        date: "2025-01-12"
+        caption: "Ice architecture"
+        captionZh: "冰雪建筑"
+      - src: /img/travel/harbin/20250112-哈尔滨-摩天轮与冰雕_MVIMG_20250112_151105.jpg
+        date: "2025-01-12"
+        caption: "Ferris wheel and ice sculptures"
+        captionZh: "摩天轮与冰雕"
+      - src: /img/travel/harbin/20250112-哈尔滨-冬日摩天轮_MVIMG_20250112_153656.jpg
+        date: "2025-01-12"
+        caption: "Ferris wheel in winter"
+        captionZh: "冬日摩天轮"
+      - src: /img/travel/harbin/20250112-哈尔滨-雪中花朵_MVIMG_20250112_154052.jpg
+        date: "2025-01-12"
+        caption: "Flowers in snow"
+        captionZh: "雪中花朵"
+      - src: /img/travel/harbin/20250112-哈尔滨-冰雕建筑_MVIMG_20250112_154542.jpg
+        date: "2025-01-12"
+        caption: "Ice sculpture building"
+        captionZh: "冰雕建筑"
+      - src: /img/travel/harbin/20250112-哈尔滨-彩灯冰雕建筑_MVIMG_20250112_163825.jpg
+        date: "2025-01-12"
+        caption: "Illuminated ice architecture"
+        captionZh: "彩灯冰雕建筑"
+      - src: /img/travel/harbin/20250112-哈尔滨-冰雪园区夜景_MVIMG_20250112_183937.jpg
+        date: "2025-01-12"
+        caption: "Ice and snow park at night"
+        captionZh: "冰雪园区夜景"
   - id: nanjing
     group: jiangsu
     geoGroup: china
@@ -3988,6 +4118,48 @@ visits:
     latitude: 43.82441
     longitude: 87.61390
     photos:
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆展陈一_DSC02748.jpg
+        date: "2024-08-06"
+        caption: "Museum exhibit 1"
+        captionZh: "博物馆展陈一"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆展陈二_DSC02766.jpg
+        date: "2024-08-06"
+        caption: "Museum exhibit 2"
+        captionZh: "博物馆展陈二"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆展陈三_DSC02770.jpg
+        date: "2024-08-06"
+        caption: "Museum exhibit 3"
+        captionZh: "博物馆展陈三"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆展陈四_DSC02773.jpg
+        date: "2024-08-06"
+        caption: "Museum exhibit 4"
+        captionZh: "博物馆展陈四"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆雕塑_DSC02777.jpg
+        date: "2024-08-06"
+        caption: "Museum sculpture"
+        captionZh: "博物馆雕塑"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆展陈五_DSC02783.jpg
+        date: "2024-08-06"
+        caption: "Museum exhibit 5"
+        captionZh: "博物馆展陈五"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
+      - src: /img/travel/urumqi/20240806-乌鲁木齐-博物馆服饰展品_DSC02863.jpg
+        date: "2024-08-06"
+        caption: "Historic clothing on display"
+        captionZh: "博物馆服饰展品"
+        album: "Xinjiang Museum"
+        albumZh: "新疆博物馆"
       - src: /img/travel/urumqi/20240805-乌鲁木齐-国际大巴扎穹顶_DSC02490.jpg
         date: "2024-08-05"
         caption: "Dome at the International Grand Bazaar"
