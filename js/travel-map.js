@@ -83,6 +83,21 @@
     content.scrollTop=0;
   };
   const onSelect = visit => {showPlace(visit);if(window.matchMedia('(max-width: 850px)').matches)app.querySelector('.travel-panel').scrollIntoView({behavior:'smooth',block:'start'})};
+  const showArea = (props, places) => {
+    selectedId=props.id; refreshSelection(); reset.hidden=false; content.replaceChildren();
+    content.append(make('h2','',nameOf(props)));
+    content.append(make('p','',text('选择一个地点查看照片。','Choose a place to view its photos.')));
+    const list=make('div','travel-group__places');
+    places.forEach(visit=>{
+      const btn=make('button','travel-place'); btn.type='button';
+      const label=make('span'); label.append(make('strong','',nameOf(visit)));
+      const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · ');
+      if(meta)label.append(make('small','',meta));
+      btn.append(label,make('span','','↗')); btn.addEventListener('click',()=>onSelect(visit)); list.append(btn);
+    });
+    content.append(list); content.scrollTop=0;
+    if(window.matchMedia('(max-width: 850px)').matches)app.querySelector('.travel-panel').scrollIntoView({behavior:'smooth',block:'start'});
+  };
   const fit = scope => {const item=maps[scope];const pts=visits.map(v=>[Number(v.latitude),Number(v.longitude)]);const padding=window.matchMedia('(max-width: 850px)').matches ? .25 : .15;if(pts.length)item.map.fitBounds(L.latLngBounds(pts).pad(padding),{maxZoom:6});else item.map.setView([30,105],3)};
   ['combined'].forEach(scope=>{
     const map=L.map(app.querySelector(`[data-map="${scope}"]`),{scrollWheelZoom:true,zoomSnap:0.25,zoomDelta:0.5,wheelPxPerZoomLevel:240,worldCopyJump:true,minZoom:2,maxZoom:8}).setView([30,105],3);
@@ -101,7 +116,7 @@
       const c=colors();
       item.base=L.geoJSON(world,{interactive:false,style:{color:c.border,weight:1,fillColor:c.land,fillOpacity:1}}).addTo(item.map);
       item.boundaries=L.geoJSON(lines,{interactive:false,style:{color:c.line,weight:.65,opacity:.8}}).addTo(item.map);
-      item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id) || (Array.isArray(f.properties.visitIds) && f.properties.visitIds.some(id=>byId.has(id))),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const props=feature.properties;const visit=byId.get(props.id);layer.bindTooltip(visit?nameOf(visit):nameOf(props));layer.on('click',()=>{if(visit)onSelect(visit);else item.map.fitBounds(layer.getBounds(),{maxZoom:8})})}}).addTo(item.map);
+      item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id) || (Array.isArray(f.properties.visitIds) && f.properties.visitIds.some(id=>byId.has(id))),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const props=feature.properties;const visit=byId.get(props.id);layer.bindTooltip(visit?nameOf(visit):nameOf(props));layer.on('click',()=>{if(visit)onSelect(visit);else showArea(props,props.visitIds.map(id=>byId.get(id)).filter(Boolean))})}}).addTo(item.map);
     });
     refreshSelection();
   }).catch(()=>{app.querySelector('[data-travel-error]').hidden=false});
