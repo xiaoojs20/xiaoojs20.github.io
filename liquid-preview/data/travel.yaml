@@ -1230,22 +1230,6 @@ visits:
         date: "2024-08-03"
         caption: "Dusk over Nalati grasslands"
         captionZh: "那拉提草原暮色"
-      - src: /img/travel/yili/20240731-伊犁-果子沟大桥与云雾_DSC01358.jpg
-        date: "2024-07-31"
-        caption: "Guozigou Bridge in the clouds"
-        captionZh: "果子沟大桥与云雾"
-      - src: /img/travel/yili/20240731-伊犁-果子沟大桥_IMG_20240731_151445.jpg
-        date: "2024-07-31"
-        caption: "Guozigou Bridge"
-        captionZh: "果子沟大桥"
-      - src: /img/travel/yili/20240731-伊犁-果子沟山景_IMG_20240731_151824.jpg
-        date: "2024-07-31"
-        caption: "Mountain view at Guozigou"
-        captionZh: "果子沟山景"
-      - src: /img/travel/yili/20240731-伊犁-果子沟大桥远景_DSC01425.jpg
-        date: "2024-07-31"
-        caption: "Distant view of Guozigou Bridge"
-        captionZh: "果子沟大桥远景"
       - src: /img/travel/yili/20240731-伊犁-晃晃村_DSC01669.jpg
         date: "2024-07-31"
         caption: "Huanghuang Village"
@@ -4832,26 +4816,62 @@ visits:
         date: "2024-07-31"
         caption: "Sayram Lake and mountains"
         captionZh: "赛里木湖与群山"
+        album: "Sayram Lake"
+        albumZh: "赛里木湖"
       - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖湖光_DSC01278.jpg
         date: "2024-07-31"
         caption: "View of Sayram Lake"
         captionZh: "赛里木湖湖光"
+        album: "Sayram Lake"
+        albumZh: "赛里木湖"
       - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖湖岸_DSC01481.jpg
         date: "2024-07-31"
         caption: "Sayram lakeshore"
         captionZh: "赛里木湖湖岸"
+        album: "Sayram Lake"
+        albumZh: "赛里木湖"
       - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖水湾_DSC01560.jpg
         date: "2024-07-31"
         caption: "Bay at Sayram Lake"
         captionZh: "赛里木湖水湾"
+        album: "Sayram Lake"
+        albumZh: "赛里木湖"
       - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖岸草地_DSC01582.jpg
         date: "2024-07-31"
         caption: "Meadow by Sayram Lake"
         captionZh: "赛里木湖岸草地"
+        album: "Sayram Lake"
+        albumZh: "赛里木湖"
       - src: /img/travel/sayram-lake/20240731-博尔塔拉-赛里木湖远景_DSC01594.jpg
         date: "2024-07-31"
         caption: "Distant view of Sayram Lake"
         captionZh: "赛里木湖远景"
+        album: "Sayram Lake"
+        albumZh: "赛里木湖"
+      - src: /img/travel/yili/20240731-伊犁-果子沟大桥与云雾_DSC01358.jpg
+        date: "2024-07-31"
+        caption: "Guozigou Bridge in the clouds"
+        captionZh: "果子沟大桥与云雾"
+        album: "Guozigou"
+        albumZh: "果子沟"
+      - src: /img/travel/yili/20240731-伊犁-果子沟大桥_IMG_20240731_151445.jpg
+        date: "2024-07-31"
+        caption: "Guozigou Bridge"
+        captionZh: "果子沟大桥"
+        album: "Guozigou"
+        albumZh: "果子沟"
+      - src: /img/travel/yili/20240731-伊犁-果子沟山景_IMG_20240731_151824.jpg
+        date: "2024-07-31"
+        caption: "Mountain view at Guozigou"
+        captionZh: "果子沟山景"
+        album: "Guozigou"
+        albumZh: "果子沟"
+      - src: /img/travel/yili/20240731-伊犁-果子沟大桥远景_DSC01425.jpg
+        date: "2024-07-31"
+        caption: "Distant view of Guozigou Bridge"
+        captionZh: "果子沟大桥远景"
+        album: "Guozigou"
+        albumZh: "果子沟"
 
   - id: baotou
     group: inner-mongolia
