@@ -3,8 +3,10 @@
   {{- range hugo.Sites }}
   {{- $lifePage := .GetPage "page" "life" }}
   {{- $showLife := ne .Params.showLife false }}
+  {{- $picturesPage := .GetPage "page" "pictures" }}
+  {{- $showPhotos := ne .Params.showPhotos false }}
   {{- range where .Pages "Sitemap.Disable" "ne" true }}
-  {{- if and .Permalink (or $showLife (not $lifePage) (ne .RelPermalink $lifePage.RelPermalink)) }}
+  {{- if and .Permalink (or $showLife (not $lifePage) (ne .RelPermalink $lifePage.RelPermalink)) (or $showPhotos (not $picturesPage) (ne .RelPermalink $picturesPage.RelPermalink)) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}

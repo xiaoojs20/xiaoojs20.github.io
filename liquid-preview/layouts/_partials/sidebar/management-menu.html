@@ -17,6 +17,7 @@
     </div>
     <div class="sidebar-management-menu__items">
         {{- range hugo.Data.management_links }}
+            {{- if or (ne .id "photo-data") (ne $context.Site.Params.showPhotos false) }}
             <a
                 href="{{ .url }}"
                 role="menuitem"
@@ -28,6 +29,7 @@
                 </span>
                 <span>{{ cond (hasPrefix $context.Language.Lang "zh") .titleZh .title }}</span>
             </a>
+            {{- end }}
         {{- end }}
     </div>
 </div>

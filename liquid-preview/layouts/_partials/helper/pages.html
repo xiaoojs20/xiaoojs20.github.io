@@ -15,6 +15,10 @@
 {{- if and (eq .Site.Params.showLife false) $lifePage -}}
     {{- $pages = where $pages "RelPermalink" "ne" $lifePage.RelPermalink -}}
 {{- end -}}
+{{- $picturesPage := .Site.GetPage "page" "pictures" -}}
+{{- if and (eq .Site.Params.showPhotos false) $picturesPage -}}
+    {{- $pages = where $pages "RelPermalink" "ne" $picturesPage.RelPermalink -}}
+{{- end -}}
 
 {{- $pages := partial "helper/pages-sort.html" (dict "Pages" $pages "Context" .) -}}
 

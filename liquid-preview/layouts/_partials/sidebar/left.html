@@ -50,8 +50,10 @@
         {{ $currentPage := . }}
         {{ $lifePage := .Site.GetPage "page" "life" }}
         {{ $showLife := ne .Site.Params.showLife false }}
+        {{ $picturesPage := .Site.GetPage "page" "pictures" }}
+        {{ $showPhotos := ne .Site.Params.showPhotos false }}
         {{ range .Site.Menus.main }}
-        {{ if or $showLife (not $lifePage) (ne .URL $lifePage.RelPermalink) }}
+        {{ if and (or $showLife (not $lifePage) (ne .URL $lifePage.RelPermalink)) (or $showPhotos (not $picturesPage) (ne .URL $picturesPage.RelPermalink)) }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
         <li {{ if $active }} class='current'{{ end }}>
             <a href='{{ .URL }}' {{ if .Params.newTab }}target="_blank"{{ end }}>

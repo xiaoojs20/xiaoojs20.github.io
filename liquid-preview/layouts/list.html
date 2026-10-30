@@ -1,10 +1,15 @@
 {{ define "main" }}
     {{- $pages := partial "helper/pages.html" . -}}
-    {{- $pageCount := len .Pages -}}
+    {{- $countPages := .Pages -}}
     {{- $lifePage := .Site.GetPage "page" "life" -}}
     {{- if and (eq .Site.Params.showLife false) $lifePage -}}
-        {{- $pageCount = len (where .Pages "RelPermalink" "ne" $lifePage.RelPermalink) -}}
+        {{- $countPages = where $countPages "RelPermalink" "ne" $lifePage.RelPermalink -}}
     {{- end -}}
+    {{- $picturesPage := .Site.GetPage "page" "pictures" -}}
+    {{- if and (eq .Site.Params.showPhotos false) $picturesPage -}}
+        {{- $countPages = where $countPages "RelPermalink" "ne" $picturesPage.RelPermalink -}}
+    {{- end -}}
+    {{- $pageCount := len $countPages -}}
     <header>
         <h3 class="section-title">
             {{ if eq .Parent (.GetPage "/") }}

@@ -3,8 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- $lifePage := .Site.GetPage "page" "life" }}
   {{- $showLife := ne .Site.Params.showLife false }}
+  {{- $picturesPage := .Site.GetPage "page" "pictures" }}
+  {{- $showPhotos := ne .Site.Params.showPhotos false }}
   {{- range where .Pages "Sitemap.Disable" "ne" true }}
-  {{- if and .Permalink (or $showLife (not $lifePage) (ne .RelPermalink $lifePage.RelPermalink)) }}
+  {{- if and .Permalink (or $showLife (not $lifePage) (ne .RelPermalink $lifePage.RelPermalink)) (or $showPhotos (not $picturesPage) (ne .RelPermalink $picturesPage.RelPermalink)) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
