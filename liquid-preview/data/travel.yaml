@@ -3548,15 +3548,15 @@ visits:
         date: "2024-10-05"
         caption: "Building at Hongmei Cultural and Creative Park"
         captionZh: "红梅文创园建筑"
-  - id: yanbian
+  - id: yanji
     group: jilin
     geoGroup: china
-    name: "Yanbian"
-    nameZh: "延边"
-    region: "Jilin"
-    regionZh: "吉林"
-    latitude: 43.10000
-    longitude: 129.20000
+    name: "Yanji"
+    nameZh: "延吉"
+    region: "Jilin · Yanbian"
+    regionZh: "吉林 · 延边"
+    latitude: 42.89130
+    longitude: 129.50910
     photos:
       - src: /img/travel/yanbian/20230429-延边-延吉街景_20230429-DSC02716.jpg
         date: "2023-04-29"
@@ -3578,6 +3578,16 @@ visits:
         date: "2023-04-29"
         caption: "Yanji street lights"
         captionZh: "延吉街道灯光"
+  - id: hunchun
+    group: jilin
+    geoGroup: china
+    name: "Hunchun"
+    nameZh: "珲春"
+    region: "Jilin · Yanbian"
+    regionZh: "吉林 · 延边"
+    latitude: 42.86260
+    longitude: 130.36600
+    photos:
       - src: /img/travel/yanbian/20230430-延边-延边民俗村入口_20230430-DSC02824.jpg
         date: "2023-04-30"
         caption: "Entrance to a folk village in Yanbian"

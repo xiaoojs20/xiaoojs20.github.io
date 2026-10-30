@@ -23,7 +23,7 @@
   const refreshSelection = () => {
     const c=colors();
     Object.values(maps).forEach(item=>{
-      item.areas?.eachLayer(layer=>{const selected=layer.feature.properties.id===selectedId;layer.setStyle({color:selected?c.selectedStroke:c.stroke,fillColor:selected?c.selected:c.visited,weight:selected?2:1.5,fillOpacity:selected?.85:.65})});
+      item.areas?.eachLayer(layer=>{const props=layer.feature.properties;const selected=props.id===selectedId || (Array.isArray(props.visitIds) && props.visitIds.includes(selectedId));layer.setStyle({color:selected?c.selectedStroke:c.stroke,fillColor:selected?c.selected:c.visited,weight:selected?2:1.5,fillOpacity:selected?.85:.65})});
       item.markers.eachLayer(marker=>marker.getElement()?.classList.toggle('travel-pin--selected',marker.options.visitId===selectedId && selectedId!==null));
     });
   };
@@ -77,7 +77,7 @@
       const c=colors();
       item.base=L.geoJSON(world,{interactive:false,style:{color:c.border,weight:1,fillColor:c.land,fillOpacity:1}}).addTo(item.map);
       item.boundaries=L.geoJSON(lines,{interactive:false,style:{color:c.line,weight:.65,opacity:.8}}).addTo(item.map);
-      item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const visit=byId.get(feature.properties.id);layer.bindTooltip(nameOf(visit));layer.on('click',()=>onSelect(visit))}}).addTo(item.map);
+      item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id) || (Array.isArray(f.properties.visitIds) && f.properties.visitIds.some(id=>byId.has(id))),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const props=feature.properties;const visit=byId.get(props.id);layer.bindTooltip(visit?nameOf(visit):nameOf(props));layer.on('click',()=>{if(visit)onSelect(visit);else item.map.fitBounds(layer.getBounds(),{maxZoom:8})})}}).addTo(item.map);
     });
     refreshSelection();
   }).catch(()=>{app.querySelector('[data-travel-error]').hidden=false});
