@@ -40,6 +40,7 @@
 </article>
 <dialog class="travel-lightbox" data-travel-lightbox aria-label="{{ cond $zh "查看照片" "View photo" }}"><button class="travel-lightbox-close" data-travel-close aria-label="{{ cond $zh "关闭照片" "Close photo" }}">×</button><img alt="" data-travel-lightbox-image><p data-travel-lightbox-caption></p></dialog>
 <script id="travel-data" type="application/json">{{ $travel | jsonify | safeJS }}</script>
+{{ partial "photos/privacy.html" . }}
 <script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script><script src="{{ "js/travel-map.js" | relURL }}?v={{ readFile "static/js/travel-map.js" | crypto.SHA256 }}" defer></script>
 {{ partial "footer/footer" . }}
 {{ end }}

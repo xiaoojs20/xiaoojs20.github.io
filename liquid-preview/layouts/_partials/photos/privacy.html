@@ -1,0 +1,9 @@
+{{- with hugo.Data.photo_privacy -}}
+  {{- if gt (len .photos) 0 -}}
+    <script id="photo-privacy-data" type="application/json">{{ . | jsonify | safeJS }}</script>
+    {{- $css := resources.Get "css/photo-privacy.css" | minify | fingerprint -}}
+    {{- $js := resources.Get "js/photo-privacy.js" | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{- end -}}
+{{- end -}}

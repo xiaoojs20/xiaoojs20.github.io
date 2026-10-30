@@ -66,6 +66,10 @@
     });
   };
   const showPhoto = photo => {
+    if (window.PhotoPrivacy?.isProtected(photo.src)) {
+      window.PhotoPrivacy.open(photo.src, (zh && photo.captionZh)||photo.caption||'');
+      return;
+    }
     const image=lightbox.querySelector('[data-travel-lightbox-image]');
     const caption=(zh && photo.captionZh)||photo.caption||'';
     image.src=photo.src; image.alt=caption || text('旅行照片','Travel photo');
@@ -118,11 +122,15 @@
         grid.replaceChildren();
         shown.forEach(photo=>{
         const btn=make('button','travel-photo');btn.type='button';
-        const img=make('img');img.src=photo.src;img.loading='lazy';img.alt=(zh && photo.captionZh)||photo.caption||text('旅行照片','Travel photo');
+        const img=make('img');img.src=window.PhotoPrivacy?.previewURL(photo.src)||photo.src;img.loading='lazy';img.alt=(zh && photo.captionZh)||photo.caption||text('旅行照片','Travel photo');
         btn.append(img);
+        if (window.PhotoPrivacy?.isProtected(photo.src)) {
+          const badge=make('span','photo-privacy-badge',text('🔒 回答问题查看','🔒 Answer to view'));
+          badge.setAttribute('aria-hidden','true');btn.append(badge);
+        }
         const caption=make('span','travel-photo__caption',img.alt);
         if(photo.date){const date=make('time','travel-photo__date',formatPhotoDate(photo.date));date.dateTime=photo.date;caption.append(date)}
-        btn.append(caption);btn.setAttribute('aria-label',text('查看照片：','View photo: ')+[img.alt,formatPhotoDate(photo.date)].filter(Boolean).join(' · '));btn.addEventListener('click',()=>showPhoto(photo));grid.append(btn)
+        btn.append(caption);btn.setAttribute('aria-label',(window.PhotoPrivacy?.isProtected(photo.src)?text('回答问题查看人像：','Answer a question to view this portrait: '):text('查看照片：','View photo: '))+[img.alt,formatPhotoDate(photo.date)].filter(Boolean).join(' · '));btn.addEventListener('click',()=>showPhoto(photo));grid.append(btn)
         });
       };
       let selectedTrip='';

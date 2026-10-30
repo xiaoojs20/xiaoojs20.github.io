@@ -26,6 +26,11 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a --exclude='/.git/' --exclude='/.github/' --exclude='/liquid-preview/' --exclude='/_site/' ./ _site/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check protected photo assets
+        run: node liquid-preview/scripts/check-photo-privacy.mjs --published _site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
