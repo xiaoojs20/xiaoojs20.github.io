@@ -122,3 +122,16 @@ markup:
   highlight: { noClasses: false, lineNos: true }
 outputs:
   home: [HTML, sitemapflat]
+
+# 备用照片留在城市子目录中，但不复制到公开网站。
+module:
+  mounts:
+    - { source: archetypes, target: archetypes }
+    - { source: assets, target: assets }
+    - { source: content, target: content }
+    - { source: data, target: data }
+    - { source: layouts, target: layouts }
+    - { source: i18n, target: i18n }
+    - source: static
+      target: static
+      files: ["! img/travel/**/备用/**"]

@@ -122,10 +122,6 @@ visits:
         date: "2026-06-27"
         caption: "Mountain peak"
         captionZh: "山峰"
-      - src: /img/travel/datong/20260627-大同-悬空寺远景_DSC08764.jpg
-        date: "2026-06-27"
-        caption: "Hanging Temple from afar"
-        captionZh: "悬空寺远景"
       - src: /img/travel/datong/20260627-大同-悬空寺与山崖_DSC08778.jpg
         date: "2026-06-27"
         caption: "Hanging Temple and cliff"
@@ -134,7 +130,7 @@ visits:
         date: "2026-06-27"
         caption: "Hanging Temple buildings"
         captionZh: "悬空寺楼阁"
-      - src: /img/travel/datong/20260627-大同-悬空寺近景_DSC08851.jpg
+      - src: /img/travel/datong/20260627-大同-悬崖寺院近景_DSC08851.jpg
         date: "2026-06-27"
         caption: "Hanging Temple close-up"
         captionZh: "悬空寺近景"
@@ -142,14 +138,6 @@ visits:
         date: "2026-06-27"
         caption: "Hanging Temple cliff"
         captionZh: "悬空寺山崖"
-      - src: /img/travel/datong/20260627-大同-悬空寺全景_DSC08858-2.jpg
-        date: "2026-06-27"
-        caption: "Hanging Temple panorama"
-        captionZh: "悬空寺全景"
-      - src: /img/travel/datong/20260627-大同-悬空寺悬空楼阁_DSC08868.jpg
-        date: "2026-06-27"
-        caption: "Hanging Temple elevated buildings"
-        captionZh: "悬空寺悬空楼阁"
       - src: /img/travel/datong/20260627-大同-悬空寺入口_DSC08912.jpg
         date: "2026-06-27"
         caption: "Hanging Temple entrance"
@@ -278,10 +266,6 @@ visits:
         date: "2026-10-03"
         caption: "Sunbeams through clouds"
         captionZh: "云隙光影"
-      - src: /img/travel/dali/20261003-大理-云与湖面_DSC00023.jpg
-        date: "2026-10-03"
-        caption: "Clouds over the lake"
-        captionZh: "云与湖面"
   - id: lijiang
     group: yunnan
     geoGroup: china
@@ -1286,10 +1270,6 @@ visits:
         date: "2025-12-06"
         caption: "City at dusk"
         captionZh: "城市暮色"
-      - src: /img/travel/jinan/20251206-济南-城市天际线_DSC07935.jpg
-        date: "2025-12-06"
-        caption: "City skyline at dusk"
-        captionZh: "城市天际线"
       - src: /img/travel/jinan/20251206-济南-超然楼夜景_DSC07940.jpg
         date: "2025-12-06"
         caption: "Chaoran Tower at night"
@@ -1422,14 +1402,6 @@ visits:
         date: "2019-01-11"
         caption: "View from Victoria Peak"
         captionZh: "太平山远眺"
-      - src: /img/travel/hong-kong/20190112-香港-金紫荆雕塑_20190112-DSC01655.jpg
-        date: "2019-01-12"
-        caption: "Golden Bauhinia sculpture"
-        captionZh: "金紫荆雕塑"
-      - src: /img/travel/hong-kong/20190112-香港-香港海港暮色_20190112-DSC01707.jpg
-        date: "2019-01-12"
-        caption: "Hong Kong harbour at dusk"
-        captionZh: "香港海港暮色"
       - src: /img/travel/hong-kong/20190112-香港-维多利亚港夜色_20190112-DSC01804.jpg
         date: "2019-01-12"
         caption: "Victoria Harbour at night"
@@ -1438,10 +1410,6 @@ visits:
         date: "2019-01-12"
         caption: "Hong Kong bay"
         captionZh: "香港海湾"
-      - src: /img/travel/hong-kong/20190112-香港-香港山间寺院_20190112-DSC02147.jpg
-        date: "2019-01-12"
-        caption: "Temple in the Hong Kong hills"
-        captionZh: "香港山间寺院"
       - src: /img/travel/hong-kong/20190113-香港-大屿山天坛大佛_20190113-DSC02268.jpg
         date: "2019-01-13"
         caption: "Tian Tan Buddha on Lantau Island"
@@ -2419,14 +2387,6 @@ visits:
     latitude: 23.12884
     longitude: 113.25896
     photos:
-      - src: /img/travel/guangzhou/20220705-广州-广州花圃_20220705-DSC01522.jpg
-        date: "2022-07-05"
-        caption: "Flowers in Guangzhou"
-        captionZh: "广州花圃"
-      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址陈设_20220705-DSC01568.jpg
-        date: "2022-07-05"
-        caption: "Interior at the Whampoa Military Academy site"
-        captionZh: "黄埔军校旧址陈设"
       - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址房间_20220705-DSC01569.jpg
         date: "2022-07-05"
         caption: "Room at the Whampoa Military Academy site"
@@ -2443,10 +2403,6 @@ visits:
         date: "2022-07-05"
         caption: "Historical materials at the Whampoa Military Academy site"
         captionZh: "黄埔军校旧址史料"
-      - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址书籍_20220705-DSC01588.jpg
-        date: "2022-07-05"
-        caption: "Book at the Whampoa Military Academy site"
-        captionZh: "黄埔军校旧址书籍"
       - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址校门_20220705-DSC01593.jpg
         date: "2022-07-05"
         caption: "Entrance to the Whampoa Military Academy site"
@@ -2463,10 +2419,6 @@ visits:
         date: "2022-07-06"
         caption: "Former French post office on Shamian Island"
         captionZh: "沙面法国邮局旧址"
-      - src: /img/travel/guangzhou/20220706-广州-沙面教堂_20220706-DSC01654.jpg
-        date: "2022-07-06"
-        caption: "Church on Shamian Island"
-        captionZh: "沙面教堂"
       - src: /img/travel/guangzhou/20220706-广州-沙面街头雕塑_20220706-DSC01665.jpg
         date: "2022-07-06"
         caption: "Street sculpture on Shamian Island"
@@ -2475,26 +2427,14 @@ visits:
         date: "2022-07-06"
         caption: "Building facade on Shamian Island"
         captionZh: "沙面建筑外立面"
-      - src: /img/travel/guangzhou/20220706-广州-沙面街景_20220706-DSC01674.jpg
-        date: "2022-07-06"
-        caption: "Street view on Shamian Island"
-        captionZh: "沙面街景"
       - src: /img/travel/guangzhou/20220706-广州-沙面老建筑与树影_20220706-DSC01682.jpg
         date: "2022-07-06"
         caption: "Historic architecture and trees on Shamian Island"
         captionZh: "沙面老建筑与树影"
-      - src: /img/travel/guangzhou/20220706-广州-沙面建筑细节_20220706-DSC01685.jpg
-        date: "2022-07-06"
-        caption: "Architecture detail on Shamian Island"
-        captionZh: "沙面建筑细节"
       - src: /img/travel/guangzhou/20220706-广州-沙面彩色建筑_20220706-DSC01696.jpg
         date: "2022-07-06"
         caption: "Colourful architecture on Shamian Island"
         captionZh: "沙面彩色建筑"
-      - src: /img/travel/guangzhou/20220706-广州-沙面人物雕塑_20220706-DSC01702.jpg
-        date: "2022-07-06"
-        caption: "Figure sculpture on Shamian Island"
-        captionZh: "沙面人物雕塑"
       - src: /img/travel/guangzhou/20220706-广州-沙面历史建筑_20220706-DSC01716.jpg
         date: "2022-07-06"
         caption: "Historic building on Shamian Island"
@@ -2645,14 +2585,6 @@ visits:
     latitude: 26.07750
     longitude: 119.29182
     photos:
-      - src: /img/travel/fuzhou/20240127-福州-福州街头雕塑_20240127-DSC06156.jpg
-        date: "2024-01-27"
-        caption: "Street sculpture in Fuzhou"
-        captionZh: "福州街头雕塑"
-      - src: /img/travel/fuzhou/20240127-福州-山间岩壁_20240127-DSC06169.jpg
-        date: "2024-01-27"
-        caption: "Rock face in the hills"
-        captionZh: "山间岩壁"
       - src: /img/travel/fuzhou/20240127-福州-山间水库_20240127-DSC06185.jpg
         date: "2024-01-27"
         caption: "Reservoir in the hills"
@@ -2669,10 +2601,6 @@ visits:
         date: "2024-01-27"
         caption: "Historic district in Fuzhou"
         captionZh: "福州历史街区"
-      - src: /img/travel/fuzhou/20240127-福州-展馆手稿_20240127-DSC06223.jpg
-        date: "2024-01-27"
-        caption: "Manuscript on display"
-        captionZh: "展馆手稿"
       - src: /img/travel/fuzhou/20240127-福州-福字装饰_20240127-DSC06228.jpg
         date: "2024-01-27"
         caption: "Decorative Chinese character for good fortune"
@@ -2693,10 +2621,6 @@ visits:
         date: "2024-01-28"
         caption: "Coastal view in Lianjiang"
         captionZh: "连江海岸远景"
-      - src: /img/travel/fuzhou/20240128-福州-连江海湾_20240128-DSC06273.jpg
-        date: "2024-01-28"
-        caption: "Lianjiang bay"
-        captionZh: "连江海湾"
       - src: /img/travel/fuzhou/20240128-福州-连江海岸山景_20240128-DSC06306.jpg
         date: "2024-01-28"
         caption: "Mountains by the coast in Lianjiang"
@@ -3936,14 +3860,6 @@ visits:
     latitude: 20.04623
     longitude: 110.19565
     photos:
-      - src: /img/travel/haikou/20240706-海口-海口美食_IMG_20240706_102204.jpg
-        date: "2024-07-06"
-        caption: "Food in Haikou"
-        captionZh: "海口美食"
-      - src: /img/travel/haikou/20240706-海口-鱼缸里的金鱼_DSC00109.jpg
-        date: "2024-07-06"
-        caption: "Goldfish in an aquarium"
-        captionZh: "鱼缸里的金鱼"
       - src: /img/travel/haikou/20240706-海口-海口骑楼老街_DSC00111.jpg
         date: "2024-07-06"
         caption: "Haikou Qilou Old Street"
@@ -4004,10 +3920,6 @@ visits:
         date: "2024-07-07"
         caption: "Flower-shaped interior lights"
         captionZh: "室内花形灯饰"
-      - src: /img/travel/haikou/20240707-海口-汉堡与薯条_IMG_20240707_120920.jpg
-        date: "2024-07-07"
-        caption: "Burger and fries"
-        captionZh: "汉堡与薯条"
       - src: /img/travel/haikou/20240707-海口-海边沙滩_DSC00437.jpg
         date: "2024-07-07"
         caption: "Beach by the sea"
@@ -4034,10 +3946,6 @@ visits:
         date: "2024-07-02"
         caption: "Street view in Hohhot"
         captionZh: "呼和浩特街景"
-      - src: /img/travel/hohhot/20240702-呼和浩特-呼和浩特街头夜景_DSC09839.jpg
-        date: "2024-07-02"
-        caption: "Hohhot street at night"
-        captionZh: "呼和浩特街头夜景"
       - src: /img/travel/hohhot/20240703-呼和浩特-内蒙古博物院壁画_DSC09853.jpg
         date: "2024-07-03"
         caption: "Mural at Inner Mongolia Museum"
@@ -4132,10 +4040,6 @@ visits:
         date: "2025-05-03"
         caption: "Ocean waves"
         captionZh: "海浪"
-      - src: /img/travel/dalian/20250503-大连-船尾浪花_DSC04610.jpg
-        date: "2025-05-03"
-        caption: "Wake behind the boat"
-        captionZh: "船尾浪花"
       - src: /img/travel/dalian/20250503-大连-航行中的浪花_DSC04613.jpg
         date: "2025-05-03"
         caption: "Waves from the boat"
@@ -4176,18 +4080,6 @@ visits:
         date: "2025-05-04"
         caption: "Coastal walkway"
         captionZh: "海岸步道"
-      - src: /img/travel/dalian/20250504-大连-海边渔船_DSC04843.jpg
-        date: "2025-05-04"
-        caption: "Boats near the shore"
-        captionZh: "海边渔船"
-      - src: /img/travel/dalian/20250504-大连-海岸消波块_DSC04855.jpg
-        date: "2025-05-04"
-        caption: "Coastal breakwater"
-        captionZh: "海岸消波块"
-      - src: /img/travel/dalian/20250504-大连-海上小船_DSC04860.jpg
-        date: "2025-05-04"
-        caption: "Boats at sea"
-        captionZh: "海上小船"
       - src: /img/travel/dalian/20250504-大连-海岸岩石_DSC04887.jpg
         date: "2025-05-04"
         caption: "Coastal rocks"
@@ -4224,10 +4116,6 @@ visits:
         date: "2023-05-02"
         caption: "Changbai Mountain range"
         captionZh: "长白山山脉"
-      - src: /img/travel/changbai-mountain/20230502-长白山-长白山与蓝天_20230502-DSC03041.jpg
-        date: "2023-05-02"
-        caption: "Changbai Mountain under the blue sky"
-        captionZh: "长白山与蓝天"
       - src: /img/travel/changbai-mountain/20230502-长白山-长白山标识_20230502-DSC03045.jpg
         date: "2023-05-02"
         caption: "Changbai Mountain sign"
@@ -4252,10 +4140,6 @@ visits:
         date: "2023-05-02"
         caption: "Snowy valley on Changbai Mountain"
         captionZh: "长白山雪谷"
-      - src: /img/travel/changbai-mountain/20230502-长白山-长白山山谷雪景_20230502-DSC03077.jpg
-        date: "2023-05-02"
-        caption: "Snow-covered Changbai Mountain valley"
-        captionZh: "长白山山谷雪景"
       - src: /img/travel/changbai-mountain/20230502-长白山-长白山雪山远景_20230502-DSC03079.jpg
         date: "2023-05-02"
         caption: "Distant snowy Changbai Mountain"
