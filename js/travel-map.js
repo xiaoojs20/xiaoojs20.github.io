@@ -20,12 +20,16 @@
   };
   const formatTrip = trip => trip.start===trip.end ? formatMonth(trip.start) : `${formatMonth(trip.start)}–${formatMonth(trip.end)}`;
   const formatPhotoDate = date => /^\d{4}-\d{2}$/.test(date || '') ? formatMonth(date) : date;
-  // Timeline nodes come from configured journeys, not from a count of photo months.
-  const tripsOf = v => (Array.isArray(v.trips) ? v.trips : []).map(trip=>({
-    ...trip,
-    key:`${trip.start}/${trip.end}`,
-    photos:photosOf(v).filter(photo=>{const month=photoMonthOf(photo);return month && month>=trip.start && month<=trip.end})
-  })).sort((a,b)=>a.start.localeCompare(b.start));
+  // Keep configured journeys together; otherwise show the known photo range as one period.
+  const tripsOf = v => {
+    const months=photoMonthsOf(v);
+    const periods=Array.isArray(v.trips) && v.trips.length ? v.trips : months.length ? [{start:months[0],end:months[months.length-1]}] : [];
+    return periods.map(trip=>({
+      ...trip,
+      key:`${trip.start}/${trip.end}`,
+      photos:photosOf(v).filter(photo=>{const month=photoMonthOf(photo);return month && month>=trip.start && month<=trip.end})
+    })).sort((a,b)=>a.start.localeCompare(b.start));
+  };
   const photoPeriodsText = v => {
     if (v.id === 'beijing' || v.id === 'jinjiang') return '';
     const trips=tripsOf(v);
@@ -65,23 +69,30 @@
     if(demo)heading.append(make('span','travel-detail-label',text('示例 · 非真实行程','Example · not a real trip')));
     const photos=photosOf(visit);
     const trips=tripsOf(visit);
-    const hasTimeline=!demo && visit.id!=='beijing' && visit.id!=='jinjiang' && trips.length>1;
+    const hasTimeline=!demo && visit.id!=='beijing' && visit.id!=='jinjiang' && trips.length>0;
     const title=make('h2','travel-place-title');
-    title.append(make('span','travel-place-title__name',nameOf(visit)));
+    const location=make('span','travel-place-title__location');
+    location.append(make('span','travel-place-title__name',nameOf(visit)));
+    const region=regionOf(visit);
+    if(region && region!==nameOf(visit)){
+      const label=make('span','travel-place-title__region',region);label.title=region;location.append(label);
+    }
+    title.append(location);
     const dates=demo || hasTimeline?'':photoPeriodsText(visit);
     if(dates)title.append(make('span','travel-place-title__dates',text('照片记录：','Photo dates: ')+dates));
     const count=make('span','travel-place-title__dates',photoCountText(photos.length));
     count.dataset.travelPhotoCount='';count.setAttribute('aria-live','polite');count.setAttribute('aria-atomic','true');
     title.append(count);
     heading.append(title);
-    const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · '); if(meta)heading.append(make('p','',meta));
+    if(visit.date)heading.append(make('p','',visit.date));
     content.append(heading);
     if(descOf(visit))content.append(make('p','',descOf(visit)));
     if(!photos.length)content.append(make('p','',text('这段旅程的照片还在整理中。','Photos from this journey are coming soon.')));
     else {
       const hasAlbums=photos.some(photo=>photo.album && photo.albumZh);
       const years=[...new Set(photos.map(photo=>/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'').filter(Boolean))].sort().reverse();
-      const groupBy=hasAlbums?'album':!hasTimeline && years.length>1?'year':null;
+      // Xiamen's year albums duplicate the journey timeline.
+      const groupBy=visit.id==='xiamen'?null:hasAlbums?'album':!hasTimeline && years.length>1?'year':null;
       const groups=new Map();
       if(groupBy)photos.forEach(photo=>{
         const year=/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'';
