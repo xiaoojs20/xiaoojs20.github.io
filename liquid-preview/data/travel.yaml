@@ -1862,6 +1862,54 @@ visits:
         date: "2026-06-28"
         caption: "The finial and upper galleries of Yingxian Wooden Pagoda"
         captionZh: "应县木塔的塔刹与上层檐廊"
+      - src: /img/travel/datong/20260627-大同-悬空寺山门.jpg
+        date: "2026-06-27"
+        caption: "The Hanging Temple’s gateway beneath steep cliffs and layered eaves"
+        captionZh: "悬空寺山门，抬头便是绝壁与重檐"
+      - src: /img/travel/datong/20260628-大同-云冈石窟彩绘造像与石刻.jpg
+        date: "2026-06-28"
+        caption: "Painted figures and carved stone meeting in the light at Yungang"
+        captionZh: "云冈石窟，彩绘与石刻在光影里相遇"
+      - src: /img/travel/datong/20260628-大同-华严寺山门石狮.jpg
+        date: "2026-06-28"
+        caption: "A stone lion standing guard at Huayan Temple’s entrance"
+        captionZh: "华严寺门前，石狮守望一方古刹"
+      - src: /img/travel/datong/20260627-大同-悬空寺栈廊留影.jpg
+        date: "2026-06-27"
+        caption: "A portrait among the Hanging Temple’s cliffside galleries"
+        captionZh: "悬空寺栈廊，把身影留在重重楼阁之间"
+      - src: /img/travel/datong/20260627-大同-应县木塔山门与层檐.jpg
+        date: "2026-06-27"
+        caption: "Layered timber eaves rising beyond Yingxian Wooden Pagoda’s gateway"
+        captionZh: "应县木塔，穿过山门仰望层层飞檐"
+      - src: /img/travel/datong/20260627-大同-大同九龙壁夜色.jpg
+        date: "2026-06-27"
+        caption: "Glazed dragons glowing on Datong’s Nine-Dragon Wall after dark"
+        captionZh: "大同九龙壁，夜色里游动的琉璃光彩"
+      - src: /img/travel/datong/20260628-大同-云冈石窟佛像与胁侍.jpg
+        date: "2026-06-28"
+        caption: "A Buddha and attendant figures in Yungang’s weathered stone"
+        captionZh: "云冈石窟，石佛与胁侍静立岁月之间"
+      - src: /img/travel/datong/20260628-大同-云冈石窟彩绘菩萨.jpg
+        date: "2026-06-28"
+        caption: "A faint smile on a painted bodhisattva at Yungang"
+        captionZh: "云冈石窟，彩绘菩萨的一抹微笑"
+      - src: /img/travel/datong/20260628-大同-云冈第二十窟露天大佛.jpg
+        date: "2026-06-28"
+        caption: "The open-air Buddha of Yungang’s Cave 20 beneath the sky"
+        captionZh: "云冈第二十窟，露天大佛与长空相望"
+      - src: /img/travel/datong/20260628-大同-云冈露天大佛前留影.jpg
+        date: "2026-06-28"
+        caption: "A portrait before Yungang’s monumental open-air Buddha"
+        captionZh: "把这一程，留在云冈露天大佛前"
+      - src: /img/travel/datong/20260628-大同-华严寺殿内彩塑群像.jpg
+        date: "2026-06-28"
+        caption: "Painted figures with distinct expressions inside Huayan Temple"
+        captionZh: "华严寺殿内，彩塑群像神态各异"
+      - src: /img/travel/datong/20260628-大同-华严宝塔与松影.jpg
+        date: "2026-06-28"
+        caption: "Huayan Pagoda’s layered eaves rising above the pines"
+        captionZh: "华严宝塔，层檐从松影间升起"
   - id: kunming
     group: yunnan
     geoGroup: china
@@ -1904,14 +1952,26 @@ visits:
         date: "2026-10-01"
         caption: "Gold lettering on the Yunnan People’s Heroes Monument"
         captionZh: "云南人民英雄纪念碑的金色题字"
-      - src: /img/travel/kunming/20261002-昆明-湖上小船_DSC09392.jpg
+      - src: /img/travel/kunming/20261002-昆明-滇池渔舟_DSC09392.jpg
         date: "2026-10-02"
-        caption: "Canopied boats beneath a steep lakeside cliff"
-        captionZh: "湖上篷船，身后是层叠山崖"
-      - src: /img/travel/kunming/20261002-昆明-湖畔山景_DSC09577.jpg
+        caption: "Canopied fishing boats on Dianchi Lake’s blue water"
+        captionZh: "滇池碧水上，篷船缓缓而行"
+      - src: /img/travel/kunming/20261002-昆明-滇池与西山_DSC09577.jpg
         date: "2026-10-02"
-        caption: "Lakeside houses beneath a sheer cliff"
-        captionZh: "峭壁下的临湖屋舍"
+        caption: "Waterside buildings beneath Xishan’s cliffs by Dianchi Lake"
+        captionZh: "滇池西山，峭壁与水岸屋舍相映"
+      - src: /img/travel/kunming/20261001-昆明-翠湖街区最云南小店.jpg
+        date: "2026-10-01"
+        caption: "A little shop corner filled with Yunnan colours and keepsakes near Green Lake"
+        captionZh: "翠湖街区的小店，把云南装进一方角落"
+      - src: /img/travel/kunming/20261001-昆明-翠湖街区石板坡巷.jpg
+        date: "2026-10-01"
+        caption: "A slow walk down a stone-paved lane near Green Lake"
+        captionZh: "翠湖街区，沿着石板坡巷慢慢走"
+      - src: /img/travel/kunming/20261001-昆明-黄公东街黄墙与三角梅.jpg
+        date: "2026-10-01"
+        caption: "Bougainvillea spilling over Huang Gong East Street’s warm yellow walls"
+        captionZh: "黄公东街，三角梅越过一墙暖黄"
   - id: dali
     group: yunnan
     geoGroup: china
@@ -2872,6 +2932,38 @@ visits:
         date: "2026-05-04"
         caption: "A chimney and ships beneath Amur Bay’s sunset"
         captionZh: "烟囱、船影与阿穆尔湾晚霞"
+      - src: /img/travel/vladivostok/20260503-海参崴-太平洋舰队博物馆旧海报.jpg
+        date: "2026-05-03"
+        caption: "Wartime imagery on a poster at the Museum of the Pacific Fleet"
+        captionZh: "太平洋舰队博物馆，旧海报里的战争记忆"
+      - src: /img/travel/vladivostok/20260503-海参崴-S56潜艇博物馆.jpg
+        date: "2026-05-03"
+        caption: "The conning tower and deck of the S-56 submarine museum"
+        captionZh: "S-56 潜艇，舰桥与甲板留住海军往事"
+      - src: /img/travel/vladivostok/20260503-海参崴-斯维特兰大街俄式建筑.jpg
+        date: "2026-05-03"
+        caption: "Historic façades and the Golden Bridge along Svetlanskaya Street"
+        captionZh: "斯维特兰大街，老建筑与金角大桥同框"
+      - src: /img/travel/vladivostok/20260504-海参崴-托卡列夫灯塔海堤.jpg
+        date: "2026-05-04"
+        caption: "The causeway leading toward Tokarevsky Lighthouse and the open sea"
+        captionZh: "托卡列夫灯塔，沿着海堤走向蓝色尽头"
+      - src: /img/travel/vladivostok/20260504-海参崴-山坡上的海参崴暮色.jpg
+        date: "2026-05-04"
+        caption: "Vladivostok’s hillside neighbourhoods opening toward the bay at dusk"
+        captionZh: "海参崴暮色，山城一层层铺向海湾"
+      - src: /img/travel/vladivostok/20260505-海参崴-滨海水族馆蓝色水世界.jpg
+        date: "2026-05-05"
+        caption: "Following fish through the glass at Primorsky Aquarium"
+        captionZh: "滨海水族馆，指尖隔着玻璃追逐鱼群"
+      - src: /img/travel/vladivostok/20260502-海参崴-阿穆尔湾海滨晚霞.jpg
+        date: "2026-05-02"
+        caption: "Sunset and rolling waves along Amur Bay’s waterfront"
+        captionZh: "阿穆尔湾海滨，晚霞与浪声一起入夜"
+      - src: /img/travel/vladivostok/20260503-海参崴-太平洋舰队纪念墙.jpg
+        date: "2026-05-03"
+        caption: "Stone inscriptions and a wartime emblem at the Pacific Fleet memorial"
+        captionZh: "太平洋舰队纪念墙，石刻与勋章诉说往事"
   - id: yili
     group: xinjiang
     geoGroup: china
