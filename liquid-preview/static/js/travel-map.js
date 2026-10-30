@@ -28,6 +28,8 @@
   const make = (tag, cls, value) => { const e=document.createElement(tag); if(cls)e.className=cls; if(value)e.textContent=value; return e; };
   const markerIcon = (demo=false) => L.divIcon({className:'travel-pin'+(demo?' travel-pin--demo':''),html:'<svg aria-hidden="true" viewBox="0 0 24 30"><path d="M12 1C6 1 2 5.5 2 11c0 7 10 17 10 17s10-10 10-17C22 5.5 18 1 12 1Z"/><circle cx="12" cy="11" r="3"/></svg>',iconSize:[16,20],iconAnchor:[8,18]});
   const countText = n => text(`${n} 个地点`, `${n} ${n===1?'place':'places'}`);
+  const photosOf = v => Array.isArray(v.photos) ? v.photos.filter(p=>p && p.src) : [];
+  const photoCountText = n => text(`${n} 张照片`, `${n} ${n===1?'photo':'photos'}`);
   app.querySelector('[data-travel-count]').textContent=countText(visits.length);
   const colors = () => document.documentElement.dataset.scheme === 'dark'
     ? {land:'#53605f', border:'#75817d', line:'#7b8881', visited:'#da9877', stroke:'#f0bc9d', selected:'#83aef0', selectedStroke:'#c7dcff'}
@@ -53,15 +55,16 @@
     reset.hidden=false; content.replaceChildren();
     const heading=make('div','travel-place-heading');
     if(demo)heading.append(make('span','travel-detail-label',text('示例 · 非真实行程','Example · not a real trip')));
+    const photos=photosOf(visit);
     const title=make('h2','travel-place-title');
     title.append(make('span','travel-place-title__name',nameOf(visit)));
     const months=demo?'':photoMonthsText(visit);
     if(months)title.append(make('span','travel-place-title__dates',text('照片记录：','Photo dates: ')+months));
+    title.append(make('span','travel-place-title__dates',photoCountText(photos.length)));
     heading.append(title);
     const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · '); if(meta)heading.append(make('p','',meta));
     content.append(heading);
     if(descOf(visit))content.append(make('p','',descOf(visit)));
-    const photos=Array.isArray(visit.photos)?visit.photos.filter(p=>p && p.src):[];
     if(!photos.length)content.append(make('p','',text('这段旅程的照片还在整理中。','Photos from this journey are coming soon.')));
     else {
       const hasAlbums=photos.some(photo=>photo.album && photo.albumZh);
@@ -101,21 +104,6 @@
     content.scrollTop=0;
   };
   const onSelect = visit => {showPlace(visit);if(window.matchMedia('(max-width: 850px)').matches)app.querySelector('.travel-panel').scrollIntoView({behavior:'smooth',block:'start'})};
-  const showArea = (props, places) => {
-    selectedId=props.id; refreshSelection(); reset.hidden=false; content.replaceChildren();
-    content.append(make('h2','',nameOf(props)));
-    content.append(make('p','',text('选择一个地点查看照片。','Choose a place to view its photos.')));
-    const list=make('div','travel-group__places');
-    places.forEach(visit=>{
-      const btn=make('button','travel-place'); btn.type='button';
-      const label=make('span'); label.append(make('strong','',nameOf(visit)));
-      const meta=[regionOf(visit),visit.date].filter(Boolean).join(' · ');
-      if(meta)label.append(make('small','',meta));
-      btn.append(label,make('span','','↗')); btn.addEventListener('click',()=>onSelect(visit)); list.append(btn);
-    });
-    content.append(list); content.scrollTop=0;
-    if(window.matchMedia('(max-width: 850px)').matches)app.querySelector('.travel-panel').scrollIntoView({behavior:'smooth',block:'start'});
-  };
   const fit = scope => {const item=maps[scope];const pts=visits.map(v=>[Number(v.latitude),Number(v.longitude)]);const padding=window.matchMedia('(max-width: 850px)').matches ? .25 : .15;if(pts.length)item.map.fitBounds(L.latLngBounds(pts).pad(padding),{maxZoom:6});else item.map.setView([30,105],3)};
   ['combined'].forEach(scope=>{
     const map=L.map(app.querySelector(`[data-map="${scope}"]`),{scrollWheelZoom:true,zoomSnap:0.25,zoomDelta:0.5,wheelPxPerZoomLevel:240,worldCopyJump:true,minZoom:2,maxZoom:8}).setView([30,105],3);
@@ -134,7 +122,7 @@
       const c=colors();
       item.base=L.geoJSON(world,{interactive:false,style:{color:c.border,weight:1,fillColor:c.land,fillOpacity:1}}).addTo(item.map);
       item.boundaries=L.geoJSON(lines,{interactive:false,style:{color:c.line,weight:.65,opacity:.8}}).addTo(item.map);
-      item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id) || (Array.isArray(f.properties.visitIds) && f.properties.visitIds.some(id=>byId.has(id))),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const props=feature.properties;const visit=byId.get(props.id);layer.bindTooltip(visit?nameOf(visit):nameOf(props));layer.on('click',()=>{if(visit)onSelect(visit);else showArea(props,props.visitIds.map(id=>byId.get(id)).filter(Boolean))})}}).addTo(item.map);
+      item.areas=L.geoJSON(areas,{filter:f=>byId.has(f.properties.id) || (Array.isArray(f.properties.visitIds) && f.properties.visitIds.some(id=>byId.has(id))),style:{color:c.stroke,weight:1.5,fillColor:c.visited,fillOpacity:.65},onEachFeature:(feature,layer)=>{const props=feature.properties;const visit=byId.get(props.id);layer.bindTooltip(visit?nameOf(visit):nameOf(props));layer.on('click',event=>{const candidates=visit?[visit]:props.visitIds.map(id=>byId.get(id)).filter(Boolean);const nearest=candidates.reduce((best,candidate)=>!best || item.map.distance(event.latlng,[Number(candidate.latitude),Number(candidate.longitude)]) < item.map.distance(event.latlng,[Number(best.latitude),Number(best.longitude)]) ? candidate : best,null);if(nearest)onSelect(nearest)})}}).addTo(item.map);
     });
     refreshSelection();
   }).catch(()=>{app.querySelector('[data-travel-error]').hidden=false});
@@ -159,7 +147,7 @@
       summary.append(make('strong','',(zh && info.nameZh)||info.name||text('其他地点','Other places')),make('span','travel-group__count',countText(locations.length)),make('span','travel-group__chevron','›'));
       section.append(summary);
       const list=make('div','travel-group__places');
-      locations.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));list.append(btn)});
+      locations.forEach(v=>{const btn=make('button','travel-place');btn.type='button';const label=make('span');label.append(make('strong','',nameOf(v)));const meta=[regionOf(v),v.date,photoCountText(photosOf(v).length)].filter(Boolean).join(' · ');if(meta)label.append(make('small','',meta));btn.append(label,make('span','','↗'));btn.addEventListener('click',()=>focusPlace(v));list.append(btn)});
       section.append(list);content.append(section);
     });
     if(!visits.length && data.demo){const demo=make('button','travel-demo-button',text('✦ 查看示例地点','✦ Explore an example'));demo.type='button';demo.addEventListener('click',()=>{const v=data.demo;const icon=markerIcon(true);demoMarker=L.marker([Number(v.latitude),Number(v.longitude)],{icon,title:nameOf(v),alt:nameOf(v),visitId:v.id}).addTo(maps.combined.markers).on('click',()=>showPlace(v,true));requestAnimationFrame(()=>maps.combined.map.setView([Number(v.latitude),Number(v.longitude)],5));showPlace(v,true)});content.append(demo)}
