@@ -23,8 +23,7 @@
       const [year, number] = month.split('-');
       return zh ? `${year}年${Number(number)}月` : new Intl.DateTimeFormat('en', {month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(`${month}-01T00:00:00Z`));
     };
-    const first = months[0], last = months[months.length-1];
-    return first === last ? formatMonth(first) : `${formatMonth(first)} – ${formatMonth(last)}`;
+    return months.map(formatMonth).join(zh ? '、' : ', ');
   };
   const make = (tag, cls, value) => { const e=document.createElement(tag); if(cls)e.className=cls; if(value)e.textContent=value; return e; };
   const markerIcon = (demo=false) => L.divIcon({className:'travel-pin'+(demo?' travel-pin--demo':''),html:'<svg aria-hidden="true" viewBox="0 0 24 30"><path d="M12 1C6 1 2 5.5 2 11c0 7 10 17 10 17s10-10 10-17C22 5.5 18 1 12 1Z"/><circle cx="12" cy="11" r="3"/></svg>',iconSize:[16,20],iconAnchor:[8,18]});
