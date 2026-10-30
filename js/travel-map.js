@@ -101,8 +101,8 @@
     else {
       const hasAlbums=photos.some(photo=>photo.album && photo.albumZh);
       const years=[...new Set(photos.map(photo=>/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'').filter(Boolean))].sort().reverse();
-      // Xiamen's year albums duplicate the journey timeline.
-      const groupBy=visit.id==='xiamen'?null:hasAlbums?'album':!hasTimeline && years.length>1?'year':null;
+      // Small Xinjiang albums need no dropdown; Xiamen's year albums duplicate its timeline.
+      const groupBy=visit.group==='xinjiang' || visit.id==='xiamen'?null:hasAlbums?'album':!hasTimeline && years.length>1?'year':null;
       const groups=new Map();
       if(groupBy)photos.forEach(photo=>{
         const year=/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'';
