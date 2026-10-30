@@ -3065,6 +3065,10 @@ visits:
     regionZh: "新疆"
     latitude: 43.91381
     longitude: 81.32719
+    # 用户确认：2024 年 7—8 月是同一次连续行程。
+    trips:
+      - start: "2024-07"
+        end: "2024-08"
     photos:
       - src: /img/travel/yili/20240801-伊犁-草原暮色与马_IMG_20240801_211137.jpg
         date: "2024-08-01"
@@ -3457,6 +3461,10 @@ visits:
     nameZh: "香港"
     latitude: 22.34924
     longitude: 114.18578
+    # 用户确认：旧相机 2019 年日期有误，照片并入后一次行程；仅确认到月份。
+    trips:
+      - start: "2024-07"
+        end: "2024-07"
     photos:
       - src: /img/travel/hong-kong/20240708-香港-香港街道与巴士_IMG_20240708_143101.jpg
         date: "2024-07-08"
@@ -3534,44 +3542,44 @@ visits:
         date: "2024-07-09"
         caption: "The University of Hong Kong’s name on red brick"
         captionZh: "香港大学，红砖墙上的校名"
-      - src: /img/travel/hong-kong/20190110-香港-香港海滨树影_20190110-DSC01235.jpg
-        date: "2019-01-10"
+      - src: /img/travel/hong-kong/202407-香港-香港海滨树影_DSC01235.jpg
+        date: "2024-07"
         caption: "A waterfront lawn beneath Hong Kong’s palm trees"
         captionZh: "棕榈树下的香港海滨草坪"
-      - src: /img/travel/hong-kong/20190111-香港-维多利亚港_20190111-DSC01403.jpg
-        date: "2019-01-11"
+      - src: /img/travel/hong-kong/202407-香港-维多利亚港_DSC01403.jpg
+        date: "2024-07"
         caption: "The Kowloon waterfront viewed from Hong Kong Island"
         captionZh: "从港岛遥望九龙半岛"
-      - src: /img/travel/hong-kong/20190111-香港-维多利亚港水岸_20190111-DSC01432.jpg
-        date: "2019-01-11"
+      - src: /img/travel/hong-kong/202407-香港-维多利亚港水岸_DSC01432.jpg
+        date: "2024-07"
         caption: "Victoria Harbour’s waterfront beneath distant hills"
         captionZh: "维港水岸，高楼渐入远山"
-      - src: /img/travel/hong-kong/20190111-香港-香港街边雕塑_20190111-DSC01476.jpg
-        date: "2019-01-11"
+      - src: /img/travel/hong-kong/202407-香港-香港街边雕塑_DSC01476.jpg
+        date: "2024-07"
         caption: "The Bruce Lee statue on the Avenue of Stars"
         captionZh: "星光大道上的李小龙铜像"
-      - src: /img/travel/hong-kong/20190111-香港-太平山远眺_20190111-DSC01572.jpg
-        date: "2019-01-11"
+      - src: /img/travel/hong-kong/202407-香港-太平山远眺_DSC01572.jpg
+        date: "2024-07"
         caption: "Both shores of Victoria Harbour from the Peak"
         captionZh: "太平山上，维港两岸尽收眼底"
-      - src: /img/travel/hong-kong/20190112-香港-维多利亚港夜色_20190112-DSC01804.jpg
-        date: "2019-01-12"
+      - src: /img/travel/hong-kong/202407-香港-维多利亚港夜色_DSC01804.jpg
+        date: "2024-07"
         caption: "The Film Awards statue and visitors beneath evening clouds"
         captionZh: "暮云下的金像奖女神与游人"
-      - src: /img/travel/hong-kong/20190112-香港-香港海湾_20190112-DSC02059.jpg
-        date: "2019-01-12"
+      - src: /img/travel/hong-kong/202407-香港-香港海湾_DSC02059.jpg
+        date: "2024-07"
         caption: "Hong Kong’s mountains and waterfront from the sea"
         captionZh: "海面远望香港的山与城"
-      - src: /img/travel/hong-kong/20190113-香港-大屿山天坛大佛_20190113-DSC02268.jpg
-        date: "2019-01-13"
+      - src: /img/travel/hong-kong/202407-香港-大屿山天坛大佛_DSC02268.jpg
+        date: "2024-07"
         caption: "The Tian Tan Buddha above Lantau’s wooded hills"
         captionZh: "大屿山天坛大佛，端坐山林间"
-      - src: /img/travel/hong-kong/20190113-香港-昂坪缆车_20190113-DSC02342.jpg
-        date: "2019-01-13"
+      - src: /img/travel/hong-kong/202407-香港-昂坪缆车_DSC02342.jpg
+        date: "2024-07"
         caption: "Ngong Ping 360 cable cars between mountains and sea"
         captionZh: "昂坪360缆车，山海之间"
-      - src: /img/travel/hong-kong/20190114-香港-海边人物_20190114-DSC02549.jpg
-        date: "2019-01-14"
+      - src: /img/travel/hong-kong/202407-香港-海边人物_DSC02549.jpg
+        date: "2024-07"
         caption: "A quiet pause by Hong Kong’s waterfront"
         captionZh: "香港海边，暂歇片刻"
   - id: macao
@@ -3581,6 +3589,10 @@ visits:
     nameZh: "澳门"
     latitude: 22.17576
     longitude: 113.55141
+    # 用户确认：旧相机 2019 年日期有误，照片并入后一次行程；仅确认到月份。
+    trips:
+      - start: "2024-02"
+        end: "2024-02"
     photos:
       - src: /img/travel/macao/20240213-澳门-大三巴牌坊_20240213-DSC06432.jpg
         date: "2024-02-13"
@@ -3754,12 +3766,12 @@ visits:
         date: "2024-02-13"
         caption: "Wynn Palace’s illuminated façade after dark"
         captionZh: "永利皇宫的夜间灯光立面"
-      - src: /img/travel/macao/20190115-澳门-澳门红色电话亭_20190115-DSC02748.jpg
-        date: "2019-01-15"
+      - src: /img/travel/macao/202402-澳门-澳门红色电话亭_DSC02748.jpg
+        date: "2024-02"
         caption: "A red telephone box outside The Londoner Macao"
         captionZh: "澳门伦敦人街角的红色电话亭"
-      - src: /img/travel/macao/20190115-澳门-澳门巴黎人埃菲尔铁塔_20190115-DSC02769.jpg
-        date: "2019-01-15"
+      - src: /img/travel/macao/202402-澳门-澳门巴黎人埃菲尔铁塔_DSC02769.jpg
+        date: "2024-02"
         caption: "The Parisian’s Eiffel Tower beneath cloudy skies"
         captionZh: "阴云下的巴黎人埃菲尔铁塔"
   - id: chengde
@@ -4618,6 +4630,11 @@ visits:
     regionZh: "广东"
     latitude: 23.12884
     longitude: 113.25896
+    trips:
+      - start: "2022-07"
+        end: "2022-07"
+      - start: "2024-02"
+        end: "2024-02"
     photos:
       - src: /img/travel/guangzhou/20220705-广州-黄埔军校旧址房间_20220705-DSC01569.jpg
         date: "2022-07-05"
@@ -4688,6 +4705,11 @@ visits:
     regionZh: "广东"
     latitude: 22.54457
     longitude: 114.05454
+    trips:
+      - start: "2023-09"
+        end: "2023-09"
+      - start: "2024-07"
+        end: "2024-07"
     photos:
       - src: /img/travel/shenzhen/20240708-深圳-深圳字样建筑_IMG_20240708_093406.jpg
         date: "2024-07-08"
@@ -4948,6 +4970,11 @@ visits:
     regionZh: "福建"
     latitude: 24.48011
     longitude: 118.08535
+    trips:
+      - start: "2020-08"
+        end: "2020-08"
+      - start: "2023-02"
+        end: "2023-02"
     photos:
       - src: /img/travel/xiamen/20200819-厦门-沙坡尾夜景_1675616490322.jpg
         date: "2020-08-19"
@@ -5370,6 +5397,13 @@ visits:
     nameZh: "天津"
     latitude: 39.30326
     longitude: 117.41636
+    trips:
+      - start: "2023-09"
+        end: "2023-09"
+      - start: "2024-04"
+        end: "2024-04"
+      - start: "2025-05"
+        end: "2025-05"
     photos:
       - src: /img/travel/tianjin/20250502-天津-鱼尾狮雕像_MVIMG_20250502_135515.jpg
         date: "2025-05-02"
