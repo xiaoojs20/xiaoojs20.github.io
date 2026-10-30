@@ -4713,7 +4713,31 @@ visits:
     regionZh: "内蒙古"
     latitude: 40.99027
     longitude: 113.13156
-    photos: []
+    photos:
+      - src: /img/travel/ulanqab/20240701-乌兰察布-旅途餐食与菜肴_IMG_20240701_125550.jpg
+        date: "2024-07-01"
+        caption: "A meal during the journey"
+        captionZh: "旅途餐食与菜肴"
+      - src: /img/travel/ulanqab/20240701-乌兰察布-蒸笼里的饺子_IMG_20240701_130249.jpg
+        date: "2024-07-01"
+        caption: "Dumplings in a steamer"
+        captionZh: "蒸笼里的饺子"
+      - src: /img/travel/ulanqab/20240701-乌兰察布-铜锅与餐食_IMG_20240701_205256.jpg
+        date: "2024-07-01"
+        caption: "A copper hot pot and meal"
+        captionZh: "铜锅与餐食"
+      - src: /img/travel/ulanqab/20240702-乌兰察布-手持碗中餐食_IMG_20240702_102856.jpg
+        date: "2024-07-02"
+        caption: "A bowl of food on the journey"
+        captionZh: "手持碗中餐食"
+      - src: /img/travel/ulanqab/20240703-乌兰察布-米饭与餐桌_IMG_20240703_130343.jpg
+        date: "2024-07-03"
+        caption: "Rice and dishes on the table"
+        captionZh: "米饭与餐桌"
+      - src: /img/travel/ulanqab/20240703-乌兰察布-餐桌肉食_IMG_20240703_130351.jpg
+        date: "2024-07-03"
+        caption: "Meat served at the table"
+        captionZh: "餐桌肉食"
   - id: chengdu
     group: sichuan
     geoGroup: china
