@@ -1942,6 +1942,26 @@ visits:
     latitude: 45.75936
     longitude: 126.62762
     photos:
+      - src: /img/travel/harbin/20250109-哈尔滨-索菲亚教堂夜景_MVIMG_20250124_180032.jpg
+        date: "2025-01-09"
+        caption: "Saint Sophia Cathedral at night"
+        captionZh: "索菲亚教堂夜景"
+      - src: /img/travel/harbin/20250110-哈尔滨-华丽的吊灯_MVIMG_20250124_180258.jpg
+        date: "2025-01-10"
+        caption: "An ornate chandelier"
+        captionZh: "华丽的吊灯"
+      - src: /img/travel/harbin/20250110-哈尔滨-吊灯与室内雕塑_MVIMG_20250124_180337.jpg
+        date: "2025-01-10"
+        caption: "A chandelier and indoor sculpture"
+        captionZh: "吊灯与室内雕塑"
+      - src: /img/travel/harbin/20250111-哈尔滨-雪中的教堂建筑_MVIMG_20250124_180531.jpg
+        date: "2025-01-11"
+        caption: "A church in the snow"
+        captionZh: "雪中的教堂建筑"
+      - src: /img/travel/harbin/20250112-哈尔滨-雪人与夜间建筑_MVIMG_20250124_180915.jpg
+        date: "2025-01-12"
+        caption: "A snowman and illuminated buildings"
+        captionZh: "雪人与夜间建筑"
       - src: /img/travel/harbin/20250110-哈尔滨-建筑浮雕_MVIMG_20250110_095926.jpg
         date: "2025-01-10"
         caption: "Architectural relief"
