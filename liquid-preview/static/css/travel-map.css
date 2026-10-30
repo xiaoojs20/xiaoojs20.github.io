@@ -19,6 +19,8 @@
 .travel-panel p { margin:0 0 15px; color:var(--card-text-color-secondary); line-height:1.7; font-size:1.35rem; }
 .travel-place-heading { position:sticky; top:0; z-index:3; padding:2px 0 12px; margin-bottom:8px; background:var(--card-background); }
 .travel-place-heading h2 { padding-right:100px; }
+.travel-place-title { display:flex; flex-wrap:wrap; align-items:baseline; column-gap:12px; row-gap:4px; }
+.travel-place-title__dates { color:var(--card-text-color-secondary); font-size:1.15rem; font-weight:400; line-height:1.6; overflow-wrap:anywhere; }
 .travel-place-heading p { margin-bottom:0; }
 .travel-demo-button,.travel-place { width:100%; border:0; text-align:left; cursor:pointer; color:var(--card-text-color-main); background:var(--card-background-selected); }
 .travel-demo-button { margin-top:5px; padding:13px 15px; border-radius:14px; font-size:1.3rem; font-weight:700; }
