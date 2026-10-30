@@ -4665,22 +4665,10 @@ visits:
         date: "2024-06-22"
         caption: "Zibo street mural"
         captionZh: "淄博街头壁画"
-      - src: /img/travel/zibo/20240622-淄博-淄博建筑_IMG_20240622_183536.jpg
-        date: "2024-06-22"
-        caption: "Zibo architecture"
-        captionZh: "淄博建筑"
       - src: /img/travel/zibo/20240622-淄博-淄博站标识_IMG_20240622_184019.jpg
         date: "2024-06-22"
         caption: "Zibo station sign"
         captionZh: "淄博站标识"
-      - src: /img/travel/zibo/20240622-淄博-站内文字装饰_IMG_20240622_184117.jpg
-        date: "2024-06-22"
-        caption: "Lettering at the station"
-        captionZh: "站内文字装饰"
-      - src: /img/travel/zibo/20240622-淄博-街边车辆_IMG_20240622_184538.jpg
-        date: "2024-06-22"
-        caption: "Vehicles on the street"
-        captionZh: "街边车辆"
       - src: /img/travel/zibo/20240622-淄博-烧烤摊_IMG_20240622_193202.jpg
         date: "2024-06-22"
         caption: "Barbecue stall"
@@ -4701,10 +4689,6 @@ visits:
         date: "2024-06-22"
         caption: "Zibo barbecue restaurant"
         captionZh: "淄博烧烤店"
-      - src: /img/travel/zibo/20240622-淄博-桥与夜间倒影_DSC08314.jpg
-        date: "2024-06-22"
-        caption: "Bridge reflected at night"
-        captionZh: "桥与夜间倒影"
       - src: /img/travel/zibo/20240622-淄博-河畔夜景_DSC08329.jpg
         date: "2024-06-22"
         caption: "Riverside at night"
@@ -4713,66 +4697,10 @@ visits:
         date: "2024-06-22"
         caption: "Tower at night"
         captionZh: "钟楼夜景"
-      - src: /img/travel/zibo/20240622-淄博-河畔亭台夜景_DSC08339.jpg
-        date: "2024-06-22"
-        caption: "Riverside pavilion at night"
-        captionZh: "河畔亭台夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08347.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08348.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08349.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08350.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08351.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08352.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08353.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08354.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
       - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08355.jpg
         date: "2024-06-22"
         caption: "Illuminated bridge at night"
         captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08356.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08357.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240622-淄博-彩灯桥夜景_DSC08358.jpg
-        date: "2024-06-22"
-        caption: "Illuminated bridge at night"
-        captionZh: "彩灯桥夜景"
-      - src: /img/travel/zibo/20240623-淄博-中国陶瓷琉璃馆_DSC08365.jpg
-        date: "2024-06-23"
-        caption: "China Ceramics and Liuli Museum"
-        captionZh: "中国陶瓷琉璃馆"
-      - src: /img/travel/zibo/20240623-淄博-淄博烧烤_DSC08378.jpg
-        date: "2024-06-23"
-        caption: "Zibo barbecue"
-        captionZh: "淄博烧烤"
       - src: /img/travel/zibo/20240623-淄博-陶瓷琉璃馆展品_DSC08383.jpg
         date: "2024-06-23"
         caption: "Ceramic display at the museum"
@@ -4821,30 +4749,14 @@ visits:
         date: "2024-06-23"
         caption: "Liuli glass object"
         captionZh: "琉璃器物"
-      - src: /img/travel/zibo/20240623-淄博-陶瓷动物雕像_DSC08473.jpg
-        date: "2024-06-23"
-        caption: "Ceramic animal figure"
-        captionZh: "陶瓷动物雕像"
       - src: /img/travel/zibo/20240623-淄博-馆藏花篮_DSC08487.jpg
         date: "2024-06-23"
         caption: "Basket exhibit"
         captionZh: "馆藏花篮"
-      - src: /img/travel/zibo/20240623-淄博-书店陈列_DSC08497.jpg
-        date: "2024-06-23"
-        caption: "Bookshop display"
-        captionZh: "书店陈列"
-      - src: /img/travel/zibo/20240623-淄博-书店招牌_DSC08506.jpg
-        date: "2024-06-23"
-        caption: "Bookshop sign"
-        captionZh: "书店招牌"
       - src: /img/travel/zibo/20240623-淄博-淄博塔楼_IMG_20240623_153735.jpg
         date: "2024-06-23"
         caption: "Tower in Zibo"
         captionZh: "淄博塔楼"
-      - src: /img/travel/zibo/20240623-淄博-书店空间_DSC08514.jpg
-        date: "2024-06-23"
-        caption: "Bookshop interior"
-        captionZh: "书店空间"
       - src: /img/travel/zibo/20240623-淄博-淄博城市景观_DSC08517.jpg
         date: "2024-06-23"
         caption: "Zibo city view"
@@ -4857,14 +4769,6 @@ visits:
         date: "2024-06-23"
         caption: "Interior sign"
         captionZh: "馆内标牌"
-      - src: /img/travel/zibo/20240623-淄博-街头人像装饰_DSC08565.jpg
-        date: "2024-06-23"
-        caption: "Street figure decoration"
-        captionZh: "街头人像装饰"
-      - src: /img/travel/zibo/20240623-淄博-街边小猫_DSC08569.jpg
-        date: "2024-06-23"
-        caption: "Cat by the street"
-        captionZh: "街边小猫"
       - src: /img/travel/zibo/20240623-淄博-街头艺术_IMG_20240623_171227.jpg
         date: "2024-06-23"
         caption: "Street art"
