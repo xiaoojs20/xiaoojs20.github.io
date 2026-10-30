@@ -2404,14 +2404,14 @@ visits:
         date: "2025-07-16"
         caption: "Kabukicho Ichibangai after dark"
         captionZh: "歌舞伎町一番街，入夜之后"
-      - src: /img/travel/tokyo/20250717-东京-园林水景_DSC06656.jpg
+      - src: /img/travel/tokyo/20250717-东京-新宿御苑池畔小桥_DSC06656.jpg
         date: "2025-07-17"
-        caption: "A stone bridge over a quiet Tokyo garden pond"
-        captionZh: "东京庭园里的石桥与池水"
-      - src: /img/travel/tokyo/20250717-东京-草坪与树荫_DSC06664.jpg
+        caption: "A bridge and summer greenery reflected in a pond at Shinjuku Gyoen"
+        captionZh: "新宿御苑，绿荫与小桥倒映池中"
+      - src: /img/travel/tokyo/20250717-东京-新宿御苑草坪午后_DSC06664.jpg
         date: "2025-07-17"
-        caption: "An afternoon on the lawn beside the shade"
-        captionZh: "树荫边的草坪午后"
+        caption: "A quiet pause beside the shade on Shinjuku Gyoen’s lawn"
+        captionZh: "新宿御苑草坪，树荫旁的片刻闲坐"
       - src: /img/travel/tokyo/20250717-东京-城市高楼_DSC06673.jpg
         date: "2025-07-17"
         caption: "Tokyo Tower between buildings near Shiba Park"
@@ -2628,10 +2628,10 @@ visits:
         date: "2025-07-18"
         caption: "The Kiyomizu stage and three-storey pagoda"
         captionZh: "清水舞台与远处的三重塔"
-      - src: /img/travel/kyoto/20250718-京都-街巷与屋顶_DSC06818.jpg
+      - src: /img/travel/kyoto/20250718-京都-二年坂石阶与町家_DSC06818.jpg
         date: "2025-07-18"
-        caption: "Old Kyoto streets viewed down a stone stairway"
-        captionZh: "从石阶望下京都旧街"
+        caption: "Machiya rooftops lining the stone steps of Ninenzaka in Kyoto"
+        captionZh: "京都二年坂，町家屋顶沿石阶层叠"
       - src: /img/travel/kyoto/20250718-京都-神社灯笼_DSC06868.jpg
         date: "2025-07-18"
         caption: "Dedication lanterns around Yasaka Shrine’s dance stage"
@@ -3820,10 +3820,10 @@ visits:
         date: "2025-10-07"
         caption: "Prayer flags strung across a Chengde temple courtyard"
         captionZh: "承德寺院里横挂的五色经幡"
-      - src: /img/travel/chengde/20251007-承德-寺院建筑细节_DSC07607.jpg
+      - src: /img/travel/chengde/20251007-承德-普宁寺山门匾额_DSC07607.jpg
         date: "2025-10-07"
-        caption: "A temple plaque beneath painted beams"
-        captionZh: "彩绘梁枋间的寺院匾额"
+        caption: "Puning Temple’s golden-lettered plaque beneath painted gate beams"
+        captionZh: "普宁寺山门，金字匾额映着彩绘梁枋"
       - src: /img/travel/chengde/20251007-承德-寺院门洞_DSC07610.jpg
         date: "2025-10-07"
         caption: "A white terrace and stupa framed by a doorway"
@@ -4831,22 +4831,22 @@ visits:
         date: "2024-01-27"
         caption: "Blessing characters covering a stone"
         captionZh: "一石多福，福字写满石面"
-      - src: /img/travel/fuzhou/20240128-福州-连江山间风车_20240128-DSC06251.jpg
+      - src: /img/travel/fuzhou/20240128-福州-旗冠顶山脊风车_DSC06251.jpg
         date: "2024-01-28"
-        caption: "Wind turbines along Lianjiang’s ridgelines"
-        captionZh: "连江山脊上的风力发电机"
-      - src: /img/travel/fuzhou/20240128-福州-连江海岸远景_20240128-DSC06272.jpg
+        caption: "Wind turbines along the ridges by Qiguanding"
+        captionZh: "旗冠顶山脊，风车与海风相迎"
+      - src: /img/travel/fuzhou/20240128-福州-旗冠顶俯瞰奇达村_DSC06272.jpg
         date: "2024-01-28"
-        caption: "Lianjiang’s fishing harbour and offshore fish farms from above"
-        captionZh: "俯瞰连江渔港与海上渔排"
-      - src: /img/travel/fuzhou/20240128-福州-连江海岸山景_20240128-DSC06306.jpg
+        caption: "Qida Village and offshore fish farms viewed from Qiguanding"
+        captionZh: "旗冠顶俯瞰奇达村，渔排铺成海上田园"
+      - src: /img/travel/fuzhou/20240128-福州-奇达村渔排与海湾_DSC06306.jpg
         date: "2024-01-28"
-        caption: "Fish farms across a bay beneath Lianjiang’s coastal hills"
-        captionZh: "连江山海间，渔排铺满海湾"
-      - src: /img/travel/fuzhou/20240128-福州-连江山顶远眺_20240128-DSC06324.jpg
+        caption: "Fish farms stretching across Qida Village’s bay toward the coastal hills"
+        captionZh: "奇达村海湾，渔排一路铺向远山"
+      - src: /img/travel/fuzhou/20240128-福州-旗冠顶山海留影_DSC06324.jpg
         date: "2024-01-28"
-        caption: "Facing Lianjiang’s coast from a hilltop"
-        captionZh: "站在连江山巅，面朝山海"
+        caption: "Arms outstretched above Qida Village’s coast at Qiguanding"
+        captionZh: "旗冠顶留影，把奇达村与碧海拥入怀中"
   - id: shantou
     group: guangdong
     geoGroup: china
@@ -5018,10 +5018,10 @@ visits:
         captionZh: "顶澳仔猫街的两只彩绘猫"
         album: "2023 trip"
         albumZh: "2023 年"
-      - src: /img/travel/xiamen/20230206-厦门-湖中亭与倒影_IMG_20230206_092514.jpg
+      - src: /img/travel/xiamen/20230206-厦门-厦门园林植物园万石湖亭桥_IMG_20230206_092514.jpg
         date: "2023-02-06"
-        caption: "A lakeside pavilion and arched bridge in a Xiamen garden"
-        captionZh: "厦门园林，湖心亭与石拱桥"
+        caption: "A pavilion, an arched bridge and greenery reflected in Wanshi Lake at Xiamen Botanical Garden"
+        captionZh: "厦门园林植物园，万石湖把亭桥与绿意收进倒影"
         album: "2023 trip"
         albumZh: "2023 年"
       - src: /img/travel/xiamen/20230206-厦门-白色花朵_IMG_20230206_100117.jpg
@@ -5712,18 +5712,18 @@ visits:
     latitude: 42.86260
     longitude: 130.36600
     photos:
-      - src: /img/travel/yanbian/20230430-延边-民俗村装饰_20230430-DSC02838.jpg
+      - src: /img/travel/yanbian/20230430-延边-图们百年部落木制水车_DSC02838.jpg
         date: "2023-04-30"
-        caption: "A wooden waterwheel in a Korean ethnic village"
-        captionZh: "朝鲜族民俗村里的木制水车"
-      - src: /img/travel/yanbian/20230430-延边-朝鲜族传统民居_20230430-DSC02840.jpg
+        caption: "A wooden waterwheel in spring at the Century-old Korean Village in Tumen"
+        captionZh: "图们百年部落，木制水车映着春日"
+      - src: /img/travel/yanbian/20230430-延边-图们百年部落传统民居_DSC02840.jpg
         date: "2023-04-30"
-        caption: "Grey tiles, white walls and wooden posts of a Korean house"
-        captionZh: "朝鲜族民居，灰瓦白墙与木柱"
-      - src: /img/travel/yanbian/20230430-延边-民俗村广场_20230430-DSC02852.jpg
+        caption: "Grey tiles and weathered white walls at Tumen’s Century-old Korean Village"
+        captionZh: "图们百年部落，灰瓦白墙留着岁月的纹理"
+      - src: /img/travel/yanbian/20230430-延边-图们百年部落长鼓舞_DSC02852.jpg
         date: "2023-04-30"
-        caption: "A Korean drum dance in the village square"
-        captionZh: "民俗村广场上的长鼓舞"
+        caption: "A Korean drum dance in the spring breeze at Tumen’s Century-old Korean Village"
+        captionZh: "图们百年部落，长鼓舞跳进春风里"
       - src: /img/travel/yanbian/20230430-延边-树枝花朵_20230430-DSC02854.jpg
         date: "2023-04-30"
         caption: "White spring blossoms in Yanbian"
@@ -5740,14 +5740,14 @@ visits:
         date: "2023-04-30"
         caption: "Pink spring blossoms crowding the branches"
         captionZh: "春花挤满延边枝头"
-      - src: /img/travel/yanbian/20230430-延边-朝鲜族民居_20230430-DSC02883.jpg
+      - src: /img/travel/yanbian/20230430-延边-图们百年部落老屋_DSC02883.jpg
         date: "2023-04-30"
-        caption: "Red lanterns outside a traditional Korean house"
-        captionZh: "朝鲜族老屋，红灯笼挂在廊前"
-      - src: /img/travel/yanbian/20230430-延边-延边传统建筑_20230430-DSC02894.jpg
+        caption: "Red lanterns beneath the eaves of an old house at Tumen’s Century-old Korean Village"
+        captionZh: "图们百年部落，老屋廊前挂着红灯笼"
+      - src: /img/travel/yanbian/20230430-延边-图们百年部落人民公社标语_DSC02894.jpg
         date: "2023-04-30"
-        caption: "A People’s Commune slogan on an old village house"
-        captionZh: "民俗村旧屋墙上的人民公社标语"
+        caption: "A People’s Commune slogan on an old wall at Tumen’s Century-old Korean Village"
+        captionZh: "图们百年部落，旧墙上的人民公社标语"
       - src: /img/travel/yanbian/20230430-延边-民俗村屋顶_20230430-DSC02899_low.jpg
         date: "2023-04-30"
         caption: "The tiled hip-and-gable roof of a Korean house"
@@ -5764,18 +5764,18 @@ visits:
         date: "2023-04-30"
         caption: "Blue-and-white buildings across the border"
         captionZh: "边境对岸的蓝白色楼房"
-      - src: /img/travel/yanbian/20230430-延边-边境口岸标志_20230430-DSC02920.jpg
+      - src: /img/travel/yanbian/20230430-延边-图们铁路国门_DSC02920.jpg
         date: "2023-04-30"
-        caption: "The national emblem above a border checkpoint"
-        captionZh: "边境口岸门楼上的国徽"
+        caption: "China’s national emblem above Tumen’s railway border gate"
+        captionZh: "图们铁路国门，国徽高悬于门楼之上"
       - src: /img/travel/yanbian/20230430-延边-边境建筑与河流_20230430-DSC02926.jpg
         date: "2023-04-30"
         caption: "A steel bridge and buildings across the Tumen River"
         captionZh: "图们江上的铁桥与对岸楼宇"
-      - src: /img/travel/yanbian/20230430-延边-珲春口岸留影_20230430-微信图片_20230430231111.jpg
+      - src: /img/travel/yanbian/20230430-延边-图们铁路国门留影_20230430231111.jpg
         date: "2023-04-30"
-        caption: "A group portrait before the border checkpoint"
-        captionZh: "中国口岸门楼前的合影"
+        caption: "A group portrait at Tumen’s railway border gate"
+        captionZh: "图们铁路国门前，把同行的笑脸留在边境"
       - src: /img/travel/yanbian/20230430-延边-珲春圈河口岸_20230430-DSC02933.jpg
         date: "2023-04-30"
         caption: "The bridge across the Tumen at Quanhe Border Crossing"
@@ -6214,10 +6214,10 @@ visits:
         date: "2020-07-17"
         caption: "The entrance to Chengdu’s Kuanzhai Alley"
         captionZh: "成都宽窄巷子，走进老街"
-      - src: /img/travel/chengdu/20200717-成都-成都石雕_IMG_20200717_165230.jpg
+      - src: /img/travel/chengdu/20200717-成都-杜甫草堂杜甫石像_IMG_20200717_165230.jpg
         date: "2020-07-17"
-        caption: "An old stone carving in a Chengdu garden"
-        captionZh: "成都园林里的旧石雕"
+        caption: "A stone statue of Du Fu among the bamboo at Du Fu Thatched Cottage"
+        captionZh: "杜甫草堂，竹影间的杜甫石像"
   - id: dalian
     group: liaoning
     geoGroup: china
