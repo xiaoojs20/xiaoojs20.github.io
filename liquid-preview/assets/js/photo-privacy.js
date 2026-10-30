@@ -30,7 +30,10 @@
   label.htmlFor = 'photo-privacy-answer';
   const input = make('input');
   input.id = 'photo-privacy-answer';
-  input.type = 'password';
+  input.type = 'text';
+  input.inputMode = 'text';
+  input.enterKeyHint = 'go';
+  input.placeholder = text('请输入姓名', 'Enter a name');
   input.autocomplete = 'off';
   input.autocapitalize = 'none';
   input.spellcheck = false;
@@ -54,6 +57,16 @@
   let objectURL = null;
   let busy = false;
   let controller = null;
+  let composing = false;
+  let compositionEnter = false;
+  input.addEventListener('compositionstart', () => { composing = true; compositionEnter = false; });
+  input.addEventListener('compositionend', () => { composing = false; });
+  input.addEventListener('keydown', event => {
+    if (event.key === 'Enter') compositionEnter = composing || event.isComposing || event.keyCode === 229;
+  });
+  input.addEventListener('keyup', event => {
+    if (event.key === 'Enter') compositionEnter = false;
+  });
 
   const clear = () => {
     generation++;
@@ -61,6 +74,8 @@
     controller = null;
     current = null;
     busy = false;
+    composing = false;
+    compositionEnter = false;
     input.value = '';
     input.removeAttribute('aria-invalid');
     photo.removeAttribute('src');
@@ -98,7 +113,7 @@
   };
   form.addEventListener('submit', async event => {
     event.preventDefault();
-    if (busy || !current || input.disabled) return;
+    if (busy || !current || input.disabled || composing || compositionEnter) return;
     const answer = normalize(input.value);
     if (!answer) { input.focus(); return; }
     busy = true;
