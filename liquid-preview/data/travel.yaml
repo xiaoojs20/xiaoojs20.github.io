@@ -2408,6 +2408,26 @@ visits:
     latitude: 39.46029
     longitude: 108.81343
     photos:
+      - src: /img/travel/ordos/20230727-鄂尔多斯-康巴什日落与雕塑_DSC03832.jpg
+        date: "2023-07-27"
+        caption: "Kangbashi sunset and sculptures"
+        captionZh: "康巴什日落与雕塑"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-康巴什城市灯光与水面_DSC03839.jpg
+        date: "2023-07-27"
+        caption: "Kangbashi city lights reflected on the water"
+        captionZh: "康巴什城市灯光与水面"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-康巴什室内书架_DSC03843.jpg
+        date: "2023-07-27"
+        caption: "Bookshelves in Kangbashi"
+        captionZh: "康巴什室内书架"
+      - src: /img/travel/ordos/20230727-鄂尔多斯-康巴什咖啡馆_DSC03851.jpg
+        date: "2023-07-27"
+        caption: "A café in Kangbashi"
+        captionZh: "康巴什咖啡馆"
+      - src: /img/travel/ordos/20230728-鄂尔多斯-康巴什建筑_DSC03859.jpg
+        date: "2023-07-28"
+        caption: "Architecture in Kangbashi"
+        captionZh: "康巴什建筑"
       - src: /img/travel/ordos/20230726-鄂尔多斯-响沙湾地貌_20230726-DSC03545.jpg
         date: "2023-07-26"
         caption: "Landscape at Xiangshawan"
