@@ -2234,6 +2234,18 @@ visits:
         date: "2025-07-16"
         caption: "The bronze Amida Buddha at Kamakura’s Kotoku-in"
         captionZh: "高德院镰仓大佛，青铜阿弥陀"
+      - src: /img/travel/kamakura/20250716-镰仓-长谷寺见晴亭石阶_DJI38.jpg
+        date: "2025-07-16"
+        caption: "Leafy stone steps leading to Miharashi-tei at Hase-dera"
+        captionZh: "长谷寺，绿荫石阶通往见晴亭"
+      - src: /img/travel/kamakura/20250716-藤泽-江之岛站针织小雀_DJI39.jpg
+        date: "2025-07-16"
+        caption: "Knitted outfits on the sparrows outside Enoshima Station"
+        captionZh: "江之岛站前，小雀换上针织新衣"
+      - src: /img/travel/kamakura/20250716-镰仓-长谷寺蛎壳祈愿_DJI40.jpg
+        date: "2025-07-16"
+        caption: "Oyster-shell wishes at Hase-dera’s Kakigara Inari shrine"
+        captionZh: "长谷寺蛎壳祈愿，贝壳挂满心愿墙"
   - id: osaka
     group: japan
     geoGroup: international
@@ -2268,6 +2280,34 @@ visits:
         date: "2025-07-22"
         caption: "Tsutenkaku rising over Shinsekai"
         captionZh: "新世界街头的通天阁"
+      - src: /img/travel/osaka/20250720-大阪-心斋桥筋商店街入口_MVIMG_20250720_211146.jpg
+        date: "2025-07-20"
+        caption: "Osaka after dark beneath Shinsaibashi-suji’s arcade"
+        captionZh: "心斋桥筋，拱顶下的大阪夜色"
+      - src: /img/travel/osaka/20250722-大阪-新世界七福神招牌_MVIMG_20250722_103410.jpg
+        date: "2025-07-22"
+        caption: "The Seven Lucky Gods aboard a colourful Shinsekai sign"
+        captionZh: "新世界街头，七福神乘船迎客"
+      - src: /img/travel/osaka/20250722-大阪-通天阁与商店街_MVIMG_20250722_104032.jpg
+        date: "2025-07-22"
+        caption: "Shop signs lining the street beneath Tsutenkaku"
+        captionZh: "通天阁下，招牌林立的商店街"
+      - src: /img/travel/osaka/20250720-大阪-道顿堀固力果夜景_DJI21.jpg
+        date: "2025-07-20"
+        caption: "The Glico Running Man lighting Dotonbori’s night"
+        captionZh: "道顿堀夜色里的固力果跑者"
+      - src: /img/travel/osaka/20250722-大阪-通天阁与世博会标识_DJI22.jpg
+        date: "2025-07-22"
+        caption: "EXPO 2025 lettering beneath Tsutenkaku"
+        captionZh: "通天阁下的 EXPO 2025 标识"
+      - src: /img/travel/osaka/20250722-大阪-大阪烧肉_DJI23.jpg
+        date: "2025-07-22"
+        caption: "Yakiniku sizzling on the grill in Osaka"
+        captionZh: "大阪烧肉，烤架上的烟火气"
+      - src: /img/travel/osaka/20250722-大阪-黑门市场大灯笼_DJI24.jpg
+        date: "2025-07-22"
+        caption: "Everyday life beneath Kuromon Market’s giant lantern"
+        captionZh: "黑门市场，灯笼下的市井烟火"
   - id: universal-studios-japan
     group: japan
     geoGroup: international
@@ -2396,6 +2436,14 @@ visits:
         date: "2025-07-19"
         caption: "A fox guardian in the woods of Fushimi Inari"
         captionZh: "伏见稻荷林间的狐狸使者"
+      - src: /img/travel/kyoto/20250718-京都-鸭川纳凉床暮色_DJI36.jpg
+        date: "2025-07-18"
+        caption: "Evening lights along the Kamo River’s dining terraces"
+        captionZh: "鸭川纳凉床，灯火陪着暮色流淌"
+      - src: /img/travel/kyoto/20250719-京都-千本鸟居留影_DJI37.jpg
+        date: "2025-07-19"
+        caption: "A portrait among Fushimi Inari’s vermilion torii"
+        captionZh: "伏见稻荷，朱红鸟居间的留影"
   - id: uji
     group: japan
     geoGroup: international
@@ -2422,6 +2470,14 @@ visits:
         date: "2025-07-19"
         caption: "The wooden sign of Nakamura Tokichi’s Uji main store"
         captionZh: "宇治中村藤吉本店的木招牌"
+      - src: /img/travel/uji/20250719-宇治-宇治茶面_DJI34.jpg
+        date: "2025-07-19"
+        caption: "Green tea noodles for an Uji afternoon"
+        captionZh: "宇治茶面，把一抹青绿端上桌"
+      - src: /img/travel/uji/20250719-宇治-宇治抹茶与茶筅_DJI35.jpg
+        date: "2025-07-19"
+        caption: "Whisking matcha into fine foam in Uji"
+        captionZh: "宇治一碗抹茶，茶筅拂起细沫"
   - id: nara
     group: japan
     geoGroup: international
@@ -2444,6 +2500,26 @@ visits:
         date: "2025-07-20"
         caption: "A close encounter with a Nara deer"
         captionZh: "奈良鹿，近在眼前"
+      - src: /img/travel/nara/20250719-奈良-奈良旅宿书架_MVIMG_20250719_230542.jpg
+        date: "2025-07-19"
+        caption: "Books and a little bear at a Nara guesthouse"
+        captionZh: "奈良旅宿，书与小熊陪伴的夜晚"
+      - src: /img/travel/nara/20250719-奈良-奈良散步地图_MVIMG_20250719_231117.jpg
+        date: "2025-07-19"
+        caption: "A Nara walking map linking deer and ancient temples"
+        captionZh: "奈良散步地图，串起小鹿与古寺"
+      - src: /img/travel/nara/20250720-奈良-春日大社参道与鹿_DJI27.jpg
+        date: "2025-07-20"
+        caption: "A deer greeting visitors on Kasuga Taisha’s approach"
+        captionZh: "春日大社参道，小鹿先来迎客"
+      - src: /img/travel/nara/20250720-奈良-春日大社石灯笼与鹿_DJI28.jpg
+        date: "2025-07-20"
+        caption: "A deer among Kasuga Taisha’s stone lanterns"
+        captionZh: "春日大社石灯笼间，忽然遇见鹿"
+      - src: /img/travel/nara/20250720-奈良-若草山草坡与鹿群_DJI29.jpg
+        date: "2025-07-20"
+        caption: "Deer scattered across Mount Wakakusa’s sunlit slopes"
+        captionZh: "若草山，鹿群散在一坡晴绿里"
   - id: jeju
     group: south-korea
     geoGroup: international
@@ -3718,6 +3794,14 @@ visits:
         date: "2025-07-26"
         caption: "Kaiyuan Temple’s twin stone pagodas above red-tiled roofs"
         captionZh: "开元寺东西塔，红瓦间的千年石塔"
+      - src: /img/travel/quanzhou/20250726-泉州-开元寺石塔_DSC07233.jpg
+        date: "2025-07-26"
+        caption: "Kaiyuan Temple’s stone pagoda framed by greenery"
+        captionZh: "开元寺石塔，层檐掩映在绿意间"
+      - src: /img/travel/quanzhou/20250726-泉州-钟楼与骑楼_DSC07260.jpg
+        date: "2025-07-26"
+        caption: "Quanzhou’s white clock tower above red-brick arcades"
+        captionZh: "泉州钟楼，白墙映着红砖骑楼"
   - id: ordos
     group: inner-mongolia
     geoGroup: china
@@ -4278,7 +4362,19 @@ visits:
     regionZh: "福建"
     latitude: 24.23883
     longitude: 117.45243
-    photos: []
+    photos:
+      - src: /img/travel/zhangzhou/20250726-漳州-古城花墙与夜色_DJI03.jpg
+        date: "2025-07-26"
+        caption: "Nightfall beside Zhangzhou Ancient City’s flower wall"
+        captionZh: "漳州古城，花墙边的夜色"
+      - src: /img/travel/zhangzhou/20250726-漳州-古城灯笼长街_DJI04.jpg
+        date: "2025-07-26"
+        caption: "Lanterns lighting Zhangzhou’s old arcaded streets"
+        captionZh: "漳州古城，灯笼照亮骑楼长街"
+      - src: /img/travel/zhangzhou/20250726-漳州-古城闽南美食霓虹_DJI05.jpg
+        date: "2025-07-26"
+        caption: "Minnan flavours in Zhangzhou’s glowing neon signs"
+        captionZh: "霓虹招牌里的闽南滋味"
   - id: fuzhou
     group: fujian
     geoGroup: china
