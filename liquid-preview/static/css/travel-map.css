@@ -52,7 +52,8 @@ html[data-scheme="dark"] .travel-map { background:#34484b; }
 @media(min-width:851px) {
   .travel-intro { max-width:calc(56.5% - 26px); }
   .travel-layout { align-items:stretch; margin-bottom:40px; }
-  .travel-panel { display:flex; flex-direction:column; min-height:0; margin-top:-90px; margin-bottom:-40px; }
+  .travel-map { height:clamp(420px,calc(52vh + 40px),600px); }
+  .travel-panel { display:flex; flex-direction:column; min-height:0; margin-top:-110px; }
   .travel-panel [data-travel-content] { flex:1 1 0; min-height:0; max-height:none; }
 }
 @media(max-width:850px) { .travel-layout { grid-template-columns:1fr; }.travel-map { height:420px; }.travel-panel { min-height:0; } }
