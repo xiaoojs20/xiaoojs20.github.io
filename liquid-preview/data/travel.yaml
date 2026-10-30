@@ -2956,10 +2956,6 @@ visits:
     latitude: 22.34924
     longitude: 114.18578
     photos:
-      - src: /img/travel/hong-kong/20240708-香港-香港建筑街景_IMG_20240708_093406.jpg
-        date: "2024-07-08"
-        caption: "Hong Kong architecture"
-        captionZh: "香港建筑街景"
       - src: /img/travel/hong-kong/20240708-香港-香港街道与巴士_IMG_20240708_143101.jpg
         date: "2024-07-08"
         caption: "Hong Kong street and buses"
@@ -4155,22 +4151,18 @@ visits:
     latitude: 22.54457
     longitude: 114.05454
     photos:
+      - src: /img/travel/shenzhen/20240708-深圳-深圳字样建筑_IMG_20240708_093406.jpg
+        date: "2024-07-08"
+        caption: "Building with Shenzhen signage"
+        captionZh: "带有深圳字样的建筑"
       - src: /img/travel/shenzhen/20230909-深圳-清华大学深圳国际研究生院_20230909-DSC03903.jpg
         date: "2023-09-09"
         caption: "Tsinghua Shenzhen International Graduate School"
         captionZh: "清华大学深圳国际研究生院"
-      - src: /img/travel/shenzhen/20230909-深圳-深研院教学楼_20230909-DSC03906.jpg
-        date: "2023-09-09"
-        caption: "Teaching building at Tsinghua Shenzhen International Graduate School"
-        captionZh: "深研院教学楼"
       - src: /img/travel/shenzhen/20230909-深圳-深研院校园_20230909-DSC03907.jpg
         date: "2023-09-09"
         caption: "Tsinghua Shenzhen International Graduate School campus"
         captionZh: "深研院校园"
-      - src: /img/travel/shenzhen/20230909-深圳-街边商铺_20230909-DSC03919.jpg
-        date: "2023-09-09"
-        caption: "Street storefront"
-        captionZh: "街边商铺"
       - src: /img/travel/shenzhen/20230909-深圳-深圳街头旗帜_20230909-DSC03924.jpg
         date: "2023-09-09"
         caption: "Flags on a Shenzhen street"
@@ -4195,38 +4187,6 @@ visits:
         date: "2023-09-09"
         caption: "Clouds over the city"
         captionZh: "山雾与城区"
-      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆_20230909-DSC03975.jpg
-        date: "2023-09-09"
-        caption: "Huaqiangbei Museum"
-        captionZh: "华强北博物馆"
-      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆展览_20230909-DSC03981.jpg
-        date: "2023-09-09"
-        caption: "Exhibit at Huaqiangbei Museum"
-        captionZh: "华强北博物馆展览"
-      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆手机展_20230909-DSC03991.jpg
-        date: "2023-09-09"
-        caption: "Mobile phone exhibit at Huaqiangbei Museum"
-        captionZh: "华强北博物馆手机展"
-      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆展厅_20230909-DSC03996.jpg
-        date: "2023-09-09"
-        caption: "Gallery at Huaqiangbei Museum"
-        captionZh: "华强北博物馆展厅"
-      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆霓虹灯_20230909-DSC04003.jpg
-        date: "2023-09-09"
-        caption: "Neon signs at Huaqiangbei Museum"
-        captionZh: "华强北博物馆霓虹灯"
-      - src: /img/travel/shenzhen/20230909-深圳-华强北博物馆影像墙_20230909-DSC04009.jpg
-        date: "2023-09-09"
-        caption: "Video wall at Huaqiangbei Museum"
-        captionZh: "华强北博物馆影像墙"
-      - src: /img/travel/shenzhen/20230909-深圳-博物馆互动展览_20230909-DSC04024.jpg
-        date: "2023-09-09"
-        caption: "Interactive museum exhibit"
-        captionZh: "博物馆互动展览"
-      - src: /img/travel/shenzhen/20230909-深圳-博物馆科技展_20230909-DSC04029.jpg
-        date: "2023-09-09"
-        caption: "Technology exhibit"
-        captionZh: "博物馆科技展"
       - src: /img/travel/shenzhen/20230909-深圳-博物馆电子产品展_20230909-DSC04035.jpg
         date: "2023-09-09"
         caption: "Electronics exhibit"
@@ -4235,14 +4195,6 @@ visits:
         date: "2023-09-09"
         caption: "Shenzhen at night"
         captionZh: "深圳城市夜色"
-      - src: /img/travel/shenzhen/20230909-深圳-深圳湾灯光_20230909-DSC04071.jpg
-        date: "2023-09-09"
-        caption: "Lights over Shenzhen Bay"
-        captionZh: "深圳湾灯光"
-      - src: /img/travel/shenzhen/20230909-深圳-深圳街头雕塑_20230909-DSC04084.jpg
-        date: "2023-09-09"
-        caption: "Shenzhen street sculpture"
-        captionZh: "深圳街头雕塑"
       - src: /img/travel/shenzhen/20230909-深圳-深圳湾夜景_20230909-DSC04093.jpg
         date: "2023-09-09"
         caption: "Shenzhen Bay at night"
@@ -4251,10 +4203,6 @@ visits:
         date: "2023-09-09"
         caption: "China Resources Headquarters in Shenzhen Bay"
         captionZh: "深圳湾春笋大厦"
-      - src: /img/travel/shenzhen/20230909-深圳-深圳湾城市夜景_20230909-DSC04122.jpg
-        date: "2023-09-09"
-        caption: "City lights over Shenzhen Bay"
-        captionZh: "深圳湾城市夜景"
       - src: /img/travel/shenzhen/20230909-深圳-深圳湾天际线_20230909-DSC04128.jpg
         date: "2023-09-09"
         caption: "Shenzhen Bay skyline"
