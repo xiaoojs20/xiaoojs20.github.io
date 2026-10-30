@@ -1937,7 +1937,19 @@ visits:
     regionZh: "福建"
     latitude: 25.19019
     longitude: 118.33872
-    photos: []
+    photos:
+      - src: /img/travel/quanzhou/20250726-泉州-泉州开元寺大雄宝殿_DSC07211.jpg
+        date: "2025-07-26"
+        caption: "Mahavira Hall at Kaiyuan Temple, Quanzhou"
+        captionZh: "泉州开元寺大雄宝殿"
+      - src: /img/travel/quanzhou/20250726-泉州-泉州开元寺大雄宝殿前_DSC07223.jpg
+        date: "2025-07-26"
+        caption: "In front of Mahavira Hall at Kaiyuan Temple, Quanzhou"
+        captionZh: "泉州开元寺大雄宝殿前"
+      - src: /img/travel/quanzhou/20250726-泉州-泉州开元寺东西塔_DSC07239.jpg
+        date: "2025-07-26"
+        caption: "East and West Pagodas at Kaiyuan Temple, Quanzhou"
+        captionZh: "泉州开元寺东西塔"
   - id: ordos
     group: inner-mongolia
     geoGroup: china
