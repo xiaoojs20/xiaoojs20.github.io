@@ -2018,6 +2018,38 @@ visits:
         date: "2026-10-03"
         caption: "Sunbeams breaking through clouds above Erhai"
         captionZh: "苍山方向，云开一道光"
+      - src: /img/travel/dali/20261003-大理-大理古城暮色长街.jpg
+        date: "2026-10-03"
+        caption: "Shop lights coming on along Dali Old Town’s streets at dusk"
+        captionZh: "大理古城，暮色里亮起一街灯火"
+      - src: /img/travel/dali/20261003-大理-大理古城灯笼夜巷.jpg
+        date: "2026-10-03"
+        caption: "Lanterns casting a warm glow over Dali Old Town’s lanes"
+        captionZh: "大理古城，灯笼把夜巷染成暖色"
+      - src: /img/travel/dali/20261003-大理-大理古城南门城楼.jpg
+        date: "2026-10-03"
+        caption: "Dali Old Town’s South Gate rising against the sky"
+        captionZh: "大理古城南门，城楼与长空相望"
+      - src: /img/travel/dali/20261003-大理-洱海生态廊道骑行.jpg
+        date: "2026-10-03"
+        caption: "Cycling past white-walled houses and fields along Erhai’s ecological corridor"
+        captionZh: "洱海生态廊道，骑行经过白墙与稻田"
+      - src: /img/travel/dali/20261003-大理-洱海岸边枯树与木栈道.jpg
+        date: "2026-10-03"
+        caption: "A boardwalk and bare trees facing the distant mountains across Erhai"
+        captionZh: "洱海岸边，木栈道陪着枯树望向远山"
+      - src: /img/travel/dali/20261003-大理-喜洲古镇转角楼.jpg
+        date: "2026-10-03"
+        caption: "Timber windows overlooking everyday life at Xizhou’s corner house"
+        captionZh: "喜洲转角楼，木窗收着古镇的日常"
+      - src: /img/travel/dali/20261003-大理-喜洲稻田与花影.jpg
+        date: "2026-10-03"
+        caption: "Golden fields and flowers stretching toward Cangshan in Xizhou"
+        captionZh: "喜洲稻田，金黄与花影铺向苍山"
+      - src: /img/travel/dali/20261003-大理-洱海芒草与云隙光.jpg
+        date: "2026-10-03"
+        caption: "Grasses catching shafts of sunlight beside Erhai Lake"
+        captionZh: "洱海风起，芒草接住云隙里的光"
   - id: lijiang
     group: yunnan
     geoGroup: china
@@ -2080,6 +2112,46 @@ visits:
         date: "2026-10-06"
         caption: "The 4,680-metre marker at Jade Dragon Snow Mountain’s Glacier Park"
         captionZh: "玉龙雪山冰川公园，海拔4680米"
+      - src: /img/travel/lijiang/20261006-丽江-蓝月谷雨落碧水.jpg
+        date: "2026-10-06"
+        caption: "Raindrops rippling across Blue Moon Valley’s turquoise water"
+        captionZh: "蓝月谷，雨点轻叩一池碧水"
+      - src: /img/travel/lijiang/20261006-丽江-束河古镇牌坊.jpg
+        date: "2026-10-06"
+        caption: "Red lanterns and flags beneath Shuhe Old Town’s painted gateway"
+        captionZh: "束河古镇，彩绘牌坊下的一抹红"
+      - src: /img/travel/lijiang/20261006-丽江-束河飞花触水暮色.jpg
+        date: "2026-10-06"
+        caption: "Shop lights and willows reflected at Shuhe’s Feihua Chushui waterside"
+        captionZh: "束河飞花触水，店灯与垂柳倒映成画"
+      - src: /img/travel/lijiang/20261006-丽江-丽江古巷彩伞夜色.jpg
+        date: "2026-10-06"
+        caption: "Colourful umbrellas brightening an old lane in Lijiang after dark"
+        captionZh: "丽江古巷，彩伞把夜色染成斑斓"
+      - src: /img/travel/lijiang/20261006-丽江-蓝月谷林间望水.jpg
+        date: "2026-10-06"
+        caption: "A glimpse of Blue Moon Valley’s blue water through the trees"
+        captionZh: "蓝月谷，从枝叶间望见一抹湖蓝"
+      - src: /img/travel/lijiang/20261006-丽江-蓝月谷枯木与倒影.jpg
+        date: "2026-10-06"
+        caption: "A bare tree meeting its reflection in Blue Moon Valley"
+        captionZh: "蓝月谷，枯木把倒影写进碧水"
+      - src: /img/travel/lijiang/20261006-丽江-蓝月谷云影与横枝.jpg
+        date: "2026-10-06"
+        caption: "A branch and drifting clouds reflected in Blue Moon Valley"
+        captionZh: "蓝月谷，横枝与云影共枕一池水"
+      - src: /img/travel/lijiang/20261006-丽江-玉龙雪山冰川公园岩壁.jpg
+        date: "2026-10-06"
+        caption: "Ice and snow resting among the crags of Jade Dragon Snow Mountain’s Glacier Park"
+        captionZh: "玉龙雪山冰川公园，冰雪卧在嶙峋岩壁间"
+      - src: /img/travel/lijiang/20261006-丽江-玉龙雪山小雪人与雪鸭.jpg
+        date: "2026-10-06"
+        caption: "A little snowman and snow duck beside the boardwalk on Jade Dragon Snow Mountain"
+        captionZh: "玉龙雪山栈道边，雪人与小鸭等一场晴天"
+      - src: /img/travel/lijiang/20261006-丽江-玉龙雪山4680米留影.jpg
+        date: "2026-10-06"
+        caption: "A portrait beside the 4,680-metre marker on Jade Dragon Snow Mountain"
+        captionZh: "玉龙雪山海拔4680米，把这一程留在云端"
   - id: shangri-la
     group: yunnan
     geoGroup: china
@@ -2170,6 +2242,26 @@ visits:
         date: "2026-10-05"
         caption: "Rapids surging past Tiger Leaping Rock"
         captionZh: "虎跳峡，激流奔过虎跳石"
+      - src: /img/travel/shangri-la/20261005-香格里拉-纳帕海草甸马队.jpg
+        date: "2026-10-05"
+        caption: "Riding toward cloud-wrapped mountains across the Napa Lake meadow"
+        captionZh: "纳帕海草甸，跟着马队走向云下远山"
+      - src: /img/travel/shangri-la/20261005-香格里拉-纳帕海骑行剪影.jpg
+        date: "2026-10-05"
+        caption: "Sunlight tracing horse-and-rider shadows on the Napa Lake meadow"
+        captionZh: "纳帕海草甸，阳光把人与马画在脚下"
+      - src: /img/travel/shangri-la/20261005-香格里拉-龟山公园大转经筒.jpg
+        date: "2026-10-05"
+        caption: "Guishan Park’s golden prayer wheel against the blue sky"
+        captionZh: "龟山公园，金色转经筒高映蓝天"
+      - src: /img/travel/shangri-la/20261005-香格里拉-龟山大转经筒前留影.jpg
+        date: "2026-10-05"
+        caption: "A portrait before Guishan’s giant prayer wheel in Dukezong"
+        captionZh: "独克宗龟山，把合影留在大转经筒前"
+      - src: /img/travel/shangri-la/20261005-香格里拉-虎跳峡石虎与峡谷.jpg
+        date: "2026-10-05"
+        caption: "A tiger sculpture overlooking the rushing river in Tiger Leaping Gorge"
+        captionZh: "虎跳峡，石虎回望一江奔流"
   - id: tokyo
     group: japan
     geoGroup: international
