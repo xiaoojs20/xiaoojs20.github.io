@@ -108,6 +108,138 @@ visits:
     latitude: 39.90571
     longitude: 116.39130
     photos:
+      - src: /img/travel/beijing/20230418-北京-颐和园昆明湖与佛香阁_DSC02441.jpg
+        date: "2023-04-18"
+        caption: "Kunming Lake and the Tower of Buddhist Incense"
+        captionZh: "颐和园昆明湖与佛香阁"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园昆明湖与十七孔桥_DSC02470.jpg
+        date: "2023-04-18"
+        caption: "Kunming Lake and the Seventeen-Arch Bridge"
+        captionZh: "颐和园昆明湖与十七孔桥"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园湖中水鸟_DSC02474.jpg
+        date: "2023-04-18"
+        caption: "Waterbirds on Kunming Lake"
+        captionZh: "颐和园湖中水鸟"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园石狮与湖景_DSC02491.jpg
+        date: "2023-04-18"
+        caption: "Stone lions and lake at the Summer Palace"
+        captionZh: "颐和园石狮与湖景"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园湖岸石景_DSC02499.jpg
+        date: "2023-04-18"
+        caption: "Stones along the lake at the Summer Palace"
+        captionZh: "颐和园湖岸石景"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园湖光与远山_DSC02508.jpg
+        date: "2023-04-18"
+        caption: "Lake and distant hills at the Summer Palace"
+        captionZh: "颐和园湖光与远山"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园桥上石狮_DSC02512.jpg
+        date: "2023-04-18"
+        caption: "Stone lions on a bridge at the Summer Palace"
+        captionZh: "颐和园桥上石狮"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园邀月门牌匾_DSC02532.jpg
+        date: "2023-04-18"
+        caption: "Decorated plaque at the Summer Palace"
+        captionZh: "颐和园邀月门牌匾"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230418-北京-颐和园远眺城市_DSC02534.jpg
+        date: "2023-04-18"
+        caption: "City view from the Summer Palace"
+        captionZh: "颐和园远眺城市"
+        album: "Summer Palace"
+        albumZh: "颐和园"
+      - src: /img/travel/beijing/20230420-北京-北大未名湖石刻_DSC02587.jpg
+        date: "2023-04-20"
+        caption: "Stone by Weiming Lake at Peking University"
+        captionZh: "北大未名湖石刻"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大未名湖与博雅塔_DSC02614.jpg
+        date: "2023-04-20"
+        caption: "Weiming Lake and Boya Pagoda"
+        captionZh: "北大未名湖与博雅塔"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大未名湖与博雅塔远景_DSC02616.jpg
+        date: "2023-04-20"
+        caption: "Weiming Lake and Boya Pagoda in the distance"
+        captionZh: "北大未名湖与博雅塔远景"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大博雅塔屋檐_DSC02619.jpg
+        date: "2023-04-20"
+        caption: "Boya Pagoda roof details"
+        captionZh: "北大博雅塔屋檐"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校园绿墙与花_DSC02623.jpg
+        date: "2023-04-20"
+        caption: "Green wall and flowers on campus"
+        captionZh: "北大校园绿墙与花"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校园建筑与花_DSC02633.jpg
+        date: "2023-04-20"
+        caption: "Campus building and flowers"
+        captionZh: "北大校园建筑与花"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校园塔楼_DSC02643.jpg
+        date: "2023-04-20"
+        caption: "Tower on the Peking University campus"
+        captionZh: "北大校园塔楼"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大光华管理学院_DSC02648.jpg
+        date: "2023-04-20"
+        caption: "Guanghua School of Management at Peking University"
+        captionZh: "北大光华管理学院"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校园长廊_DSC02655.jpg
+        date: "2023-04-20"
+        caption: "Campus corridor at Peking University"
+        captionZh: "北大校园长廊"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校园建筑门廊_DSC02661.jpg
+        date: "2023-04-20"
+        caption: "Entrance to a campus building"
+        captionZh: "北大校园建筑门廊"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校园雕像_DSC02676.jpg
+        date: "2023-04-20"
+        caption: "Statue on the Peking University campus"
+        captionZh: "北大校园雕像"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校门_DSC02683.jpg
+        date: "2023-04-20"
+        caption: "Peking University gate"
+        captionZh: "北大校门"
+        album: "Peking University"
+        albumZh: "北京大学"
+      - src: /img/travel/beijing/20230420-北京-北大校门石狮_DSC02689.jpg
+        date: "2023-04-20"
+        caption: "Stone lion at the Peking University gate"
+        captionZh: "北大校门石狮"
+        album: "Peking University"
+        albumZh: "北京大学"
       - src: /img/travel/beijing/20250322-北京-颐和园水岸春色_DSC04078.jpg
         date: "2025-03-22"
         caption: "Spring along the water at the Summer Palace"
