@@ -1895,7 +1895,23 @@ visits:
     regionZh: "福建 · 泉州"
     latitude: 24.78443
     longitude: 118.54775
-    photos: []
+    photos:
+      - src: /img/travel/jinjiang/20230211-晋江-东石古寨庙宇_IMG_20230211_162138.jpg
+        date: "2023-02-11"
+        caption: "Temple at Dongshi Ancient Fort"
+        captionZh: "东石古寨庙宇"
+      - src: /img/travel/jinjiang/20230211-晋江-东石古寨石雕与人物_IMG_20230211_164250.jpg
+        date: "2023-02-11"
+        caption: "Stone carving and portrait at Dongshi Ancient Fort"
+        captionZh: "东石古寨石雕与人物"
+      - src: /img/travel/jinjiang/20230211-晋江-东石古寨与人物_IMG_20230211_165315.jpg
+        date: "2023-02-11"
+        caption: "Portrait at Dongshi Ancient Fort"
+        captionZh: "东石古寨与人物"
+      - src: /img/travel/jinjiang/20230211-晋江-东石古寨石刻_IMG_20230211_165524.jpg
+        date: "2023-02-11"
+        caption: "Stone inscription at Dongshi Ancient Fort"
+        captionZh: "东石古寨石刻"
   - id: quanzhou
     group: fujian
     geoGroup: china
@@ -4021,7 +4037,35 @@ visits:
     regionZh: "四川"
     latitude: 30.65987
     longitude: 104.06332
-    photos: []
+    photos:
+      - src: /img/travel/chengdu/20200717-成都-树上的大熊猫_IMG_20200717_102249.jpg
+        date: "2020-07-17"
+        caption: "Giant panda in a tree"
+        captionZh: "树上的大熊猫"
+      - src: /img/travel/chengdu/20200717-成都-大熊猫与树_IMG_20200717_102338.jpg
+        date: "2020-07-17"
+        caption: "Giant panda and trees"
+        captionZh: "大熊猫与树"
+      - src: /img/travel/chengdu/20200717-成都-林中的大熊猫_IMG_20200717_102553.jpg
+        date: "2020-07-17"
+        caption: "Giant panda among trees"
+        captionZh: "林中的大熊猫"
+      - src: /img/travel/chengdu/20200717-成都-大熊猫幼崽_IMG_20200717_103602.jpg
+        date: "2020-07-17"
+        caption: "Giant panda cub"
+        captionZh: "大熊猫幼崽"
+      - src: /img/travel/chengdu/20200717-成都-大熊猫玩耍_IMG_20200717_105545.jpg
+        date: "2020-07-17"
+        caption: "Giant panda playing"
+        captionZh: "大熊猫玩耍"
+      - src: /img/travel/chengdu/20200717-成都-宽窄巷子入口_IMG_20200717_153604.jpg
+        date: "2020-07-17"
+        caption: "Entrance to Kuanzhai Alleys"
+        captionZh: "宽窄巷子入口"
+      - src: /img/travel/chengdu/20200717-成都-成都石雕_IMG_20200717_165230.jpg
+        date: "2020-07-17"
+        caption: "Stone sculpture in Chengdu"
+        captionZh: "成都石雕"
   - id: dalian
     group: liaoning
     geoGroup: china
@@ -4395,6 +4439,29 @@ visits:
         date: "2023-07-25"
         caption: "Camel at Saihantala Grassland"
         captionZh: "赛罕塔拉骆驼"
+
+  - id: shishi
+    group: fujian
+    geoGroup: china
+    name: "Shishi"
+    nameZh: "石狮"
+    region: "Fujian · Quanzhou"
+    regionZh: "福建 · 泉州"
+    latitude: 24.732
+    longitude: 118.648
+    photos:
+      - src: /img/travel/shishi/20220713-石狮-红塔湾月色_DSC01823.jpg
+        date: "2022-07-13"
+        caption: "Moon over Hongta Bay"
+        captionZh: "红塔湾月色"
+      - src: /img/travel/shishi/20220713-石狮-红塔湾暮色_DSC01839.jpg
+        date: "2022-07-13"
+        caption: "Dusk at Hongta Bay"
+        captionZh: "红塔湾暮色"
+      - src: /img/travel/shishi/20220713-石狮-红塔湾月夜_DSC01842.jpg
+        date: "2022-07-13"
+        caption: "Moonlit Hongta Bay"
+        captionZh: "红塔湾月夜"
 
 demo:
   id: sample
