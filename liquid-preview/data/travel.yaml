@@ -3005,6 +3005,30 @@ visits:
         date: "2025-01-17"
         caption: "Sunset by the bridge"
         captionZh: "大桥日落"
+      - src: /img/travel/shantou/20250114-汕头-商场内景_MVIMG_20250114_175437.jpg
+        date: "2025-01-14"
+        caption: "Inside a shopping centre"
+        captionZh: "商场内景"
+      - src: /img/travel/shantou/20250114-汕头-夜晚的街道_MVIMG_20250114_210939.jpg
+        date: "2025-01-14"
+        caption: "A street at night"
+        captionZh: "夜晚的街道"
+      - src: /img/travel/shantou/20250114-汕头-油柑汁饮品_MVIMG_20250114_211147.jpg
+        date: "2025-01-14"
+        caption: "Bottles of oil citrus juice"
+        captionZh: "油柑汁饮品"
+      - src: /img/travel/shantou/20250114-汕头-汕头造型雪糕_MVIMG_20250114_211658.jpg
+        date: "2025-01-14"
+        caption: "A Shantou-shaped ice cream"
+        captionZh: "汕头造型雪糕"
+      - src: /img/travel/shantou/20250114-汕头-汕头饮品与街景_MVIMG_20250114_212203.jpg
+        date: "2025-01-14"
+        caption: "A drink and street scene in Shantou"
+        captionZh: "汕头饮品与街景"
+      - src: /img/travel/shantou/20250114-汕头-大清邮政旧址门前_MVIMG_20250114_213648.jpg
+        date: "2025-01-14"
+        caption: "At the former Qing postal office"
+        captionZh: "大清邮政旧址门前"
   - id: xiamen
     group: fujian
     geoGroup: china
