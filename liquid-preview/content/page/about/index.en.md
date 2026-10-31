@@ -16,7 +16,7 @@ menu:
 
 My name is Jinsong Xiao. I was born in 2002 and am from Jinjiang, Quanzhou, Fujian, China. Welcome to my personal space.
 
-I study electrical engineering at Tsinghua University and minored in software engineering as an undergraduate. I’m now pursuing a master’s degree and expect to graduate in 2027; I currently have no plans to pursue a PhD. I hope to work on AI, large language models, and internet algorithms. I enjoy exploring across fields and turning ideas into things that are useful in everyday life. 💡
+I study electrical engineering at Tsinghua University and minored in software engineering as an undergraduate. I’m now pursuing a master’s degree and expect to graduate in 2027; I currently have no plans to pursue a PhD. Next, I plan to work at ByteDance in Shanghai and hope to keep developing in AI, large language models, and internet algorithms. I enjoy exploring across fields and turning ideas into things that are useful in everyday life. 💡
 
 I have an easygoing personality and would love to meet more people and exchange ideas. 🙂
 
@@ -84,6 +84,12 @@ I prefer mild food, don’t eat spicy dishes, and neither smoke nor drink alcoho
 ### Some personal thoughts {#future-and-financial-plans}
 
 Since 2025, I’ve been thinking more about investing, financial freedom and exploring the world. Looking ahead, I hope to visit more countries, do well with investing in US stocks, and build a healthy, strong body. I value steady progress over time and hope that work, learning, and thoughtful planning will give me more choices in life. For now, I don’t plan to buy a home or a car before turning thirty; if I settle in China long term, I’d most likely choose Beijing or Shanghai, with a current preference for Shanghai. I value practical purchases over keeping up appearances, while being happy to spend on travel, experiences, and quality of life.
+
+### Looking ahead to the rest of 2026 and 2027
+
+For the rest of 2026, I want to focus on my master’s research and thesis, finish them as early as I can, and get the other graduation requirements in order so that I can join ByteDance early. I also want to keep building small AI and large language model projects to put what I learn into practice, and turn my recent commitment to fitness into a lasting habit.
+
+In 2027, I hope to complete my master’s degree and settle into the pace of work at ByteDance in Shanghai, gaining experience through real projects. Outside work, I want to keep building a lean physique, visit new countries, see more of the world with my camera, and share my experiences and thoughts on this blog. I also hope to keep learning about investing and building my savings, meet more people I get along with, and make time to catch up, go cycling, or play a few rounds of Honor of Kings together. As I move from university into working life, I hope to look after my health, take on my new responsibilities, and stay curious about life.
 
 I hope this website can be a space that grows gradually over time, and a way to meet interesting people. 🙂
 
