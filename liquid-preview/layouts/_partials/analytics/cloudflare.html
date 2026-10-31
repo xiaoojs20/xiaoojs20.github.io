@@ -1,0 +1,9 @@
+{{- with site.Params.analytics.cloudflare.token -}}
+    {{- $token := strings.TrimSpace . -}}
+    {{- if not (findRE `^[a-fA-F0-9]{32}$` $token) -}}
+        {{- errorf "Cloudflare Web Analytics requires a 32-character hexadecimal site token; do not use an API credential." -}}
+    {{- else if hugo.IsProduction -}}
+        {{- /* The public beacon can collect metrics; reading reports requires Cloudflare account access. */ -}}
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{{ dict "token" $token | jsonify }}"></script>
+    {{- end -}}
+{{- end -}}

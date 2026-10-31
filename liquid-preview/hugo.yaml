@@ -40,6 +40,10 @@ permalinks:
   post: /p/:slug/
   page: /:slug/
 params:
+  analytics:
+    cloudflare:
+      # Public collection token, not an API credential. Reports require your Cloudflare login.
+      token: "907f48a30a8447df95b02845f4c004ae"
   showLife: false # 隐藏生活记录入口；改为 true 可恢复。
   showPhotos: false # 隐藏照片墙入口；改为 true 可恢复。
   version: "1.2.0"
