@@ -55,6 +55,8 @@ In spare moments, I enjoy technology and investing podcasts and books, interesti
 
 My favorite anime are Dragon Ball and KochiKame.
 
+I also enjoy playing Honor of Kings. I’ve been playing since eighth grade, all the way through to the third year of my master’s degree—about eleven years now. I mainly play jungle, but also play clash lane and marksman. When I’m not busy, I reach Grandmaster in pretty much every season. 🎮
+
 ### Travel and photography
 
 On longer breaks, I like traveling to experience new places, photographing landscapes, and going cycling with friends. I hope to learn more about the world on my travels, rather than simply come home with photos, and I’m curious about the history, culture, and everyday life of the places I visit. 🌍 Portrait photography is not quite my strong suit yet, but I’m happy to keep learning. 📷
