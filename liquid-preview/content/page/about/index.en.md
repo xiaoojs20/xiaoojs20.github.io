@@ -53,6 +53,16 @@ I’m interested in large language models (LLMs), AI applications, search, ads a
 
 In spare moments, I enjoy technology and investing podcasts and books, interesting videos, and strength training. I started taking fitness seriously in October 2026, with the goal of building a lean physique, and have also tried making a tool to track my workouts. 💪
 
+Some creators and shows I enjoy watching:
+
+- Mediastorm (影视飓风) \[[Bilibili](https://space.bilibili.com/946974), [YouTube](https://www.youtube.com/@mediastorm6801)\]
+- Geekerwan (极客湾) \[[Bilibili](https://space.bilibili.com/25876945), [YouTube](https://www.youtube.com/@geekerwan1024)\]
+- Terry Chen 泰瑞 \[[Bilibili](https://space.bilibili.com/630776767), [YouTube](https://www.youtube.com/@hackbearterry)\]
+- MrBeast \[[Bilibili](https://space.bilibili.com/1027737427), [YouTube](https://www.youtube.com/@MrBeast)\]
+- Jack Rabbit (杰克小兔) \[[Bilibili](https://space.bilibili.com/644255470), [YouTube](https://www.youtube.com/@jackrabbit1227)\]
+- Zhang Xiaojun Podcast (张小珺商业访谈录) \[[Bilibili](https://space.bilibili.com/280780745), [YouTube](https://www.youtube.com/@xiaojunpodcast)\]
+- 硅谷101 (The Valley 101) \[[Bilibili](https://space.bilibili.com/508452265), [YouTube](https://www.youtube.com/@TheValley101)\]
+
 My favorite anime are Dragon Ball and KochiKame.
 
 I also enjoy playing Honor of Kings. I’ve been playing since eighth grade, all the way through to the third year of my master’s degree—about eleven years now. I mainly play jungle, but also play clash lane and marksman. When I’m not busy, I reach Grandmaster in pretty much every season. 🎮

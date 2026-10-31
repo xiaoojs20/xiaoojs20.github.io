@@ -53,6 +53,16 @@ menu:
 
 零碎时间里，我喜欢听科技和投资类的播客、读相关的书，看看有意思的视频，也会做力量训练。从 2026 年 10 月开始，我认真练习健身，希望练出薄肌，还尝试为自己做训练记录工具。💪
 
+平时喜欢看的创作者和节目有：
+
+- 影视飓风 \[[Bilibili](https://space.bilibili.com/946974), [YouTube](https://www.youtube.com/@mediastorm6801)\]
+- 极客湾Geekerwan \[[Bilibili](https://space.bilibili.com/25876945), [YouTube](https://www.youtube.com/@geekerwan1024)\]
+- Terry Chen 泰瑞 \[[Bilibili](https://space.bilibili.com/630776767), [YouTube](https://www.youtube.com/@hackbearterry)\]
+- MrBeast \[[Bilibili](https://space.bilibili.com/1027737427), [YouTube](https://www.youtube.com/@MrBeast)\]
+- 杰克小兔 \[[Bilibili](https://space.bilibili.com/644255470), [YouTube](https://www.youtube.com/@jackrabbit1227)\]
+- 张小珺商业访谈录 \[[Bilibili](https://space.bilibili.com/280780745), [YouTube](https://www.youtube.com/@xiaojunpodcast)\]
+- 硅谷101 \[[Bilibili](https://space.bilibili.com/508452265), [YouTube](https://www.youtube.com/@TheValley101)\]
+
 动漫里，我特别喜欢《七龙珠》和《乌龙派出所》。
 
 我也喜欢玩《王者荣耀》，从初二一直玩到研三，算下来已经十一年左右了。主要玩打野，对抗路和射手也玩。不忙的时候，基本每个赛季都会打上王者。🎮
