@@ -1,0 +1,97 @@
+.car-lab {
+  --lab-accent: var(--accent-color, #34495e);
+  --lab-accent-text: var(--accent-color-text, #fff);
+  --lab-muted: var(--card-text-color-secondary, #747474);
+  --lab-bg: var(--body-background, #f5f5fa);
+  --lab-card: var(--card-background, #fff);
+  --lab-border: var(--card-separator-color, #dedee8);
+  --lab-text: var(--card-text-color-main, #202124);
+  --lab-taxi: #b76a27; --lab-crossing: #80579e;
+  color: var(--lab-text); background: var(--lab-bg); border: 1px solid var(--lab-border);
+  border-radius: 20px; padding: 24px; margin: 28px 0; font-size: 14px; line-height: 1.65;
+}
+[data-scheme="dark"] .car-lab {
+  --lab-taxi: #f2bd78; --lab-crossing: #c5a2e1;
+}
+.car-lab *, .car-lab *::before, .car-lab *::after { box-sizing: border-box; }
+.car-lab .lab-eyebrow { color: var(--lab-accent); font-size: 11px; font-weight: 700; letter-spacing: .16em; margin: 0 0 6px; }
+.car-lab .lab-title { font-size: 25px; line-height: 1.3; margin: 0 0 10px; color: var(--lab-text); }
+.car-lab p { margin: 8px 0; }
+.car-lab .lab-subtitle, .car-lab .lab-hint { color: var(--lab-muted); font-size: 12px; }
+.car-lab .lab-topline, .car-lab .lab-actions, .car-lab .lab-chart-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.car-lab .lab-presets { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
+.car-lab .lab-presets label { flex: 1; min-width: 130px; }
+.car-lab label { display: block; font-weight: 500; }
+.car-lab input, .car-lab select, .car-lab button { font: inherit; color: var(--lab-text); }
+.car-lab input[type="number"], .car-lab select {
+  background: var(--lab-card); border: 1px solid var(--lab-border); border-radius: 8px;
+  padding: 8px 10px; width: 100%; min-width: 0; min-height: 40px; margin: 5px 0 0;
+}
+.car-lab input:focus-visible, .car-lab select:focus-visible, .car-lab button:focus-visible, .car-lab summary:focus-visible { outline: 2px solid var(--lab-accent); outline-offset: 3px; }
+.car-lab input[aria-invalid="true"] { outline: 2px solid #b94937; }
+.car-lab input[type="range"] { width: 100%; accent-color: var(--lab-accent); margin: 12px 0 0; }
+.car-lab .lab-main-inputs, .car-lab .lab-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.car-lab .lab-main-inputs { background: var(--lab-card); border: 1px solid var(--lab-border); border-radius: 12px; padding: 16px; }
+.car-lab .lab-unit { font-size: 11px; color: var(--lab-muted); font-weight: 400; }
+.car-lab .lab-kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0 8px; }
+.car-lab .lab-kpi { padding: 16px; border: 1px solid var(--lab-border); border-radius: 12px; background: var(--lab-card); }
+.car-lab .lab-kpi--primary { background: var(--lab-accent); color: var(--lab-accent-text); }
+.car-lab .lab-kpi span { font-size: 12px; display: block; }
+.car-lab .lab-kpi strong { font-size: clamp(21px, 3vw, 30px); display: block; font-variant-numeric: tabular-nums; line-height: 1.5; }
+.car-lab .lab-verdict { font-weight: 600; }
+.car-lab .lab-warnings { font-size: 12px; color: var(--lab-taxi); }
+.car-lab .lab-error { font-size: 12px; color: #b94937; min-height: 20px; }
+.car-lab .lab-chart { margin: 22px 0 16px; }
+.car-lab .lab-chart-heading strong { font-size: 15px; }
+.car-lab .lab-chart-heading select { width: auto; max-width: 100%; margin: 0; }
+.car-lab svg { display: block; width: 100%; height: auto; margin-top: 12px; overflow: visible; }
+.car-lab svg text { fill: var(--lab-muted); font: 11px system-ui, sans-serif; }
+.car-lab .lab-grid { stroke: var(--lab-border); stroke-width: 1; }
+.car-lab .lab-line { fill: none; stroke-width: 2.6; stroke-linejoin: round; }
+.car-lab .lab-line--car { stroke: var(--lab-accent); }
+.car-lab .lab-line--taxi { stroke: var(--lab-taxi); }
+.car-lab .lab-point { fill: var(--lab-card); stroke: var(--lab-accent); stroke-width: 2; }
+.car-lab .lab-marker { stroke: var(--lab-muted); stroke-dasharray: 4 4; }
+.car-lab .lab-marker--crossing { stroke: var(--lab-crossing); stroke-width: 1.5; stroke-dasharray: 6 3; }
+.car-lab .lab-point--crossing { fill: var(--lab-crossing); stroke: var(--lab-card); stroke-width: 1.5; }
+.car-lab svg .lab-crossing-label { fill: var(--lab-crossing); font-weight: 700; }
+.car-lab .lab-chart-values { font-size: 12px; margin-top: 12px; font-variant-numeric: tabular-nums; }
+.car-lab .lab-crossing-value { color: var(--lab-crossing); font-weight: 600; }
+.car-lab .lab-legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 12px; color: var(--lab-muted); }
+.car-lab .lab-legend i { display: inline-block; width: 16px; height: 3px; margin: 0 5px 3px 0; background: var(--lab-accent); }
+.car-lab .lab-legend .lab-taxi-key { background: var(--lab-taxi); }
+.car-lab .lab-legend .lab-current-key { width: 9px; height: 9px; border: 2px solid var(--lab-accent); border-radius: 50%; background: var(--lab-card); margin-bottom: 0; }
+.car-lab .lab-legend .lab-crossing-key { width: 9px; height: 9px; border-radius: 50%; background: var(--lab-crossing); margin-bottom: 0; }
+.car-lab details { border-top: 1px solid var(--lab-border); padding: 12px 0; }
+.car-lab summary { cursor: pointer; font-weight: 600; }
+.car-lab .lab-fields { margin: 14px 0 4px; }
+.car-lab .lab-table-wrap { overflow-x: auto; }
+.car-lab table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; display: table; }
+.car-lab table th, .car-lab table td { border: 0; border-bottom: 1px solid var(--lab-border); padding: 7px 4px; background: transparent; }
+.car-lab table td:last-child, .car-lab table th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.car-lab .lab-actions { justify-content: flex-start; margin-top: 16px; }
+.car-lab button { padding: 8px 12px; border-radius: 8px; border: 1px solid var(--lab-border); background: var(--lab-card); cursor: pointer; min-height: 40px; }
+.car-lab button:hover { border-color: var(--lab-accent); }
+.car-lab button:disabled { opacity: .5; cursor: default; }
+.car-lab .lab-share-url { font-size: 12px; overflow-wrap: anywhere; }
+.car-lab .lab-status { min-height: 20px; font-size: 12px; color: var(--lab-muted); }
+.car-lab .lab-step { font-size: 16px; font-weight: 700; color: var(--lab-accent); margin: 24px 0 12px; scroll-margin-top: 24px; }
+.car-lab .lab-detour { max-width: 320px; margin-top: 14px; }
+.car-lab .lab-cost-options { display: grid; gap: 10px; margin: 16px 0; }
+.car-lab .lab-cost-option { padding: 13px 15px; border: 1px solid var(--lab-border); border-radius: 12px; background: var(--lab-card); }
+.car-lab .lab-cost-option-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.car-lab .lab-cost-option-heading label { display: flex; align-items: flex-start; gap: 9px; font-weight: 600; }
+.car-lab .lab-cost-option-heading button { min-height: 32px; padding: 5px 8px; font-size: 11px; flex-shrink: 0; }
+.car-lab input[type="checkbox"] { accent-color: var(--lab-accent); width: 17px; height: 17px; min-width: 17px; margin: 3px 0 0; cursor: pointer; }
+.car-lab .lab-cost-estimate { font-size: 12px; color: var(--lab-accent); margin: 4px 0 0 26px; font-variant-numeric: tabular-nums; }
+.car-lab .lab-cost-option--excluded .lab-cost-estimate { color: var(--lab-muted); }
+.car-lab input:disabled, .car-lab select:disabled { opacity: .5; }
+.car-lab .lab-calculate { background: var(--lab-accent); color: var(--lab-accent-text); font-weight: 600; padding: 12px 18px; }
+@media (max-width: 520px) {
+  .car-lab { padding: 16px 12px; border-radius: 14px; margin-left: -4px; margin-right: -4px; }
+  .car-lab .lab-main-inputs, .car-lab .lab-fields { gap: 12px; }
+  .car-lab .lab-kpis { gap: 8px; }
+  .car-lab .lab-kpi { padding: 12px 9px; }
+  .car-lab .lab-title { font-size: 22px; }
+  .car-lab label { font-size: 12px; }
+}

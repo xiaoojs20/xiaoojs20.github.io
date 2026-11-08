@@ -1,4 +1,234 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xiaoojs20</title><link>https://xiaoojs20.github.io/zh/post/</link><description>Recent content in Posts on xiaoojs20</description><generator>Hugo -- gohugo.io</generator><language>zh-Hans</language><copyright>xiaoojs20</copyright><lastBuildDate>Thu, 29 Oct 2026 22:16:48 +0800</lastBuildDate><atom:link href="https://xiaoojs20.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>洱海边晒太阳有感：个人的明治维新，家庭的改革开放</title><link>https://xiaoojs20.github.io/zh/p/erhai-reflections/</link><pubDate>Thu, 29 Oct 2026 22:16:48 +0800</pubDate><guid>https://xiaoojs20.github.io/zh/p/erhai-reflections/</guid><description>&lt;p&gt;26年初，我希望三年内实现个人的明治维新，五年内实现家庭的改革开放。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xiaoojs20</title><link>https://xiaoojs20.github.io/zh/post/</link><description>Recent content in Posts on xiaoojs20</description><generator>Hugo -- gohugo.io</generator><language>zh-Hans</language><copyright>xiaoojs20</copyright><lastBuildDate>Mon, 09 Nov 2026 00:38:54 +0800</lastBuildDate><atom:link href="https://xiaoojs20.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>买车 🆚 打车</title><link>https://xiaoojs20.github.io/zh/p/car-vs-taxi/</link><pubDate>Mon, 09 Nov 2026 00:38:54 +0800</pubDate><guid>https://xiaoojs20.github.io/zh/p/car-vs-taxi/</guid><description>&lt;p&gt;每月打车花 3,000 元，要不要干脆买辆车？&lt;/p&gt;
+&lt;p&gt;一辆车停着，也会变旧并占用资金；开得越多，能源、保养、轮胎和车辆价值损耗又会增加。比较买车与打车，需要把这些变化一起放进账本。&lt;/p&gt;
+&lt;p&gt;我把这个问题做成了下面的模型。车价可以填 18.6 万元，持有期可以填 4.5 年。保险、保养、轮胎、维修和折旧都通过公式联动；有真实单次报价时，可以覆盖自动估算。&lt;strong&gt;公式里的系数是便于试算的假设，尚未经过车型级统计标定。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="先设置成本再看结果"&gt;先设置成本，再看结果
+&lt;/h2&gt;&lt;p&gt;默认方案是上海、含税车价 25 万元、纯电车，持有 5 年，每年出行 10,000 km。北京、上海、泉州只是三组起步情景，停车费、油电价格、保险和服务报价都应替换成自己的数字。&lt;/p&gt;
+&lt;p&gt;先填写出行需求，再勾选要计入的费用。点击“计算并查看结果”后，继续修改参数会自动更新曲线、交点与费用明细。输入不完整时暂时隐藏结果，填好后自动恢复。&lt;/p&gt;
+&lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=002dbb170b14820eb55b96b3b239b40aaf27d3b2fee738c624bda226b1acee02"&gt;
+&lt;section class="car-lab" data-car-lab data-language="zh" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4cd85b7d14c932431eee87f9d4dca6f74705996ed17e4f91eb29cda575e2917d" aria-label="买车与打车成本计算器"&gt;
+ &lt;p data-car-loading&gt;正在加载计算器……&lt;/p&gt;
+ &lt;noscript&gt;启用 JavaScript 即可调整参数。计算公式与示例也在下文中。&lt;/noscript&gt;
+&lt;/section&gt;
+&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=fce9f343297cd58edf658721990ee2aa2fd2707060ab18b4d84c8660af450a54"&gt;&lt;/script&gt;
+
+&lt;p&gt;这里的月均金额包含折旧、资金占用及风险准备金。它是持有期内的平均经济成本，每月实际扣款会有另一种节奏。&lt;/p&gt;
+&lt;h2 id="每项费用应该跟什么变化"&gt;每项费用应该跟什么变化
+&lt;/h2&gt;&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;费用&lt;/th&gt;
+ &lt;th&gt;计算依据&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;保险&lt;/td&gt;
+ &lt;td&gt;交强险报价、三者险保额与费率、各年续保车值、里程风险假设&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;定期保养&lt;/td&gt;
+ &lt;td&gt;单次费用、时间或里程触发的等效次数、车龄费用系数&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;轮胎&lt;/td&gt;
+ &lt;td&gt;单胎价格、累计里程与轮胎年限决定的等效耗用&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;维修准备金&lt;/td&gt;
+ &lt;td&gt;车价、质保覆盖、过保时间与实际年里程&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;折旧&lt;/td&gt;
+ &lt;td&gt;车价、持有年限、累计自驾里程与预计残值&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;电费或油费&lt;/td&gt;
+ &lt;td&gt;实际自驾里程 × 能耗 × 能源单价&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;通行费&lt;/td&gt;
+ &lt;td&gt;增加的收费道路里程 × 收费单价&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;停车&lt;/td&gt;
+ &lt;td&gt;住宅、单位与外出停车的月度报价&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;税费、登记、充电桩与牌照&lt;/td&gt;
+ &lt;td&gt;相应政策或实际报价，按持有期摊销净支出&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;资金成本&lt;/td&gt;
+ &lt;td&gt;初期投入、期末回收价值、贷款与机会成本率&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;时间成本&lt;/td&gt;
+ &lt;td&gt;自驾相对打车的时间差 × 时间价值&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;车价无法单独决定停车租金、轮胎尺寸或实际能耗。自动估算只是缺少报价时的起点；同价车型之间仍可能有很大的差异。&lt;/p&gt;
+&lt;h2 id="折旧车龄与累计里程一起进入残值"&gt;折旧：车龄与累计里程一起进入残值
+&lt;/h2&gt;&lt;p&gt;令 \(P\) 为含税车价，\(H\) 为持有年限，\(K\) 为完成同等行程所需的年打车里程。自驾里程与打车里程之比为 \(a\)，于是自驾年里程为 \(k=aK\)，累计里程为 \(M=kH\)。&lt;/p&gt;
+&lt;p&gt;模型先给出一条车龄保值曲线：&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;车龄，年&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;0&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;1&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;3&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;5&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;8&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;10&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;燃油&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;100%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;78%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;51%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;40%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;27%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;20%&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;纯电&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;100%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;80%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;48%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;35%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;20%&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;13%&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;这些是&lt;strong&gt;仅描述车龄影响的假设锚点&lt;/strong&gt;，不是市场统计保值率。相邻节点之间使用对数线性插值，非整数车龄也能连续计算。&lt;/p&gt;
+&lt;p&gt;设校准值 \(b\) 默认 1，车龄保值率使用 \(r(t)^{1/b}\)：提高 \(b\) 会提高保值率，同时保持车值不超过新车价。界面填百分数；填 0 将后续车值与期末残值按 0 处理，首年投保仍使用新车价。&lt;/p&gt;
+&lt;p&gt;再加入高价折旧系数 \(\lambda\) 与每累计 10,000 km 的里程衰减系数 \(\gamma\)：&lt;/p&gt;
+$$
+V(t;K)=P\,r(t)^{1/b}
+\exp\!\left[-\lambda t\max\!\left(\frac{P}{100000}-3,0\right)
+-\gamma\frac{aKt}{10000}\right].
+$$&lt;p&gt;期末残值 \(R=V(H;K)\)，年均折旧为 \((P-R)/H\)。默认 \(\lambda=1.4\%\)、\(\gamma=2\%\)，公式使用小数。累计里程已经进入残值，旧版单独收取的额外里程折旧已取消。&lt;/p&gt;
+&lt;p&gt;残值按正常保养、基准轮胎状态的车况定义。轮胎耗用预算用于维持该车况，里程折旧系数应描述车辆其余价值损失；用真实二手估价校准时，要保持相同车况口径。&lt;/p&gt;
+&lt;h2 id="保险按各年续保车值估算"&gt;保险：按各年续保车值估算
+&lt;/h2&gt;&lt;p&gt;车损险的保险金额与车辆实际价值有关，可参考&lt;a class="link" href="https://e.cic.cn/web/web/public/Clause.jsp" target="_blank" rel="noopener"
+ &gt;机动车商业保险示范条款&lt;/a&gt;。模型在第 0、1、2……年的投保或续保时点取车值，首年使用新车价；最后一个非整年按实际使用比例分摊。令各保险年度权重为 \(w_n=\min(1,H-n)\)：&lt;/p&gt;
+$$
+\bar V_I=\frac{1}{H}\sum_{n=0}^{\lceil H\rceil-1}w_nV(n;K),\qquad V(0;K)=P.
+$$&lt;p&gt;将保险拆成交强险 \(I_c\)、三者险保额 \(Q\) 与费率 \(s\)，以及新车车损险费用 \(D_0\)。没有车损险分项报价时，\(D_0=P\,d\)，其中 \(d\) 是可调整的估算费率。&lt;/p&gt;
+$$
+U(k)=\frac{1+\eta k/10000}{1+\eta},\qquad
+C_{\rm insurance}
+=z\left[I_c+\left(Qs+D_0\frac{\bar V_I}{P}\right)U(k)\right].
+$$&lt;p&gt;\(z\) 是整体校准倍率，\(\eta\) 是里程风险情景系数，以年自驾 10,000 km 为参考。车损部分随后续续保车值变化，三者险保费由保障额度估算，交强险填写实际年报价。&lt;/p&gt;
+&lt;p&gt;这不是保险公司的计价公式。车型、驾驶人、地区、出险记录和优惠都会影响实际报价；里程风险系数也没有经过统计拟合。报价覆盖入口填写的是&lt;strong&gt;参考里程下的新车车损险分项&lt;/strong&gt;，交强险和三者险另列。以首年持有一年为例，车损报价 5,000 元、交强险 950 元、三者险估算 700 元，在默认参考里程及 100% 校准倍率下合计 6,650 元。换车后应重新核对报价。&lt;/p&gt;
+&lt;h2 id="保养单次费用乘以时间或里程触发的次数"&gt;保养：单次费用乘以时间或里程触发的次数
+&lt;/h2&gt;&lt;p&gt;不同车型、不同保养项目的周期并不相同。&lt;a class="link" href="https://www.tesla.cn/support/vehicle-maintenance" target="_blank" rel="noopener"
+ &gt;特斯拉的官方维护建议&lt;/a&gt;就分别列有按时间和按里程触发的项目。本页的通用周期需要按车型手册修改。&lt;/p&gt;
+&lt;p&gt;以 \(P_0=250000\) 元为参考车价，自动估算单次保养费：&lt;/p&gt;
+$$
+B(P)=B_0(P/P_0)^\alpha.
+$$&lt;p&gt;填写实际单次报价后，用报价覆盖 \(B(P)\)。设时间间隔为 \(T_B\) 年、里程间隔为 \(L_B\) km：&lt;/p&gt;
+$$
+N_B=\max(H/T_B,M/L_B),\qquad
+C_{\rm maintenance}
+=\frac{B(P)N_B}{H}(1+g_BH/2).
+$$&lt;p&gt;\(g_B\) 是每增一车龄年的费用增量。\(N_B\) 是可为小数的等效次数，用于连续预算。它没有预测每一次进店日期；低里程车辆也可能因时间到期而需要保养。&lt;/p&gt;
+&lt;h2 id="轮胎价格行驶寿命与橡胶年限"&gt;轮胎：价格、行驶寿命与橡胶年限
+&lt;/h2&gt;&lt;p&gt;单胎价格同样先由车价估算，或直接填入真实报价：&lt;/p&gt;
+$$
+T(P)=T_0(P/P_0)^\beta,\qquad
+C_{\rm tyres}
+=\frac{4T(P)}{H}\max(M/L_T,H/T_T).
+$$&lt;p&gt;\(L_T\) 是预计使用里程，\(T_T\) 是预计使用年限。默认单胎参考价 800 元、里程寿命 50,000 km、年限 6 年，都只是可修改的试算参数。&lt;a class="link" href="https://www.michelin.com.cn/auto/how-often-change-tires/index.html" target="_blank" rel="noopener"
+ &gt;米其林的说明&lt;/a&gt;指出，轮胎寿命取决于使用条件、磨损和时间，不能由一个统一里程保证。&lt;/p&gt;
+&lt;p&gt;这一项是维持基准轮胎状态的连续耗用预算，未另加初装轮胎购置费，也不等于某年实际换胎账单。固定年里程下，轮胎年均耗用可能保持不变，累计费用仍会随持有期增加。&lt;/p&gt;
+&lt;h2 id="维修按质保车龄与使用强度计提风险"&gt;维修：按质保、车龄与使用强度计提风险
+&lt;/h2&gt;&lt;p&gt;设基础维修比例为 \(\rho\)，质保年限为 \(W\)，质保内准备金减免比例为 \(c\)，过保后的车龄风险增量为 \(g_R\)，里程风险系数为 \(\mu\)。令 \(D=\max(H-W,0)\)：&lt;/p&gt;
+$$
+E(H)=\frac{(1-c)\min(H,W)+D+g_RD^2/2}{H},
+$$$$
+C_{\rm repairs}=P\rho E(H)\left(1+\mu\frac{k}{10000}\right).
+$$&lt;p&gt;它用于预留不确定支出，并不表示一定会维修同样的金额。质保范围应按实际合同调整；正常磨损、事故、保养与已保险的损失需要避免重复计入。&lt;/p&gt;
+&lt;h2 id="能源停车税费与资金"&gt;能源、停车、税费与资金
+&lt;/h2&gt;&lt;p&gt;电费始终由实际自驾里程计算。默认电耗 18 kWh/100 km，家充占 65%，家充、公充分别为 0.55、1.50 元/kWh，综合电价为 0.8825 元/kWh。10,000 km 为 1,588.50 元/年，20,000 km 为 3,177 元/年，0 km 为 0 元。燃油车使用同样的里程逻辑，替换为油耗与油价。&lt;/p&gt;
+&lt;p&gt;停车按实际月报价合计乘 12。通行费按增加的收费道路里程比例和每公里价格计算；只填自驾相对打车增加的部分。&lt;/p&gt;
+&lt;p&gt;普通新车的全额购置税按 \(P/1.13\times10\%\) 估算，计税价格不含增值税，可参考&lt;a class="link" href="https://www.chinatax.gov.cn/n810356/n3255681/c4553945/content.html" target="_blank" rel="noopener"
+ &gt;税务总局示例&lt;/a&gt;。符合条件的新能源乘用车在 2026—2027 年减半征收，单车减税不超过 15,000 元，见&lt;a class="link" href="https://www.mof.gov.cn/jrttts/202306/t20230629_3893518.htm" target="_blank" rel="noopener"
+ &gt;财政部说明&lt;/a&gt;。购置税只在购车时计一次，其他年份、二手车或特殊计税情形应手填实际税额。模型不计以旧换新补贴。&lt;/p&gt;
+&lt;p&gt;上海燃油车示例的额度投入为 94,000 元，期末回收比例默认 100%，均为假设。净损失按持有期摊销，资金仍有占用成本；委托拍卖规则可查&lt;a class="link" href="https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1" target="_blank" rel="noopener"
+ &gt;上海市政府解读&lt;/a&gt;。纯电额度投入为零以符合&lt;a class="link" href="https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html" target="_blank" rel="noopener"
+ &gt;2026 年专用牌照条件&lt;/a&gt;为前提。零投入不表示资格和等待时间没有约束。&lt;/p&gt;
+&lt;p&gt;令 \(A_0\) 为车价及勾选的一次性投入之和，\(A_H\) 为期末残值与牌照回收额之和，资金成本近似为：&lt;/p&gt;
+$$
+C_{\rm capital}
+=i\frac{A_0+A_H}{2}+(j-i)\frac{LP}{2}.
+$$&lt;p&gt;\(i\) 为机会成本率，\(j\) 为贷款利率，\(L\) 为车价贷款比例。这里假设贷款期限等于持有期，本金均匀下降；本金不会再作为消费重复相加。这是平均年度近似，不是逐月还款表或净现值分析。&lt;/p&gt;
+&lt;h2 id="连续成本曲线如何求交点"&gt;连续成本曲线如何求交点
+&lt;/h2&gt;&lt;p&gt;把勾选的年均费用相加，得到 \(C_{\rm car}(K)\)。打车为 \(C_{\rm taxi}(K)=qK\)。由于保险、残值、保养周期等都会随里程变化，旧版分两段的线性临界公式已经不再适用。&lt;/p&gt;
+&lt;p&gt;本页直接求解：&lt;/p&gt;
+$$
+C_{\rm car}(K^*)-qK^*=0,\qquad
+T^*=\frac{qK^*}{12}.
+$$&lt;p&gt;求解范围为年出行里程 0–200,000 km；通过费用公式反复计算并用二分法逼近交点。范围内没有交点时会明确显示，不能据此断言更高里程永远没有交点。超过 60,000 km/年的交点会提示这是高里程外推。&lt;/p&gt;
+&lt;p&gt;只改变当前年里程，会移动当前用量点并重算当前费用；同一条年里程成本曲线的交点由成本规则决定。修改车价、持有期、费率、保养周期等，才是在改变这条曲线本身。&lt;/p&gt;
+&lt;h2 id="用默认方案算一遍"&gt;用默认方案算一遍
+&lt;/h2&gt;&lt;p&gt;上海、25 万元纯电、持有 5 年、年出行 10,000 km，全款、机会成本 3%、时间不计价、全部费用勾选。停车 1,310 元/月，打车 3.6 元/km。&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;成本项目&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;年均金额，元&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;折旧&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;34,165&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;税费、登记、充电桩与卖车费用摊销&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;3,229&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;保险&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;5,020&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;停车&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15,720&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;定期保养&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;645&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;轮胎耗用&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;640&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;维修准备金&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;466&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;电费&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1,589&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;资金占用&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;5,156&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;合计&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;strong&gt;66,630&lt;/strong&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;各行独立四舍五入，合计用未舍入数计算。自驾约 5,553 元/月，同等需求打车 3,000 元/月，打车每月少花约 2,553 元。模型交点约为每年 19,497 km，两者都约 5,849 元/月。它们都是当前假设下的结果。&lt;/p&gt;
+&lt;p&gt;我更关心这些结果对什么敏感：换成真实保养报价、轮胎尺寸和停车租金，把计划持有期缩短两年，再看交点移到哪里。家庭接送、携带物品和临时出门的自由，也可能让我愿意多付钱；先看清这笔代价，再决定是否支付。&lt;/p&gt;</description></item><item><title>洱海边晒太阳有感：个人的明治维新，家庭的改革开放</title><link>https://xiaoojs20.github.io/zh/p/erhai-reflections/</link><pubDate>Thu, 29 Oct 2026 22:16:48 +0800</pubDate><guid>https://xiaoojs20.github.io/zh/p/erhai-reflections/</guid><description>&lt;p&gt;26年初，我希望三年内实现个人的明治维新，五年内实现家庭的改革开放。&lt;/p&gt;
 &lt;p&gt;明治维新的核心是能力革命。传统社会人生的梯度信号总来自外部，而现代需要建立自己的中央政府，提高认知，懂得决策懂得管理自己。建立个人的基础设施，不管是工作上的技术、投资知识和账户、身份户籍、人脉还是薄肌。铁路修成之前，一个国家即使有雄心，也无法形成真正的生产力；同样，一个人如果没有这些基础设施，再宏大的价值观都很难兑现。具备“岩仓使节团精神”，承认外面的世界有很多自己不知道的东西，然后主动去看。向内提高自己的知识水平，向外探索这颗蓝色星球。&lt;/p&gt;
 &lt;p&gt;改革开放的核心是制度革命。改革的方向之一，是减少权力过度集中和个人化运行，强化集体领导、分工负责与制度化治理。改变家庭内部的运行机制，从威权、惯例到透明、激励、协商、试验和开放。一个现代家庭，应当允许这些东西重新进入讨论。家庭资产配置，成员之间的责任承担，夫妻间的生育以及父母养老。家庭不再要求每个人服从同一种人生，而是在承认差异的前提下，寻找长期可持续的合作方式。&lt;/p&gt;
 &lt;p&gt;我们这一代人的个人现代化，恰好发生在宏观红利减弱、外部秩序更加不确定的阶段。对普通个人而言，过去很多可以默认成立的前提，都开始需要重新证明。学历能不能稳定兑换成职业？一份工作能不能持续十年？买房是不是必然完成财富积累？一个行业今天的核心能力，五年以后是否仍然稀缺？一个城市是不是值得自己投入二十年的时间？&lt;/p&gt;

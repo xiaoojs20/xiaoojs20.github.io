@@ -1,0 +1,7 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+<link rel="stylesheet" href="{{ "css/car-vs-taxi.css" | relURL }}?v={{ readFile "static/css/car-vs-taxi.css" | crypto.SHA256 }}">
+<section class="car-lab" data-car-lab data-language="{{ cond $zh "zh" "en" }}" data-model-url="{{ "js/car-vs-taxi-model.mjs" | relURL }}?v={{ readFile "static/js/car-vs-taxi-model.mjs" | crypto.SHA256 }}" aria-label="{{ cond $zh "买车与打车成本计算器" "Car ownership and taxi cost calculator" }}">
+  <p data-car-loading>{{ cond $zh "正在加载计算器……" "Loading calculator…" }}</p>
+  <noscript>{{ cond $zh "启用 JavaScript 即可调整参数。计算公式与示例也在下文中。" "Enable JavaScript to adjust the parameters. The formulas and a worked example are also included below." }}</noscript>
+</section>
+<script type="module" src="{{ "js/car-vs-taxi.mjs" | relURL }}?v={{ readFile "static/js/car-vs-taxi.mjs" | crypto.SHA256 }}"></script>

@@ -123,6 +123,12 @@ related:
 markup:
   goldmark:
     renderer: { unsafe: true }
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block: [['$$', '$$']]
+          inline: [['\(', '\)']]
   tableOfContents: { endLevel: 4, ordered: true, startLevel: 2 }
   highlight: { noClasses: false, lineNos: true }
 outputs:
