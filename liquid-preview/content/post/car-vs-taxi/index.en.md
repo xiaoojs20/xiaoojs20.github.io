@@ -21,7 +21,7 @@ The model below accepts prices such as CNY 186,000 and holding periods such as 4
 
 Defaults are Shanghai, an electric car with a VAT-inclusive price of CNY 250,000, five years and 10,000 annual trip kilometres. Beijing, Shanghai and Quanzhou are starting scenarios. Replace parking, energy and service assumptions with your own quotes.
 
-Enter travel demand and choose the costs to include. Press “Calculate and view results” to see all three charts by annual trip distance, car price and holding period. Each chart varies its horizontal-axis input and uses your current settings for the other inputs. Further edits update the curves, crossings and breakdown automatically. Incomplete inputs temporarily hide results. Valid inputs restore them.
+The page opens with charts by annual trip distance, car price and holding period. Editing inputs or selecting costs updates the curves, crossings and breakdown automatically. Each chart varies its horizontal-axis input and uses your current settings for the other inputs. Incomplete inputs temporarily hide results. Valid inputs restore them.
 
 {{< car-vs-taxi >}}
 

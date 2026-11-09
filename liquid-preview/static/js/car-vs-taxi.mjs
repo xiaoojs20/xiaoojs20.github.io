@@ -29,7 +29,7 @@ const WORDS = {
     stepInputs: '1 · 设置用车与出行', stepCosts: '2 · 选择计入哪些成本', stepResults: '3 · 查看比较结果',
     costsHint: '勾选要计入的费用，再点“调整参数”填写金额。停车、保险和能源参数已展开；按里程计算的费用会标出算式，所有项目都可以修改或取消。',
     edit: '调整参数', close: '收起参数', included: '计入比较', excluded: '未计入',
-    calculate: '计算并查看结果', recalculate: '设置完成后，点击“计算并查看结果”。', liveUpdate: '曲线和交点已随当前参数自动更新。',
+    liveUpdate: '调整参数会自动更新三张图和交点。',
     detour: '自驾里程 / 打车里程', selectedCosts: '已计入成本', items: '项',
     insuranceHelp: '报价覆盖的是新车车损险分项，不含交强险和三者险，以每年自驾 1 万公里为参考。留 0 时按车价估算。首年用新车价，后续按续保时车值估算；非整年按使用期分摊。里程风险只是情景假设，实际报价还受车型、驾驶人和出险记录影响。',
     allEqual: '两种成本始终相同', allEqualHint: '当前勾选项与单价使两条成本曲线完全重合。',
@@ -71,7 +71,7 @@ const WORDS = {
     stepInputs: '1 · Set the car and travel demand', stepCosts: '2 · Choose the costs to include', stepResults: '3 · Compare the results',
     costsHint: 'Select each cost to include, then edit its parameters. Parking, insurance and energy start expanded. Distance-based costs show their calculation. Every item can be changed or excluded.',
     edit: 'Edit parameters', close: 'Hide parameters', included: 'Include', excluded: 'Excluded',
-    calculate: 'Calculate and view results', recalculate: 'When ready, press “Calculate and view results”.', liveUpdate: 'Curves and crossings update automatically with your inputs.',
+    liveUpdate: 'Adjust any input to update all three charts and their crossings.',
     detour: 'Driving distance / taxi distance', selectedCosts: 'Costs included', items: 'items',
     insuranceHelp: 'The quote overrides new-car damage coverage only, excluding compulsory and liability cover, at a reference 10,000 driving km/year. Enter 0 to estimate from price. Year one uses new-car value; renewals use value at each policy start. Partial years are allocated pro rata. Mileage risk is a scenario assumption; model, driver and claims also affect quotes.',
     allEqual: 'Costs coincide throughout', allEqualHint: 'The selected costs and fare make both cost curves identical.',
@@ -180,7 +180,6 @@ async function mount(root, index) {
     try { p = restoreState(JSON.parse(decodeURIComponent(location.hash.slice(4)))); initialStatus = t.sharedLoaded; }
     catch { initialStatus = t.sharedError; }
   }
-  let hasCalculated = initialStatus === t.sharedLoaded;
   const id = key => `car-lab-${index}-${key}`;
   const fmt = (n, digits = 0) => new Intl.NumberFormat(zh ? 'zh-CN' : 'en-US', { maximumFractionDigits: digits }).format(n);
   const unit = text => zh ? text.replace('CNY/year²', '元/年²').replace('CNY/year', '元/年').replace('CNY/month', '元/月').replace('CNY/hour', '元/小时').replace('CNY/service', '元/次').replace('CNY/tyre', '元/条').replace('CNY', '元').replace('km/year', 'km/年').replace('%/year', '%/年').replace('years', '年') : text;
@@ -214,8 +213,8 @@ async function mount(root, index) {
     <div class="lab-cost-options">${costOptions}</div>
     <details><summary>${t.assumption}</summary><p class="lab-hint">${t.assumptionText}</p><p class="lab-hint">${t.model} ${MODEL_VERSION}</p></details>
     <p class="lab-error" id="${id('error')}" role="alert"></p>
-    <div class="lab-actions"><button class="lab-calculate" type="button" data-calculate>${t.calculate}</button><button type="button" data-reset>${t.reset}</button></div><p class="lab-status" data-ready role="status"></p>
-    <div class="lab-results" hidden><p class="lab-step" tabindex="-1" data-results-heading>${t.stepResults}</p><p class="lab-hint" data-included></p><div class="lab-kpis">${['car', 'taxi', 'threshold', 'breakKm'].map((key, i) => `<div class="lab-kpi${i === 2 ? ' lab-kpi--primary' : ''}"><span>${t[key]}</span><strong data-output="${key}"></strong><span>${key === 'breakKm' ? t.distance : t.month}</span></div>`).join('')}</div>
+    <div class="lab-actions"><button type="button" data-reset>${t.reset}</button><p class="lab-hint">${t.liveUpdate}</p></div><p class="lab-status" data-ready role="status"></p>
+    <div class="lab-results" hidden><p class="lab-step">${t.stepResults}</p><p class="lab-hint" data-included></p><div class="lab-kpis">${['car', 'taxi', 'threshold', 'breakKm'].map((key, i) => `<div class="lab-kpi${i === 2 ? ' lab-kpi--primary' : ''}"><span>${t[key]}</span><strong data-output="${key}"></strong><span>${key === 'breakKm' ? t.distance : t.month}</span></div>`).join('')}</div>
     <p class="lab-verdict" data-verdict aria-live="polite"></p><p class="lab-hint">${t.cashNote}</p><div class="lab-warnings" data-warnings></div>
     ${Object.entries(charts).map(([axis, chart]) => `
     <section class="lab-chart" data-chart-panel="${axis}" aria-labelledby="${id(`heading-${axis}`)}">
@@ -228,7 +227,7 @@ async function mount(root, index) {
     <div class="lab-actions"><button type="button" data-export>${t.export}</button><button type="button" data-share>${t.share}</button></div><p class="lab-status" data-status role="status"></p><p class="lab-share-url" data-share-url hidden></p></div>`;
   const $ = selector => root.querySelector(selector);
   const chartPanels = root.querySelectorAll('[data-chart-panel]');
-  $('[data-status]').textContent = initialStatus;
+  if (initialStatus === t.sharedLoaded) $('[data-status]').textContent = initialStatus;
   const inputUnits = { ...Object.fromEntries(Object.values(GROUPS).flat().map(([key, , , u]) => [key, u])),
     price: 'CNY', years: 'years', km: 'km/year', fare: 'CNY/km' };
 
@@ -353,8 +352,7 @@ async function mount(root, index) {
     ]);
   }
 
-  function update(showResults = hasCalculated) {
-    if (!showResults) $('.lab-results').hidden = true;
+  function update() {
     if (!read()) return;
     result = calculate(p);
     const actualKm = p.detour * p.km;
@@ -423,9 +421,7 @@ async function mount(root, index) {
     $('[data-energy-explanation]').textContent = !p.costs.energy ? '' : p.type === 'ev'
       ? `${t.electricityFormula} ${t.blendedPrice}: ${fmt(blended, 4)} ${unit('CNY/kWh')}; ${fmt(actualKm, 2)} km × ${fmt(p.electricityUse, 2)} kWh/100 km = ${fmt(actualKm * p.electricityUse / 100, 2)} kWh/${zh ? '年' : 'year'}. ${t.currentEstimate}`
       : `${t.fuelFormula} ${fmt(actualKm, 2)} km × ${fmt(p.fuelUse, 2)} L/100 km × ${fmt(p.petrol, 2)} ${unit('CNY/L')} = ${fmt(result.rows.energy, 2)} ${unit('CNY/year')}. ${t.currentEstimate}`;
-    if (!showResults) return;
     $('.lab-results').hidden = false;
-    $('[data-ready]').textContent = t.liveUpdate;
     const included = Object.keys(p.costs).filter(key => p.costs[key]);
     $('[data-included]').textContent = `${t.selectedCosts}: ${included.length}/12 ${t.items} — ${included.map(rowLabel).join(zh ? '、' : ', ')}.`;
     for (const [key, value] of Object.entries({ car: result.car / 12, taxi: result.taxi / 12, threshold: result.breakMonthly, breakKm: result.breakKm })) {
@@ -453,7 +449,7 @@ async function mount(root, index) {
       if (slider && Number.isFinite(el.valueAsNumber)) slider.value = el.value;
     } else return;
     $('[data-status]').textContent = '';
-    $('[data-ready]').textContent = t.recalculate;
+    $('[data-ready]').textContent = '';
     $('[data-share-url]').hidden = true;
     update();
   });
@@ -461,7 +457,7 @@ async function mount(root, index) {
     const el = event.target;
     if (el.dataset.cost) {
       p = { ...p, costs: { ...p.costs, [el.dataset.cost]: el.checked } };
-      sync(true); $('[data-ready]').textContent = t.recalculate; update(); return;
+      sync(true); $('[data-ready]').textContent = ''; update(); return;
     }
     if (!el.dataset.select) return;
     if (el.dataset.select === 'taxMode') p.taxMode = el.value;
@@ -472,12 +468,11 @@ async function mount(root, index) {
       sync();
     }
     $('[data-status]').textContent = '';
-    $('[data-ready]').textContent = t.recalculate;
+    $('[data-ready]').textContent = '';
     $('[data-share-url]').hidden = true;
     update();
   });
   $('[data-reset]').addEventListener('click', () => {
-    hasCalculated = false;
     p = { ...DEFAULTS };
     if (location.hash.startsWith('#ct=')) history.replaceState(null, '', location.pathname + location.search);
     sync(); update(); $('[data-status]').textContent = ''; $('[data-ready]').textContent = ''; $('[data-share-url]').hidden = true;
@@ -489,14 +484,6 @@ async function mount(root, index) {
     panel.hidden = !panel.hidden;
     button.setAttribute('aria-expanded', String(!panel.hidden));
     button.textContent = panel.hidden ? t.edit : t.close;
-  });
-  $('[data-calculate]').addEventListener('click', () => {
-    hasCalculated = true;
-    update(true);
-    if (!$('.lab-results').hidden) {
-      $('[data-results-heading]').focus({ preventScroll: true });
-      $('[data-results-heading]').scrollIntoView({ block: 'start', behavior: 'smooth' });
-    } else root.querySelector('[aria-invalid="true"]')?.focus();
   });
   $('[data-share]').addEventListener('click', async () => {
     if (!read()) return;
@@ -541,15 +528,15 @@ async function mount(root, index) {
     $('[data-share-url]').hidden = true;
     try {
       p = restoreState(JSON.parse(decodeURIComponent(location.hash.slice(4))));
-      hasCalculated = true;
+      $('[data-ready]').textContent = '';
       sync(); update(); $('[data-status]').textContent = t.sharedLoaded;
     } catch {
-      p = { ...DEFAULTS }; hasCalculated = false;
+      p = { ...DEFAULTS };
       sync(); update(); $('[data-status]').textContent = '';
       $('[data-ready]').textContent = t.sharedError;
     }
   });
-  sync(); update(initialStatus === t.sharedLoaded);
+  sync(); update();
   if (initialStatus === t.sharedError) $('[data-ready]').textContent = initialStatus;
 }
 

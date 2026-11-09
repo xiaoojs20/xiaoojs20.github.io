@@ -3,13 +3,13 @@
 &lt;p&gt;The model below accepts prices such as CNY 186,000 and holding periods such as 4.5 years. Insurance, servicing, tyres, repairs and depreciation are linked by equations, with unit-quote overrides where available. &lt;strong&gt;Its coefficients are editable budgeting assumptions, without vehicle-level statistical calibration.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="configure-costs-before-viewing-results"&gt;Configure costs before viewing results
 &lt;/h2&gt;&lt;p&gt;Defaults are Shanghai, an electric car with a VAT-inclusive price of CNY 250,000, five years and 10,000 annual trip kilometres. Beijing, Shanghai and Quanzhou are starting scenarios. Replace parking, energy and service assumptions with your own quotes.&lt;/p&gt;
-&lt;p&gt;Enter travel demand and choose the costs to include. Press “Calculate and view results” to see all three charts by annual trip distance, car price and holding period. Each chart varies its horizontal-axis input and uses your current settings for the other inputs. Further edits update the curves, crossings and breakdown automatically. Incomplete inputs temporarily hide results. Valid inputs restore them.&lt;/p&gt;
-&lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=85f8acf4cd25f1d48e109659fb3a340ef2177dd0a4d01f785e40170ad9bcad52"&gt;
+&lt;p&gt;The page opens with charts by annual trip distance, car price and holding period. Editing inputs or selecting costs updates the curves, crossings and breakdown automatically. Each chart varies its horizontal-axis input and uses your current settings for the other inputs. Incomplete inputs temporarily hide results. Valid inputs restore them.&lt;/p&gt;
+&lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=b5e5ccb0f49ab971c42a873b4af8c63a1252f14119c0fce7c2dbbee12e4acacc"&gt;
 &lt;section class="car-lab" data-car-lab data-language="en" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4cd85b7d14c932431eee87f9d4dca6f74705996ed17e4f91eb29cda575e2917d" aria-label="Car ownership and taxi cost calculator"&gt;
  &lt;p data-car-loading&gt;Loading calculator…&lt;/p&gt;
  &lt;noscript&gt;Enable JavaScript to adjust the parameters. The formulas and a worked example are also included below.&lt;/noscript&gt;
 &lt;/section&gt;
-&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=2361395f4cefa14ed5d2b9e1bf002112b4cbbad0f458de991b7b416b9d8975db"&gt;&lt;/script&gt;
+&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=3811248aa6aecfd1e8a69eedb93a733e998ddcdd326b0cd30cef4f7e4b29e4a9"&gt;&lt;/script&gt;
 
 &lt;p&gt;Monthly amounts include depreciation, capital and risk allowances. They represent average economic cost over the holding period. Actual monthly payments will follow a different pattern.&lt;/p&gt;
 &lt;h2 id="what-drives-each-cost"&gt;What drives each cost

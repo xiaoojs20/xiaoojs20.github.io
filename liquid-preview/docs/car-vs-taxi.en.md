@@ -21,7 +21,7 @@ Costs are nonlinear, so the former F/v/w two-segment crossing formula no longer 
 
 The results display the distance, price and holding-period charts together. Price and holding-period curves call calculate(p, { solveCrossings: false }) to avoid solving a distance crossing at every plotting point. Hollow dots mark current usage, and purple dots mark equal costs. The CSV includes samples from all three charts, including exact input and crossing points.
 
-After the first calculation, input, preset and cost-selection changes update results automatically. Invalid input temporarily hides results; correcting it restores them. Reset restores Shanghai/CNY 250,000 before the first calculation. Powertrain switches show relevant consumption fields.
+On load, the calculator uses the defaults or the settings from a shared link. Input, preset and cost-selection changes update the results automatically. Invalid input temporarily hides results. Correcting it restores them. Reset restores the Shanghai CNY 250,000 scenario and redraws the charts. Powertrain switches show relevant consumption fields.
 
 ## Verification
 

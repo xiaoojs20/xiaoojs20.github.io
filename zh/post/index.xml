@@ -3,13 +3,13 @@
 &lt;p&gt;我把这个问题做成了下面的模型。车价可以填 18.6 万元，持有期可以填 4.5 年。保险、保养、轮胎、维修和折旧都通过公式联动；有真实单次报价时，可以覆盖自动估算。&lt;strong&gt;公式里的系数是便于试算的假设，尚未经过车型级统计标定。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="先设置成本再看结果"&gt;先设置成本，再看结果
 &lt;/h2&gt;&lt;p&gt;默认方案是上海、含税车价 25 万元、纯电车，持有 5 年，每年出行 10,000 km。北京、上海、泉州只是三组起步情景，停车费、油电价格、保险和服务报价都应替换成自己的数字。&lt;/p&gt;
-&lt;p&gt;先填写出行需求，再勾选要计入的费用。点击“计算并查看结果”，会同时看到按年出行里程、车价和持有年限绘制的三张图。每张图只改变横轴对应的参数，其余沿用当前设置。继续修改参数会自动更新曲线、交点与费用明细。输入不完整时暂时隐藏结果，填好后自动恢复。&lt;/p&gt;
-&lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=85f8acf4cd25f1d48e109659fb3a340ef2177dd0a4d01f785e40170ad9bcad52"&gt;
+&lt;p&gt;页面打开时会显示按年出行里程、车价和持有年限绘制的三张图。调整参数或勾选费用后，曲线、交点和费用明细会自动更新。每张图只改变横轴对应的参数，其余沿用当前设置。输入不完整时暂时隐藏结果，填好后自动恢复。&lt;/p&gt;
+&lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=b5e5ccb0f49ab971c42a873b4af8c63a1252f14119c0fce7c2dbbee12e4acacc"&gt;
 &lt;section class="car-lab" data-car-lab data-language="zh" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4cd85b7d14c932431eee87f9d4dca6f74705996ed17e4f91eb29cda575e2917d" aria-label="买车与打车成本计算器"&gt;
  &lt;p data-car-loading&gt;正在加载计算器……&lt;/p&gt;
  &lt;noscript&gt;启用 JavaScript 即可调整参数。计算公式与示例也在下文中。&lt;/noscript&gt;
 &lt;/section&gt;
-&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=2361395f4cefa14ed5d2b9e1bf002112b4cbbad0f458de991b7b416b9d8975db"&gt;&lt;/script&gt;
+&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=3811248aa6aecfd1e8a69eedb93a733e998ddcdd326b0cd30cef4f7e4b29e4a9"&gt;&lt;/script&gt;
 
 &lt;p&gt;这里的月均金额包含折旧、资金占用及风险准备金。它是持有期内的平均经济成本，每月实际扣款会有另一种节奏。&lt;/p&gt;
 &lt;h2 id="每项费用应该跟什么变化"&gt;每项费用应该跟什么变化

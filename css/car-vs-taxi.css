@@ -86,7 +86,6 @@
 .car-lab .lab-cost-estimate { font-size: 12px; color: var(--lab-accent); margin: 4px 0 0 26px; font-variant-numeric: tabular-nums; }
 .car-lab .lab-cost-option--excluded .lab-cost-estimate { color: var(--lab-muted); }
 .car-lab input:disabled, .car-lab select:disabled { opacity: .5; }
-.car-lab .lab-calculate { background: var(--lab-accent); color: var(--lab-accent-text); font-weight: 600; padding: 12px 18px; }
 @media (max-width: 520px) {
   .car-lab { padding: 16px 12px; border-radius: 14px; margin-left: -4px; margin-right: -4px; }
   .car-lab .lab-main-inputs, .car-lab .lab-fields { gap: 12px; }
