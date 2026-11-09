@@ -1,0 +1,8 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+{{- $kind := .Get "kind" -}}
+<link rel="stylesheet" href="{{ "css/offer-lab.css" | relURL }}?v={{ readFile "static/css/offer-lab.css" | crypto.SHA256 }}">
+<section class="offer-lab" data-offer-lab="{{ $kind }}" data-language="{{ cond $zh "zh" "en" }}" aria-label="{{ cond $zh "薪酬交互示例" "Compensation interactive example" }}">
+  <p class="offer-lab-loading">{{ cond $zh "正在加载交互示例……" "Loading interactive example…" }}</p>
+  <noscript>{{ cond $zh "启用 JavaScript 可使用交互功能；正文保留了计算方法和清单。" "Enable JavaScript to use this widget; the article includes the calculations and checklist." }}</noscript>
+</section>
+<script defer src="{{ "js/offer-lab.js" | relURL }}?v={{ readFile "static/js/offer-lab.js" | crypto.SHA256 }}"></script>

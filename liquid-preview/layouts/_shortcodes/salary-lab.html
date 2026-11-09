@@ -1,0 +1,7 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+<link rel="stylesheet" href="{{ "css/salary-lab.css" | relURL }}?v={{ readFile "static/css/salary-lab.css" | crypto.SHA256 }}">
+<section class="salary-lab" data-salary-lab data-language="{{ cond $zh "zh" "en" }}" aria-label="{{ cond $zh "六城薪酬与月 Base 计算器" "Six-city salary and monthly base calculator" }}">
+<p>{{ cond $zh "正在加载薪酬计算器……" "Loading salary calculator…" }}</p>
+<noscript>{{ cond $zh "启用 JavaScript 可使用交互计算器，下方保留了固定示例。" "Enable JavaScript for the calculator. A fixed worked example follows." }}</noscript>
+</section>
+<script defer src="{{ "js/salary-lab.js" | relURL }}?v={{ readFile "static/js/salary-lab.js" | crypto.SHA256 }}"></script>
