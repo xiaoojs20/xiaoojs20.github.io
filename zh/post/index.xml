@@ -2,14 +2,14 @@
 &lt;p&gt;一辆车停着，也会变旧并占用资金；开得越多，能源、保养、轮胎和车辆价值损耗又会增加。比较买车与打车，需要把这些变化一起放进账本。&lt;/p&gt;
 &lt;p&gt;我把这个问题做成了下面的模型。车价可以填 18.6 万元，持有期可以填 4.5 年。保险、保养、轮胎、维修和折旧都通过公式联动；有真实单次报价时，可以覆盖自动估算。&lt;strong&gt;公式里的系数是便于试算的假设，尚未经过车型级统计标定。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="先设置成本再看结果"&gt;先设置成本，再看结果
-&lt;/h2&gt;&lt;p&gt;默认方案是上海、含税车价 25 万元、纯电车，持有 5 年，每年出行 10,000 km。北京、上海、泉州只是三组起步情景，停车费、油电价格、保险和服务报价都应替换成自己的数字。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;默认打开上海的 Model Y 后轮驱动版算例。切换到燃油会载入 2027 款途观 L Pro 380TSI 两驱领航版。两套算例按全款购车、持有 5 年、每年出行 10,000 km 比较。北京、上海、泉州提供区域费用示例，停车费、油电价格、保险和服务报价可以按实际情况填写。&lt;/p&gt;
 &lt;p&gt;页面打开时会显示按年出行里程、车价和持有年限绘制的三张图。调整参数或勾选费用后，曲线、交点和费用明细会自动更新。每张图只改变横轴对应的参数，其余沿用当前设置。输入不完整时暂时隐藏结果，填好后自动恢复。&lt;/p&gt;
 &lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=b5e5ccb0f49ab971c42a873b4af8c63a1252f14119c0fce7c2dbbee12e4acacc"&gt;
-&lt;section class="car-lab" data-car-lab data-language="zh" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4cd85b7d14c932431eee87f9d4dca6f74705996ed17e4f91eb29cda575e2917d" aria-label="买车与打车成本计算器"&gt;
+&lt;section class="car-lab" data-car-lab data-language="zh" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4a149d930bcb1cc8daeea8039ac7b221f75a30ec649ec7dfa403b2a52220aa87" aria-label="买车与打车成本计算器"&gt;
  &lt;p data-car-loading&gt;正在加载计算器……&lt;/p&gt;
  &lt;noscript&gt;启用 JavaScript 即可调整参数。计算公式与示例也在下文中。&lt;/noscript&gt;
 &lt;/section&gt;
-&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=3811248aa6aecfd1e8a69eedb93a733e998ddcdd326b0cd30cef4f7e4b29e4a9"&gt;&lt;/script&gt;
+&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=0223c01ada461c7c6050cddb111c3dce3aa061b3c0932b73ccba4a9c7d0cda1e"&gt;&lt;/script&gt;
 
 &lt;p&gt;这里的月均金额包含折旧、资金占用及风险准备金。它是持有期内的平均经济成本，每月实际扣款会有另一种节奏。&lt;/p&gt;
 &lt;h2 id="每项费用应该跟什么变化"&gt;每项费用应该跟什么变化
@@ -154,14 +154,16 @@ $$$$
 C_{\rm repairs}=P\rho E(H)\left(1+\mu\frac{k}{10000}\right).
 $$&lt;p&gt;它用于预留不确定支出，并不表示一定会维修同样的金额。质保范围应按实际合同调整；正常磨损、事故、保养与已保险的损失需要避免重复计入。&lt;/p&gt;
 &lt;h2 id="能源停车税费与资金"&gt;能源、停车、税费与资金
-&lt;/h2&gt;&lt;p&gt;电费始终由实际自驾里程计算。默认电耗 18 kWh/100 km，家充占 65%，家充、公充分别为 0.55、1.50 元/kWh，综合电价为 0.8825 元/kWh。10,000 km 为 1,588.50 元/年，20,000 km 为 3,177 元/年，0 km 为 0 元。燃油车使用同样的里程逻辑，替换为油耗与油价。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;电费由实际自驾里程计算。Model Y 的试算电耗取 15 kWh/100 km，家充占 65%，家充和公充示例电价分别为 0.55、1.50 元/kWh，综合电价为 0.8825 元/kWh。每年自驾 10,000 km 的电费约为 1,324 元。途观 L Pro 的试算油耗取 9 L/100 km，以 2026 年 10 月 29 日公布的上海 95 号汽油最高零售价 9.41 元/L 计，同样里程的油费为 8,469 元。两种能耗均为预算输入，可用实际油电账单更新。&lt;a class="link" href="https://www.shanghai.gov.cn/nw12344/20261029/c7fb9bdcc57e4b7eb6f62eb3d0083e7f.html" target="_blank" rel="noopener"
+ &gt;上海油价通知&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;停车按实际月报价合计乘 12。通行费按增加的收费道路里程比例和每公里价格计算；只填自驾相对打车增加的部分。&lt;/p&gt;
 &lt;p&gt;普通新车的全额购置税按 \(P/1.13\times10\%\) 估算，计税价格不含增值税，可参考&lt;a class="link" href="https://www.chinatax.gov.cn/n810356/n3255681/c4553945/content.html" target="_blank" rel="noopener"
  &gt;税务总局示例&lt;/a&gt;。符合条件的新能源乘用车在 2026—2027 年减半征收，单车减税不超过 15,000 元，见&lt;a class="link" href="https://www.mof.gov.cn/jrttts/202306/t20230629_3893518.htm" target="_blank" rel="noopener"
  &gt;财政部说明&lt;/a&gt;。购置税只在购车时计一次，其他年份、二手车或特殊计税情形应手填实际税额。模型不计以旧换新补贴。&lt;/p&gt;
-&lt;p&gt;上海燃油车示例的额度投入为 94,000 元，期末回收比例默认 100%，均为假设。净损失按持有期摊销，资金仍有占用成本；委托拍卖规则可查&lt;a class="link" href="https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1" target="_blank" rel="noopener"
- &gt;上海市政府解读&lt;/a&gt;。纯电额度投入为零以符合&lt;a class="link" href="https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html" target="_blank" rel="noopener"
- &gt;2026 年专用牌照条件&lt;/a&gt;为前提。零投入不表示资格和等待时间没有约束。&lt;/p&gt;
+&lt;p&gt;上海燃油车算例按 2026 年 10 月个人沪牌平均成交价 93,874 元计入初期支出。期末回收比例取 100% 作为预算假设，持有期间仍计资金占用成本。纯电算例按符合 2026 年新能源专用牌照条件计算，额度投入取零。&lt;a class="link" href="https://www.alltobid.com/contents/16/71.html" target="_blank" rel="noopener"
+ &gt;沪牌拍卖记录&lt;/a&gt; · &lt;a class="link" href="https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1" target="_blank" rel="noopener"
+ &gt;上海客车额度规则&lt;/a&gt; · &lt;a class="link" href="https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html" target="_blank" rel="noopener"
+ &gt;新能源专用牌照条件&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;令 \(A_0\) 为车价及勾选的一次性投入之和，\(A_H\) 为期末残值与牌照回收额之和，资金成本近似为：&lt;/p&gt;
 $$
 C_{\rm capital}
@@ -176,58 +178,117 @@ T^*=\frac{qK^*}{12}.
 $$&lt;p&gt;求解范围为年出行里程 0–200,000 km；通过费用公式反复计算并用二分法逼近交点。范围内没有交点时会明确显示，不能据此断言更高里程永远没有交点。超过 60,000 km/年的交点会提示这是高里程外推。&lt;/p&gt;
 &lt;p&gt;只改变当前年里程，会移动当前用量点并重算当前费用；同一条年里程成本曲线的交点由成本规则决定。修改车价、持有期、费率、保养周期等，才是在改变这条曲线本身。&lt;/p&gt;
 &lt;h2 id="用默认方案算一遍"&gt;用默认方案算一遍
-&lt;/h2&gt;&lt;p&gt;上海、25 万元纯电、持有 5 年、年出行 10,000 km，全款、机会成本 3%、时间不计价、全部费用勾选。停车 1,310 元/月，打车 3.6 元/km。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;两车均按上海、全款、持有 5 年、年出行 10,000 km 比较。机会成本率取 3%，停车 1,310 元/月，打车 3.6 元/km，时间费用取零。&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
- &lt;th&gt;成本项目&lt;/th&gt;
- &lt;th style="text-align: right"&gt;年均金额，元&lt;/th&gt;
+ &lt;th&gt;车型输入&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Model Y 后轮驱动版&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;途观 L Pro 380TSI 两驱领航版&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;含增值税标价&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;263,500 元&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;251,800 元&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;百公里能耗预算&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15 kWh&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;9 L&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;基础整车质保&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;4 年或 8 万 km&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;3 年或 10 万 km&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;常规保养周期输入&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1 年或 2 万 km，等效预算&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1 年或 1 万 km&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;年车船税&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;0 元&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;360 元&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;车价取对应配置的标价。途观的保养周期采用上汽大众 EA888 2.0T 常规保养规范，Model Y 采用等效保养预算。维修项按输入的质保年限计算，在每年 1 万公里的算例下，两车都先达到年限。高里程用车可将质保里程除以预计年里程，再取与质保年限的较小值。保险、保养单价、轮胎和残值采用模型估算，可用实车报价或数据更新。&lt;a class="link" href="https://www.tesla.cn/modely/design?referral=33681" target="_blank" rel="noopener"
+ &gt;特斯拉配置&lt;/a&gt; · &lt;a class="link" href="https://www.tesla.cn/support/vehicle-warranty" target="_blank" rel="noopener"
+ &gt;特斯拉质保&lt;/a&gt; · &lt;a class="link" href="https://dealer.yiche.com/100024951/price_detail/191658.html?leads_source=p033003" target="_blank" rel="noopener"
+ &gt;途观配置及质保&lt;/a&gt; · &lt;a class="link" href="https://brand2.svw-volkswagen.com/temp/pdf/clwh/2024/%E9%80%94%E8%A7%82%20L%20Pro%E4%BF%9D%E5%85%BB%E6%89%8B%E5%86%8C.pdf" target="_blank" rel="noopener"
+ &gt;上汽大众保养规范&lt;/a&gt; · &lt;a class="link" href="https://shanghai.chinatax.gov.cn/zcfw/zcjd/201901/t443831.html" target="_blank" rel="noopener"
+ &gt;上海车船税标准&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;年均成本，元&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Model Y&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;途观 L Pro&lt;/th&gt;
  &lt;/tr&gt;
  &lt;/thead&gt;
  &lt;tbody&gt;
  &lt;tr&gt;
  &lt;td&gt;折旧&lt;/td&gt;
- &lt;td style="text-align: right"&gt;34,165&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;36,010&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;32,133&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
- &lt;td&gt;税费、登记、充电桩与卖车费用摊销&lt;/td&gt;
- &lt;td style="text-align: right"&gt;3,229&lt;/td&gt;
+ &lt;td&gt;购置、登记、充电桩与卖车费用摊销&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;3,366&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;4,921&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;保险&lt;/td&gt;
- &lt;td style="text-align: right"&gt;5,020&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;5,202&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;4,283&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;停车&lt;/td&gt;
  &lt;td style="text-align: right"&gt;15,720&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15,720&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;定期保养&lt;/td&gt;
- &lt;td style="text-align: right"&gt;645&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;666&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1,080&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;轮胎耗用&lt;/td&gt;
- &lt;td style="text-align: right"&gt;640&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;652&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;642&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;维修准备金&lt;/td&gt;
- &lt;td style="text-align: right"&gt;466&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;273&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;469&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
- &lt;td&gt;电费&lt;/td&gt;
- &lt;td style="text-align: right"&gt;1,589&lt;/td&gt;
+ &lt;td&gt;电费或油费&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1,324&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;8,469&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;车船税&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;0&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;360&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;资金占用&lt;/td&gt;
- &lt;td style="text-align: right"&gt;5,156&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;5,432&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;8,302&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;合计&lt;/strong&gt;&lt;/td&gt;
- &lt;td style="text-align: right"&gt;&lt;strong&gt;66,630&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;strong&gt;68,644&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;strong&gt;76,379&lt;/strong&gt;&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;各行独立四舍五入，合计用未舍入数计算。自驾约 5,553 元/月，同等需求打车 3,000 元/月，打车每月少花约 2,553 元。模型交点约为每年 19,497 km，两者都约 5,849 元/月。它们都是当前假设下的结果。&lt;/p&gt;
+&lt;p&gt;各行独立四舍五入，合计用未舍入数计算。Model Y 和途观 L Pro 的月均成本分别约为 &lt;strong&gt;5,720 元&lt;/strong&gt;和 &lt;strong&gt;6,365 元&lt;/strong&gt;，同样的出行需求打车约 &lt;strong&gt;3,000 元/月&lt;/strong&gt;。两款车与打车打平的年里程分别约为 &lt;strong&gt;20,058 km&lt;/strong&gt;和 &lt;strong&gt;26,716 km&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;途观的现金开票价会明显影响两车比较。按这组参数，途观含税裸车价降到约 &lt;strong&gt;20.99 万元&lt;/strong&gt;时，两车的月均成本接近。&lt;/p&gt;
 &lt;p&gt;我更关心这些结果对什么敏感：换成真实保养报价、轮胎尺寸和停车租金，把计划持有期缩短两年，再看交点移到哪里。家庭接送、携带物品和临时出门的自由，也可能让我愿意多付钱；先看清这笔代价，再决定是否支付。&lt;/p&gt;</description></item><item><title>洱海边晒太阳有感：个人的明治维新，家庭的改革开放</title><link>https://xiaoojs20.github.io/zh/p/erhai-reflections/</link><pubDate>Thu, 29 Oct 2026 22:16:48 +0800</pubDate><guid>https://xiaoojs20.github.io/zh/p/erhai-reflections/</guid><description>&lt;p&gt;26年初，我希望三年内实现个人的明治维新，五年内实现家庭的改革开放。&lt;/p&gt;
 &lt;p&gt;明治维新的核心是能力革命。传统社会人生的梯度信号总来自外部，而现代需要建立自己的中央政府，提高认知，懂得决策懂得管理自己。建立个人的基础设施，不管是工作上的技术、投资知识和账户、身份户籍、人脉还是薄肌。铁路修成之前，一个国家即使有雄心，也无法形成真正的生产力；同样，一个人如果没有这些基础设施，再宏大的价值观都很难兑现。具备“岩仓使节团精神”，承认外面的世界有很多自己不知道的东西，然后主动去看。向内提高自己的知识水平，向外探索这颗蓝色星球。&lt;/p&gt;
 &lt;p&gt;改革开放的核心是制度革命。改革的方向之一，是减少权力过度集中和个人化运行，强化集体领导、分工负责与制度化治理。改变家庭内部的运行机制，从威权、惯例到透明、激励、协商、试验和开放。一个现代家庭，应当允许这些东西重新进入讨论。家庭资产配置，成员之间的责任承担，夫妻间的生育以及父母养老。家庭不再要求每个人服从同一种人生，而是在承认差异的前提下，寻找长期可持续的合作方式。&lt;/p&gt;

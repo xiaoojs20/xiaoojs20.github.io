@@ -4,7 +4,7 @@ The bilingual articles are content/post/car-vs-taxi/index.zh.md and index.en.md.
 
 ## Calculation contract
 
-Model version: 2026-11-08.3. Defaults: Shanghai, CNY 250,000 VAT-inclusive price, electric, five years and 10,000 annual trip kilometres. km is equivalent taxi demand; actual annual driving is detour × km. Multiply again by years for cumulative driving. Percent inputs are divided by 100 in equations.
+Model version 2026-11-09.1 opens with the CNY 263,500 Model Y RWD in Shanghai, five years and 10,000 annual trip kilometres. The petrol reference is the CNY 251,800 2027 Tiguan L Pro 380TSI 2WD Linghang. The km input is equivalent taxi demand. Actual annual driving is detour × km. Multiply again by years for cumulative driving. Percent inputs are divided by 100 in equations.
 
 Insurance, servicing, tyres, repairs and depreciation are calculated. Parking uses monthly quotes; annual vehicle tax uses local rules. These external prices cannot be inferred from vehicle price. Energy and tolls follow actual driving. Acquisition expenses are annualized, and capital costs also use terminal resale.
 
@@ -21,7 +21,7 @@ Costs are nonlinear, so the former F/v/w two-segment crossing formula no longer 
 
 The results display the distance, price and holding-period charts together. Price and holding-period curves call calculate(p, { solveCrossings: false }) to avoid solving a distance crossing at every plotting point. Hollow dots mark current usage, and purple dots mark equal costs. The CSV includes samples from all three charts, including exact input and crossing points.
 
-On load, the calculator uses the defaults or the settings from a shared link. Input, preset and cost-selection changes update the results automatically. Invalid input temporarily hides results. Correcting it restores them. Reset restores the Shanghai CNY 250,000 scenario and redraws the charts. Powertrain switches show relevant consumption fields.
+On load, the calculator uses the defaults or the settings from a shared link. Input, preset and cost-selection changes update the results automatically. Invalid input temporarily hides results. Correcting it restores them. Reset restores the Shanghai Model Y case. Changing powertrain loads the reference vehicle, clears damage insurance, service and tyre quotes, and restores the default purchase-tax setting. Changing city loads regional cost examples.
 
 ## Verification
 
@@ -31,14 +31,14 @@ Run:
     hugo --source liquid-preview --destination /tmp/car-vs-taxi-preview --baseURL http://127.0.0.1:8765/ --minify
     python3 -m http.server 8765 --bind 127.0.0.1 --directory /tmp/car-vs-taxi-preview
 
-Fourteen tests cover independent accounting and numerical value integration, price/distance/age responses, quote overrides, service time triggers, tyre life, first-year insurance and renewals, warranty, energy, nonlinear crossings, unit-cost properties, continuity, tax/loan accounting, zero costs and state validation.
+Sixteen tests cover independent accounting, price/distance/age responses, quote overrides, warranty, energy, nonlinear crossings, continuity, tax/loan accounting, zero costs, vehicle presets and shared-link compatibility.
 
-Check both languages, Notes and language switches. Default ownership is about CNY 5,553/month; crossing is 19,497 km/year and CNY 5,849/month. After price, age and distance edits, costs and chart markers must use the same parameters. Verify unit quotes, cost exclusions, zero distance, absent crossings, invalid-input recovery, CSV units and shared-state restoration. Inspect mobile and dark mode; KaTeX should have no errors.
+Check both languages, Notes and language switches. The default Model Y costs about CNY 5,720/month and crosses at 20,058 km/year. The Tiguan costs about CNY 6,365/month and crosses at 26,716 km/year. After price, age and distance edits, costs and chart markers must use the same parameters. Verify unit quotes, cost exclusions, zero distance, absent crossings, invalid-input recovery, CSV units and shared-state restoration. Inspect mobile, dark mode and KaTeX rendering.
 
 For production, omit the local baseURL override. Inspect the isolated output before using the existing publishing process; exclude unrelated work in progress.
 
 ## Compatibility and sources
 
-Version 3 changes cost categories and coefficient semantics. Version 2026-11-08.2 links show an incompatibility message; old annual budgets must not silently become new unit quotes. CSV contains version, all inputs, cost selections, annual and holding-period costs, vehicle values, equivalent service/tyre quantities and curve data.
+Version 2026-11-08.3 links fill omitted fields from the defaults in use when they were created. Version 2026-11-08.2 links show an incompatibility message because some cost fields had different meanings. CSV contains version, all inputs, cost selections, annual and holding-period costs, vehicle values, equivalent service/tyre quantities and curve data.
 
 The articles link to insurance provisions, Tesla maintenance guidance, Michelin life guidance, and tax/Shanghai plate policies. These support structure or policy, not the assumed coefficients. Recheck policy when changing purchase year.

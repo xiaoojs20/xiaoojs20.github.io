@@ -6,8 +6,8 @@ const close = (a, b, tolerance = 1e-7) => assert.ok(Math.abs(a - b) <= tolerance
 const fast = p => calculate(p, { solveCrossings: false });
 const only = key => Object.fromEntries(Object.keys(DEFAULTS.costs).map(k => [k, k === key]));
 
-test('Shanghai 250k example agrees with independent life-cycle arithmetic and numerical value integration', () => {
-  const p = { ...DEFAULTS }, r = calculate(p), H = 5, P = 250000;
+test('Shanghai Model Y example agrees with independent life-cycle arithmetic and numerical value integration', () => {
+  const p = { ...DEFAULTS }, r = calculate(p), H = 5, P = 263500;
   const N = 20000, step = H / N;
   let integral = 0;
   for (let n = 0; n <= N; n++) {
@@ -22,20 +22,20 @@ test('Shanghai 250k example agrees with independent life-cycle arithmetic and nu
   const capital = .03 * (P + tax + 500 + 3000 + resale) / 2;
   const renewalMean = Array.from({ length: 5 }, (_, age) => P * retention('ev', age) * Math.exp(-.02 * age)).reduce((a, b) => a + b, 0) / 5;
   const insurance = 950 + 700 + .021 * renewalMean;
-  const maintenance = 600 * 5 / H * 1.075;
-  const tyres = 4 * 800 * 1 / H;
-  const repairs = P * .003 * .54 * 1.15;
-  const total = (P - resale) / H + acquisition + capital + insurance + maintenance + tyres + repairs + 1310 * 12 + 1588.5;
+  const maintenance = 600 * (P / 250000) ** .6 * 1.075;
+  const tyres = 4 * 800 * (P / 250000) ** .35 / H;
+  const repairs = P * .003 * .3 * 1.15;
+  const total = (P - resale) / H + acquisition + capital + insurance + maintenance + tyres + repairs + 1310 * 12 + 1323.75;
   close(r.meanValue, mean);
   close(r.resale, resale);
   close(r.car, total);
   close(r.taxi, 36000);
-  close(r.breakKm, 19496.70773411968);
+  close(r.breakKm, 20057.70004616124);
   close(Object.values(r.rows).reduce((a, b) => a + b, 0), r.car);
 });
 
 test('automatic service, tyre and repair costs respond to price, while unit quotes override their price curves', () => {
-  const p = { ...DEFAULTS }, low = fast(p), high = fast({ ...p, price: 500000 });
+  const p = { ...DEFAULTS, price: 250000 }, low = fast(p), high = fast({ ...p, price: 500000 });
   close(high.serviceUnit / low.serviceUnit, 2 ** .6);
   close(high.tyreUnit / low.tyreUnit, 2 ** .35);
   close(high.rows.repairs / low.rows.repairs, 2);
@@ -58,11 +58,11 @@ test('cumulative mileage reduces resale and average insured value; it is not cha
   close(one.insuranceUsage, 1);
   assert.equal(Object.hasOwn(two.rows, 'extraWear'), false);
   assert.equal(Object.hasOwn(DEFAULTS, 'extraWear'), false);
-  close(fast({ ...p, mileageDepreciation: 0 }).resale, 250000 * .35);
+  close(fast({ ...p, mileageDepreciation: 0 }).resale, p.price * .35);
 });
 
 test('service intervals use time or distance, then price and age, including a parked vehicle', () => {
-  const p = { ...DEFAULTS };
+  const p = { ...DEFAULTS, price: 250000 };
   const parked = fast({ ...p, km: 0 }), busy = fast({ ...p, km: 40000 });
   close(parked.serviceCount, 5);
   close(parked.rows.maintenance, 645);
@@ -73,7 +73,7 @@ test('service intervals use time or distance, then price and age, including a pa
 });
 
 test('tyre consumption uses mileage or age; total consumption scales with holding period without inventing annual fees', () => {
-  const p = { ...DEFAULTS };
+  const p = { ...DEFAULTS, price: 250000 };
   close(fast({ ...p, km: 0 }).rows.tyres, 4 * 800 / 6);
   close(fast(p).rows.tyres, 640);
   close(fast({ ...p, km: 20000 }).rows.tyres, 1280);
@@ -96,9 +96,9 @@ test('insurance uses average declining vehicle value and separates coverage from
 });
 
 test('repair allowance responds to warranty, post-warranty age, price and distance', () => {
-  const p = { ...DEFAULTS, warrantyCoverage: 100 };
+  const p = { ...DEFAULTS, warrantyYears: 3, warrantyCoverage: 100 };
   close(fast({ ...p, years: 3 }).rows.repairs, 0);
-  close(fast({ ...p, years: 5 }).rows.repairs, 250000 * .003 * .48 * 1.15);
+  close(fast({ ...p, years: 5 }).rows.repairs, p.price * .003 * .48 * 1.15);
   assert.ok(fast({ ...p, years: 10 }).rows.repairs > fast({ ...p, years: 5 }).rows.repairs);
   assert.ok(fast({ ...p, km: 20000 }).rows.repairs > fast(p).rows.repairs);
 });
@@ -206,4 +206,38 @@ test('shared state includes all assumptions and rejects old formulas, invalid nu
   assert.throws(() => restoreState({ ...raw, parameters: { ...p, city: '<script>' } }));
   assert.throws(() => restoreState({ ...raw, parameters: { ...p, costs: { ...p.costs, parking: 'false' } } }));
   assert.throws(() => calculate(p).carAt(SEARCH_LIMIT_KM + 1));
+});
+
+test('switching vehicles loads the named example and changing cities keeps the vehicle inputs', () => {
+  const r = calculate(preset(DEFAULTS, 'shanghai', 'gas'));
+  close(r.car / 12, 6364.876864168008);
+  close(r.breakKm, 26716.222404607965);
+  close(r.rows.energy, 8469);
+  close(r.rows.taxesTolls, 360);
+
+  const custom = { ...DEFAULTS, km: 15000, years: 6, homeParking: 500, tyreQuote: 900, taxMode: 'custom', customTax: 10000 };
+  const gas = preset(custom, 'shanghai', 'gas');
+  assert.equal(gas.price, 251800);
+  assert.equal(gas.plate, 93874);
+  assert.equal(gas.warrantyYears, 3);
+  assert.equal(gas.tyreQuote, 0);
+  assert.equal(gas.taxMode, 'policy2026');
+  assert.equal(gas.km, 15000);
+  assert.equal(gas.years, 6);
+  assert.equal(gas.homeParking, 500);
+  const beijing = preset({ ...gas, price: 200000, serviceQuote: 900 }, 'beijing');
+  assert.equal(beijing.price, 200000);
+  assert.equal(beijing.serviceQuote, 900);
+  assert.equal(beijing.plate, 0);
+  assert.equal(preset(beijing, 'beijing', 'ev').price, 263500);
+});
+
+test('partial links from the previous version use their original defaults', () => {
+  const old = restoreState({ version: '2026-11-08.3', parameters: {} });
+  close(calculate(old).car, 66630.15396354705);
+  const earlierTiguan = restoreState({ version: '2026-11-08.3', parameters: {
+    type: 'gas', price: 251800, fuelUse: 9, petrol: 9.41, plate: 93874,
+    annualTax: 360, serviceBase: 1000, serviceKm: 10000, damageRate: 1.6, warrantyYears: 3,
+  } });
+  close(calculate(earlierTiguan).car / 12, 6364.876864168008);
 });

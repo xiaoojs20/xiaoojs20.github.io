@@ -19,7 +19,7 @@ The model below accepts prices such as CNY 186,000 and holding periods such as 4
 
 ## Configure costs before viewing results
 
-Defaults are Shanghai, an electric car with a VAT-inclusive price of CNY 250,000, five years and 10,000 annual trip kilometres. Beijing, Shanghai and Quanzhou are starting scenarios. Replace parking, energy and service assumptions with your own quotes.
+The calculator opens with a rear-wheel-drive Model Y in Shanghai. Switching to petrol loads the 2027 Tiguan L Pro 380TSI 2WD Linghang trim. Both examples use a cash purchase, five years of ownership and 10,000 annual trip kilometres. Beijing, Shanghai and Quanzhou offer regional examples. Use your own parking, energy, insurance and service quotes when available.
 
 The page opens with charts by annual trip distance, car price and holding period. Editing inputs or selecting costs updates the curves, crossings and breakdown automatically. Each chart varies its horizontal-axis input and uses your current settings for the other inputs. Incomplete inputs temporarily hide results. Valid inputs restore them.
 
@@ -142,13 +142,13 @@ This reserves for uncertain costs and does not predict a matching repair bill. A
 
 ## Energy, parking, taxes and capital
 
-Electricity always follows actual driving distance. Defaults are 18 kWh/100 km, 65% home charging, and home/public prices of CNY 0.55/1.50 per kWh, for a weighted CNY 0.8825/kWh. Driving 10,000 km costs CNY 1,588.50/year; 20,000 km costs CNY 3,177; zero kilometres cost zero. Petrol uses the same distance logic with fuel consumption and price.
+Electricity follows actual driving distance. The Model Y budget uses 15 kWh/100 km and 65% home charging. The example home and public prices are CNY 0.55 and 1.50 per kWh, for a weighted CNY 0.8825/kWh. At 10,000 km per year, electricity costs about CNY 1,324. The Tiguan L Pro budget uses 9 L/100 km and Shanghai's published 95-octane price ceiling of CNY 9.41/L on October 29, 2026. Fuel costs CNY 8,469 at the same distance. Both consumption figures are budgeting inputs that can be updated from actual bills. [Shanghai fuel price notice](https://www.shanghai.gov.cn/nw12344/20261029/c7fb9bdcc57e4b7eb6f62eb3d0083e7f.html)
 
 Parking sums actual monthly quotes and multiplies by twelve. Tolls use the additional charged-distance share and price per kilometre. Include only tolls added by driving relative to taxis.
 
 For an ordinary new car, full purchase tax is estimated as \(P/1.13\times10\%\), excluding VAT from the tax base; see the [State Taxation Administration example](https://www.chinatax.gov.cn/n810356/n3255681/c4553945/content.html). Eligible new-energy passenger vehicles bought in 2026–2027 receive a 50% reduction capped at CNY 15,000, as explained by the [Ministry of Finance](https://www.mof.gov.cn/jrttts/202306/t20230629_3893518.htm). Tax is charged once at purchase. Enter actual tax for other years, used cars or special arrangements. Trade-in subsidies are excluded.
 
-The Shanghai petrol scenario assumes CNY 94,000 for a quota and 100% terminal recovery. Net loss is annualized and the outlay still ties up capital. See [Shanghai’s auction-rule explanation](https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1). Zero EV quota outlay assumes eligibility under the [2026 special-plate rules](https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html). Zero monetary outlay does not remove eligibility or waiting-time constraints.
+The Shanghai petrol example uses the October 2026 average private plate auction price of CNY 93,874 as an initial outlay. The budget assumes 100% recovery when selling the car and charges for the capital tied up during ownership. The EV example assumes eligibility for Shanghai's 2026 dedicated new-energy plate, with zero quota outlay. [Plate auction records](https://www.alltobid.com/contents/16/71.html) · [Shanghai auction rules](https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1) · [Dedicated plate eligibility](https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html)
 
 With initial price and selected acquisition expenses \(A_0\), and terminal resale plus recovered plate value \(A_H\), capital cost is approximated by:
 
@@ -176,21 +176,34 @@ Changing current annual distance moves the usage marker and updates current cost
 
 ## A worked default scenario
 
-Shanghai, a CNY 250,000 EV, five years and 10,000 annual trip kilometres. Cash purchase, 3% opportunity cost, no time value, all costs included. Parking is CNY 1,310/month and taxis CNY 3.6/km.
+Both Shanghai cases use a cash purchase, five years of ownership and 10,000 annual trip kilometres. The opportunity cost is 3%, parking is CNY 1,310/month, taxis cost CNY 3.6/km and time cost is zero.
 
-| Cost | Annual average, CNY |
-| --- | ---: |
-| Depreciation | 34,165 |
-| Annualized acquisition and selling expenses | 3,229 |
-| Insurance | 5,020 |
-| Parking | 15,720 |
-| Scheduled service | 645 |
-| Tyre consumption | 640 |
-| Repair allowance | 466 |
-| Electricity | 1,589 |
-| Capital | 5,156 |
-| **Total** | **66,630** |
+| Vehicle input | Model Y RWD | Tiguan L Pro 380TSI 2WD Linghang |
+| --- | ---: | ---: |
+| VAT-inclusive list price | CNY 263,500 | CNY 251,800 |
+| Consumption budget per 100 km | 15 kWh | 9 L |
+| Basic vehicle warranty | 4 years or 80,000 km | 3 years or 100,000 km |
+| Service interval input | 1 year or 20,000 km, budget equivalent | 1 year or 10,000 km |
+| Annual vehicle tax | CNY 0 | CNY 360 |
 
-Rows are rounded independently; the total uses unrounded values. Ownership costs approximately CNY 5,553/month, versus CNY 3,000/month for taxis. Taxis save roughly CNY 2,553/month. The crossing is about 19,497 km/year, where both cost approximately CNY 5,849/month. These results depend on the current assumptions.
+Prices are for the named trims. The Tiguan service input follows SAIC Volkswagen's standard EA888 2.0T schedule. The Model Y uses a service budget equivalent. Repair costs use the warranty term in years. At 10,000 km a year, the time limit comes first for both vehicles. For a high-mileage scenario, divide the kilometre limit by expected annual distance and enter the shorter of that result and the warranty term. Insurance, unit service and tyre costs, and resale use model estimates that can be updated from actual quotes or data. [Tesla configuration](https://www.tesla.cn/modely/design?referral=33681) · [Tesla warranty](https://www.tesla.cn/support/vehicle-warranty) · [Tiguan configuration and warranty](https://dealer.yiche.com/100024951/price_detail/191658.html?leads_source=p033003) · [SAIC Volkswagen service schedule](https://brand2.svw-volkswagen.com/temp/pdf/clwh/2024/%E9%80%94%E8%A7%82%20L%20Pro%E4%BF%9D%E5%85%BB%E6%89%8B%E5%86%8C.pdf) · [Shanghai vehicle tax rates](https://shanghai.chinatax.gov.cn/zcfw/zcjd/201901/t443831.html)
+
+| Annual average, CNY | Model Y | Tiguan L Pro |
+| --- | ---: | ---: |
+| Depreciation | 36,010 | 32,133 |
+| Annualized acquisition and selling expenses | 3,366 | 4,921 |
+| Insurance | 5,202 | 4,283 |
+| Parking | 15,720 | 15,720 |
+| Scheduled service | 666 | 1,080 |
+| Tyre consumption | 652 | 642 |
+| Repair allowance | 273 | 469 |
+| Electricity or fuel | 1,324 | 8,469 |
+| Vehicle tax | 0 | 360 |
+| Capital | 5,432 | 8,302 |
+| **Total** | **68,644** | **76,379** |
+
+Rows are rounded independently. Totals use unrounded values. Monthly ownership averages about **CNY 5,720** for the Model Y and **CNY 6,365** for the Tiguan L Pro. Taxis cost about **CNY 3,000/month** at the same distance. The two ownership curves cross taxi costs at about **20,058 km/year** and **26,716 km/year**, respectively.
+
+The Tiguan's cash invoice price has a substantial effect on the comparison. Under these inputs, the two monthly ownership costs are close when the Tiguan's VAT-inclusive vehicle price is about **CNY 209,900**.
 
 I care about what moves the result: replace service quotes, tyre dimensions and parking rent with real figures, then shorten the planned holding period by two years and watch the crossing move. Family journeys, carrying belongings and spontaneous departures may justify paying more for a car. I want to see that extra cost clearly before deciding whether to pay it.

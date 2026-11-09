@@ -2,14 +2,14 @@
 &lt;p&gt;A parked car ages and ties up capital. Driving adds energy, servicing, tyres and loss of vehicle value. The comparison needs to account for these changes together.&lt;/p&gt;
 &lt;p&gt;The model below accepts prices such as CNY 186,000 and holding periods such as 4.5 years. Insurance, servicing, tyres, repairs and depreciation are linked by equations, with unit-quote overrides where available. &lt;strong&gt;Its coefficients are editable budgeting assumptions, without vehicle-level statistical calibration.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id="configure-costs-before-viewing-results"&gt;Configure costs before viewing results
-&lt;/h2&gt;&lt;p&gt;Defaults are Shanghai, an electric car with a VAT-inclusive price of CNY 250,000, five years and 10,000 annual trip kilometres. Beijing, Shanghai and Quanzhou are starting scenarios. Replace parking, energy and service assumptions with your own quotes.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;The calculator opens with a rear-wheel-drive Model Y in Shanghai. Switching to petrol loads the 2027 Tiguan L Pro 380TSI 2WD Linghang trim. Both examples use a cash purchase, five years of ownership and 10,000 annual trip kilometres. Beijing, Shanghai and Quanzhou offer regional examples. Use your own parking, energy, insurance and service quotes when available.&lt;/p&gt;
 &lt;p&gt;The page opens with charts by annual trip distance, car price and holding period. Editing inputs or selecting costs updates the curves, crossings and breakdown automatically. Each chart varies its horizontal-axis input and uses your current settings for the other inputs. Incomplete inputs temporarily hide results. Valid inputs restore them.&lt;/p&gt;
 &lt;link rel="stylesheet" href="https://xiaoojs20.github.io/css/car-vs-taxi.css?v=b5e5ccb0f49ab971c42a873b4af8c63a1252f14119c0fce7c2dbbee12e4acacc"&gt;
-&lt;section class="car-lab" data-car-lab data-language="en" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4cd85b7d14c932431eee87f9d4dca6f74705996ed17e4f91eb29cda575e2917d" aria-label="Car ownership and taxi cost calculator"&gt;
+&lt;section class="car-lab" data-car-lab data-language="en" data-model-url="https://xiaoojs20.github.io/js/car-vs-taxi-model.mjs?v=4a149d930bcb1cc8daeea8039ac7b221f75a30ec649ec7dfa403b2a52220aa87" aria-label="Car ownership and taxi cost calculator"&gt;
  &lt;p data-car-loading&gt;Loading calculator…&lt;/p&gt;
  &lt;noscript&gt;Enable JavaScript to adjust the parameters. The formulas and a worked example are also included below.&lt;/noscript&gt;
 &lt;/section&gt;
-&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=3811248aa6aecfd1e8a69eedb93a733e998ddcdd326b0cd30cef4f7e4b29e4a9"&gt;&lt;/script&gt;
+&lt;script type="module" src="https://xiaoojs20.github.io/js/car-vs-taxi.mjs?v=0223c01ada461c7c6050cddb111c3dce3aa061b3c0932b73ccba4a9c7d0cda1e"&gt;&lt;/script&gt;
 
 &lt;p&gt;Monthly amounts include depreciation, capital and risk allowances. They represent average economic cost over the holding period. Actual monthly payments will follow a different pattern.&lt;/p&gt;
 &lt;h2 id="what-drives-each-cost"&gt;What drives each cost
@@ -154,14 +154,16 @@ $$$$
 C_{\rm repairs}=P\rho E(H)\left(1+\mu\frac{k}{10000}\right).
 $$&lt;p&gt;This reserves for uncertain costs and does not predict a matching repair bill. Adjust warranty coverage to the actual contract. Avoid counting normal wear, servicing, accidents or insured losses twice.&lt;/p&gt;
 &lt;h2 id="energy-parking-taxes-and-capital"&gt;Energy, parking, taxes and capital
-&lt;/h2&gt;&lt;p&gt;Electricity always follows actual driving distance. Defaults are 18 kWh/100 km, 65% home charging, and home/public prices of CNY 0.55/1.50 per kWh, for a weighted CNY 0.8825/kWh. Driving 10,000 km costs CNY 1,588.50/year; 20,000 km costs CNY 3,177; zero kilometres cost zero. Petrol uses the same distance logic with fuel consumption and price.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Electricity follows actual driving distance. The Model Y budget uses 15 kWh/100 km and 65% home charging. The example home and public prices are CNY 0.55 and 1.50 per kWh, for a weighted CNY 0.8825/kWh. At 10,000 km per year, electricity costs about CNY 1,324. The Tiguan L Pro budget uses 9 L/100 km and Shanghai&amp;rsquo;s published 95-octane price ceiling of CNY 9.41/L on October 29, 2026. Fuel costs CNY 8,469 at the same distance. Both consumption figures are budgeting inputs that can be updated from actual bills. &lt;a class="link" href="https://www.shanghai.gov.cn/nw12344/20261029/c7fb9bdcc57e4b7eb6f62eb3d0083e7f.html" target="_blank" rel="noopener"
+ &gt;Shanghai fuel price notice&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Parking sums actual monthly quotes and multiplies by twelve. Tolls use the additional charged-distance share and price per kilometre. Include only tolls added by driving relative to taxis.&lt;/p&gt;
 &lt;p&gt;For an ordinary new car, full purchase tax is estimated as \(P/1.13\times10\%\), excluding VAT from the tax base; see the &lt;a class="link" href="https://www.chinatax.gov.cn/n810356/n3255681/c4553945/content.html" target="_blank" rel="noopener"
  &gt;State Taxation Administration example&lt;/a&gt;. Eligible new-energy passenger vehicles bought in 2026–2027 receive a 50% reduction capped at CNY 15,000, as explained by the &lt;a class="link" href="https://www.mof.gov.cn/jrttts/202306/t20230629_3893518.htm" target="_blank" rel="noopener"
  &gt;Ministry of Finance&lt;/a&gt;. Tax is charged once at purchase. Enter actual tax for other years, used cars or special arrangements. Trade-in subsidies are excluded.&lt;/p&gt;
-&lt;p&gt;The Shanghai petrol scenario assumes CNY 94,000 for a quota and 100% terminal recovery. Net loss is annualized and the outlay still ties up capital. See &lt;a class="link" href="https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1" target="_blank" rel="noopener"
- &gt;Shanghai’s auction-rule explanation&lt;/a&gt;. Zero EV quota outlay assumes eligibility under the &lt;a class="link" href="https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html" target="_blank" rel="noopener"
- &gt;2026 special-plate rules&lt;/a&gt;. Zero monetary outlay does not remove eligibility or waiting-time constraints.&lt;/p&gt;
+&lt;p&gt;The Shanghai petrol example uses the October 2026 average private plate auction price of CNY 93,874 as an initial outlay. The budget assumes 100% recovery when selling the car and charges for the capital tied up during ownership. The EV example assumes eligibility for Shanghai&amp;rsquo;s 2026 dedicated new-energy plate, with zero quota outlay. &lt;a class="link" href="https://www.alltobid.com/contents/16/71.html" target="_blank" rel="noopener"
+ &gt;Plate auction records&lt;/a&gt; · &lt;a class="link" href="https://www.shanghai.gov.cn/wzjd/20241230/df4ac88c3ef2413fb92b2bfa69706c91.html?siteId=1" target="_blank" rel="noopener"
+ &gt;Shanghai auction rules&lt;/a&gt; · &lt;a class="link" href="https://www.shanghai.gov.cn/202603bgtwj/20260210/84cb024ac225492f82d4039da1fe320f.html" target="_blank" rel="noopener"
+ &gt;Dedicated plate eligibility&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;With initial price and selected acquisition expenses \(A_0\), and terminal resale plus recovered plate value \(A_H\), capital cost is approximated by:&lt;/p&gt;
 $$
 C_{\rm capital}
@@ -176,58 +178,117 @@ T^*=\frac{qK^*}{12}.
 $$&lt;p&gt;The range is 0–200,000 annual trip kilometres. Cost equations are evaluated repeatedly and the crossing is refined by bisection. An absent crossing is reported only for that range. Crossings above 60,000 km/year are flagged as high-mileage extrapolation.&lt;/p&gt;
 &lt;p&gt;Changing current annual distance moves the usage marker and updates current costs. The crossing of the same annual-distance curves is determined by their cost rules. Changing price, holding period, rates or service intervals changes those curves themselves.&lt;/p&gt;
 &lt;h2 id="a-worked-default-scenario"&gt;A worked default scenario
-&lt;/h2&gt;&lt;p&gt;Shanghai, a CNY 250,000 EV, five years and 10,000 annual trip kilometres. Cash purchase, 3% opportunity cost, no time value, all costs included. Parking is CNY 1,310/month and taxis CNY 3.6/km.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Both Shanghai cases use a cash purchase, five years of ownership and 10,000 annual trip kilometres. The opportunity cost is 3%, parking is CNY 1,310/month, taxis cost CNY 3.6/km and time cost is zero.&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
- &lt;th&gt;Cost&lt;/th&gt;
- &lt;th style="text-align: right"&gt;Annual average, CNY&lt;/th&gt;
+ &lt;th&gt;Vehicle input&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Model Y RWD&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Tiguan L Pro 380TSI 2WD Linghang&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;VAT-inclusive list price&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;CNY 263,500&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;CNY 251,800&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Consumption budget per 100 km&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15 kWh&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;9 L&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Basic vehicle warranty&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;4 years or 80,000 km&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;3 years or 100,000 km&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Service interval input&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1 year or 20,000 km, budget equivalent&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1 year or 10,000 km&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Annual vehicle tax&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;CNY 0&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;CNY 360&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Prices are for the named trims. The Tiguan service input follows SAIC Volkswagen&amp;rsquo;s standard EA888 2.0T schedule. The Model Y uses a service budget equivalent. Repair costs use the warranty term in years. At 10,000 km a year, the time limit comes first for both vehicles. For a high-mileage scenario, divide the kilometre limit by expected annual distance and enter the shorter of that result and the warranty term. Insurance, unit service and tyre costs, and resale use model estimates that can be updated from actual quotes or data. &lt;a class="link" href="https://www.tesla.cn/modely/design?referral=33681" target="_blank" rel="noopener"
+ &gt;Tesla configuration&lt;/a&gt; · &lt;a class="link" href="https://www.tesla.cn/support/vehicle-warranty" target="_blank" rel="noopener"
+ &gt;Tesla warranty&lt;/a&gt; · &lt;a class="link" href="https://dealer.yiche.com/100024951/price_detail/191658.html?leads_source=p033003" target="_blank" rel="noopener"
+ &gt;Tiguan configuration and warranty&lt;/a&gt; · &lt;a class="link" href="https://brand2.svw-volkswagen.com/temp/pdf/clwh/2024/%E9%80%94%E8%A7%82%20L%20Pro%E4%BF%9D%E5%85%BB%E6%89%8B%E5%86%8C.pdf" target="_blank" rel="noopener"
+ &gt;SAIC Volkswagen service schedule&lt;/a&gt; · &lt;a class="link" href="https://shanghai.chinatax.gov.cn/zcfw/zcjd/201901/t443831.html" target="_blank" rel="noopener"
+ &gt;Shanghai vehicle tax rates&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Annual average, CNY&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Model Y&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Tiguan L Pro&lt;/th&gt;
  &lt;/tr&gt;
  &lt;/thead&gt;
  &lt;tbody&gt;
  &lt;tr&gt;
  &lt;td&gt;Depreciation&lt;/td&gt;
- &lt;td style="text-align: right"&gt;34,165&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;36,010&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;32,133&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Annualized acquisition and selling expenses&lt;/td&gt;
- &lt;td style="text-align: right"&gt;3,229&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;3,366&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;4,921&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Insurance&lt;/td&gt;
- &lt;td style="text-align: right"&gt;5,020&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;5,202&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;4,283&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Parking&lt;/td&gt;
  &lt;td style="text-align: right"&gt;15,720&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15,720&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Scheduled service&lt;/td&gt;
- &lt;td style="text-align: right"&gt;645&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;666&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1,080&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Tyre consumption&lt;/td&gt;
- &lt;td style="text-align: right"&gt;640&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;652&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;642&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Repair allowance&lt;/td&gt;
- &lt;td style="text-align: right"&gt;466&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;273&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;469&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
- &lt;td&gt;Electricity&lt;/td&gt;
- &lt;td style="text-align: right"&gt;1,589&lt;/td&gt;
+ &lt;td&gt;Electricity or fuel&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;1,324&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;8,469&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Vehicle tax&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;0&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;360&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Capital&lt;/td&gt;
- &lt;td style="text-align: right"&gt;5,156&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;5,432&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;8,302&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
- &lt;td style="text-align: right"&gt;&lt;strong&gt;66,630&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;strong&gt;68,644&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;strong&gt;76,379&lt;/strong&gt;&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Rows are rounded independently; the total uses unrounded values. Ownership costs approximately CNY 5,553/month, versus CNY 3,000/month for taxis. Taxis save roughly CNY 2,553/month. The crossing is about 19,497 km/year, where both cost approximately CNY 5,849/month. These results depend on the current assumptions.&lt;/p&gt;
+&lt;p&gt;Rows are rounded independently. Totals use unrounded values. Monthly ownership averages about &lt;strong&gt;CNY 5,720&lt;/strong&gt; for the Model Y and &lt;strong&gt;CNY 6,365&lt;/strong&gt; for the Tiguan L Pro. Taxis cost about &lt;strong&gt;CNY 3,000/month&lt;/strong&gt; at the same distance. The two ownership curves cross taxi costs at about &lt;strong&gt;20,058 km/year&lt;/strong&gt; and &lt;strong&gt;26,716 km/year&lt;/strong&gt;, respectively.&lt;/p&gt;
+&lt;p&gt;The Tiguan&amp;rsquo;s cash invoice price has a substantial effect on the comparison. Under these inputs, the two monthly ownership costs are close when the Tiguan&amp;rsquo;s VAT-inclusive vehicle price is about &lt;strong&gt;CNY 209,900&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I care about what moves the result: replace service quotes, tyre dimensions and parking rent with real figures, then shorten the planned holding period by two years and watch the crossing move. Family journeys, carrying belongings and spontaneous departures may justify paying more for a car. I want to see that extra cost clearly before deciding whether to pay it.&lt;/p&gt;</description></item><item><title>Thoughts While Basking in the Sun by Erhai Lake: A Personal Meiji Restoration and a Family Reform and Opening-up</title><link>https://xiaoojs20.github.io/p/erhai-reflections/</link><pubDate>Thu, 29 Oct 2026 22:16:48 +0800</pubDate><guid>https://xiaoojs20.github.io/p/erhai-reflections/</guid><description>&lt;p&gt;At the beginning of 2026, I hoped to accomplish a personal Meiji Restoration within three years and a family reform and opening-up within five.&lt;/p&gt;
 &lt;p&gt;At the heart of the Meiji Restoration is a revolution in capability. In a traditional society, the signals that guide a person&amp;rsquo;s life tend to come from the outside. Today, we need to establish a central government of our own: improve our understanding, learn to make decisions, and manage ourselves. We need personal infrastructure, whether that means technical skills for work, investment knowledge and accounts, legal identity and household registration, connections, or a lean, muscular physique. Before railways are built, even an ambitious country cannot develop real productive capacity. Likewise, without such infrastructure, even the grandest personal values are difficult to put into practice. We need the spirit of the Iwakura Mission: acknowledge how much we do not know about the world beyond us, and actively go out and see it. Build our knowledge inwardly, and explore this blue planet outwardly.&lt;/p&gt;
 &lt;p&gt;At the heart of reform and opening-up is an institutional revolution. One direction for reform is to reduce the excessive concentration and personalization of power, and strengthen collective leadership, shared responsibilities, and institutional governance. It means changing how a family operates: moving from authority and convention toward transparency, incentives, consultation, experimentation, and openness. A modern family should allow these matters to be brought back into discussion: how family assets are allocated, how responsibilities are shared among members, decisions about having children, and care for aging parents. Rather than asking everyone to follow the same path in life, a family can acknowledge its members&amp;rsquo; differences and seek a sustainable way to cooperate over the long term.&lt;/p&gt;

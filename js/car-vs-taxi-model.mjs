@@ -1,25 +1,30 @@
 // A continuous economic budget, not an insurer quote or a replacement schedule.
 // CNY throughout; km is equivalent annual taxi demand, detour * km is driving.
-export const MODEL_VERSION = '2026-11-08.3';
+export const MODEL_VERSION = '2026-11-09.1';
+const PREVIOUS_MODEL_VERSION = '2026-11-08.3';
 export const SEARCH_LIMIT_KM = 200000;
 export const REFERENCE_PRICE = 250000;
 export const CITIES = {
   beijing: { fare: 3.2, homeParking: 650, workParking: 200, otherParking: 120, petrol: 8.9, plate: 0 },
-  shanghai: { fare: 3.6, homeParking: 850, workParking: 280, otherParking: 180, petrol: 8.9, plate: 94000 },
+  shanghai: { fare: 3.6, homeParking: 850, workParking: 280, otherParking: 180, petrol: 9.41, plate: 93874 },
   quanzhou: { fare: 2.7, homeParking: 250, workParking: 80, otherParking: 60, petrol: 8.9, plate: 0 },
 };
+const VEHICLE_DEFAULTS = {
+  // Model Y rear-wheel drive and 2027 Tiguan L Pro 380TSI 2WD Pilot Edition.
+  ev: { price: 263500, electricityUse: 15, warrantyYears: 4, serviceBase: 600, serviceKm: 20000, damageRate: 2.1 },
+  gas: { price: 251800, fuelUse: 9, warrantyYears: 3, serviceBase: 1000, serviceKm: 10000, damageRate: 1.6 },
+};
 export const DEFAULTS = Object.freeze({
-  city: 'shanghai', type: 'ev', price: 250000, years: 5, km: 10000,
-  ...CITIES.shanghai, plate: 0, taxMode: 'policy2026', customTax: 0,
+  city: 'shanghai', type: 'ev', years: 5, km: 10000,
+  ...CITIES.shanghai, ...VEHICLE_DEFAULTS.ev, plate: 0, taxMode: 'policy2026', customTax: 0,
   registration: 500, charger: 3000, saleFee: 2, plateRecovery: 100,
   residualFactor: 100, luxuryDecay: 1.4, mileageDepreciation: 2,
   compulsoryPremium: 950, liabilityCoverage: 2000000, liabilityRate: .035,
-  damageRate: 2.1, damageQuote: 0, insuranceMileageRisk: 5, insuranceFactor: 100,
-  serviceBase: 600, serviceQuote: 0, servicePriceExponent: .6,
-  serviceKm: 20000, serviceYears: 1, serviceAgeRate: 3,
+  damageQuote: 0, insuranceMileageRisk: 5, insuranceFactor: 100,
+  serviceQuote: 0, servicePriceExponent: .6, serviceYears: 1, serviceAgeRate: 3,
   tyreBase: 800, tyreQuote: 0, tyrePriceExponent: .35, tyreKm: 50000, tyreYears: 6,
-  repairRate: .3, warrantyYears: 3, warrantyCoverage: 90, repairAgeRate: 20, repairMileageRisk: 15,
-  fuelUse: 7.5, electricityUse: 18, homeElectricity: .55, publicElectricity: 1.5, homeShare: 65,
+  repairRate: .3, warrantyCoverage: 90, repairAgeRate: 20, repairMileageRisk: 15,
+  fuelUse: VEHICLE_DEFAULTS.gas.fuelUse, homeElectricity: .55, publicElectricity: 1.5, homeShare: 65,
   annualTax: 0, tollShare: 0, tollRate: .5,
   opportunityRate: 3, loanShare: 0, loanRate: 4,
   detour: 1, timeValue: 0, extraMinutes: 0,
@@ -185,18 +190,36 @@ export function calculate(p, { solveCrossings = true } = {}) {
 }
 
 export function preset(p, city = p.city, type = p.type) {
-  return { ...p, city, type, ...CITIES[city],
-    plate: city === 'shanghai' && type === 'gas' ? CITIES.shanghai.plate : 0,
-    serviceBase: type === 'gas' ? 1000 : 600,
-    serviceKm: type === 'gas' ? 10000 : 20000,
-    damageRate: type === 'gas' ? 1.6 : 2.1,
-    annualTax: type === 'gas' ? 420 : 0,
-  };
+  const cityChanged = city !== p.city;
+  const vehicleChanged = type !== p.type;
+  const next = { ...p, city, type };
+  if (cityChanged) Object.assign(next, CITIES[city]);
+  if (vehicleChanged) {
+    Object.assign(next, VEHICLE_DEFAULTS[type], {
+      serviceYears: DEFAULTS.serviceYears,
+      damageQuote: 0,
+      serviceQuote: 0,
+      tyreQuote: 0,
+      taxMode: DEFAULTS.taxMode,
+      customTax: 0,
+    });
+    if (type === 'gas') next.petrol = CITIES[city].petrol;
+  }
+  if (cityChanged || vehicleChanged) {
+    next.plate = type === 'gas' ? CITIES[city].plate : 0;
+    next.annualTax = type === 'gas' ? (city === 'shanghai' ? 360 : 420) : 0;
+  }
+  return next;
 }
 
 export function restoreState(raw) {
-  if (!raw || raw.version !== MODEL_VERSION || typeof raw.parameters !== 'object' || !raw.parameters) throw new RangeError('Unknown configuration version');
+  if (!raw || ![MODEL_VERSION, PREVIOUS_MODEL_VERSION].includes(raw.version)
+    || typeof raw.parameters !== 'object' || !raw.parameters) throw new RangeError('Unknown configuration version');
   const p = { ...DEFAULTS };
+  // Earlier links may contain only overrides. Restore the defaults they were created with.
+  if (raw.version === PREVIOUS_MODEL_VERSION) {
+    Object.assign(p, { price: 250000, petrol: 8.9, fuelUse: 7.5, electricityUse: 18, warrantyYears: 3 });
+  }
   for (const key of Object.keys(DEFAULTS)) if (Object.hasOwn(raw.parameters, key)) p[key] = raw.parameters[key];
   if (p.costs && typeof p.costs === 'object') p.costs = Object.fromEntries(Object.keys(DEFAULTS.costs).map(key => [key, p.costs[key]]));
   return validate(p);

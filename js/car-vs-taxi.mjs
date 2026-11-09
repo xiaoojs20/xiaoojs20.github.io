@@ -1,8 +1,8 @@
 const WORDS = {
   zh: {
     title: '这辆车，值得自己买吗？', sub: '连续参数 · 年均全成本 · 同等出行需求',
-    city: '城市示例', type: '动力类型', beijing: '北京', shanghai: '上海', quanzhou: '泉州', ev: '纯电', gas: '燃油',
-    presetHint: '切换城市或动力将重置停车、油价、牌照、保养基准/间隔、车损险费率和车船税示例；其他参数保留。所有金额均为人民币。',
+    city: '城市示例', type: '动力与参考车型', beijing: '北京', shanghai: '上海', quanzhou: '泉州', ev: '纯电 · Model Y 后驱', gas: '燃油 · 途观 L Pro 380TSI',
+    presetHint: '切换动力会载入参考车型的车价、能耗、质保和保养参数，并清空之前的车型报价。切换城市会载入当地费用示例。所有金额均为人民币。',
     price: '含税车价', priceUnit: '万元', years: '持有年限', yearsUnit: '年', km: '年出行里程', kmUnit: 'km/年', fare: '打车综合单价', fareUnit: '元/km',
     purchase: '购车、税费与残值', insurance: '保险、停车与日常持有', energy: '能源与里程损耗', finance: '资金与时间价值',
     taxMode: '购置税口径', taxAmount: '购置税额', policy2026: '2026–2027 新车政策', full: '全额购置税', custom: '手填税额',
@@ -43,8 +43,8 @@ const WORDS = {
   },
   en: {
     title: 'What does owning this car cost?', sub: 'Continuous inputs · Annualized full cost · Equivalent travel demand',
-    city: 'City example', type: 'Powertrain', beijing: 'Beijing', shanghai: 'Shanghai', quanzhou: 'Quanzhou', ev: 'Electric', gas: 'Petrol',
-    presetHint: 'Changing city or powertrain resets parking, petrol, plate, service reference/interval, damage-insurance rate and annual tax examples; other inputs stay as entered. All amounts are in CNY.',
+    city: 'City example', type: 'Powertrain and reference car', beijing: 'Beijing', shanghai: 'Shanghai', quanzhou: 'Quanzhou', ev: 'Electric · Model Y RWD', gas: 'Petrol · Tiguan L Pro 380TSI',
+    presetHint: 'Changing powertrain loads the reference car’s price, consumption, warranty and service inputs and clears prior vehicle quotes. Changing city loads local cost examples. All amounts are in CNY.',
     price: 'VAT-inclusive price', priceUnit: 'CNY 10,000', years: 'Holding period', yearsUnit: 'years', km: 'Annual trip distance', kmUnit: 'km/year', fare: 'Effective taxi fare', fareUnit: 'CNY/km',
     purchase: 'Purchase, tax and resale', insurance: 'Insurance, parking and ownership', energy: 'Energy and mileage costs', finance: 'Capital and time value',
     taxMode: 'Purchase tax basis', taxAmount: 'Purchase tax amount', policy2026: '2026–2027 new-car policy', full: 'Full purchase tax', custom: 'Enter tax amount',
