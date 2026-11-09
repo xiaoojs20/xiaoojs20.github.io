@@ -2,7 +2,8 @@
 {{ define "main" }}
     {{ $isChinese := hasPrefix .Language.Lang "zh" }}
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ $visible := where $pages "Params.hidden" "ne" true }}
+    {{/* The homepage lists every published post, including notes hidden from archive listings. */}}
+    {{ $visible := $pages }}
     {{ $pag := .Paginate $visible }}
     {{ $apps := slice }}{{ with hugo.Data.launchpad }}{{ range . }}{{ $apps = $apps | append . }}{{ end }}{{ end }}{{ $apps = sort $apps "order" }}
     {{ $pictures := slice }}{{ with index hugo.Data "photo-wall" }}{{ range . }}{{ $pictures = $pictures | append . }}{{ end }}{{ end }}{{ $pictures = sort $pictures "order" }}

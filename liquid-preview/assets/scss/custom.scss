@@ -1202,7 +1202,7 @@ html[data-scheme="dark"] .home-profile-layout .home-profile__announcement-bubble
 }
 
 .home-feature-card--resume {
-    grid-column: span 5;
+    grid-column: span 6;
     padding-inline-end: 24px;
 }
 
@@ -1261,7 +1261,7 @@ html[data-scheme="dark"] .home-profile-layout .home-profile__announcement-bubble
 }
 
 .home-feature-card--gallery {
-    grid-column: span 7;
+    grid-column: span 6;
     min-height: 136px;
     padding-inline-end: 28px;
 }
@@ -1272,12 +1272,12 @@ html[data-scheme="dark"] .home-profile-layout .home-profile__announcement-bubble
 }
 
 .home-feature-card--launchpad {
-    grid-column: span 7;
+    grid-column: span 6;
     padding-inline-end: 20px;
 }
 
 .home-feature-card--dashboard {
-    grid-column: span 5;
+    grid-column: span 6;
     padding-inline-end: 24px;
 }
 
