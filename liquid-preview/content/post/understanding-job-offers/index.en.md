@@ -3,6 +3,7 @@ title: "Understanding a Job Offer in China: Pay, Benefits and Take-home Income"
 description: "A practical guide to compensation, social insurance, housing funds, tax and equity, with worked examples."
 slug: understanding-job-offers
 date: "2026-11-09T12:00:00+08:00"
+written: "2026.11"
 note: true
 hidden: true
 share: false

@@ -3,6 +3,7 @@ title: "看懂 Offer：总包、五险一金与税后收入"
 description: "从固定工资到股权，从公积金到个税，用算例和图表拆解一份工作机会。"
 slug: understanding-job-offers
 date: "2026-11-09T12:00:00+08:00"
+written: "2026.11"
 note: true
 hidden: true
 share: false
