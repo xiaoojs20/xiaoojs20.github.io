@@ -19,7 +19,7 @@ Insurance, servicing, tyres, repairs and depreciation are calculated. Parking us
 
 Costs are nonlinear, so the former F/v/w two-segment crossing formula no longer applies. calculate returns carAt, taxiAt and at using one model. The distance search range is 0–200,000 annual trip km. In the valid parameter domain, component cost per demanded kilometre is nonincreasing, permitting endpoint bracketing and bisection for the unique sign crossing. An absent crossing is a conclusion about this range only.
 
-Price and age curves call calculate(p, { solveCrossings: false }) to avoid solving a distance crossing at every plotting point. Hollow dots mark current usage; purple dots mark equal costs. Exported samples include exact input and crossing points.
+The results display the distance, price and holding-period charts together. Price and holding-period curves call calculate(p, { solveCrossings: false }) to avoid solving a distance crossing at every plotting point. Hollow dots mark current usage, and purple dots mark equal costs. The CSV includes samples from all three charts, including exact input and crossing points.
 
 After the first calculation, input, preset and cost-selection changes update results automatically. Invalid input temporarily hides results; correcting it restores them. Reset restores Shanghai/CNY 250,000 before the first calculation. Powertrain switches show relevant consumption fields.
 

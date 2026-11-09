@@ -13,7 +13,8 @@ const WORDS = {
     highKm: '临界点超过 6 万 km/年，已远高于常见私人用车情景；请把它当作数学外推。',
     noCrossHint: '在年出行里程 0–200,000 km 的模型范围内未找到交点；未对更高里程作判断。',
     timeHint: '已计入相对打车的时间价值，当前结果包含非现金成本。',
-    chart: '成本如何随需求变化', axisKm: '横轴：年出行里程（km）', axisPrice: '横轴：车价（万元）', axisYears: '横轴：持有年限（年）', yAxis: '月均成本（元）',
+    chartKm: '月均成本随年出行里程变化', chartPrice: '月均成本随车价变化', chartYears: '月均成本随持有年限变化',
+    axisKm: '年出行里程（km）', axisPrice: '车价（万元）', axisYears: '持有年限（年）', yAxis: '月均成本（元）',
     chartHint: '空心圆标当前自驾成本；紫点标两条成本线相等的交点。曲线由公式计算，输入值直接参与计算。',
     chartTable: '查看曲线采样数据', breakdown: '查看年度成本明细', assumption: '查看当前计算口径',
     row: '成本项目', amount: '元/年', total: '自驾合计',
@@ -54,7 +55,8 @@ const WORDS = {
     highKm: 'The crossing exceeds 60,000 km/year, well beyond typical private-car use. Treat it as mathematical extrapolation.',
     noCrossHint: 'No crossing was found within 0–200,000 annual trip kilometres. No conclusion is made beyond that model range.',
     timeHint: 'Relative travel-time value is included, so these totals contain non-cash costs.',
-    chart: 'How costs change with demand', axisKm: 'X: annual trip distance (km)', axisPrice: 'X: price (CNY 10,000)', axisYears: 'X: holding period (years)', yAxis: 'Monthly cost (CNY)',
+    chartKm: 'Monthly cost by annual trip distance', chartPrice: 'Monthly cost by car price', chartYears: 'Monthly cost by holding period',
+    axisKm: 'Annual trip distance (km)', axisPrice: 'Car price (CNY 10,000)', axisYears: 'Holding period (years)', yAxis: 'Monthly cost (CNY)',
     chartHint: 'The hollow dot marks current driving cost; purple dots mark equal-cost crossings. Curves are evaluated from the model using your exact inputs.',
     chartTable: 'View sampled curve data', breakdown: 'View annual cost breakdown', assumption: 'View calculation assumptions',
     row: 'Cost item', amount: 'CNY/year', total: 'Ownership total',
@@ -168,7 +170,12 @@ const COST_FIELDS = {
 async function mount(root, index) {
   const zh = root.dataset.language === 'zh', t = WORDS[zh ? 'zh' : 'en'];
   const { DEFAULTS, BOUNDS, MODEL_VERSION, REFERENCE_PRICE, calculate, preset, restoreState } = await import(root.dataset.modelUrl);
-  let p = { ...DEFAULTS }, result, axis = 'km', samples = [], initialStatus = '';
+  let p = { ...DEFAULTS }, result, curveRows = [], initialStatus = '';
+  const charts = {
+    km: { title: t.chartKm, label: t.axisKm },
+    price: { title: t.chartPrice, label: t.axisPrice },
+    years: { title: t.chartYears, label: t.axisYears },
+  };
   if (location.hash.startsWith('#ct=')) {
     try { p = restoreState(JSON.parse(decodeURIComponent(location.hash.slice(4)))); initialStatus = t.sharedLoaded; }
     catch { initialStatus = t.sharedError; }
@@ -210,12 +217,17 @@ async function mount(root, index) {
     <div class="lab-actions"><button class="lab-calculate" type="button" data-calculate>${t.calculate}</button><button type="button" data-reset>${t.reset}</button></div><p class="lab-status" data-ready role="status"></p>
     <div class="lab-results" hidden><p class="lab-step" tabindex="-1" data-results-heading>${t.stepResults}</p><p class="lab-hint" data-included></p><div class="lab-kpis">${['car', 'taxi', 'threshold', 'breakKm'].map((key, i) => `<div class="lab-kpi${i === 2 ? ' lab-kpi--primary' : ''}"><span>${t[key]}</span><strong data-output="${key}"></strong><span>${key === 'breakKm' ? t.distance : t.month}</span></div>`).join('')}</div>
     <p class="lab-verdict" data-verdict aria-live="polite"></p><p class="lab-hint">${t.cashNote}</p><div class="lab-warnings" data-warnings></div>
-    <div class="lab-chart"><div class="lab-chart-heading"><strong>${t.chart}</strong><select data-axis aria-label="${t.chart}"><option value="km">${t.axisKm}</option><option value="price">${t.axisPrice}</option><option value="years">${t.axisYears}</option></select></div><div data-chart></div>
-    <div class="lab-legend"><span><i></i>${t.car}</span><span><i class="lab-taxi-key"></i>${t.taxi}</span><span><i class="lab-current-key"></i>${t.currentPoint}</span><span><i class="lab-crossing-key"></i>${t.crossingPoint}</span></div><div class="lab-chart-values" data-chart-values></div><p class="lab-hint">${t.chartHint}</p></div>
-    <details><summary>${t.chartTable}</summary><div class="lab-table-wrap" data-samples></div></details>
+    ${Object.entries(charts).map(([axis, chart]) => `
+    <section class="lab-chart" data-chart-panel="${axis}" aria-labelledby="${id(`heading-${axis}`)}">
+      <p class="lab-chart-heading" id="${id(`heading-${axis}`)}"><strong>${chart.title}</strong></p><div data-chart></div>
+      <div class="lab-legend"><span><i></i>${t.car}</span><span><i class="lab-taxi-key"></i>${t.taxi}</span><span><i class="lab-current-key"></i>${t.currentPoint}</span><span><i class="lab-crossing-key"></i>${t.crossingPoint}</span></div>
+      <div class="lab-chart-values" data-chart-values></div><p class="lab-hint">${t.chartHint}</p>
+      <details><summary>${t.chartTable}</summary><div class="lab-table-wrap" data-samples></div></details>
+    </section>`).join('')}
     <details><summary>${t.breakdown}</summary><div class="lab-table-wrap" data-breakdown></div><p class="lab-hint" data-residual></p></details>
     <div class="lab-actions"><button type="button" data-export>${t.export}</button><button type="button" data-share>${t.share}</button></div><p class="lab-status" data-status role="status"></p><p class="lab-share-url" data-share-url hidden></p></div>`;
   const $ = selector => root.querySelector(selector);
+  const chartPanels = root.querySelectorAll('[data-chart-panel]');
   $('[data-status]').textContent = initialStatus;
   const inputUnits = { ...Object.fromEntries(Object.values(GROUPS).flat().map(([key, , , u]) => [key, u])),
     price: 'CNY', years: 'years', km: 'km/year', fare: 'CNY/km' };
@@ -262,7 +274,11 @@ async function mount(root, index) {
     $('[data-cost-title="energy"]').textContent = rowLabel('energy');
   }
 
-  function draw() {
+  function draw(panel) {
+    const axis = panel.dataset.chartPanel;
+    const { title, label: axisLabel } = charts[axis];
+    const titleId = id(`chart-title-${axis}`);
+    const descriptionId = id(`chart-description-${axis}`);
     const niceStep = (span, count = 5) => {
       const raw = Math.max(span, 1e-9) / count;
       const magnitude = 10 ** Math.floor(Math.log10(raw));
@@ -288,16 +304,16 @@ async function mount(root, index) {
         if (pivot >= lo && pivot <= hi) xs.push(pivot);
       }
     } else if (!result.identical) {
-      // Locate intersections on price/age axes by evaluating the same equations,
-      // then bisect each bracket. The distance axis uses the exact analytic root.
+      // The mileage chart uses the model's crossing. Bisect each bracket for price and age.
       for (let n = 1; n <= 80; n++) {
         let left = lo + (hi - lo) * (n - 1) / 80, right = lo + (hi - lo) * n / 80;
         const difference = x => { const s = evaluate(x); return s.car - s.taxi; };
-        let dLeft = difference(left), dRight = difference(right);
+        let dLeft = difference(left);
+        const dRight = difference(right);
         if (dLeft * dRight > 0 || (dLeft === 0 && dRight === 0)) continue;
         for (let j = 0; j < 50; j++) {
           const middle = (left + right) / 2, dMiddle = difference(middle);
-          if (dLeft * dMiddle <= 0) { right = middle; dRight = dMiddle; }
+          if (dLeft * dMiddle <= 0) { right = middle; }
           else { left = middle; dLeft = dMiddle; }
         }
         const crossing = (left + right) / 2;
@@ -305,14 +321,13 @@ async function mount(root, index) {
       }
     }
     xs.push(...crossings);
-    samples = [...new Set(xs)].sort((a, b) => a - b).map(evaluate);
+    const samples = [...new Set(xs)].sort((a, b) => a - b).map(evaluate);
     const ys = samples.flatMap(point => [point.car, point.taxi]);
     const low = Math.min(0, ...ys), high = Math.max(1, ...ys);
     const yStep = niceStep((high - low) * 1.08, 6);
     const yMin = Math.floor(low / yStep) * yStep, yMax = Math.ceil(high * 1.08 / yStep) * yStep;
     const X = x => 63 + (x - lo) / (hi - lo) * 527;
     const Y = y => 230 - (y - yMin) / (yMax - yMin) * 190;
-    const axisLabel = t[axis === 'km' ? 'axisKm' : axis === 'price' ? 'axisPrice' : 'axisYears'];
     const valueUnit = axis === 'km' ? t.distance : axis === 'price' ? t.priceUnit : t.yearsUnit;
     const xDigits = axis === 'years' ? 2 : axis === 'price' ? 4 : 0;
     const xText = x => `${fmt(x / scale, xDigits)} ${valueUnit}`;
@@ -326,12 +341,16 @@ async function mount(root, index) {
       const anchor = X(x) > 480 ? 'end' : 'start', offset = anchor === 'end' ? -9 : 9;
       return `<line class="lab-marker lab-marker--crossing" data-crossing-x="${x}" x1="${X(x)}" x2="${X(x)}" y1="40" y2="230"/><circle class="lab-point lab-point--crossing" data-crossing-car="${s.car}" data-crossing-taxi="${s.taxi}" cx="${X(x)}" cy="${Y(s.car)}" r="5"><title>${label}</title></circle><text class="lab-crossing-label" x="${X(x) + offset}" y="${Math.max(52, Y(s.car) - 10)}" text-anchor="${anchor}">${t.crossingPoint}</text>`;
     }).join('');
-    $('[data-chart]').innerHTML = `<svg viewBox="0 0 610 287" role="img" aria-labelledby="${id('chart-title')} ${id('chart-description')}"><title id="${id('chart-title')}">${t.chart}</title><desc id="${id('chart-description')}">${axisLabel}. ${t.yAxis}. ${t.chartHint}</desc>${grid}<text x="63" y="15">${t.yAxis}</text><path class="lab-line lab-line--car" d="${path('car')}"/><path class="lab-line lab-line--taxi" d="${path('taxi')}"/><line class="lab-marker" x1="${X(p[axis])}" x2="${X(p[axis])}" y1="40" y2="230"/><circle class="lab-point" cx="${X(p[axis])}" cy="${Y(result.car / 12)}" r="4"><title>${t.currentPoint}: ${xText(p[axis])}, ${t.car} ¥${fmt(result.car / 12)}</title></circle>${markers}<text x="326" y="279" text-anchor="middle">${axisLabel}</text></svg>`;
+    panel.querySelector('[data-chart]').innerHTML = `<svg viewBox="0 0 610 287" role="img" aria-labelledby="${titleId} ${descriptionId}"><title id="${titleId}">${title}</title><desc id="${descriptionId}">${axisLabel}. ${t.yAxis}. ${t.chartHint}</desc>${grid}<text x="63" y="15">${t.yAxis}</text><path class="lab-line lab-line--car" d="${path('car')}"/><path class="lab-line lab-line--taxi" d="${path('taxi')}"/><line class="lab-marker" x1="${X(p[axis])}" x2="${X(p[axis])}" y1="40" y2="230"/><circle class="lab-point" cx="${X(p[axis])}" cy="${Y(result.car / 12)}" r="4"><title>${t.currentPoint}: ${xText(p[axis])}, ${t.car} ¥${fmt(result.car / 12)}</title></circle>${markers}<text x="326" y="279" text-anchor="middle">${axisLabel}</text></svg>`;
     const descriptions = [`${t.currentPoint}: ${xText(p[axis])} · ${t.car} ¥${fmt(result.car / 12)}, ${t.taxi} ¥${fmt(result.taxi / 12)} / ${zh ? '月' : 'month'}`,
       ...crossings.map(x => `${axis === 'km' ? t.crossingPoint : t.inChart}: ${xText(x)} · ${t.both} ¥${fmt(evaluate(x).car)} / ${zh ? '月' : 'month'}`)];
-    $('[data-chart-values]').replaceChildren(...descriptions.map((text, i) => { const el = document.createElement('p'); el.textContent = text; if (i) el.className = 'lab-crossing-value'; return el; }));
+    panel.querySelector('[data-chart-values]').replaceChildren(...descriptions.map((text, i) => { const el = document.createElement('p'); el.textContent = text; if (i) el.className = 'lab-crossing-value'; return el; }));
     const tableXs = [...new Set([...Array.from({ length: 5 }, (_, i) => lo + (hi - lo) * i / 4), p[axis], ...crossings])].sort((a, b) => a - b);
-    $('[data-samples]').innerHTML = `<table><thead><tr><th>${axisLabel}</th><th>${t.car}</th><th>${t.taxi}</th></tr></thead><tbody>${tableXs.map(x => { const s = evaluate(x); return `<tr><td>${fmt(x / scale, xDigits)}${crossings.includes(x) ? ` (${t.crossingPoint})` : ''}</td><td>${fmt(s.car)}</td><td>${fmt(s.taxi)}</td></tr>`; }).join('')}</tbody></table>`;
+    panel.querySelector('[data-samples]').innerHTML = `<table><thead><tr><th>${axisLabel}</th><th>${t.car}</th><th>${t.taxi}</th></tr></thead><tbody>${tableXs.map(x => { const s = evaluate(x); return `<tr><td>${fmt(x / scale, xDigits)}${crossings.includes(x) ? ` (${t.crossingPoint})` : ''}</td><td>${fmt(s.car)}</td><td>${fmt(s.taxi)}</td></tr>`; }).join('')}</tbody></table>`;
+    return samples.flatMap(sample => [
+      ['curve', `${axis}=${sample.x};car`, sample.car, 'CNY/month'],
+      ['curve', `${axis}=${sample.x};taxi`, sample.taxi, 'CNY/month'],
+    ]);
   }
 
   function update(showResults = hasCalculated) {
@@ -421,7 +440,7 @@ async function mount(root, index) {
     $('[data-warnings]').replaceChildren(...warnings.map(text => { const el = document.createElement('p'); el.textContent = text; return el; }));
     $('[data-breakdown]').innerHTML = `<table><thead><tr><th>${t.row}</th><th>${t.amount}</th></tr></thead><tbody>${Object.entries(result.rows).map(([key, value]) => `<tr><td>${rowLabel(key)}</td><td>${fmt(value, 2)}</td></tr>`).join('')}<tr><th>${t.total}</th><th>${fmt(result.car, 2)}</th></tr></tbody></table>`;
     $('[data-residual]').textContent = `${t.residual}: ¥${fmt(result.resale)} (${fmt(result.residualRate * 100, 1)}%). ${t.taxAmount}: ¥${fmt(result.tax)}.`;
-    draw();
+    curveRows = Array.from(chartPanels).flatMap(draw);
   }
 
   root.addEventListener('input', event => {
@@ -444,7 +463,6 @@ async function mount(root, index) {
       p = { ...p, costs: { ...p.costs, [el.dataset.cost]: el.checked } };
       sync(true); $('[data-ready]').textContent = t.recalculate; update(); return;
     }
-    if (el.hasAttribute('data-axis')) { axis = el.value; if (read()) draw(); return; }
     if (!el.dataset.select) return;
     if (el.dataset.select === 'taxMode') p.taxMode = el.value;
     else {
@@ -460,7 +478,7 @@ async function mount(root, index) {
   });
   $('[data-reset]').addEventListener('click', () => {
     hasCalculated = false;
-    p = { ...DEFAULTS }; axis = 'km'; $('[data-axis]').value = axis;
+    p = { ...DEFAULTS };
     if (location.hash.startsWith('#ct=')) history.replaceState(null, '', location.pathname + location.search);
     sync(); update(); $('[data-status]').textContent = ''; $('[data-ready]').textContent = ''; $('[data-share-url]').hidden = true;
   });
@@ -511,7 +529,7 @@ async function mount(root, index) {
       ['result', 'equivalentTyreSets', result.tyreSets, 'sets over holding period'],
       ['result', 'holdingPeriodCost', result.car * p.years, 'CNY'],
       ['result', 'savingWithOwnership', result.saving, 'CNY/year'],
-      ...samples.flatMap(s => [['curve', `${axis}=${s.x};car`, s.car, 'CNY/month'], ['curve', `${axis}=${s.x};taxi`, s.taxi, 'CNY/month']]),
+      ...curveRows,
     ];
     const csv = '\uFEFF' + rows.map(row => row.map(value => `"${String(value).replaceAll('"', '""')}"`).join(',')).join('\r\n');
     const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
@@ -520,7 +538,6 @@ async function mount(root, index) {
   });
   window.addEventListener('hashchange', () => {
     if (!location.hash.startsWith('#ct=')) return;
-    axis = 'km'; $('[data-axis]').value = axis;
     $('[data-share-url]').hidden = true;
     try {
       p = restoreState(JSON.parse(decodeURIComponent(location.hash.slice(4))));

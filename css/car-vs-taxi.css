@@ -18,7 +18,7 @@
 .car-lab .lab-title { font-size: 25px; line-height: 1.3; margin: 0 0 10px; color: var(--lab-text); }
 .car-lab p { margin: 8px 0; }
 .car-lab .lab-subtitle, .car-lab .lab-hint { color: var(--lab-muted); font-size: 12px; }
-.car-lab .lab-topline, .car-lab .lab-actions, .car-lab .lab-chart-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.car-lab .lab-topline, .car-lab .lab-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .car-lab .lab-presets { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
 .car-lab .lab-presets label { flex: 1; min-width: 130px; }
 .car-lab label { display: block; font-weight: 500; }
@@ -42,8 +42,8 @@
 .car-lab .lab-warnings { font-size: 12px; color: var(--lab-taxi); }
 .car-lab .lab-error { font-size: 12px; color: #b94937; min-height: 20px; }
 .car-lab .lab-chart { margin: 22px 0 16px; }
+.car-lab .lab-chart + .lab-chart { border-top: 1px solid var(--lab-border); padding-top: 18px; }
 .car-lab .lab-chart-heading strong { font-size: 15px; }
-.car-lab .lab-chart-heading select { width: auto; max-width: 100%; margin: 0; }
 .car-lab svg { display: block; width: 100%; height: auto; margin-top: 12px; overflow: visible; }
 .car-lab svg text { fill: var(--lab-muted); font: 11px system-ui, sans-serif; }
 .car-lab .lab-grid { stroke: var(--lab-border); stroke-width: 1; }
