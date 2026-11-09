@@ -1,8 +1,8 @@
 const WORDS = {
   zh: {
     title: '这辆车，值得自己买吗？', sub: '连续参数 · 年均全成本 · 同等出行需求',
-    city: '城市示例', type: '动力与参考车型', beijing: '北京', shanghai: '上海', quanzhou: '泉州', ev: '纯电 · Model Y 后驱', gas: '燃油 · 途观 L Pro 380TSI',
-    presetHint: '切换动力会载入参考车型的车价、能耗、质保和保养参数，并清空之前的车型报价。切换城市会载入当地费用示例。所有金额均为人民币。',
+    city: '城市示例', type: '动力类型', beijing: '北京', shanghai: '上海', quanzhou: '泉州', ev: '纯电（默认参考 Model Y 后驱）', gas: '燃油（默认参考途观 L Pro 380TSI）',
+    presetHint: '车型仅用于提供默认参数，可按实际车辆调整。切换动力会重新载入对应的车价、能耗、质保和保养参数，并清空之前的车型报价。切换城市会载入当地费用示例。所有金额均为人民币。',
     price: '含税车价', priceUnit: '万元', years: '持有年限', yearsUnit: '年', km: '年出行里程', kmUnit: 'km/年', fare: '打车综合单价', fareUnit: '元/km',
     purchase: '购车、税费与残值', insurance: '保险、停车与日常持有', energy: '能源与里程损耗', finance: '资金与时间价值',
     taxMode: '购置税口径', taxAmount: '购置税额', policy2026: '2026–2027 新车政策', full: '全额购置税', custom: '手填税额',
@@ -29,7 +29,9 @@ const WORDS = {
     stepInputs: '1 · 设置用车与出行', stepCosts: '2 · 选择计入哪些成本', stepResults: '3 · 查看比较结果',
     costsHint: '勾选要计入的费用，再点“调整参数”填写金额。停车、保险和能源参数已展开；按里程计算的费用会标出算式，所有项目都可以修改或取消。',
     edit: '调整参数', close: '收起参数', included: '计入比较', excluded: '未计入',
-    liveUpdate: '调整参数会自动更新三张图和交点。',
+    liveUpdate: '调整参数会自动更新图表和交点。',
+    composition: '年均成本构成对比', compositionHint: '两条柱使用同一金额刻度；自驾各项占比以正向费用合计为分母。年均费用按持有期摊销，并非某一年的实际账单。',
+    driving: '自驾', taxiAnnual: '打车', positiveCosts: '正向费用合计', netCost: '抵减后自驾合计', reductions: '负值抵减', noPositive: '没有正向费用',
     detour: '自驾里程 / 打车里程', selectedCosts: '已计入成本', items: '项',
     insuranceHelp: '报价覆盖的是新车车损险分项，不含交强险和三者险，以每年自驾 1 万公里为参考。留 0 时按车价估算。首年用新车价，后续按续保时车值估算；非整年按使用期分摊。里程风险只是情景假设，实际报价还受车型、驾驶人和出险记录影响。',
     allEqual: '两种成本始终相同', allEqualHint: '当前勾选项与单价使两条成本曲线完全重合。',
@@ -43,8 +45,8 @@ const WORDS = {
   },
   en: {
     title: 'What does owning this car cost?', sub: 'Continuous inputs · Annualized full cost · Equivalent travel demand',
-    city: 'City example', type: 'Powertrain and reference car', beijing: 'Beijing', shanghai: 'Shanghai', quanzhou: 'Quanzhou', ev: 'Electric · Model Y RWD', gas: 'Petrol · Tiguan L Pro 380TSI',
-    presetHint: 'Changing powertrain loads the reference car’s price, consumption, warranty and service inputs and clears prior vehicle quotes. Changing city loads local cost examples. All amounts are in CNY.',
+    city: 'City example', type: 'Powertrain', beijing: 'Beijing', shanghai: 'Shanghai', quanzhou: 'Quanzhou', ev: 'Electric (defaults: Model Y RWD)', gas: 'Petrol (defaults: Tiguan L Pro 380TSI)',
+    presetHint: 'Reference cars provide default inputs; adjust them for your own vehicle. Changing powertrain reloads the corresponding price, consumption, warranty and service inputs and clears prior vehicle quotes. Changing city loads local cost examples. All amounts are in CNY.',
     price: 'VAT-inclusive price', priceUnit: 'CNY 10,000', years: 'Holding period', yearsUnit: 'years', km: 'Annual trip distance', kmUnit: 'km/year', fare: 'Effective taxi fare', fareUnit: 'CNY/km',
     purchase: 'Purchase, tax and resale', insurance: 'Insurance, parking and ownership', energy: 'Energy and mileage costs', finance: 'Capital and time value',
     taxMode: 'Purchase tax basis', taxAmount: 'Purchase tax amount', policy2026: '2026–2027 new-car policy', full: 'Full purchase tax', custom: 'Enter tax amount',
@@ -71,7 +73,9 @@ const WORDS = {
     stepInputs: '1 · Set the car and travel demand', stepCosts: '2 · Choose the costs to include', stepResults: '3 · Compare the results',
     costsHint: 'Select each cost to include, then edit its parameters. Parking, insurance and energy start expanded. Distance-based costs show their calculation. Every item can be changed or excluded.',
     edit: 'Edit parameters', close: 'Hide parameters', included: 'Include', excluded: 'Excluded',
-    liveUpdate: 'Adjust any input to update all three charts and their crossings.',
+    liveUpdate: 'Adjust any input to update the charts and crossings.',
+    composition: 'Annualized cost breakdown', compositionHint: 'Both bars use the same monetary scale. Driving shares are calculated from the total of positive costs. Annualized costs are averaged over ownership, not a particular year’s bills.',
+    driving: 'Driving', taxiAnnual: 'Taxis', positiveCosts: 'Positive costs', netCost: 'Driving total after offsets', reductions: 'Negative offsets', noPositive: 'No positive costs',
     detour: 'Driving distance / taxi distance', selectedCosts: 'Costs included', items: 'items',
     insuranceHelp: 'The quote overrides new-car damage coverage only, excluding compulsory and liability cover, at a reference 10,000 driving km/year. Enter 0 to estimate from price. Year one uses new-car value; renewals use value at each policy start. Partial years are allocated pro rata. Mileage risk is a scenario assumption; model, driver and claims also affect quotes.',
     allEqual: 'Costs coincide throughout', allEqualHint: 'The selected costs and fare make both cost curves identical.',
@@ -216,6 +220,7 @@ async function mount(root, index) {
     <div class="lab-actions"><button type="button" data-reset>${t.reset}</button><p class="lab-hint">${t.liveUpdate}</p></div><p class="lab-status" data-ready role="status"></p>
     <div class="lab-results" hidden><p class="lab-step">${t.stepResults}</p><p class="lab-hint" data-included></p><div class="lab-kpis">${['car', 'taxi', 'threshold', 'breakKm'].map((key, i) => `<div class="lab-kpi${i === 2 ? ' lab-kpi--primary' : ''}"><span>${t[key]}</span><strong data-output="${key}"></strong><span>${key === 'breakKm' ? t.distance : t.month}</span></div>`).join('')}</div>
     <p class="lab-verdict" data-verdict aria-live="polite"></p><p class="lab-hint">${t.cashNote}</p><div class="lab-warnings" data-warnings></div>
+    <section class="lab-composition" aria-labelledby="${id('composition-heading')}"><p class="lab-chart-heading" id="${id('composition-heading')}"><strong>${t.composition}</strong></p><p class="lab-hint">${t.compositionHint}</p><div data-composition></div></section>
     ${Object.entries(charts).map(([axis, chart]) => `
     <section class="lab-chart" data-chart-panel="${axis}" aria-labelledby="${id(`heading-${axis}`)}">
       <p class="lab-chart-heading" id="${id(`heading-${axis}`)}"><strong>${chart.title}</strong></p><div data-chart></div>
@@ -434,6 +439,19 @@ async function mount(root, index) {
     else if (result.breakKm > 60000) warnings.push(t.highKm);
     if (p.costs.time && p.timeValue && p.extraMinutes) warnings.push(t.timeHint);
     $('[data-warnings]').replaceChildren(...warnings.map(text => { const el = document.createElement('p'); el.textContent = text; return el; }));
+    const colors = ['#4d789b', '#d29a42', '#6e9e80', '#ae7392', '#8a78b3', '#bb735e', '#5d9d9f', '#aa9d5b', '#78889e', '#b782aa', '#6a9160', '#c27c72'];
+    const entries = Object.entries(result.rows).map(([key, value], index) => ({ key, value, color: colors[index] }));
+    const positive = entries.filter(item => item.value > 0), negative = entries.filter(item => item.value < 0);
+    const positiveTotal = positive.reduce((sum, item) => sum + item.value, 0);
+    const scale = Math.max(positiveTotal, result.taxi, 0);
+    const width = value => scale ? value / scale * 100 : 0;
+    $('[data-composition]').innerHTML = `
+      <div class="lab-composition-row"><div class="lab-composition-label"><strong>${t.driving}</strong><span>${t.positiveCosts} ¥${fmt(positiveTotal, 2)} / ${t.amount}</span></div>
+        <div class="lab-composition-track" aria-hidden="true">${positive.map(item => `<span style="width:${width(item.value)}%;background:${item.color}"></span>`).join('')}</div></div>
+      <div class="lab-composition-row"><div class="lab-composition-label"><strong>${t.taxiAnnual}</strong><span>¥${fmt(result.taxi, 2)} / ${t.amount}</span></div>
+        <div class="lab-composition-track" aria-hidden="true"><span style="width:${width(result.taxi)}%;background:var(--lab-taxi)"></span></div></div>
+      <ul class="lab-composition-key">${positive.map(item => `<li><i style="background:${item.color}"></i><span>${rowLabel(item.key)}</span><strong>¥${fmt(item.value, 2)} · ${fmt(item.value / positiveTotal * 100, 1)}%</strong></li>`).join('') || `<li>${t.noPositive}</li>`}</ul>
+      ${negative.length ? `<p class="lab-hint">${t.reductions}: ${negative.map(item => `${rowLabel(item.key)} ¥${fmt(item.value, 2)}`).join('；')}。 ${t.netCost}: ¥${fmt(result.car, 2)} / ${t.amount}</p>` : ''}`;
     $('[data-breakdown]').innerHTML = `<table><thead><tr><th>${t.row}</th><th>${t.amount}</th></tr></thead><tbody>${Object.entries(result.rows).map(([key, value]) => `<tr><td>${rowLabel(key)}</td><td>${fmt(value, 2)}</td></tr>`).join('')}<tr><th>${t.total}</th><th>${fmt(result.car, 2)}</th></tr></tbody></table>`;
     $('[data-residual]').textContent = `${t.residual}: ¥${fmt(result.resale)} (${fmt(result.residualRate * 100, 1)}%). ${t.taxAmount}: ¥${fmt(result.tax)}.`;
     curveRows = Array.from(chartPanels).flatMap(draw);

@@ -42,6 +42,15 @@
 .car-lab .lab-warnings { font-size: 12px; color: var(--lab-taxi); }
 .car-lab .lab-error { font-size: 12px; color: #b94937; min-height: 20px; }
 .car-lab .lab-chart { margin: 22px 0 16px; }
+.car-lab .lab-composition { margin: 24px 0; padding: 16px; border: 1px solid var(--lab-border); border-radius: 12px; background: var(--lab-card); }
+.car-lab .lab-composition-row { margin: 15px 0; }
+.car-lab .lab-composition-label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.car-lab .lab-composition-track { display: flex; height: 18px; margin-top: 6px; overflow: hidden; border-radius: 5px; background: var(--lab-bg); }
+.car-lab .lab-composition-track span { display: block; height: 100%; }
+.car-lab .lab-composition-key { display: grid; gap: 6px; list-style: none; padding: 0; margin: 16px 0 0; font-size: 12px; }
+.car-lab .lab-composition-key li { display: grid; grid-template-columns: 10px minmax(0, 1fr) auto; align-items: baseline; gap: 8px; }
+.car-lab .lab-composition-key i { width: 9px; height: 9px; border-radius: 2px; }
+.car-lab .lab-composition-key strong { text-align: right; font-variant-numeric: tabular-nums; }
 .car-lab .lab-chart + .lab-chart { border-top: 1px solid var(--lab-border); padding-top: 18px; }
 .car-lab .lab-chart-heading strong { font-size: 15px; }
 .car-lab svg { display: block; width: 100%; height: auto; margin-top: 12px; overflow: visible; }
