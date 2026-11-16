@@ -4127,6 +4127,16 @@ visits:
         date: "2025-07-13"
         caption: "Blue skies above the stone gateway of Nanjing’s Presidential Palace"
         captionZh: "南京总统府，石门楼前仰望蓝天"
+  - id: xian
+    group: shaanxi
+    geoGroup: china
+    name: "Xi’an"
+    nameZh: "西安"
+    region: "Shaanxi"
+    regionZh: "陕西"
+    latitude: 34.34160
+    longitude: 108.93980
+    photos: []
   - id: yanan
     group: shaanxi
     geoGroup: china
