@@ -1910,6 +1910,29 @@ visits:
         date: "2026-06-28"
         caption: "Huayan Pagoda’s layered eaves rising above the pines"
         captionZh: "华严宝塔，层檐从松影间升起"
+
+  - id: taiyuan
+    group: shanxi
+    geoGroup: china
+    name: "Taiyuan"
+    nameZh: "太原"
+    region: "Shanxi"
+    regionZh: "山西"
+    latitude: 37.8706
+    longitude: 112.5489
+    photos: []
+
+  - id: pingyao
+    group: shanxi
+    geoGroup: china
+    name: "Pingyao"
+    nameZh: "平遥"
+    region: "Shanxi · Jinzhong"
+    regionZh: "山西 · 晋中"
+    latitude: 37.2000
+    longitude: 112.1740
+    photos: []
+
   - id: kunming
     group: yunnan
     geoGroup: china
