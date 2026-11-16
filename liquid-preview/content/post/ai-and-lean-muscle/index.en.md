@@ -12,7 +12,7 @@ license: false
 
 For young people, **the AI era is almost the era of lean muscle**. AI is changing three things at once: **the relative price of standardized cognitive output, the way people are tied to work, and the cost of looking after one's body.** Taken together, these changes make it worthwhile to move physical training up the list of things that used to come after work.
 
-## 1. Ordinary, easily copied cognitive work will lose value quickly
+## Ordinary, easily copied cognitive work will lose value quickly
 
 When the reaper arrived, people who swung scythes did not become weaker. But harvesting the same amount of grain no longer required as many workers. **Every technological shift makes some paid tasks cheaper and turns other abilities or resources into new bottlenecks.** Here is one way to look at the transition from agriculture to the AI era.
 
@@ -34,7 +34,7 @@ When the reaper arrived, people who swung scythes did not become weaker. But har
 
 - **The code and documents belong to the company. Your lean muscle belongs to you.** Work products need to be handed over. Your physique does not.
 
-## 2. Across five thousand years, power and sexual appeal remain reliable answers
+## Across five thousand years, power and sexual appeal remain reliable answers
 
 Technology changes, as do the things we can mass-produce, but two abilities are harder to copy. **One is deciding what other people get. The other is making people willing to pay a price to get close to you.** The first is power. The second is attraction, with sexual appeal as one direct form of it.
 
@@ -50,7 +50,7 @@ Technology changes, as do the things we can mass-produce, but two abilities are 
 
 **Power decides who gets to make the call. Sexual appeal can make people come closer, even spend money.** But there is a more direct reason the body is valuable: even if nobody is watching, the strength you build is still yours to use.
 
-## 3. You can check in with an agent between sets, so training need not interrupt work
+## You can check in with an agent between sets, so training need not interrupt work
 
 Work and training used to collide because many tasks could only move forward at a computer. When an experiment finished, I had to inspect the results, change parameters, and submit the next run myself. Now I can finish a set of rows, pick up my phone during the rest, check what an agent just completed, and reply, “Keep the original data split and add a comparison.” I put the phone away and do the next set; the agent keeps editing code and running experiments remotely. **I need a few seconds to make a decision, not to sit back down at a computer and do the whole next round from scratch.**
 
@@ -58,13 +58,13 @@ This is no longer just hypothetical. With Codex, for example, you can send instr
 
 That gives me one less excuse to put off going to the gym. I used to think I had to finish this round before leaving. Now I can go train, then check in when an agent finishes if I have time between sets. **I keep training, and work keeps moving. What shrinks is the time I have to spend at my computer.**
 
-## 4. AI narrows information gaps, helping ordinary people train and eat well
+## AI narrows information gaps, helping ordinary people train and eat well
 
 **You may not need a coach or nutritionist to train and eat better now.** If I can get to the gym only two evenings a week, I can send my training log to AI and ask what to do next time. At lunch, I can send it the cafeteria menu and ask how to put this meal together, instead of receiving a meal plan I cannot use.
 
 The internet has never lacked workout tutorials. What is missing is someone who can tell me what to do today with my schedule, the equipment I have, and the dishes in front of me. **AI narrows that information gap. If an ordinary person wants to start, they can do a set and put together a good meal today. The hardest part is still doing it again tomorrow.**
 
-## 5. Why muscle, and why lean?
+## Why muscle, and why lean?
 
 **Muscle is function.** The benefits of resistance training are practical: building muscle can support metabolism, protect body tissues, and make the body more resilient.
 
