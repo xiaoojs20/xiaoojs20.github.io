@@ -60,6 +60,10 @@ groups:
     order: 14
     name: "Yunnan"
     nameZh: "云南"
+  hunan:
+    order: 14.5
+    name: "Hunan"
+    nameZh: "湖南"
   jiangsu:
     order: 15
     name: "Jiangsu"
@@ -4003,6 +4007,18 @@ visits:
         date: "2025-01-12"
         caption: "Harbin Ice and Snow World illuminated after dark"
         captionZh: "入夜，冰雪大世界流光溢彩"
+
+  - id: changsha
+    group: hunan
+    geoGroup: china
+    name: "Changsha"
+    nameZh: "长沙"
+    region: "Hunan"
+    regionZh: "湖南"
+    latitude: 28.231216
+    longitude: 112.93344
+    photos: []
+
   - id: nanjing
     group: jiangsu
     geoGroup: china
