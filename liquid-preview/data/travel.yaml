@@ -52,6 +52,10 @@ groups:
     order: 13
     name: "Sichuan"
     nameZh: "四川"
+  chongqing:
+    order: 13.5
+    name: "Chongqing"
+    nameZh: "重庆"
   yunnan:
     order: 14
     name: "Yunnan"
@@ -1931,6 +1935,17 @@ visits:
     regionZh: "山西 · 晋中"
     latitude: 37.2000
     longitude: 112.1740
+    photos: []
+
+  - id: chongqing
+    group: chongqing
+    geoGroup: china
+    name: "Chongqing"
+    nameZh: "重庆"
+    region: "Chongqing"
+    regionZh: "重庆"
+    latitude: 29.533155
+    longitude: 106.504962
     photos: []
 
   - id: kunming
