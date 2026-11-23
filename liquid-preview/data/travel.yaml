@@ -4549,18 +4549,44 @@ visits:
         date: "2023-02-11"
         caption: "Ceramic roof figures and red lanterns at Dongshi Ancient Fort"
         captionZh: "东石古寨庙宇，剪瓷雕与红灯笼"
+        album: "Dongshi Ancient Fort"
+        albumZh: "东石古寨"
       - src: /img/travel/jinjiang/20230211-晋江-东石古寨石雕与人物_IMG_20230211_164250.jpg
         date: "2023-02-11"
         caption: "A portrait beside Dongshi Ancient Fort’s stone carvings"
         captionZh: "东石古寨石雕旁的留影"
+        album: "Dongshi Ancient Fort"
+        albumZh: "东石古寨"
       - src: /img/travel/jinjiang/20230211-晋江-东石古寨与人物_IMG_20230211_165315.jpg
         date: "2023-02-11"
         caption: "A portrait beside Dongshi Ancient Fort’s walls"
         captionZh: "站在东石古寨的城墙边"
+        album: "Dongshi Ancient Fort"
+        albumZh: "东石古寨"
       - src: /img/travel/jinjiang/20230211-晋江-东石古寨石刻_IMG_20230211_165524.jpg
         date: "2023-02-11"
         caption: "Rock inscriptions at Dongshi Ancient Fort"
         captionZh: "东石古寨的摩崖题刻"
+        album: "Dongshi Ancient Fort"
+        albumZh: "东石古寨"
+      - src: /img/travel/jinjiang/20200905-晋江-养正中学钟楼_DSC00417.jpg
+        date: "2020-09-05"
+        caption: "The clock tower between red-brick buildings at Yangzheng High School"
+        captionZh: "养正中学红砖校舍之间的钟楼"
+        album: "Yangzheng High School"
+        albumZh: "养正中学"
+      - src: /img/travel/jinjiang/20200905-晋江-养正中学池畔柳枝_DSC00436.jpg
+        date: "2020-09-05"
+        caption: "Willow branches by the pond frame a building at Yangzheng High School"
+        captionZh: "隔着池畔柳枝望向养正中学校舍"
+        album: "Yangzheng High School"
+        albumZh: "养正中学"
+      - src: /img/travel/jinjiang/20200905-晋江-养正中学运动场与校舍_DSC00441.jpg
+        date: "2020-09-05"
+        caption: "Red-brick school buildings beside Yangzheng High School’s sports field"
+        captionZh: "养正中学运动场边的红砖校舍"
+        album: "Yangzheng High School"
+        albumZh: "养正中学"
   - id: quanzhou
     group: fujian
     geoGroup: china
