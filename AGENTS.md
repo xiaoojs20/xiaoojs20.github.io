@@ -8,3 +8,11 @@
 - 新增旅行地点时，必须同时在 `liquid-preview/data/travel.yaml` 添加地点，并在 `liquid-preview/static/data/travel-map/visited-areas.geojson` 添加匹配的行政区面要素；`properties.id` 必须与地点 `id` 完全一致，`properties.source` 记录边界来源。只添加可点击图钉不算完成。边界暂时无法可靠获取时，先报告缺口，不得按完成状态发布。构建后核对中英文旅行地图都含该地点及对应填色区域，并同步生成的发布文件。
 - 每项任务完成并检查后，将本任务改动提交并推送到远程仓库；只纳入本任务相关文件，保留其他未提交改动。若相关文件含任务开始前已有改动，提交时先区分，避免一并带入。
 - 新功能推送上线后，必须在真实浏览器打开线上中英文页面并操作核心流程，确认页面和功能实际可用；不能只凭本地文件、构建结果或 HTTP 返回判断成功。若线上仍是旧版本或功能异常，继续查到生效或定位问题后再报告。
+
+## 给现有城市的旅行照片墙补照片
+
+1. 核对本次选中的照片、所属城市和场景。在 `liquid-preview/data/travel.yaml` 的 `visits` 中找到城市 `id`，检查相册与照片是否已有。景点或校园归入所属城市，优先复用已有双语相册名。新增城市按 [新增旅行地点 SOP](liquid-preview/docs/travel-destination-sop.zh.md) 同步处理地图边界。
+2. 保留原图，用 EXIF `DateTimeOriginal` 或可核实的原始拍摄记录确定日期。将网页副本转正，按 `拍摄日期-城市-景色[_原图编号].jpg` 命名，日期用 `YYYYMMDD`，仅确认到月时用 `YYYYMM`。最长边通常控制在 2400 像素以内。清除 EXIF、GPS、XMP 等公开副本不需要的元数据，逐张查看方向、清晰度及画面内的个人信息。需要限制公开的人像按 [人像照片保护流程](liquid-preview/docs/photo-privacy.zh.md) 处理。
+3. 将 JPG 放入 `liquid-preview/static/img/travel/<城市 id>/`。在该城市的 `photos` 中逐张填写 `src`（`/img/travel/<城市 id>/文件名.jpg`）、`date`（`"YYYY-MM-DD"` 或 `"YYYY-MM"`）、`caption` 和 `captionZh`。按地点分组的相册同时填写 `album` 和 `albumZh`，保持同一相册的拼写完全一致。城市若配置了 `trips`，核对照片在对应旅程筛选中可见。
+4. 从 `git archive HEAD` 建立临时构建目录，仅叠加本任务的源文件和照片。用 Hugo Extended 执行 `hugo --source <临时源码目录>/liquid-preview --destination <临时输出目录> --minify`。核对中英文页面内的城市、相册、图片路径、计数和说明。将生成的 `travel/index.html`、`zh/travel/index.html` 和对应的 `img/travel/<城市 id>/` 照片同步到仓库根目录，核对发布图片与源码静态目录中的副本一致。
+5. 检查差异后只提交本次源数据、网页副本和对应发布文件，保留工作区原有改动，再通过 SSH 推送。等 GitHub Pages 部署完成后，用真实浏览器分别访问线上 `/zh/travel/` 和 `/travel/`，进入城市、选择相册，核对新增张数、缩略图、双语说明和拍摄日期，并打开、关闭大图和检查语言切换。遇到旧页面时核对部署提交及缓存，刷新后复查正式入口。
