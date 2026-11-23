@@ -2538,112 +2538,152 @@ visits:
         date: "2025-07-20"
         caption: "The metallic façade of Shinsaibashi PARCO"
         captionZh: "心斋桥PARCO的金属立面"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250720-大阪-商场建筑_DSC07089.jpg
         date: "2025-07-20"
         caption: "A street corner beneath Shinsaibashi OPA"
         captionZh: "心斋桥OPA的街头一角"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250720-大阪-夜晚雕像_DSC07096.jpg
         date: "2025-07-20"
         caption: "An illuminated figure above Dotonbori at night"
         captionZh: "道顿堀夜色里的灯箱人像"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250720-大阪-街区夜景_DSC07100.jpg
         date: "2025-07-20"
         caption: "Dotonbori’s neon gateway after dark"
         captionZh: "道顿堀，霓虹点亮大阪之夜"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250720-大阪-街头霓虹_DSC07111.jpg
         date: "2025-07-20"
         caption: "The Glico Running Man sign in Dotonbori"
         captionZh: "道顿堀固力果跑步人灯牌"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250722-大阪-城市塔楼_DSC07113.jpg
         date: "2025-07-22"
         caption: "Tsutenkaku rising over Shinsekai"
         captionZh: "新世界街头的通天阁"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250720-大阪-心斋桥筋商店街入口_MVIMG_20250720_211146.jpg
         date: "2025-07-20"
         caption: "Osaka after dark beneath Shinsaibashi-suji’s arcade"
         captionZh: "心斋桥筋，拱顶下的大阪夜色"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250722-大阪-新世界七福神招牌_MVIMG_20250722_103410.jpg
         date: "2025-07-22"
         caption: "The Seven Lucky Gods aboard a colourful Shinsekai sign"
         captionZh: "新世界街头，七福神乘船迎客"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250722-大阪-通天阁与商店街_MVIMG_20250722_104032.jpg
         date: "2025-07-22"
         caption: "Shop signs lining the street beneath Tsutenkaku"
         captionZh: "通天阁下，招牌林立的商店街"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250720-大阪-道顿堀固力果夜景_DJI21.jpg
         date: "2025-07-20"
         caption: "The Glico Running Man lighting Dotonbori’s night"
         captionZh: "道顿堀夜色里的固力果跑者"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250722-大阪-通天阁与世博会标识_DJI22.jpg
         date: "2025-07-22"
         caption: "EXPO 2025 lettering beneath Tsutenkaku"
         captionZh: "通天阁下的 EXPO 2025 标识"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250722-大阪-大阪烧肉_DJI23.jpg
         date: "2025-07-22"
         caption: "Yakiniku sizzling on the grill in Osaka"
         captionZh: "大阪烧肉，烤架上的烟火气"
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/osaka/20250722-大阪-黑门市场大灯笼_DJI24.jpg
         date: "2025-07-22"
         caption: "Everyday life beneath Kuromon Market’s giant lantern"
         captionZh: "黑门市场，灯笼下的市井烟火"
-  - id: universal-studios-japan
-    group: japan
-    geoGroup: international
-    name: "Universal Studios Japan (USJ)"
-    nameZh: "日本环球影城（USJ）"
-    region: "Osaka, Japan"
-    regionZh: "日本 · 大阪府"
-    latitude: 34.66550
-    longitude: 135.43240
-    photos:
+        album: "Osaka City Scenes"
+        albumZh: "大阪城市风光"
       - src: /img/travel/universal-studios-japan/20250721-大阪-环球奇境气球与晚霞_MVIMG_20250721_191132.jpg
         date: "2025-07-21"
         caption: "Balloons against the sunset in Universal Wonderland"
         captionZh: "环球奇境的气球与晚霞"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-环球地球仪日景_DJI07.jpg
         date: "2025-07-21"
         caption: "The Universal globe at the start of a movie-filled day"
         captionZh: "环球地球仪，电影之旅从这里开始"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-哈利波特妖怪书_DJI08.jpg
         date: "2025-07-21"
         caption: "The Monster Book of Monsters bares its teeth"
         captionZh: "魔法世界里，妖怪书露出獠牙"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-霍格沃茨城堡日景_DJI09.jpg
         date: "2025-07-21"
         caption: "Hogwarts Castle’s spires beneath a clear sky"
         captionZh: "霍格沃茨城堡，尖塔迎着晴空"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-霍格莫德屋舍倒影_DJI10.jpg
         date: "2025-07-21"
         caption: "Hogsmeade’s snow-capped roofs reflected in the water"
         captionZh: "霍格莫德，雪顶屋舍倒映水中"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-大白鲨入口_DJI11.jpg
         date: "2025-07-21"
         caption: "The JAWS entrance in Amity Village"
         captionZh: "大白鲨入口，走进阿米蒂渔村"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-耀西冒险绿色水管_DJI12.jpg
         date: "2025-07-21"
         caption: "Through a green pipe into Yoshi’s world"
         captionZh: "穿过绿色水管，遇见耀西的世界"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-超级任天堂世界_DJI13.jpg
         date: "2025-07-21"
         caption: "Super Nintendo World brings childhood games to life"
         captionZh: "超级任天堂世界，把童年走成现实"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-好莱坞美梦与棕榈_DJI14.jpg
         date: "2025-07-21"
         caption: "Hollywood Dream’s track above the palm trees"
         captionZh: "好莱坞美梦，轨道掠过棕榈树梢"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-好莱坞美梦暮色_DJI15.jpg
         date: "2025-07-21"
         caption: "Hollywood Dream racing through the evening sky"
         captionZh: "晚霞里，好莱坞美梦呼啸而过"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-霍格沃茨城堡夜景_DJI16.jpg
         date: "2025-07-21"
         caption: "Hogwarts Castle glowing with magic after dark"
         captionZh: "夜幕下的霍格沃茨，灯火唤醒魔法"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
       - src: /img/travel/universal-studios-japan/20250721-大阪-环球地球仪夜景_DJI17.jpg
         date: "2025-07-21"
         caption: "The Universal globe illuminated after dark"
         captionZh: "夜色里的环球地球仪"
+        album: "Universal Studios Japan (USJ)"
+        albumZh: "环球影城（USJ）"
   - id: kyoto
     group: japan
     geoGroup: international
