@@ -103,6 +103,24 @@ collections:
       - { label: Categories, name: categories, widget: list, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Article, name: body, widget: markdown }
+  - name: single_language_loader_xiaomi_caldav_google_calendar
+    label: "Single-language loader: Xiaomi Caldav Google Calendar"
+    folder: content/post
+    path: xiaomi-caldav-google-calendar/index.zh
+    extension: md
+    format: yaml-frontmatter
+    i18n: false
+    create: false
+    hide: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: URL slug, name: slug, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Published date, name: date, widget: datetime, required: false }
+      - { label: Cover image, name: image, widget: image, required: false }
+      - { label: Categories, name: categories, widget: list, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Article, name: body, widget: markdown }
 
 
 
@@ -309,6 +327,45 @@ collections:
       - name: zh_understanding_job_offers
         label: "Understanding Job Offers"
         file: content/post/understanding-job-offers/index.zh.md
+        format: yaml-frontmatter
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL slug, name: slug, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Published date, name: date, widget: datetime, required: false }
+          - { label: Cover image, name: image, widget: image, required: false }
+          - label: Categories
+            name: categories
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: categories
+            multiple: true
+            value_field: '{{categories.*.name}}'
+            display_fields: ['{{categories.*.name}}']
+            search_fields: ['{{categories.*.name}}']
+          - label: Tags
+            name: tags
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: tags
+            multiple: true
+            value_field: '{{tags.*.name}}'
+            display_fields: ['{{tags.*.name}}']
+            search_fields: ['{{tags.*.name}}']
+          - label: Writing mode
+            name: writingMode
+            widget: select
+            required: false
+            options:
+              - { label: Written by the author, value: human }
+              - { label: AI-assisted writing, value: aigc-assisted }
+          - { label: Article, name: body, widget: markdown }
+
+      - name: zh_xiaomi_caldav_google_calendar
+        label: "Xiaomi Caldav Google Calendar"
+        file: content/post/xiaomi-caldav-google-calendar/index.zh.md
         format: yaml-frontmatter
         fields:
           - { label: Title, name: title, widget: string }
