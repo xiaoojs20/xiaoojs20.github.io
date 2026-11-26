@@ -223,6 +223,22 @@ $$
 
 With a search cost equivalent to 2 points, the threshold is 80. Holding an option above 80, another search no longer covers its cost.
 
+### Change the cost, change the standard
+
+Same neighbourhood, quality still uniform on 0 to 100, but two different people.
+
+One lives nearby: a ten-minute drive to each viewing, so the time and effort of one more search is worth about 2 points. Plugging into $b^*=100-\sqrt{200c}$, their reservation value is 80. A house below 80 is worth one more look; above 80, they sign.
+
+Another flies in from out of town: every viewing takes leave, a train ticket and a hotel night, worth about 12.5 points. The same formula gives
+
+$$
+b^*=100-\sqrt{200\times 12.5}=100-50=50
+$$
+
+so their reservation value is just 50. A 65-point house is not good enough for the first buyer, but the second should already accept it.
+
+Both look at the same homes with the same judgement. The only difference is search cost. Multiply the cost more than sixfold and the reasonable standard falls by 30 points. So "how many should I see before deciding" has no universal answer — it depends on who you are, where you are, and how much time you have. The higher the search cost, the sooner you accept good enough.
+
 The model yields four conclusions with mathematical backing: cheaper search justifies chasing higher quality; a stronger current option shrinks the gain from continuing; a tighter deadline pushes you to accept good enough; and a more favourable distribution of future opportunities raises the acceptance standard.
 
 {{< stopping-lab kind="search" >}}
