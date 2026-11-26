@@ -116,8 +116,6 @@ The common value of all these things is that they add **life's optionality**.
 
 ## Economic independence and family relationships
 
-This is why I care so much about economic independence.
-
 > In this era, achieving economic independence has never been easier. Your income will soon surpass your parents', and within another five to ten years your assets will exceed what they accumulated over a lifetime. This is a completely asymmetric battle; there is no need to fight it. They will compromise.
 >
 > — Justin Sun, *The World Is Both Cruel and Gentle*
