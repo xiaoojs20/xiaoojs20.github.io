@@ -52,8 +52,6 @@ This is one reason I love to travel. Beyond natural scenery, you get to observe 
 
 **The core of reform and opening-up is an institutional revolution.**
 
-A family is the organization most people spend the longest part of their lives in, yet its operating rules are rarely the subject of serious discussion. We readily spend hours studying a company's governance, incentives and strategy, but seldom think systematically about our own family's finances, division of responsibilities, decision-making and sharing of risk.
-
 One direction of reform is to reduce the excessive concentration and personalization of power, and to strengthen collective leadership, shared responsibility, and institutional governance.
 
 Traditional family life depends to a large extent on the authority of elders, ethical obligation, and long-standing convention. In an era of scarce material resources and incomplete social security, this tightly knit structure had its rationale. The family was also an individual's main buffer against risk from outside.
