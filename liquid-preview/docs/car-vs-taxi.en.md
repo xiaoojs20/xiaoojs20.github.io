@@ -1,4 +1,4 @@
-# Buying a Car 🆚 Taking Taxis: maintenance and verification
+# Buying a Car vs. Taking Taxis: maintenance and verification
 
 The bilingual articles are content/post/car-vs-taxi/index.zh.md and index.en.md. They share the shortcode, model module, UI and CSS. Routes are /zh/p/car-vs-taxi/ and /p/car-vs-taxi/. Notes and recent updates include them automatically.
 

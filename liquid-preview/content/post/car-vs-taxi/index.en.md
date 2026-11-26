@@ -1,5 +1,5 @@
 ---
-title: "Buying a Car 🆚 Taking Taxis"
+title: "Buying a Car vs. Taking Taxis"
 description: "A continuous model linking insurance, servicing, tyres, repairs and depreciation to price, distance and holding period."
 slug: car-vs-taxi
 date: "2026-11-09T00:38:54+08:00"

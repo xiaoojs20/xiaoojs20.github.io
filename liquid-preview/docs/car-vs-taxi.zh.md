@@ -1,4 +1,4 @@
-# 买车 🆚 打车：维护与核对
+# 买车 vs. 打车：维护与核对
 
 双语文章位于 content/post/car-vs-taxi/index.zh.md 和 index.en.md；两者共用 shortcode、模型模块、UI 模块和 CSS。路径分别为 /zh/p/car-vs-taxi/ 和 /p/car-vs-taxi/。随笔列表与首页最近更新自动收录。
 
