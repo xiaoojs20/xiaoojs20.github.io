@@ -97,12 +97,13 @@ The 37% above is a large-sample approximation. With finite populations the exact
 | **36.79%** | **36.79%** |
 | 50% | 34.7% |
 | 61.8% (golden ratio) | 29.7% |
+| 38.2% (1 − golden ratio) | 36.8% |
 | 80% | 17.9% |
 | 90% | 9.5% |
 
 With the exact formula instead, the optimum for 10 candidates is to observe and reject 3 (30.0%), succeeding 39.87% of the time — slightly above the asymptotic value. As the population grows the exact fraction converges to $1/e$: at 100 the optimum is 37 observed, with 37.10%; at 1000 it is 368, with 36.82%.
 
-Two things stand out. First, observing 61.8% yields only 29.7% — the golden ratio is clearly worse than simply looking at a third, and worse than 50%. Second, the optimum is flat: 30% and 36.79% differ by less than one percentage point. So there is no reason to carry 36.79% around to two decimals; what the number says is "roughly a third".
+Two things stand out. First, observing 61.8% yields only 29.7% — the golden ratio is clearly worse than simply looking at a third, and worse than 50%. But its complement, 38.2%, is almost exactly optimal at 36.8%. If 0.618 refers to the share left for selection rather than the share observed, the number is very close to correct — probably why 0.618 and 37% keep appearing in the same conversation. Second, the optimum is flat: 30% and 36.79% differ by less than one percentage point. So there is no reason to carry 36.79% around to two decimals; what the number says is "roughly a third".
 
 {{< stopping-lab kind="secretary" >}}
 
