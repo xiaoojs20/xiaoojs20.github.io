@@ -83,7 +83,7 @@
 
       outR.textContent = state.r + ' / ' + n;
       metrics.innerHTML =
-        metric(zh ? '观察比例' : 'Fraction observed', (100 * state.r / n).toFixed(1) + '%') +
+        metric(zh ? '观察比例' : 'Observed', (100 * state.r / n).toFixed(1) + '%') +
         metric(zh ? '当前策略成功率' : 'Success now', (100 * curP).toFixed(2) + '%') +
         metric(zh ? '精确最优' : 'Exact optimum', best.r + ' / ' + n, (100 * best.p).toFixed(2) + '%');
     }
@@ -210,10 +210,10 @@
       });
       s += '<path class="sl-curve" d="' + path(pts) + '"/>';
       s += '<path class="sl-guide" d="M' + CH.l + ' ' + py(c, 0, 50) + 'H' + (CH.w - CH.r) + '"/>';
-      s += '<text class="sl-caption" x="' + (CH.w - CH.r - 2) + '" y="' + (py(c, 0, 50) - 4) + '" text-anchor="end">c = ' + c.toFixed(1) + '</text>';
+      s += '<text class="sl-caption" x="' + (CH.l + 4) + '" y="' + (py(c, 0, 50) - 4) + '">c = ' + c.toFixed(1) + '</text>';
       if (bStar > 0) {
         s += '<path class="sl-guide sl-guide--soft" d="M' + px(bStar, 0, 100) + ' ' + CH.t + 'V' + (CH.h - CH.b) + '"/>';
-        s += '<text class="sl-caption" x="' + (px(bStar, 0, 100) + 3) + '" y="' + (CH.h - CH.b - 4) + '">b* = ' + bStar.toFixed(0) + '</text>';
+        s += '<text class="sl-caption" x="' + (px(bStar, 0, 100) + 4) + '" y="' + (CH.t + 10) + '">b* = ' + bStar.toFixed(0) + '</text>';
       }
       s += '<circle class="sl-point" cx="' + px(b, 0, 100) + '" cy="' + py(dv, 0, 50) + '" r="4.5"/>';
       chart.innerHTML = wrap(s, zh ? '继续搜索的期望增益曲线与接受阈值' : 'Expected gain from further search and the acceptance threshold');
@@ -283,16 +283,9 @@
       out.textContent = c.toFixed(1);
       const top = rows[0];
       const name = zh ? top.zh : top.en;
-      const mostKnown = arms.reduce((a, b) => (b.mu > a.mu ? b : a));
-      if (top.key === mostKnown.key) {
-        verdict.innerHTML = zh
-          ? '<strong>当前应优先尝试：' + top.key + '（' + name + '）。</strong> 它既有最高的估计收益，样本也最充分；其他方向的不确定性还不足以抵消这段差距。'
-          : '<strong>Try ' + top.key + ' (' + name + ') next.</strong> It has both the highest estimated payoff and the most evidence; uncertainty on the other arms does not yet close the gap.';
-      } else {
-        verdict.innerHTML = zh
-          ? '<strong>当前应优先尝试：' + top.key + '（' + name + '）。</strong> 它只被尝试了 ' + top.n + ' 次，不确定性带来的奖励足以抵消收益估计上的差距。'
-          : '<strong>Try ' + top.key + ' (' + name + ') next.</strong> With only ' + top.n + ' attempts, the bonus for uncertainty outweighs the lower estimated payoff.';
-      }
+      verdict.innerHTML = zh
+        ? '<strong>当前应优先尝试：' + top.key + '（' + name + '）。</strong> 它只被尝试了 ' + top.n + ' 次，不确定性带来的奖励足以抵消收益估计上的差距。'
+        : '<strong>Try ' + top.key + ' (' + name + ') next.</strong> With only ' + top.n + ' attempts, the bonus for uncertainty outweighs the lower estimated payoff.';
     }
 
     slider.addEventListener('input', draw);
