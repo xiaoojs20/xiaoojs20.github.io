@@ -64,6 +64,10 @@ groups:
     order: 14.5
     name: "Hunan"
     nameZh: "湖南"
+  jiangxi:
+    order: 14.7
+    name: "Jiangxi"
+    nameZh: "江西"
   jiangsu:
     order: 15
     name: "Jiangsu"
@@ -4087,6 +4091,17 @@ visits:
     regionZh: "湖南"
     latitude: 28.231216
     longitude: 112.93344
+    photos: []
+
+  - id: jingdezhen
+    group: jiangxi
+    geoGroup: china
+    name: "Jingdezhen"
+    nameZh: "景德镇"
+    region: "Jiangxi"
+    regionZh: "江西"
+    latitude: 29.2712774
+    longitude: 117.1727822
     photos: []
 
   - id: nanjing
