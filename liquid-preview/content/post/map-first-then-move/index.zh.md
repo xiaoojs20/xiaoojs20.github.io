@@ -1,8 +1,9 @@
 ---
 title: "先开图，后行动"
 description: "从秘书问题到最优停止与搜索理论：先用探索把地图打开，再决定何时动手。"
-slug: when-to-stop-searching
+slug: map-first-then-move
 date: "2026-11-26T20:33:00+08:00"
+aliases: ["/p/when-to-stop-searching/"]
 written: "2026.11"
 note: true
 hidden: true

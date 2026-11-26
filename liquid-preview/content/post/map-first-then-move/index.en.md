@@ -1,8 +1,9 @@
 ---
 title: "Map First, Then Move"
 description: "From the secretary problem to optimal stopping and search theory: reveal the map through exploration, then decide when to act."
-slug: when-to-stop-searching
+slug: map-first-then-move
 date: "2026-11-26T20:33:00+08:00"
+aliases: ["/p/when-to-stop-searching/"]
 written: "2026.11"
 note: true
 hidden: true
