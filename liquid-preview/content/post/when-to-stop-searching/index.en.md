@@ -1,6 +1,6 @@
 ---
 title: "When to Stop Looking"
-description: "From ten apartments in a podcast to the 37% rule, reservation values in search theory, and why queueing theory asks a different question."
+description: "A full treatment of the secretary problem and optimal stopping, then search theory, the value of information and explore-exploit, applied to housing, job offers, partners, investing, careers and research."
 slug: when-to-stop-searching
 date: "2026-11-26T20:33:00+08:00"
 written: "2026.11"
@@ -11,40 +11,83 @@ license: false
 math: true
 ---
 
-> Putting a few routinely confused theories in their proper places: the secretary problem, optimal stopping, search theory, the value of information, and the queueing theory that got pulled in along the way.
+> It started with a line in a podcast: look at a hundred apartments before buying, which of ten to take, and a 0.618 that turns out to be wrong. Following it led through the secretary problem, optimal stopping, search theory, the value of information and explore-exploit, and ended with a usable checklist.
 
-A few days ago I listened to an episode with Justin Sun. He argued that before buying an apartment you should look at a hundred of them, and gave a smaller version of the same story: ten apartments, buy too early and you may miss a better one, buy too late and the earlier ones are gone — so which one do you take? He also mentioned 0.618.
+A few days ago I listened to an episode with Justin Sun. He described buying property: look at a hundred apartments first, don't rush to transact. Then a smaller version: ten apartments, buy too early and you may miss a better one, buy too late and the earlier ones are gone — so which one do you take? He also mentioned the golden ratio, 0.618.
 
-The direction is right. The number is not. Chasing it down, I found several distinct theories stacked together and usually discussed as one. What follows reorders them by the question each actually answers.
+The direction is right. The number is not. Those remarks stack several different theories on top of one another: sometimes the secretary problem, sometimes search theory, sometimes the value of information, and underneath it all explore versus exploit. They are usually discussed as one thing, while answering different questions. So let me take them in order.
 
-## How to buy one of ten apartments
+## 1. The secretary problem, starting from ten apartments
 
-Write the problem in canonical form: $n$ options arrive in random order; after each you must decide immediately; a rejection cannot be taken back; you can only tell whether an option is better or worse than everything before it, not its absolute quality; and the goal is the single best one.
+### The setup
 
-This is the secretary problem. The answer: reject the first 37%, then take the first candidate better than everyone already seen.
+Suppose you run a company and need to hire the strongest of 100 candidates, under these rules:
 
-The derivation is short. Let the first $r$ be observed and rejected, and let the global best sit at position $k$. Success needs two things at once — the best arrives after the observation window, $k>r$; and among the first $k-1$ candidates the best falls inside the first $r$, otherwise you would have locked in someone suboptimal earlier. Hence
+- You know the total number of candidates in advance.
+- Candidates are interviewed in a completely random order.
+- After each interview you can rank that candidate against everyone interviewed so far.
+- You must decide hire or reject immediately after each interview.
+- A rejection cannot be reversed.
+- A hire ends the process at once.
+- The only objective is to hire the single best candidate.
+
+The question: which strategy maximises the probability of hiring the best one?
+
+### Four intuitive strategies
+
+With 100 candidates, here is what the obvious approaches yield:
+
+| Strategy | What it does | Result |
+| --- | --- | --- |
+| A, decide immediately | Hire the first person | No basis for comparison; success rate 1% |
+| B, observe half | Reject the first 50, then take the first better than all before | Decent benchmark, but the best may have been in the first half |
+| C, observe almost all | Reject the first 99, hire the last | You know almost everyone's level and can no longer choose them |
+| D, optimal stopping | Observe the first 37, then take the first record-breaker | Highest success probability under the classical model |
+
+The answer is not the 80/20 rule, not a 50/50 split, and not the golden ratio. It is the reciprocal of Euler's number:
+
+$$
+\frac{1}{e}\approx 36.79\%
+$$
+
+This is the 37% rule. Its structure has two phases: pure exploration to build a benchmark, then a selection phase in which you act on the first opportunity that beats everything seen so far.
+
+### Why exactly 37%
+
+Let there be $n$ candidates, with the first $r$ observed and rejected; afterwards you hire the first person better than everyone before. Let the global best appear at position $k$.
+
+Success requires two things at once: the best arrives after the observation window, $k>r$; and among the first $k-1$ candidates the best one falls inside the first $r$ — otherwise you would have hired someone else earlier.
+
+Since the order is random, the probability the best sits at position $k$ is $1/n$; the probability that the best of the first $k-1$ lies within the first $r$ is $r/(k-1)$. Summing over all successful cases:
 
 $$
 P(r)=\sum_{k=r+1}^{n}\frac{1}{n}\cdot\frac{r}{k-1}
 =\frac{r}{n}\sum_{k=r+1}^{n}\frac{1}{k-1}
 $$
 
-Let $n\to\infty$ and $x=r/n$; the sum becomes an integral:
+For large $n$ the sum becomes an integral; with $x=r/n$:
 
 $$
 P(x)\approx -x\ln x
 $$
 
-Set the derivative to zero:
+Differentiating:
 
 $$
-P'(x)=-\ln x-1=0\quad\Longrightarrow\quad x^*=\frac{1}{e}\approx 36.79\%
+P'(x)=-\ln x-1
 $$
 
-Substituting back gives a rather elegant result: $P(x^*)=1/e$, about 36.79%. The optimal observation fraction and the resulting success probability are the same number. Even with a million candidates this strategy still finds the best one with probability near 37%, against one in a million for picking blindly.
+Setting it to zero gives $x^*=1/e$, and since $P''(x)=-1/x<0$ this is a maximum. Substituting back:
 
-Approximate success rates at $n=100$:
+$$
+P(x^*)=\frac{1}{e}\approx 36.79\%
+$$
+
+The optimal observation fraction and the asymptotic optimal success probability are the same number. What it means concretely: even with a million candidates this strategy still lands the best one with probability near 37%, while picking at random gives one in a million.
+
+### Behaviour at finite sample sizes
+
+The 37% above is a large-sample approximation. With finite populations the exact optimum shifts slightly. Using the asymptotic curve for $n=100$, the success rate by observation fraction is:
 
 | Fraction observed | Probability of picking the best |
 | --- | --- |
@@ -58,132 +101,338 @@ Approximate success rates at $n=100$:
 | 80% | 17.9% |
 | 90% | 9.5% |
 
-Two things stand out. First, observing 61.8% yields 29.7% — the golden ratio does worse here than simply looking at a third. Second, the optimum is remarkably flat: 30% and 37% differ by half a percentage point. There is nothing sacred about 36.79%; what it says is "roughly a third", and that both too little and too much observation cost you.
+With the exact formula instead, the optimum for 10 candidates is to observe and reject 3 (30.0%), succeeding 39.87% of the time — slightly above the asymptotic value. As the population grows the exact fraction converges to $1/e$: at 100 the optimum is 37 observed, with 37.10%; at 1000 it is 369.
 
-For ten apartments the exact optimum is not "the first 3.7" but the first 3: look at three, buy none, then from the fourth onward take the first one better than all three. That succeeds 39.87% of the time, slightly above the asymptotic value.
+Two things stand out. First, observing 61.8% yields only 29.7% — the golden ratio is clearly worse than simply looking at a third, and worse than 50%. Second, the optimum is flat: 30% and 36.79% differ by less than one percentage point. So there is no reason to carry 36.79% around to two decimals; what the number says is "roughly a third".
 
-## The secretary problem is one special case
+### Why observing too much hurts
 
-The secretary problem is easy to explain because it compresses all uncertainty into a relative ranking. The price is a rigid set of assumptions. Relax any one of them and you have a different problem — laid out side by side, they also show where the later theories belong:
+Split success into two multiplied factors:
 
-| Condition | Secretary problem | Buying property | Better fit |
-| --- | --- | --- | --- |
-| Population size | Known | Unknown | Search theory |
-| Revisiting | Forbidden | Usually possible | Search theory |
-| Evaluation | Relative rank only | Absolute quality | Search theory |
-| Cost of information | Ignored | Real time and effort | Value of information |
-| Objective | The global best | Good enough | Satisficing |
+- the probability that the global best has not yet been passed over;
+- the probability of correctly recognising and taking the best, given that it has not been passed over.
 
-In general form this becomes optimal stopping:
+The more you observe, the more reliable your benchmark, so the second factor rises. But the chance that the best is already behind you also rises, so the first factor falls. Their product produces an interior optimum.
+
+Behind this sits a more general regularity: accumulating information and preserving opportunities are not aligned objectives. To obtain more information you sometimes have to give up opportunities you already hold.
+
+## 2. From the secretary problem to optimal stopping
+
+The secretary problem is elegant but its assumptions are harsh: fixed population, no going back, relative rank only, no need to judge absolute value, no room for good enough. In real life almost none of them hold.
+
+### The general form
+
+Suppose at time $t$ you receive new information, forming the information set $\mathcal{F}_t$, and decide whether to stop. Let $\tau$ be the stopping time, $R_\tau$ the payoff from acting, $C_\tau$ the accumulated search cost. The objective is
 
 $$
 \sup_{\tau\in\mathcal{T}}\ \mathbb{E}\left[R_\tau-C_\tau\right]
 $$
 
-What you optimise is not a fixed choice but a policy that decides, from the information seen so far, when to quit. As dynamic programming its skeleton is familiar:
+What is optimised is not a fixed choice but a policy that decides, from the information in hand, when to stop.
+
+As dynamic programming this means comparing two values:
 
 $$
-V_t(s)=\max\Big\{\underbrace{g_t(s)}_{\text{act now}},\ \underbrace{-c_t+\gamma\,\mathbb{E}\left[V_{t+1}(S_{t+1})\mid S_t=s\right]}_{\text{wait}}\Big\}
+V_t(s)=\max\Big\{\underbrace{g_t(s)}_{\text{act now}},\ \underbrace{-c_t+\gamma\,\mathbb{E}\left[V_{t+1}(S_{t+1})\mid S_t=s\right]}_{\text{keep looking}}\Big\}
 $$
 
-If you have met a value function in reinforcement learning, you have met this one. Optimal stopping is a special Markov decision process: two actions per state, stop or continue, and stopping jumps straight to a terminal state.
+| Symbol | Meaning |
+| --- | --- |
+| $s$ | Current state and information |
+| $g_t(s)$ | Payoff from acting immediately |
+| $c_t$ | Cost of continuing to search |
+| $\gamma$ | Discount factor on future payoff |
+| $V_t(s)$ | Expected value under the optimal policy |
 
-## Buying property is a search problem
+Anyone who has met a value function in reinforcement learning will recognise this. Optimal stopping is a special Markov decision process: two actions per state, stop or continue, and stopping enters a terminal state.
 
-The first two rows of that table — unknown population, revisiting allowed — push the apartment question into search theory. The classical model is McCall's 1970 job search model, and its centre is a threshold. Let opportunity value be a random variable $X$, let the option you can currently keep be worth $b$, and let one more search cost $c$. The expected gain from searching once more is
+### Why you need not cling to 37%
+
+Change any assumption and the optimal policy changes:
+
+| Change in the problem | How the optimal policy changes |
+| --- | --- |
+| Only relative ranks are observable | The classical 37% rule |
+| Absolute scores and their distribution are known | A dynamic threshold based on score and remaining chances |
+| Earlier candidates can be recalled | Keep the current best and keep searching |
+| Searching is expensive | Stop earlier |
+| The population size is unknown | Decide from arrival patterns and time costs |
+| The global best is not required | Accept options above a payoff threshold |
+| Multiple attempts and revisions are allowed | Becomes a general sequential decision problem |
+
+The second row matters a lot. Gilbert and Mosteller studied the full-information best-choice problem in 1966: if candidate quality is i.i.d. with a known continuous distribution, the asymptotic optimal success probability rises from 36.79% to about 58.02%. If every option can be evaluated accurately and kept until a final choice, success is of course 100%.
+
+| Information available | Asymptotic optimal success |
+| --- | --- |
+| Relative ranks only | 36.79% |
+| Absolute quality and its distribution | 58.02% |
+| All options observable before choosing | 100% |
+
+Better decisions come not only from better stopping rules but from better information, better judgement, and from altering the constraints of the decision itself.
+
+## 3. Search theory: how many apartments should you actually see
+
+Buying property differs from the secretary problem in four conspicuous ways: the number of listings is unknown; a viewed listing can often be revisited; you can judge absolute quality roughly; and viewing costs time and energy. The better fit is search theory, classically McCall's 1970 job-search model.
+
+### The reservation value
+
+Let the value of an opportunity be a random variable $X$, let the best option you can keep be worth $b$, and let one more search cost $c$. The expected incremental value of searching once more is
 
 $$
-\Delta V(b)=\mathbb{E}\left[(X-b)^+\right]=\int_b^{\infty}\left[1-F(x)\right]\mathrm{d}x
+\Delta V(b)=\mathbb{E}\left[\max(X,b)-b\right]=\mathbb{E}\left[(X-b)^+\right]
 $$
 
-Where this just equals the cost of searching, you have the break-even point $b^*$, the reservation value:
+where $(X-b)^+=\max(X-b,0)$. If opportunity values follow a distribution $F(x)$, then
+
+$$
+\Delta V(b)=\int_b^{\infty}\left[1-F(x)\right]\mathrm{d}x
+$$
+
+Under the classical conditions — i.i.d. draws, fixed search cost, the current best kept — the stopping threshold $b^*$ satisfies
 
 $$
 \mathbb{E}\left[(X-b^*)^+\right]=c
 $$
 
-A worked example. If quality is uniform on 0 to 100, $X\sim U(0,100)$, then
+This $b^*$ is the reservation value; in a job search it is the reservation wage. Once the current opportunity clears it, carrying further search costs no longer pays.
+
+### A worked example
+
+Let quality be uniform on 0 to 100, $X\sim U(0,100)$. Then
 
 $$
 \Delta V(b)=\int_b^{100}\frac{x-b}{100}\,\mathrm{d}x=\frac{(100-b)^2}{200}
 $$
 
-Setting this equal to $c$ gives $b^*=100-\sqrt{200c}$. With a search cost equivalent to 2 points the threshold is 80: once you hold an option above 80, another search no longer pays for itself.
-
-The conclusions all feel obvious, but they are computed rather than felt: cheaper search justifies chasing higher quality; a stronger current option shrinks the gain from continuing; a tighter deadline pushes you toward "good enough".
-
-So "look at a hundred" is not a theorem, it is a rule of thumb. The actual principle is marginal benefit equal to marginal cost, and that threshold depends on the quality distribution, the cost of viewing, your own judgement, and the option you already hold. Change the city, the budget or the timeline and the number changes with them.
-
-## Queueing theory asks something else
-
-The same podcast mentions queueing theory, easy to lump in. It asks a different question: how to match randomly arriving demand against limited service capacity.
-
-In the classic M/M/1 model, with arrival rate $\lambda$, service rate $\mu$ and $\lambda<\mu$, the mean time in system is
+Setting this equal to the search cost $c$:
 
 $$
-W=\frac{1}{\mu-\lambda}
+b^*=100-\sqrt{200c}
 $$
 
-Written in terms of utilisation $\rho=\lambda/\mu$, this is $W=\dfrac{1}{\mu(1-\rho)}$, and the trouble is visible: as $\rho$ approaches 1, waiting time does not grow linearly, it diverges. At 80% utilisation the mean time in system is 5 times the mean service time; at 90% it is 10 times; at 99% it is 100 times. This is why service systems should not run at full load, and why GPU inference clusters, hospital appointments and bank counters all keep slack.
+With a search cost equivalent to 2 points, the threshold is 80. Holding an option above 80, another search no longer covers its cost.
 
-It shares its probabilistic machinery with optimal stopping, but one asks "how much capacity do I need" and the other asks "when should I act". Their only real overlap is that both put a price on waiting — one on how long the queue takes, the other on whether waiting is worth it.
+The model yields four conclusions with mathematical backing: cheaper search justifies chasing higher quality; a stronger current option shrinks the gain from continuing; a tighter deadline pushes you to accept good enough; and a more favourable distribution of future opportunities raises the acceptance standard.
 
-## Looking also recalibrates your judgement
+So "look at a hundred" is not a derived result but a rule of thumb about gathering enough information. The real principle is the balance of marginal benefit and marginal cost, and that threshold depends on the quality distribution, the cost of viewing, your judgement, and what you already hold. Change the city, the budget or the timeline and the number changes too.
 
-The cost-of-information row of that table hides half the argument. Viewing the fiftieth apartment, you may dislike it entirely, yet its asking price, its transaction price, its finish and its location sharpen your sense of what the previous forty-nine were really worth. That viewing still produced value — not by finding an option, but by calibrating the function you evaluate options with.
+## 4. The value of information: why big decisions deserve research
 
-Without new information your best expected payoff is $V_0=\max_a \mathbb{E}_\theta[U(a,\theta)]$; after observing $Y$ you can re-decide, so it becomes $V_1=\mathbb{E}_Y\left[\max_a \mathbb{E}_{\theta\mid Y}[U(a,\theta)]\right]$. The difference
+Searching is not only about finding a better option; it can also be about improving your ability to evaluate the options you already have. These are different problems.
+
+Viewing the fiftieth apartment, you may not like it at all, yet its transaction price, finish and location sharpen your read on the previous forty-nine. That viewing still produced value.
+
+### The definition
+
+Let $a$ be an action, $\theta$ an uncertain state, $U(a,\theta)$ the payoff. Without new information the best expected payoff is
+
+$$
+V_0=\max_a \mathbb{E}_\theta\left[U(a,\theta)\right]
+$$
+
+After observing $Y$ you can re-decide:
+
+$$
+V_1=\mathbb{E}_Y\left[\max_a \mathbb{E}_{\theta\mid Y}\left[U(a,\theta)\right]\right]
+$$
+
+The expected value of the information is the difference:
 
 $$
 \mathrm{EVSI}=V_1-V_0
 $$
 
-is what the information is worth. As long as the cost of obtaining it stays below that, keep looking.
+EVSI stands for expected value of sample information. As long as the cost of acquiring it stays below this, further information is worth paying for.
 
-This explains why thirty apartments are worth viewing and a five-hundred-yuan jacket is not worth three hours of comparison shopping: the same method, applied to amounts and irreversibility that differ by orders of magnitude, returns orders of magnitude differently. Many people do the reverse — agonising over a cheap purchase, then choosing a city or a job on a single impression.
+### Why property deserves many viewings and a jacket does not
 
-A hundred is not necessarily better than thirty, either. If the hundred are near-identical the information gain flattened out long ago; thirty covering different districts, layouts and building ages may tell you more. Effective sample size is about variety, not count.
+Suppose research lets you avoid a loss equal to 5% of the transaction value:
 
-## The return on exploring, and its cost
+| Decision | Amount involved | Loss potentially avoided |
+| --- | --- | --- |
+| A jacket | ¥500 | ¥25 |
+| A phone | ¥6,000 | ¥300 |
+| A car | ¥300,000 | ¥15,000 |
+| An apartment | ¥5,000,000 | ¥250,000 |
+| A long-term career choice | Millions in income and opportunity | Potentially very large |
 
-Optimal stopping also assumes that choosing ends the story. But jobs can be changed, directions can pivot, cities can be left. The better description is exploration versus exploitation, whose algorithmic face is the multi-armed bandit. The classic UCB rule scores each option as
+The 5% is illustrative, not a statistical finding. But it points at a principle: research effort should be matched to the long-term impact and irreversibility of the decision.
+
+Many people do the reverse — hours of comparison shopping for a cheap item, then a single impression to choose a job, a city or a career. From an information-economics view, that is inefficient allocation of decision resources.
+
+## 5. Explore versus exploit: why youth should widen the sample
+
+Optimal stopping assumes that choosing ends the process. Life is not like that: you can take a job and then switch, try a model and then adjust, learn a skill and then pivot.
+
+- Exploration: try unknown options, gain information, discover higher payoffs.
+- Exploitation: concentrate resources on known good options and collect steady returns.
+
+This is the central tension of reinforcement learning and the multi-armed bandit. The classic UCB rule scores each option as
 
 $$
 a_t=\arg\max_i\left[\underbrace{\hat{\mu}_i}_{\text{estimated payoff}}+\underbrace{c\sqrt{\frac{\ln t}{n_i}}}_{\text{exploration bonus}}\right]
 $$
 
-A direction with a modest estimated payoff can still deserve a try if it has barely been sampled and remains uncertain. This is one mathematical basis for widening your sample of life while young: what you learn early shapes decisions for decades, so its information value is unusually high.
+where $n_i$ is how often option $i$ has been tried. A direction with a modest estimated payoff can still deserve priority if it has barely been sampled and remains uncertain. This is one mathematical basis for widening your sample of life.
 
-Exploration is not free. Skills, networks, reputation and capital accumulate, crudely captured by $K_{t+1}=(1-\delta)K_t+I_t$ — switching directions depreciates the old $K$ at rate $\delta$ and restarts the new one from zero.
+UCB does carry specific statistical assumptions, and a career is not a stationary, independent bandit. What is worth borrowing is the joint consideration of potential payoff and uncertainty.
 
-So the sensible arrangement is not "explore when young, exploit when old" but one main direction plus a standing exploration budget. A 70/20/10 split is worth trying as a starting point, not as an optimum.
+Exploration is not free. Skills, networks, capital and reputation compound, captured crudely by
 
-## Changing the problem beats solving it
+$$
+K_{t+1}=(1-\delta)K_t+I_t
+$$
 
-The least realistic thing about the secretary problem is that none of its rules can be changed. In life most of them can:
+Switching directions depreciates the old $K$ at rate $\delta$ and restarts the new one from zero. The ideal is therefore not "explore when young, exploit when old" but one direction that produces steady returns, with a standing budget for trying new ones.
 
-| Original problem | What can be changed |
+## 6. Applied to concrete decisions
+
+### Housing: build a benchmark, then recognise the opportunity
+
+First-time buyers hit two problems: they don't know what a fair price is, and they don't know what they actually want. A more disciplined process has three stages.
+
+Stage one, broad sampling. Learn about districts, prices, layouts, building ages, management and commuting. Don't transact; the task is market literacy and clarifying your real requirements.
+
+Stage two, narrowing. Rule out listings that fail hard constraints, build a valuation standard from actual transaction prices, and stop adding volume blindly in favour of targeted search.
+
+Stage three, decide on preset conditions. When a listing meets core needs, the price is reasonable, title and quality checks pass, and further search has limited incremental value, consider buying.
+
+Thirty representative apartments may beat a hundred near-identical ones. This is the statistical question of sample representativeness: effective sample size matters more than raw count.
+
+### Job search: don't lock in early, don't chase forever
+
+Suppose you expect to see 30 potential roles during campus recruiting. The secretary-problem lesson is not to commit to the first firm too early, but to use interviews, conversations and salary discussions to learn how the market prices you.
+
+A weighted evaluation model helps:
+
+| Dimension | Example weight |
 | --- | --- |
-| Must decide on the spot | Do valuation, mortgage pre-approval and due diligence in advance |
-| The offer expires soon | Ask for an extension, run interviews in parallel |
-| Unsure about a career switch | Ship a small side project first |
-| Unsure about a city | Rent there for three months |
-| Unsure the demand is real | Build an MVP |
-| Unsure about timing the market | Stagger entries instead of going all in |
+| Long-term career growth | 30% |
+| Compensation and benefits | 25% |
+| Industry prospects | 20% |
+| Team and technical level | 15% |
+| Work-life balance | 10% |
 
-Behind this is real options theory: under uncertainty, the right to wait, scale up, scale down or exit has economic value in itself. Breaking one irreversible decision into a series of reversible experiments caps your downside, and each round of real feedback corrects your judgement.
+Composite utility is
 
-## To close
+$$
+U_i=\sum_{j=1}^{m}w_jx_{ij}
+$$
 
-Everything above is one tension seen from two sides: accumulating information and preserving options pull against each other, and to look at a few more you must give up a few. Deciding early pays for insufficient information; deciding late pays for opportunities lost. The rational move is neither endless collection nor a gut call, but the cheapest point between them.
+where $w_j$ is the weight of dimension $j$ and $x_{ij}$ is offer $i$'s score on it. Under these weights, an offer scoring 90, 85, 90, 80, 60 comes to 84.3. Both weights and scores are illustrative: set your own and audit hard constraints separately.
 
-If only four lines survive:
+Real job searches differ from the secretary problem: offers expire, and several processes can run in parallel. So beyond optimising the stopping rule, change the rules — ask for extensions, run interviews concurrently, line offers up in the same window. Increasing how many opportunities you can hold at once often beats fine-tuning when to stop.
 
-- Make no major commitment before your evaluation criteria have formed.
-- Effective sample size comes from variety, not count.
-- Allocate research effort by the stakes and the irreversibility.
-- Anything that can be split into small experiments should not be a single verdict.
+### Partners: learn your preferences, don't chase a global optimum
 
-The specific number matters far less than the structure it reveals: the point of a decision was never to eliminate uncertainty, but to find, while uncertainty persists, the moment worth acting on.
+Partner choice is often used to illustrate the secretary problem: search from 20 to 30, so the 37% rule says end the observation phase around 23.7. That inference is loose, because intimate relationships violate the assumptions badly:
 
-Further reading: *Algorithms to Live By* by Brian Christian and Tom Griffiths — chapter one is optimal stopping, chapter two is explore versus exploit, and it works well as an entry point.
+| Secretary problem | Partner choice in reality |
+| --- | --- |
+| Fixed number of candidates | Unknown how many you will meet |
+| Fixed candidate quality | People grow and change |
+| Unilateral choice | Mutual selection |
+| Quality judged immediately | Deep traits need time together |
+| A single ranking | Values, temperament and goals are multidimensional |
+| Payoff fixed once chosen | Relationship quality is built jointly |
+
+What transfers is this: before committing long term, meet a range of people through real social life and learn your own preferences, boundaries and core needs. But there is no reason to deliberately reject the first 37%, and certainly no reason to abandon a good relationship because a theoretically better partner might exist. Partner choice is less about taking the maximum from a pool than about finding someone long-term compatible and building value together.
+
+### Investing: act after research, don't wait for the perfect entry
+
+The familiar bind: buy now and it may fall tomorrow; wait and it may run away.
+
+Holding cash preserves the option to invest later, but waiting carries opportunity cost in appreciation, dividends and compounding. One important improvement is to avoid a single all-in decision. Staged entry, regular investing and target allocations convert a hard one-shot stopping problem into a staged one.
+
+For long-term index investing, hunting the absolute bottom is not a sensible objective. For individual stocks, thresholds based on valuation, fundamentals and risk usually beat mechanically waiting for some fraction of time to elapse.
+
+### Career: when to stop exploring and go deep
+
+Probably the most useful application for younger readers. Suppose four directions: build expertise in a mature industry, enter a fast-growing technology field, start a company, or build an audience as a creator.
+
+Careers differ because payoffs are not fixed: time invested builds capability, network and resources, which reshape future payoff distributions. The equation $K_{t+1}=(1-\delta)K_t+I_t$ is the reminder that frequent switching raises learning costs and destroys accumulation.
+
+A reasonable arrangement runs a core direction alongside exploration. 70/20/10 is a workable example: 70% into the core for capability and long-term returns, 20% into adjacent exploration, 10% into cross-domain bets with non-linear upside. It is not a proven optimum, but it maintains accumulation without foreclosing discovery.
+
+### Research and study: when to stop reading papers
+
+Entering a new field, it is easy to keep collecting material and never start. Whether paper number thirty is worth reading depends on whether it changes your understanding of the problem, your choice of technical route, your experimental design, or your eventual conclusions.
+
+If it changes none of them, the marginal value is probably low. At that point an experiment, an implementation or a draft produces more new information. From a sequential-decision view, action is itself a form of information gathering — reading, observing and surveying are not the only kinds of exploration.
+
+## 7. Changing the problem beats solving it
+
+The rules of the secretary problem cannot be changed. In life they usually can:
+
+| Original problem | How to change the decision structure |
+| --- | --- |
+| Must decide on the spot | Prepare valuation, financing and due diligence in advance |
+| Offer about to expire | Ask for an extension, interview in parallel |
+| Unsure about a career switch | Ship a low-cost project or part-time trial first |
+| Unsure about a city | Live there briefly before settling |
+| Unsure a venture will work | Build an MVP to test real demand |
+| Unsure about investing now | Stagger entries rather than one decision |
+| Unsure a research direction is viable | Run a small pilot experiment |
+
+Behind this is real options theory: under uncertainty, the right to wait, scale up, scale down or exit has economic value in itself.
+
+Rather than trying to think your way to the one correct answer, break a major irreversible decision into a series of small reversible experiments. The traditional mode is a single irreversible verdict; the sequential mode is staged commitment with continuously updated beliefs. The latter caps the cost of being wrong and uses real feedback to correct judgement.
+
+## 8. A general personal decision framework
+
+Pulling the theories together yields a checklist:
+
+1. Define the objective. What exactly are you optimising: income, growth, wellbeing, freedom, or risk?
+2. Assess reversibility. Can this be undone, and at what cost?
+3. Set an exploration budget. How much time, money and energy at most for information?
+4. Get a representative sample. Have you seen genuinely varied opportunities rather than repeated similar ones?
+5. Build an evaluation system. Hard constraints, dimensions, preferences and a minimum acceptance standard.
+6. Value further search. Could more information change the decision, and does expected gain exceed cost?
+7. Preserve optionality. Can you trial, rent short-term, stage the investment, or use another reversible form?
+8. Act and review. Once the stopping condition is met, act, then update on real outcomes.
+
+Different decision types deserve visibly different strategies:
+
+| Decision type | Suitable strategy |
+| --- | --- |
+| Low value, reversible | Decide fast, minimise cognitive cost |
+| Low value, irreversible | Satisfy basic conditions and move on |
+| High value, reversible | Small-scale trial and error, adjust dynamically |
+| High value, irreversible | Deep research, strict stopping threshold |
+
+## 9. The wider map of theory
+
+To study this systematically, place these ideas inside sequential decision science and go in this order:
+
+| Order | Theory | Core idea |
+| --- | --- | --- |
+| 1 | Secretary Problem | How long to explore before choosing |
+| 2 | Optimal Stopping | When to stop and act |
+| 3 | Search Theory | How much resource to spend searching |
+| 4 | Value of Information | How to price what you know |
+| 5 | Bayesian Decision Theory | How to update on new information |
+| 6 | Multi-Armed Bandit | How to balance exploration and exploitation |
+| 7 | Real Options Theory | How to preserve the right to act later |
+| 8 | Sequential Decision Theory | How to handle long-run dynamic decisions |
+
+A few books to continue with:
+
+- *Algorithms to Live By*, Brian Christian and Tom Griffiths. The best entry point: chapter one is optimal stopping, chapter two is explore versus exploit.
+- *Thinking in Bets*, Annie Duke. Probabilistic decisions under uncertainty, and why outcomes alone do not measure decision quality.
+- *Great Expectations: The Theory of Optimal Stopping*, Chow, Robbins and Siegmund. A more technical treatment of optimal stopping and stochastic processes.
+- For academic material, Thomas S. Ferguson's 1989 survey *Who Solved the Secretary Problem?*, and QuantEcon's *The McCall Search Model*, which pairs the theory with Python.
+
+## 10. Six things worth keeping
+
+After all the derivation, what deserves long-term use is not the number 37% but these six points.
+
+1. Make no major commitment before your evaluation criteria are reliable. With too little information you do not even know what level the current opportunity occupies.
+2. Deliberately widen your effective sample. More varied people, industries, cities and ways of living both surface opportunities and improve your evaluation system.
+3. Allocate research effort in proportion to importance. The more valuable, long-term and irreversible the decision, the more time it deserves; everything else should be finished quickly.
+4. Do not chase the global optimum; chase the expected optimum net of cost. Waiting indefinitely for a possibly better option does not necessarily raise final payoff.
+5. Convert irreversible major decisions into reversible small experiments wherever possible. Much uncertainty cannot be reasoned away, only discovered through action.
+6. Keep accumulating along one direction while retaining capacity to explore. Neither freeze so early that new possibilities vanish, nor explore so long that compounding never starts.
+
+Everything above is one tension seen from two sides: accumulating information and preserving options pull against each other, and to look at a few more you must give up a few. Deciding early pays for insufficient information; deciding late pays for opportunities lost.
+
+The purpose of a decision is not to eliminate uncertainty, but to find, while uncertainty persists, the moment worth acting on.
