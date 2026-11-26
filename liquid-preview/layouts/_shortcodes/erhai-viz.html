@@ -1,0 +1,3 @@
+{{- $cache := printf "%s|%s" (readFile "static/css/erhai-viz.css" | crypto.SHA256) (readFile "static/js/erhai-viz.js" | crypto.SHA256) | crypto.SHA256 -}}
+<link rel="stylesheet" href="{{ "css/erhai-viz.css" | relURL }}?v={{ $cache }}">
+<script defer src="{{ "js/erhai-viz.js" | relURL }}?v={{ $cache }}"></script>

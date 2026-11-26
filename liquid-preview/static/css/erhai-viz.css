@@ -1,0 +1,73 @@
+/* Erhai reflections: in-article diagrams. Uses theme variables so it adapts to light/dark. */
+.erhai-viz {
+  --er-ink: var(--card-text-color-main, #303030);
+  --er-muted: var(--card-text-color-secondary, #777);
+  --er-line: var(--card-separator-color, #d9d9d9);
+  --er-accent: var(--accent-color, #47786e);
+  --er-soft: var(--body-background, #f5f5f5);
+  --er-paper: var(--card-background, #fff);
+  color: var(--er-ink);
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 28px 0;
+  min-width: 0;
+}
+.erhai-viz * { box-sizing: border-box; }
+.erhai-viz .viz,
+.erhai-viz .timeline { border: 1px solid var(--er-line); border-radius: 10px; padding: 20px; background: var(--er-paper); }
+.erhai-viz .viz-label { font-size: 14px; font-weight: 650; margin: 0 0 14px; color: var(--er-ink); }
+.erhai-viz figcaption { font-size: 13px; line-height: 1.6; text-align: center; color: var(--er-muted); margin-top: 10px; }
+.erhai-viz .timeline { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 18px; }
+.erhai-viz .milestone { padding: 4px 12px; border-left: 3px solid var(--er-accent); }
+.erhai-viz .year { font-size: 29px; font-weight: 650; color: var(--er-accent); line-height: 1.3; }
+.erhai-viz .milestone b,
+.erhai-viz .milestone span { display: block; }
+.erhai-viz .milestone span { font-size: 13px; color: var(--er-muted); margin-top: 4px; }
+.erhai-viz .infra-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.erhai-viz button { font: inherit; color: inherit; cursor: pointer; }
+.erhai-viz .infra { padding: 12px 9px; background: var(--er-paper); border: 1px solid var(--er-line); border-radius: 7px; text-align: left; min-height: 70px; }
+.erhai-viz .infra[aria-pressed="true"] { border-color: var(--er-accent); background: var(--er-soft); color: var(--er-accent); }
+.erhai-viz small { display: block; font-size: 12px; color: var(--er-muted); margin-top: 4px; }
+.erhai-viz .infra-panel { padding: 13px 15px; background: var(--er-soft); border-radius: 7px; margin-top: 10px; }
+.erhai-viz .infra-panel p { font-size: 14px; margin: 6px 0 0; line-height: 1.65; }
+.erhai-viz .note { font-size: 12px; color: var(--er-muted); margin: 10px 0 0; }
+.erhai-viz .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.erhai-viz .compare > div { padding: 13px; background: var(--er-soft); border-radius: 7px; }
+.erhai-viz .compare .before { background: transparent; border: 1px solid var(--er-line); }
+.erhai-viz .compare h3 { font-size: 15px; margin: 0 0 12px; padding: 0; border: 0; }
+.erhai-viz dl { margin: 0; }
+.erhai-viz dt { font-size: 12px; color: var(--er-muted); margin: 10px 0 2px; }
+.erhai-viz dd { font-size: 14px; margin: 0; }
+.erhai-viz .flow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; text-align: center; }
+.erhai-viz .node { border: 1px solid var(--er-line); padding: 12px 4px; border-radius: 7px; }
+.erhai-viz .down { text-align: center; color: var(--er-accent); font-size: 22px; }
+.erhai-viz .center-node { text-align: center; padding: 12px; border: 1px solid var(--er-accent); background: var(--er-soft); border-radius: 7px; font-weight: 650; color: var(--er-accent); }
+.erhai-viz .choices { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }
+.erhai-viz .choices span { font-size: 13px; padding: 4px 10px; border: 1px solid var(--er-line); border-radius: 20px; }
+.erhai-viz .question { padding: 11px 0; border-bottom: 1px solid var(--er-line); }
+.erhai-viz .question:last-of-type { border-bottom: 0; }
+.erhai-viz summary { cursor: pointer; font-weight: 600; }
+.erhai-viz .question p { font-size: 14px; margin: 8px 0 0; }
+.erhai-viz .buffer-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.erhai-viz label { display: block; font-size: 13px; color: var(--er-muted); }
+.erhai-viz input[type="range"] { width: 100%; accent-color: var(--er-accent); margin: 12px 0 2px; }
+.erhai-viz output { font-variant-numeric: tabular-nums; font-weight: 650; color: var(--er-ink); }
+.erhai-viz .buffer-result { margin: 14px 0 0; padding: 14px; background: var(--er-soft); border-radius: 7px; }
+.erhai-viz .buffer-months { font-size: 28px; font-weight: 700; color: var(--er-accent); }
+.erhai-viz .bar { height: 8px; border-radius: 5px; background: var(--er-line); overflow: hidden; margin: 9px 0; }
+.erhai-viz .bar-fill { height: 100%; background: var(--er-accent); width: 50%; transition: width .15s; }
+.erhai-viz button:focus-visible,
+.erhai-viz input:focus-visible,
+.erhai-viz summary:focus-visible { outline: 2px solid var(--er-accent); outline-offset: 3px; }
+@media (max-width: 560px) {
+  .erhai-viz .viz { padding: 14px; }
+  .erhai-viz .infra-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .erhai-viz .timeline { gap: 8px; padding: 12px; }
+  .erhai-viz .milestone { padding: 4px 8px; }
+  .erhai-viz .compare { gap: 8px; }
+  .erhai-viz .compare > div { padding: 10px; }
+  .erhai-viz .buffer-inputs { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .erhai-viz .bar-fill { transition: none; }
+}
