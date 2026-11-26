@@ -18,6 +18,8 @@ These concepts do not map exactly onto their historical political and economic c
 
 ## A personal Meiji Restoration: a revolution in capability
 
+**The core of the Meiji Restoration is a revolution in capability.**
+
 For more than twenty years, the signals that charted a life's progress came mostly from the outside. Exams, schooling, grades, rankings, job hunting — society and the education system supplied a fairly clear standard of evaluation. We only had to optimize within a given objective function to earn steady, stage-by-stage feedback. But in adulthood, more and more questions have no standard answer, and even the objective function itself has to be defined by ourselves.
 
 Wealth, health, career, freedom, family, social influence — what is it that we truly want? How do we rank these things, and how do we divide our limited time and energy among them? When should we persevere, and when should we cut our losses? These questions are far harder than excelling within an established system of evaluation.
@@ -56,6 +58,8 @@ This is one reason I love to travel. Beyond natural scenery, you get to observe 
 > Build our knowledge inwardly, and explore this blue planet outwardly.
 
 ## A family reform and opening-up: an institutional revolution
+
+**The core of reform and opening-up is an institutional revolution.**
 
 A family is the organization most people spend the longest part of their lives in, yet its operating rules are rarely the subject of serious discussion. We readily spend hours studying a company's governance, incentives and strategy, but seldom think systematically about our own family's finances, division of responsibilities, decision-making and sharing of risk.
 
