@@ -283,9 +283,16 @@
       out.textContent = c.toFixed(1);
       const top = rows[0];
       const name = zh ? top.zh : top.en;
-      verdict.innerHTML = zh
-        ? '<strong>当前应优先尝试：' + top.key + '（' + name + '）。</strong> 它只被尝试了 ' + top.n + ' 次，不确定性带来的奖励足以抵消收益估计上的差距。'
-        : '<strong>Try ' + top.key + ' (' + name + ') next.</strong> With only ' + top.n + ' attempts, the bonus for uncertainty outweighs the lower estimated payoff.';
+      const mostKnown = arms.reduce((a, b) => (b.mu > a.mu ? b : a));
+      if (top.key === mostKnown.key) {
+        verdict.innerHTML = zh
+          ? '<strong>当前应优先尝试：' + top.key + '（' + name + '）。</strong> 它既有最高的估计收益，样本也最充分；其他方向的不确定性还不足以抵消这段差距。'
+          : '<strong>Try ' + top.key + ' (' + name + ') next.</strong> It has both the highest estimated payoff and the most evidence; uncertainty on the other arms does not yet close the gap.';
+      } else {
+        verdict.innerHTML = zh
+          ? '<strong>当前应优先尝试：' + top.key + '（' + name + '）。</strong> 它只被尝试了 ' + top.n + ' 次，不确定性带来的奖励足以抵消收益估计上的差距。'
+          : '<strong>Try ' + top.key + ' (' + name + ') next.</strong> With only ' + top.n + ' attempts, the bonus for uncertainty outweighs the lower estimated payoff.';
+      }
     }
 
     slider.addEventListener('input', draw);
