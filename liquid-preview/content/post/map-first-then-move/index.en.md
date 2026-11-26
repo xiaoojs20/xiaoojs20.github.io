@@ -12,8 +12,6 @@ license: false
 math: true
 ---
 
-> It started with a line in a podcast: look at a hundred apartments before buying, which of ten to take, and a 0.618 that turns out to be wrong. Following it led through the secretary problem, optimal stopping, search theory, the value of information and explore-exploit, and ended with a usable checklist.
-
 A few days ago I listened to an episode with Justin Sun. He described buying property: look at a hundred apartments first, don't rush to transact. Then a smaller version: ten apartments, buy too early and you may miss a better one, buy too late and the earlier ones are gone — so which one do you take? He also mentioned the golden ratio, 0.618.
 
 The direction is right. The number is not. Those remarks stack several different theories on top of one another: sometimes the secretary problem, sometimes search theory, sometimes the value of information, and underneath it all explore versus exploit. They are usually discussed as one thing, while answering different questions. So let me take them in order.
