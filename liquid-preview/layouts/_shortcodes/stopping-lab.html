@@ -1,0 +1,8 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+{{- $kind := .Get "kind" -}}
+<link rel="stylesheet" href="{{ "css/stopping-lab.css" | relURL }}?v={{ readFile "static/css/stopping-lab.css" | crypto.SHA256 }}">
+<section class="stopping-lab" data-stopping-lab="{{ $kind }}" data-language="{{ cond $zh "zh" "en" }}" aria-label="{{ cond $zh "决策模型交互演示" "Interactive decision model" }}">
+  <p class="sl-loading">{{ cond $zh "正在加载交互演示……" "Loading interactive demo…" }}</p>
+  <noscript>{{ cond $zh "启用 JavaScript 可使用交互演示；正文已给出全部模型与数值。" "Enable JavaScript for the interactive demo; the article already gives every model and value." }}</noscript>
+</section>
+<script defer src="{{ "js/stopping-lab.js" | relURL }}?v={{ readFile "static/js/stopping-lab.js" | crypto.SHA256 }}"></script>

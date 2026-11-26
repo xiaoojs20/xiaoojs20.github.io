@@ -101,9 +101,11 @@ The 37% above is a large-sample approximation. With finite populations the exact
 | 80% | 17.9% |
 | 90% | 9.5% |
 
-With the exact formula instead, the optimum for 10 candidates is to observe and reject 3 (30.0%), succeeding 39.87% of the time — slightly above the asymptotic value. As the population grows the exact fraction converges to $1/e$: at 100 the optimum is 37 observed, with 37.10%; at 1000 it is 369.
+With the exact formula instead, the optimum for 10 candidates is to observe and reject 3 (30.0%), succeeding 39.87% of the time — slightly above the asymptotic value. As the population grows the exact fraction converges to $1/e$: at 100 the optimum is 37 observed, with 37.10%; at 1000 it is 368, with 36.82%.
 
 Two things stand out. First, observing 61.8% yields only 29.7% — the golden ratio is clearly worse than simply looking at a third, and worse than 50%. Second, the optimum is flat: 30% and 36.79% differ by less than one percentage point. So there is no reason to carry 36.79% around to two decimals; what the number says is "roughly a third".
+
+{{< stopping-lab kind="secretary" >}}
 
 ### Why observing too much hurts
 
@@ -214,7 +216,25 @@ With a search cost equivalent to 2 points, the threshold is 80. Holding an optio
 
 The model yields four conclusions with mathematical backing: cheaper search justifies chasing higher quality; a stronger current option shrinks the gain from continuing; a tighter deadline pushes you to accept good enough; and a more favourable distribution of future opportunities raises the acceptance standard.
 
+{{< stopping-lab kind="search" >}}
+
 So "look at a hundred" is not a derived result but a rule of thumb about gathering enough information. The real principle is the balance of marginal benefit and marginal cost, and that threshold depends on the quality distribution, the cost of viewing, your judgement, and what you already hold. Change the city, the budget or the timeline and the number changes too.
+
+## Queueing theory asks something else
+
+The same podcast mentions queueing theory, easy to lump in. It asks a different question: how to match randomly arriving demand against limited service capacity.
+
+In the classic M/M/1 model, with arrival rate $\lambda$, service rate $\mu$ and $\lambda<\mu$, the mean time in system is
+
+$$
+W=\frac{1}{\mu-\lambda}
+$$
+
+Written in terms of utilisation $\rho=\lambda/\mu$, this is $W=\dfrac{1}{\mu(1-\rho)}$, and the trouble is visible: as $\rho$ approaches 1, waiting time does not grow linearly, it diverges. At 80% utilisation the mean time in system is 5 times the mean service time; at 90% it is 10 times; at 99% it is 100 times. This is why service systems should not run at full load, and why GPU inference clusters, hospital appointments and bank counters all keep slack.
+
+{{< stopping-lab kind="queue" >}}
+
+It shares its probabilistic machinery with optimal stopping, but one asks "how much capacity do I need" and the other asks "when should I act". Their only real overlap is that both put a price on waiting — one on how long the queue takes, the other on whether waiting is worth it.
 
 ## The value of information: why big decisions deserve research
 
@@ -275,6 +295,8 @@ $$
 
 where $n_i$ is how often option $i$ has been tried. A direction with a modest estimated payoff can still deserve priority if it has barely been sampled and remains uncertain. This is one mathematical basis for widening your sample of life.
 
+{{< stopping-lab kind="mab" >}}
+
 UCB does carry specific statistical assumptions, and a career is not a stationary, independent bandit. What is worth borrowing is the joint consideration of potential payoff and uncertainty.
 
 Exploration is not free. Skills, networks, capital and reputation compound, captured crudely by
@@ -321,6 +343,8 @@ $$
 
 where $w_j$ is the weight of dimension $j$ and $x_{ij}$ is offer $i$'s score on it. Under these weights, an offer scoring 90, 85, 90, 80, 60 comes to 84.3. Both weights and scores are illustrative: set your own and audit hard constraints separately.
 
+{{< stopping-lab kind="offer" >}}
+
 Real job searches differ from the secretary problem: offers expire, and several processes can run in parallel. So beyond optimising the stopping rule, change the rules — ask for extensions, run interviews concurrently, line offers up in the same window. Increasing how many opportunities you can hold at once often beats fine-tuning when to stop.
 
 ### Partners: learn your preferences, don't chase a global optimum
@@ -353,6 +377,8 @@ Probably the most useful application for younger readers. Suppose four direction
 Careers differ because payoffs are not fixed: time invested builds capability, network and resources, which reshape future payoff distributions. The equation $K_{t+1}=(1-\delta)K_t+I_t$ is the reminder that frequent switching raises learning costs and destroys accumulation.
 
 A reasonable arrangement runs a core direction alongside exploration. 70/20/10 is a workable example: 70% into the core for capability and long-term returns, 20% into adjacent exploration, 10% into cross-domain bets with non-linear upside. It is not a proven optimum, but it maintains accumulation without foreclosing discovery.
+
+{{< stopping-lab kind="resource" >}}
 
 ### Research and study: when to stop reading papers
 
@@ -390,6 +416,8 @@ Pulling the theories together yields a checklist:
 6. Value further search. Could more information change the decision, and does expected gain exceed cost?
 7. Preserve optionality. Can you trial, rent short-term, stage the investment, or use another reversible form?
 8. Act and review. Once the stopping condition is met, act, then update on real outcomes.
+
+{{< stopping-lab kind="checklist" >}}
 
 Different decision types deserve visibly different strategies:
 
