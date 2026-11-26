@@ -443,13 +443,6 @@ To study this systematically, place these ideas inside sequential decision scien
 | 7 | Real Options Theory | How to preserve the right to act later |
 | 8 | Sequential Decision Theory | How to handle long-run dynamic decisions |
 
-A few books to continue with:
-
-- *Algorithms to Live By*, Brian Christian and Tom Griffiths. The best entry point: chapter one is optimal stopping, chapter two is explore versus exploit.
-- *Thinking in Bets*, Annie Duke. Probabilistic decisions under uncertainty, and why outcomes alone do not measure decision quality.
-- *Great Expectations: The Theory of Optimal Stopping*, Chow, Robbins and Siegmund. A more technical treatment of optimal stopping and stochastic processes.
-- For academic material, Thomas S. Ferguson's 1989 survey *Who Solved the Secretary Problem?*, and QuantEcon's *The McCall Search Model*, which pairs the theory with Python.
-
 ## Six things worth keeping
 
 After all the derivation, what deserves long-term use is not the number 37% but these six points.

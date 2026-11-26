@@ -443,13 +443,6 @@ $$
 | 7 | Real Options Theory | 保留未来行动的权利 |
 | 8 | Sequential Decision Theory | 统一处理长期动态决策 |
 
-几本可以接着读的书：
-
-- 《算法之美》（*Algorithms to Live By*），Brian Christian 与 Tom Griffiths。最适合入门，第一章是最优停止，第二章是探索与利用。
-- 《对赌》（*Thinking in Bets*），Annie Duke。讨论如何在不确定性中做概率化决策，以及为什么不能仅凭结果好坏评价决策质量。
-- *Great Expectations: The Theory of Optimal Stopping*，Chow、Robbins、Siegmund。更专业的数学著作，适合深入随机过程与最优停止。
-- 想看学术材料，可以找 Thomas S. Ferguson 1989 年的综述 *Who Solved the Secretary Problem?*，以及结合 Python 讲解决策模型的 QuantEcon: The McCall Search Model。
-
 ## 最值得留下的六条
 
 推导到这里，真正值得长期应用的并不是 37% 这个数，而是下面六条。
