@@ -16,14 +16,6 @@ At the start of 2026, I set myself two goals: to bring about a personal Meiji Re
 
 These concepts do not map exactly onto their historical political and economic counterparts. I am borrowing from historical experience to think about how a person completes their own modernization, and how one builds a more modern family.
 
-<figure class="erhai-viz" data-lang="en">
-<div class="timeline">
-<div class="milestone"><div class="year">3 years</div><b>A personal Meiji Restoration</b><span>Building the capacity for independent decisions and lasting growth</span></div>
-<div class="milestone"><div class="year">5 years</div><b>A family reform and opening-up</b><span>Exploring equality, consultation, and openness in family life</span></div>
-</div>
-<figcaption>Two directions set at the start of 2026 — not deadlines that must be met on schedule.</figcaption>
-</figure>
-
 ## A personal Meiji Restoration: a revolution in capability
 
 For more than twenty years, the signals that charted a life's progress came mostly from the outside. Exams, schooling, grades, rankings, job hunting — society and the education system supplied a fairly clear standard of evaluation. We only had to optimize within a given objective function to earn steady, stage-by-stage feedback. But in adulthood, more and more questions have no standard answer, and even the objective function itself has to be defined by ourselves.
@@ -62,8 +54,6 @@ At the same time, one needs the spirit of the Iwakura Mission: acknowledge how m
 This is one reason I love to travel. Beyond natural scenery, you get to observe how people in different places live, and how they understand career, wealth, family and happiness. You meet different industries and different ages of people, and see what possibilities exist outside the path you know. Sometimes, encountering a way of life you had never imagined is more valuable than acquiring a specific piece of knowledge. It changes not only how we understand the world, but how we imagine our own future.
 
 > Build our knowledge inwardly, and explore this blue planet outwardly.
-
-I explored the balance between exploration and action further in [Before You Move, Open the Map](/p/map-first-then-move/). What I want to stress here is that exploration is valuable not only for finding a better answer, but for making visible the questions that were never in view to begin with.
 
 ## A family reform and opening-up: an institutional revolution
 
@@ -158,16 +148,6 @@ A relationship in which people remain willing to support one another after becom
 <p class="note">Simplified estimate: available savings ÷ essential monthly spending. It ignores investment returns, changes in debt, inflation and unexpected costs; it does not mean financial freedom and is not financial advice. All figures are illustrative.</p>
 </div>
 <figcaption>A financial reserve offers not absolute safety, but time to respond to change.</figcaption>
-</figure>
-
-<figure class="erhai-viz" data-lang="en">
-<div class="viz">
-<div class="viz-label">A few questions worth keeping · click to expand</div>
-<details class="question"><summary>Can I bear the consequences of my choices?</summary><p>Without extra financial support from family, could I still choose my career, where I live and how I live? That may matter more than arguing over whose values are right.</p></details>
-<details class="question"><summary>Can I respect family members who choose differently?</summary><p>When a family member decides differently from what I expect, but without infringing on anyone else's rights, can I still accept their right to decide their own life?</p></details>
-<details class="question"><summary>After independence, how do we keep supporting each other?</summary><p>Economic independence does not cancel family responsibility. How to share the costs of elder care, caregiving and other family risks while remaining autonomous deserves ongoing discussion.</p></details>
-</div>
-<figcaption>No scores and no standard answers here — only questions worth returning to.</figcaption>
 </figure>
 
 ## Witnesses to a life
