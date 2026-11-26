@@ -435,21 +435,6 @@ Different decision types deserve visibly different strategies:
 | High value, reversible | Small-scale trial and error, adjust dynamically |
 | High value, irreversible | Deep research, strict stopping threshold |
 
-## The wider map of theory
-
-To study this systematically, place these ideas inside sequential decision science and go in this order:
-
-| Order | Theory | Core idea |
-| --- | --- | --- |
-| 1 | Secretary Problem | How long to explore before choosing |
-| 2 | Optimal Stopping | When to stop and act |
-| 3 | Search Theory | How much resource to spend searching |
-| 4 | Value of Information | How to price what you know |
-| 5 | Bayesian Decision Theory | How to update on new information |
-| 6 | Multi-Armed Bandit | How to balance exploration and exploitation |
-| 7 | Real Options Theory | How to preserve the right to act later |
-| 8 | Sequential Decision Theory | How to handle long-run dynamic decisions |
-
 ## Conclusion
 
 After all the derivation, what deserves long-term use is not the number 37% but these six points.

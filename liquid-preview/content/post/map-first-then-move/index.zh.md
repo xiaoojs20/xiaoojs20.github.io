@@ -435,21 +435,6 @@ $$
 | 高价值、可逆 | 小规模试错，动态调整 |
 | 高价值、不可逆 | 深度调研，设定严格的停止阈值 |
 
-## 相关理论的完整图景
-
-如果想系统学习，可以把这些内容放在序贯决策科学的框架下，按下面的顺序推进：
-
-| 顺序 | 理论 | 核心思想 |
-| --- | --- | --- |
-| 1 | Secretary Problem | 探索多久再开始选择 |
-| 2 | Optimal Stopping | 什么时候停止并行动 |
-| 3 | Search Theory | 应该投入多少资源搜索 |
-| 4 | Value of Information | 如何量化认知的价值 |
-| 5 | Bayesian Decision Theory | 根据新信息更新判断 |
-| 6 | Multi-Armed Bandit | 平衡探索与利用 |
-| 7 | Real Options Theory | 保留未来行动的权利 |
-| 8 | Sequential Decision Theory | 统一处理长期动态决策 |
-
 ## 结语
 
 推导到这里，真正值得长期应用的并不是 37% 这个数，而是下面六条。
