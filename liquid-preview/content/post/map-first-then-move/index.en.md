@@ -426,8 +426,6 @@ Pulling the theories together yields a checklist:
 7. Preserve optionality. Can you trial, rent short-term, stage the investment, or use another reversible form?
 8. Act and review. Once the stopping condition is met, act, then update on real outcomes.
 
-{{< stopping-lab kind="checklist" >}}
-
 Different decision types deserve visibly different strategies:
 
 | Decision type | Suitable strategy |

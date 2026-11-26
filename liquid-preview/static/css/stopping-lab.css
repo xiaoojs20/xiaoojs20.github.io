@@ -324,27 +324,6 @@
   background: color-mix(in srgb, var(--sl-ink) 22%, transparent);
 }
 
-.stopping-lab .sl-checks {
-  display: grid;
-  gap: 0.4em;
-  margin-top: 0.3em;
-}
-
-.stopping-lab .sl-checks label {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.55em;
-  font-weight: 400;
-  font-size: 0.9em;
-  line-height: 1.45;
-}
-
-.stopping-lab .sl-checks input {
-  margin-top: 0.28em;
-  flex: none;
-  accent-color: var(--sl-ink);
-}
-
 .stopping-lab button {
   padding: 0.42em 0.75em;
   margin: 0.55em 0.45em 0 0;

@@ -396,63 +396,7 @@
     draw();
   }
 
-  /* ---------------- checklist ---------------- */
-  function checklist(root, zh) {
-    const itemsZh = [
-      '明确优化目标：究竟在追求收入、成长、幸福、自由，还是风险最小化？',
-      '判断可逆性：这项决策能否撤销，撤销成本多大？',
-      '设定探索预算：最多投入多少时间、金钱和精力获取信息？',
-      '获取代表性样本：是否了解了足够多具有差异性的机会？',
-      '建立评价体系：硬性约束、评价维度、个人偏好与最低接受标准。',
-      '评估继续搜索的价值：更多信息是否可能改变决策？',
-      '保留未来选择权：能否先试用、短租、分批投入？',
-      '及时行动与复盘：达到停止条件就行动，再按真实结果更新认知。'
-    ];
-    const itemsEn = [
-      'Define the objective: income, growth, wellbeing, freedom, or risk?',
-      'Assess reversibility: can this be undone, and at what cost?',
-      'Set an exploration budget: how much time, money and energy at most?',
-      'Get a representative sample: have you seen genuinely varied options?',
-      'Build an evaluation system: constraints, dimensions, preferences, minimum standard.',
-      'Value further search: could more information change the decision?',
-      'Preserve optionality: can you trial, rent short-term, or stage the commitment?',
-      'Act and review: act once the stopping condition is met, then update.'
-    ];
-    const items = zh ? itemsZh : itemsEn;
-    root.innerHTML =
-      '<h4>' + (zh ? '重大决策检查清单' : 'Major decision checklist') + ': <span data-count>0 / ' + items.length + '</span></h4>' +
-      '<div class="sl-checks">' + items.map((t, i) => '<label><input type="checkbox"><span>' + (i + 1) + '. ' + t + '</span></label>').join('') + '</div>' +
-      '<button type="button" data-copy>' + (zh ? '复制清单' : 'Copy checklist') + '</button>' +
-      '<button type="button" data-reset>' + (zh ? '重置' : 'Reset') + '</button>' +
-      '<div data-status role="status"></div>';
-
-    const inputs = [...root.querySelectorAll('input')];
-    const count = root.querySelector('[data-count]');
-    const status = root.querySelector('[data-status]');
-    const update = () => {
-      const done = inputs.filter(x => x.checked).length;
-      count.textContent = done + ' / ' + items.length;
-      if (done === items.length) status.textContent = zh ? '八项都已过一遍，可以进入决策。' : 'All eight reviewed; ready to decide.';
-    };
-    inputs.forEach(x => x.addEventListener('change', update));
-    root.querySelector('[data-reset]').addEventListener('click', () => {
-      inputs.forEach(x => { x.checked = false; });
-      update();
-      status.textContent = zh ? '已重置。' : 'Reset.';
-    });
-    root.querySelector('[data-copy]').addEventListener('click', async () => {
-      const text = items.map((t, i) => (inputs[i].checked ? '[x] ' : '[ ] ') + (i + 1) + '. ' + t).join('\n');
-      try {
-        if (!navigator.clipboard) throw new Error('unavailable');
-        await navigator.clipboard.writeText(text);
-        status.textContent = zh ? '清单已复制。' : 'Checklist copied.';
-      } catch (e) {
-        status.textContent = zh ? '无法访问剪贴板，请直接选取正文清单复制。' : 'Clipboard unavailable; copy the list above.';
-      }
-    });
-  }
-
-  const handlers = { secretary: secretary, queue: queue, search: search, mab: mab, offer: offer, resource: resource, checklist: checklist };
+  const handlers = { secretary: secretary, queue: queue, search: search, mab: mab, offer: offer, resource: resource };
 
   document.querySelectorAll('[data-stopping-lab]').forEach(root => {
     const kind = root.dataset.stoppingLab;
