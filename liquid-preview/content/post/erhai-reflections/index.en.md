@@ -46,7 +46,7 @@ At the same time, one needs the **spirit of the Iwakura Mission**: acknowledge h
 
 This is one reason I love to travel. Beyond natural scenery, you get to observe how people in different places live, and how they understand career, wealth, family and happiness. You meet different industries and different ages of people, and see what possibilities exist outside the path you know. Sometimes, encountering a way of life you had never imagined is more valuable than acquiring a specific piece of knowledge. It changes not only how we understand the world, but how we imagine our own future.
 
-> Build our knowledge inwardly, and explore this blue planet outwardly.
+**Build our knowledge inwardly, and explore this blue planet outwardly.**
 
 ## A family reform and opening-up: an institutional revolution
 
