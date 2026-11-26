@@ -95,7 +95,7 @@ For ordinary people, many assumptions that could once be taken for granted now n
 
 The future may well be an age in which old answers gradually lose their force while new ones have yet to form. We have to build our own knowledge system, because schooling cannot cover everything we will need to know in life. We have to cultivate our own career capital, because no organization can promise permanent security. We have to build our own financial system, because labour income is ultimately bounded by our time and energy. We have to manage our health proactively, because many health problems show no sign in youth. And we have to keep extending our social network, because some of life's most important opportunities come from beyond our existing circle.
 
-Increasingly, I feel the common value of all these things is that they add optionality to life.
+The common value of all these things is that they add optionality to life.
 
 <figure class="erhai-viz" data-lang="en">
 <div class="viz">
