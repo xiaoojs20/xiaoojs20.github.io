@@ -38,16 +38,9 @@ Next comes personal infrastructure — technical skills at work, investment know
 <button type="button" aria-pressed="false" class="infra" data-key="mobility">Language and mobility<small>Widening your radius</small></button>
 </div>
 <div aria-live="polite" class="infra-panel"><b>Knowledge</b><p>Build your own system of knowledge and the ability to research and judge independently. It determines how you understand new problems and whether you can revise old beliefs in time.</p></div>
-<p class="note">These capacities do not develop in isolation; they reinforce one another over the long term.</p>
 </div>
-<figcaption>Six dimensions of personal infrastructure — a conceptual map, not a quantitative score.</figcaption>
+<figcaption>Personal infrastructure.</figcaption>
 </figure>
-
-The value of many things lies not in how much they pay off today, but in whether they lower the cost of future development. A foreign language widens the range of knowledge you can access; a good knowledge system raises the efficiency of lifelong learning; financial knowledge lets labour income gradually turn into capital; a healthy body gives all of these accumulations more time to compound.
-
-Nor do these abilities exist in isolation. Knowledge, skills, capital, health and social relationships reinforce one another. The more complete the infrastructure, the more able you are to adopt new technology, enter new industries, adapt to new cities — and to absorb the cost of a failure.
-
-There is plenty worth investing in during your twenties, and a good deal of it will not show up as income any time soon. Rather than chasing immediate returns, I would rather build the capacity to keep creating value over the decades ahead.
 
 At the same time, one needs the spirit of the Iwakura Mission: acknowledge how much of the world beyond us we do not know, and then actively go and see it. Stay long enough in one city, one profession, one social circle, and it is easy to mistake your local experience for the universal laws of how the world works. Many beliefs we hold most firmly may not be the result of independent thought at all, but the shared product of upbringing, education, and the people around us.
 
