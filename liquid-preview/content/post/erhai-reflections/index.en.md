@@ -118,6 +118,10 @@ The common value of all these things is that they add **life's optionality**.
 
 This is why I care so much about economic independence.
 
+> In this era, achieving economic independence has never been easier. Your income will soon surpass your parents', and within another five to ten years your assets will exceed what they accumulated over a lifetime. This is a completely asymmetric battle; there is no need to fight it. They will compromise.
+>
+> — Justin Sun, *The World Is Both Cruel and Gentle*
+
 While a person still depends on family for housing, income and social resources, their freedom is bound to be limited. Many generational conflicts that look like clashes of values are also questions of economic dependence and decision-making power.
 
 For me, it is better to build the ability to live independently than to spend years persuading my parents to accept my values. Once I can bear the financial cost and real consequences of a decision, many questions that once required repeated argument gain a more equal footing for discussion.
