@@ -17,7 +17,7 @@ A few days ago I listened to an episode with Justin Sun. He described buying pro
 
 The direction is right. The number is not. Those remarks stack several different theories on top of one another: sometimes the secretary problem, sometimes search theory, sometimes the value of information, and underneath it all explore versus exploit. They are usually discussed as one thing, while answering different questions. So let me take them in order.
 
-## 1. The secretary problem, starting from ten apartments
+## The secretary problem, starting from ten apartments
 
 ### The setup
 
@@ -116,7 +116,7 @@ The more you observe, the more reliable your benchmark, so the second factor ris
 
 Behind this sits a more general regularity: accumulating information and preserving opportunities are not aligned objectives. To obtain more information you sometimes have to give up opportunities you already hold.
 
-## 2. From the secretary problem to optimal stopping
+## From the secretary problem to optimal stopping
 
 The secretary problem is elegant but its assumptions are harsh: fixed population, no going back, relative rank only, no need to judge absolute value, no room for good enough. In real life almost none of them hold.
 
@@ -170,7 +170,7 @@ The second row matters a lot. Gilbert and Mosteller studied the full-information
 
 Better decisions come not only from better stopping rules but from better information, better judgement, and from altering the constraints of the decision itself.
 
-## 3. Search theory: how many apartments should you actually see
+## Search theory: how many apartments should you actually see
 
 Buying property differs from the secretary problem in four conspicuous ways: the number of listings is unknown; a viewed listing can often be revisited; you can judge absolute quality roughly; and viewing costs time and energy. The better fit is search theory, classically McCall's 1970 job-search model.
 
@@ -216,7 +216,7 @@ The model yields four conclusions with mathematical backing: cheaper search just
 
 So "look at a hundred" is not a derived result but a rule of thumb about gathering enough information. The real principle is the balance of marginal benefit and marginal cost, and that threshold depends on the quality distribution, the cost of viewing, your judgement, and what you already hold. Change the city, the budget or the timeline and the number changes too.
 
-## 4. The value of information: why big decisions deserve research
+## The value of information: why big decisions deserve research
 
 Searching is not only about finding a better option; it can also be about improving your ability to evaluate the options you already have. These are different problems.
 
@@ -260,7 +260,7 @@ The 5% is illustrative, not a statistical finding. But it points at a principle:
 
 Many people do the reverse — hours of comparison shopping for a cheap item, then a single impression to choose a job, a city or a career. From an information-economics view, that is inefficient allocation of decision resources.
 
-## 5. Explore versus exploit: why youth should widen the sample
+## Explore versus exploit: why youth should widen the sample
 
 Optimal stopping assumes that choosing ends the process. Life is not like that: you can take a job and then switch, try a model and then adjust, learn a skill and then pivot.
 
@@ -285,7 +285,7 @@ $$
 
 Switching directions depreciates the old $K$ at rate $\delta$ and restarts the new one from zero. The ideal is therefore not "explore when young, exploit when old" but one direction that produces steady returns, with a standing budget for trying new ones.
 
-## 6. Applied to concrete decisions
+## Applied to concrete decisions
 
 ### Housing: build a benchmark, then recognise the opportunity
 
@@ -360,7 +360,7 @@ Entering a new field, it is easy to keep collecting material and never start. Wh
 
 If it changes none of them, the marginal value is probably low. At that point an experiment, an implementation or a draft produces more new information. From a sequential-decision view, action is itself a form of information gathering — reading, observing and surveying are not the only kinds of exploration.
 
-## 7. Changing the problem beats solving it
+## Changing the problem beats solving it
 
 The rules of the secretary problem cannot be changed. In life they usually can:
 
@@ -378,7 +378,7 @@ Behind this is real options theory: under uncertainty, the right to wait, scale 
 
 Rather than trying to think your way to the one correct answer, break a major irreversible decision into a series of small reversible experiments. The traditional mode is a single irreversible verdict; the sequential mode is staged commitment with continuously updated beliefs. The latter caps the cost of being wrong and uses real feedback to correct judgement.
 
-## 8. A general personal decision framework
+## A general personal decision framework
 
 Pulling the theories together yields a checklist:
 
@@ -400,7 +400,7 @@ Different decision types deserve visibly different strategies:
 | High value, reversible | Small-scale trial and error, adjust dynamically |
 | High value, irreversible | Deep research, strict stopping threshold |
 
-## 9. The wider map of theory
+## The wider map of theory
 
 To study this systematically, place these ideas inside sequential decision science and go in this order:
 
@@ -422,7 +422,7 @@ A few books to continue with:
 - *Great Expectations: The Theory of Optimal Stopping*, Chow, Robbins and Siegmund. A more technical treatment of optimal stopping and stochastic processes.
 - For academic material, Thomas S. Ferguson's 1989 survey *Who Solved the Secretary Problem?*, and QuantEcon's *The McCall Search Model*, which pairs the theory with Python.
 
-## 10. Six things worth keeping
+## Six things worth keeping
 
 After all the derivation, what deserves long-term use is not the number 37% but these six points.
 
