@@ -83,6 +83,8 @@
     if(demo)heading.append(make('span','travel-detail-label',text('示例 · 非真实行程','Example · not a real trip')));
     const photos=photosOf(visit);
     const trips=tripsOf(visit);
+    const definedAlbums=Array.isArray(visit.albums)?visit.albums.filter(a=>a&&a.name&&a.nameZh):[];
+    const hasAlbums=definedAlbums.length>0 || photos.some(photo=>photo.album && photo.albumZh);
     const hasTimeline=!demo && visit.id!=='beijing' && visit.id!=='jinjiang' && trips.length>0;
     const title=make('h2','travel-place-title');
     const location=make('span','travel-place-title__location');
@@ -101,23 +103,39 @@
     if(visit.date)heading.append(make('p','',visit.date));
     content.append(heading);
     if(descOf(visit))content.append(make('p','',descOf(visit)));
+    const years=[...new Set(photos.map(photo=>/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'').filter(Boolean))].sort().reverse();
+    // Small Xinjiang albums need no dropdown; Xiamen's year albums duplicate its timeline.
+    const groupBy=visit.group==='xinjiang' || visit.id==='xiamen'?null:hasAlbums?'album':!hasTimeline && years.length>1?'year':null;
+    const groups=new Map();
+    if(groupBy==='album')definedAlbums.forEach(album=>groups.set(album.name,{label:zh?album.nameZh:album.name,photos:[],planned:true}));
+    if(groupBy)photos.forEach(photo=>{
+      const year=/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'';
+      const key=groupBy==='album' ? (photo.album && photo.albumZh ? photo.album : '__other') : (year || '__other');
+      const label=key==='__other'?text('其他','Other'):groupBy==='album'?(zh?photo.albumZh:photo.album):key;
+      if(!groups.has(key))groups.set(key,{label,photos:[]});
+      groups.get(key).photos.push(photo);
+    });
+    let selectedTrip='';
+    let albumSelect;
+    let renderPhotos=null;
+    const photosInTrip=()=>selectedTrip?(trips.find(trip=>trip.key===selectedTrip)?.photos||[]):photos;
+    const updateAlbumOptions=()=>{
+      if(!albumSelect)return;
+      const available=photosInTrip();
+      const all=make('option','',text(`全部照片（${available.length}）`,`All photos (${available.length})`));all.value='';
+      albumSelect.replaceChildren(all);
+      const entries=groupBy==='year'?[...groups.entries()].sort((a,b)=>a[0]==='__other'?1:b[0]==='__other'?-1:b[0].localeCompare(a[0])):[...groups.entries()];
+      entries.forEach(([key,group])=>{
+        const total=group.photos.filter(photo=>available.includes(photo)).length;
+        if(!total && !group.planned)return;
+        const option=make('option','',`${group.label} (${total})`);option.value=key;albumSelect.append(option);
+      });
+    };
     if(!photos.length)content.append(make('p','',text('这段旅程的照片还在整理中。','Photos from this journey are coming soon.')));
     else {
-      const hasAlbums=photos.some(photo=>photo.album && photo.albumZh);
-      const years=[...new Set(photos.map(photo=>/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'').filter(Boolean))].sort().reverse();
-      // Small Xinjiang albums need no dropdown; Xiamen's year albums duplicate its timeline.
-      const groupBy=visit.group==='xinjiang' || visit.id==='xiamen'?null:hasAlbums?'album':!hasTimeline && years.length>1?'year':null;
-      const groups=new Map();
-      if(groupBy)photos.forEach(photo=>{
-        const year=/^\d{4}-\d{2}-\d{2}$/.test(photo.date || '')?photo.date.slice(0,4):'';
-        const key=groupBy==='album' ? (photo.album && photo.albumZh ? photo.album : '__other') : (year || '__other');
-        const label=key==='__other'?text('其他','Other'):groupBy==='album'?(zh?photo.albumZh:photo.album):key;
-        if(!groups.has(key))groups.set(key,{label,photos:[]});
-        groups.get(key).photos.push(photo);
-      });
       const grid=make('div','travel-photos');
       grid.id='travel-photo-grid';
-      const renderPhotos=shown=>{
+      renderPhotos=shown=>{
         count.textContent=shown.length===photos.length?photoCountText(photos.length):text(`${shown.length} / ${photos.length} 张照片`,`${shown.length} / ${photos.length} photos`);
         grid.replaceChildren();
         shown.forEach(photo=>{
@@ -131,21 +149,6 @@
         const caption=make('span','travel-photo__caption',img.alt);
         if(photo.date){const date=make('time','travel-photo__date',formatPhotoDate(photo.date));date.dateTime=photo.date;caption.append(date)}
         btn.append(caption);btn.setAttribute('aria-label',(window.PhotoPrivacy?.isProtected(photo.src)?text('回答问题查看人像：','Answer a question to view this portrait: '):text('查看照片：','View photo: '))+[img.alt,formatPhotoDate(photo.date)].filter(Boolean).join(' · '));btn.addEventListener('click',()=>showPhoto(photo));grid.append(btn)
-        });
-      };
-      let selectedTrip='';
-      let albumSelect;
-      const photosInTrip=()=>selectedTrip?trips.find(trip=>trip.key===selectedTrip).photos:photos;
-      const updateAlbumOptions=()=>{
-        if(!albumSelect)return;
-        const available=photosInTrip();
-        const all=make('option','',text(`全部照片（${available.length}）`,`All photos (${available.length})`));all.value='';
-        albumSelect.replaceChildren(all);
-        const entries=groupBy==='year'?[...groups.entries()].sort((a,b)=>a[0]==='__other'?1:b[0]==='__other'?-1:b[0].localeCompare(a[0])):[...groups.entries()];
-        entries.forEach(([key,group])=>{
-          const total=group.photos.filter(photo=>available.includes(photo)).length;
-          if(!total)return;
-          const option=make('option','',`${group.label} (${total})`);option.value=key;albumSelect.append(option);
         });
       };
       if(hasTimeline){
@@ -173,15 +176,15 @@
         });
         timeline.append(track);heading.append(timeline);
       }
-      if(groups.size>1){
-        const filter=make('div','travel-album-filter');
-        const label=make('label','travel-album-filter__label',groupBy==='album'?text('按地点查看','Browse by place'):text('按年份查看','Browse by year'));
-        const select=make('select','travel-album-filter__select');select.id='travel-album-select';label.htmlFor=select.id;
-        albumSelect=select;updateAlbumOptions();
-        select.addEventListener('change',()=>{const available=photosInTrip();renderPhotos(select.value?available.filter(photo=>groups.get(select.value).photos.includes(photo)):available);content.scrollTop=0});
-        filter.append(label,select);heading.append(filter);
-      }
-      renderPhotos(photos);content.append(grid)
+      content.append(grid);renderPhotos(photos);
+    }
+    if(groups.size>1){
+      const filter=make('div','travel-album-filter');
+      const label=make('label','travel-album-filter__label',groupBy==='album'?text('按地点查看','Browse by place'):text('按年份查看','Browse by year'));
+      const select=make('select','travel-album-filter__select');select.id='travel-album-select';label.htmlFor=select.id;
+      albumSelect=select;updateAlbumOptions();
+      select.addEventListener('change',()=>{const available=photosInTrip();const group=groups.get(select.value);renderPhotos?.(select.value && group?available.filter(photo=>group.photos.includes(photo)):available);content.scrollTop=0});
+      filter.append(label,select);heading.append(filter);
     }
     content.scrollTop=0;
   };

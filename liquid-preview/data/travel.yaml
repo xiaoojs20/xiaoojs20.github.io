@@ -6625,26 +6625,21 @@ visits:
         date: "2020-07-17"
         caption: "A stone statue of Du Fu among the bamboo at Du Fu Thatched Cottage"
         captionZh: "杜甫草堂，竹影间的杜甫石像"
-  - id: taoping-qiang-village
+  - id: li-county
     group: sichuan
     geoGroup: china
-    name: "Taoping Qiang Village"
-    nameZh: "桃坪羌寨"
-    region: "Sichuan · Aba · Li County"
-    regionZh: "四川 · 阿坝 · 理县"
-    latitude: 31.555261
-    longitude: 103.45808
-    photos: []
-
-  - id: bipenggou
-    group: sichuan
-    geoGroup: china
-    name: "Bipenggou Valley"
-    nameZh: "毕棚沟"
-    region: "Sichuan · Aba · Li County"
-    regionZh: "四川 · 阿坝 · 理县"
-    latitude: 31.3063724
-    longitude: 102.9367821
+    name: "Li County"
+    nameZh: "理县"
+    region: "Sichuan · Aba"
+    regionZh: "四川 · 阿坝"
+    latitude: 31.588027
+    longitude: 103.021044
+    # 预设相册：后续照片的 album / albumZh 需与此处保持一致。
+    albums:
+      - name: "Taoping Qiang Village"
+        nameZh: "桃坪羌寨"
+      - name: "Bipenggou Valley"
+        nameZh: "毕棚沟"
     photos: []
 
   - id: dalian
