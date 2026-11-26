@@ -89,7 +89,7 @@ I want family to be the safety net from which each person explores the outside w
 
 ## An age when old answers expire
 
-Our generation's personal modernization happens just as the broader economic tailwinds weaken and the external order grows more uncertain.
+**Our generation's personal modernization happens just as the broader economic tailwinds weaken and the external order grows more uncertain.**
 
 For ordinary people, many assumptions that could once be taken for granted now need to be proved again. Can a degree reliably lead to a career? Can a job last ten years? Does buying a home necessarily build wealth? Will an industry's core skills today still be scarce five years from now? Is a city worth twenty years of one's life?
 
