@@ -245,22 +245,6 @@ The model yields four conclusions with mathematical backing: cheaper search just
 
 So "look at a hundred" is not a derived result but a rule of thumb about gathering enough information. The real principle is the balance of marginal benefit and marginal cost, and that threshold depends on the quality distribution, the cost of viewing, your judgement, and what you already hold. Change the city, the budget or the timeline and the number changes too.
 
-## Queueing theory asks something else
-
-The same podcast mentions queueing theory, easy to lump in. It asks a different question: how to match randomly arriving demand against limited service capacity.
-
-In the classic M/M/1 model, with arrival rate $\lambda$, service rate $\mu$ and $\lambda<\mu$, the mean time in system is
-
-$$
-W=\frac{1}{\mu-\lambda}
-$$
-
-Written in terms of utilisation $\rho=\lambda/\mu$, this is $W=\dfrac{1}{\mu(1-\rho)}$, and the trouble is visible: as $\rho$ approaches 1, waiting time does not grow linearly, it diverges. At 80% utilisation the mean time in system is 5 times the mean service time; at 90% it is 10 times; at 99% it is 100 times. This is why service systems should not run at full load, and why GPU inference clusters, hospital appointments and bank counters all keep slack.
-
-{{< stopping-lab kind="queue" >}}
-
-It shares its probabilistic machinery with optimal stopping, but one asks "how much capacity do I need" and the other asks "when should I act". Their only real overlap is that both put a price on waiting — one on how long the queue takes, the other on whether waiting is worth it.
-
 ## The value of information: why big decisions deserve research
 
 Searching is not only about finding a better option; it can also be about improving your ability to evaluate the options you already have. These are different problems.
