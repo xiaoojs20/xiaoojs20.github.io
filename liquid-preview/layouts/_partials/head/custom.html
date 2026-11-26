@@ -7,4 +7,11 @@
 <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 <meta name="msapplication-TileImage" content="{{ "favicon.png" | relURL }}">
 
+{{- /* Feed discovery for pages that do not carry their own RSS output (article pages). */ -}}
+{{- if not .IsHome -}}
+{{- with .Site.Home.OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink | safeURL }}">
+{{- end -}}
+{{- end -}}
+
 {{- /* Add analytics, verification tags, or other site-specific head markup below. */ -}}

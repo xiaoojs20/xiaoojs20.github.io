@@ -132,7 +132,7 @@ markup:
   tableOfContents: { endLevel: 4, ordered: true, startLevel: 2 }
   highlight: { noClasses: false, lineNos: true }
 outputs:
-  home: [HTML, sitemapflat]
+  home: [HTML, RSS, sitemapflat]
 
 # 备用照片留在城市子目录中，但不复制到公开网站。
 module:

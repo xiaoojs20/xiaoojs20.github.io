@@ -1,5 +1,7 @@
 {{- with .Site.Params.comments.waline -}}
+    {{- if or (not .serverURL) (in .serverURL "example.com") -}}{{ errorf "Waline is enabled but its serverURL is missing or still a placeholder." }}{{- end -}}
     {{- $isChinese := hasPrefix $.Language.Lang "zh" -}}
+    {{- $commentPath := replaceRE `^/zh/` `/` $.RelPermalink -}}
     {{- $demoMode := default false .demoMode -}}
     {{- $secureUploads := default dict .secureUploads -}}
     {{- $serverResolver := resources.Get "js/waline-server.js" | minify | fingerprint -}}
@@ -16,8 +18,8 @@
                         }}
                     {{ else }}
                         {{ cond $isChinese
-                            "本站支持访客评论。如果您希望获得评论回复通知，可以填写您的邮箱，收到回复时系统会自动发送通知。"
-                            "Guest comments are welcome. Add your email address if you would like to receive an automatic notification when someone replies."
+                            "欢迎留言交流。邮箱为选填，是否发送回复通知取决于站点的通知配置。"
+                            "Guest comments are welcome. Email is optional; reply notifications depend on the site’s notification settings."
                         }}
                     {{ end }}
                 </p>
@@ -25,11 +27,11 @@
             <div class="waline-comments-stats" aria-label="{{ cond $isChinese "文章互动统计" "Article engagement statistics" }}">
                 <span title="{{ cond $isChinese "浏览量" "Page views" }}">
                     {{ partial "helper/icon" "eye" }}
-                    <span class="waline-pageview-count" data-path="{{ $.RelPermalink }}">{{ if $demoMode }}128{{ else }}—{{ end }}</span>
+                    <span class="waline-pageview-count" data-path="{{ $commentPath }}">{{ if $demoMode }}128{{ else }}—{{ end }}</span>
                 </span>
                 <span title="{{ cond $isChinese "评论数" "Comments" }}">
                     {{ partial "helper/icon" "messages" }}
-                    <span class="waline-comment-count" data-path="{{ $.RelPermalink }}">{{ if $demoMode }}4{{ else }}—{{ end }}</span>
+                    <span class="waline-comment-count" data-path="{{ $commentPath }}">{{ if $demoMode }}4{{ else }}—{{ end }}</span>
                 </span>
             </div>
         </aside>
@@ -233,12 +235,16 @@
         init({
             el: "#waline-comments-root",
             serverURL,
+            path: {{ $commentPath | jsonify | safeJS }},
+            meta: ["nick", "mail"],
+            requiredMeta: ["nick"],
+            login: "disable",
             dark: 'html[data-scheme="dark"]',
             lang: {{ cond $isChinese "zh-CN" "en-US" | jsonify | safeJS }},
             pageview: false,
             comment: {{ default false .comment }},
-            reaction: {{ default false .reaction | jsonify | safeJS }},
-            imageUploader: secureUploadsEnabled ? secureImageUploader : undefined,
+            reaction: false,
+            imageUploader: secureUploadsEnabled ? secureImageUploader : false,
             emoji: [],
             locale: {
                 emoji: {{ cond $isChinese "表情" "Emoji" | jsonify | safeJS }},
@@ -461,7 +467,7 @@
 
         pageviewCount({
             serverURL,
-            path: {{ $.RelPermalink | jsonify | safeJS }},
+            path: {{ $commentPath | jsonify | safeJS }},
             selector: ".waline-pageview-count",
             update: false,
         });
