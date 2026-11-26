@@ -95,9 +95,9 @@ The 37% above is a large-sample approximation. With finite populations the exact
 | 20% | 32.2% |
 | 30% | 36.1% |
 | **36.79%** | **36.79%** |
+| 38.2% (1 − golden ratio) | 36.8% |
 | 50% | 34.7% |
 | 61.8% (golden ratio) | 29.7% |
-| 38.2% (1 − golden ratio) | 36.8% |
 | 80% | 17.9% |
 | 90% | 9.5% |
 
