@@ -450,7 +450,7 @@ To study this systematically, place these ideas inside sequential decision scien
 | 7 | Real Options Theory | How to preserve the right to act later |
 | 8 | Sequential Decision Theory | How to handle long-run dynamic decisions |
 
-## Six things worth keeping
+## Conclusion
 
 After all the derivation, what deserves long-term use is not the number 37% but these six points.
 
