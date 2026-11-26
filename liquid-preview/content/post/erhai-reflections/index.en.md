@@ -114,10 +114,6 @@ The common value of all these things is that they add **life's optionality**.
 <figcaption>The point of accumulation is not only to gain resources, but to reduce dependence on any single external condition.</figcaption>
 </figure>
 
-A good job matters, but so does the ability to live without that job. Being able to settle in a city does not mean having to spend the rest of your life there.
-
-A home, a job, a relationship can all be long-term choices made after careful thought — but they should not become arrangements we accept only because no alternative presents itself.
-
 ## Economic independence and family relationships
 
 This is why I care so much about economic independence.
