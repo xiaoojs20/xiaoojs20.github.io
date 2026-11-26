@@ -124,7 +124,7 @@ $$
 
 ### 一般形式
 
-假设在时刻 $t$ 获得新信息，形成信息集 $\mathcal{F}_t$，并决定是否停止。停止时刻记为 $\tau$，采取行动获得收益 $R_\tau$，累计搜索成本 $C_\tau$。优化目标是：
+假设在时刻 $t$ 获得新信息，形成信息集 $\mathcal{F}\_{t}$，并决定是否停止。停止时刻记为 $\tau$，采取行动获得收益 $R_\tau$，累计搜索成本 $C_\tau$。优化目标是：
 
 $$
 \sup_{\tau\in\mathcal{T}}\ \mathbb{E}\left[R_\tau-C_\tau\right]
@@ -132,10 +132,16 @@ $$
 
 要优化的不是一个固定选择，而是一整套根据已掌握信息动态决定何时停止的策略。
 
-写成动态规划，就是比较两种价值：
+写成动态规划，就是比较两种价值：立即行动的收益 $g_t(s)$，与继续等待的期望价值。后者扣掉本期成本，再按折扣取得下一期价值，期望在给定当前状态 $s$ 下计算：
 
 $$
-V_t(s)=\max\Big\{\underbrace{g_t(s)}_{\text{立即行动}},\ \underbrace{-c_t+\gamma\,\mathbb{E}\left[V_{t+1}(S_{t+1})\mid S_t=s\right]}_{\text{继续等待}}\Big\}
+\tilde V_{t+1}(s)=-c_t+\gamma\,\mathbb{E}_s\left[V_{t+1}(S_{t+1})\right]
+$$
+
+于是每个状态下的最优价值是
+
+$$
+V_t(s)=\max\left\{\,g_t(s),\ \tilde V_{t+1}(s)\,\right\}
 $$
 
 | 符号 | 含义 |
@@ -181,7 +187,10 @@ $$
 设每个机会的价值为随机变量 $X$，当前可保留的最佳机会价值为 $b$，继续寻找一次的成本为 $c$。再搜一次的期望增量价值是
 
 $$
-\Delta V(b)=\mathbb{E}\left[\max(X,b)-b\right]=\mathbb{E}\left[(X-b)^+\right]
+\begin{aligned}
+\Delta V(b)&=\mathbb{E}\left[\max(X,b)-b\right]\\
+&=\mathbb{E}\left[(X-b)^+\right]
+\end{aligned}
 $$
 
 其中 $(X-b)^+=\max(X-b,0)$。若机会价值服从分布 $F(x)$，则

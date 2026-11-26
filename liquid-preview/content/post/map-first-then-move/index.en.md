@@ -124,7 +124,7 @@ The secretary problem is elegant but its assumptions are harsh: fixed population
 
 ### The general form
 
-Suppose at time $t$ you receive new information, forming the information set $\mathcal{F}_t$, and decide whether to stop. Let $\tau$ be the stopping time, $R_\tau$ the payoff from acting, $C_\tau$ the accumulated search cost. The objective is
+Suppose at time $t$ you receive new information, forming the information set $\mathcal{F}\_{t}$, and decide whether to stop. Let $\tau$ be the stopping time, $R_\tau$ the payoff from acting, $C_\tau$ the accumulated search cost. The objective is
 
 $$
 \sup_{\tau\in\mathcal{T}}\ \mathbb{E}\left[R_\tau-C_\tau\right]
@@ -132,10 +132,16 @@ $$
 
 What is optimised is not a fixed choice but a policy that decides, from the information in hand, when to stop.
 
-As dynamic programming this means comparing two values:
+As dynamic programming this means comparing two values: the payoff from acting now, $g_t(s)$, and the expected value of carrying on. The latter pays the current cost and then discounts the next period's value, with the expectation taken over future states given the current state $s$:
 
 $$
-V_t(s)=\max\Big\{\underbrace{g_t(s)}_{\text{act now}},\ \underbrace{-c_t+\gamma\,\mathbb{E}\left[V_{t+1}(S_{t+1})\mid S_t=s\right]}_{\text{keep looking}}\Big\}
+\tilde V_{t+1}(s)=-c_t+\gamma\,\mathbb{E}_s\left[V_{t+1}(S_{t+1})\right]
+$$
+
+so the optimal value in each state is
+
+$$
+V_t(s)=\max\left\{\,g_t(s),\ \tilde V_{t+1}(s)\,\right\}
 $$
 
 | Symbol | Meaning |
@@ -181,7 +187,10 @@ Buying property differs from the secretary problem in four conspicuous ways: the
 Let the value of an opportunity be a random variable $X$, let the best option you can keep be worth $b$, and let one more search cost $c$. The expected incremental value of searching once more is
 
 $$
-\Delta V(b)=\mathbb{E}\left[\max(X,b)-b\right]=\mathbb{E}\left[(X-b)^+\right]
+\begin{aligned}
+\Delta V(b)&=\mathbb{E}\left[\max(X,b)-b\right]\\
+&=\mathbb{E}\left[(X-b)^+\right]
+\end{aligned}
 $$
 
 where $(X-b)^+=\max(X-b,0)$. If opportunity values follow a distribution $F(x)$, then
