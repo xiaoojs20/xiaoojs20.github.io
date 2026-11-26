@@ -37,12 +37,12 @@ The question: which strategy maximises the probability of hiring the best one?
 
 With 100 candidates, here is what the obvious approaches yield:
 
-| Strategy | What it does | Result |
-| --- | --- | --- |
-| A, decide immediately | Hire the first person | No basis for comparison; success rate 1% |
-| B, observe half | Reject the first 50, then take the first better than all before | Decent benchmark, but the best may have been in the first half |
-| C, observe almost all | Reject the first 99, hire the last | You know almost everyone's level and can no longer choose them |
-| D, optimal stopping | Observe the first 37, then take the first record-breaker | Highest success probability under the classical model |
+| Strategy | Result |
+| --- | --- |
+| A: hire the first person | No basis for comparison; success rate 1% |
+| B: reject the first 50, then take the first better than all before | Decent benchmark, but the best may have been in the first half |
+| C: reject the first 99, hire the last | You know almost everyone's level and can no longer choose them |
+| D: observe the first 37, then take the first record-breaker | Highest success probability under the classical model |
 
 The answer is not the 80/20 rule, not a 50/50 split, and not the golden ratio. It is the reciprocal of Euler's number:
 
