@@ -6642,6 +6642,28 @@ visits:
         nameZh: "毕棚沟"
     photos: []
 
+  - id: jiuzhaigou
+    group: sichuan
+    geoGroup: china
+    name: "Jiuzhaigou Valley"
+    nameZh: "九寨沟"
+    region: "Sichuan · Aba · Jiuzhaigou County"
+    regionZh: "四川 · 阿坝 · 九寨沟县"
+    latitude: 33.1183597
+    longitude: 103.8838886
+    photos: []
+
+  - id: huanglong
+    group: sichuan
+    geoGroup: china
+    name: "Huanglong Scenic Area"
+    nameZh: "黄龙"
+    region: "Sichuan · Aba · Songpan County"
+    regionZh: "四川 · 阿坝 · 松潘县"
+    latitude: 32.7805564
+    longitude: 103.9281778
+    photos: []
+
   - id: dalian
     group: liaoning
     geoGroup: china
