@@ -389,12 +389,6 @@ A reasonable arrangement runs a core direction alongside exploration. 70/20/10 i
 
 {{< stopping-lab kind="resource" >}}
 
-### Research and study: when to stop reading papers
-
-Entering a new field, it is easy to keep collecting material and never start. Whether paper number thirty is worth reading depends on whether it changes your understanding of the problem, your choice of technical route, your experimental design, or your eventual conclusions.
-
-If it changes none of them, the marginal value is probably low. At that point an experiment, an implementation or a draft produces more new information. From a sequential-decision view, action is itself a form of information gathering — reading, observing and surveying are not the only kinds of exploration.
-
 ## Changing the problem beats solving it
 
 The rules of the secretary problem cannot be changed. In life they usually can:
