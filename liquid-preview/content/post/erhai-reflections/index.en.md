@@ -20,13 +20,11 @@ These concepts do not map exactly onto their historical political and economic c
 
 **The core of the Meiji Restoration is a revolution in capability.**
 
-For more than twenty years, the signals that charted a life's progress came mostly from the outside. Exams, schooling, grades, rankings, job hunting — society and the education system supplied a fairly clear standard of evaluation. We only had to optimize within a given objective function to earn steady, stage-by-stage feedback. But in adulthood, more and more questions have no standard answer, and even the objective function itself has to be defined by ourselves.
+In traditional society, the signals that charted a life's progress came mostly from the outside. Exams, schooling, job hunting, marriage — society and the education system supplied a fairly clear standard of evaluation. We only had to optimize within a given objective function to earn steady, stage-by-stage feedback. But in reality, many of life's questions have no standard answer, and even the objective function itself has to be defined by ourselves.
 
-Wealth, health, career, freedom, family, social influence — what is it that we truly want? How do we rank these things, and how do we divide our limited time and energy among them? When should we persevere, and when should we cut our losses? These questions are far harder than excelling within an established system of evaluation.
+The first step in personal modernization is to establish your own central government: raise your level of understanding, form independent judgments, learn to make decisions, and learn to manage yourself.
 
-The first step in personal modernization is to establish your own central government: raise your level of understanding, form independent judgments, learn to make decisions and to manage yourself. Move gradually from someone who executes goals into someone who sets goals, allocates resources, and bears the consequences.
-
-Next comes personal infrastructure — technical skills at work, investment knowledge and financial accounts, legal identity and household registration, a network of contacts, physical health and a modest amount of muscle. Before railways are built, even an ambitious country cannot develop real productive capacity. In the same way, without enough infrastructure, even the grandest values are difficult to put into practice.
+Next comes personal infrastructure — technical skills at work, investment knowledge and financial accounts, legal identity and household registration, connections, or simply being lean and muscular. Before railways are built, even an ambitious country cannot develop real productive capacity. In the same way, without enough infrastructure, even the grandest values are difficult to put into practice.
 
 <figure class="erhai-viz" data-lang="en">
 <div class="viz">
