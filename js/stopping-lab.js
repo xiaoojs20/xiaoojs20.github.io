@@ -342,7 +342,12 @@
       '<input id="sl-r-a" type="range" min="40" max="90" step="5" value="70">' +
       '<label for="sl-r-b">' + (zh ? '相邻方向探索' : 'Adjacent exploration') + ': <output data-b></output></label>' +
       '<input id="sl-r-b" type="range" min="0" max="40" step="5" value="20">' +
-      '<div class="sl-bars"><div class="sl-bar"><span>' + (zh ? '跨域' : 'Cross') + '</span><span class="sl-bar-track"><span class="sl-bar-fill" data-cross style="background:#cc8c28"></span></span><span class="sl-bar-value" data-crossv></span></div></div>' +
+      '<div class="sl-stack"><span class="sl-seg-core" data-core></span><span class="sl-seg-adj" data-adj></span><span class="sl-seg-cross" data-cross></span></div>' +
+      '<div class="sl-legend">' +
+      '<span><i class="sl-dot-core"></i>' + (zh ? '核心' : 'Core') + ' <b data-lcore></b></span>' +
+      '<span><i class="sl-dot-adj"></i>' + (zh ? '相邻' : 'Adjacent') + ' <b data-ladj></b></span>' +
+      '<span><i class="sl-dot-cross"></i>' + (zh ? '跨域' : 'Cross') + ' <b data-lcross></b></span>' +
+      '</div>' +
       '<div class="sl-metrics" data-metrics aria-live="polite"></div>' +
       '<p class="sl-hint">' + (zh
         ? '跨域探索为剩余部分（100 − 核心 − 相邻）。70/20/10 是可尝试的起点，不是数学上的最优比例。'
@@ -352,8 +357,12 @@
     const sb = root.querySelector('#sl-r-b');
     const oa = root.querySelector('[data-a]');
     const ob = root.querySelector('[data-b]');
+    const core = root.querySelector('[data-core]');
+    const adj = root.querySelector('[data-adj]');
     const cross = root.querySelector('[data-cross]');
-    const crossv = root.querySelector('[data-crossv]');
+    const lcore = root.querySelector('[data-lcore]');
+    const ladj = root.querySelector('[data-ladj]');
+    const lcross = root.querySelector('[data-lcross]');
     const metrics = root.querySelector('[data-metrics]');
 
     function draw() {
@@ -364,8 +373,12 @@
       const c = 100 - a - b;
       oa.textContent = a + '%';
       ob.textContent = b + '%';
+      core.style.width = a + '%';
+      adj.style.width = b + '%';
       cross.style.width = c + '%';
-      crossv.textContent = c + '%';
+      lcore.textContent = a + '%';
+      ladj.textContent = b + '%';
+      lcross.textContent = c + '%';
       metrics.innerHTML =
         metric(zh ? '长期积累' : 'Long-run accumulation', a + '%', zh ? '核心方向' : 'core direction') +
         metric(zh ? '发现新机会' : 'Discovery', (b + c) + '%', zh ? '相邻 + 跨域' : 'adjacent + cross');

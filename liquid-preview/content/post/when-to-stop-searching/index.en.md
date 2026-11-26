@@ -1,6 +1,6 @@
 ---
-title: "When to Stop Looking"
-description: "A full treatment of the secretary problem and optimal stopping, then search theory, the value of information and explore-exploit, applied to housing, job offers, partners, investing, careers and research."
+title: "Map First, Then Move"
+description: "From the secretary problem to optimal stopping and search theory: reveal the map through exploration, then decide when to act."
 slug: when-to-stop-searching
 date: "2026-11-26T20:33:00+08:00"
 written: "2026.11"
@@ -464,3 +464,5 @@ After all the derivation, what deserves long-term use is not the number 37% but 
 Everything above is one tension seen from two sides: accumulating information and preserving options pull against each other, and to look at a few more you must give up a few. Deciding early pays for insufficient information; deciding late pays for opportunities lost.
 
 The purpose of a decision is not to eliminate uncertainty, but to find, while uncertainty persists, the moment worth acting on.
+
+Map first, then move.
