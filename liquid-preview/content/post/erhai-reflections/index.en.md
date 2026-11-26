@@ -136,19 +136,13 @@ Modernizing yourself does not mean becoming someone who needs no one.
 
 People often say that good memories compound too. A journey in your youth, an experience worth remembering, a group of friends known for many years — these are recalled again and again over a long life, and take on new meaning. Some things, if endlessly postponed, cannot be recovered later even with greater material means.
 
-I do not want to wait until my personal modernization is complete before I start living seriously. A personal Meiji Restoration never really reaches completion. We can be imperfect, remain uncertain and keep rebuilding, but we should at least learn to take responsibility for our unfinished selves, rather than making a partner carry the cost of our disorder.
-
-A good partnership is, at its core, mutual growth rather than mutual rescue.
-
-I hope that when two people come together, both lives grow wider rather than contracting into the household. Each continues to learn, work, meet new people and explore new fields, while bringing what they learn from the outside back into a shared life.
+**A good partnership is, at its core, mutual growth rather than mutual rescue.**
 
 On their own, a person has one set of experiences, one perspective, one life trajectory. Together, two people can share memories, exchange judgments, correct each other, and gain more security and possibility than either had alone.
 
 Life is finite. However hard we try, no one can live every possible life. One of the beauties of intimacy is that another person's experiences become partly our own.
 
 More importantly, over a long enough stretch of time, a partner becomes a witness to your life: someone who knows what you believed when young, why you changed, and has seen your ambition, exhaustion, failures and fresh starts.
-
-Look back decades later, and the ordinary days that seemed insignificant at the time may turn out to be the most precious memories you share.
 
 ## The purpose of development
 
