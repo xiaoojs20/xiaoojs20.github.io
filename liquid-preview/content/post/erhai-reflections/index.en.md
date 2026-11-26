@@ -130,19 +130,6 @@ A family's reform and opening-up is not simply a transfer of power from one gene
 
 A relationship in which people remain willing to support one another after becoming independent, and remain respectful despite disagreement, may be more durable than one built on dependence and obedience.
 
-<figure class="erhai-viz" data-lang="en">
-<div class="viz buffer-tool">
-<div class="viz-label">One foundation of economic independence: a financial buffer</div>
-<div class="buffer-inputs">
-<label>Readily available low-risk savings:<output data-savings-label>96,000 CNY</output><input aria-label="Readily available low-risk savings" data-savings max="360000" min="0" step="4000" type="range" value="96000"></label>
-<label>Essential monthly spending:<output data-cost-label>8,000 CNY</output><input aria-label="Essential monthly spending" data-cost max="20000" min="3000" step="500" type="range" value="8000"></label>
-</div>
-<div aria-live="polite" class="buffer-result"><small>Assuming no income for the time being, savings can cover</small><div class="buffer-months">12.0 months</div><div aria-hidden="true" class="bar"><div class="bar-fill"></div></div><small>The bar caps at 24 months for display.</small></div>
-<p class="note">Simplified estimate: available savings ÷ essential monthly spending. It ignores investment returns, changes in debt, inflation and unexpected costs; it does not mean financial freedom and is not financial advice. All figures are illustrative.</p>
-</div>
-<figcaption>A financial reserve offers not absolute safety, but time to respond to change.</figcaption>
-</figure>
-
 ## Witnesses to a life
 
 Modernizing yourself does not mean becoming someone who needs no one.

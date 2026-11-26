@@ -130,19 +130,6 @@ license: false
 
 独立之后依然愿意相互支持，存在分歧却依然能够相互尊重，这样的家庭关系或许比依赖和服从更加稳固。
 
-<figure class="erhai-viz" data-lang="zh">
-<div class="viz buffer-tool">
-<div class="viz-label">经济独立的一项基础：财务缓冲期</div>
-<div class="buffer-inputs">
-<label>可动用的低风险储备：<output data-savings-label>96,000 元</output><input aria-label="可动用的低风险储备" data-savings max="360000" min="0" step="4000" type="range" value="96000"></label>
-<label>每月必要支出：<output data-cost-label>8,000 元</output><input aria-label="每月必要支出" data-cost max="20000" min="3000" step="500" type="range" value="8000"></label>
-</div>
-<div aria-live="polite" class="buffer-result"><small>假设暂时没有收入，储备可覆盖</small><div class="buffer-months">12.0 个月</div><div aria-hidden="true" class="bar"><div class="bar-fill"></div></div><small>进度条以 24 个月为显示上限。</small></div>
-<p class="note">简化估算：可动用储备 ÷ 每月必要支出。不考虑投资收益、负债变化、通胀或突发支出；不代表达到经济自由，也不构成财务建议。数值为演示假设。</p>
-</div>
-<figcaption>财务储备提供的不是绝对安全，而是应对变化的时间。</figcaption>
-</figure>
-
 ## 生命的见证者
 
 一个人的现代化，并不意味着最终要成为一个不需要任何人的个体。
