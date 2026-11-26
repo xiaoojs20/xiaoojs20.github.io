@@ -5000,3 +5000,12 @@ html[data-scheme="dark"] .coffee-booking__frame iframe { filter:invert(.9) hue-r
 .site-note__title { color: var(--card-text-color-main); font-size: 1.4rem; line-height: 1.5; overflow-wrap: anywhere; }
 .site-note__update:hover .site-note__title, .site-note__update:focus-visible .site-note__title { color: var(--accent-color); }
 .site-note__foot { color: var(--accent-color); text-decoration: none; }
+
+/* Screen heading hierarchy: article title first, then in-article h1/h2/h3. */
+.article-title { font-size: 2.4rem; }
+.article-content h1 { font-size: 2rem; }
+.article-content h2 { font-size: 1.8rem; }
+.article-content h3 { font-size: 1.7rem; }
+@media (min-width: 1280px) {
+    .article-title { font-size: 2.6rem; }
+}
