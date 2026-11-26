@@ -42,7 +42,7 @@ Next comes personal infrastructure — technical skills at work, investment know
 <figcaption>Personal infrastructure.</figcaption>
 </figure>
 
-At the same time, one needs the spirit of the Iwakura Mission: acknowledge how much of the world beyond us we do not know, and then actively go and see it. Stay long enough in one city, one profession, one social circle, and it is easy to mistake your local experience for the universal laws of how the world works. Many beliefs we hold most firmly may not be the result of independent thought at all, but the shared product of upbringing, education, and the people around us.
+At the same time, one needs the **spirit of the Iwakura Mission**: acknowledge how much of the world beyond us we do not know, and then actively go and see it. Stay long enough in one city, one profession, one social circle, and it is easy to mistake your local experience for the universal laws of how the world works. Many beliefs we hold most firmly may not be the result of independent thought at all, but the shared product of upbringing, education, and the people around us.
 
 This is one reason I love to travel. Beyond natural scenery, you get to observe how people in different places live, and how they understand career, wealth, family and happiness. You meet different industries and different ages of people, and see what possibilities exist outside the path you know. Sometimes, encountering a way of life you had never imagined is more valuable than acquiring a specific piece of knowledge. It changes not only how we understand the world, but how we imagine our own future.
 
