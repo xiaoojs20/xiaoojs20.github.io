@@ -5,6 +5,7 @@
   descriptionZh: ""
   descriptionEn: ""
   logo: /img/about/openai.svg
+  url: https://openai.com/
 - titleZh: 清华大学 · 工学硕士
   titleEn: Tsinghua University · Master of Engineering
   dateZh: 2024.09 — 2027.06
@@ -12,6 +13,7 @@
   descriptionZh: 专业：电气工程
   descriptionEn: Major in Electrical Engineering
   logo: /img/about/tsinghua.svg
+  url: https://www.tsinghua.edu.cn/
   children:
     - titleZh: 百度 · 算法实习生
       titleEn: Baidu · Algorithm Intern
@@ -20,6 +22,7 @@
       descriptionZh: ""
       descriptionEn: ""
       logo: /img/about/baidu.png
+      url: https://www.baidu.com/
     - titleZh: Shopee · 算法实习生
       titleEn: Shopee · Algorithm Intern
       dateZh: 2025.10 — 2026.03
@@ -27,6 +30,7 @@
       descriptionZh: ""
       descriptionEn: ""
       logo: /img/about/shopee.svg
+      url: https://shopee.com/
     - titleZh: 美团 · 算法实习生
       titleEn: Meituan · Algorithm Intern
       dateZh: 2025.03 — 2025.07
@@ -34,6 +38,7 @@
       descriptionZh: ""
       descriptionEn: ""
       logo: /img/about/meituan.png
+      url: https://www.meituan.com/
 - titleZh: 清华大学 · 工学学士
   titleEn: Tsinghua University · Bachelor of Engineering
   dateZh: 2020.09 — 2024.06
@@ -41,6 +46,7 @@
   descriptionZh: 主修：电气工程及其自动化 · 辅修：软件工程
   descriptionEn: Major in Electrical Engineering and Automation · Minor in Software Engineering
   logo: /img/about/tsinghua.svg
+  url: https://www.tsinghua.edu.cn/
 - titleZh: 福建省晋江市养正中学
   titleEn: Jinjiang Yangzheng Middle School, Fujian
   dateZh: 2017.09 — 2020.06
@@ -48,3 +54,4 @@
   descriptionZh: ""
   descriptionEn: ""
   logo: /img/about/yangzheng.jpg
+  url: https://www.baike.com/wikiid/1628947492865458443

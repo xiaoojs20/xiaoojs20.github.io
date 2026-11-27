@@ -2,19 +2,21 @@
 <style>
 .article-content .about-experience__title,
 .article-content .about-experience__child-title { display:inline-flex; align-items:center; gap:.8rem; }
-.article-content .about-experience__logo { display:inline-flex; flex:0 0 auto; align-items:center; justify-content:center; box-sizing:border-box; width:4.6rem; height:3.2rem; padding:.35rem; border:1px solid var(--card-separator-color); border-radius:.6rem; background:#fff; }
-.article-content .about-experience__logo img { display:block; max-width:100%; max-height:100%; object-fit:contain; }
-.article-content .about-experience__child .about-experience__logo { width:4rem; height:2.8rem; padding:.3rem; }
+.article-content .about-experience__logo { display:inline-flex; flex:0 0 auto; align-items:center; color:inherit; }
+.article-content a.about-experience__logo img { display:block; height:2.3rem!important; width:auto!important; max-width:6rem!important; max-height:none!important; object-fit:contain!important; }
+.article-content .about-experience__child a.about-experience__logo img { height:2rem!important; max-width:5rem!important; }
+.article-content .about-experience__logo:hover img { opacity:.75; }
+.article-content .about-experience__logo:focus-visible { outline:2px solid var(--accent-color); outline-offset:2px; border-radius:.3rem; }
 @media (max-width:760px) { .article-content .about-experience__title, .article-content .about-experience__child-title { gap:.6rem; } }
 </style>
 <ol class="about-experience" aria-label="{{ cond $zh "经历" "Experience" }}">
   {{ range hugo.Data.experience }}
   <li class="about-experience__item">
-    <div class="about-experience__heading"><h3 class="about-experience__title">{{ with .logo }}<span class="about-experience__logo"><img src="{{ . }}" alt="" aria-hidden="true"></span>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
+    <div class="about-experience__heading"><h3 class="about-experience__title">{{ if .logo }}<a class="about-experience__logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ cond $zh "访问" "Visit" }} {{ cond $zh .titleZh .titleEn }} {{ cond $zh "官网" "website" }}"><img src="{{ .logo }}" alt="" aria-hidden="true"></a>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
     {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . }}</p>{{ end }}
     {{ with .children }}
     <ul class="about-experience__children" aria-label="{{ cond $zh "硕士期间的实习经历" "Internships during graduate studies" }}">
-      {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4 class="about-experience__child-title">{{ with .logo }}<span class="about-experience__logo"><img src="{{ . }}" alt="" aria-hidden="true"></span>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
+      {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4 class="about-experience__child-title">{{ if .logo }}<a class="about-experience__logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ cond $zh "访问" "Visit" }} {{ cond $zh .titleZh .titleEn }} {{ cond $zh "官网" "website" }}"><img src="{{ .logo }}" alt="" aria-hidden="true"></a>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
     </ul>
     {{ end }}
   </li>
