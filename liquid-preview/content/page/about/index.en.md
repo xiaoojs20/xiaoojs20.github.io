@@ -55,13 +55,13 @@ In spare moments, I enjoy technology and investing podcasts and books, interesti
 
 Some creators and shows I enjoy watching:
 
-- Mediastorm (影视飓风) \[[Bilibili](https://space.bilibili.com/946974), [YouTube](https://www.youtube.com/@mediastorm6801)\]
-- Geekerwan (极客湾) \[[Bilibili](https://space.bilibili.com/25876945), [YouTube](https://www.youtube.com/@geekerwan1024)\]
+- Mediastorm (影视飓风) \[[Douyin](https://www.douyin.com/user/MS4wLjABAAAAaCcBHb3Rhc4zxF8YkBOfHfLh6k-IWEK2l3Ne9xOXPnQ), [Bilibili](https://space.bilibili.com/946974), [YouTube](https://www.youtube.com/@mediastorm6801)\]
+- Geekerwan (极客湾) \[[Douyin](https://www.douyin.com/user/MS4wLjABAAAAXXVrVvbTDOhdGW_LzlSDkdN2hZT_CRXmzzafGN-GIbkV6skPAaH2uANSFru076ZT), [Bilibili](https://space.bilibili.com/25876945), [YouTube](https://www.youtube.com/@geekerwan1024)\]
 - Terry Chen 泰瑞 \[[Bilibili](https://space.bilibili.com/630776767), [YouTube](https://www.youtube.com/@hackbearterry)\]
-- MrBeast \[[Bilibili](https://space.bilibili.com/1027737427), [YouTube](https://www.youtube.com/@MrBeast)\]
-- Jack Rabbit (杰克小兔) \[[Bilibili](https://space.bilibili.com/644255470), [YouTube](https://www.youtube.com/@jackrabbit1227)\]
-- Zhang Xiaojun Podcast (张小珺商业访谈录) \[[Bilibili](https://space.bilibili.com/280780745), [YouTube](https://www.youtube.com/@xiaojunpodcast)\]
-- 硅谷101 (The Valley 101) \[[Bilibili](https://space.bilibili.com/508452265), [YouTube](https://www.youtube.com/@TheValley101)\]
+- MrBeast \[[Douyin](https://www.douyin.com/user/MS4wLjABAAAA5387Fmmln-gOAeC9xGyzE6khw7Az0K4knE1QGyGdjlZ2RoGkhnRAXLadkJTCF4IW), [Bilibili](https://space.bilibili.com/1027737427), [YouTube](https://www.youtube.com/@MrBeast)\]
+- Jack Rabbit (杰克小兔) \[[Douyin](https://www.douyin.com/user/MS4wLjABAAAA76PZplQcO0vjNdb7r3ZS2WW_5s_GGNMWsRcxWIy80ac), [Bilibili](https://space.bilibili.com/644255470), [YouTube](https://www.youtube.com/@jackrabbit1227)\]
+- Zhang Xiaojun Podcast (张小珺商业访谈录) \[[Douyin](https://www.douyin.com/user/MS4wLjABAAAAsP3v0n2TdtrKec54dqiNgAqanVkvTyjKf2p1z1ifz2k), [Bilibili](https://space.bilibili.com/280780745), [YouTube](https://www.youtube.com/@xiaojunpodcast)\]
+- 硅谷101 (The Valley 101) \[[Douyin](https://www.douyin.com/user/MS4wLjABAAAAm3NQWnvDtr1YC_741RoTaOC_6WLrY22dHvYgYGiCRPe7FSnngqYF8EwxGm--uSsa), [Bilibili](https://space.bilibili.com/508452265), [YouTube](https://www.youtube.com/@TheValley101)\]
 
 My favorite anime are Dragon Ball and KochiKame.
 
