@@ -181,11 +181,9 @@ Put last year's and this year's flagships side by side across the Standard, Pro 
 
 {{< price-lab >}}
 
-A few notes on methodology: OPPO promoted its Pro tier to Pro Max this generation, so both the Pro and Pro Max rows compare the Find X9 Pro against the Find X10 Pro Max; the vivo X300 Pro and Huawei Mate 80 Pro Max are compared at 16+512GB; and the iPhone 18 and Xiaomi 18 standard models are not released yet. Figures are compiled from manufacturers' official China launch prices at matched storage configurations, excluding subsidies.
-
 The bigger the storage, the steeper the increase: the four Android makers' Pro 512GB tiers went up by roughly 23% to 33%, while the iPhone Pro's 512GB rose by only about 9%. The iPhone has the smallest increase at both tiers, so the price gap between it and Android flagships narrowed in this round. One caveat: the Mate 80 Pro launched RMB 500 below its own predecessor in 2025, so measured against the Mate 70 Pro the Huawei two-year increase is smaller still.
 
-Value for money, though, isn't only about the size of the increase — it's also about what you get after paying it. The 12+512GB version of the Xiaomi 18 Pro Max is nearly RMB 2,000 more expensive than the same configuration of its predecessor, and the iQOO 16 rose by RMB 1,800; large-storage versions generally went up faster. When every phone is getting more expensive, the end of the market that was already priciest and least dependent on hardware volume can look relatively less expensive simply because it rose more slowly. The iPhone hasn't become cheap — it's still expensive. It's just that the price gap between it and Android flagships narrowed in this round.
+When every phone is getting more expensive, the end of the market that was already priciest and least dependent on hardware volume can look relatively less expensive simply because it rose more slowly. The iPhone hasn't become cheap — it's still expensive. It's just that the price gap between it and Android flagships narrowed in this round.
 
 ### Other capabilities worth watching
 
