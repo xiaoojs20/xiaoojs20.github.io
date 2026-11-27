@@ -65,7 +65,7 @@ $$
 P'(x)=-\ln x-1
 $$
 
-Setting it to zero gives $x^*=1/e$, and since $P''(x)=-1/x<0$ this is a maximum. Substituting back:
+Setting it to zero gives \(x^*=1/e\), and since $P''(x)=-1/x<0$ this is a maximum. Substituting back:
 
 $$
 P(x^*)=\frac{1}{e}\approx 36.79\%
@@ -105,6 +105,8 @@ Split success into two multiplied factors:
 
 The more you observe, the more reliable your benchmark, so the second factor rises. But the chance that the best is already behind you also rises, so the first factor falls. Their product produces an interior optimum.
 
+Marriage makes this concrete. Marry very early and you lack a reliable standard: you do not yet know what kind of person truly fits you, and momentary attraction is easily mistaken for long-term fit. Marry very late and your judgement is mature, but the right people may already be gone, and those willing to build a life with you are fewer. The first fails on recognition, the second on lost opportunity — different failure modes, the same product.
+
 Behind this sits a more general regularity: accumulating information and preserving opportunities are not aligned objectives. To obtain more information you sometimes have to give up opportunities you already hold.
 
 ## From the secretary problem to optimal stopping
@@ -113,35 +115,15 @@ The secretary problem is elegant but its assumptions are harsh: **fixed populati
 
 ### The general form
 
-Suppose at time $t$ you receive new information, forming the information set $\mathcal{F}\_{t}$, and decide whether to stop. Let $\tau$ be the stopping time, $R_\tau$ the payoff from acting, $C_\tau$ the accumulated search cost. The objective is
+Suppose at time $t$ you receive new information, forming the information set $\mathcal{F}\_{t}$, and decide whether to stop. Let $\tau$ be the stopping time, $R_\tau$ the payoff from acting, $C_\tau$ the accumulated cost. What is optimised is not a fixed choice but a policy that decides, from the information in hand, when to stop, written $\sup_\tau\mathbb{E}[R_\tau-C_\tau]$.
+
+As dynamic programming this means comparing two values: the payoff from acting now, $g_t(s)$, and the expected value of carrying on — which pays the current cost $c_t$ and then discounts next period's value:
 
 $$
-\sup_{\tau\in\mathcal{T}}\ \mathbb{E}\left[R_\tau-C_\tau\right]
+V_t(s)=\max\left\{\,g_t(s),\ -c_t+\gamma\,\mathbb{E}_s\left[V_{t+1}(S_{t+1})\right]\,\right\}
 $$
 
-What is optimised is not a fixed choice but a policy that decides, from the information in hand, when to stop.
-
-As dynamic programming this means comparing two values: the payoff from acting now, $g_t(s)$, and the expected value of carrying on. The latter pays the current cost and then discounts the next period's value, with the expectation taken over future states given the current state $s$:
-
-$$
-\tilde V_{t+1}(s)=-c_t+\gamma\,\mathbb{E}_s\left[V_{t+1}(S_{t+1})\right]
-$$
-
-so the optimal value in each state is
-
-$$
-V_t(s)=\max\left\{\,g_t(s),\ \tilde V_{t+1}(s)\,\right\}
-$$
-
-| Symbol | Meaning |
-| --- | --- |
-| $s$ | Current state and information |
-| $g_t(s)$ | Payoff from acting immediately |
-| $c_t$ | Cost of continuing to search |
-| $\gamma$ | Discount factor on future payoff |
-| $V_t(s)$ | Expected value under the optimal policy |
-
-Anyone who has met a value function in reinforcement learning will recognise this. Optimal stopping is a special Markov decision process: two actions per state, stop or continue, and stopping enters a terminal state.
+The second term in the braces is the value of continuing, so each state is just the larger of two numbers. Anyone who has met a value function in reinforcement learning will recognise this: optimal stopping is a special Markov decision process with two actions per state, stop or continue, and stopping enters a terminal state.
 
 ### Why you need not cling to 37%
 
@@ -169,32 +151,17 @@ Better decisions come not only from better stopping rules but from better inform
 
 ## Search theory: how many apartments should you actually see
 
-Buying property differs from the secretary problem in four conspicuous ways: the number of listings is unknown; a viewed listing can often be revisited; you can judge absolute quality roughly; and viewing costs time and energy. The better fit is search theory, classically McCall's 1970 job-search model.
+With housing, most of the secretary problem's assumptions fail. Two of them reshape the model: a house has absolute quality, and viewing costs money and time. Add an unknown number of listings and the freedom to revisit, and you are in search theory — classically McCall's 1970 job-search model.
 
 ### The reservation value
 
-Let the value of an opportunity be a random variable $X$, let the best option you can keep be worth $b$, and let one more search cost $c$. The expected incremental value of searching once more is
-
-$$
-\begin{aligned}
-\Delta V(b)&=\mathbb{E}\left[\max(X,b)-b\right]\\
-&=\mathbb{E}\left[(X-b)^+\right]
-\end{aligned}
-$$
-
-where $(X-b)^+=\max(X-b,0)$. If opportunity values follow a distribution $F(x)$, then
+Let the value of an opportunity be a random variable $X$, let the best option you can keep be worth $b$, and let one more search cost $c$. The expected incremental value of searching once more is $\Delta V(b)=\mathbb{E}\left[(X-b)^+\right]$, where $(X-b)^+=\max(X-b,0)$. If values follow a distribution $F(x)$, this can be written
 
 $$
 \Delta V(b)=\int_b^{\infty}\left[1-F(x)\right]\mathrm{d}x
 $$
 
-Under the classical conditions — i.i.d. draws, fixed search cost, the current best kept — the stopping threshold $b^*$ satisfies
-
-$$
-\mathbb{E}\left[(X-b^*)^+\right]=c
-$$
-
-This $b^*$ is the reservation value; in a job search it is the reservation wage. Once the current opportunity clears it, carrying further search costs no longer pays.
+Under the classical conditions — i.i.d. draws, fixed search cost, the current best kept — the stopping threshold \(b^*\) satisfies \(\mathbb{E}\left[(X-b^*)^+\right]=c\): one more search just breaks even. This \(b^*\) is the reservation value; in a job search it is the reservation wage. Once the current opportunity clears it, carrying further search costs no longer pays.
 
 ### A worked example
 
@@ -204,33 +171,21 @@ $$
 \Delta V(b)=\int_b^{100}\frac{x-b}{100}\,\mathrm{d}x=\frac{(100-b)^2}{200}
 $$
 
-Setting this equal to the search cost $c$:
-
-$$
-b^*=100-\sqrt{200c}
-$$
-
-With a search cost equivalent to 2 points, the threshold is 80. Holding an option above 80, another search no longer covers its cost.
+Setting this equal to $c$ gives \(b^*=100-\sqrt{200c}\).
 
 Same neighbourhood, quality still uniform on 0 to 100, but two different people.
 
-One lives nearby: a ten-minute drive to each viewing, so the time and effort of one more search is worth about 2 points. Plugging into $b^*=100-\sqrt{200c}$, their reservation value is 80. A house below 80 is worth one more look; above 80, they sign.
+One lives nearby: a ten-minute drive to each viewing, so the time and effort of one more search is worth about 2 points. Plugging into the formula above, their reservation value is 80. A house below 80 is worth one more look; above 80, they sign.
 
-Another flies in from out of town: every viewing takes leave, a train ticket and a hotel night, worth about 12.5 points. The same formula gives
-
-$$
-b^*=100-\sqrt{200\times 12.5}=100-50=50
-$$
+Another flies in from out of town: every viewing takes leave, a train ticket and a hotel night, worth about 12.5 points. Plugging into the same formula, \(b^*=100-50=50\).
 
 so their reservation value is just 50. A 65-point house is not good enough for the first buyer, but the second should already accept it.
 
 Both look at the same homes with the same judgement. The only difference is search cost. Multiply the cost more than sixfold and the reasonable standard falls by 30 points. So "how many should I see before deciding" has no universal answer — it depends on who you are, where you are, and how much time you have. The higher the search cost, the sooner you accept good enough.
 
-The model yields four conclusions with mathematical backing: cheaper search justifies chasing higher quality; a stronger current option shrinks the gain from continuing; a tighter deadline pushes you to accept good enough; and a more favourable distribution of future opportunities raises the acceptance standard.
-
 {{< stopping-lab kind="search" >}}
 
-So "look at a hundred" is not a derived result but a rule of thumb about gathering enough information. The real principle is the balance of marginal benefit and marginal cost, and that threshold depends on the quality distribution, the cost of viewing, your judgement, and what you already hold. Change the city, the budget or the timeline and the number changes too.
+So "look at a hundred" is not a derived result but a rule of thumb about gathering enough information. The real principle is the balance of marginal benefit and marginal cost: the higher the search cost, the tighter the deadline and the better the option in hand, the lower the stopping threshold; the more favourable the distribution of future opportunities, the higher it can sit. Change the city, the budget or the timeline and the number changes too.
 
 ## The value of information: why big decisions deserve research
 
@@ -240,25 +195,13 @@ Viewing the fiftieth apartment, you may not like it at all, yet its transaction 
 
 ### The definition
 
-Let $a$ be an action, $\theta$ an uncertain state, $U(a,\theta)$ the payoff. Without new information the best expected payoff is
-
-$$
-V_0=\max_a \mathbb{E}_\theta\left[U(a,\theta)\right]
-$$
-
-After observing $Y$ you can re-decide:
-
-$$
-V_1=\mathbb{E}_Y\left[\max_a \mathbb{E}_{\theta\mid Y}\left[U(a,\theta)\right]\right]
-$$
-
-The expected value of the information is the difference:
+Let $a$ be an action, $\theta$ an uncertain state, $U(a,\theta)$ the payoff. Without new information you pick one action on priors, \(V_0=\max_a\mathbb{E}_\theta\left[U(a,\theta)\right]\); after observing $Y$ you can pick again for each case, \(V_1=\mathbb{E}_Y\left[\max_a\mathbb{E}_{\theta\mid Y}\left[U(a,\theta)\right]\right]\). The difference is the expected value of the information:
 
 $$
 \mathrm{EVSI}=V_1-V_0
 $$
 
-EVSI stands for expected value of sample information. As long as the cost of acquiring it stays below this, further information is worth paying for.
+As long as the cost of acquiring it stays below this, further information is worth paying for.
 
 ### Why property deserves many viewings and a jacket does not
 
@@ -317,7 +260,7 @@ Stage three, decide on preset conditions. When a listing meets core needs, the p
 
 Thirty representative apartments may beat a hundred near-identical ones. This is the statistical question of sample representativeness: effective sample size matters more than raw count.
 
-### Job search: don't lock in early, don't chase forever
+### Careers: don't lock in early, don't stop exploring
 
 Suppose you expect to see 30 potential roles during campus recruiting. The secretary-problem lesson is not to commit to the first firm too early, but to use interviews, conversations and salary discussions to learn how the market prices you.
 
@@ -339,9 +282,14 @@ $$
 
 where $w_j$ is the weight of dimension $j$ and $x_{ij}$ is offer $i$'s score on it. Under these weights, an offer scoring 90, 85, 90, 80, 60 comes to 84.3. Both weights and scores are illustrative: set your own and audit hard constraints separately.
 
-{{< stopping-lab kind="offer" >}}
-
 Real job searches differ from the secretary problem: offers expire, and several processes can run in parallel. So beyond optimising the stopping rule, change the rules — ask for extensions, run interviews concurrently, line offers up in the same window. Increasing how many opportunities you can hold at once often beats fine-tuning when to stop.
+
+
+Probably the most useful application for younger readers. Suppose four directions: build expertise in a mature industry, enter a fast-growing technology field, start a company, or build an audience as a creator.
+
+Careers differ because payoffs are not fixed: time invested builds capability, network and resources, which reshape future payoff distributions. The equation $K_{t+1}=(1-\delta)K_t+I_t$ is the reminder that frequent switching raises learning costs and destroys accumulation.
+
+A reasonable arrangement runs a core direction alongside exploration. 70/20/10 is a workable example: 70% into the core for capability and long-term returns, 20% into adjacent exploration, 10% into cross-domain bets with non-linear upside. It is not a proven optimum, but it maintains accumulation without foreclosing discovery.
 
 ### Partners: learn your preferences, don't chase a global optimum
 
@@ -366,17 +314,7 @@ Holding cash preserves the option to invest later, but waiting carries opportuni
 
 For long-term index investing, hunting the absolute bottom is not a sensible objective. For individual stocks, thresholds based on valuation, fundamentals and risk usually beat mechanically waiting for some fraction of time to elapse.
 
-### Career: when to stop exploring and go deep
-
-Probably the most useful application for younger readers. Suppose four directions: build expertise in a mature industry, enter a fast-growing technology field, start a company, or build an audience as a creator.
-
-Careers differ because payoffs are not fixed: time invested builds capability, network and resources, which reshape future payoff distributions. The equation $K_{t+1}=(1-\delta)K_t+I_t$ is the reminder that frequent switching raises learning costs and destroys accumulation.
-
-A reasonable arrangement runs a core direction alongside exploration. 70/20/10 is a workable example: 70% into the core for capability and long-term returns, 20% into adjacent exploration, 10% into cross-domain bets with non-linear upside. It is not a proven optimum, but it maintains accumulation without foreclosing discovery.
-
-{{< stopping-lab kind="resource" >}}
-
-## Changing the problem beats solving it
+Housing, careers, partners and investing all have their own tactics, but one lever is more fundamental than any stopping rule: changing the problem beats solving it.
 
 The rules of the secretary problem cannot be changed. In life they usually can:
 
