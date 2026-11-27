@@ -243,9 +243,3 @@ Back to the three conditions at the beginning. No work, no loss of purchasing po
 The video closes with a line I agree with: do not split life into "suffer and save first" and "lie flat and enjoy later". At that number, the joy may be smaller than expected; the years sacrificed to reach it are certain to pass.
 
 **Getting \(X\) right matters more than getting \(F\) large.**
-
-## References
-
-- 小Lin说: [How much money do you need to be financially free?](https://www.bilibili.com/video/BV1yUHP6rEYD), 2026, 12:01.
-- National Bureau of Statistics: [Household income and consumption expenditure, 2025](https://www.stats.gov.cn/sj/zxfb/202601/t20260119_1962321.html).
-- YuWa Population Research: *China Fertility Cost Report*, as cited in the video.
