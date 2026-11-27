@@ -394,6 +394,28 @@ Behind this is real options theory: under uncertainty, the right to wait, scale 
 
 Rather than trying to think your way to the one correct answer, break a major irreversible decision into a series of small reversible experiments. The traditional mode is a single irreversible verdict; the sequential mode is staged commitment with continuously updated beliefs. The latter caps the cost of being wrong and uses real feedback to correct judgement.
 
+## A general personal decision framework
+
+Pulling the theories together yields a checklist:
+
+1. Define the objective. What exactly are you optimising: income, growth, wellbeing, freedom, or risk?
+2. Assess reversibility. Can this be undone, and at what cost?
+3. Set an exploration budget. How much time, money and energy at most for information?
+4. Get a representative sample. Have you seen genuinely varied opportunities rather than repeated similar ones?
+5. Build an evaluation system. Hard constraints, dimensions, preferences and a minimum acceptance standard.
+6. Value further search. Could more information change the decision, and does expected gain exceed cost?
+7. Preserve optionality. Can you trial, rent short-term, stage the investment, or use another reversible form?
+8. Act and review. Once the stopping condition is met, act, then update on real outcomes.
+
+Different decision types deserve visibly different strategies:
+
+| Decision type | Suitable strategy |
+| --- | --- |
+| Low value, reversible | Decide fast, minimise cognitive cost |
+| Low value, irreversible | Satisfy basic conditions and move on |
+| High value, reversible | Small-scale trial and error, adjust dynamically |
+| High value, irreversible | Deep research, strict stopping threshold |
+
 ## Conclusion
 
 After all the derivation, what deserves long-term use is not the number 37% but these six points.
@@ -404,17 +426,6 @@ After all the derivation, what deserves long-term use is not the number 37% but 
 4. Do not chase the global optimum; chase the expected optimum net of cost. Waiting indefinitely for a possibly better option does not necessarily raise final payoff.
 5. Convert irreversible major decisions into reversible small experiments wherever possible. Much uncertainty cannot be reasoned away, only discovered through action.
 6. Keep accumulating along one direction while retaining capacity to explore. Neither freeze so early that new possibilities vanish, nor explore so long that compounding never starts.
-
-Applied to any particular case, how deep the exploration should go depends on just two variables: what the decision is worth, and whether a mistake can be undone. Cross them and the required density follows:
-
-| Decision type | Suitable strategy |
-| --- | --- |
-| Low value, reversible | Decide fast, minimise cognitive cost |
-| Low value, irreversible | Satisfy basic conditions and move on |
-| High value, reversible | Small-scale trial and error, adjust dynamically |
-| High value, irreversible | Deep research, strict stopping threshold |
-
-The cell that goes wrong is not the first but the last: something expensive that cannot be undone, handled the way the first cell is handled — decided offhandedly, then paid for over a long time.
 
 Everything above is one tension seen from two sides: accumulating information and preserving options pull against each other, and to look at a few more you must give up a few. Deciding early pays for insufficient information; deciding late pays for opportunities lost.
 
