@@ -28,7 +28,6 @@ All three conditions together describe something standard in finance: a **perpet
 
 ## What one month of spending is worth
 
-This section runs the same calculation twice: first under the strictest reading, where the principal never moves and only the return is spent, then with that constraint released so the principal may be used up by a chosen year.
 
 ### Perpetuity: the principal stays intact
 
