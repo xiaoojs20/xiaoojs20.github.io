@@ -32,17 +32,6 @@ Suppose you run a company and need to hire the strongest of 100 candidates, unde
 
 The question: which strategy maximises the probability of hiring the best one?
 
-### Four intuitive strategies
-
-With 100 candidates, here is what the obvious approaches yield:
-
-| Strategy | Result |
-| --- | --- |
-| A: hire the first person | No basis for comparison; success rate 1% |
-| B: reject the first 50, then take the first better than all before | Decent benchmark, but the best may have been in the first half |
-| C: reject the first 99, hire the last | You know almost everyone's level and can no longer choose them |
-| D: observe the first 37, then take the first record-breaker | Highest success probability under the classical model |
-
 The answer is not the 80/20 rule, not a 50/50 split, and not the golden ratio. It is the reciprocal of Euler's number:
 
 $$
@@ -120,7 +109,7 @@ Behind this sits a more general regularity: accumulating information and preserv
 
 ## From the secretary problem to optimal stopping
 
-The secretary problem is elegant but its assumptions are harsh: fixed population, no going back, relative rank only, no need to judge absolute value, no room for good enough. In real life almost none of them hold.
+The secretary problem is elegant but its assumptions are harsh: **fixed population**, **no going back**, **relative rank only**, **no need to judge absolute value**, **no room for good enough**. In real life almost none of them hold.
 
 ### The general form
 
