@@ -2,6 +2,6 @@
 <link rel="stylesheet" href="{{ "css/price-lab.css" | relURL }}?v={{ readFile "static/css/price-lab.css" | crypto.SHA256 }}">
 <section class="price-lab" data-price-lab data-language="{{ cond $zh "zh" "en" }}" aria-label="{{ cond $zh "手机涨价对比" "Phone price increase comparison" }}">
   <p class="price-lab-loading">{{ cond $zh "正在加载价格对比……" "Loading price comparison…" }}</p>
-  <noscript>{{ cond $zh "启用 JavaScript 可切换档位与容量；正文保留了完整数据。" "Enable JavaScript to switch tiers and storage; the full data is summarized in the article." }}</noscript>
+  <noscript>{{ cond $zh "启用 JavaScript 可切换档位与容量，查看各家旗舰的跨代涨幅。" "Enable JavaScript to switch tier and storage and see each vendor's generational price increase." }}</noscript>
 </section>
 <script defer src="{{ "js/price-lab.js" | relURL }}?v={{ readFile "static/js/price-lab.js" | crypto.SHA256 }}"></script>
