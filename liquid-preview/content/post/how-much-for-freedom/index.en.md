@@ -26,7 +26,7 @@ The third is the one that quietly gets swapped out. Most "save X and retire" cal
 
 All three conditions together describe something standard in finance: a **perpetuity**. You spend only the real return each year and never touch the principal. Money like that does not run out.
 
-## What one month of spending is worth
+## How much principal sits behind CNY 10,000 a month
 
 ### Perpetuity: the principal stays intact
 
@@ -120,8 +120,10 @@ With a 4.5% nominal return and 2% inflation, \(r = 1.045 / 1.02 - 1 = 2.45\%\), 
 Fixed deposits make the arithmetic concrete. Roughly current levels: 0.95% for one year, 1.3% for five years, and core inflation around 1.0%.
 
 $$
-r_{5y} = \frac{1.013}{1.01} - 1 = 0.30\%, \qquad
-r_{1y} = \frac{1.0095}{1.01} - 1 = -0.05\%.
+\begin{aligned}
+r_{5y} &= \frac{1.013}{1.01} - 1 = 0.30\%,\\
+r_{1y} &= \frac{1.0095}{1.01} - 1 = -0.05\%.
+\end{aligned}
 $$
 
 Five-year deposits beat inflation by a hair. One-year deposits already lose in real terms. This is not merely a "low return" problem. When \(r \le 0\), \(1/r\) diverges, and **the perpetuity does not exist at all**: no amount of money preserves its purchasing power.
@@ -185,13 +187,19 @@ Look at the structure: only 38% is the perpetual part, and 62% is three one-off 
 **Solving backwards.** With CNY 6M, one child at CNY 700,000 and CNY 500,000 for health, no home purchase:
 
 $$
-480X = 600 - 70 - 50 = 480 \quad\Longrightarrow\quad X = \text{CNY } 10{,}000 \text{ a month}.
+\begin{aligned}
+480X &= 600 - 70 - 50 = 480,\\
+X &= \text{CNY } 10{,}000 \text{ a month}.
+\end{aligned}
 $$
 
 No children, a CNY 1.2M home, and still CNY 500,000 for health:
 
 $$
-480X = 600 - 120 - 50 = 430 \quad\Longrightarrow\quad X \approx \text{CNY } 9{,}000 \text{ a month}.
+\begin{aligned}
+480X &= 600 - 120 - 50 = 430,\\
+X &\approx \text{CNY } 9{,}000 \text{ a month}.
+\end{aligned}
 $$
 
 (The video's second example gives CNY 9,000, which only reconciles if the CNY 500,000 health reserve is deducted as well; deducting the home price alone gives CNY 10,000. That is the only discrepancy I found when re-checking the arithmetic.)
