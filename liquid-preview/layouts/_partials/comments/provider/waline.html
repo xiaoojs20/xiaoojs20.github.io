@@ -4,6 +4,10 @@
     {{- $commentPath := replaceRE `^/zh/` `/` $.RelPermalink -}}
     {{- $demoMode := default false .demoMode -}}
     {{- $secureUploads := default dict .secureUploads -}}
+    {{- $commentEnabled := true -}}
+    {{- if isset . "comment" -}}{{- $commentEnabled = .comment -}}{{- end -}}
+    {{- $reaction := false -}}
+    {{- if isset . "reaction" -}}{{- $reaction = .reaction -}}{{- end -}}
     {{- $serverResolver := resources.Get "js/waline-server.js" | minify | fingerprint -}}
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
     <section class="waline-container">
@@ -241,19 +245,18 @@
             login: "disable",
             dark: 'html[data-scheme="dark"]',
             lang: {{ cond $isChinese "zh-CN" "en-US" | jsonify | safeJS }},
-            pageview: false,
-            comment: {{ default false .comment }},
-            reaction: false,
+            pageview: true,
+            comment: {{ $commentEnabled | jsonify | safeJS }},
+            reaction: {{ $reaction | jsonify | safeJS }},
             imageUploader: secureUploadsEnabled ? secureImageUploader : false,
             emoji: [],
             locale: {
                 emoji: {{ cond $isChinese "表情" "Emoji" | jsonify | safeJS }},
-                reactionTitle: {{ cond $isChinese "这篇文章对你有帮助吗？" "Was this article helpful?" | jsonify | safeJS }},
-                reaction0: {{ cond $isChinese "喜欢" "Love it" | jsonify | safeJS }},
-                reaction1: {{ cond $isChinese "好笑" "Funny" | jsonify | safeJS }},
-                reaction2: {{ cond $isChinese "思考" "Thought-provoking" | jsonify | safeJS }},
-                reaction3: {{ cond $isChinese "惊讶" "Surprising" | jsonify | safeJS }},
-                reaction4: {{ cond $isChinese "难过" "Sad" | jsonify | safeJS }},
+                reactionTitle: {{ cond $isChinese "这篇文章怎么样？" "How was this article?" | jsonify | safeJS }},
+                reaction0: {{ cond $isChinese "喜欢" "Love" | jsonify | safeJS }},
+                reaction1: {{ cond $isChinese "有用" "Helpful" | jsonify | safeJS }},
+                reaction2: {{ cond $isChinese "思考" "Thoughtful" | jsonify | safeJS }},
+                reaction3: {{ cond $isChinese "不喜欢" "Dislike" | jsonify | safeJS }},
             },
         });
 
