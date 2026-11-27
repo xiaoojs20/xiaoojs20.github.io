@@ -6,6 +6,7 @@
 .article-content a.about-experience__logo img { display:block; height:2.3rem!important; width:auto!important; max-width:6rem!important; max-height:none!important; object-fit:contain!important; }
 .article-content .about-experience__child a.about-experience__logo img { height:2.3rem!important; max-width:6rem!important; }
 .article-content .about-experience__children h4 { font-size:1.65rem!important; }
+.article-content .about-experience__child p { margin:.15rem 0 .7rem 3.1rem; font-size:1.25rem!important; line-height:1.6; color:var(--card-text-color-secondary); }
 .article-content .about-experience__logo:hover img { opacity:.75; }
 .article-content .about-experience__logo:focus-visible { outline:2px solid var(--accent-color); outline-offset:2px; border-radius:.3rem; }
 @media (max-width:760px) { .article-content .about-experience__title, .article-content .about-experience__child-title { gap:.6rem; } }
@@ -17,7 +18,7 @@
     {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . | safeHTML }}</p>{{ end }}
     {{ with .children }}
     <ul class="about-experience__children" aria-label="{{ cond $zh "硕士期间的实习经历" "Internships during graduate studies" }}">
-      {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4 class="about-experience__child-title">{{ if .logo }}<a class="about-experience__logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ cond $zh "访问" "Visit" }} {{ cond $zh .titleZh .titleEn }} {{ cond $zh "官网" "website" }}"><img src="{{ .logo }}" alt="" aria-hidden="true"></a>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
+      {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4 class="about-experience__child-title">{{ if .logo }}<a class="about-experience__logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ cond $zh "访问" "Visit" }} {{ cond $zh .titleZh .titleEn }} {{ cond $zh "官网" "website" }}"><img src="{{ .logo }}" alt="" aria-hidden="true"></a>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>{{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . | safeHTML }}</p>{{ end }}</li>{{ end }}
     </ul>
     {{ end }}
   </li>

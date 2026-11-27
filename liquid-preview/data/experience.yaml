@@ -7,32 +7,32 @@
   logo: /img/about/tsinghua.svg
   url: https://www.tsinghua.edu.cn/
   children:
-    - titleZh: 百度 · 算法实习生
-      titleEn: Baidu · Algorithm Intern
+    - titleZh: 百度 · 算法实习生 · 百度 app 信息流广告精排模型
+      titleEn: Baidu · Algorithm Intern · Feed Ranking Model for Baidu App
       dateZh: 2026.04 — 2026.10
       dateEn: Apr 2026 — Oct 2026
-      descriptionZh: ""
-      descriptionEn: ""
+      descriptionZh: 序列建模、精排 Scaling、跨域推荐
+      descriptionEn: Sequence modeling, ranking scaling, cross-domain recommendation
       logo: /img/about/baidu.png
       url: https://www.baidu.com/
-    - titleZh: Shopee · 算法实习生
-      titleEn: Shopee · Algorithm Intern
+    - titleZh: Shopee · 算法实习生 · 搜索相关性精排模型
+      titleEn: Shopee · Algorithm Intern · Search Relevance Ranking Model
       dateZh: 2025.10 — 2026.03
       dateEn: Oct 2025 — Mar 2026
-      descriptionZh: ""
-      descriptionEn: ""
+      descriptionZh: LLM to BERT、Post Training、RLVR、模型自蒸馏
+      descriptionEn: LLM to BERT, Post Training, RLVR, model self-distillation
       logo: /img/about/shopee.svg
       url: https://shopee.com/
-    - titleZh: 美团 · 算法实习生
-      titleEn: Meituan · Algorithm Intern
+    - titleZh: 美团 · 算法实习生 · 美团 app 首页召回模型
+      titleEn: Meituan · Algorithm Intern · Homepage Recall Model for Meituan App
       dateZh: 2025.03 — 2025.07
       dateEn: Mar 2025 — Jul 2025
-      descriptionZh: ""
-      descriptionEn: ""
+      descriptionZh: LLM for 推荐、语义推理
+      descriptionEn: LLM for recommendation, semantic reasoning
       logo: /img/about/meituan.png
       url: https://www.meituan.com/
-    - titleZh: OpenAI · 订阅用户兼 RLHF
-      titleEn: OpenAI · Subscriber & RLHF
+    - titleZh: OpenAI · 订阅用户兼 RLHF 工程师
+      titleEn: OpenAI · Subscriber & RLHF Engineer
       dateZh: 2023.03 — 至今
       dateEn: Mar 2023 — Present
       descriptionZh: ""
