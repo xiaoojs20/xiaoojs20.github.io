@@ -201,19 +201,3 @@ $$
 The cases above all use fixed parameters. Swap in your own spending, children and housing, and work it through in the panel below.
 
 {{< freedom-lab kind="core" >}}
-
-## Conclusion
-
-After working through it, I think the value of this equation is not the final figure but the four questions it forces you to answer: how much you spend each month, whether you want children, which city you live in, and whether you want to own a home.
-
-Change those four answers and the result changes tenfold, yet all four are life choices rather than financial ones. Someone who holds spending to CNY 5,000 needs CNY 2.4M; someone who wants CNY 30,000 a month, two children and a first-tier home needs CNY 18.7M. Both may be equally happy, but they are solving entirely different problems.
-
-**It is better read as a checklist than as a target.** The practical thing to do with it is to turn a vague anxiety into steps you can take: record twelve months of statements so \(X\) comes from real life rather than imagination; replace "forever" with a specific year, say 60 or 65; pick a conservative \(r\), erring on the low side; then add children, health and housing one by one. The result can be recalculated every year — income, bills, city and family structure all change, and the number should change with them.
-
-**It is not a forecast, either.** We have already seen that a one-point difference in \(r\) moves the answer by tens of percent, and a bad starting sequence pushes the required assets higher still. The 480 is a coordinate, not a promise: under these assumptions the money is roughly of this order, but no particular path is guaranteed. Treat the answer as a range rather than a score you must reach.
-
-Back to the three conditions at the beginning. No work, no loss of purchasing power, no end date — these are not laws of nature but a choice of measuring rod. Loosen any one of them and the number drops noticeably, but the price is a different arrangement of life. What the calculation can do is put a price tag on each trade-off, then hand the decision back to the person who has to live it.
-
-The video closes with a line I agree with: do not split life into "suffer and save first" and "lie flat and enjoy later". At that number, the joy may be smaller than expected; the years sacrificed to reach it are certain to pass.
-
-**Getting \(X\) right matters more than getting \(F\) large.**
