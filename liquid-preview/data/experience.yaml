@@ -7,28 +7,28 @@
   logo: /img/about/tsinghua.svg
   url: https://www.tsinghua.edu.cn/
   children:
-    - titleZh: 百度 · 算法实习生 · 百度 app 信息流广告精排模型
-      titleEn: Baidu · Algorithm Intern · Feed Ranking Model for Baidu App
+    - titleZh: 百度 · MEG 基础模型组 · 算法实习生
+      titleEn: Baidu · MEG Foundation Model Group · Algorithm Intern
       dateZh: 2026.04 — 2026.10
       dateEn: Apr 2026 — Oct 2026
-      descriptionZh: 序列建模、精排 Scaling、跨域推荐
-      descriptionEn: Sequence modeling, ranking scaling, cross-domain recommendation
+      descriptionZh: 广告 CTR 模型、序列建模、精排 Scaling、跨域推荐
+      descriptionEn: Ad CTR modeling, sequence modeling, ranking scaling, cross-domain recommendation
       logo: /img/about/baidu.png
       url: https://www.baidu.com/
-    - titleZh: Shopee · 算法实习生 · 搜索相关性精排模型
-      titleEn: Shopee · Algorithm Intern · Search Relevance Ranking Model
+    - titleZh: Shopee · SRA Search · 算法实习生
+      titleEn: Shopee · SRA Search · Algorithm Intern
       dateZh: 2025.10 — 2026.03
       dateEn: Oct 2025 — Mar 2026
-      descriptionZh: LLM to BERT、Post Training、RLVR、模型自蒸馏
-      descriptionEn: LLM to BERT, Post Training, RLVR, model self-distillation
+      descriptionZh: 相关性模型、LLM to BERT、Post Training、RLVR、模型自蒸馏
+      descriptionEn: Relevance modeling, LLM to BERT, Post Training, RLVR, model self-distillation
       logo: /img/about/shopee.svg
       url: https://shopee.com/
-    - titleZh: 美团 · 算法实习生 · 美团 app 首页召回模型
-      titleEn: Meituan · Algorithm Intern · Homepage Recall Model for Meituan App
+    - titleZh: 美团 · 首页推荐召回组 · 算法实习生
+      titleEn: Meituan · Homepage Recommendation Recall Team · Algorithm Intern
       dateZh: 2025.03 — 2025.07
       dateEn: Mar 2025 — Jul 2025
-      descriptionZh: LLM for 推荐、语义推理
-      descriptionEn: LLM for recommendation, semantic reasoning
+      descriptionZh: LLM for 推荐、语义推理、用户意图召回
+      descriptionEn: LLM for recommendation, semantic reasoning, user-intent recall
       logo: /img/about/meituan.png
       url: https://www.meituan.com/
     - titleZh: OpenAI · 订阅用户兼 RLHF 工程师
