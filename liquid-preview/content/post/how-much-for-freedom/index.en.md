@@ -202,22 +202,6 @@ The cases above all use fixed parameters. Swap in your own spending, children an
 
 {{< freedom-lab kind="core" >}}
 
-## Shortcomings of the equation
-
-The equation is useful precisely because it fixes five things. Naming them shows where you need to add your own margin.
-
-**One, returns are not constant, and order matters.** A perpetuity formula looks only at the average, never the path. If the first five years of retirement include a halving, the remaining years must deliver more to recover, exactly when you can least afford risk. This is sequence risk, and it is the largest hole in any "2.5% on average" assumption.
-
-**Two, inflation is not constant, and medical inflation exceeds CPI.** \(M\) is estimated at today's prices and will very likely overshoot. Care is labour-intensive, and its costs rise faster than goods. That overshoot is close to structural.
-
-**Three, taxes are missing.** Dividend tax, capital gains and fund fees are not in that 4%–4.5%. The longer the holding period, the more compounding is skimmed off.
-
-**Four, \(X\) is not constant.** Spending is high in your thirties and forties, lower for day-to-day living after retirement, and higher again for medical care. Replacing the whole life cycle with one average line understates the late-life peak.
-
-**Five, child costs stop at 18.** Already mentioned, worth repeating, because it is where most families differ by millions.
-
-One more item is a trade-off rather than an omission: **"assets must not shrink" is a constraint you impose on yourself**, not a law of the world. It buys certainty of mind, and its price is a multiplier that doubles.
-
 ## Conclusion
 
 After working through it, I think the value of this equation is not the final figure but the four questions it forces you to answer: how much you spend each month, whether you want children, which city you live in, and whether you want to own a home.
