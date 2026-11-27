@@ -1,6 +1,5 @@
 ---
 title: "How Much Money Do You Need to Be Financially Free?"
-description: "Turning financial freedom into an equation: where the 480 multiplier comes from, why the real return is the only return that matters, how children, health and housing enter, and where the equation falls short."
 slug: how-much-for-freedom
 date: "2026-11-27T00:45:00+08:00"
 written: "2026.11"
