@@ -5,10 +5,6 @@ description: Follow this site with an RSS reader and get new posts as they appea
 comments: false
 share: false
 license: false
-menu:
-  main:
-    weight: -50
-    params: { icon: rss }
 ---
 
 Posts and notes here appear on no fixed schedule. If you would rather not keep checking back, add the site to an RSS reader and new pieces will find you instead.

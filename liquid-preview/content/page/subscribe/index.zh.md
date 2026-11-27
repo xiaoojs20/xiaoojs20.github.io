@@ -5,10 +5,6 @@ description: 用 RSS 阅读器订阅本站更新，有新文章时自动收到�
 comments: false
 share: false
 license: false
-menu:
-  main:
-    weight: -50
-    params: { icon: rss }
 ---
 
 这里的文章和随笔更新不定期，想起来才写一篇。如果你不想每次都主动过来看，可以把它加进 RSS 阅读器，有新内容时自然会看到。
