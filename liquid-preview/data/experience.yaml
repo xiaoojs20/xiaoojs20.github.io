@@ -1,11 +1,3 @@
-- titleZh: OpenAI · 订阅用户
-  titleEn: OpenAI · Subscriber
-  dateZh: 2023.03 — 至今
-  dateEn: Mar 2023 — Present
-  descriptionZh: ""
-  descriptionEn: ""
-  logo: /img/about/openai.svg
-  url: https://openai.com/
 - titleZh: 清华大学 · 工学硕士
   titleEn: Tsinghua University · Master of Engineering
   dateZh: 2024.09 — 2027.06
@@ -39,19 +31,27 @@
       descriptionEn: ""
       logo: /img/about/meituan.png
       url: https://www.meituan.com/
+    - titleZh: OpenAI · 订阅用户兼 RLHF
+      titleEn: OpenAI · Subscriber & RLHF
+      dateZh: 2023.03 — 至今
+      dateEn: Mar 2023 — Present
+      descriptionZh: ""
+      descriptionEn: ""
+      logo: /img/about/openai.svg
+      url: https://openai.com/
 - titleZh: 清华大学 · 工学学士
   titleEn: Tsinghua University · Bachelor of Engineering
   dateZh: 2020.09 — 2024.06
   dateEn: Sep 2020 — Jun 2024
-  descriptionZh: 主修：电气工程及其自动化 · 辅修：软件工程
-  descriptionEn: Major in Electrical Engineering and Automation · Minor in Software Engineering
+  descriptionZh: 主修：电气工程及其自动化<br>辅修：软件工程
+  descriptionEn: Major in Electrical Engineering and Automation<br>Minor in Software Engineering
   logo: /img/about/tsinghua.svg
   url: https://www.tsinghua.edu.cn/
-- titleZh: 福建省晋江市养正中学
-  titleEn: Jinjiang Yangzheng Middle School, Fujian
+- titleZh: 晋江市养正中学
+  titleEn: Jinjiang Yangzheng Middle School
   dateZh: 2017.09 — 2020.06
   dateEn: Sep 2017 — Jun 2020
   descriptionZh: ""
   descriptionEn: ""
   logo: /img/about/yangzheng.jpg
-  url: https://www.baike.com/wikiid/1628947492865458443
+  url: https://baike.baidu.com/item/%E7%A6%8F%E5%BB%BA%E7%9C%81%E6%99%8B%E6%B1%9F%E5%B8%82%E5%85%BB%E6%AD%A3%E4%B8%AD%E5%AD%A6/6387262

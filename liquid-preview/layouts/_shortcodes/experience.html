@@ -14,7 +14,7 @@
   {{ range hugo.Data.experience }}
   <li class="about-experience__item">
     <div class="about-experience__heading"><h3 class="about-experience__title">{{ if .logo }}<a class="about-experience__logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ cond $zh "访问" "Visit" }} {{ cond $zh .titleZh .titleEn }} {{ cond $zh "官网" "website" }}"><img src="{{ .logo }}" alt="" aria-hidden="true"></a>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h3><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div>
-    {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . }}</p>{{ end }}
+    {{ with (cond $zh .descriptionZh .descriptionEn) }}<p>{{ . | safeHTML }}</p>{{ end }}
     {{ with .children }}
     <ul class="about-experience__children" aria-label="{{ cond $zh "硕士期间的实习经历" "Internships during graduate studies" }}">
       {{ range . }}<li class="about-experience__child"><div class="about-experience__heading"><h4 class="about-experience__child-title">{{ if .logo }}<a class="about-experience__logo" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ cond $zh "访问" "Visit" }} {{ cond $zh .titleZh .titleEn }} {{ cond $zh "官网" "website" }}"><img src="{{ .logo }}" alt="" aria-hidden="true"></a>{{ end }}<span>{{ cond $zh .titleZh .titleEn }}</span></h4><span class="about-experience__date">{{ cond $zh .dateZh .dateEn }}</span></div></li>{{ end }}
