@@ -153,7 +153,7 @@ In fairness: 2.5% is a **conservative** assumption. Global equity markets have h
 
 Whether to accept that conservatism is a personal choice. What you cannot do is use an optimistic return to compute the multiplier and then worry about risk with a pessimistic mind.
 
-## Additive terms: children, health, housing
+### Additive terms: children, health, housing
 
 The 480 covers day-to-day spending only. The equation also has three additive terms:
 
