@@ -4,7 +4,6 @@ slug: how-much-for-freedom
 date: "2026-11-27T00:45:00+08:00"
 written: "2026.11"
 note: true
-hidden: true
 share: false
 license: false
 math: true

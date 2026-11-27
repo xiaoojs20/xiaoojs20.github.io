@@ -1,0 +1,8 @@
+{{- $zh := hasPrefix .Page.Language.Lang "zh" -}}
+{{- $kind := .Get "kind" -}}
+<link rel="stylesheet" href="{{ "css/freedom-lab.css" | relURL }}?v={{ readFile "static/css/freedom-lab.css" | crypto.SHA256 }}">
+<section class="freedom-lab" data-freedom-lab="{{ $kind }}" data-language="{{ cond $zh "zh" "en" }}" data-model-url="{{ "js/freedom-model.mjs" | relURL }}?v={{ readFile "static/js/freedom-model.mjs" | crypto.SHA256 }}" aria-label="{{ cond $zh "财富自由临界值交互面板" "Financial independence threshold panel" }}">
+  <p class="fl-loading">{{ cond $zh "正在加载计算器……" "Loading calculator…" }}</p>
+  <noscript>{{ cond $zh "启用 JavaScript 即可调整参数；正文中的公式与算例不依赖脚本。" "Enable JavaScript to adjust the parameters; the formulas and worked examples below do not depend on it." }}</noscript>
+</section>
+<script type="module" src="{{ "js/freedom-lab.mjs" | relURL }}?v={{ readFile "static/js/freedom-lab.mjs" | crypto.SHA256 }}"></script>

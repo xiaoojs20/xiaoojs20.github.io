@@ -1,0 +1,362 @@
+.freedom-lab {
+  --fl-ink: var(--accent-color, #34495e);
+  --fl-fill: color-mix(in srgb, var(--fl-ink) 66%, transparent);
+  --fl-fill-strong: color-mix(in srgb, var(--fl-ink) 100%, transparent);
+  --fl-fill-soft: color-mix(in srgb, var(--fl-ink) 42%, transparent);
+  --fl-fill-faint: color-mix(in srgb, var(--fl-ink) 22%, transparent);
+  --fl-wash: color-mix(in srgb, var(--fl-ink) 7%, transparent);
+  --fl-line: color-mix(in srgb, var(--fl-ink) 34%, transparent);
+  margin: 1.6em 0;
+  padding: 1.15em 1.3em 1.25em;
+  border: 1px solid var(--card-separator-color, #ddd);
+  border-radius: 14px;
+  background: var(--card-background, #f8fafb);
+  color: var(--card-text-color-main, inherit);
+  font-size: 0.96em;
+}
+
+.freedom-lab h4 {
+  margin: 0 0 0.7em;
+  font-size: 1.02em;
+  letter-spacing: 0.01em;
+}
+
+.freedom-lab .fl-loading {
+  margin: 0;
+  opacity: 0.7;
+}
+
+.freedom-lab .fl-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2em 1.6em;
+}
+
+.freedom-lab .fl-group {
+  margin: 0.6em 0 0.2em;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.freedom-lab .fl-group:first-child {
+  margin-top: 0;
+}
+
+.freedom-lab label {
+  display: block;
+  margin-top: 0.6em;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.freedom-lab output {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.freedom-lab input[type="range"] {
+  display: block;
+  width: 100%;
+  margin: 0.4em 0 0.1em;
+  accent-color: var(--fl-ink);
+}
+
+.freedom-lab input[type="range"]:disabled {
+  opacity: 0.4;
+}
+
+.freedom-lab .fl-range-note {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.74em;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+
+.freedom-lab .fl-seg {
+  display: inline-flex;
+  margin-top: 0.35em;
+  border: 1px solid var(--card-separator-color, #d5d5d5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.freedom-lab .fl-seg button {
+  padding: 0.34em 0.8em;
+  margin: 0;
+  border: 0;
+  border-right: 1px solid var(--card-separator-color, #d5d5d5);
+  background: transparent;
+  color: inherit;
+  font-size: 0.86em;
+  cursor: pointer;
+}
+
+.freedom-lab .fl-seg button:last-child {
+  border-right: 0;
+}
+
+.freedom-lab .fl-seg button[aria-pressed="true"] {
+  background: var(--fl-fill-faint);
+  font-weight: 700;
+}
+
+.freedom-lab .fl-headline {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1.1em 0 0;
+  padding: 0.7em 0.9em;
+  border-radius: 10px;
+  background: var(--fl-wash);
+}
+
+.freedom-lab .fl-headline span {
+  font-size: 0.82em;
+  opacity: 0.75;
+}
+
+.freedom-lab .fl-headline strong {
+  font-size: 1.85em;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.freedom-lab .fl-compose {
+  display: flex;
+  height: 0.62em;
+  margin: 0.95em 0 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--fl-wash);
+}
+
+.freedom-lab .fl-compose span {
+  display: block;
+  height: 100%;
+  box-shadow: inset -1px 0 0 var(--card-background, #fff);
+  transition: width 0.18s ease;
+}
+
+.freedom-lab .fl-compose span:last-child {
+  box-shadow: none;
+}
+
+.freedom-lab .fl-seg-base { background: var(--fl-fill-strong); }
+.freedom-lab .fl-seg-kids { background: var(--fl-fill); }
+.freedom-lab .fl-seg-health { background: var(--fl-fill-soft); }
+.freedom-lab .fl-seg-house { background: var(--fl-fill-faint); }
+
+.freedom-lab .fl-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1em;
+  margin-top: 0.5em;
+  font-size: 0.78em;
+  opacity: 0.9;
+}
+
+.freedom-lab .fl-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-variant-numeric: tabular-nums;
+}
+
+.freedom-lab .fl-legend i {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 2px;
+  border: 1px solid color-mix(in srgb, var(--fl-ink) 45%, transparent);
+}
+
+.freedom-lab .fl-legend b {
+  font-weight: 700;
+}
+
+.freedom-lab .fl-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  margin-top: 0.85em;
+}
+
+.freedom-lab .fl-metric {
+  flex: 1 1 8.5em;
+  padding: 0.6em 0.8em;
+  border-radius: 9px;
+  background: var(--fl-wash);
+  font-size: 0.84em;
+  line-height: 1.35;
+}
+
+.freedom-lab .fl-metric strong {
+  display: block;
+  margin-top: 0.15em;
+  font-size: 1.2em;
+  font-variant-numeric: tabular-nums;
+}
+
+.freedom-lab .fl-metric em {
+  font-style: normal;
+  opacity: 0.72;
+  font-size: 0.9em;
+}
+
+.freedom-lab .fl-verdict {
+  margin: 0.85em 0 0;
+  padding: 0.55em 0.8em;
+  border-left: 3px solid var(--fl-ink);
+  background: var(--fl-wash);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9em;
+  line-height: 1.55;
+}
+
+.freedom-lab .fl-verdict strong {
+  color: var(--fl-ink);
+}
+
+.freedom-lab .fl-hint {
+  margin: 0.7em 0 0;
+  font-size: 0.8em;
+  opacity: 0.72;
+  line-height: 1.55;
+}
+
+.freedom-lab svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.8em 0 0.1em;
+  overflow: visible;
+}
+
+.freedom-lab .fl-axis {
+  stroke: currentColor;
+  stroke-width: 1;
+  opacity: 0.28;
+  fill: none;
+}
+
+.freedom-lab .fl-grid {
+  stroke: currentColor;
+  stroke-width: 1;
+  opacity: 0.1;
+  fill: none;
+}
+
+.freedom-lab .fl-curve {
+  fill: none;
+  stroke: var(--fl-fill-strong);
+  stroke-width: 2.1;
+  stroke-linejoin: round;
+}
+
+.freedom-lab .fl-curve--50 {
+  stroke: var(--fl-fill);
+  stroke-width: 1.7;
+}
+
+.freedom-lab .fl-curve--30 {
+  stroke: var(--fl-fill-soft);
+  stroke-width: 1.7;
+  stroke-dasharray: 5 3;
+}
+
+.freedom-lab .fl-area {
+  fill: color-mix(in srgb, var(--fl-ink) 12%, transparent);
+  stroke: none;
+}
+
+.freedom-lab .fl-guide {
+  stroke: var(--fl-line);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+  fill: none;
+}
+
+.freedom-lab .fl-point {
+  fill: var(--fl-fill-strong);
+  stroke: var(--card-background, #fff);
+  stroke-width: 1.4;
+}
+
+.freedom-lab .fl-point--ghost {
+  fill: var(--card-background, #fff);
+  stroke: var(--fl-fill);
+  stroke-width: 1.8;
+}
+
+.freedom-lab .fl-tick {
+  fill: currentColor;
+  opacity: 0.6;
+  font-size: 9px;
+  font-family: inherit;
+}
+
+.freedom-lab .fl-caption {
+  fill: currentColor;
+  opacity: 0.82;
+  font-size: 9.5px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.freedom-lab .fl-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em 1.1em;
+  margin-top: 0.3em;
+  font-size: 0.78em;
+  opacity: 0.8;
+}
+
+.freedom-lab .fl-key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.freedom-lab .fl-key i {
+  display: inline-block;
+  width: 1.3em;
+  height: 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+.freedom-lab .fl-key .k-now { border-color: var(--fl-fill-strong); }
+.freedom-lab .fl-key .k-50 { border-color: var(--fl-fill); }
+.freedom-lab .fl-key .k-30 { border-top-style: dashed; border-color: var(--fl-fill-soft); }
+
+.freedom-lab .fl-note {
+  margin: 0.5em 0 0;
+  font-size: 0.78em;
+  line-height: 1.55;
+  opacity: 0.78;
+}
+
+@media (max-width: 560px) {
+  .freedom-lab {
+    padding: 1em;
+  }
+  .freedom-lab .fl-cols {
+    grid-template-columns: 1fr;
+  }
+  .freedom-lab .fl-metric {
+    flex: 1 1 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .freedom-lab .fl-compose span {
+    transition: none;
+  }
+}

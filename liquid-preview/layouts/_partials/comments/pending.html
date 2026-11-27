@@ -1,0 +1,2 @@
+{{- $zh := hasPrefix .Language.Lang "zh" -}}
+<section class="comments-pending" aria-label="{{ cond $zh "评论" "Comments" }}"><h2>{{ cond $zh "评论" "Comments" }}</h2><p>{{ cond $zh "评论功能正在准备中，暂时无法留言。" "Comments are being set up and are not available yet." }}</p></section>
