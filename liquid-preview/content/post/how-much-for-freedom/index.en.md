@@ -117,14 +117,6 @@ $$
 
 With a 4.5% nominal return and 2% inflation, \(r = 1.045 / 1.02 - 1 = 2.45\%\), which gives a multiplier of 489.6 rather than 480. The difference is small, but the concept is not: what must be preserved is purchasing power, not a nominal balance.
 
-**Why division, not subtraction.** "Real" measures purchasing power, and purchasing power is nominal money divided by the price level, so the two must be divided. Take one basket: CNY 100 today becomes CNY 104.5 after a year, while the same basket rises to CNY 102; purchasing power is \(104.5 \div 1.02 = 102.45\), or 2.45% real growth. In factor form:
-
-$$
-(1+n) = (1+r)(1+i),
-$$
-
-that is, nominal growth factor = purchasing-power growth factor × price growth factor. Subtraction, \(n-i\), drops the cross term \(ri\): here it is only 0.05 percentage points, so at low inflation subtraction stays close; at higher inflation it diverges quickly — with a 10% nominal return and 5% inflation, the exact real return is \(1.10/1.05-1 = 4.76\%\), not 5%.
-
 Fixed deposits make the arithmetic concrete. Roughly current levels: 0.95% for one year, 1.3% for five years, and core inflation around 1.0%.
 
 $$
@@ -136,7 +128,7 @@ Five-year deposits beat inflation by a hair. One-year deposits already lose in r
 
 So "keep it all in the bank" is ruled out by the equation itself. It does not ask you to trade stocks; it only asks for a positive real return.
 
-**Where 2.5% comes from.** This is the part that most needs its provenance stated.
+**Where 2.5% comes from.**
 
 **Do not use US equity data.** The textbook "8% long-run stock return" comes from US markets and does not transfer to Chinese equities. Anyone who has invested in A-shares has that intuition, and the intuition is right.
 
@@ -147,8 +139,6 @@ So "keep it all in the bank" is ruled out by the equation itself. It does not as
 **Subtract inflation.** With long-run inflation at 2%, a 4%–4.5% nominal return corresponds to 2%–2.5% real. Taking the upper bound gives 480.
 
 In fairness: 2.5% is a **conservative** assumption. Global equity markets have historically delivered real returns near 5%, and that would give a multiplier of 240. Choosing the conservative value means deducting the margin for "things go worse than planned" up front, in exchange for a number that still works if you are pessimistic.
-
-Whether to accept that conservatism is a personal choice. What you cannot do is use an optimistic return to compute the multiplier and then worry about risk with a pessimistic mind.
 
 ### Additive terms: children, health, housing
 
