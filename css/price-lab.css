@@ -1,0 +1,18 @@
+.price-lab{margin:1.6em 0;padding:1.25em 1.35em;border:1px solid var(--card-separator-color,#ddd);border-radius:14px;background:var(--card-background,#f8fafb);color:var(--card-text-color-main,inherit)}
+.price-lab h4{margin:0 0 .35em;font-size:1.08em}
+.price-lab-note{font-size:.86em;opacity:.8;margin:0 0 1em}
+.price-lab-controls{display:flex;flex-wrap:wrap;gap:.8em 1.5em;margin-bottom:1em}
+.price-lab-group{display:flex;align-items:center;gap:.35em;flex-wrap:wrap}
+.price-lab-label{font-size:.85em;opacity:.75;margin-right:.2em}
+.price-lab button{padding:.35em .75em;border:1px solid var(--card-separator-color,#ccc);border-radius:999px;background:transparent;color:inherit;cursor:pointer;font-size:.9em;line-height:1.4}
+.price-lab button[aria-pressed=true]{background:#30669b;border-color:#30669b;color:#fff}
+.price-lab button:focus-visible{outline:3px solid #cc8c28;outline-offset:2px}
+.price-lab-table-wrap{overflow-x:auto}
+.price-lab-table{width:100%;border-collapse:collapse;font-size:.9em;font-variant-numeric:tabular-nums}
+.price-lab-table th,.price-lab-table td{padding:.55em .6em;text-align:left;border-bottom:1px solid var(--card-separator-color,#e3e3e3);vertical-align:top}
+.price-lab-table th{font-weight:600;font-size:.88em;opacity:.8;white-space:nowrap}
+.price-lab-table td small{display:block;font-size:.85em;opacity:.72;line-height:1.4}
+.price-lab-table td .price-lab-note{font-size:.78em;opacity:.6;font-style:italic;margin-top:.15em}
+.price-lab-inc{white-space:nowrap;font-weight:600;color:#b03a3a}
+.price-lab-insight{margin:1em 0 0;padding:.75em .9em;border-radius:9px;background:rgba(100,155,170,.13);font-size:.9em;line-height:1.6}
+.price-lab-foot{margin:.7em 0 0;font-size:.82em;opacity:.75;line-height:1.55}

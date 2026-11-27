@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" role="img" aria-label="独立显存架构与统一内存架构示意图"><style>
+  :root{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+  text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+  .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+  .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+  .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+  .dim{fill:var(--muted)}
+  @media (prefers-color-scheme:dark){
+    :root{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+  }
+</style><text x="155" y="24" text-anchor="middle" font-size="16" font-weight="600">传统独立显卡架构</text><text x="485" y="24" text-anchor="middle" font-size="16" font-weight="600">Apple Silicon</text><path d="M320 15V198" stroke="var(--line)" stroke-dasharray="5 5"/><g font-size="15" text-anchor="middle"><rect class="node" x="21" y="45" width="118" height="50" rx="6"/><rect class="node" x="171" y="45" width="118" height="50" rx="6"/><text x="80" y="75">CPU</text><text x="230" y="75">GPU</text><path class="arrow" d="M80 95V119 M230 95V119 M139 70H171"/><rect class="node" x="21" y="119" width="118" height="53" rx="6"/><rect class="special" x="171" y="119" width="118" height="53" rx="6"/><text x="80" y="141">系统内存</text><text class="dim" x="80" y="159" font-size="12">RAM</text><text x="230" y="141">独立显存</text><text class="dim" x="230" y="159" font-size="12">VRAM</text><rect class="node" x="348" y="45" width="85" height="50" rx="6"/><rect class="node" x="443" y="45" width="85" height="50" rx="6"/><rect class="node" x="538" y="45" width="85" height="50" rx="6"/><text x="390" y="75">CPU</text><text x="485" y="75">GPU</text><text x="580" y="75">NPU</text><path class="arrow" d="M390 95V119 M485 95V119 M580 95V119"/><rect class="special" x="348" y="119" width="275" height="53" rx="6"/><text x="485" y="141">统一内存</text><text class="dim" x="485" y="159" font-size="12">Unified Memory</text><text class="dim" x="155" y="197" font-size="12">GPU 直接可用容量受独立显存约束</text><text class="dim" x="485" y="197" font-size="12">多个计算单元共享内存池</text></g></svg>

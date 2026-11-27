@@ -49,6 +49,24 @@ collections:
       - { label: Categories, name: categories, widget: list, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Article, name: body, widget: markdown }
+  - name: single_language_loader_ai_era_mac_iphone
+    label: "Single-language loader: Ai Era MAC Iphone"
+    folder: content/post
+    path: ai-era-mac-iphone/index.zh
+    extension: md
+    format: yaml-frontmatter
+    i18n: false
+    create: false
+    hide: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: URL slug, name: slug, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Published date, name: date, widget: datetime, required: false }
+      - { label: Cover image, name: image, widget: image, required: false }
+      - { label: Categories, name: categories, widget: list, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Article, name: body, widget: markdown }
   - name: single_language_loader_car_vs_taxi
     label: "Single-language loader: Car vs Taxi"
     folder: content/post
@@ -85,10 +103,10 @@ collections:
       - { label: Categories, name: categories, widget: list, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Article, name: body, widget: markdown }
-  - name: single_language_loader_understanding_job_offers
-    label: "Single-language loader: Understanding Job Offers"
+  - name: single_language_loader_how_much_for_freedom
+    label: "Single-language loader: How Much for Freedom"
     folder: content/post
-    path: understanding-job-offers/index.zh
+    path: how-much-for-freedom/index.zh
     extension: md
     format: yaml-frontmatter
     i18n: false
@@ -103,10 +121,28 @@ collections:
       - { label: Categories, name: categories, widget: list, required: false }
       - { label: Tags, name: tags, widget: list, required: false }
       - { label: Article, name: body, widget: markdown }
-  - name: single_language_loader_when_to_stop_searching
-    label: "Single-language loader: When to Stop Searching"
+  - name: single_language_loader_map_first_then_move
+    label: "Single-language loader: Map First Then Move"
     folder: content/post
-    path: when-to-stop-searching/index.zh
+    path: map-first-then-move/index.zh
+    extension: md
+    format: yaml-frontmatter
+    i18n: false
+    create: false
+    hide: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: URL slug, name: slug, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Published date, name: date, widget: datetime, required: false }
+      - { label: Cover image, name: image, widget: image, required: false }
+      - { label: Categories, name: categories, widget: list, required: false }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Article, name: body, widget: markdown }
+  - name: single_language_loader_understanding_job_offers
+    label: "Single-language loader: Understanding Job Offers"
+    folder: content/post
+    path: understanding-job-offers/index.zh
     extension: md
     format: yaml-frontmatter
     i18n: false
@@ -264,6 +300,45 @@ collections:
               - { label: AI-assisted writing, value: aigc-assisted }
           - { label: Article, name: body, widget: markdown }
 
+      - name: zh_ai_era_mac_iphone
+        label: "Ai Era MAC Iphone"
+        file: content/post/ai-era-mac-iphone/index.zh.md
+        format: yaml-frontmatter
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL slug, name: slug, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Published date, name: date, widget: datetime, required: false }
+          - { label: Cover image, name: image, widget: image, required: false }
+          - label: Categories
+            name: categories
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: categories
+            multiple: true
+            value_field: '{{categories.*.name}}'
+            display_fields: ['{{categories.*.name}}']
+            search_fields: ['{{categories.*.name}}']
+          - label: Tags
+            name: tags
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: tags
+            multiple: true
+            value_field: '{{tags.*.name}}'
+            display_fields: ['{{tags.*.name}}']
+            search_fields: ['{{tags.*.name}}']
+          - label: Writing mode
+            name: writingMode
+            widget: select
+            required: false
+            options:
+              - { label: Written by the author, value: human }
+              - { label: AI-assisted writing, value: aigc-assisted }
+          - { label: Article, name: body, widget: markdown }
+
       - name: zh_car_vs_taxi
         label: "Car vs Taxi"
         file: content/post/car-vs-taxi/index.zh.md
@@ -342,9 +417,9 @@ collections:
               - { label: AI-assisted writing, value: aigc-assisted }
           - { label: Article, name: body, widget: markdown }
 
-      - name: zh_understanding_job_offers
-        label: "Understanding Job Offers"
-        file: content/post/understanding-job-offers/index.zh.md
+      - name: zh_how_much_for_freedom
+        label: "How Much for Freedom"
+        file: content/post/how-much-for-freedom/index.zh.md
         format: yaml-frontmatter
         fields:
           - { label: Title, name: title, widget: string }
@@ -381,9 +456,48 @@ collections:
               - { label: AI-assisted writing, value: aigc-assisted }
           - { label: Article, name: body, widget: markdown }
 
-      - name: zh_when_to_stop_searching
-        label: "When to Stop Searching"
-        file: content/post/when-to-stop-searching/index.zh.md
+      - name: zh_map_first_then_move
+        label: "Map First Then Move"
+        file: content/post/map-first-then-move/index.zh.md
+        format: yaml-frontmatter
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL slug, name: slug, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Published date, name: date, widget: datetime, required: false }
+          - { label: Cover image, name: image, widget: image, required: false }
+          - label: Categories
+            name: categories
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: categories
+            multiple: true
+            value_field: '{{categories.*.name}}'
+            display_fields: ['{{categories.*.name}}']
+            search_fields: ['{{categories.*.name}}']
+          - label: Tags
+            name: tags
+            widget: relation
+            required: false
+            collection: taxonomies
+            file: tags
+            multiple: true
+            value_field: '{{tags.*.name}}'
+            display_fields: ['{{tags.*.name}}']
+            search_fields: ['{{tags.*.name}}']
+          - label: Writing mode
+            name: writingMode
+            widget: select
+            required: false
+            options:
+              - { label: Written by the author, value: human }
+              - { label: AI-assisted writing, value: aigc-assisted }
+          - { label: Article, name: body, widget: markdown }
+
+      - name: zh_understanding_job_offers
+        label: "Understanding Job Offers"
+        file: content/post/understanding-job-offers/index.zh.md
         format: yaml-frontmatter
         fields:
           - { label: Title, name: title, widget: string }
@@ -597,6 +711,10 @@ collections:
       - { label: RSS feed URL, name: rss, widget: string, required: false }
 
 asset_collections:
+  - name: img_about
+    label: "about"
+    media_folder: /static/img/about
+    public_folder: /img/about
   - name: img_categories
     label: "categories"
     media_folder: /static/img/categories
