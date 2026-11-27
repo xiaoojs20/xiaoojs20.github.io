@@ -28,7 +28,6 @@ All three conditions together describe something standard in finance: a **perpet
 
 ## What one month of spending is worth
 
-
 ### Perpetuity: the principal stays intact
 
 Let \(X\) be monthly spending at today's prices. Because prices rise, \(X\) rises with them; in real terms it is a flat line costing \(12X\) a year.
