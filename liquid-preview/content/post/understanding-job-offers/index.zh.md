@@ -96,7 +96,45 @@ TC（Total Compensation，总包）一般包括固定工资、目标奖金和股
 
 工资通常按**累计预扣法**：当月应预扣税额 = 截至当月的累计应预扣税额 − 此前已预扣税额。继续假设每月工资 40,000 元、个人五险一金 8,181.30 元，每月 5,000 元基本减除费用，无专项附加扣除，全年无其他变化；这时每月增加的累计应纳税所得额是 26,818.70 元。
 
-![工资个税累计预扣月度示例](tax-withholding-zh.svg)
+<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 355" role="img" aria-label="月薪不变，工资个税的累计预扣如何变化？">
+<rect width="720" height="355" rx="12" fill="#f7f8f8"/>
+<g font-family="Arial,PingFang SC,sans-serif" fill="#263746">
+<text x="20" y="31" font-size="19" font-weight="bold">月薪不变，工资个税的累计预扣如何变化？</text>
+<text x="20" y="53" font-size="13">示例：月薪 40,000 元；不计专项附加扣除，年终奖另计</text>
+<path d="M60 70 V284 H680" fill="none" stroke="#98a9af"/>
+<text x="20" y="75" font-size="12">7,000</text>
+<text x="35" y="284" font-size="12">0</text>
+<rect x="68" y="259.29" width="31" height="24.71" rx="3" fill="#4b8191"/>
+<text x="83.5" y="307" text-anchor="middle" font-size="13">1</text>
+<text x="83.5" y="251.3" text-anchor="middle" font-size="12">805</text>
+<rect x="117" y="221.37" width="31" height="62.63" rx="3" fill="#4b8191"/>
+<text x="132.5" y="307" text-anchor="middle" font-size="13">2</text>
+<text x="132.5" y="213.4" text-anchor="middle" font-size="12">2,039</text>
+<rect x="166" y="201.63" width="31" height="82.37" rx="3" fill="#4b8191"/>
+<text x="181.5" y="307" text-anchor="middle" font-size="13">3</text>
+<rect x="215" y="201.63" width="31" height="82.37" rx="3" fill="#4b8191"/>
+<text x="230.5" y="307" text-anchor="middle" font-size="13">4</text>
+<rect x="264" y="201.63" width="31" height="82.37" rx="3" fill="#4b8191"/>
+<text x="279.5" y="307" text-anchor="middle" font-size="13">5</text>
+<rect x="313" y="149.68" width="31" height="134.32" rx="3" fill="#4b8191"/>
+<text x="328.5" y="307" text-anchor="middle" font-size="13">6</text>
+<text x="328.5" y="141.7" text-anchor="middle" font-size="12">4,373</text>
+<rect x="362" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
+<text x="377.5" y="307" text-anchor="middle" font-size="13">7</text>
+<rect x="411" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
+<text x="426.5" y="307" text-anchor="middle" font-size="13">8</text>
+<rect x="460" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
+<text x="475.5" y="307" text-anchor="middle" font-size="13">9</text>
+<rect x="509" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
+<text x="524.5" y="307" text-anchor="middle" font-size="13">10</text>
+<rect x="558" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
+<text x="573.5" y="307" text-anchor="middle" font-size="13">11</text>
+<rect x="607" y="85.74" width="31" height="198.26" rx="3" fill="#4b8191"/>
+<text x="622.5" y="307" text-anchor="middle" font-size="13">12</text>
+<text x="622.5" y="77.7" text-anchor="middle" font-size="12">6,455</text>
+<text x="20" y="337" font-size="13">横轴：月份；纵轴：当月预扣个税（元）</text>
+</g>
+</svg>
 
 | 月份 | 累计应纳税所得额 | 累计应预扣税额 | 当月预扣税额 |
 | --- | ---: | ---: | ---: |
@@ -294,7 +332,30 @@ TC（Total Compensation，总包）一般包括固定工资、目标奖金和股
 
 上表用“基数上限 × 假设单位比例 × 12”估算，未逐月取整；上海补充公积金不保证每家单位都有。深圳推算依据是[市统计局公布的工资数据](https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/mpost_12907800.html)，它与原对话给出的约 48,471 元存在取整差异，因此这里只给约数。
 
-![六城公积金基数上限对照](city-zh.svg)
+<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="六城住房公积金月缴存基数上限（元）">
+<rect width="760" height="360" rx="12" fill="#f7f8f8"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#263746">
+<text x="20" y="40" font-size="19" font-weight="bold">六城住房公积金月缴存基数上限（元）</text>
+<text x="20" y="101" font-size="15">北京</text>
+<rect x="175" y="82" width="363.5" height="25" rx="3" fill="#486d88"/>
+<text x="548.5" y="101" font-size="15">36,348</text>
+<text x="20" y="144" font-size="15">上海</text>
+<rect x="175" y="125" width="377.3" height="25" rx="3" fill="#486d88"/>
+<text x="562.3" y="144" font-size="15">37,731</text>
+<text x="20" y="187" font-size="15">广州</text>
+<rect x="175" y="168" width="417.0" height="25" rx="3" fill="#486d88"/>
+<text x="602.0" y="187" font-size="15">41,697</text>
+<text x="20" y="230" font-size="15">深圳（约）</text>
+<rect x="175" y="211" width="484.7" height="25" rx="3" fill="#486d88"/>
+<text x="669.7" y="230" font-size="15">48,470</text>
+<text x="20" y="273" font-size="15">杭州</text>
+<rect x="175" y="254" width="421.5" height="25" rx="3" fill="#486d88"/>
+<text x="606.5" y="273" font-size="15">42,151</text>
+<text x="20" y="316" font-size="15">泉州</text>
+<rect x="175" y="297" width="247.9" height="25" rx="3" fill="#486d88"/>
+<text x="432.9" y="316" font-size="15">24,795</text>
+</g>
+</svg>
 
 上海写的“7% + 5%”是**每一方**普通公积金 7% 加补充公积金 5%；如果单位和个人都这样缴，各为 12%，双方合计 24%。相同工资下，实际入账仍由经核定的基数和比例决定。广州与深圳的[企业职工养老保险基数上限](https://guangdong.chinatax.gov.cn/gdsw/mmsw_gkwj/2026-10/13/content_87b090a21cbb45a3b8adb477f596793a.shtml)自 2026 年 7 月起为 27,603 元/月，明显不同于公积金上限，也不能代替医保的基数上限。
 
@@ -350,7 +411,28 @@ TC（Total Compensation，总包）一般包括固定工资、目标奖金和股
 
 假设常规目标年包每年 60 万，第一、二年签字费分别 10 万和 5 万：
 
-![三年目标薪酬示例](years-zh.svg)
+<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" role="img" aria-label="前三年目标薪酬（万元）">
+<rect width="700" height="340" rx="12" fill="#f7f8f8"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#263746">
+<text x="20" y="42" font-size="20" font-weight="bold">前三年目标薪酬（万元）</text>
+<text x="20" y="105" font-size="17">第 1 年</text>
+<rect x="125" y="80" width="360" height="32" rx="4" fill="#486d88"/>
+<rect x="485" y="80" width="60" height="32" fill="#dba25a"/>
+<text x="555" y="103" font-size="17">70</text>
+<text x="20" y="170" font-size="17">第 2 年</text>
+<rect x="125" y="145" width="360" height="32" rx="4" fill="#486d88"/>
+<rect x="485" y="145" width="30" height="32" fill="#dba25a"/>
+<text x="525" y="168" font-size="17">65</text>
+<text x="20" y="235" font-size="17">第 3 年</text>
+<rect x="125" y="210" width="360" height="32" rx="4" fill="#486d88"/>
+<rect x="485" y="210" width="0" height="32" fill="#dba25a"/>
+<text x="495" y="233" font-size="17">60</text>
+<rect x="125" y="300" width="15" height="15" fill="#486d88"/>
+<text x="146" y="313" font-size="15">常规目标年包</text>
+<rect x="345" y="300" width="15" height="15" fill="#dba25a"/>
+<text x="366" y="313" font-size="15">签字费</text>
+</g>
+</svg>
 
 三年目标合计 195 万，平均每年 65 万；稳定期目标年包仍是 60 万。比较时同时列出首年、三年平均和签字费结束后的金额。图中不考虑调薪、股价变化和绩效波动。
 
@@ -390,7 +472,32 @@ TC（Total Compensation，总包）一般包括固定工资、目标奖金和股
 | 第三年 | 20 万元 | 24 万元 |
 | 第四年 | 20 万元 | 32 万元 |
 
-![两种假设 RSU 归属安排](vesting-zh.svg)
+<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="80 万元 RSU 的两种假设归属方式（万元）">
+<rect width="760" height="360" rx="12" fill="#f7f8f8"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#263746">
+<text x="20" y="40" font-size="19" font-weight="bold">80 万元 RSU 的两种假设归属方式（万元）</text>
+<text x="20" y="97" font-size="15">第 1 年</text>
+<rect x="125" y="80" width="200" height="19" fill="#486d88"/>
+<rect x="125" y="102" width="80" height="19" fill="#dba25a"/>
+<text x="215" y="118" font-size="14">8</text>
+<text x="20" y="155" font-size="15">第 2 年</text>
+<rect x="125" y="138" width="200" height="19" fill="#486d88"/>
+<rect x="125" y="160" width="160" height="19" fill="#dba25a"/>
+<text x="295" y="176" font-size="14">16</text>
+<text x="20" y="213" font-size="15">第 3 年</text>
+<rect x="125" y="196" width="200" height="19" fill="#486d88"/>
+<rect x="125" y="218" width="240" height="19" fill="#dba25a"/>
+<text x="375" y="234" font-size="14">24</text>
+<text x="20" y="271" font-size="15">第 4 年</text>
+<rect x="125" y="254" width="200" height="19" fill="#486d88"/>
+<rect x="125" y="276" width="320" height="19" fill="#dba25a"/>
+<text x="455" y="292" font-size="14">32</text>
+<rect x="125" y="325" width="14" height="14" fill="#486d88"/>
+<text x="146" y="337" font-size="14">每年 25%</text>
+<rect x="300" y="325" width="14" height="14" fill="#dba25a"/>
+<text x="322" y="337" font-size="14">10/20/30/40%</text>
+</g>
+</svg>
 
 这里用 80 万元授予时估值说明归属顺序，未计税或股价变化。首次授予（initial grant）结束后，如无刷新授予（refresh grant），后续年份股权收入可能下降。Cliff 指首次归属前需满足的等待条件：例如等待一年才首次归属，并不表示离职时此前每月都已经拥有相应股份。
 
@@ -447,7 +554,40 @@ TC（Total Compensation，总包）一般包括固定工资、目标奖金和股
 | 杭州 | 89,869.92 | 50,612.52 | 11,790.00 | **447,727.56** | 115,200.00 |
 | 泉州 | 64,550.04 | 56,942.49 | 11,790.00 | **466,717.47** | 71,409.60 |
 
-![六城税后现金及公积金账户新增](net-pay-zh.svg)
+<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 435" role="img" aria-label="六城年度税后现金与公积金新增（万元）">
+<rect width="760" height="435" rx="12" fill="#f7f8f8"/>
+<g font-family="Arial,PingFang SC,sans-serif" fill="#263746">
+<text x="18" y="39" font-size="19" font-weight="bold">六城年度税后现金与公积金新增（万元）</text>
+<text x="18" y="97" font-size="15">北京</text>
+<rect x="145" y="78" width="353.20" height="27" fill="#486d88"/>
+<rect x="498.20" y="78" width="83.75" height="27" fill="#dba25a"/>
+<text x="591.94" y="97" font-size="14">44.15 + 10.47</text>
+<text x="18" y="147" font-size="15">上海</text>
+<rect x="145" y="128" width="350.98" height="27" fill="#486d88"/>
+<rect x="495.98" y="128" width="86.93" height="27" fill="#dba25a"/>
+<text x="592.91" y="147" font-size="14">43.87 + 10.87</text>
+<text x="18" y="197" font-size="15">广州</text>
+<rect x="145" y="178" width="356.58" height="27" fill="#486d88"/>
+<rect x="501.58" y="178" width="92.16" height="27" fill="#dba25a"/>
+<text x="603.74" y="197" font-size="14">44.57 + 11.52</text>
+<text x="18" y="247" font-size="15">深圳</text>
+<rect x="145" y="228" width="356.23" height="27" fill="#486d88"/>
+<rect x="501.23" y="228" width="92.16" height="27" fill="#dba25a"/>
+<text x="603.39" y="247" font-size="14">44.53 + 11.52</text>
+<text x="18" y="297" font-size="15">杭州</text>
+<rect x="145" y="278" width="358.18" height="27" fill="#486d88"/>
+<rect x="503.18" y="278" width="92.16" height="27" fill="#dba25a"/>
+<text x="605.34" y="297" font-size="14">44.77 + 11.52</text>
+<text x="18" y="347" font-size="15">泉州</text>
+<rect x="145" y="328" width="373.37" height="27" fill="#486d88"/>
+<rect x="518.37" y="328" width="57.13" height="27" fill="#dba25a"/>
+<text x="585.50" y="347" font-size="14">46.67 + 7.14</text>
+<rect x="145" y="400" width="14" height="14" fill="#486d88"/>
+<text x="165" y="412" font-size="14">税后现金</text>
+<rect x="300" y="400" width="14" height="14" fill="#dba25a"/>
+<text x="320" y="412" font-size="14">公积金新增（含个人）</text>
+</g>
+</svg>
 
 例如泉州，月个人缴费 5,379.17 元，全年 64,550.04 元；工资应纳税所得额为 480,000 − 60,000 − 64,550.04 = 355,449.96 元，适用 25% 档，工资个税为 56,942.49 元，加上奖金税 11,790 元，税后现金为 466,717.47 元。公积金账户全年新增 71,409.60 元，包含个人和单位各一半，受使用条件限制。
 
