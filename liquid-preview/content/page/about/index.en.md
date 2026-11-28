@@ -41,6 +41,8 @@ My MBTI type is ISTJ. Each letter describes a preference in how I approach thing
 
 It is one way to reflect on myself, not a complete description of who I am.
 
+For the record, I'm a Libra ♎. That said, I don't believe in astrology, BaZi (the four pillars), or anything of that kind: I'd rather understand a person's character and the road ahead through their experiences, choices, and concrete behavior than infer them from a birth date or birth time.
+
 I’m learning to make room for more than work and goals: rest, exercise, travel, and time with the people close to me matter too. When a problem comes up, I want to become better not only at finding solutions, but also at listening patiently and understanding how others feel.
 
 ## Work and interests {#work-and-interests}
