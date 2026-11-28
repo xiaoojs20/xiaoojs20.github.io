@@ -2,6 +2,7 @@
 title: 随笔
 slug: notes
 description: 不定期记录想法和文字。
+subtitle: false
 comments: false
 share: false
 license: false

@@ -13,7 +13,7 @@
     {{ end }}
     <div class="article-title-wrapper">
         <h2 class="article-title"><a href="{{ $Page.RelPermalink }}">{{- $Page.Title -}}</a></h2>
-        {{ with $Page.Params.description }}<h3 class="article-subtitle">{{ . }}</h3>{{ end }}
+        {{ if and $Page.Params.description (not $Page.Params.note) (ne $Page.Params.subtitle false) }}<h3 class="article-subtitle">{{ $Page.Params.description }}</h3>{{ end }}
     </div>
     {{ $showReadingTime := $Page.Params.readingTime | default ($Page.Site.Params.article.readingTime) }}
     {{ $showDate := not $Page.Date.IsZero }}

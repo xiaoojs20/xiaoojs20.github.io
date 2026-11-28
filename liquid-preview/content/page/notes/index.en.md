@@ -3,6 +3,7 @@ title: Notes
 slug: notes
 aliases: ["/en/notes/"]
 description: Thoughts and writing, from time to time.
+subtitle: false
 comments: false
 share: false
 license: false
