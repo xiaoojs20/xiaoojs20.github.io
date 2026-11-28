@@ -341,62 +341,7 @@
     update();
   }
 
-  /* ---------------- resource allocation ---------------- */
-  function resource(root, zh) {
-    root.innerHTML =
-      '<h4>' + (zh ? '能力资本配置：主方向与探索预算' : 'Capital allocation: core direction plus exploration') + '</h4>' +
-      '<label for="sl-r-a">' + (zh ? '核心方向投入' : 'Core direction') + ': <output data-a></output></label>' +
-      '<input id="sl-r-a" type="range" min="40" max="90" step="5" value="70">' +
-      '<label for="sl-r-b">' + (zh ? '相邻方向探索' : 'Adjacent exploration') + ': <output data-b></output></label>' +
-      '<input id="sl-r-b" type="range" min="0" max="40" step="5" value="20">' +
-      '<div class="sl-stack"><span class="sl-seg-core" data-core></span><span class="sl-seg-adj" data-adj></span><span class="sl-seg-cross" data-cross></span></div>' +
-      '<div class="sl-legend">' +
-      '<span><i class="sl-dot-core"></i>' + (zh ? '核心' : 'Core') + ' <b data-lcore></b></span>' +
-      '<span><i class="sl-dot-adj"></i>' + (zh ? '相邻' : 'Adjacent') + ' <b data-ladj></b></span>' +
-      '<span><i class="sl-dot-cross"></i>' + (zh ? '跨域' : 'Cross') + ' <b data-lcross></b></span>' +
-      '</div>' +
-      '<div class="sl-metrics" data-metrics aria-live="polite"></div>' +
-      '<p class="sl-hint">' + (zh
-        ? '跨域探索为剩余部分（100 − 核心 − 相邻）。70/20/10 是可尝试的起点，不是数学上的最优比例。'
-        : 'Cross-domain work takes the remainder (100 − core − adjacent). 70/20/10 is a starting point, not a proven optimum.') + '</p>';
-
-    const sa = root.querySelector('#sl-r-a');
-    const sb = root.querySelector('#sl-r-b');
-    const oa = root.querySelector('[data-a]');
-    const ob = root.querySelector('[data-b]');
-    const core = root.querySelector('[data-core]');
-    const adj = root.querySelector('[data-adj]');
-    const cross = root.querySelector('[data-cross]');
-    const lcore = root.querySelector('[data-lcore]');
-    const ladj = root.querySelector('[data-ladj]');
-    const lcross = root.querySelector('[data-lcross]');
-    const metrics = root.querySelector('[data-metrics]');
-
-    function draw() {
-      const a = Number(sa.value);
-      sb.max = String(100 - a);
-      if (Number(sb.value) > 100 - a) sb.value = String(Math.max(0, 100 - a));
-      const b = Number(sb.value);
-      const c = 100 - a - b;
-      oa.textContent = a + '%';
-      ob.textContent = b + '%';
-      core.style.width = a + '%';
-      adj.style.width = b + '%';
-      cross.style.width = c + '%';
-      lcore.textContent = a + '%';
-      ladj.textContent = b + '%';
-      lcross.textContent = c + '%';
-      metrics.innerHTML =
-        metric(zh ? '长期积累' : 'Long-run accumulation', a + '%', zh ? '核心方向' : 'core direction') +
-        metric(zh ? '发现新机会' : 'Discovery', (b + c) + '%', zh ? '相邻 + 跨域' : 'adjacent + cross');
-    }
-
-    sa.addEventListener('input', draw);
-    sb.addEventListener('input', draw);
-    draw();
-  }
-
-  const handlers = { secretary: secretary, queue: queue, search: search, mab: mab, offer: offer, resource: resource };
+  const handlers = { secretary: secretary, queue: queue, search: search, mab: mab, offer: offer };
 
   document.querySelectorAll('[data-stopping-lab]').forEach(root => {
     const kind = root.dataset.stoppingLab;

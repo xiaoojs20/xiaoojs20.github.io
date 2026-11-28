@@ -1123,7 +1123,7 @@ const initPhotoGallery = () => {
             clone.classList.remove("is-menu-hovered", "is-dragging", "is-zoom-origin");
             clone.classList.add("is-gallery-clone");
             clone.tabIndex = -1;
-            clone.setAttribute("aria-hidden", "true");
+            clone.removeAttribute("aria-hidden");
             setFloatingRect(clone, originRect, rotate);
 
             document.body.appendChild(clone);
@@ -1135,7 +1135,7 @@ const initPhotoGallery = () => {
             zoomClone = clone;
 
             clone.addEventListener("click", (event) => {
-                if ((event.target as HTMLElement).closest("a")) return;
+                if ((event.target as HTMLElement).closest("a, button")) return;
                 closeZoom();
             });
 
@@ -1163,7 +1163,7 @@ const initPhotoGallery = () => {
             });
 
             item.addEventListener("pointerdown", (event) => {
-                if (!canDrag() || zoomedItem || (event.target as HTMLElement).closest("a")) return;
+                if (!canDrag() || zoomedItem || (event.target as HTMLElement).closest("a, button")) return;
 
                 const offset = {
                     x: Number(item.dataset.dragX) || 0,
@@ -1226,12 +1226,13 @@ const initPhotoGallery = () => {
 
             item.addEventListener("click", (event) => {
                 if (item.dataset.suppressGalleryClick === "true") return;
-                if ((event.target as HTMLElement).closest("a")) return;
+                if ((event.target as HTMLElement).closest("a, button")) return;
                 openZoom(item);
             });
 
             item.addEventListener("keydown", (event) => {
                 if (event.key !== "Enter" && event.key !== " ") return;
+                if ((event.target as HTMLElement).closest("a, button")) return;
 
                 event.preventDefault();
                 openZoom(item);
@@ -1241,7 +1242,7 @@ const initPhotoGallery = () => {
         backdrop?.addEventListener("click", closeZoom);
 
         document.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") closeZoom();
+            if (event.key === "Escape" && !document.querySelector("dialog[open]")) closeZoom();
         });
 
         window.addEventListener("resize", scheduleLayout);

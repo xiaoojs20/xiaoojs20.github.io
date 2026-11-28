@@ -66,7 +66,20 @@ When Apple Silicon first arrived, people mostly talked about performance and pow
 
 On a traditional discrete-GPU computer, system memory and GPU VRAM are usually separate. A machine with 64 GB of RAM and 12 GB of VRAM that wants to run a model entirely on the GPU is still constrained by that 12 GB of VRAM. You can expand model size by offloading to CPU memory, but usually at a performance cost.
 
-![Figure 1: A simplified comparison of dedicated VRAM and unified memory. Not all PCs use a discrete GPU, and the unified memory available to a model is smaller than the machine's advertised capacity.](memory-layout-en.svg)
+<figure class="ev-figure">
+  <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" role="img" aria-label="Dedicated VRAM vs. unified memory" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>
+    svg.ev-svg{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+    svg.ev-svg text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+    svg.ev-svg .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+    svg.ev-svg .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+    svg.ev-svg .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+    svg.ev-svg .dim{fill:var(--muted)}
+    @media (prefers-color-scheme:dark){
+      svg.ev-svg{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+    }
+  </style><text x="155" y="24" text-anchor="middle" font-size="16" font-weight="600">Traditional discrete GPU</text><text x="485" y="24" text-anchor="middle" font-size="16" font-weight="600">Apple Silicon</text><path d="M320 15V198" stroke="var(--line)" stroke-dasharray="5 5"/><g font-size="15" text-anchor="middle"><rect class="node" x="21" y="45" width="118" height="50" rx="6"/><rect class="node" x="171" y="45" width="118" height="50" rx="6"/><text x="80" y="75">CPU</text><text x="230" y="75">GPU</text><path class="arrow" d="M80 95V119 M230 95V119 M139 70H171"/><rect class="node" x="21" y="119" width="118" height="53" rx="6"/><rect class="special" x="171" y="119" width="118" height="53" rx="6"/><text x="80" y="141">System RAM</text><text class="dim" x="80" y="159" font-size="12">RAM</text><text x="230" y="141">Dedicated VRAM</text><text class="dim" x="230" y="159" font-size="12">VRAM</text><rect class="node" x="348" y="45" width="85" height="50" rx="6"/><rect class="node" x="443" y="45" width="85" height="50" rx="6"/><rect class="node" x="538" y="45" width="85" height="50" rx="6"/><text x="390" y="75">CPU</text><text x="485" y="75">GPU</text><text x="580" y="75">NPU</text><path class="arrow" d="M390 95V119 M485 95V119 M580 95V119"/><rect class="special" x="348" y="119" width="275" height="53" rx="6"/><text x="485" y="141">Unified memory</text><text class="dim" x="485" y="159" font-size="12">Unified Memory</text><text class="dim" x="155" y="197" font-size="12">GPU-available capacity is capped by VRAM</text><text class="dim" x="485" y="197" font-size="12">Multiple units share one memory pool</text></g></svg>
+  <figcaption>Figure 1: A simplified comparison of dedicated VRAM and unified memory. Not all PCs use a discrete GPU, and the unified memory available to a model is smaller than the machine's advertised capacity.</figcaption>
+</figure>
 
 On a Mac, the CPU and GPU can share one memory pool. Take a 70B-parameter model: counting only 4-bit quantized weights, it would need roughly 35 GB in theory:
 
@@ -86,7 +99,20 @@ But if every action requires my mouse, keyboard and foreground window, I can onl
 
 When OpenAI launched Computer Use for Mac in April 2026, it already supported background operation and an independent cursor. Its current documentation states that Windows also supports Computer Use, but within the same Windows desktop session it takes over foreground input, so — unlike on Mac — you can't keep working in other applications at the same time.
 
-![Figure 2: The difference in how interaction resources are occupied; the timeline is qualitative only and does not represent a speed benchmark.](computer-use-en.svg)
+<figure class="ev-figure">
+  <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" role="img" aria-label="Foreground-locked vs. background Computer Use" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>
+    svg.ev-svg{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+    svg.ev-svg text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+    svg.ev-svg .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+    svg.ev-svg .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+    svg.ev-svg .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+    svg.ev-svg .dim{fill:var(--muted)}
+    @media (prefers-color-scheme:dark){
+      svg.ev-svg{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+    }
+  </style><g font-size="15" text-anchor="middle"><text x="155" y="25" font-weight="600">Foreground-locked Computer Use</text><text x="485" y="25" font-weight="600">Background Computer Use</text></g><path d="M320 15V204" stroke="var(--line)" stroke-dasharray="5 5"/><g font-size="13"><text x="18" y="76">User</text><text x="18" y="124">Agent</text><text x="348" y="76">User</text><text x="348" y="124">Agent</text></g><g fill="var(--accent)" opacity=".8"><rect x="75" y="57" width="66" height="28" rx="4"/><rect x="208" y="57" width="84" height="28" rx="4"/><rect x="405" y="57" width="217" height="28" rx="4"/></g><g fill="#82949d"><rect x="141" y="105" width="67" height="28" rx="4"/><rect x="405" y="105" width="143" height="28" rx="4"/></g><g font-size="12" text-anchor="middle"><text x="108" y="76" style="fill:white">Working</text><text x="250" y="76" style="fill:white">Keep working</text><text x="174" y="124" style="fill:white">Running task</text><text x="514" y="76" style="fill:white">Keep working</text><text x="476" y="124" style="fill:white">Running task</text><text x="174" y="51" class="dim">Waiting</text></g><path class="arrow" d="M75 151H292m-7-4 7 4-7 4M405 151H622m-7-4 7 4-7 4"/><g text-anchor="middle" font-size="12"><text x="183" y="172" class="dim">Time</text><text x="513" y="172" class="dim">Time</text><text x="155" y="199">Shared foreground, serial tasks</text><text x="485" y="199">Parallel work in supported apps</text></g></svg>
+  <figcaption>Figure 2: The difference in how interaction resources are occupied; the timeline is qualitative only and does not represent a speed benchmark.</figcaption>
+</figure>
 
 Technically, Computer Use isn't limited to screenshot recognition and simulated mouse clicks. Operating systems generally offer accessibility interfaces that expose a control's text, hierarchy and available actions.
 
@@ -147,7 +173,9 @@ This deserves a separate discussion in China. Xiaomi's smart-home and appliance 
 
 The old assumption that "Xiaomi devices require a Xiaomi phone" no longer really holds. From Mijia and smart-home devices to today's electric cars and smart cabins, manufacturers are actively adapting to iPhone rather than asking users to switch phones just to control the lights at home or the screen in their car. Conversely, with a phone like a Huawei, some apps and in-car features may be more constrained — app ecosystems, system permissions and cross-device integration each have their own rules, and switching systems doesn't necessarily buy you more complete control.
 
-For core smart-home functions, iPhone users can use Mijia quite completely. There's no need to choose between Apple's personal-device ecosystem and Xiaomi's smart-home ecosystem. As for whether specific versions on the two platforms have feature parity or the same development priority, there isn't enough public evidence to conclude either way. Xiaomi phones also have unique advantages in areas like Super XiaoAI and cross-device system integration.
+"Apple compatibility" has become close to a standard selling point for Chinese manufacturers, and users have nicknamed the practice *qiangjian* — "forcibly compatible." Xiaomi got there early: Mijia has an Apple Watch app, and a Xiaomi car can be controlled and its navigation handed off from an iPhone. How deep each vendor goes varies, but for users, one more door in beats one fewer.
+
+For core smart-home functions, iPhone users can already use Mijia quite completely, with no need to choose between Apple's personal-device ecosystem and Xiaomi's smart-home ecosystem. Sometimes the iOS experience is even better than on Xiaomi's own phones — though the release cadence and development priorities on the two platforms aren't public, so that comparison only holds for specific features. Xiaomi phones still have their own advantages in areas like Super XiaoAI and cross-device system integration.
 
 How does this relate to AI? A future Personal Agent shouldn't only handle information in computers and phones — with authorization it should also interact with devices in the real world. Lights, air conditioners, robot vacuums and home sensors are all valuable tools or sources of information. Mijia's cross-platform compatibility preserves the possibility for iPhone users to connect to these capabilities; but whether a third-party agent can directly control a given device still depends on Mijia, the device maker and the relevant interfaces being open.
 
@@ -169,7 +197,20 @@ The LiDAR scanner on Pro models adds depth information. Together with ARKit and 
 
 This is where I'm most inclined to discuss it alongside Spatial Intelligence and World Models. For such models to truly understand the physical world, flat images alone aren't enough; they also need to know where things are, how large they are, how they occlude one another, and where the person is standing. Three-dimensional spatial information is precisely the raw material for that understanding. Today these technologies mainly serve photography, augmented reality and immersive experiences. But as spatial intelligence and world models develop, 3D spatial information could also become an important context for a Personal Agent to understand the physical world — for example, film a room and let AI suggest a furniture layout based on real dimensions, instead of guessing from a single picture.
 
-![Figure 3: A possible shape for a personal AI system. This is not a complete product Apple has already shipped; each data source and tool requires suitable interfaces, permissions and user authorization.](personal-ai-stack-en.svg)
+<figure class="ev-figure">
+  <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" role="img" aria-label="Data capture, model reasoning, and task execution in a personal AI stack" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>
+    svg.ev-svg{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+    svg.ev-svg text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+    svg.ev-svg .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+    svg.ev-svg .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+    svg.ev-svg .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+    svg.ev-svg .dim{fill:var(--muted)}
+    @media (prefers-color-scheme:dark){
+      svg.ev-svg{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+    }
+  </style><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="var(--muted)"/></marker></defs><g text-anchor="middle"><g font-size="15" font-weight="600"><rect class="node" x="12" y="12" width="146" height="65" rx="7"/><text x="85" y="38">Apple Watch</text><rect class="node" x="169" y="12" width="146" height="65" rx="7"/><text x="242" y="38">AirPods</text><rect class="node" x="326" y="12" width="146" height="65" rx="7"/><text x="399" y="38">iPhone</text><rect class="node" x="483" y="12" width="145" height="65" rx="7"/><text x="555" y="38">Vision Pro</text></g><g font-size="12" class="dim"><text x="85" y="57">Health data</text><text x="242" y="57">Voice notes</text><text x="399" y="57">Vision, space, location</text><text x="555" y="57">Smart glasses · 3D</text></g><path class="arrow" d="M85 77V98H555V77 M242 77V98 M399 77V98 M320 98V115" marker-end="url(#arr)"/><rect class="special" x="100" y="117" width="440" height="52" rx="7"/><text x="320" y="137" font-weight="600" font-size="15">Personal context &amp; memory</text><text x="320" y="155" font-size="12" class="dim">Authorized access · filter · retrieve · update</text><path class="arrow" d="M320 169V186" marker-end="url(#arr)"/><rect class="special" x="100" y="188" width="440" height="52" rx="7"/><text x="320" y="209" font-weight="600" font-size="15">Personal Agent</text><text x="320" y="226" class="dim" font-size="12">Local model + cloud API · task planning</text><path class="arrow" d="M320 240V254H112V270 M320 254V270 M320 254H528V270"/><g font-size="14"><rect class="node" x="12" y="270" width="200" height="49" rx="7"/><text x="112" y="291">Mac / cloud PC</text><text x="112" y="307" class="dim" font-size="11">Files &amp; app actions</text><rect class="node" x="220" y="270" width="200" height="49" rx="7"/><text x="320" y="291">System apps / APIs</text><text x="320" y="307" class="dim" font-size="11">Personal admin</text><rect class="node" x="428" y="270" width="200" height="49" rx="7"/><text x="528" y="291">Smart home</text><text x="528" y="307" class="dim" font-size="11">Physical environment</text></g></g></svg>
+  <figcaption>Figure 3: A possible shape for a personal AI system. This is not a complete product Apple has already shipped; each data source and tool requires suitable interfaces, permissions and user authorization.</figcaption>
+</figure>
 
 Viewed together, Apple Watch, AirPods, iPhone, Vision Pro and smart glasses have a clear division of labor: Apple Watch records the body's physiological state, AirPods capture spoken language, the iPhone records visual and spatial information, Vision Pro presents spatial content in three dimensions, and smart glasses bring that presentation closer to everyday life. The value of Apple's hardware ecosystem is moving beyond consumer-electronics functions and toward giving personal AI multimodal perception.
 

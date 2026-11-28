@@ -1,0 +1,440 @@
+<!doctype html><html lang=zh-Hans dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=theme-color content='#f5f5fa' media='(prefers-color-scheme: light)'><meta name=theme-color content='#303030' media='(prefers-color-scheme: dark)'><script id=site-language-config type=application/json>{"chineseTarget":"/zh/p/mediocrity-gravity/","currentLanguage":"zh","englishTarget":"/p/mediocrity-gravity/","excludePrompt":true}</script><script>(function(){const t="StackColorScheme";localStorage.getItem(t)||localStorage.setItem(t,"auto");const e=localStorage.getItem(t);document.documentElement.dataset.themeMode=["auto","light","dark"].includes(e)?e:"auto";const n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;document.documentElement.dataset.scheme=e=="dark"||e==="auto"&&n?"dark":"light"})()</script><style>html,body{min-height:100%;background:#f5f5fa}html[data-scheme=light],html[data-scheme=light] body{background:#f5f5fa;color-scheme:light}html[data-scheme=dark],html[data-scheme=dark] body{background:#303030;color-scheme:dark}</style><meta name=description content="从熵增、逃逸速度到耗散结构与复杂系统：关于退化、积累、突破与自由的个人思考。"><title>平庸有重力，需要逃逸速度</title><link rel=canonical href=https://xiaoojs20.github.io/zh/p/mediocrity-gravity/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"><link rel=stylesheet href=https://xiaoojs20.github.io/scss/style.min.64484de6e4fcd305c83269a8b3fd00b025f8f826ea4de95d572bcc2f961ee716.css><meta property='og:title' content="平庸有重力，需要逃逸速度"><meta property='og:description' content="从熵增、逃逸速度到耗散结构与复杂系统：关于退化、积累、突破与自由的个人思考。"><meta property='og:url' content='https://xiaoojs20.github.io/zh/p/mediocrity-gravity/'><meta property='og:site_name' content='xiaoojs20'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:published_time' content='2026-11-28T16:00:00+08:00'><meta property='article:modified_time' content='2026-11-28T16:00:00+08:00'><meta property='og:image' content='https://xiaoojs20.github.io/img/liquid-stack/featured.png'><meta name=twitter:title content="平庸有重力，需要逃逸速度"><meta name=twitter:description content="从熵增、逃逸速度到耗散结构与复杂系统：关于退化、积累、突破与自由的个人思考。"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://xiaoojs20.github.io/img/liquid-stack/featured.png'><link rel=icon type=image/png href="https://xiaoojs20.github.io/favicon-avatar.png?v=3"><link rel="shortcut icon" href="https://xiaoojs20.github.io/favicon-avatar.png?v=3"><link rel=apple-touch-icon sizes=180x180 href=https://xiaoojs20.github.io/favicon.png><link rel=manifest href=https://xiaoojs20.github.io/site.webmanifest><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><meta name=apple-mobile-web-app-title content="xiaoojs20"><meta name=msapplication-TileImage content="/favicon.png"><link rel=alternate type=application/rss+xml title=xiaoojs20 href=https://xiaoojs20.github.io/zh/index.xml></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button type=button id=toggle-menu aria-label=切换菜单>
+<span class="mobile-menu-icon mobile-menu-icon--menu" aria-hidden=true><span class="hm-icon hm-icon--lucide" style="--hm-icon-url:url('https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/menu.svg')" aria-hidden=true></span></span>
+</button>
+<a class=mobile-language-direct href=https://xiaoojs20.github.io/p/mediocrity-gravity/ aria-label=切换到英文>English</a><div class=mobile-profile-controls aria-label=页面设置><button type=button class=mobile-profile-control data-mobile-scheme-toggle aria-label=切换深浅色模式>
+<span class="theme-mode-icon theme-mode-icon--auto" aria-hidden=true><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+</span><span class="theme-mode-icon theme-mode-icon--light" aria-hidden=true><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+</span><span class="theme-mode-icon theme-mode-icon--dark" aria-hidden=true><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.9 13.4A8.5 8.5.0 0110.6 3.1 8.5 8.5.0 1020.9 13.4z"/></svg>
+</span><span class=mobile-theme-label data-theme-mode-label>跟随系统</span></button></div><header><figure class="site-avatar site-avatar--management"><a class=site-avatar__home-link href=https://xiaoojs20.github.io/zh/ aria-label=返回主页><img src=https://xiaoojs20.github.io/img/avatar-personal.jpg width=512 height=512 class=site-logo loading=lazy alt=Avatar>
+</a><button class="emoji site-avatar__management-toggle" type=button aria-expanded=false aria-controls=sidebar-management-menu aria-label=打开网站管理菜单 data-sidebar-management-toggle>😄</button><div class=sidebar-management-menu id=sidebar-management-menu role=menu aria-label=网站管理 data-sidebar-management-menu hidden><div class=sidebar-management-menu__header><div class=sidebar-management-menu__heading><strong>网站管理</strong>
+<small>管理快捷入口；修改源码后需重新构建发布。</small></div><a href=https://xiaoojs20.github.io/zh/>返回主页</a></div><div class=sidebar-management-menu__items><a href=https://github.com/xiaoojs20/xiaoojs20.github.io role=menuitem target=_blank rel="noopener noreferrer"><span class=sidebar-management-menu__icon aria-hidden=true><svg class="lucide lucide-folder-bookmark" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v8l3-3 3 3V6"/><path d="M20 20a2 2 0 002-2V8a2 2 0 00-2-2h-7.9a2 2 0 01-1.69-.9L9.6 3.9A2 2 0 007.93 3H4A2 2 0 002 5v13a2 2 0 002 2z"/></svg>
+</span><span>网站仓库</span>
+</a><a href=https://github.com/xiaoojs20/xiaoojs20.github.io/tree/master/liquid-preview role=menuitem target=_blank rel="noopener noreferrer"><span class=sidebar-management-menu__icon aria-hidden=true><svg class="lucide lucide-layout-dashboard" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+</span><span>网站源文件</span>
+</a><a href=https://github.com/xiaoojs20/xiaoojs20.github.io/blob/master/liquid-preview/content/page/about/index.zh.md role=menuitem class=sidebar-management-menu__item--group-start target=_blank rel="noopener noreferrer"><span class=sidebar-management-menu__icon aria-hidden=true><svg class="lucide lucide-circle-user-round" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.925 20.056a6 6 0 00-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+</span><span>关于我源码（中文）</span>
+</a><a href=https://github.com/xiaoojs20/xiaoojs20.github.io/blob/master/liquid-preview/content/page/about/index.en.md role=menuitem target=_blank rel="noopener noreferrer"><span class=sidebar-management-menu__icon aria-hidden=true><svg class="lucide lucide-circle-user-round" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.925 20.056a6 6 0 00-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+</span><span>关于我源码（英文）</span>
+</a><a href=https://github.com/xiaoojs20/xiaoojs20.github.io/actions role=menuitem class=sidebar-management-menu__item--group-start target=_blank rel="noopener noreferrer"><span class=sidebar-management-menu__icon aria-hidden=true><svg class="lucide lucide-calendar-days" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+</span><span>构建与发布记录</span>
+</a><a href=https://github.com/xiaoojs20/xiaoojs20.github.io/settings/pages role=menuitem target=_blank rel="noopener noreferrer"><span class=sidebar-management-menu__icon aria-hidden=true><svg class="lucide lucide-layout-dashboard" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+</span><span>GitHub Pages 设置</span></a></div></div></figure><div class=site-meta><h1 class=site-name><a href=https://xiaoojs20.github.io/zh/>xiaoojs20</a></h1><h2 class=site-description>记录生活，收藏日常里的点滴。</h2></div></header><ol class="menu-social site-social" aria-label=社交媒体><li><a href=mailto:xiaoojs20@gmail.com aria-label=邮箱 title=邮箱><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a></li><li><button type=button class=social-button aria-label=查看微信二维码 title=微信 onclick='const dialog=document.getElementById("sidebar-wechat-dialog");document.body.appendChild(dialog),dialog.showModal()'><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.4 3C4.2 3 1 5.8 1 9.2c0 1.9 1 3.6 2.7 4.7l-.6 2 2.4-1.1c.9.3 1.8.4 2.8.4.4.0.8.0 1.2-.1a5.6 5.6.0 01-.2-1.4c0-3.2 3-5.8 6.7-5.8h.5C15.9 5.1 12.5 3 8.4 3zM5.9 8a.9.9.0 110-1.8.9.9.0 010 1.8zm5 0a.9.9.0 110-1.8.9.9.0 010 1.8zM16 9c-3.3.0-6 2.2-6 5s2.7 5 6 5c.8.0 1.6-.1 2.3-.4l2 1-.5-1.7C21.1 17 22 15.6 22 14c0-2.8-2.7-5-6-5zm-2 4a.75.75.0 110-1.5.75.75.0 010 1.5zm4 0a.75.75.0 110-1.5.75.75.0 010 1.5z"/></svg></button></li><li><a href=https://x.com/redefine1020 target=_blank rel="noopener noreferrer" aria-label=X title=X><svg class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M21.604 25.622 7.693 41.498"/><path d="M37.924 6.502 25.554 21.07"/><path d="m6.61 6.5 27.44 35h7.56l-27.439-35z"/></svg></a></li><li><button type=button class=social-button aria-label=查看小红书二维码 title=小红书 onclick='const dialog=document.getElementById("sidebar-xhs-dialog");document.body.appendChild(dialog),dialog.showModal()'><svg class="icon icon-tabler icon-tabler-brand-xiaohongshu" width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect width="37" height="37" x="5.5" y="5.5" rx="4" ry="4"/><path d="M32.254 19.374v9.252"/><path d="M26.473 20.85v7.776"/><path d="M24.95 20.85h3.047"/><path d="M23.959 28.626h4.803"/><path d="M30.361 20.85h4.13c.49.0.885.396.885.885v2.696"/><path d="M29.815 24.43h7.194a.99.99.0 01.99.991v2.214a.99.99.0 01-.99.99h-1.83"/><path d="M37.038 21.317l.962-.89"/><path d="M21.684 28.626h-2.118"/><path d="M17.188 21.971l.697 5.07"/><path d="M10.683 21.971 10 27.3"/><path d="M13.922 19.374v7.892c0 .75-.609 1.36-1.36 1.36H12.2"/><path d="M21.684 19.374l-1.367 3.253h1.866l-1.367 3.252h1.865"/></svg></button></li><li><a href=https://www.instagram.com/xiaoo1020/ target=_blank rel="noopener noreferrer" aria-label=Instagram title=Instagram><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a></li><li><a href=https://www.youtube.com/@xiaoojs20 target=_blank rel="noopener noreferrer" aria-label=YouTube title=YouTube><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 7.1c-.2-1.5-1.1-2.2-2.6-2.3-1.7-.2-3.9-.3-6.4-.3s-4.7.1-6.4.3C4.1 4.9 3.2 5.6 3 7.1a39 39 0 000 9.8c.2 1.5 1.1 2.2 2.6 2.3 1.7.2 3.9.3 6.4.3s4.7-.1 6.4-.3c1.5-.1 2.4-.8 2.6-2.3a39 39 0 000-9.8z"/><path d="m10 8.8 5.2 3.2-5.2 3.2z" fill="currentColor" stroke="none"/></svg></a></li><li><a href=https://xiaoojs20.github.io/zh/about/#coffee-chat aria-label="预约 Coffee Chat" title="Coffee Chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h12v6a5 5 0 01-5 5H9a5 5 0 01-5-5V8zm12 1h2a2 2 0 010 4h-2M3 21h15M8 3v2m4-2v2"/></svg></a></li><li><a href=https://xiaoojs20.github.io/zh/subscribe/ aria-label="订阅 RSS" title=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1" fill="currentColor" stroke="none"/></svg></a></li></ol><dialog id=sidebar-wechat-dialog class=social-dialog aria-labelledby=sidebar-wechat-title><div class=social-dialog__head><h2 id=sidebar-wechat-title>微信</h2><button type=button aria-label=关闭微信二维码 onclick='document.getElementById("sidebar-wechat-dialog").close()'>×</button></div><img src=https://xiaoojs20.github.io/img/wechat-qr.png alt=微信添加好友二维码><p>扫码添加微信</p></dialog><dialog id=sidebar-xhs-dialog class=social-dialog aria-labelledby=sidebar-xhs-title><div class=social-dialog__head><h2 id=sidebar-xhs-title>小红书</h2><button type=button aria-label=关闭小红书二维码 onclick='document.getElementById("sidebar-xhs-dialog").close()'>×</button></div><img src=https://xiaoojs20.github.io/img/xiaohongshu-qr.jpg alt=小红书个人主页二维码><p>打开小红书扫一扫</p></dialog><ol class=menu id=main-menu><li><a href=https://xiaoojs20.github.io/zh/><svg class="lucide lucide-house" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 00-1-1h-4a1 1 0 00-1 1v8"/><path d="M3 10a2 2 0 01.709-1.528l7-6a2 2 0 012.582.0l7 6A2 2 0 0121 10v9a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+<span>首页</span></a></li><li><a href=https://xiaoojs20.github.io/zh/about/><svg class="lucide lucide-circle-user-round" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.925 20.056a6 6 0 00-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+<span>关于我</span></a></li><li><a href=https://xiaoojs20.github.io/zh/travel/><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1116 0z"/><circle cx="12" cy="10" r="2.5"/></svg>
+<span>旅行地图</span></a></li><li><a href=https://xiaoojs20.github.io/zh/notes/><svg class="lucide lucide-archive" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 002 2h12a2 2 0 002-2V8"/><path d="M10 12h4"/></svg>
+<span>随笔</span></a></li><li class=menu-bottom-section><ol class=menu><li id=i18n-switch><a class=language-direct href=https://xiaoojs20.github.io/p/mediocrity-gravity/ aria-label=切换到英文><svg class="lucide lucide-languages" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+<span>English</span></a></li><li id=dark-mode-toggle role=button tabindex=0 aria-label=主题：跟随系统，点击切换><span class="sidebar-color-icon theme-mode-icon theme-mode-icon--auto" aria-hidden=true><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+</span><span class="sidebar-color-icon theme-mode-icon theme-mode-icon--light" aria-hidden=true><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+</span><span class="sidebar-color-icon theme-mode-icon theme-mode-icon--dark" aria-hidden=true><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.9 13.4A8.5 8.5.0 0110.6 3.1 8.5 8.5.0 1020.9 13.4z"/></svg>
+</span><span data-theme-mode-label>跟随系统</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="lucide lucide-list-tree" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5h13"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="M3 10a2 2 0 002 2h3"/><path d="M3 5v12a2 2 0 002 2h3"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav class=toc-nav id=TableOfContents><ol><li><a href=#平庸不是静止而是一种吸引力>平庸不是静止，而是一种吸引力</a></li><li><a href=#对抗熵增>对抗熵增</a><ol><li><a href=#21-熵增的方向>2.1 熵增的方向</a></li><li><a href=#22-开放系统与负熵流>2.2 开放系统与负熵流</a></li><li><a href=#23-从校园走向职场重新思考人生目标>2.3 从校园走向职场：重新思考人生目标</a></li></ol></li><li><a href=#逃逸速度努力之外还需要跨越门槛>逃逸速度：努力之外，还需要跨越门槛</a><ol><li><a href=#31-从努力到突破>3.1 从努力到突破</a></li><li><a href=#32-积累资本让积累产生复利>3.2 积累资本，让积累产生复利</a></li><li><a href=#33-向内积累也要向外探索>3.3 向内积累，也要向外探索</a></li></ol></li><li><a href=#从扩大选择权到持续演化>从扩大选择权到持续演化</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><div class=article-title-wrapper><h2 class=article-title><a href=https://xiaoojs20.github.io/zh/p/mediocrity-gravity/>平庸有重力，需要逃逸速度</a></h2></div><footer class=article-meta><div class="article-meta__time inline-meta"><svg class="lucide lucide-calendar-days" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+<time class=article-time--published data-preserve-date datetime=2026-11-28T16:00:00+08:00>发布于 2026-11-28 16:00</time>
+<span class=article-time--written>写于 2026.11</span>
+<svg class="lucide lucide-clock-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6h4"/></svg>
+<time class=article-time--reading>阅读时长: 14 分钟</time></div><div class="article-meta__translations inline-meta"><svg class="lucide lucide-languages" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+<a href=https://xiaoojs20.github.io/p/mediocrity-gravity/ class=link>English</a></div></footer></div></header><aside class=article-toc><details><summary><div class=article-toc-title><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6-6 6"/></svg>
+<span>目录</span></div></summary><nav class=toc-nav><ol><li><a href=#平庸不是静止而是一种吸引力>平庸不是静止，而是一种吸引力</a></li><li><a href=#对抗熵增>对抗熵增</a><ol><li><a href=#21-熵增的方向>2.1 熵增的方向</a></li><li><a href=#22-开放系统与负熵流>2.2 开放系统与负熵流</a></li><li><a href=#23-从校园走向职场重新思考人生目标>2.3 从校园走向职场：重新思考人生目标</a></li></ol></li><li><a href=#逃逸速度努力之外还需要跨越门槛>逃逸速度：努力之外，还需要跨越门槛</a><ol><li><a href=#31-从努力到突破>3.1 从努力到突破</a></li><li><a href=#32-积累资本让积累产生复利>3.2 积累资本，让积累产生复利</a></li><li><a href=#33-向内积累也要向外探索>3.3 向内积累，也要向外探索</a></li></ol></li><li><a href=#从扩大选择权到持续演化>从扩大选择权到持续演化</a></li></ol></nav></details></aside><section class=article-print-attribution aria-label=打印来源信息><p><strong>作者：</strong> Liquid Stack</p><p><strong>文章来源：</strong> <a href=https://xiaoojs20.github.io/zh/p/mediocrity-gravity/>https://xiaoojs20.github.io/zh/p/mediocrity-gravity/</a></p></section><section class=article-content><p>字节跳动创始人张一鸣早年在微博上写过一句话：<strong>平庸有重力，需要逃逸速度。</strong> 在 2015 年接受《成都商报》采访时，他还谈到自己曾以"逃逸平庸的重力"自勉，并将它与高标准逐渐成为习惯联系起来。</p><h2 id=平庸不是静止而是一种吸引力>平庸不是静止，而是一种吸引力</h2><p><strong>外部，是引力场。</strong> 在牛顿力学中，地球的引力场决定了物体自由下落的加速度；在广义相对论中，自由落体可以理解为物体沿弯曲时空中的测地线运动。</p><p>日常生活中，游戏提供频繁的反馈和奖励，红果短剧持续降低观看成本、刺激大脑，高糖高盐高脂的食物则往往具有较强的感官吸引力。现代商业社会不断优化这些产品，使人能够以越来越低的成本获得即时满足。</p><p>对应到人生，家庭背景、社会环境、行业结构和经济压力共同塑造了个人的机会与约束。周围人的生活方式影响我们的参照标准，行业影响能力的回报，而固定支出、债务与责任则影响我们承担风险的能力。</p><p>相比之下，学习、运动和创造往往需要持续投入，并在较长时间之后才能获得回报。<strong>即时奖励与延迟奖励之间的不对称性，构成了现代生活中一种重要的外部引力。</strong></p><p><strong>内部，是质量与已有的运动状态。</strong> 质量衡量物体的惯性；改变其速度需要施加冲量。如果一个物体已经具有向下的速度，要使它反向运动，就必须先抵消原有的向下动量。</p><p>人类在长期演化过程中形成生理与心理倾向，包括对即时奖励的偏好、对能量消耗的规避，以及在不确定条件下对安全感的追求。多巴胺参与动机、奖赏预测与强化学习，使能够带来奖励的行为更容易被重复。人脑的奖赏机制并没有专门针对现代社会中高度密集、低成本的刺激而演化，这使得我们很容易被外部环境中的即时奖励所吸引。</p><p>个体在成长过程中逐渐形成的行为惯性则表现为长期形成的生活习惯、认知框架、既有利益和路径依赖。重复的行为逐渐形成自动化的习惯，过去的成功经验可能成为认知更新的障碍。</p><p><strong>外部引力与内部惯性并非相互独立，而是存在正反馈关系。</strong> 外部环境提供刺激，内部奖赏机制强化行为，重复的行为形成习惯，而习惯又促使个体主动寻求相同的外部刺激。一个人的认知、偏好和行为方式逐渐被环境塑造，同时又在不断选择与自身既有状态相匹配的环境。随着这一过程不断重复，外部约束逐渐内化为个人的行为惯性，原本容易改变的生活方式也可能变得难以改变。</p><p>这或许正是平庸具有重力的深层原因：<strong>外部环境不断降低维持现状的成本，而内部惯性不断提高改变现状的成本。</strong></p><figure class=ev-figure><svg class="ev-svg" role="img" aria-label="外部引力与内部惯性相互强化：外部环境提供即时奖励，内部奖赏机制与习惯促使个人主动选择相同的环境；下方以单个物体在地球引力场中下坠作类比" viewBox="0 0 660 437" width="660" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>svg.ev-svg{--paper:var(--card-background, #fffefa);--ink:currentColor;--muted:color-mix(in srgb, currentColor 62%, transparent);--line:color-mix(in srgb, currentColor 24%, transparent);--accent:var(--accent-color, #176c5b);--accent2:#b16b35;--blue:#426b9b;--red:#b95c50;--soft:color-mix(in srgb, var(--accent-color, #176c5b) 8%, var(--card-background, #fffefa))}@media(prefers-color-scheme:dark){svg.ev-svg{--accent2:#e2a36b;--blue:#91b5e0;--red:#e69a8a}}svg.ev-svg text{fill:var(--ink);font-family:inherit;font-size:13px}svg.ev-svg .accent{fill:var(--accent)}svg.ev-svg .muted{fill:var(--muted)}svg.ev-svg .warm{fill:var(--accent2)}svg.ev-svg .red{fill:var(--red)}svg.ev-svg .axis{fill:none;stroke:var(--muted);stroke-width:1.2}svg.ev-svg .grid path{fill:none;stroke:var(--line);stroke-width:1}svg.ev-svg .grid .dash{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:4 6;opacity:.45}svg.ev-svg .soft{fill:var(--soft)}svg.ev-svg .green-line{fill:none;stroke:var(--accent);stroke-width:1.8}svg.ev-svg .warm-line{fill:none;stroke:var(--accent2);stroke-width:1.8}svg.ev-svg .red-line{fill:none;stroke:var(--red);stroke-width:1.8}</style><defs><marker id="gravityFieldArrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6z" fill="var(--muted)"/></marker><marker id="gravityFallArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 7 3 0 6z" fill="var(--accent)"/></marker><marker id="gravityImpulseArrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6z" fill="var(--accent2)"/></marker><clipPath id="gravityEarthClip"><circle cx="330" cy="365" r="60"/></clipPath></defs><rect x="14" y="24" width="222" height="142" rx="8" fill="var(--soft)" stroke="var(--line)"/><rect x="424" y="24" width="222" height="142" rx="8" fill="var(--soft)" stroke="var(--line)"/><g text-anchor="middle"><text x="125" y="50" class="accent" font-weight="700" style="font-size:17px">外部 · 引力场</text><text x="125" y="72" class="muted" style="font-size:13px">地球引力 / 时空弯曲</text><path d="M32 85H218" stroke="var(--line)"/><text x="125" y="106" style="font-size:14px">家庭、社会与经济环境</text><text x="125" y="128" style="font-size:14px">游戏、短剧、食物刺激</text><text x="125" y="149" class="muted" style="font-size:12px">降低维持现状的成本</text><text x="535" y="50" class="accent" font-weight="700" style="font-size:17px">内部 · 惯性</text><text x="535" y="72" class="muted" style="font-size:13px">质量 / 已有运动状态</text><path d="M442 85H628" stroke="var(--line)"/><text x="535" y="106" style="font-size:14px">奖赏机制、即时满足偏好</text><text x="535" y="128" style="font-size:14px">习惯、认知与路径依赖</text><text x="535" y="149" class="muted" style="font-size:12px">提高改变现状的成本</text><text x="330" y="47" class="accent" style="font-size:13px">刺激与强化</text><text x="330" y="87" class="muted" style="font-size:12px">相互强化</text><text x="330" y="103" class="muted" style="font-size:12px">正反馈</text><text x="330" y="145" class="warm" style="font-size:13px">主动寻求相同刺激</text></g><path d="M240 60H416" stroke="var(--accent)" stroke-width="1.8" fill="none" marker-end="url(#gravityFallArrow)"/><path d="M420 119H244" stroke="var(--accent2)" stroke-width="1.8" fill="none" marker-end="url(#gravityImpulseArrow)"/><path d="M24 187H636" stroke="var(--line)" stroke-dasharray="3 5"/><g fill="none" stroke="var(--muted)" stroke-width="1.15" opacity=".65" stroke-dasharray="4 4" marker-end="url(#gravityFieldArrow)"><path d="M221 218l68 92"/><path d="M262 219l44 95"/><path d="M398 219l-44 95"/><path d="M439 218l-68 92"/></g><circle cx="330" cy="365" r="60" fill="var(--blue)" opacity=".16"/><g clip-path="url(#gravityEarthClip)" fill="var(--accent)" opacity=".3"><path d="M282 315l18-6 20 11-7 16 12 13-18 9-20-11-11-8z"/><path d="M350 306l20 9 12 16-10 10 14 12-14 12-18-13-10-17z"/><path d="M303 373l16-6 11 14-15 21-17-4-6-13z"/><path d="M370 376l14 13-17 10-11-15z"/></g><circle cx="330" cy="365" r="60" fill="none" stroke="var(--blue)" stroke-width="1.6"/><circle cx="330" cy="213" r="10" fill="var(--accent2)" stroke="var(--paper)" stroke-width="1.4"/><path d="M330 227v73" fill="none" stroke="var(--accent)" stroke-width="2.5" marker-end="url(#gravityFallArrow)"/><path d="M352 213v30" fill="none" stroke="var(--accent2)" stroke-width="1.7" marker-end="url(#gravityImpulseArrow)"/><text x="367" y="230" class="warm" style="font-size:13px">已有速度</text><text x="235" y="258" class="muted" text-anchor="end" style="font-size:13px">引力场</text><text x="330" y="369" text-anchor="middle" style="font-size:14px" font-weight="600">地球</text><circle cx="330" cy="305" r="4" fill="var(--accent)" stroke="var(--paper)" stroke-width="1"/><text x="405" y="298" class="accent" style="font-size:13px">下坠方向</text><path d="M397 294H343" fill="none" stroke="var(--accent)" stroke-width="1"/></svg><figcaption>外部环境像引力场，内部习惯与路径依赖像已有惯性。</figcaption></figure><h2 id=对抗熵增>对抗熵增</h2><h3 id=21-熵增的方向>2.1 熵增的方向</h3><p>熵增的统计学含义比日常语言里的混乱更精确。玻尔兹曼公式将熵与一个宏观状态对应的微观状态数量联系起来：</p>$$
+S=k_{\mathrm B}\ln\Omega
+$$<p>$\Omega$ 为与给定宏观状态相容的微观状态数（在等概率微观状态的描述下），玻尔兹曼常数将其对数转换为具有物理量纲的熵。</p><p>将一滴墨水滴进水中，它会逐渐扩散。并不是物理规律禁止墨水分子重新集中，而是分散状态对应的微观排列远多于集中状态。对于宏观系统，从低概率状态演化到典型的高概率状态是压倒性的统计趋势。</p><p>人生的积累也有类似的非对称性：建立有价值的状态需要持续投入，而维持这些状态同样需要成本。</p><div class=table-wrapper><table><thead><tr><th>维度</th><th>建立与积累</th><th>自然损耗与退化</th></tr></thead><tbody><tr><td>体型与肌肉</td><td>数月乃至数年的规律训练</td><td>停止训练后，肌肉与力量可能逐步流失</td></tr><tr><td>睡眠与健康</td><td>规律作息、充分睡眠与恢复</td><td>长期缺觉或作息紊乱可能损害恢复与精力</td></tr><tr><td>知识与技能</td><td>系统学习、实践与反复应用</td><td>长期不用容易遗忘，技术迭代也可能削弱技能的价值</td></tr><tr><td>人际关系与信任</td><td>持续交流、反复合作与履行承诺</td><td>疏于维护，关系与信任可能逐渐淡化</td></tr><tr><td>财富</td><td>持续储蓄、投资与资本积累</td><td>消费、通胀与投资损失可能侵蚀财富</td></tr><tr><td>作品与声誉</td><td>长期创作、价值输出与外部认可</td><td>作品可能过时，声誉与影响力也可能衰减</td></tr></tbody></table></div><p>重新安排健身、改善体型，以及逐渐关注睡眠和长期健康，让我更直接地理解了这种非对称性。身体并不是一个能够无限透支、然后在三十岁以后一次性修复的系统。</p><p>这不是说每一种优势都注定衰退。恰恰相反，有些知识、资本和关系可以继续增值。但任何有功能的结构都有其维持条件，而且建立结构与破坏结构的难度通常不对称。</p><p>还有一种更容易被忽略的退化：相对退化。即使个人的绝对能力不变，技术、行业和其他人不断进步，也可能让原来的能力失去稀缺性。于是，保持现状也需要投入，而不是停止行动。</p><p><strong>退化不一定需要主动选择，维持和成长却经常需要主动投入。</strong></p><h3 id=22-开放系统与负熵流>2.2 开放系统与负熵流</h3><p>如果退化是一种自然趋势，那么成长所需要的资源从哪里来？生命提供了一个很好的参照。普里高津的耗散结构理论指出，远离热力学平衡的开放系统，在一定条件下，可以通过与外界持续交换物质和能量，形成并维持有组织的结构。其熵变可以分为内部熵产生与外部熵交换：</p>$$
+\frac{\mathrm dS}{\mathrm dt}=\frac{\mathrm d_iS}{\mathrm dt}+\frac{\mathrm d_eS}{\mathrm dt}
+$$$$
+\frac{\mathrm d_iS}{\mathrm dt}\geq 0
+$$<p>内部熵产生非负；交换项可以为负。若输出的熵超过内部熵产生，系统熵便可以下降。</p><figure class=ev-figure><svg class="ev-svg" role="img" aria-label="开放系统与环境交换能量、物质和熵。内部熵产生非负，净熵输出对应负熵交换；净熵输出大于内部熵产生时，系统熵下降。" viewBox="0 0 660 326" width="660" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>svg.ev-svg{--paper:var(--card-background, #fffefa);--ink:currentColor;--muted:color-mix(in srgb, currentColor 62%, transparent);--line:color-mix(in srgb, currentColor 24%, transparent);--accent:var(--accent-color, #176c5b);--accent2:#b16b35;--blue:#426b9b;--red:#b95c50;--soft:color-mix(in srgb, var(--accent-color, #176c5b) 8%, var(--card-background, #fffefa))}@media(prefers-color-scheme:dark){svg.ev-svg{--accent2:#e2a36b;--blue:#91b5e0;--red:#e69a8a}}svg.ev-svg text{fill:var(--ink);font-family:inherit;font-size:13px}svg.ev-svg .accent{fill:var(--accent)}svg.ev-svg .muted{fill:var(--muted)}svg.ev-svg .warm{fill:var(--accent2)}svg.ev-svg .red{fill:var(--red)}svg.ev-svg .axis{fill:none;stroke:var(--muted);stroke-width:1.2}svg.ev-svg .grid path{fill:none;stroke:var(--line);stroke-width:1}svg.ev-svg .grid .dash{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:4 6;opacity:.45}svg.ev-svg .soft{fill:var(--soft)}svg.ev-svg .green-line{fill:none;stroke:var(--accent);stroke-width:1.8}svg.ev-svg .warm-line{fill:none;stroke:var(--accent2);stroke-width:1.8}svg.ev-svg .red-line{fill:none;stroke:var(--red);stroke-width:1.8}</style><defs><marker id="entropyInArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 7 3 0 6z" fill="var(--accent)"/></marker><marker id="entropyOutArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 7 3 0 6z" fill="var(--accent2)"/></marker></defs><rect x="10" y="10" width="640" height="306" rx="10" fill="none" stroke="var(--muted)" stroke-dasharray="5 5"/><text x="26" y="33" class="muted">系统 + 外部环境</text><rect x="214" y="48" width="232" height="154" rx="9" fill="var(--soft)" stroke="var(--accent)"/><g text-anchor="middle"><text x="330" y="73" class="accent" font-weight="700" style="font-size:15px">开放系统</text><text x="330" y="100">吸收可用自由能</text><text x="330" y="121">代谢、修复与结构更新</text><path d="M233 133H427" stroke="var(--line)"/><text x="330" y="156" class="warm" font-weight="600">内部熵产生 ≥ 0</text><text x="330" y="183" class="accent">维持非平衡功能结构</text><text x="119" y="98" class="accent" font-weight="600">能量 / 物质输入</text><text x="119" y="149" class="muted">输入熵</text><text x="541" y="98" class="warm" font-weight="600">废热 / 废物输出</text><text x="541" y="149" class="muted">输出熵</text></g><path d="M36 119H207" class="green-line" marker-end="url(#entropyInArrow)"/><path d="M453 119H624" class="warm-line" marker-end="url(#entropyOutArrow)"/><path d="M26 218H634" stroke="var(--line)"/><g text-anchor="middle"><text x="330" y="241" class="accent" font-weight="700" style="font-size:14px">负熵流：净熵输出（输出熵 &gt; 输入熵）</text><text x="330" y="267">若净熵输出 &gt; 内部熵产生，则系统熵下降</text><text x="330" y="296" class="muted" style="font-size:12px">系统与环境构成孤立整体时，总熵仍不减少</text></g></svg><figcaption>开放系统通过与环境交换物质和能量，将内部产生的熵向外输出，从而维持或更新自身的非平衡结构。</figcaption></figure><p>生命通过摄取可用自由能、进行代谢并向环境输出热量与废物，维持自身的非平衡结构。<strong>生命并没有违反熵增原理，而是借助开放性维持和更新内部秩序。</strong> 这里的负熵流指向外界的净熵输出所对应的负熵交换；局部熵可以减少；若将系统与环境合起来视为孤立系统，其总熵仍然不会减少。</p><p>九老师在谈论个人成长时提出了一个我很认同的视角：我们习惯用天赋与努力解释成功，却容易忽略第三个维度——<strong>负熵流</strong>。将耗散结构类比到人生，可以把它理解为来自外部、能够帮助我们更新认知与能力的高质量信息、经验、资源和反馈。</p><div class=table-wrapper><table><thead><tr><th>维度</th><th>在个人发展中的含义</th></tr></thead><tbody><tr><td><strong>天赋</strong></td><td>理解、处理和转化外部输入的效率</td></tr><tr><td><strong>努力</strong></td><td>投入学习、实践与创造的时间和精力</td></tr><tr><td><strong>负熵流</strong></td><td>构建和更新个人系统的原材料</td></tr></tbody></table></div><p>努力的回报不仅取决于投入多少，还取决于投入在什么样的信息与问题上。长期在质量不高的信息环境里勤奋，未必比主动调整信息源更有效。</p><p>在家庭和学校阶段，我们的信息环境很大程度上由既有条件决定。进入社会之后，虽然仍然受到资源与机会的约束，却有了更多主动选择信息源、同行者与实践环境的空间。九老师曾分享过一位从事安全研究的室友的经历：他并不以身边同事的工作进展为主要参照，而是持续关注全球顶尖安全研究者正在解决的问题。这个个案并不能证明信息源决定成功，但它让我意识到，<strong>关注谁、阅读什么、以什么作为参照，本身就是一种长期决策。</strong></p><p>当然，越接近源头，信息往往越多、越难。九老师的另一个比喻是<strong>给大脑做预训练</strong>：阅读不必像完成作业一样，要求每篇论文都精读、每条信息都记住。长期接触高质量的材料，可以帮助建立对领域问题、研究方向和技术变化的整体认识；真正重要的问题再深入追踪、动手实践，通过反馈检验理解。这不是说浏览信息就等于学习，而是把广泛输入与有选择的深度学习结合起来。</p><p>开放性也并不意味着无限增加信息输入。晶体高度有序却相对简单，随机噪声具有很高的信息熵却缺少功能组织；有价值的复杂性在于结构、分工、反馈与适应能力。收藏更多论文、建立更复杂的知识库、部署更多 AI 自动化任务，都不必然意味着个人系统得到了升级。我希望这些工具能够降低信息处理成本，让知识沉淀为可复用的理解，并通过实践、写作和创造获得外部反馈，而不是不断增加维护负担。</p><p><strong>负熵流的质量决定了我们能够获得什么，处理和组织能力决定了我们能够将它转化成什么。</strong> 对我来说，真正值得长期维护的是高质量的输入、持续的学习与实践，以及能够让认知不断修正的反馈机制。</p><h3 id=23-从校园走向职场重新思考人生目标>2.3 从校园走向职场：重新思考人生目标</h3><p>写下这些的时候，我二十四岁，正处在研究生生涯的后半段，已经结束了求职阶段，准备从校园进入正式的职业生涯。过去几年，我从电气工程逐渐走向互联网与算法，也开始认真思考投资、健康、写作与旅行。以前更清晰的目标是升学、实习和找到工作；现在的问题变成了，拿到一份不错的工作以后，我究竟要把人生带向哪里？</p><figure class=ev-figure><svg class="ev-svg" viewBox="0 0 660 306" width="660" role="img" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>svg.ev-svg{--paper:var(--card-background, #fffefa);--ink:currentColor;--muted:color-mix(in srgb, currentColor 62%, transparent);--line:color-mix(in srgb, currentColor 24%, transparent);--accent:var(--accent-color, #176c5b);--accent2:#b16b35;--blue:#426b9b;--red:#b95c50;--soft:color-mix(in srgb, var(--accent-color, #176c5b) 8%, var(--card-background, #fffefa))}@media(prefers-color-scheme:dark){svg.ev-svg{--accent2:#e2a36b;--blue:#91b5e0;--red:#e69a8a}}svg.ev-svg text{fill:var(--ink);font-family:inherit;font-size:13px}svg.ev-svg .accent{fill:var(--accent)}svg.ev-svg .muted{fill:var(--muted)}svg.ev-svg .warm{fill:var(--accent2)}svg.ev-svg .red{fill:var(--red)}svg.ev-svg .axis{fill:none;stroke:var(--muted);stroke-width:1.2}svg.ev-svg .grid path{fill:none;stroke:var(--line);stroke-width:1}svg.ev-svg .grid .dash{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:4 6;opacity:.45}svg.ev-svg .soft{fill:var(--soft)}svg.ev-svg .green-line{fill:none;stroke:var(--accent);stroke-width:1.8}svg.ev-svg .warm-line{fill:none;stroke:var(--accent2);stroke-width:1.8}svg.ev-svg .red-line{fill:none;stroke:var(--red);stroke-width:1.8}</style><text x="330" y="22" text-anchor="middle" fill="var(--ink)" font-size="15" font-weight="700">人生阶段与目标转变</text><rect x="14" y="38" width="198" height="112" rx="8" fill="var(--soft)" stroke="var(--line)" stroke-width="1"/><text x="113" y="62" text-anchor="middle" fill="var(--muted)" font-size="12" font-weight="700">过去 · 校园阶段</text><text x="113" y="86" text-anchor="middle" fill="var(--ink)" font-size="13" font-weight="600">完成阶段性目标</text><text x="113" y="115" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">升学 → 专业学习 → 实习</text><text x="113" y="135" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">电气工程 → 互联网与算法</text><rect x="233" y="38" width="198" height="112" rx="8" fill="var(--paper)" stroke="var(--accent)" stroke-width="1.6"/><text x="332" y="62" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="700">现在 · 24 岁</text><text x="332" y="86" text-anchor="middle" fill="var(--ink)" font-size="13" font-weight="600">从校园走向职场</text><text x="332" y="115" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">求职结束，准备正式工作</text><text x="332" y="135" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">从寻找机会转向主动积累</text><rect x="452" y="38" width="198" height="112" rx="8" fill="var(--soft)" stroke="var(--line)" stroke-width="1"/><text x="551" y="62" text-anchor="middle" fill="var(--muted)" font-size="12" font-weight="700">未来 · 职业生涯</text><text x="551" y="86" text-anchor="middle" fill="var(--ink)" font-size="13" font-weight="600">积累长期资本</text><text x="551" y="115" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">职业能力、资源与时间</text><text x="551" y="135" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">不再以找到工作为终点</text><path d="M214 94h9" stroke="var(--muted)" stroke-width="1.6" fill="none" marker-end="url(#flowArrow)"/><path d="M433 94h9" stroke="var(--muted)" stroke-width="1.6" fill="none" marker-end="url(#flowArrow)"/><defs><marker id="flowArrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6z" fill="var(--muted)"/></marker></defs><path d="M330 150v18" stroke="var(--muted)" stroke-width="1.4" fill="none"/><path d="M113 168H547" stroke="var(--muted)" stroke-width="1.4" fill="none"/><path d="M113 168v12" stroke="var(--muted)" stroke-width="1.4" fill="none" marker-end="url(#flowArrow)"/><path d="M330 168v12" stroke="var(--muted)" stroke-width="1.4" fill="none" marker-end="url(#flowArrow)"/><path d="M547 168v12" stroke="var(--muted)" stroke-width="1.4" fill="none" marker-end="url(#flowArrow)"/><rect x="18" y="184" width="190" height="56" rx="7" fill="var(--soft)" stroke="var(--line)"/><text x="113" y="207" text-anchor="middle" fill="var(--ink)" font-size="12" font-weight="600">财富与经济自由</text><text x="113" y="228" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">投资、储蓄与资产积累</text><rect x="235" y="184" width="190" height="56" rx="7" fill="var(--soft)" stroke="var(--line)"/><text x="330" y="207" text-anchor="middle" fill="var(--ink)" font-size="12" font-weight="600">健康与外在状态</text><text x="330" y="228" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">运动、恢复与长期维护</text><rect x="452" y="184" width="190" height="56" rx="7" fill="var(--soft)" stroke="var(--line)"/><text x="547" y="207" text-anchor="middle" fill="var(--ink)" font-size="12" font-weight="600">影响力与创造</text><text x="547" y="228" text-anchor="middle" fill="var(--muted)" font-size="11" font-weight="400">写作、旅行与持续探索</text><path d="M330 240v12" stroke="var(--muted)" stroke-width="1.4" fill="none"/><path d="M113 252H547" stroke="var(--muted)" stroke-width="1.4" fill="none"/><path d="M330 252v10" stroke="var(--accent)" stroke-width="1.6" fill="none" marker-end="url(#accentArrow)"/><defs><marker id="accentArrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 6 3 0 6z" fill="var(--accent)"/></marker></defs><rect x="190" y="266" width="280" height="34" rx="7" fill="var(--soft)" stroke="var(--accent)" stroke-width="1.5"/><text x="330" y="281" text-anchor="middle" fill="var(--accent)" font-size="13" font-weight="700">扩大人生选择权</text></svg><figcaption>从校园进入职场后，人生目标由相对明确的阶段性任务转向长期、多维度的发展。未来部分表示当前规划，而非已实现的结果。</figcaption></figure><h2 id=逃逸速度努力之外还需要跨越门槛>逃逸速度：努力之外，还需要跨越门槛</h2><h3 id=31-从努力到突破>3.1 从努力到突破</h3><p>熵增与开放系统帮助我们理解为什么既有结构需要维护、如何持续更新，却不能告诉我们如何离开一个不符合自身目标的稳定状态。逃逸速度提供了另一种视角。</p><p>在理想的牛顿引力模型中，若中心天体的质量远大于物体质量，可以近似认为中心天体静止。物体的机械能为动能与引力势能之和（取无穷远处势能为零）。若不再推进，且没有空气阻力、碰撞或其他天体干扰，逃离引力束缚需要总机械能非负。</p>$$
+E=\frac12 mv^2-\frac{GMm}{r}\geq 0
+$$$$
+v_{\mathrm e}=\sqrt{\frac{2GM}{r}}
+$$<p>式中，$G$ 为万有引力常数，$M$ 为中心天体质量，$m$ 为物体质量，$r$ 为到中心天体质心的距离，$v$ 为相对中心天体的速度。在忽略地球自转和大气阻力时，地球表面的理想逃逸速度约为 $11.2\ \mathrm{km/s}$，近地圆轨道速度约为 $7.9\ \mathrm{km/s}$。</p><p>这让人想到三种努力。第一种是补偿性努力：工作为了支付日常开支，学习为了不落后，锻炼为了抵消久坐。第二种是线性积累：工资、存款和能力在增长，但高度依赖当期劳动。第三种是结构性突破：已有的知识、资产、作品、技术和声誉开始产生新的资源，改变下一阶段的增长机制。</p><p>突破不只依赖提高速度，也可以通过降低束缚实现。减少不必要的固定开支，进入机会密集的行业和城市，提升技能可迁移性，借助技术减少重复劳动，都是在改变约束条件。实际人生甚至比物理模型更灵活：我们既可以改变投入强度，也可以改变方向、环境和策略。</p><p>这也意味着，<strong>努力的方向比单纯的强度更重要</strong>。每天工作十四小时，如果产生的价值不能沉淀为未来的能力和资产，未必比工作八小时、同时积累可迁移技能和长期作品的人更接近自主。年轻时期较长的复利周期与较低的某些转换成本，也使得有反馈的试错特别有价值。</p><p>找到工作更像是达到了第一宇宙速度：进入了一个新的稳定轨道，却尚未脱离引力的束缚。接下来需要观察的是：我的工作是否在增加对外部市场同样有价值的能力？是否让我更理解技术与商业之间的联系？如果离开当前公司，过去几年的积累还有多少能够带走？相比某一次绩效评价，这些问题更接近我真正关心的长期增长率。</p><h3 id=32-积累资本让积累产生复利>3.2 积累资本，让积累产生复利</h3><p>衡量积累的标准，是一次投入结束后还留下了什么。完成项目是当期产出，形成可复用的方法、可迁移的能力和可信的合作关系，才可能提高下一次投入的回报。</p><p>值得积累的不只是金融资本，还包括认知、技能、健康、社会关系与个人影响力。它们能够相互转化：知识提高职业收入，收入转化为资产，资产提供更多自主时间，时间用于学习与创造，作品和声誉又带来新的合作机会。<strong>复利的关键，在于今天的积累能够提高明天的产出能力。</strong></p><p>过大的风险可能迫使自己在低点卖出，中断长期复利；缺乏应用与反馈的技能积累也可能失去价值。真正值得追求的是可持续的有效增长，而非短期收益最大化。</p><h3 id=33-向内积累也要向外探索>3.3 向内积累，也要向外探索</h3><p>我最近在思考，为什么要主动扩大人生曝光度。过去很长时间，我的主要环境是学校、实验室和实习公司。它们给了我很好的学习和发展条件，但也意味着接触的人、信息和机会存在一定的同质性。即使换到一份新的工作，如果日常生活始终是公司与住处之间的往返，环境的边界仍然可能迅速重新形成。</p><p>一个人即使能力不错，如果始终处于很小的信息和人际范围内，机会也可能无法与他匹配。假设一次有效外部接触产生有价值机会的概率为 $p$，$N$ 次接触彼此独立且每次成功概率均相同，则至少获得一次机会的概率为：</p>$$
+P=1-(1-p)^N
+$$<p>现实中的接触存在相关性、质量差异和资源约束，因此这个模型只用于说明机会接触的作用，不能直接预测个人成功的概率。学习和积累有助于提高单次匹配质量，参加活动、接触跨领域的人、旅行、公开写作则可以扩大接触范围。两者应当同时发生。如果只向外探索，没有内部积累，就难以承接机会；如果只向内积累，没有反馈和曝光，又可能错过原本有价值的机会。</p><p>复杂系统真正需要的并不是越来越多的组件，而是多样性、模块化、冗余、反馈和适应性：有可迁移的能力、有不同的资源来源、局部失效不至于拖累全部、有能力识别错误并重构自身。对个人而言，这比拥有很多账户、工具、任务或联系人更重要。</p><p><strong>对抗自然损耗，是为了不退化；有效积累，是为了进步；跨越门槛，是为了改变进步的机制。</strong></p><h2 id=从扩大选择权到持续演化>从扩大选择权到持续演化</h2><p>一个人可能在职业收入增长的同时，逐渐失去自主选择的能力。年轻时想创业、旅行或者写作，后来却发现固定支出太高，不敢离职；能力过度专用，不敢转行；所有收入来自同一家机构，不敢承担风险。也可能出现另一条路径：随着资本、技能、健康与社会关系的积累，对单一环境的依赖逐渐降低，未来可行的选择反而越来越多。</p><figure class=ev-figure><svg class="ev-svg" aria-label="上半部分展示选择权随时间可能增加或减少，下半部分展示时间分配从主动劳动逐渐转向更多自主支配" role="img" viewBox="0 0 660 470" width="660" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>svg.ev-svg{--paper:var(--card-background, #fffefa);--ink:currentColor;--muted:color-mix(in srgb, currentColor 62%, transparent);--line:color-mix(in srgb, currentColor 24%, transparent);--accent:var(--accent-color, #176c5b);--accent2:#b16b35;--blue:#426b9b;--red:#b95c50;--soft:color-mix(in srgb, var(--accent-color, #176c5b) 8%, var(--card-background, #fffefa))}@media(prefers-color-scheme:dark){svg.ev-svg{--accent2:#e2a36b;--blue:#91b5e0;--red:#e69a8a}}svg.ev-svg text{fill:var(--ink);font-family:inherit;font-size:13px}svg.ev-svg .accent{fill:var(--accent)}svg.ev-svg .muted{fill:var(--muted)}svg.ev-svg .warm{fill:var(--accent2)}svg.ev-svg .red{fill:var(--red)}svg.ev-svg .axis{fill:none;stroke:var(--muted);stroke-width:1.2}svg.ev-svg .grid path{fill:none;stroke:var(--line);stroke-width:1}svg.ev-svg .grid .dash{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:4 6;opacity:.45}svg.ev-svg .soft{fill:var(--soft)}svg.ev-svg .green-line{fill:none;stroke:var(--accent);stroke-width:1.8}svg.ev-svg .warm-line{fill:none;stroke:var(--accent2);stroke-width:1.8}svg.ev-svg .red-line{fill:none;stroke:var(--red);stroke-width:1.8}</style><defs><clipPath id="mergedChoiceClip"><rect x="52" y="24" width="583" height="186" rx="2"/></clipPath></defs><text class="muted" x="52" y="16">可行选择权（概念量）</text><path class="axis" d="M52 24V210H635"/><g class="grid"><path d="M52 70H635M52 116H635M52 162H635"/><path class="dash" d="M168 24V210M284 24V210M4e2 24V210M516 24V210"/></g><g clip-path="url(#mergedChoiceClip)"><path class="soft" d="M52 130c128-6 2e2-42 308-64S532 35 632 30V208c-112-9-2e2-15-272-26S192 145 52 130z"/></g><path class="green-line" d="M52 130c128-6 2e2-42 308-64S532 35 632 30"/><path class="red-line" d="M52 130c138 15 2e2 40 308 54s160 20 272 24"/><circle cx="52" cy="130" r="5" fill="var(--muted)"/><text class="accent" text-anchor="end" x="625" y="22">持续积累选择权</text><text class="red" text-anchor="end" x="625" y="198">路径锁定与资源约束</text><text class="muted" x="360" y="99">资产、能力、健康、关系</text><text class="muted" x="360" y="156">债务、技能老化、单一依赖</text><path d="M52 238H635" stroke="var(--line)" stroke-dasharray="4 6"/><text class="muted" x="52" y="256">时间分配（概念示意）</text><rect x="55" y="276" width="560" height="144" rx="3" fill="var(--soft)"/><path d="M55 276H615v66c-133-8-307-45-365-52S110 278 55 276z" fill="var(--accent)" opacity=".72"/><path d="M55 276c55 2 137 7 195 14s232 44 365 52v44c-133-7-249-28-365-48-52-9-130-32-195-38z" fill="var(--blue)" opacity=".72"/><path d="M55 3e2c65 6 143 29 195 38s232 41 365 48v34H55z" fill="var(--muted)" opacity=".68"/><g stroke="var(--paper)" stroke-dasharray="5 5" stroke-width="1.3"><path d="M242 276V420M428 276V420"/></g><g text-anchor="middle"><text style="fill:#fff" x="155" y="375">职业 / 主动劳动</text><text style="fill:#fff" x="432" y="355">系统维护与创造</text><text style="fill:#fff" x="523" y="314">自主支配时间</text><text x="148" y="447">集中积累期</text><text x="335" y="447">结构突破期</text><text x="522" y="447">自主发展期</text><text class="muted" x="52" y="447" text-anchor="start">现在</text><text class="muted" x="632" y="447" text-anchor="end">未来</text></g></svg><figcaption>上半部分示意选择权随积累路径不同而分化，下半部分示意时间分配可能从主动劳动逐渐转向更多自主支配。</figcaption></figure><p>这两种路径的区别不在于当下取得了多少成就，而在于积累是否扩大了未来的可能性。买房、结婚、稳定就业都不是问题，关键在于这些承诺是否出于自己的意愿、是否与希望的生活一致。<strong>平凡不等于平庸。</strong> 主动选择平静稳定的生活，与因为资源不足而被迫停留在不喜欢的状态，有着本质区别。</p><p>从这个角度看，阶段性的战略不平衡是有意义的。不必要求每一年都在所有目标上均衡投入：某些时期可以集中积累职业资本，另一些时期可以集中建设资产或创作系统。随着积累增加，更重要的是将获得的自主时间用于真正关心的事情。</p><p>但拥有选择权并不意味着可以永久摆脱约束。资产仍需要管理风险，技能仍需要适应技术变化，身体状态仍需要维护。环境和个人目标也会改变，曾经有效的发展策略未必始终有效。<strong>逃逸解决的是如何摆脱原有束缚，持续演化解决的是如何在变化中保有选择权。</strong> 这需要不断获取外部资源、接受反馈，并根据新的条件调整自己的能力与资源结构。</p><p>如果只看日程表，我很容易把研究、工作、投资、健身、旅行、社交和写作全部安排进去，产生一种自己正在高速成长的感觉。但有限的时间意味着它们不可能同时无限扩张。我更应该关注的是这些投入有没有留下长期价值，是否降低了对单一环境的依赖，以及是否让我具备应对变化的能力。</p><div class=table-wrapper><table><thead><tr><th>我关心的维度</th><th>真正的积累</th><th>需要警惕的反面</th></tr></thead><tbody><tr><td>职业</td><td>可迁移技能、理解业务、独立解决问题</td><td>只增加工时、依赖内部工具或职级</td></tr><tr><td>财富</td><td>净资产、现金缓冲、可持续的支出覆盖能力</td><td>消费随收入膨胀、过度杠杆</td></tr><tr><td>健康</td><td>训练连续性、睡眠与恢复、长期身体状态</td><td>用未来健康换取短期产出</td></tr><tr><td>开放性</td><td>跨领域交流、真实关系、新环境中的有效尝试</td><td>无目的地增加活动与联系人</td></tr><tr><td>创造</td><td>独立作品、知识沉淀、外部反馈</td><td>只收集信息、只优化工具与流程</td></tr></tbody></table></div><p>如果把相对排名作为唯一目标，就永远有一个新的引力场：一千万之后是一亿，下一次晋升之后是更高的职位。一个人可能看起来很成功，却仍被竞争与外部评价完全支配。同样，持续演化也不意味着不断增加生活的复杂性。有时删减不必要的事务、保留精力、建立简单有效的规则，反而能够提高适应能力。</p><p>我们无法阻止时间流逝，也无法完全避免衰老、遗忘和损耗，但可以在有限的生命里持续建立秩序、积累资源、创造价值，扩大未来的可能性。<strong>衡量逃逸的标准，不是在多短的时间里达到了多高的位置，而是过去的积累有没有让我获得更多决定下一步的权利。</strong></p><p><strong>平庸有重力，退化有熵增。突破需要逃逸速度，持续发展需要自我演化的能力。</strong></p></section><footer class="article-meta article-footer"></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css integrity=sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js integrity=sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8 crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous defer></script><style>.main-article .katex-display{overflow-x:auto;overflow-y:hidden;padding-bottom:.35em}.main-article .katex-display::-webkit-scrollbar{height:6px}.main-article .katex-display::-webkit-scrollbar-thumb{background:var(--card-separator-color,#ccc);border-radius:3px}</style><script>window.addEventListener("DOMContentLoaded",()=>{const e=[".main-article",".widget--toc"];e.forEach(e=>{const t=document.querySelector(e);t&&renderMathInElement(t,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],ignoredClasses:["gist"],throwOnError:!1,strict:!1})})})</script></article><link rel=stylesheet href=https://unpkg.com/@waline/client@v3/dist/waline.css><section class=waline-container><aside class=waline-comments-notice aria-labelledby=comments-notice-title><div><h3 id=comments-notice-title>评论须知</h3><p>欢迎留言交流。邮箱为选填，是否发送回复通知取决于站点的通知配置。</p></div><div class=waline-comments-stats aria-label=文章互动统计><span title=浏览量><span class="hm-icon hm-icon--lucide" style="--hm-icon-url:url('https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/eye.svg')" aria-hidden=true></span>
+<span class=waline-pageview-count data-path=/p/mediocrity-gravity/>—</span>
+</span><span title=评论数><svg class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M21 14l-3-3h-7a1 1 0 01-1-1V4a1 1 0 011-1h9a1 1 0 011 1v10"/><path d="M14 15v2a1 1 0 01-1 1H6l-3 3V11a1 1 0 011-1h2"/></svg>
+<span class=waline-comment-count data-path=/p/mediocrity-gravity/>—</span></span></div></aside><div id=waline-comments-root></div><template id=waline-rss-icon-template><svg class="lucide lucide-rss" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></template></section><script type=module>
+        import { init, pageviewCount } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
+        import { resolveWalineServerURL } from "\/js\/waline-server.min.25372963894739ec13382b7bcb15ee5223e5cd4daa527437991e61deedb30448.js";
+
+        const serverURL = await resolveWalineServerURL({
+            primaryURL: "https://blog-waline-ten-delta.vercel.app",
+            fallbackURL: null,
+            timeoutMs:  2500 ,
+        });
+
+        const secureUploadsEnabled = false;
+        const secureMessages = {
+            invalid: "无法读取所选图片。",
+            type: "仅支持 JPEG、PNG、WebP 和 GIF 图片。",
+            size: "图片不能超过 3 MB。",
+            verify: "安全验证暂时不可用。",
+            upload: "图片上传失败，请稍后重试。",
+        };
+        const secureBaseURL = String(serverURL).replace(/\/+$/, "");
+        const secureConfig = {
+            turnstileSiteKey: "",
+            uploadEndpoint: "" || `${secureBaseURL}/api/upload-image`,
+            uploadSessionEndpoint: "" || `${secureBaseURL}/api/upload-session`,
+            commentEndpoint: "" || `${secureBaseURL}/api/comment`,
+            commentContextEndpoint: "" || `${secureBaseURL}/api/comment-context`,
+        };
+        let turnstileLoadPromise;
+        let turnstileWidgetId;
+        let turnstileContainer;
+
+        const loadTurnstile = () => {
+            if (!secureConfig.turnstileSiteKey) return Promise.reject(new Error(secureMessages.verify));
+            if (window.turnstile) return Promise.resolve(window.turnstile);
+            if (!turnstileLoadPromise) {
+                turnstileLoadPromise = new Promise((resolve, reject) => {
+                    const script = document.createElement("script");
+                    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+                    script.dataset.walineTurnstile = "true";
+                    script.addEventListener("load", () => window.turnstile ? resolve(window.turnstile) : reject(new Error(secureMessages.verify)), { once: true });
+                    script.addEventListener("error", () => reject(new Error(secureMessages.verify)), { once: true });
+                    document.head.append(script);
+                });
+            }
+            return turnstileLoadPromise;
+        };
+
+        const getTurnstileToken = async (action) => {
+            const turnstile = await loadTurnstile();
+            if (!turnstileContainer) {
+                turnstileContainer = document.createElement("div");
+                turnstileContainer.dataset.walineTurnstile = "true";
+                turnstileContainer.style.cssText = "position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2147483647;padding:12px;border-radius:16px;background:var(--card-background,#fff);box-shadow:0 16px 48px rgba(0,0,0,.24)";
+                document.body.append(turnstileContainer);
+            }
+            return new Promise((resolve, reject) => {
+                const finish = (value, error) => {
+                    if (turnstileContainer) turnstileContainer.style.display = "none";
+                    if (error) reject(error); else resolve(value);
+                };
+                turnstileContainer.style.display = "block";
+                if (turnstileWidgetId !== undefined) turnstile.remove(turnstileWidgetId);
+                turnstileWidgetId = turnstile.render(turnstileContainer, {
+                    sitekey: secureConfig.turnstileSiteKey,
+                    action,
+                    execution: "execute",
+                    appearance: "interaction-only",
+                    theme: document.documentElement.dataset.scheme === "dark" ? "dark" : "light",
+                    callback: (token) => finish(token),
+                    "error-callback": () => finish(undefined, new Error(secureMessages.verify)),
+                    "expired-callback": () => finish(undefined, new Error(secureMessages.verify)),
+                });
+                turnstile.execute(turnstileWidgetId, { action });
+                window.setTimeout(() => finish(undefined, new Error(secureMessages.verify)), 15000);
+            });
+        };
+
+        const secureImageUploader = async (file) => {
+            const allowedTypes = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
+            if (!(file instanceof File)) throw new Error(secureMessages.invalid);
+            if (!allowedTypes.has(file.type)) throw new Error(secureMessages.type);
+            if (!file.size || file.size > 3 * 1024 * 1024) throw new Error(secureMessages.size);
+
+            const verification = await getTurnstileToken("waline_image_upload");
+            const sessionResponse = await fetch(secureConfig.uploadSessionEndpoint, {
+                method: "POST",
+                headers: { "X-Turnstile-Token": verification },
+                credentials: "omit",
+                cache: "no-store",
+            });
+            const session = await sessionResponse.json().catch(() => ({}));
+            if (!sessionResponse.ok || typeof session.sessionToken !== "string") throw new Error(secureMessages.upload);
+
+            const uploadResponse = await fetch(secureConfig.uploadEndpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/octet-stream",
+                    "X-Image-Type": file.type,
+                    "X-Upload-Session": session.sessionToken,
+                },
+                body: file,
+                credentials: "omit",
+                cache: "no-store",
+            });
+            const uploaded = await uploadResponse.json().catch(() => ({}));
+            if (!uploadResponse.ok || typeof uploaded.url !== "string" || !uploaded.url.startsWith("https://")) throw new Error(secureMessages.upload);
+            return uploaded.url;
+        };
+
+        if (secureUploadsEnabled) {
+            const nativeFetch = window.fetch.bind(window);
+            window.fetch = async (input, requestInit) => {
+                const requestURL = typeof input === "string" ? input : input?.url;
+                const requestMethod = String(requestInit?.method || input?.method || "GET").toUpperCase();
+                if (requestMethod === "POST" && requestURL === secureConfig.commentEndpoint) {
+                    const payload = JSON.parse(requestInit?.body || "{}");
+                    payload.turnstile = await getTurnstileToken("waline_comment");
+                    payload.clientTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+                    try {
+                        const contextResponse = await nativeFetch(secureConfig.commentContextEndpoint, { credentials: "omit", cache: "no-store" });
+                        if (contextResponse.ok) {
+                            const context = await contextResponse.json();
+                            payload.ipTimezone = context.timezone || "";
+                            payload.ipTimezoneProof = context.proof || "";
+                            payload.ipTimezoneExpiresAt = Number(context.expiresAt || 0);
+                        }
+                    } catch {
+                        
+                    }
+                    return nativeFetch(input, { ...requestInit, body: JSON.stringify(payload) });
+                }
+                return nativeFetch(input, requestInit);
+            };
+        }
+
+        init({
+            el: "#waline-comments-root",
+            serverURL,
+            path: "/p/mediocrity-gravity/",
+            meta: ["nick", "mail"],
+            requiredMeta: ["nick"],
+            login: "disable",
+            dark: 'html[data-scheme="dark"]',
+            lang: "zh-CN",
+            pageview: true,
+            comment: true,
+            reaction: ["data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==","data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==","data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==","data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="],
+            imageUploader: secureUploadsEnabled ? secureImageUploader : false,
+            emoji: [],
+            locale: {
+                emoji: "表情",
+                reactionTitle: "这篇文章怎么样？",
+                reaction0: "喜欢",
+                reaction1: "有用",
+                reaction2: "思考",
+                reaction3: "不喜欢",
+            },
+        });
+
+        let unicodeEmojiLoadPromise;
+        let unicodeEmojiPanel;
+        let unicodeEmojiPicker;
+        let activeEmojiButton;
+        let activeEmojiTextarea;
+
+        const unicodeEmojiDataSource = "https://cdn.jsdelivr.net/npm/emoji-picker-element-data@1.8.0/zh/emojibase/data.json";
+
+        const loadUnicodeEmojiPicker = () => {
+            if (!unicodeEmojiLoadPromise) {
+                const pickerImport = import("https://cdn.jsdelivr.net/npm/emoji-picker-element@1.29.1/index.js");
+                const localeImport = 
+                    import("https://cdn.jsdelivr.net/npm/emoji-picker-element@1.29.1/i18n/zh_CN.js")
+                ;
+
+                unicodeEmojiLoadPromise = Promise.all([pickerImport, localeImport])
+                    .then(([, localeModule]) => localeModule?.default);
+            }
+
+            return unicodeEmojiLoadPromise;
+        };
+
+        const closeUnicodeEmojiPicker = () => {
+            if (unicodeEmojiPanel) unicodeEmojiPanel.hidden = true;
+            if (activeEmojiButton) activeEmojiButton.setAttribute("aria-expanded", "false");
+            activeEmojiButton = undefined;
+            activeEmojiTextarea = undefined;
+        };
+
+        const positionUnicodeEmojiPicker = () => {
+            if (!unicodeEmojiPanel || unicodeEmojiPanel.hidden || !activeEmojiButton) return;
+
+            const buttonRect = activeEmojiButton.getBoundingClientRect();
+            const panelRect = unicodeEmojiPanel.getBoundingClientRect();
+            const edge = 12;
+            const gap = 8;
+            const maxLeft = Math.max(edge, window.innerWidth - panelRect.width - edge);
+            const left = Math.min(Math.max(edge, buttonRect.left), maxLeft);
+            const belowTop = buttonRect.bottom + gap;
+            const aboveTop = buttonRect.top - panelRect.height - gap;
+            const top = belowTop + panelRect.height <= window.innerHeight - edge
+                ? belowTop
+                : Math.max(edge, aboveTop);
+
+            unicodeEmojiPanel.style.left = `${left}px`;
+            unicodeEmojiPanel.style.top = `${Math.min(top, window.innerHeight - panelRect.height - edge)}px`;
+        };
+
+        const insertUnicodeEmoji = (event) => {
+            const emoji = event.detail?.unicode;
+            const textarea = activeEmojiTextarea;
+            if (typeof emoji !== "string" || !textarea) return;
+
+            const start = textarea.selectionStart ?? textarea.value.length;
+            const end = textarea.selectionEnd ?? start;
+            const newValue = `${textarea.value.slice(0, start)}${emoji}${textarea.value.slice(end)}`;
+            const valueSetter = Object.getOwnPropertyDescriptor(
+                HTMLTextAreaElement.prototype,
+                "value",
+            )?.set;
+
+            if (valueSetter) {
+                valueSetter.call(textarea, newValue);
+            } else {
+                textarea.value = newValue;
+            }
+
+            try {
+                textarea.dispatchEvent(new InputEvent("input", {
+                    bubbles: true,
+                    inputType: "insertText",
+                    data: emoji,
+                }));
+            } catch {
+                textarea.dispatchEvent(new Event("input", { bubbles: true }));
+            }
+
+            textarea.focus();
+            textarea.setSelectionRange(start + emoji.length, start + emoji.length);
+        };
+
+        const createUnicodeEmojiPicker = async () => {
+            const locale = await loadUnicodeEmojiPicker();
+            if (!activeEmojiButton || !activeEmojiTextarea) return;
+
+            if (!unicodeEmojiPanel) {
+                unicodeEmojiPanel = document.createElement("div");
+                unicodeEmojiPanel.className = "waline-unicode-emoji-panel";
+                unicodeEmojiPanel.id = "waline-unicode-emoji-panel";
+                unicodeEmojiPanel.setAttribute("role", "dialog");
+                unicodeEmojiPanel.hidden = true;
+
+                unicodeEmojiPicker = document.createElement("emoji-picker");
+                unicodeEmojiPicker.locale = "zh";
+                unicodeEmojiPicker.dataSource = unicodeEmojiDataSource;
+                
+                unicodeEmojiPicker.i18n = locale;
+                
+                unicodeEmojiPicker.addEventListener("emoji-click", insertUnicodeEmoji);
+                unicodeEmojiPanel.append(unicodeEmojiPicker);
+                document.body.append(unicodeEmojiPanel);
+
+                document.addEventListener("click", (event) => {
+                    if (!(event.target instanceof Node)) return;
+                    if (unicodeEmojiPanel?.contains(event.target) || activeEmojiButton?.contains(event.target)) return;
+                    closeUnicodeEmojiPicker();
+                });
+                document.addEventListener("keydown", (event) => {
+                    if (event.key === "Escape") closeUnicodeEmojiPicker();
+                });
+                window.addEventListener("resize", closeUnicodeEmojiPicker);
+                window.addEventListener("scroll", closeUnicodeEmojiPicker, true);
+            }
+
+            if (!activeEmojiButton || !activeEmojiTextarea) return;
+            const isDark = document.documentElement.dataset.scheme === "dark";
+            unicodeEmojiPicker.classList.toggle("dark", isDark);
+            unicodeEmojiPicker.classList.toggle("light", !isDark);
+            unicodeEmojiPanel.hidden = false;
+            activeEmojiButton.setAttribute("aria-expanded", "true");
+            positionUnicodeEmojiPicker();
+        };
+
+        const toggleUnicodeEmojiPicker = async (button, textarea) => {
+            if (unicodeEmojiPanel && !unicodeEmojiPanel.hidden && activeEmojiButton === button) {
+                closeUnicodeEmojiPicker();
+                return;
+            }
+
+            activeEmojiButton = button;
+            activeEmojiTextarea = textarea;
+            try {
+                await createUnicodeEmojiPicker();
+            } catch {
+                closeUnicodeEmojiPicker();
+            }
+        };
+
+        const walineRoot = document.querySelector("#waline-comments-root");
+        const rssIconTemplate = document.querySelector("#waline-rss-icon-template");
+        const enhanceWalineComments = () => {
+            if (!(walineRoot instanceof HTMLElement) || !(rssIconTemplate instanceof HTMLTemplateElement)) return;
+
+            walineRoot.querySelectorAll(".wl-meta-foot .wl-rss a").forEach((link) => {
+                if (link.dataset.siteRssIcon === "true") return;
+
+                const currentIcon = link.querySelector("svg");
+                const siteIcon = rssIconTemplate.content.firstElementChild?.cloneNode(true);
+                if (currentIcon && siteIcon instanceof Element) {
+                    currentIcon.replaceWith(siteIcon);
+                    link.dataset.siteRssIcon = "true";
+                }
+            });
+
+            walineRoot.querySelectorAll(".wl-card").forEach((card) => {
+                const head = Array.from(card.children).find((child) => child.classList.contains("wl-head"));
+                const adminActions = Array.from(card.children).find((child) => child.classList.contains("wl-admin-actions"));
+                const time = head?.querySelector(":scope > .wl-time");
+
+                if (head && adminActions && time) {
+                    time.insertAdjacentElement("afterend", adminActions);
+                }
+            });
+        };
+
+        const enhanceUnicodeEmojiButtons = () => {
+            if (!(walineRoot instanceof HTMLElement)) return;
+
+            walineRoot.querySelectorAll(".wl-comment .wl-actions button.wl-action").forEach((button) => {
+                if (!(button instanceof HTMLButtonElement)) return;
+                if (button.title !== "表情") return;
+                if (button.dataset.unicodeEmojiBound === "true") return;
+
+                button.dataset.unicodeEmoji = "true";
+                button.dataset.unicodeEmojiBound = "true";
+                button.setAttribute("aria-haspopup", "dialog");
+                button.setAttribute("aria-expanded", "false");
+                button.setAttribute("aria-controls", "waline-unicode-emoji-panel");
+                button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+
+                    const comment = button.closest(".wl-comment");
+                    const textarea = comment?.querySelector("textarea.wl-editor")
+                        || comment?.querySelector("textarea");
+                    if (textarea instanceof HTMLTextAreaElement) {
+                        void toggleUnicodeEmojiPicker(button, textarea);
+                    }
+                }, true);
+            });
+        };
+
+        const enhanceWaline = () => {
+            enhanceWalineComments();
+            enhanceUnicodeEmojiButtons();
+        };
+
+        if (walineRoot) {
+            new MutationObserver(enhanceWaline).observe(walineRoot, { childList: true, subtree: true });
+            enhanceWaline();
+        }
+
+        pageviewCount({
+            serverURL,
+            path: "/p/mediocrity-gravity/",
+            selector: ".waline-pageview-count",
+            update: false,
+        });
+    </script><footer class=site-footer><section class=copyright>&copy; 2026 xiaoojs20</section><section class=powerby>主题 <a href=https://github.com/Jingyuan-Zheng/Liquid-Stack>Liquid Stack</a> · 基于 Hugo 构建</section></footer><script type=module>
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script></main></div><script type=text/javascript src=https://xiaoojs20.github.io/ts/main.8c19f5968454f0f3b55cc12158a577e39a05d435a9b88e4860886189f81d5aae.js defer></script><script type=text/javascript src=https://xiaoojs20.github.io/ts/custom.82ee61fd0c911fca2eee39efdcf5045a425dc19cf144748bbcf2e64aabe79fa2.js defer></script><script type=module src=https://static.cloudflareinsights.com/beacon.min.js data-cf-beacon='{"token":"907f48a30a8447df95b02845f4c004ae"}'></script></body></html>

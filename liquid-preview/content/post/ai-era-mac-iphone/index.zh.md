@@ -66,7 +66,20 @@ Apple Silicon 刚出来时，人们讨论最多的是性能和功耗。到了本
 
 传统独立显卡电脑的系统内存和 GPU 显存通常是分开的。一台有 64 GB 内存、12 GB 显存的电脑，想把模型完全放在 GPU 上推理，直接约束它的仍是那 12 GB 显存。可以用 CPU 内存卸载来扩大模型规模，但通常要付出一定的性能代价。
 
-![图 1：独立显存架构与统一内存架构的简化对比。并非所有 PC 都使用独立显卡；可供模型使用的统一内存也小于整机标称容量。](memory-layout-zh.svg)
+<figure class="ev-figure">
+  <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" role="img" aria-label="独立显存架构与统一内存架构示意图" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>
+    svg.ev-svg{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+    svg.ev-svg text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+    svg.ev-svg .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+    svg.ev-svg .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+    svg.ev-svg .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+    svg.ev-svg .dim{fill:var(--muted)}
+    @media (prefers-color-scheme:dark){
+      svg.ev-svg{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+    }
+  </style><text x="155" y="24" text-anchor="middle" font-size="16" font-weight="600">传统独立显卡架构</text><text x="485" y="24" text-anchor="middle" font-size="16" font-weight="600">Apple Silicon</text><path d="M320 15V198" stroke="var(--line)" stroke-dasharray="5 5"/><g font-size="15" text-anchor="middle"><rect class="node" x="21" y="45" width="118" height="50" rx="6"/><rect class="node" x="171" y="45" width="118" height="50" rx="6"/><text x="80" y="75">CPU</text><text x="230" y="75">GPU</text><path class="arrow" d="M80 95V119 M230 95V119 M139 70H171"/><rect class="node" x="21" y="119" width="118" height="53" rx="6"/><rect class="special" x="171" y="119" width="118" height="53" rx="6"/><text x="80" y="141">系统内存</text><text class="dim" x="80" y="159" font-size="12">RAM</text><text x="230" y="141">独立显存</text><text class="dim" x="230" y="159" font-size="12">VRAM</text><rect class="node" x="348" y="45" width="85" height="50" rx="6"/><rect class="node" x="443" y="45" width="85" height="50" rx="6"/><rect class="node" x="538" y="45" width="85" height="50" rx="6"/><text x="390" y="75">CPU</text><text x="485" y="75">GPU</text><text x="580" y="75">NPU</text><path class="arrow" d="M390 95V119 M485 95V119 M580 95V119"/><rect class="special" x="348" y="119" width="275" height="53" rx="6"/><text x="485" y="141">统一内存</text><text class="dim" x="485" y="159" font-size="12">Unified Memory</text><text class="dim" x="155" y="197" font-size="12">GPU 直接可用容量受独立显存约束</text><text class="dim" x="485" y="197" font-size="12">多个计算单元共享内存池</text></g></svg>
+  <figcaption>图 1：独立显存架构与统一内存架构的简化对比。并非所有 PC 都使用独立显卡；可供模型使用的统一内存也小于整机标称容量。</figcaption>
+</figure>
 
 Mac 的 CPU 和 GPU 可以共享同一个内存池。以 70B 参数模型为例，仅按 4 bit 量化权重计算，理论上就需要约 35 GB 的空间：
 
@@ -86,7 +99,20 @@ $$
 
 OpenAI 在 2026 年 4 月推出 Mac 端 Computer Use 时，已经支持后台操作和独立光标。其当前文档明确指出，Windows 端虽然也支持 Computer Use，但在同一个 Windows 桌面会话中会接管前台输入，不能像 Mac 端一样一边操作其他应用、一边让用户继续工作。
 
-![图 2：前台独占与后台并行操作的差异；时间轴仅作定性示意，不代表实际速度测试。](computer-use-zh.svg)
+<figure class="ev-figure">
+  <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" role="img" aria-label="前台独占与后台并行操作的示意图" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>
+    svg.ev-svg{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+    svg.ev-svg text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+    svg.ev-svg .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+    svg.ev-svg .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+    svg.ev-svg .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+    svg.ev-svg .dim{fill:var(--muted)}
+    @media (prefers-color-scheme:dark){
+      svg.ev-svg{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+    }
+  </style><g font-size="15" text-anchor="middle"><text x="155" y="25" font-weight="600">前台独占式 Computer Use</text><text x="485" y="25" font-weight="600">后台式 Computer Use</text></g><path d="M320 15V204" stroke="var(--line)" stroke-dasharray="5 5"/><g font-size="13"><text x="18" y="76">用户</text><text x="18" y="124">Agent</text><text x="348" y="76">用户</text><text x="348" y="124">Agent</text></g><g fill="var(--accent)" opacity=".8"><rect x="75" y="57" width="66" height="28" rx="4"/><rect x="208" y="57" width="84" height="28" rx="4"/><rect x="405" y="57" width="217" height="28" rx="4"/></g><g fill="#82949d"><rect x="141" y="105" width="67" height="28" rx="4"/><rect x="405" y="105" width="143" height="28" rx="4"/></g><g font-size="12" text-anchor="middle"><text x="108" y="76" style="fill:white">工作</text><text x="250" y="76" style="fill:white">继续工作</text><text x="174" y="124" style="fill:white">执行任务</text><text x="514" y="76" style="fill:white">持续工作</text><text x="476" y="124" style="fill:white">执行任务</text><text x="174" y="51" class="dim">等待</text></g><path class="arrow" d="M75 151H292m-7-4 7 4-7 4M405 151H622m-7-4 7 4-7 4"/><g text-anchor="middle" font-size="12"><text x="183" y="172" class="dim">时间</text><text x="513" y="172" class="dim">时间</text><text x="155" y="199">共享前台，任务串行</text><text x="485" y="199">在适用的应用中并行</text></g></svg>
+  <figcaption>图 2：前台独占与后台并行操作的差异；时间轴仅作定性示意，不代表实际速度测试。</figcaption>
+</figure>
 
 从技术原理看，Computer Use 不只有截图识别和模拟鼠标这条路线。操作系统通常还提供辅助功能接口，可以获取控件的文本、层级和可执行动作。
 
@@ -147,7 +173,9 @@ iPhone 相对集中的硬件和系统版本也有利于开发者做这些适配�
 
 过去大家默认「用小米设备就要配小米手机」，现在这个前提已经不太成立了。从米家生态、智能家居，到今天的新能源车和智能座舱，厂商都在主动适配 iPhone，而不是要求用户为了控制家里的灯和车上的屏幕去换一部手机。反过来看，如果选择华为之类的手机，部分应用和车机功能反而可能受到局限——应用生态、系统权限和跨设备联动各有自己的规则，换一个体系未必换来更完整的控制。
 
-从核心家居功能看，iPhone 用户可以相当完整地使用米家。这样就不需要在苹果的个人设备生态和小米的智能家居生态之间二选一。至于两端具体版本的功能是否同步、研发优先级是否相同，没有足够公开证据下定论。小米手机在超级小爱、跨设备系统联动等方面也有独有优势。
+「兼容苹果」如今几乎成了国产厂商的标配卖点，网友把这种硬凑上去的兼容叫「强兼」。小米算是动手早的：米家有 Apple Watch 版，小米汽车能用 iPhone 控车、接力导航。各家深浅不一，但对用户来说，多一个入口总比少一个强。
+
+从核心家居功能看，iPhone 用户已经能相当完整地使用米家，不必在苹果的个人设备生态和小米的智能家居生态之间二选一。有时候，iOS 端的体验甚至比小米自家手机还好——两端的版本节奏和研发优先级并不公开，这种比较只能落到具体功能上。小米手机在超级小爱、跨设备系统联动等方面仍有自己的优势。
 
 这件事与 AI 的关系是：未来的 Personal Agent 不应只处理电脑和手机里的信息，还需要在获得授权后与现实中的设备交互。灯光、空调、扫地机器人和家庭传感器都是有价值的工具或信息来源。米家的跨平台兼容，为 iPhone 用户保留了接入这些能力的机会；但第三方 Agent 能否直接控制某台设备，还要看米家、设备厂商和相关接口是否开放。
 
@@ -169,7 +197,20 @@ Pro 系列搭载的 LiDAR 激光雷达则补上了深度信息。配合 ARKit �
 
 这也是我最愿意把它和 Spatial Intelligence（空间智能）、World Model（世界模型）放在一起讨论的地方。这类模型要真正理解物理世界，仅靠平面图像并不够，它还需要知道东西在哪里、有多大、彼此如何遮挡、人又处在什么位置。三维空间信息正是这种理解的原材料。今天，这些技术主要服务于摄影、增强现实和沉浸式体验；但未来随着空间智能和世界模型的发展，三维空间信息也可能成为 Personal Agent 理解物理世界的重要上下文——比如拍一下房间，AI 就能依据真实尺寸给出家具布局建议，而不只是从一张照片里猜。
 
-![图 3：个人 AI 系统的可能形态。并非苹果已经实现的完整产品；各数据与工具均需要适当接口、权限和用户授权。](personal-ai-stack-zh.svg)
+<figure class="ev-figure">
+  <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" role="img" aria-label="个人 AI 系统中的数据获取、模型推理与任务执行" style="max-width:100%;height:auto;display:block;margin:0 auto"><style>
+    svg.ev-svg{--fg:#292d33;--muted:#767c86;--line:#e6e8ed;--accent:#30669b;--soft:#f4f7fa;--paper:#fff}
+    svg.ev-svg text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;fill:var(--fg)}
+    svg.ev-svg .node{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+    svg.ev-svg .special{fill:var(--soft);stroke:var(--accent);stroke-width:1.5}
+    svg.ev-svg .arrow{stroke:var(--muted);fill:none;stroke-width:1.5}
+    svg.ev-svg .dim{fill:var(--muted)}
+    @media (prefers-color-scheme:dark){
+      svg.ev-svg{--fg:#e2e4e8;--muted:#a0a5af;--line:#3b3e45;--accent:#8fb8e4;--soft:#2d333b;--paper:#24262b}
+    }
+  </style><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="var(--muted)"/></marker></defs><g text-anchor="middle"><g font-size="15" font-weight="600"><rect class="node" x="12" y="12" width="146" height="65" rx="7"/><text x="85" y="38">Apple Watch</text><rect class="node" x="169" y="12" width="146" height="65" rx="7"/><text x="242" y="38">AirPods</text><rect class="node" x="326" y="12" width="146" height="65" rx="7"/><text x="399" y="38">iPhone</text><rect class="node" x="483" y="12" width="145" height="65" rx="7"/><text x="555" y="38">Vision Pro</text></g><g font-size="12" class="dim"><text x="85" y="57">生理数据</text><text x="242" y="57">语音信息</text><text x="399" y="57">视觉、空间、定位</text><text x="555" y="57">智能眼镜 · 三维呈现</text></g><path class="arrow" d="M85 77V98H555V77 M242 77V98 M399 77V98 M320 98V115" marker-end="url(#arr)"/><rect class="special" x="100" y="117" width="440" height="52" rx="7"/><text x="320" y="137" font-weight="600" font-size="15">个人上下文与记忆</text><text x="320" y="155" font-size="12" class="dim">授权接入 · 筛选 · 检索 · 更新</text><path class="arrow" d="M320 169V186" marker-end="url(#arr)"/><rect class="special" x="100" y="188" width="440" height="52" rx="7"/><text x="320" y="209" font-weight="600" font-size="15">Personal Agent</text><text x="320" y="226" class="dim" font-size="12">本地模型 + 云端 API · 任务规划</text><path class="arrow" d="M320 240V254H112V270 M320 254V270 M320 254H528V270"/><g font-size="14"><rect class="node" x="12" y="270" width="200" height="49" rx="7"/><text x="112" y="291">Mac / 云电脑</text><text x="112" y="307" class="dim" font-size="11">文件与应用操作</text><rect class="node" x="220" y="270" width="200" height="49" rx="7"/><text x="320" y="291">系统应用 / API</text><text x="320" y="307" class="dim" font-size="11">个人事务管理</text><rect class="node" x="428" y="270" width="200" height="49" rx="7"/><text x="528" y="291">智能家居</text><text x="528" y="307" class="dim" font-size="11">物理环境交互</text></g></g></svg>
+  <figcaption>图 3：个人 AI 系统的可能形态。并非苹果已经实现的完整产品；各数据与工具均需要适当接口、权限和用户授权。</figcaption>
+</figure>
 
 把 Apple Watch、AirPods、iPhone、Vision Pro 和智能眼镜放在一起看，分工就清楚了：Apple Watch 记录人的生理状态，AirPods 采集语言信息，iPhone 记录视觉与空间信息，Vision Pro 负责把空间内容呈现出来，智能眼镜则让这种呈现更贴近日常。苹果硬件生态的价值，正在从提供消费电子功能，进一步延伸到为个人 AI 提供多模态感知能力。
 
