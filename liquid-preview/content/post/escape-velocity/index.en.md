@@ -40,9 +40,9 @@ So the question is not "am I trying hard enough," but "which direction am I acce
 
 The Tsiolkovsky rocket equation is simple:
 
-\[
+$$
 \Delta v = v_e \ln\frac{m_0}{m_1}
-\]
+$$
 
 The velocity change you want is \(\Delta v\), \(v_e\) is the exhaust velocity (specific impulse), and \(m_0\) and \(m_1\) are the mass before and after ignition.
 
