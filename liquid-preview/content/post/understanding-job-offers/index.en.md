@@ -94,45 +94,69 @@ The final saving is not 42,000 × 25% = RMB 10,500: the deduction crosses the RM
 
 Salary generally uses **cumulative withholding**: the current month's withholding equals cumulative tax due through that month less previous withholding. Assume RMB 40,000 salary, RMB 8,181.30 employee social-insurance and housing-fund contributions and RMB 5,000 basic allowance every month, with no special additional deductions or other changes. Cumulative taxable income grows by RMB 26,818.70 each month.
 
-<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 355" role="img" aria-label="Monthly salary withholding under cumulative tax">
-<rect width="720" height="355" rx="12" fill="#f7f8f8"/>
-<g font-family="Arial,PingFang SC,sans-serif" fill="#263746">
-<text x="20" y="31" font-size="19" font-weight="bold">Monthly salary withholding under cumulative tax</text>
-<text x="20" y="53" font-size="13">RMB 40,000 salary; no special deductions; bonus excluded</text>
-<path d="M60 70 V284 H680" fill="none" stroke="#98a9af"/>
-<text x="20" y="75" font-size="12">7,000</text>
-<text x="35" y="284" font-size="12">0</text>
-<rect x="68" y="259.29" width="31" height="24.71" rx="3" fill="#4b8191"/>
-<text x="83.5" y="307" text-anchor="middle" font-size="13">1</text>
-<text x="83.5" y="251.3" text-anchor="middle" font-size="12">805</text>
-<rect x="117" y="221.37" width="31" height="62.63" rx="3" fill="#4b8191"/>
-<text x="132.5" y="307" text-anchor="middle" font-size="13">2</text>
-<text x="132.5" y="213.4" text-anchor="middle" font-size="12">2,039</text>
-<rect x="166" y="201.63" width="31" height="82.37" rx="3" fill="#4b8191"/>
-<text x="181.5" y="307" text-anchor="middle" font-size="13">3</text>
-<rect x="215" y="201.63" width="31" height="82.37" rx="3" fill="#4b8191"/>
-<text x="230.5" y="307" text-anchor="middle" font-size="13">4</text>
-<rect x="264" y="201.63" width="31" height="82.37" rx="3" fill="#4b8191"/>
-<text x="279.5" y="307" text-anchor="middle" font-size="13">5</text>
-<rect x="313" y="149.68" width="31" height="134.32" rx="3" fill="#4b8191"/>
-<text x="328.5" y="307" text-anchor="middle" font-size="13">6</text>
-<text x="328.5" y="141.7" text-anchor="middle" font-size="12">4,373</text>
-<rect x="362" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
-<text x="377.5" y="307" text-anchor="middle" font-size="13">7</text>
-<rect x="411" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
-<text x="426.5" y="307" text-anchor="middle" font-size="13">8</text>
-<rect x="460" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
-<text x="475.5" y="307" text-anchor="middle" font-size="13">9</text>
-<rect x="509" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
-<text x="524.5" y="307" text-anchor="middle" font-size="13">10</text>
-<rect x="558" y="119.26" width="31" height="164.74" rx="3" fill="#4b8191"/>
-<text x="573.5" y="307" text-anchor="middle" font-size="13">11</text>
-<rect x="607" y="85.74" width="31" height="198.26" rx="3" fill="#4b8191"/>
-<text x="622.5" y="307" text-anchor="middle" font-size="13">12</text>
-<text x="622.5" y="77.7" text-anchor="middle" font-size="12">6,455</text>
-<text x="20" y="337" font-size="13">Horizontal: month; vertical: tax withheld that month (RMB)</text>
-</g>
-</svg>
+  <figure class="ev-figure">
+    <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 355" role="img" aria-label="Monthly salary withholding under cumulative tax" width="720" style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <style>
+    svg.ev-svg {
+      --paper: var(--card-background, #fffefa);
+      --ink: currentColor;
+      --muted: color-mix(in srgb, currentColor 62%, transparent);
+      --accent: var(--accent-color, #176c5b);
+      --accent2: #b16b35;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg.ev-svg { --accent2: #e2a36b; }
+    }
+    svg.ev-svg text {
+      fill: var(--ink);
+      font-family: inherit;
+    }
+    svg.ev-svg .paper { fill: var(--paper); }
+    svg.ev-svg .muted { fill: var(--muted); }
+    svg.ev-svg .accent { fill: var(--accent); }
+    svg.ev-svg .warm { fill: var(--accent2); }
+    svg.ev-svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+  </style>
+
+  <rect width="720" height="355" rx="12" class="paper"/>
+  <g>
+  <text x="20" y="31" font-size="19" font-weight="bold">Monthly salary withholding under cumulative tax</text>
+  <text x="20" y="53" font-size="13">RMB 40,000 salary; no special deductions; bonus excluded</text>
+  <path d="M60 70 V284 H680" class="axis"/>
+  <text x="20" y="75" font-size="12">7,000</text>
+  <text x="35" y="284" font-size="12">0</text>
+  <rect x="68" y="259.29" width="31" height="24.71" rx="3" class="accent"/>
+  <text x="83.5" y="307" text-anchor="middle" font-size="13">1</text>
+  <text x="83.5" y="251.3" text-anchor="middle" font-size="12">805</text>
+  <rect x="117" y="221.37" width="31" height="62.63" rx="3" class="accent"/>
+  <text x="132.5" y="307" text-anchor="middle" font-size="13">2</text>
+  <text x="132.5" y="213.4" text-anchor="middle" font-size="12">2,039</text>
+  <rect x="166" y="201.63" width="31" height="82.37" rx="3" class="accent"/>
+  <text x="181.5" y="307" text-anchor="middle" font-size="13">3</text>
+  <rect x="215" y="201.63" width="31" height="82.37" rx="3" class="accent"/>
+  <text x="230.5" y="307" text-anchor="middle" font-size="13">4</text>
+  <rect x="264" y="201.63" width="31" height="82.37" rx="3" class="accent"/>
+  <text x="279.5" y="307" text-anchor="middle" font-size="13">5</text>
+  <rect x="313" y="149.68" width="31" height="134.32" rx="3" class="accent"/>
+  <text x="328.5" y="307" text-anchor="middle" font-size="13">6</text>
+  <text x="328.5" y="141.7" text-anchor="middle" font-size="12">4,373</text>
+  <rect x="362" y="119.26" width="31" height="164.74" rx="3" class="accent"/>
+  <text x="377.5" y="307" text-anchor="middle" font-size="13">7</text>
+  <rect x="411" y="119.26" width="31" height="164.74" rx="3" class="accent"/>
+  <text x="426.5" y="307" text-anchor="middle" font-size="13">8</text>
+  <rect x="460" y="119.26" width="31" height="164.74" rx="3" class="accent"/>
+  <text x="475.5" y="307" text-anchor="middle" font-size="13">9</text>
+  <rect x="509" y="119.26" width="31" height="164.74" rx="3" class="accent"/>
+  <text x="524.5" y="307" text-anchor="middle" font-size="13">10</text>
+  <rect x="558" y="119.26" width="31" height="164.74" rx="3" class="accent"/>
+  <text x="573.5" y="307" text-anchor="middle" font-size="13">11</text>
+  <rect x="607" y="85.74" width="31" height="198.26" rx="3" class="accent"/>
+  <text x="622.5" y="307" text-anchor="middle" font-size="13">12</text>
+  <text x="622.5" y="77.7" text-anchor="middle" font-size="12">6,455</text>
+  <text x="20" y="337" font-size="13">Horizontal: month; vertical: tax withheld that month (RMB)</text>
+  </g>
+  </svg>
+  </figure>
 
 | Month | Cumulative taxable income | Cumulative withholding due | Current month's withholding |
 | --- | ---: | ---: | ---: |
@@ -332,30 +356,54 @@ The following are monthly base ceilings for the **July 2026–June 2027 housing-
 
 The Shenzhen estimate uses [official wage statistics](https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/mpost_12907800.html). It differs slightly through rounding from the earlier conversation's estimate; confirm the center's assessed value.
 
-<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="Six-city monthly housing-fund base caps (RMB)">
-<rect width="760" height="360" rx="12" fill="#f7f8f8"/>
-<g font-family="Arial, PingFang SC, sans-serif" fill="#263746">
-<text x="20" y="40" font-size="19" font-weight="bold">Six-city monthly housing-fund base caps (RMB)</text>
-<text x="20" y="101" font-size="15">Beijing</text>
-<rect x="175" y="82" width="363.5" height="25" rx="3" fill="#486d88"/>
-<text x="548.5" y="101" font-size="15">36,348</text>
-<text x="20" y="144" font-size="15">Shanghai</text>
-<rect x="175" y="125" width="377.3" height="25" rx="3" fill="#486d88"/>
-<text x="562.3" y="144" font-size="15">37,731</text>
-<text x="20" y="187" font-size="15">Guangzhou</text>
-<rect x="175" y="168" width="417.0" height="25" rx="3" fill="#486d88"/>
-<text x="602.0" y="187" font-size="15">41,697</text>
-<text x="20" y="230" font-size="15">Shenzhen (approx.)</text>
-<rect x="175" y="211" width="484.7" height="25" rx="3" fill="#486d88"/>
-<text x="669.7" y="230" font-size="15">48,470</text>
-<text x="20" y="273" font-size="15">Hangzhou</text>
-<rect x="175" y="254" width="421.5" height="25" rx="3" fill="#486d88"/>
-<text x="606.5" y="273" font-size="15">42,151</text>
-<text x="20" y="316" font-size="15">Quanzhou</text>
-<rect x="175" y="297" width="247.9" height="25" rx="3" fill="#486d88"/>
-<text x="432.9" y="316" font-size="15">24,795</text>
-</g>
-</svg>
+  <figure class="ev-figure">
+    <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="Six-city monthly housing-fund base caps (RMB)" width="760" style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <style>
+    svg.ev-svg {
+      --paper: var(--card-background, #fffefa);
+      --ink: currentColor;
+      --muted: color-mix(in srgb, currentColor 62%, transparent);
+      --accent: var(--accent-color, #176c5b);
+      --accent2: #b16b35;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg.ev-svg { --accent2: #e2a36b; }
+    }
+    svg.ev-svg text {
+      fill: var(--ink);
+      font-family: inherit;
+    }
+    svg.ev-svg .paper { fill: var(--paper); }
+    svg.ev-svg .muted { fill: var(--muted); }
+    svg.ev-svg .accent { fill: var(--accent); }
+    svg.ev-svg .warm { fill: var(--accent2); }
+    svg.ev-svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+  </style>
+
+  <rect width="760" height="360" rx="12" class="paper"/>
+  <g>
+  <text x="20" y="40" font-size="19" font-weight="bold">Six-city monthly housing-fund base caps (RMB)</text>
+  <text x="20" y="101" font-size="15">Beijing</text>
+  <rect x="175" y="82" width="363.5" height="25" rx="3" class="accent"/>
+  <text x="548.5" y="101" font-size="15">36,348</text>
+  <text x="20" y="144" font-size="15">Shanghai</text>
+  <rect x="175" y="125" width="377.3" height="25" rx="3" class="accent"/>
+  <text x="562.3" y="144" font-size="15">37,731</text>
+  <text x="20" y="187" font-size="15">Guangzhou</text>
+  <rect x="175" y="168" width="417.0" height="25" rx="3" class="accent"/>
+  <text x="602.0" y="187" font-size="15">41,697</text>
+  <text x="20" y="230" font-size="15">Shenzhen (approx.)</text>
+  <rect x="175" y="211" width="484.7" height="25" rx="3" class="accent"/>
+  <text x="669.7" y="230" font-size="15">48,470</text>
+  <text x="20" y="273" font-size="15">Hangzhou</text>
+  <rect x="175" y="254" width="421.5" height="25" rx="3" class="accent"/>
+  <text x="606.5" y="273" font-size="15">42,151</text>
+  <text x="20" y="316" font-size="15">Quanzhou</text>
+  <rect x="175" y="297" width="247.9" height="25" rx="3" class="accent"/>
+  <text x="432.9" y="316" font-size="15">24,795</text>
+  </g>
+  </svg>
+  </figure>
 
 In Shanghai, “7% + 5%” refers to each party's ordinary plus supplementary contribution. If both contribute at those rates, each contributes 12%, or 24% combined. The [enterprise pension base cap in Guangdong](https://guangdong.chinatax.gov.cn/gdsw/mmsw_gkwj/2026-10/13/content_87b090a21cbb45a3b8adb477f596793a.shtml) is RMB 27,603 per month from July 2026, different from the housing-fund cap and not a substitute for the medical-insurance cap.
 
@@ -411,28 +459,52 @@ A signing bonus may be paid on joining, after probation or over several years, a
 
 Suppose recurring target compensation is RMB 600,000 a year and signing bonuses are RMB 100,000 in year one and RMB 50,000 in year two:
 
-<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" role="img" aria-label="Three-year target pay (RMB 10,000)">
-<rect width="700" height="340" rx="12" fill="#f7f8f8"/>
-<g font-family="Arial, PingFang SC, sans-serif" fill="#263746">
-<text x="20" y="42" font-size="20" font-weight="bold">Three-year target pay (RMB 10,000)</text>
-<text x="20" y="105" font-size="17">Year 1</text>
-<rect x="125" y="80" width="360" height="32" rx="4" fill="#486d88"/>
-<rect x="485" y="80" width="60" height="32" fill="#dba25a"/>
-<text x="555" y="103" font-size="17">70</text>
-<text x="20" y="170" font-size="17">Year 2</text>
-<rect x="125" y="145" width="360" height="32" rx="4" fill="#486d88"/>
-<rect x="485" y="145" width="30" height="32" fill="#dba25a"/>
-<text x="525" y="168" font-size="17">65</text>
-<text x="20" y="235" font-size="17">Year 3</text>
-<rect x="125" y="210" width="360" height="32" rx="4" fill="#486d88"/>
-<rect x="485" y="210" width="0" height="32" fill="#dba25a"/>
-<text x="495" y="233" font-size="17">60</text>
-<rect x="125" y="300" width="15" height="15" fill="#486d88"/>
-<text x="146" y="313" font-size="15">Recurring target</text>
-<rect x="345" y="300" width="15" height="15" fill="#dba25a"/>
-<text x="366" y="313" font-size="15">Signing bonus</text>
-</g>
-</svg>
+  <figure class="ev-figure">
+    <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" role="img" aria-label="Three-year target pay (RMB 10,000)" width="700" style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <style>
+    svg.ev-svg {
+      --paper: var(--card-background, #fffefa);
+      --ink: currentColor;
+      --muted: color-mix(in srgb, currentColor 62%, transparent);
+      --accent: var(--accent-color, #176c5b);
+      --accent2: #b16b35;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg.ev-svg { --accent2: #e2a36b; }
+    }
+    svg.ev-svg text {
+      fill: var(--ink);
+      font-family: inherit;
+    }
+    svg.ev-svg .paper { fill: var(--paper); }
+    svg.ev-svg .muted { fill: var(--muted); }
+    svg.ev-svg .accent { fill: var(--accent); }
+    svg.ev-svg .warm { fill: var(--accent2); }
+    svg.ev-svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+  </style>
+
+  <rect width="700" height="340" rx="12" class="paper"/>
+  <g>
+  <text x="20" y="42" font-size="20" font-weight="bold">Three-year target pay (RMB 10,000)</text>
+  <text x="20" y="105" font-size="17">Year 1</text>
+  <rect x="125" y="80" width="360" height="32" rx="4" class="accent"/>
+  <rect x="485" y="80" width="60" height="32" class="warm"/>
+  <text x="555" y="103" font-size="17">70</text>
+  <text x="20" y="170" font-size="17">Year 2</text>
+  <rect x="125" y="145" width="360" height="32" rx="4" class="accent"/>
+  <rect x="485" y="145" width="30" height="32" class="warm"/>
+  <text x="525" y="168" font-size="17">65</text>
+  <text x="20" y="235" font-size="17">Year 3</text>
+  <rect x="125" y="210" width="360" height="32" rx="4" class="accent"/>
+  <rect x="485" y="210" width="0" height="32" class="warm"/>
+  <text x="495" y="233" font-size="17">60</text>
+  <rect x="125" y="300" width="15" height="15" class="accent"/>
+  <text x="146" y="313" font-size="15">Recurring target</text>
+  <rect x="345" y="300" width="15" height="15" class="warm"/>
+  <text x="366" y="313" font-size="15">Signing bonus</text>
+  </g>
+  </svg>
+  </figure>
 
 The three-year target totals RMB 1.95 million, averaging RMB 650,000 a year, while the recurring target remains RMB 600,000. Compare first-year, three-year average and post-bonus pay. The illustration excludes raises, share-price changes and performance variation.
 
@@ -472,32 +544,56 @@ The interactive example assumes 10,000 fully vested options, a RMB 5 strike and 
 | 3 | RMB 200,000 | RMB 240,000 |
 | 4 | RMB 200,000 | RMB 320,000 |
 
-<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="Two hypothetical RSU vesting schedules (RMB 10,000)">
-<rect width="760" height="360" rx="12" fill="#f7f8f8"/>
-<g font-family="Arial, PingFang SC, sans-serif" fill="#263746">
-<text x="20" y="40" font-size="19" font-weight="bold">Two hypothetical RSU vesting schedules (RMB 10,000)</text>
-<text x="20" y="97" font-size="15">Year 1</text>
-<rect x="125" y="80" width="200" height="19" fill="#486d88"/>
-<rect x="125" y="102" width="80" height="19" fill="#dba25a"/>
-<text x="215" y="118" font-size="14">8</text>
-<text x="20" y="155" font-size="15">Year 2</text>
-<rect x="125" y="138" width="200" height="19" fill="#486d88"/>
-<rect x="125" y="160" width="160" height="19" fill="#dba25a"/>
-<text x="295" y="176" font-size="14">16</text>
-<text x="20" y="213" font-size="15">Year 3</text>
-<rect x="125" y="196" width="200" height="19" fill="#486d88"/>
-<rect x="125" y="218" width="240" height="19" fill="#dba25a"/>
-<text x="375" y="234" font-size="14">24</text>
-<text x="20" y="271" font-size="15">Year 4</text>
-<rect x="125" y="254" width="200" height="19" fill="#486d88"/>
-<rect x="125" y="276" width="320" height="19" fill="#dba25a"/>
-<text x="455" y="292" font-size="14">32</text>
-<rect x="125" y="325" width="14" height="14" fill="#486d88"/>
-<text x="146" y="337" font-size="14">25% each year</text>
-<rect x="300" y="325" width="14" height="14" fill="#dba25a"/>
-<text x="322" y="337" font-size="14">10/20/30/40%</text>
-</g>
-</svg>
+  <figure class="ev-figure">
+    <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="Two hypothetical RSU vesting schedules (RMB 10,000)" width="760" style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <style>
+    svg.ev-svg {
+      --paper: var(--card-background, #fffefa);
+      --ink: currentColor;
+      --muted: color-mix(in srgb, currentColor 62%, transparent);
+      --accent: var(--accent-color, #176c5b);
+      --accent2: #b16b35;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg.ev-svg { --accent2: #e2a36b; }
+    }
+    svg.ev-svg text {
+      fill: var(--ink);
+      font-family: inherit;
+    }
+    svg.ev-svg .paper { fill: var(--paper); }
+    svg.ev-svg .muted { fill: var(--muted); }
+    svg.ev-svg .accent { fill: var(--accent); }
+    svg.ev-svg .warm { fill: var(--accent2); }
+    svg.ev-svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+  </style>
+
+  <rect width="760" height="360" rx="12" class="paper"/>
+  <g>
+  <text x="20" y="40" font-size="19" font-weight="bold">Two hypothetical RSU vesting schedules (RMB 10,000)</text>
+  <text x="20" y="97" font-size="15">Year 1</text>
+  <rect x="125" y="80" width="200" height="19" class="accent"/>
+  <rect x="125" y="102" width="80" height="19" class="warm"/>
+  <text x="215" y="118" font-size="14">8</text>
+  <text x="20" y="155" font-size="15">Year 2</text>
+  <rect x="125" y="138" width="200" height="19" class="accent"/>
+  <rect x="125" y="160" width="160" height="19" class="warm"/>
+  <text x="295" y="176" font-size="14">16</text>
+  <text x="20" y="213" font-size="15">Year 3</text>
+  <rect x="125" y="196" width="200" height="19" class="accent"/>
+  <rect x="125" y="218" width="240" height="19" class="warm"/>
+  <text x="375" y="234" font-size="14">24</text>
+  <text x="20" y="271" font-size="15">Year 4</text>
+  <rect x="125" y="254" width="200" height="19" class="accent"/>
+  <rect x="125" y="276" width="320" height="19" class="warm"/>
+  <text x="455" y="292" font-size="14">32</text>
+  <rect x="125" y="325" width="14" height="14" class="accent"/>
+  <text x="146" y="337" font-size="14">25% each year</text>
+  <rect x="300" y="325" width="14" height="14" class="warm"/>
+  <text x="322" y="337" font-size="14">10/20/30/40%</text>
+  </g>
+  </svg>
+  </figure>
 
 The table uses the RMB 800,000 grant-date valuation, before tax or price changes. Without refresh grants, equity income can fall after the initial grant ends. A cliff is the waiting period before an initial vest; it does not mean the employee owns accrued shares before vesting.
 
@@ -554,40 +650,64 @@ Taxable salary = 480,000 − 60,000 − annual employee contributions. Salary ta
 | Hangzhou | 89,869.92 | 50,612.52 | 11,790.00 | **447,727.56** | 115,200.00 |
 | Quanzhou | 64,550.04 | 56,942.49 | 11,790.00 | **466,717.47** | 71,409.60 |
 
-<svg style="display:block;width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 435" role="img" aria-label="Annual after-tax cash and housing fund (RMB 10,000)">
-<rect width="760" height="435" rx="12" fill="#f7f8f8"/>
-<g font-family="Arial,PingFang SC,sans-serif" fill="#263746">
-<text x="18" y="39" font-size="19" font-weight="bold">Annual after-tax cash and housing fund (RMB 10,000)</text>
-<text x="18" y="97" font-size="15">Beijing</text>
-<rect x="145" y="78" width="353.20" height="27" fill="#486d88"/>
-<rect x="498.20" y="78" width="83.75" height="27" fill="#dba25a"/>
-<text x="591.94" y="97" font-size="14">44.15 + 10.47</text>
-<text x="18" y="147" font-size="15">Shanghai</text>
-<rect x="145" y="128" width="350.98" height="27" fill="#486d88"/>
-<rect x="495.98" y="128" width="86.93" height="27" fill="#dba25a"/>
-<text x="592.91" y="147" font-size="14">43.87 + 10.87</text>
-<text x="18" y="197" font-size="15">Guangzhou</text>
-<rect x="145" y="178" width="356.58" height="27" fill="#486d88"/>
-<rect x="501.58" y="178" width="92.16" height="27" fill="#dba25a"/>
-<text x="603.74" y="197" font-size="14">44.57 + 11.52</text>
-<text x="18" y="247" font-size="15">Shenzhen</text>
-<rect x="145" y="228" width="356.23" height="27" fill="#486d88"/>
-<rect x="501.23" y="228" width="92.16" height="27" fill="#dba25a"/>
-<text x="603.39" y="247" font-size="14">44.53 + 11.52</text>
-<text x="18" y="297" font-size="15">Hangzhou</text>
-<rect x="145" y="278" width="358.18" height="27" fill="#486d88"/>
-<rect x="503.18" y="278" width="92.16" height="27" fill="#dba25a"/>
-<text x="605.34" y="297" font-size="14">44.77 + 11.52</text>
-<text x="18" y="347" font-size="15">Quanzhou</text>
-<rect x="145" y="328" width="373.37" height="27" fill="#486d88"/>
-<rect x="518.37" y="328" width="57.13" height="27" fill="#dba25a"/>
-<text x="585.50" y="347" font-size="14">46.67 + 7.14</text>
-<rect x="145" y="400" width="14" height="14" fill="#486d88"/>
-<text x="165" y="412" font-size="14">After-tax cash</text>
-<rect x="300" y="400" width="14" height="14" fill="#dba25a"/>
-<text x="320" y="412" font-size="14">Housing fund (includes employee share)</text>
-</g>
-</svg>
+  <figure class="ev-figure">
+    <svg class="ev-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 435" role="img" aria-label="Annual after-tax cash and housing fund (RMB 10,000)" width="760" style="max-width:100%;height:auto;display:block;margin:0 auto">
+    <style>
+    svg.ev-svg {
+      --paper: var(--card-background, #fffefa);
+      --ink: currentColor;
+      --muted: color-mix(in srgb, currentColor 62%, transparent);
+      --accent: var(--accent-color, #176c5b);
+      --accent2: #b16b35;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg.ev-svg { --accent2: #e2a36b; }
+    }
+    svg.ev-svg text {
+      fill: var(--ink);
+      font-family: inherit;
+    }
+    svg.ev-svg .paper { fill: var(--paper); }
+    svg.ev-svg .muted { fill: var(--muted); }
+    svg.ev-svg .accent { fill: var(--accent); }
+    svg.ev-svg .warm { fill: var(--accent2); }
+    svg.ev-svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+  </style>
+
+  <rect width="760" height="435" rx="12" class="paper"/>
+  <g>
+  <text x="18" y="39" font-size="19" font-weight="bold">Annual after-tax cash and housing fund (RMB 10,000)</text>
+  <text x="18" y="97" font-size="15">Beijing</text>
+  <rect x="145" y="78" width="353.20" height="27" class="accent"/>
+  <rect x="498.20" y="78" width="83.75" height="27" class="warm"/>
+  <text x="591.94" y="97" font-size="14">44.15 + 10.47</text>
+  <text x="18" y="147" font-size="15">Shanghai</text>
+  <rect x="145" y="128" width="350.98" height="27" class="accent"/>
+  <rect x="495.98" y="128" width="86.93" height="27" class="warm"/>
+  <text x="592.91" y="147" font-size="14">43.87 + 10.87</text>
+  <text x="18" y="197" font-size="15">Guangzhou</text>
+  <rect x="145" y="178" width="356.58" height="27" class="accent"/>
+  <rect x="501.58" y="178" width="92.16" height="27" class="warm"/>
+  <text x="603.74" y="197" font-size="14">44.57 + 11.52</text>
+  <text x="18" y="247" font-size="15">Shenzhen</text>
+  <rect x="145" y="228" width="356.23" height="27" class="accent"/>
+  <rect x="501.23" y="228" width="92.16" height="27" class="warm"/>
+  <text x="603.39" y="247" font-size="14">44.53 + 11.52</text>
+  <text x="18" y="297" font-size="15">Hangzhou</text>
+  <rect x="145" y="278" width="358.18" height="27" class="accent"/>
+  <rect x="503.18" y="278" width="92.16" height="27" class="warm"/>
+  <text x="605.34" y="297" font-size="14">44.77 + 11.52</text>
+  <text x="18" y="347" font-size="15">Quanzhou</text>
+  <rect x="145" y="328" width="373.37" height="27" class="accent"/>
+  <rect x="518.37" y="328" width="57.13" height="27" class="warm"/>
+  <text x="585.50" y="347" font-size="14">46.67 + 7.14</text>
+  <rect x="145" y="400" width="14" height="14" class="accent"/>
+  <text x="165" y="412" font-size="14">After-tax cash</text>
+  <rect x="300" y="400" width="14" height="14" class="warm"/>
+  <text x="320" y="412" font-size="14">Housing fund (includes employee share)</text>
+  </g>
+  </svg>
+  </figure>
 
 For Quanzhou, monthly employee contributions are RMB 5,379.17, or RMB 64,550.04 annually. Taxable salary is 480,000 − 60,000 − 64,550.04 = RMB 355,449.96. At the 25% bracket, salary tax is RMB 56,942.49; with RMB 11,790 bonus tax, after-tax cash is RMB 466,717.47. The housing-fund account receives RMB 71,409.60 in total from employee and employer, subject to use restrictions.
 
