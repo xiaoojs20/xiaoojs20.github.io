@@ -119,7 +119,7 @@ This may be the deeper reason mediocrity has gravity: **the external environment
 
 ## Countering Entropy Increase
 
-### 2.1 The Direction of Entropy Increase
+### The Direction of Entropy Increase
 
 The statistical meaning of entropy increase is more precise than the everyday notion of disorder. The Boltzmann formula links entropy to the number of microstates corresponding to a macrostate:
 
@@ -150,7 +150,7 @@ There is also a more easily overlooked kind of decline: relative decline. Even i
 
 **Decline does not require an active choice, while maintenance and growth usually require active investment.**
 
-### 2.2 Open Systems and Negentropy Flow
+### Open Systems and Negentropy Flow
 
 If decline is the natural trend, where does the resource for growth come from? Life offers a good reference. Prigogine's theory of dissipative structures shows that an open system far from thermodynamic equilibrium can, under certain conditions, form and maintain organized structure through continuous exchange of matter and energy with its surroundings. Its entropy change can be split into internal entropy production and external entropy exchange:
 
@@ -244,7 +244,7 @@ Openness also does not mean endlessly increasing information input. A crystal is
 
 **The quality of negentropy flow determines what we can obtain; our ability to process and organize it determines what we can turn it into.** For me, what is worth maintaining over the long term is high-quality input, continuous learning and practice, and feedback mechanisms that keep correcting my understanding.
 
-### 2.3 From Campus to Career: Rethinking Life Goals
+### From Campus to Career: Rethinking Life Goals
 
 As I write this, I am twenty-four, in the later part of my master's programme, have finished job hunting, and am about to move from campus into a formal career. Over the past few years I have moved from electrical engineering toward the internet and algorithms, and have begun to think seriously about investing, health, writing, and travel. My clearer goals used to be getting into a good programme, finding internships, and landing a job. The question now is: after getting a good job, where exactly do I want to take my life?
 
@@ -327,7 +327,7 @@ As I write this, I am twenty-four, in the later part of my master's programme, h
 
 ## Escape Velocity: Beyond Effort, You Need to Cross a Threshold
 
-### 3.1 From Effort to Breakthrough
+### From Effort to Breakthrough
 
 Entropy increase and open systems help us understand why existing structures need maintenance and how they can be renewed, but they cannot tell us how to leave a stable state that no longer fits our goals. Escape velocity offers another perspective.
 
@@ -351,7 +351,7 @@ This also means **direction matters more than raw intensity**. Working fourteen 
 
 Finding a job is more like reaching first cosmic velocity: entering a new stable orbit, but not yet escaping gravity. What I need to watch next is whether my work is increasing abilities that are also valuable in the external market; whether it deepens my understanding of the link between technology and business; and if I left this company, how much of the past few years' accumulation could I take with me. Compared with a single performance review, these questions are closer to the long-term growth rate I actually care about.
 
-### 3.2 Accumulate Capital, Let Accumulation Compound
+### Accumulate Capital, Let Accumulation Compound
 
 The measure of accumulation is what remains after one round of investment ends. Completing a project is current output; forming reusable methods, transferable abilities, and trustworthy collaborations is what can raise the return on the next round.
 
@@ -359,7 +359,7 @@ What is worth accumulating is not only financial capital, but also cognition, sk
 
 Excessive risk can force a sale at a low point and interrupt long-term compounding; skill accumulation without application and feedback can also lose value. What is worth pursuing is sustainable, effective growth, not short-term maximization of returns.
 
-### 3.3 Accumulate Inward, Explore Outward
+### Accumulate Inward, Explore Outward
 
 Lately I have been thinking about why I should deliberately expand my exposure to life. For a long time, my main environments were school, the lab, and internship companies. They gave me good conditions for learning and growth, but they also meant that the people, information, and opportunities I encountered were somewhat homogeneous. Even after moving to a new job, if daily life remains a commute between office and home, the boundaries of that environment can quickly re-form.
 
